@@ -1,0 +1,1661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B6E2AB9-AAF3-4CFC-9550-51D8BC179295}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PCLOR</RootNamespace>
+    <AssemblyName>PCLOR</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1310469553_package_games_logic.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=10.9.0.4, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Resources, Version=2.5.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FarsiLibrary.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=2.5.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win, Version=2.5.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Guarantee">
+      <HintPath>C:\Users\Pc06\Desktop\Guarantee.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Data.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\Windows Forms Controls v4\BIN\Janus.Data.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ButtonBar.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\Windows Forms Controls v4\BIN\Janus.Windows.ButtonBar.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\Windows Forms Controls v4\BIN\Janus.Windows.CalendarCombo.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\Windows Forms Controls v4\BIN\Janus.Windows.Common.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ExplorerBar.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\Windows Forms Controls v4\BIN\Janus.Windows.ExplorerBar.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.FilterEditor.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\Windows Forms Controls v4\BIN\Janus.Windows.FilterEditor.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\Windows Forms Controls v4\BIN\Janus.Windows.GridEX.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Ribbon.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\Windows Forms Controls v4\BIN\Janus.Windows.Ribbon.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Schedule.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\Windows Forms Controls v4\BIN\Janus.Windows.Schedule.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.TimeLine.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\Windows Forms Controls v4\BIN\Janus.Windows.TimeLine.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\Windows Forms Controls v4\BIN\Janus.Windows.UI.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\PERP_BASE\PERP_BASE\bin\Debug\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PACNT, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\PERP\PERP\PACNT.dll</HintPath>
+    </Reference>
+    <Reference Include="PBRTR, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PBRTR.dll</HintPath>
+    </Reference>
+    <Reference Include="PersianDate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PersianDate.dll</HintPath>
+    </Reference>
+    <Reference Include="PSALE, Version=13.98.9.23, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\PERP\PERP\PSALE.dll</HintPath>
+    </Reference>
+    <Reference Include="PSHOP, Version=13.98.9.23, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PSHOP.dll</HintPath>
+    </Reference>
+    <Reference Include="PWHRS, Version=13.98.11.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\PERP\PERP\PWHRS.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Database, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Design, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Editor, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Compare, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Report.Compare.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Report.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Helper, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Report.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2013.1.1505.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\CheckCredits.cs" />
+    <Compile Include="Classes\Class_BasicOperation.cs" />
+    <Compile Include="Classes\Class_ChangeConnectionString.cs" />
+    <Compile Include="Classes\Class_CheckAccess.cs" />
+    <Compile Include="Classes\Class_Discounts.cs" />
+    <Compile Include="Classes\Class_Documents.cs" />
+    <Compile Include="Classes\Class_GoodInformation.cs" />
+    <Compile Include="Classes\Class_Settle.cs" />
+    <Compile Include="Classes\Class_UserScope.cs" />
+    <Compile Include="Classes\ControlExtension.cs" />
+    <Compile Include="Classes\DeleteRelatedInfo.cs" />
+    <Compile Include="Classes\Extensions.cs" />
+    <Compile Include="Classes\InputBox.cs" />
+    <Compile Include="Classes\PersianDateTimeUtils.cs" />
+    <Compile Include="data_PCLOR\BarcodeDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarcodeDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_PCLOR\DataSet_05_PCLOR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_05_PCLOR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_PCLOR\DataSet_10_PersonInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_10_PersonInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_PCLOR\DataSet_15_Ware.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_15_Ware.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Main.Designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarjooiSale\DataSet_01_Sale.cs">
+      <DependentUpon>DataSet_01_Sale.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarjooiSale\DataSet_01_Sale.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_01_Sale.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarjooiSale\DialgoboxExcelSlry.cs" />
+    <Compile Include="MarjooiSale\Form33_ExportDocForReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarjooiSale\Form33_ExportDocForReceipt.designer.cs">
+      <DependentUpon>Form33_ExportDocForReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_001_MarjooiSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_001_MarjooiSale.designer.cs">
+      <DependentUpon>Frm_001_MarjooiSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_002_MarjooiSaleBarcod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_002_MarjooiSaleBarcod.Designer.cs">
+      <DependentUpon>Frm_002_MarjooiSaleBarcod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_002_ViewFactorReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_002_ViewFactorReturn.Designer.cs">
+      <DependentUpon>Frm_002_ViewFactorReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_003_Product_Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_003_Product_Return.Designer.cs">
+      <DependentUpon>Frm_003_Product_Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_014_ResidDialog_Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_014_ResidDialog_Return.Designer.cs">
+      <DependentUpon>Frm_014_ResidDialog_Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_30_Production_Edite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_30_Production_Edite.designer.cs">
+      <DependentUpon>Frm_30_Production_Edite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Machine.cs" />
+    <Compile Include="Models\MachinePoint.cs" />
+    <Compile Include="Product\DataSet_05_Product.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_05_Product.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Frm_005_SelectMachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\Frm_005_SelectMachine.Designer.cs">
+      <DependentUpon>Frm_005_SelectMachine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Frm_010_ProgramMachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\Frm_010_ProgramMachine.Designer.cs">
+      <DependentUpon>Frm_010_ProgramMachine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Frm_015_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\Frm_015_Product.Designer.cs">
+      <DependentUpon>Frm_015_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Frm_025_ReportDeviceFailure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\Frm_025_ReportDeviceFailure.Designer.cs">
+      <DependentUpon>Frm_025_ReportDeviceFailure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Frm_020_shift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\Frm_020_shift.Designer.cs">
+      <DependentUpon>Frm_020_shift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Frm_030_OrderColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\Frm_030_OrderColor.Designer.cs">
+      <DependentUpon>Frm_030_OrderColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Frm_135_RFID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\Frm_135_RFID.Designer.cs">
+      <DependentUpon>Frm_135_RFID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_Rpt_BarcodeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_Rpt_BarcodeDetail.Designer.cs">
+      <DependentUpon>Frm_Rpt_BarcodeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_Rpt_SumFi_Good.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_Rpt_SumFi_Good.Designer.cs">
+      <DependentUpon>Frm_Rpt_SumFi_Good.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_Rpt_SumSaleFi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_Rpt_SumSaleFi.Designer.cs">
+      <DependentUpon>Frm_Rpt_SumSaleFi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_50_TypeCotton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_50_TypeCotton.Designer.cs">
+      <DependentUpon>Frm_50_TypeCotton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_05_Machines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_05_Machines.designer.cs">
+      <DependentUpon>Frm_05_Machines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_105_Production.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_105_Production.Designer.cs">
+      <DependentUpon>Frm_105_Production.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_50_SendPackaging2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_50_SendPackaging2.designer.cs">
+      <DependentUpon>Frm_50_SendPackaging2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_60_ReciptKnitting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_60_ReciptKnitting.Designer.cs">
+      <DependentUpon>Frm_60_ReciptKnitting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_140_Report_TransferBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_140_Report_TransferBranch.Designer.cs">
+      <DependentUpon>Frm_140_Report_TransferBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_14_TransferCheq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_14_TransferCheq.Designer.cs">
+      <DependentUpon>Frm_14_TransferCheq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_04_Shop\Frm_015_ExportDoc_Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_04_Shop\Frm_015_ExportDoc_Return.Designer.cs">
+      <DependentUpon>Frm_015_ExportDoc_Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_030_SaleSanadInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarjooiSale\Frm_030_SaleSanadInfo.designer.cs">
+      <DependentUpon>Frm_030_SaleSanadInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet_001_Gozareshat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_001_Gozareshat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet_01_Report.cs">
+      <DependentUpon>DataSet_01_Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet_01_Report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_01_Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet_AmaliyatAnbar..cs">
+      <DependentUpon>DataSet_AmaliyatAnbar..xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet_AmaliyatAnbar..Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_AmaliyatAnbar..xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet_EtelaatePaye.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_EtelaatePaye.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Form01_ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Form01_ReportForm.designer.cs">
+      <DependentUpon>Form01_ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_003_MojoodiMaghtaiTedadi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_003_MojoodiMaghtaiTedadi.designer.cs">
+      <DependentUpon>Frm_003_MojoodiMaghtaiTedadi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_009_KardexTedadi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_009_KardexTedadi.designer.cs">
+      <DependentUpon>Frm_009_KardexTedadi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_010_KardexRiyali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_010_KardexRiyali.designer.cs">
+      <DependentUpon>Frm_010_KardexRiyali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_MaghtaeiTedadi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_MaghtaeiTedadi.Designer.cs">
+      <DependentUpon>Frm_MaghtaeiTedadi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_Report_BarcodeRecipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_Report_BarcodeRecipt.Designer.cs">
+      <DependentUpon>Frm_Report_BarcodeRecipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_Report_BarcodeRecipt_A5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_Report_BarcodeRecipt_A5.Designer.cs">
+      <DependentUpon>Frm_Report_BarcodeRecipt_A5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_Report_BarcodSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_Report_BarcodSend.Designer.cs">
+      <DependentUpon>Frm_Report_BarcodSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_Report_BarcodSend_A5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_Report_BarcodSend_A5.Designer.cs">
+      <DependentUpon>Frm_Report_BarcodSend_A5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_Report_Conflict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_Report_Conflict.Designer.cs">
+      <DependentUpon>Frm_Report_Conflict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_StockRial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_StockRial.Designer.cs">
+      <DependentUpon>Frm_StockRial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt01_NumericDoc1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt01_NumericDoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt01_NumericDoc_21.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt01_NumericDoc_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt02_RialiDoc1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt02_RialiDoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt02_RialiDoc_21.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt02_RialiDoc_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt03_MaghtaeeTedadi1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt03_MaghtaeeTedadi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt04_Periodic_Numeric1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt04_Periodic_Numeric.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt05_MaghtaeeRiali1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt05_MaghtaeeRiali.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt05_MaghtaeeRiali31.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt05_MaghtaeeRiali3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt06_Periodic_Riali1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt06_Periodic_Riali.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt07_Numeric_Cardex1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt07_Numeric_Cardex.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt07_Numeric_Cardex_21.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt07_Numeric_Cardex_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt08_Riali_Cardex1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt08_Riali_Cardex.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt09_Riali_Trun1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt09_Riali_Trun.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt09_Riali_Trun_21.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt09_Riali_Trun_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt10_Numeric_Trun1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt10_Numeric_Trun.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt10_Numeric_Trun_21.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt10_Numeric_Trun_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt11_StockReduction1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt11_StockReduction.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt12_ExitCarrier.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt12_ExitCarrier.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_002_Sale\DataSet_01_Sale.cs">
+      <DependentUpon>DataSet_01_Sale.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_002_Sale\DataSet_01_Sale1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_01_Sale.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_002_StoreFaktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_002_StoreFaktor.designer.cs">
+      <DependentUpon>Frm_002_StoreFaktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_003_ViewFactorSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_003_ViewFactorSale.Designer.cs">
+      <DependentUpon>Frm_003_ViewFactorSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_004_UpdateBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_004_UpdateBrand.Designer.cs">
+      <DependentUpon>Frm_004_UpdateBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_005_RportSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_005_RportSale.Designer.cs">
+      <DependentUpon>Frm_005_RportSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_011_ResidInformationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_011_ResidInformationDialog.designer.cs">
+      <DependentUpon>Frm_011_ResidInformationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_019_Sale_Signatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_019_Sale_Signatures.designer.cs">
+      <DependentUpon>Frm_019_Sale_Signatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_030_SaleSanadInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_002_Sale\Frm_030_SaleSanadInfo.designer.cs">
+      <DependentUpon>Frm_030_SaleSanadInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_30_WHRS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_30_WHRS.designer.cs">
+      <DependentUpon>Frm_30_WHRS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_45_FiSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_45_FiSale.Designer.cs">
+      <DependentUpon>Frm_45_FiSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_Frms\DataSet01_Content.cs">
+      <DependentUpon>DataSet01_Content.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_01_Frms\DataSet01_Content.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet01_Content.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Frm_Report_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_Report_Order.Designer.cs">
+      <DependentUpon>Frm_Report_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm_Report_Pack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frm_Report_Pack.Designer.cs">
+      <DependentUpon>Frm_Report_Pack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Form_25_SpecsTechnical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Form_25_SpecsTechnical.Designer.cs">
+      <DependentUpon>Form_25_SpecsTechnical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_20_ColorDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_20_ColorDefinition.Designer.cs">
+      <DependentUpon>Frm_20_ColorDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_30_Type_WHRS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_30_Type_WHRS.Designer.cs">
+      <DependentUpon>Frm_30_Type_WHRS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_35_Branchs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_35_Branchs.Designer.cs">
+      <DependentUpon>Frm_35_Branchs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_40_PersonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_40_PersonInfo.Designer.cs">
+      <DependentUpon>Frm_40_PersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Setting_15_Weighbridge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Setting_15_Weighbridge.Designer.cs">
+      <DependentUpon>Setting_15_Weighbridge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_Frms\Form01_Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_Frms\Form01_Backup.designer.cs">
+      <DependentUpon>Form01_Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_Frms\Form02_Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_Frms\Form02_Restore.designer.cs">
+      <DependentUpon>Form02_Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_Frms\_01_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_Frms\_01_Login.designer.cs">
+      <DependentUpon>_01_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_Frms\_02_CompanyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_Frms\_02_CompanyList.designer.cs">
+      <DependentUpon>_02_CompanyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_Frms\_03_FinanceYearList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_Frms\_03_FinanceYearList.designer.cs">
+      <DependentUpon>_03_FinanceYearList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_35_packingNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_35_packingNew.Designer.cs">
+      <DependentUpon>Frm_35_packingNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_01_ReportPackiging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_01_ReportPackiging.Designer.cs">
+      <DependentUpon>Frm_01_ReportPackiging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_05_TypeCloth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_05_TypeCloth.Designer.cs">
+      <DependentUpon>Frm_05_TypeCloth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_10_TypeColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_10_TypeColor.Designer.cs">
+      <DependentUpon>Frm_10_TypeColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_20_ReciptClothRaw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_20_ReciptClothRaw.Designer.cs">
+      <DependentUpon>Frm_20_ReciptClothRaw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_25_OrderColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_25_OrderColor.Designer.cs">
+      <DependentUpon>Frm_25_OrderColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_30_Production.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_30_Production.Designer.cs">
+      <DependentUpon>Frm_30_Production.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_55_ReciptPackaging2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_55_ReciptPackaging2.designer.cs">
+      <DependentUpon>Frm_55_ReciptPackaging2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\DataSet_01_Cash.cs">
+      <DependentUpon>DataSet_01_Cash.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\DataSet_01_Cash.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_01_Cash.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Form01_PrintRecChq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Form01_PrintRecChq.designer.cs">
+      <DependentUpon>Form01_PrintRecChq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Form02_ExportDocForReceive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Form02_ExportDocForReceive.designer.cs">
+      <DependentUpon>Form02_ExportDocForReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Form03_BanksBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Form03_BanksBox.designer.cs">
+      <DependentUpon>Form03_BanksBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Form04_ExportDocForReceive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Form04_ExportDocForReceive.designer.cs">
+      <DependentUpon>Form04_ExportDocForReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Form06_ExportDocumentForFirstValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Form06_ExportDocumentForFirstValue.designer.cs">
+      <DependentUpon>Form06_ExportDocumentForFirstValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Form07_ExportDocForPaidCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Form07_ExportDocForPaidCash.designer.cs">
+      <DependentUpon>Form07_ExportDocForPaidCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Form08_TotalDoc_Receive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Form08_TotalDoc_Receive.designer.cs">
+      <DependentUpon>Form08_TotalDoc_Receive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_006_Handcheckback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_006_Handcheckback.Designer.cs">
+      <DependentUpon>Frm_006_Handcheckback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_01_new_Recipt_Cheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_01_new_Recipt_Cheques.Designer.cs">
+      <DependentUpon>Frm_01_new_Recipt_Cheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_01_Recipt_Cheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_01_Recipt_Cheques.Designer.cs">
+      <DependentUpon>Frm_01_Recipt_Cheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_01_Recipt_Cheques_Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_01_Recipt_Cheques_Group.Designer.cs">
+      <DependentUpon>Frm_01_Recipt_Cheques_Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Report\Frm_01_Report_Statuscheq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Report\Frm_01_Report_Statuscheq.Designer.cs">
+      <DependentUpon>Frm_01_Report_Statuscheq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_02_Transfer_Banck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_02_Transfer_Banck.Designer.cs">
+      <DependentUpon>Frm_02_Transfer_Banck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_03_Transfer_Person.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_03_Transfer_Person.Designer.cs">
+      <DependentUpon>Frm_03_Transfer_Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_04_Recipt_checks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_04_Recipt_checks.Designer.cs">
+      <DependentUpon>Frm_04_Recipt_checks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_05_Return_checks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_05_Return_checks.Designer.cs">
+      <DependentUpon>Frm_05_Return_checks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_06_Return_Expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_06_Return_Expense.Designer.cs">
+      <DependentUpon>Frm_06_Return_Expense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_07_Refund_Check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_07_Refund_Check.Designer.cs">
+      <DependentUpon>Frm_07_Refund_Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_08_ViewReceivedChq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_08_ViewReceivedChq.Designer.cs">
+      <DependentUpon>Frm_08_ViewReceivedChq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_09_Recipt_Money.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_09_Recipt_Money.Designer.cs">
+      <DependentUpon>Frm_09_Recipt_Money.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_10_PayCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_10_PayCash.Designer.cs">
+      <DependentUpon>Frm_10_PayCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_11_View_Recipt_Money.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_11_View_Recipt_Money.Designer.cs">
+      <DependentUpon>Frm_11_View_Recipt_Money.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_12_View_PayCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_12_View_PayCash.Designer.cs">
+      <DependentUpon>Frm_12_View_PayCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_13_Rasgiri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_Bank\Frm_13_Rasgiri.Designer.cs">
+      <DependentUpon>Frm_13_Rasgiri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_04_Shop\Frm_002_StoreFaktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_04_Shop\Frm_002_StoreFaktor.Designer.cs">
+      <DependentUpon>Frm_002_StoreFaktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_04_Shop\Frm_003_FaktorKharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_04_Shop\Frm_003_FaktorKharid.designer.cs">
+      <DependentUpon>Frm_003_FaktorKharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_04_Shop\Frm_009_ExportDocInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_04_Shop\Frm_009_ExportDocInformation.designer.cs">
+      <DependentUpon>Frm_009_ExportDocInformation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarjooiSale\Form33_ExportDocForReceipt.resx">
+      <DependentUpon>Form33_ExportDocForReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarjooiSale\Frm_001_MarjooiSale.resx">
+      <DependentUpon>Frm_001_MarjooiSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarjooiSale\Frm_002_MarjooiSaleBarcod.resx">
+      <DependentUpon>Frm_002_MarjooiSaleBarcod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarjooiSale\Frm_002_ViewFactorReturn.resx">
+      <DependentUpon>Frm_002_ViewFactorReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarjooiSale\Frm_003_Product_Return.resx">
+      <DependentUpon>Frm_003_Product_Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarjooiSale\Frm_014_ResidDialog_Return.resx">
+      <DependentUpon>Frm_014_ResidDialog_Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarjooiSale\Frm_30_Production_Edite.resx">
+      <DependentUpon>Frm_30_Production_Edite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Frm_005_SelectMachine.resx">
+      <DependentUpon>Frm_005_SelectMachine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Frm_010_ProgramMachine.resx">
+      <DependentUpon>Frm_010_ProgramMachine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Frm_015_Product.resx">
+      <DependentUpon>Frm_015_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Frm_025_ReportDeviceFailure.resx">
+      <DependentUpon>Frm_025_ReportDeviceFailure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Frm_020_shift.resx">
+      <DependentUpon>Frm_020_shift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Frm_030_OrderColor.resx">
+      <DependentUpon>Frm_030_OrderColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Frm_135_RFID.resx">
+      <DependentUpon>Frm_135_RFID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_Rpt_BarcodeDetail.resx">
+      <DependentUpon>Frm_Rpt_BarcodeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_Rpt_SumSaleFi.resx">
+      <DependentUpon>Frm_Rpt_SumSaleFi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Frm_50_TypeCotton.resx">
+      <DependentUpon>Frm_50_TypeCotton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_OperationInfo\Frm_05_Machines.resx">
+      <DependentUpon>Frm_05_Machines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_OperationInfo\Frm_105_Production.resx">
+      <DependentUpon>Frm_105_Production.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_OperationInfo\Frm_50_SendPackaging2.resx">
+      <DependentUpon>Frm_50_SendPackaging2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_OperationInfo\Frm_60_ReciptKnitting.resx">
+      <DependentUpon>Frm_60_ReciptKnitting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_140_Report_TransferBranch.resx">
+      <DependentUpon>Frm_140_Report_TransferBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_14_TransferCheq.resx">
+      <DependentUpon>Frm_14_TransferCheq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_04_Shop\Frm_015_ExportDoc_Return.resx">
+      <DependentUpon>Frm_015_ExportDoc_Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarjooiSale\Frm_030_SaleSanadInfo.resx">
+      <DependentUpon>Frm_030_SaleSanadInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\Form01_ReportForm.resx">
+      <DependentUpon>Form01_ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_003_MojoodiMaghtaiTedadi.resx">
+      <DependentUpon>Frm_003_MojoodiMaghtaiTedadi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_009_KardexTedadi.resx">
+      <DependentUpon>Frm_009_KardexTedadi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_010_KardexRiyali.resx">
+      <DependentUpon>Frm_010_KardexRiyali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_MaghtaeiTedadi.resx">
+      <DependentUpon>Frm_MaghtaeiTedadi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_Report_BarcodeRecipt.resx">
+      <DependentUpon>Frm_Report_BarcodeRecipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_Report_BarcodeRecipt_A5.resx">
+      <DependentUpon>Frm_Report_BarcodeRecipt_A5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_Report_BarcodSend.resx">
+      <DependentUpon>Frm_Report_BarcodSend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_Report_BarcodSend_A5.resx">
+      <DependentUpon>Frm_Report_BarcodSend_A5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_Report_Conflict.resx">
+      <DependentUpon>Frm_Report_Conflict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_Report_Order.resx">
+      <DependentUpon>Frm_Report_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_Report_Pack.resx">
+      <DependentUpon>Frm_Report_Pack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm_StockRial.resx">
+      <DependentUpon>Frm_StockRial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt01_NumericDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt01_NumericDoc1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt01_NumericDoc_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt01_NumericDoc_21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt02_RialiDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt02_RialiDoc1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt02_RialiDoc_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt02_RialiDoc_21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt03_MaghtaeeTedadi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt03_MaghtaeeTedadi1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt04_Periodic_Numeric.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt04_Periodic_Numeric1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt05_MaghtaeeRiali.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt05_MaghtaeeRiali1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt05_MaghtaeeRiali3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt05_MaghtaeeRiali31.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt06_Periodic_Riali.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt06_Periodic_Riali1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt07_Numeric_Cardex.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt07_Numeric_Cardex1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt07_Numeric_Cardex_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt07_Numeric_Cardex_21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt08_Riali_Cardex.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt08_Riali_Cardex1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt09_Riali_Trun.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt09_Riali_Trun1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt09_Riali_Trun_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt09_Riali_Trun_21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt10_Numeric_Trun.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt10_Numeric_Trun1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt10_Numeric_Trun_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt10_Numeric_Trun_21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt11_StockReduction.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt11_StockReduction1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt12_ExitCarrier.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt12_ExitCarrier.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_002_Sale\Frm_002_StoreFaktor.resx">
+      <DependentUpon>Frm_002_StoreFaktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_002_Sale\Frm_003_ViewFactorSale.resx">
+      <DependentUpon>Frm_003_ViewFactorSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_002_Sale\Frm_004_UpdateBrand.resx">
+      <DependentUpon>Frm_004_UpdateBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_002_Sale\Frm_005_RportSale.resx">
+      <DependentUpon>Frm_005_RportSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_002_Sale\Frm_011_ResidInformationDialog.resx">
+      <DependentUpon>Frm_011_ResidInformationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_002_Sale\Frm_019_Sale_Signatures.resx">
+      <DependentUpon>Frm_019_Sale_Signatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_002_Sale\Frm_030_SaleSanadInfo.resx">
+      <DependentUpon>Frm_030_SaleSanadInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Form_25_SpecsTechnical.resx">
+      <DependentUpon>Form_25_SpecsTechnical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Frm_20_ColorDefinition.resx">
+      <DependentUpon>Frm_20_ColorDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Frm_30_Type_WHRS.resx">
+      <DependentUpon>Frm_30_Type_WHRS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Frm_30_WHRS.resx">
+      <DependentUpon>Frm_30_WHRS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Frm_35_Branchs.resx">
+      <DependentUpon>Frm_35_Branchs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Frm_40_PersonInfo.resx">
+      <DependentUpon>Frm_40_PersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Frm_45_FiSale.resx">
+      <DependentUpon>Frm_45_FiSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Setting_15_Weighbridge.resx">
+      <DependentUpon>Setting_15_Weighbridge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_Frms\Form01_Backup.resx">
+      <DependentUpon>Form01_Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_Frms\Form02_Restore.resx">
+      <DependentUpon>Form02_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_Frms\_01_Login.resx">
+      <DependentUpon>_01_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_Frms\_02_CompanyList.resx">
+      <DependentUpon>_02_CompanyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_Frms\_03_FinanceYearList.resx">
+      <DependentUpon>_03_FinanceYearList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_OperationInfo\Frm_35_packingNew.resx">
+      <DependentUpon>Frm_35_packingNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_OperationInfo\Frm_01_ReportPackiging.resx">
+      <DependentUpon>Frm_01_ReportPackiging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Frm_05_TypeCloth.resx">
+      <DependentUpon>Frm_05_TypeCloth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Frm_10_TypeColor.resx">
+      <DependentUpon>Frm_10_TypeColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_OperationInfo\Frm_20_ReciptClothRaw.resx">
+      <DependentUpon>Frm_20_ReciptClothRaw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_OperationInfo\Frm_25_OrderColor.resx">
+      <DependentUpon>Frm_25_OrderColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_OperationInfo\Frm_30_Production.resx">
+      <DependentUpon>Frm_30_Production.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_OperationInfo\Frm_55_ReciptPackaging2.resx">
+      <DependentUpon>Frm_55_ReciptPackaging2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Form01_PrintRecChq.resx">
+      <DependentUpon>Form01_PrintRecChq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Form02_ExportDocForReceive.resx">
+      <DependentUpon>Form02_ExportDocForReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Form03_BanksBox.resx">
+      <DependentUpon>Form03_BanksBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Form04_ExportDocForReceive.resx">
+      <DependentUpon>Form04_ExportDocForReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Form06_ExportDocumentForFirstValue.resx">
+      <DependentUpon>Form06_ExportDocumentForFirstValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Form07_ExportDocForPaidCash.resx">
+      <DependentUpon>Form07_ExportDocForPaidCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Form08_TotalDoc_Receive.resx">
+      <DependentUpon>Form08_TotalDoc_Receive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_006_Handcheckback.resx">
+      <DependentUpon>Frm_006_Handcheckback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_01_new_Recipt_Cheques.resx">
+      <DependentUpon>Frm_01_new_Recipt_Cheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_01_Recipt_Cheques.resx">
+      <DependentUpon>Frm_01_Recipt_Cheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_01_Recipt_Cheques_Group.resx">
+      <DependentUpon>Frm_01_Recipt_Cheques_Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_02_Transfer_Banck.resx">
+      <DependentUpon>Frm_02_Transfer_Banck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_03_Transfer_Person.resx">
+      <DependentUpon>Frm_03_Transfer_Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_04_Recipt_checks.resx">
+      <DependentUpon>Frm_04_Recipt_checks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_05_Return_checks.resx">
+      <DependentUpon>Frm_05_Return_checks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_06_Return_Expense.resx">
+      <DependentUpon>Frm_06_Return_Expense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_07_Refund_Check.resx">
+      <DependentUpon>Frm_07_Refund_Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_08_ViewReceivedChq.resx">
+      <DependentUpon>Frm_08_ViewReceivedChq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_09_Recipt_Money.resx">
+      <DependentUpon>Frm_09_Recipt_Money.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_10_PayCash.resx">
+      <DependentUpon>Frm_10_PayCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_11_View_Recipt_Money.resx">
+      <DependentUpon>Frm_11_View_Recipt_Money.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_12_View_PayCash.resx">
+      <DependentUpon>Frm_12_View_PayCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Frm_13_Rasgiri.resx">
+      <DependentUpon>Frm_13_Rasgiri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_03_Bank\Report\Frm_01_Report_Statuscheq.resx">
+      <DependentUpon>Frm_01_Report_Statuscheq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_04_Shop\Frm_002_StoreFaktor.resx">
+      <DependentUpon>Frm_002_StoreFaktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_04_Shop\Frm_003_FaktorKharid.resx">
+      <DependentUpon>Frm_003_FaktorKharid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_04_Shop\Frm_009_ExportDocInformation.resx">
+      <DependentUpon>Frm_009_ExportDocInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="data_PCLOR\BarcodeDataset.xsc">
+      <DependentUpon>BarcodeDataset.xsd</DependentUpon>
+    </None>
+    <None Include="data_PCLOR\BarcodeDataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BarcodeDataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="data_PCLOR\BarcodeDataset.xss">
+      <DependentUpon>BarcodeDataset.xsd</DependentUpon>
+    </None>
+    <None Include="data_PCLOR\DataSet_05_PCLOR.xsc">
+      <DependentUpon>DataSet_05_PCLOR.xsd</DependentUpon>
+    </None>
+    <None Include="data_PCLOR\DataSet_05_PCLOR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_05_PCLOR.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="data_PCLOR\DataSet_05_PCLOR.xss">
+      <DependentUpon>DataSet_05_PCLOR.xsd</DependentUpon>
+    </None>
+    <None Include="data_PCLOR\DataSet_10_PersonInfo.xsc">
+      <DependentUpon>DataSet_10_PersonInfo.xsd</DependentUpon>
+    </None>
+    <None Include="data_PCLOR\DataSet_10_PersonInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_10_PersonInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="data_PCLOR\DataSet_10_PersonInfo.xss">
+      <DependentUpon>DataSet_10_PersonInfo.xsd</DependentUpon>
+    </None>
+    <None Include="data_PCLOR\DataSet_15_Ware.xsc">
+      <DependentUpon>DataSet_15_Ware.xsd</DependentUpon>
+    </None>
+    <None Include="data_PCLOR\DataSet_15_Ware.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_15_Ware.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="data_PCLOR\DataSet_15_Ware.xss">
+      <DependentUpon>DataSet_15_Ware.xsd</DependentUpon>
+    </None>
+    <None Include="MarjooiSale\DataSet_01_Sale.xsc">
+      <DependentUpon>DataSet_01_Sale.xsd</DependentUpon>
+    </None>
+    <None Include="MarjooiSale\DataSet_01_Sale.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_01_Sale.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MarjooiSale\DataSet_01_Sale.xss">
+      <DependentUpon>DataSet_01_Sale.xsd</DependentUpon>
+    </None>
+    <None Include="Product\DataSet_05_Product.xsc">
+      <DependentUpon>DataSet_05_Product.xsd</DependentUpon>
+    </None>
+    <None Include="Product\DataSet_05_Product.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_05_Product.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Product\DataSet_05_Product.xss">
+      <DependentUpon>DataSet_05_Product.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet_001_Gozareshat.xsc">
+      <DependentUpon>DataSet_001_Gozareshat.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet_001_Gozareshat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_001_Gozareshat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet_001_Gozareshat.xss">
+      <DependentUpon>DataSet_001_Gozareshat.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet_01_Report.xsc">
+      <DependentUpon>DataSet_01_Report.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet_01_Report.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_01_Report.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet_01_Report.xss">
+      <DependentUpon>DataSet_01_Report.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet_AmaliyatAnbar..xsc">
+      <DependentUpon>DataSet_AmaliyatAnbar..xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet_AmaliyatAnbar..xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_AmaliyatAnbar..Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet_AmaliyatAnbar..xss">
+      <DependentUpon>DataSet_AmaliyatAnbar..xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet_EtelaatePaye.xsc">
+      <DependentUpon>DataSet_EtelaatePaye.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet_EtelaatePaye.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_EtelaatePaye.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet_EtelaatePaye.xss">
+      <DependentUpon>DataSet_EtelaatePaye.xsd</DependentUpon>
+    </None>
+    <None Include="_002_Sale\DataSet_01_Sale.xsc">
+      <DependentUpon>DataSet_01_Sale.xsd</DependentUpon>
+    </None>
+    <None Include="_002_Sale\DataSet_01_Sale.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_01_Sale1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_002_Sale\DataSet_01_Sale.xss">
+      <DependentUpon>DataSet_01_Sale.xsd</DependentUpon>
+    </None>
+    <None Include="_01_Frms\DataSet01_Content.xsc">
+      <DependentUpon>DataSet01_Content.xsd</DependentUpon>
+    </None>
+    <None Include="_01_Frms\DataSet01_Content.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet01_Content.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="_01_Frms\DataSet01_Content.xss">
+      <DependentUpon>DataSet01_Content.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_03_Bank\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_03_Bank\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="_03_Bank\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_03_Bank\DataSet_01_Cash.xsc">
+      <DependentUpon>DataSet_01_Cash.xsd</DependentUpon>
+    </None>
+    <None Include="_03_Bank\DataSet_01_Cash.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_01_Cash.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="_03_Bank\DataSet_01_Cash.xss">
+      <DependentUpon>DataSet_01_Cash.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1310469553_package_games_logic.ico" />
+    <None Include="Resources\me_bg.png" />
+    <None Include="Resources\me_bg1.png" />
+    <Content Include="sitemap.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,978 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <dt Ref="2" type="DataTableSource" isKey="true">
+        <Alias>dt</Alias>
+        <Columns isList="true" count="14">
+          <value>ID,System.String</value>
+          <value>TypeCloth,System.String</value>
+          <value>TypeColor,System.String</value>
+          <value>Number,System.String</value>
+          <value>Title,System.String</value>
+          <value>date,System.String</value>
+          <value>Time,System.String</value>
+          <value>NumberOrder,System.String</value>
+          <value>weight,System.String</value>
+          <value>Description,System.String</value>
+          <value>Meter,System.Int32</value>
+          <value>Barcode,System.String</value>
+          <value>DescriptionP,System.String</value>
+          <value>CodeCustomer,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>dt</Name>
+        <NameInSource>dt</NameInSource>
+      </dt>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="4">
+    <گلرنگ Ref="3" type="Page" isKey="true">
+      <Border>Right;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="15">
+        <BarCode1 Ref="4" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+          <Angle>Angle90</Angle>
+          <AutoScale>True</AutoScale>
+          <BackColor>Transparent</BackColor>
+          <BarCodeType Ref="5" type="Stimulsoft.Report.BarCodes.StiEAN128AutoBarCodeType" isKey="true" />
+          <ClientRectangle>48,0,13,40</ClientRectangle>
+          <Code>{dt.Barcode}</Code>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9,Regular,Point,False,0</Font>
+          <ForeColor>Black</ForeColor>
+          <GrowToHeight>True</GrowToHeight>
+          <Guid>fac9d6f84c5d423ca5807b984af1b44c</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Linked>True</Linked>
+          <MinSize>1,1</MinSize>
+          <Name>BarCode1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <VertAlignment>Center</VertAlignment>
+        </BarCode1>
+        <Text3 Ref="6" type="Text" isKey="true">
+          <Border>None;Black;2.5;Solid;False;4;Black</Border>
+          <Brush>ActiveCaptionText</Brush>
+          <ClientRectangle>0,28,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <Guid>47f9a8d4f4f946cda74629d0a0593a9d</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dt.TypeCloth}</Text>
+          <TextBrush>White</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text3>
+        <Text5 Ref="7" type="Text" isKey="true">
+          <Border>None;Black;1;Double;False;4;Black</Border>
+          <Brush>Black</Brush>
+          <ClientRectangle>0,8,34,8</ClientRectangle>
+          <Conditions isList="true" count="1">
+            <value>ColorScale,,Color2,Red,Yellow,Green,Auto,0,Auto,50,Auto,100</value>
+          </Conditions>
+          <Font>B Titr,18,Bold</Font>
+          <Guid>80a9158b5bc343629e00c9dadc546f73</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dt.weight}</Text>
+          <TextBrush>White</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text5>
+        <Text8 Ref="8" type="Text" isKey="true">
+          <Brush>EmptyBrush</Brush>
+          <ClientRectangle>32,6,14,10</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>e59aa9935fd249e1ab91fc50a727ab15</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text8</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>:       وزن</Text>
+          <TextBrush>White</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text8>
+        <Text9 Ref="9" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>31.5,16,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>089635e540e849418a9d68db2796bfce</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text9</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>:        کد</Text>
+          <TextBrush>White</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text9>
+        <Text22 Ref="10" type="Text" isKey="true">
+          <Border>None;Black;2.5;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,22,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <Guid>539448d7b33247b7bb0c67bd7408fa79</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text22</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dt.TypeColor}</Text>
+          <TextBrush>White</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text22>
+        <Text23 Ref="11" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,2,40,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,14,Bold</Font>
+          <Guid>7bd6515155024bd5a776371b7c5599ea</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text23</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dt.Title}</Text>
+          <TextBrush>White</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text23>
+        <Text29 Ref="12" type="Text" isKey="true">
+          <Border>None;Black;1;Double;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,16,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Titr,12,Bold</Font>
+          <Guid>e78010863e7649c096545e91fe2e495c</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text29</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dt.NumberOrder}</Text>
+          <TextBrush>White</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text29>
+        <Text49 Ref="13" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>31.5,22,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>56ae1c85f2924722896ec94ffee0218c</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text49</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>:      رنگ
+</Text>
+          <TextBrush>White</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text49>
+        <Text50 Ref="14" type="Text" isKey="true">
+          <Brush>Black</Brush>
+          <ClientRectangle>32,28,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>1ba9d737d5eb4903ba2b47ef7e8d668a</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text50</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>:نوع پارچه
+</Text>
+          <TextBrush>White</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text50>
+        <گلرنک Ref="15" type="Text" isKey="true">
+          <AutoWidth>True</AutoWidth>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,36,46,4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <Guid>4fcabbe2797d4f028b6d921e9ad1ca0d</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>گلرنک</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>قم - بلوار امین 09125518665
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </گلرنک>
+        <Text40 Ref="16" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>26,20,16,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,11</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text40</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dt.Meter}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text40>
+        <Text41 Ref="17" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12,20,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,11</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text41</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Meter</Text>
+          <TextBrush>Black</TextBrush>
+        </Text41>
+        <Text42 Ref="18" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>22,14,16,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,11</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text42</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dt.CodeCustomer}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text42>
+        <Text43 Ref="19" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>-8,14,30,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,11</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text43</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>CodeCustomer</Text>
+          <TextBrush>Black</TextBrush>
+        </Text43>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>c8579feed8f64d42983f5486ae3319f7</Guid>
+      <LargeHeight>True</LargeHeight>
+      <Margins>0,0,0,0</Margins>
+      <Name>گلرنگ</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>40</PageHeight>
+      <PageWidth>60</PageWidth>
+      <Report isRef="0" />
+      <UnlimitedBreakable>False</UnlimitedBreakable>
+      <Watermark Ref="20" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </گلرنگ>
+    <Page1 Ref="21" type="Page" isKey="true">
+      <Border>Right;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="11">
+        <BarCode4 Ref="22" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+          <Angle>Angle90</Angle>
+          <AutoScale>True</AutoScale>
+          <BackColor>Transparent</BackColor>
+          <BarCodeType Ref="23" type="Stimulsoft.Report.BarCodes.StiEAN128AutoBarCodeType" isKey="true" />
+          <ClientRectangle>46,0,13,40</ClientRectangle>
+          <Code>{dt.Barcode}</Code>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9,Regular,Point,False,0</Font>
+          <ForeColor>Black</ForeColor>
+          <GrowToHeight>True</GrowToHeight>
+          <Guid>fac9d6f84c5d423ca5807b984af1b44c</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Linked>True</Linked>
+          <MinSize>1,1</MinSize>
+          <Name>BarCode4</Name>
+          <Page isRef="21" />
+          <Parent isRef="21" />
+          <VertAlignment>Center</VertAlignment>
+        </BarCode4>
+        <Text30 Ref="24" type="Text" isKey="true">
+          <Border>None;Black;2.5;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,28,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <Guid>47f9a8d4f4f946cda74629d0a0593a9d</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text30</Name>
+          <Page isRef="21" />
+          <Parent isRef="21" />
+          <Text>{dt.TypeCloth}</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text30>
+        <Text31 Ref="25" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6,32,10</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Titr,18,Bold</Font>
+          <Guid>80a9158b5bc343629e00c9dadc546f73</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text31</Name>
+          <Page isRef="21" />
+          <Parent isRef="21" />
+          <Text>{dt.weight}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text31>
+        <Text32 Ref="26" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>32,6,14,10</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>e59aa9935fd249e1ab91fc50a727ab15</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text32</Name>
+          <Page isRef="21" />
+          <Parent isRef="21" />
+          <Text>:       وزن</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text32>
+        <Text33 Ref="27" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>31.5,16,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>089635e540e849418a9d68db2796bfce</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text33</Name>
+          <Page isRef="21" />
+          <Parent isRef="21" />
+          <Text>:        کد</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text33>
+        <Text34 Ref="28" type="Text" isKey="true">
+          <Border>None;Black;2.5;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,22,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <Guid>539448d7b33247b7bb0c67bd7408fa79</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text34</Name>
+          <Page isRef="21" />
+          <Parent isRef="21" />
+          <Text>{dt.TypeColor}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text34>
+        <Text35 Ref="29" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2,46,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,14,Bold</Font>
+          <Guid>7bd6515155024bd5a776371b7c5599ea</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text35</Name>
+          <Page isRef="21" />
+          <Parent isRef="21" />
+          <Text>{dt.Title}</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text35>
+        <Text36 Ref="30" type="Text" isKey="true">
+          <Border>None;Black;1;Double;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,16,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Titr,12,Bold</Font>
+          <Guid>e78010863e7649c096545e91fe2e495c</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text36</Name>
+          <Page isRef="21" />
+          <Parent isRef="21" />
+          <Text>{dt.NumberOrder}</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text36>
+        <Text37 Ref="31" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>31.5,22,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>56ae1c85f2924722896ec94ffee0218c</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text37</Name>
+          <Page isRef="21" />
+          <Parent isRef="21" />
+          <Text>:      رنگ
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text37>
+        <Text38 Ref="32" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>32,28,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>1ba9d737d5eb4903ba2b47ef7e8d668a</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text38</Name>
+          <Page isRef="21" />
+          <Parent isRef="21" />
+          <Text>:نوع پارچه
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text38>
+        <Text39 Ref="33" type="Text" isKey="true">
+          <AutoWidth>True</AutoWidth>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,36,46,4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <Guid>4fcabbe2797d4f028b6d921e9ad1ca0d</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text39</Name>
+          <Page isRef="21" />
+          <Parent isRef="21" />
+          <Text>قم - بلوار امین 09125518665
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text39>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>ec8c285f215a43d586d3be7302ccdc84</Guid>
+      <LargeHeight>True</LargeHeight>
+      <Margins>0,0,0,0</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>40</PageHeight>
+      <PageWidth>60</PageWidth>
+      <Report isRef="0" />
+      <UnlimitedBreakable>False</UnlimitedBreakable>
+      <Watermark Ref="34" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+    <وزن_کد Ref="35" type="Page" isKey="true">
+      <Border>Right;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="11">
+        <BarCode2 Ref="36" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+          <Angle>Angle90</Angle>
+          <AutoScale>True</AutoScale>
+          <BackColor>Transparent</BackColor>
+          <BarCodeType Ref="37" type="Stimulsoft.Report.BarCodes.StiEAN128AutoBarCodeType" isKey="true" />
+          <ClientRectangle>46,0,13,40</ClientRectangle>
+          <Code>{dt.Barcode}</Code>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9,Regular,Point,False,0</Font>
+          <ForeColor>Black</ForeColor>
+          <GrowToHeight>True</GrowToHeight>
+          <Guid>fac9d6f84c5d423ca5807b984af1b44c</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Linked>True</Linked>
+          <MinSize>1,1</MinSize>
+          <Name>BarCode2</Name>
+          <Page isRef="35" />
+          <Parent isRef="35" />
+          <VertAlignment>Center</VertAlignment>
+        </BarCode2>
+        <Text1 Ref="38" type="Text" isKey="true">
+          <Border>None;Black;2.5;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,28,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <Guid>47f9a8d4f4f946cda74629d0a0593a9d</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="35" />
+          <Parent isRef="35" />
+          <Text>{dt.TypeCloth}</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text1>
+        <Text2 Ref="39" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0,32,10</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Titr,18,Bold</Font>
+          <Guid>80a9158b5bc343629e00c9dadc546f73</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="35" />
+          <Parent isRef="35" />
+          <Text>{dt.weight}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text2>
+        <Text4 Ref="40" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>32,0,14,10</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>e59aa9935fd249e1ab91fc50a727ab15</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text4</Name>
+          <Page isRef="35" />
+          <Parent isRef="35" />
+          <Text>:       وزن</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text4>
+        <Text6 Ref="41" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>31.5,10,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>089635e540e849418a9d68db2796bfce</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text6</Name>
+          <Page isRef="35" />
+          <Parent isRef="35" />
+          <Text>:        کد</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text6>
+        <Text7 Ref="42" type="Text" isKey="true">
+          <Border>None;Black;2.5;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,22,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <Guid>539448d7b33247b7bb0c67bd7408fa79</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text7</Name>
+          <Page isRef="35" />
+          <Parent isRef="35" />
+          <Text>{dt.TypeColor}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text7>
+        <Text11 Ref="43" type="Text" isKey="true">
+          <Border>None;Black;1;Double;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Titr,12,Bold</Font>
+          <Guid>e78010863e7649c096545e91fe2e495c</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text11</Name>
+          <Page isRef="35" />
+          <Parent isRef="35" />
+          <Text>{dt.NumberOrder}</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text11>
+        <Text12 Ref="44" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>31.5,22,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>56ae1c85f2924722896ec94ffee0218c</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text12</Name>
+          <Page isRef="35" />
+          <Parent isRef="35" />
+          <Text>:      رنگ
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text12>
+        <Text13 Ref="45" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>32,28,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>1ba9d737d5eb4903ba2b47ef7e8d668a</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text13</Name>
+          <Page isRef="35" />
+          <Parent isRef="35" />
+          <Text>:نوع پارچه
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text13>
+        <Text10 Ref="46" type="Text" isKey="true">
+          <Border>None;Black;1;Double;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,16,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text10</Name>
+          <Page isRef="35" />
+          <Parent isRef="35" />
+          <Text>{dt.NumberOrder}</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text10>
+        <Text15 Ref="47" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>31.5,16,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>601b06d4527c4d91ac34eebc6d835737</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text15</Name>
+          <Page isRef="35" />
+          <Parent isRef="35" />
+          <Text>:  سفارش
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text15>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>181e640ff4b84fe4a1e5329f379d2a7a</Guid>
+      <LargeHeight>True</LargeHeight>
+      <Margins>0,0,0,0</Margins>
+      <Name>وزن-کد</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>40</PageHeight>
+      <PageWidth>60</PageWidth>
+      <Report isRef="0" />
+      <UnlimitedBreakable>False</UnlimitedBreakable>
+      <Watermark Ref="48" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </وزن_کد>
+    <متر_وزن Ref="49" type="Page" isKey="true">
+      <Border>Right;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="13">
+        <BarCode3 Ref="50" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+          <Angle>Angle90</Angle>
+          <AutoScale>True</AutoScale>
+          <BackColor>Transparent</BackColor>
+          <BarCodeType Ref="51" type="Stimulsoft.Report.BarCodes.StiEAN128AutoBarCodeType" isKey="true" />
+          <ClientRectangle>46,0,13,40</ClientRectangle>
+          <Code>{dt.Barcode}</Code>
+          <Conditions isList="true" count="0" />
+          <Font>Times New Roman,9,Regular,Point,False,0</Font>
+          <ForeColor>Black</ForeColor>
+          <GrowToHeight>True</GrowToHeight>
+          <Guid>fac9d6f84c5d423ca5807b984af1b44c</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Linked>True</Linked>
+          <MinSize>1,1</MinSize>
+          <Name>BarCode3</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <VertAlignment>Center</VertAlignment>
+        </BarCode3>
+        <Text14 Ref="52" type="Text" isKey="true">
+          <Border>None;Black;2.5;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,34,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <Guid>47f9a8d4f4f946cda74629d0a0593a9d</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text14</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>{dt.TypeCloth}</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text14>
+        <Text16 Ref="53" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Titr,16,Bold</Font>
+          <Guid>80a9158b5bc343629e00c9dadc546f73</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text16</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>{dt.weight}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text16>
+        <Text17 Ref="54" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>32,10,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>e59aa9935fd249e1ab91fc50a727ab15</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text17</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>:       وزن</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text17>
+        <Text18 Ref="55" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>31.5,16,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>089635e540e849418a9d68db2796bfce</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text18</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>:        کد</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text18>
+        <Text19 Ref="56" type="Text" isKey="true">
+          <Border>None;Black;2.5;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,28,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <Guid>539448d7b33247b7bb0c67bd7408fa79</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text19</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>{dt.TypeColor}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text19>
+        <Text20 Ref="57" type="Text" isKey="true">
+          <Border>None;Black;1;Double;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,16,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Titr,12,Bold</Font>
+          <Guid>e78010863e7649c096545e91fe2e495c</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text20</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>{dt.NumberOrder}</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text20>
+        <Text21 Ref="58" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>31.5,28,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>56ae1c85f2924722896ec94ffee0218c</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text21</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>:      رنگ
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text21>
+        <Text24 Ref="59" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>32,34,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>1ba9d737d5eb4903ba2b47ef7e8d668a</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text24</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>:نوع پارچه
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text24>
+        <Text25 Ref="60" type="Text" isKey="true">
+          <Border>None;Black;1;Double;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,22,32,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text25</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>{dt.NumberOrder}</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text25>
+        <Text26 Ref="61" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>31.5,22,14,6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>601b06d4527c4d91ac34eebc6d835737</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text26</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>:  سفارش
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text26>
+        <Text27 Ref="62" type="Text" isKey="true">
+          <Border>None;Black;1;Double;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0,32,10</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,18,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text27</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>{dt.Meter}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text27>
+        <Text28 Ref="63" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>32,0,14,10</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12</Font>
+          <Guid>3f226193c6fa493aa81c0976d05aadc0</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text28</Name>
+          <Page isRef="49" />
+          <Parent isRef="49" />
+          <Text>:      متراژ</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text28>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>9c7c885c5c384a188ea672af2951658f</Guid>
+      <LargeHeight>True</LargeHeight>
+      <Margins>0,0,0,0</Margins>
+      <Name>متر-وزن</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>40</PageHeight>
+      <PageWidth>60</PageWidth>
+      <Report isRef="0" />
+      <UnlimitedBreakable>False</UnlimitedBreakable>
+      <Watermark Ref="64" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </متر_وزن>
+  </Pages>
+  <PrinterSettings Ref="65" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>1/23/2020 11:01:03 AM</ReportChanged>
+  <ReportCreated>9/6/2019 11:35:50 AM</ReportCreated>
+  <ReportFile>Report.mrt</ReportFile>
+  <ReportGuid>6990e61f813d4f4f82948a6044a5dffe</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2013.1.1505</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

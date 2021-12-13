@@ -1,0 +1,1082 @@
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.csprojResolveAssemblyReference.cache
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Frm_Main.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_001_MarjooiSale.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_ViewFactorReturn.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_014_ResidDialog_Return.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_015_ExportDoc_Return.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_030_SaleSanadInfo.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Properties.Resources.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Form01_ReportForm.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_003_MojoodiMaghtaiTedadi.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_009_KardexTedadi.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_010_KardexRiyali.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_MaghtaeiTedadi.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt_A5.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend_A5.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Conflict.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Order.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Pack.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_StockRial.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_002_StoreFaktor.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_003_ViewFactorSale.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_004_UpdateBrand.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_005_RportSale.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_011_ResidInformationDialog.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_019_Sale_Signatures.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_030_SaleSanadInfo.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Form_25_SpecsTechnical.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_20_ColorDefinition.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_Type_WHRS.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_WHRS.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_35_Branchs.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_40_PersonInfo.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_45_FiSale.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Setting_15_Weighbridge.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form01_Backup.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form02_Restore.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._01_Frms._01_Login.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._01_Frms._02_CompanyList.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._01_Frms._03_FinanceYearList.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_50_SendPackaging2.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_35_packingNew.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.Frm_01_ReportPackiging.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_05_TypeCloth.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_10_TypeColor.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_20_ReciptClothRaw.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_25_OrderColor.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_30_Production.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_55_ReciptPackaging2.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form01_PrintRecChq.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form02_ExportDocForReceive.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form03_BanksBox.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form04_ExportDocForReceive.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form06_ExportDocumentForFirstValue.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form07_ExportDocForPaidCash.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form08_TotalDoc_Receive.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_006_Handcheckback.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_new_Recipt_Cheques.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques_Group.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_02_Transfer_Banck.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_03_Transfer_Person.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_04_Recipt_checks.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_05_Return_checks.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_06_Return_Expense.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_07_Refund_Check.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_08_ViewReceivedChq.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_09_Recipt_Money.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_10_PayCash.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_11_View_Recipt_Money.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_12_View_PayCash.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_13_Rasgiri.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Report_Statuscheq.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_002_StoreFaktor.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.csproj.GenerateResource.Cache
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.exe.licenses
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\bin\Debug\PCLOR.exe.config
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\bin\Debug\PCLOR.exe
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\bin\Debug\PCLOR.pdb
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.exe
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.pdb
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_003_FaktorKharid.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_009_ExportDocInformation.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_MarjooiSaleBarcod.resources
+F:\Projects\svn\PCOLOR\new14day\98-11-01 -asli\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Form33_ExportDocForReceipt.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\bin\Debug\PCLOR.exe.config
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.exe
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.pdb
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\bin\Debug\PCLOR.exe
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\bin\Debug\PCLOR.pdb
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csprojResolveAssemblyReference.cache
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Frm_Main.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Form33_ExportDocForReceipt.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_001_MarjooiSale.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_MarjooiSaleBarcod.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_ViewFactorReturn.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_014_ResidDialog_Return.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_015_ExportDoc_Return.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_030_SaleSanadInfo.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Properties.Resources.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Form01_ReportForm.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_003_MojoodiMaghtaiTedadi.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_009_KardexTedadi.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_010_KardexRiyali.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_MaghtaeiTedadi.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt_A5.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend_A5.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Conflict.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Order.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Pack.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_StockRial.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_002_StoreFaktor.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_003_ViewFactorSale.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_004_UpdateBrand.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_005_RportSale.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_011_ResidInformationDialog.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_019_Sale_Signatures.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_030_SaleSanadInfo.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Form_25_SpecsTechnical.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_20_ColorDefinition.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_Type_WHRS.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_WHRS.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_35_Branchs.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_40_PersonInfo.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_45_FiSale.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Setting_15_Weighbridge.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form01_Backup.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form02_Restore.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._01_Login.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._02_CompanyList.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._03_FinanceYearList.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_50_SendPackaging2.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_35_packingNew.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Frm_01_ReportPackiging.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_05_TypeCloth.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_10_TypeColor.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_20_ReciptClothRaw.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_25_OrderColor.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_30_Production.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_55_ReciptPackaging2.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form01_PrintRecChq.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form02_ExportDocForReceive.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form03_BanksBox.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form04_ExportDocForReceive.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form06_ExportDocumentForFirstValue.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form07_ExportDocForPaidCash.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form08_TotalDoc_Receive.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_006_Handcheckback.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_new_Recipt_Cheques.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques_Group.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_02_Transfer_Banck.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_03_Transfer_Person.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_04_Recipt_checks.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_05_Return_checks.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_06_Return_Expense.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_07_Refund_Check.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_08_ViewReceivedChq.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_09_Recipt_Money.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_10_PayCash.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_11_View_Recipt_Money.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_12_View_PayCash.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_13_Rasgiri.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Report_Statuscheq.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_002_StoreFaktor.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_003_FaktorKharid.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_009_ExportDocInformation.resources
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csproj.GenerateResource.Cache
+F:\Projects\svn\PCOLOR\new14day\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.exe.licenses
+F:\Projects\svn\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\PCLOR.exe.config
+F:\Projects\svn\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.exe
+F:\Projects\svn\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.pdb
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\PCLOR.pdb
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csprojResolveAssemblyReference.cache
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Frm_Main.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Form33_ExportDocForReceipt.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_001_MarjooiSale.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_MarjooiSaleBarcod.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_ViewFactorReturn.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_003_Product_Return.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_014_ResidDialog_Return.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_30_Production_Edite.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_SumSaleFi.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_05_Machines.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_105_Production.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_60_ReciptKnitting.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_015_ExportDoc_Return.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_030_SaleSanadInfo.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Properties.Resources.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Form01_ReportForm.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_003_MojoodiMaghtaiTedadi.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_009_KardexTedadi.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_010_KardexRiyali.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_MaghtaeiTedadi.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt_A5.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend_A5.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Conflict.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Order.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Pack.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_StockRial.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_002_StoreFaktor.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_003_ViewFactorSale.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_004_UpdateBrand.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_005_RportSale.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_011_ResidInformationDialog.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_019_Sale_Signatures.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_030_SaleSanadInfo.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Form_25_SpecsTechnical.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_20_ColorDefinition.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_Type_WHRS.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_WHRS.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_35_Branchs.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_40_PersonInfo.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_45_FiSale.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Setting_15_Weighbridge.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form01_Backup.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form02_Restore.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._01_Login.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._02_CompanyList.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._03_FinanceYearList.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_50_SendPackaging2.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_35_packingNew.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Frm_01_ReportPackiging.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_05_TypeCloth.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_10_TypeColor.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_20_ReciptClothRaw.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_25_OrderColor.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_30_Production.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_55_ReciptPackaging2.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form01_PrintRecChq.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form02_ExportDocForReceive.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form03_BanksBox.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form04_ExportDocForReceive.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form06_ExportDocumentForFirstValue.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form07_ExportDocForPaidCash.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form08_TotalDoc_Receive.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_006_Handcheckback.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_new_Recipt_Cheques.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques_Group.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_02_Transfer_Banck.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_03_Transfer_Person.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_04_Recipt_checks.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_05_Return_checks.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_06_Return_Expense.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_07_Refund_Check.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_08_ViewReceivedChq.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_09_Recipt_Money.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_10_PayCash.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_11_View_Recipt_Money.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_12_View_PayCash.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_13_Rasgiri.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Report_Statuscheq.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_002_StoreFaktor.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_003_FaktorKharid.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_009_ExportDocInformation.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csproj.GenerateResource.Cache
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.pdb
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_BarcodeDetail.resources
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\PCLOR.exe.config
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\PCLOR.exe
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.exe.licenses
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.exe
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.ButtonBar.v4.dll
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.CalendarCombo.v4.dll
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.ExplorerBar.v4.dll
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.GridEX.v4.dll
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.Ribbon.v4.dll
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.Schedule.v4.dll
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.TimeLine.v4.dll
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.UI.v4.dll
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.ButtonBar.v4.xml
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.CalendarCombo.v4.xml
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.ExplorerBar.v4.xml
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.GridEX.v4.xml
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.Ribbon.v4.xml
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.Schedule.v4.xml
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.TimeLine.v4.xml
+F:\Projects\svn\Svn-Project\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Janus.Windows.UI.v4.xml
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\PCLOR.exe.config
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\PCLOR.exe
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\PCLOR.pdb
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.CrystalReports.Design.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.Shared.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\DevComponents.DotNetBar2.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.Smo.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.Web.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\FlashControlV71.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.Diagnostics.STrace.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\ADODB.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\stdole.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\ShockwaveFlashObjects.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\DevComponents.Instrumentation.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\DevComponents.DotNetBar2.xml
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\bin\Debug\DevComponents.Instrumentation.xml
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csprojAssemblyReference.cache
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Frm_Main.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Form33_ExportDocForReceipt.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_001_MarjooiSale.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_MarjooiSaleBarcod.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_ViewFactorReturn.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_003_Product_Return.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_014_ResidDialog_Return.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_30_Production_Edite.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_BarcodeDetail.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_SumSaleFi.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_05_Machines.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_105_Production.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_60_ReciptKnitting.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_015_ExportDoc_Return.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_030_SaleSanadInfo.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Properties.Resources.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Form01_ReportForm.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_003_MojoodiMaghtaiTedadi.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_009_KardexTedadi.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_010_KardexRiyali.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_MaghtaeiTedadi.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt_A5.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend_A5.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Conflict.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Order.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Pack.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_StockRial.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_002_StoreFaktor.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_003_ViewFactorSale.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_004_UpdateBrand.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_005_RportSale.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_011_ResidInformationDialog.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_019_Sale_Signatures.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_030_SaleSanadInfo.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Form_25_SpecsTechnical.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_20_ColorDefinition.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_Type_WHRS.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_WHRS.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_35_Branchs.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_40_PersonInfo.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_45_FiSale.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Setting_15_Weighbridge.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form01_Backup.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form02_Restore.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._01_Login.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._02_CompanyList.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._03_FinanceYearList.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_50_SendPackaging2.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_35_packingNew.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Frm_01_ReportPackiging.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_05_TypeCloth.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_10_TypeColor.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_20_ReciptClothRaw.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_25_OrderColor.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_30_Production.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_55_ReciptPackaging2.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form01_PrintRecChq.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form02_ExportDocForReceive.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form03_BanksBox.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form04_ExportDocForReceive.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form06_ExportDocumentForFirstValue.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form07_ExportDocForPaidCash.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form08_TotalDoc_Receive.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_006_Handcheckback.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_new_Recipt_Cheques.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques_Group.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_02_Transfer_Banck.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_03_Transfer_Person.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_04_Recipt_checks.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_05_Return_checks.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_06_Return_Expense.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_07_Refund_Check.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_08_ViewReceivedChq.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_09_Recipt_Money.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_10_PayCash.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_11_View_Recipt_Money.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_12_View_PayCash.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_13_Rasgiri.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Report_Statuscheq.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_002_StoreFaktor.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_003_FaktorKharid.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_009_ExportDocInformation.resources
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csproj.GenerateResource.cache
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.exe.licenses
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csproj.CoreCompileInputs.cache
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.exe
+E:\PCOLOR\PCOLOR\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.pdb
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csprojAssemblyReference.cache
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Frm_Main.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Form33_ExportDocForReceipt.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_001_MarjooiSale.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_MarjooiSaleBarcod.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_ViewFactorReturn.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_003_Product_Return.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_014_ResidDialog_Return.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_30_Production_Edite.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_005_SelectMachine.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_010_ProgramMachine.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_015_Product.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_025_ReportDeviceFailure.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_020_shift.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_030_OrderColor.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_BarcodeDetail.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_SumSaleFi.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_50_TypeCotton.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_05_Machines.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_105_Production.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_60_ReciptKnitting.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_015_ExportDoc_Return.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_030_SaleSanadInfo.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Properties.Resources.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Form01_ReportForm.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_003_MojoodiMaghtaiTedadi.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_009_KardexTedadi.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_010_KardexRiyali.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_MaghtaeiTedadi.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt_A5.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend_A5.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Conflict.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Order.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Pack.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_StockRial.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_002_StoreFaktor.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_003_ViewFactorSale.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_004_UpdateBrand.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_005_RportSale.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_011_ResidInformationDialog.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_019_Sale_Signatures.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_030_SaleSanadInfo.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Form_25_SpecsTechnical.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_20_ColorDefinition.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_Type_WHRS.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_WHRS.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_35_Branchs.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_40_PersonInfo.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_45_FiSale.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Setting_15_Weighbridge.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form01_Backup.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form02_Restore.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._01_Login.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._02_CompanyList.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_Frms._03_FinanceYearList.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_50_SendPackaging2.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_35_packingNew.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.Frm_01_ReportPackiging.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_05_TypeCloth.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_10_TypeColor.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_20_ReciptClothRaw.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_25_OrderColor.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_30_Production.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_55_ReciptPackaging2.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form01_PrintRecChq.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form02_ExportDocForReceive.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form03_BanksBox.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form04_ExportDocForReceive.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form06_ExportDocumentForFirstValue.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form07_ExportDocForPaidCash.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form08_TotalDoc_Receive.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_006_Handcheckback.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_new_Recipt_Cheques.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques_Group.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_02_Transfer_Banck.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_03_Transfer_Person.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_04_Recipt_checks.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_05_Return_checks.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_06_Return_Expense.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_07_Refund_Check.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_08_ViewReceivedChq.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_09_Recipt_Money.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_10_PayCash.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_11_View_Recipt_Money.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_12_View_PayCash.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_13_Rasgiri.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Report_Statuscheq.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_002_StoreFaktor.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_003_FaktorKharid.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_009_ExportDocInformation.resources
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csproj.GenerateResource.cache
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.exe.licenses
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csproj.CoreCompileInputs.cache
+G:\PCOLOR\PCLOR\bin\Debug\PCLOR.exe.config
+G:\PCOLOR\PCLOR\bin\Debug\PCLOR.exe
+G:\PCOLOR\PCLOR\bin\Debug\PCLOR.pdb
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.CrystalReports.Design.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportSource.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.Shared.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.Windows.Forms.dll
+G:\PCOLOR\PCLOR\bin\Debug\DevComponents.DotNetBar2.dll
+G:\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.Smo.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.Web.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+G:\PCOLOR\PCLOR\bin\Debug\FlashControlV71.dll
+G:\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+G:\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+G:\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+G:\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+G:\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.Diagnostics.STrace.dll
+G:\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+G:\PCOLOR\PCLOR\bin\Debug\ADODB.dll
+G:\PCOLOR\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+G:\PCOLOR\PCLOR\bin\Debug\stdole.dll
+G:\PCOLOR\PCLOR\bin\Debug\ShockwaveFlashObjects.dll
+G:\PCOLOR\PCLOR\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+G:\PCOLOR\PCLOR\bin\Debug\DevComponents.DotNetBar2.xml
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.exe
+G:\PCOLOR\PCLOR\obj\x86\Debug\PCLOR.pdb
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Frm_Main.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Form33_ExportDocForReceipt.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_001_MarjooiSale.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_MarjooiSaleBarcod.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_ViewFactorReturn.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_003_Product_Return.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_014_ResidDialog_Return.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_30_Production_Edite.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_005_SelectMachine.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_010_ProgramMachine.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_015_Product.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_025_ReportDeviceFailure.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_020_shift.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_030_OrderColor.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_BarcodeDetail.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_SumSaleFi.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_50_TypeCotton.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_05_Machines.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_105_Production.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_60_ReciptKnitting.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_015_ExportDoc_Return.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_030_SaleSanadInfo.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Properties.Resources.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Form01_ReportForm.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_003_MojoodiMaghtaiTedadi.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_009_KardexTedadi.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_010_KardexRiyali.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_MaghtaeiTedadi.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt_A5.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend_A5.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Conflict.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Order.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Pack.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_StockRial.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_002_StoreFaktor.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_003_ViewFactorSale.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_004_UpdateBrand.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_005_RportSale.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_011_ResidInformationDialog.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_019_Sale_Signatures.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_030_SaleSanadInfo.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Form_25_SpecsTechnical.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_20_ColorDefinition.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_Type_WHRS.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_WHRS.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_35_Branchs.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_40_PersonInfo.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_45_FiSale.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Setting_15_Weighbridge.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form01_Backup.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form02_Restore.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._01_Login.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._02_CompanyList.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._03_FinanceYearList.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_50_SendPackaging2.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_35_packingNew.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Frm_01_ReportPackiging.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_05_TypeCloth.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_10_TypeColor.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_20_ReciptClothRaw.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_25_OrderColor.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_30_Production.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_55_ReciptPackaging2.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form01_PrintRecChq.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form02_ExportDocForReceive.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form03_BanksBox.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form04_ExportDocForReceive.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form06_ExportDocumentForFirstValue.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form07_ExportDocForPaidCash.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form08_TotalDoc_Receive.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_006_Handcheckback.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_new_Recipt_Cheques.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques_Group.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_02_Transfer_Banck.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_03_Transfer_Person.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_04_Recipt_checks.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_05_Return_checks.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_06_Return_Expense.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_07_Refund_Check.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_08_ViewReceivedChq.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_09_Recipt_Money.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_10_PayCash.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_11_View_Recipt_Money.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_12_View_PayCash.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_13_Rasgiri.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Report_Statuscheq.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_002_StoreFaktor.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_003_FaktorKharid.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_009_ExportDocInformation.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.GenerateResource.Cache
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\PCLOR.pdb
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.ButtonBar.v4.dll
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.CalendarCombo.v4.dll
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.ExplorerBar.v4.dll
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.GridEX.v4.dll
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Ribbon.v4.dll
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Schedule.v4.dll
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.TimeLine.v4.dll
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.UI.v4.dll
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.ButtonBar.v4.xml
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.CalendarCombo.v4.xml
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.ExplorerBar.v4.xml
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.GridEX.v4.xml
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Ribbon.v4.xml
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Schedule.v4.xml
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.TimeLine.v4.xml
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.UI.v4.xml
+E:\PCOLOR-New\PCLOR\bin\Debug\PCLOR.pdb
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.CrystalReports.Design.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.Data.AdoDotNetInterop.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.Shared.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\FlashControlV71.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Smo.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.Web.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\ShockwaveFlashObjects.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Diagnostics.STrace.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\ADODB.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\stdole.dll
+E:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csprojAssemblyReference.cache
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Frm_Main.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Form33_ExportDocForReceipt.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_001_MarjooiSale.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_MarjooiSaleBarcod.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_ViewFactorReturn.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_003_Product_Return.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_014_ResidDialog_Return.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_30_Production_Edite.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_005_SelectMachine.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_010_ProgramMachine.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_015_Product.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_025_ReportDeviceFailure.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_020_shift.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_030_OrderColor.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_BarcodeDetail.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_SumSaleFi.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_50_TypeCotton.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_05_Machines.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_105_Production.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_60_ReciptKnitting.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_015_ExportDoc_Return.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_030_SaleSanadInfo.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Properties.Resources.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Form01_ReportForm.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_003_MojoodiMaghtaiTedadi.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_009_KardexTedadi.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_010_KardexRiyali.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_MaghtaeiTedadi.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt_A5.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend_A5.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Conflict.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Order.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Pack.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_StockRial.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_002_StoreFaktor.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_003_ViewFactorSale.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_004_UpdateBrand.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_005_RportSale.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_011_ResidInformationDialog.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_019_Sale_Signatures.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_030_SaleSanadInfo.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Form_25_SpecsTechnical.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_20_ColorDefinition.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_Type_WHRS.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_WHRS.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_35_Branchs.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_40_PersonInfo.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_45_FiSale.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Setting_15_Weighbridge.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form01_Backup.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form02_Restore.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._01_Login.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._02_CompanyList.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._03_FinanceYearList.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_50_SendPackaging2.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_35_packingNew.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Frm_01_ReportPackiging.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_05_TypeCloth.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_10_TypeColor.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_20_ReciptClothRaw.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_25_OrderColor.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_30_Production.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_55_ReciptPackaging2.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form01_PrintRecChq.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form02_ExportDocForReceive.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form03_BanksBox.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form04_ExportDocForReceive.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form06_ExportDocumentForFirstValue.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form07_ExportDocForPaidCash.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form08_TotalDoc_Receive.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_006_Handcheckback.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_new_Recipt_Cheques.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques_Group.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_02_Transfer_Banck.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_03_Transfer_Person.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_04_Recipt_checks.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_05_Return_checks.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_06_Return_Expense.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_07_Refund_Check.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_08_ViewReceivedChq.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_09_Recipt_Money.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_10_PayCash.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_11_View_Recipt_Money.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_12_View_PayCash.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_13_Rasgiri.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Report_Statuscheq.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_002_StoreFaktor.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_003_FaktorKharid.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_009_ExportDocInformation.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.GenerateResource.cache
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CoreCompileInputs.cache
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Form1.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_14_TransferCheq.resources
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe.config
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe.licenses
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
+F:\Projects\AzureProject\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csprojResolveAssemblyReference.cache
+E:\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe.config
+E:\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Form1.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_14_TransferCheq.resources
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe.licenses
+E:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Frm_Main.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Form33_ExportDocForReceipt.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_001_MarjooiSale.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_MarjooiSaleBarcod.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_ViewFactorReturn.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_003_Product_Return.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_014_ResidDialog_Return.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_30_Production_Edite.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Form1.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_005_SelectMachine.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_010_ProgramMachine.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_015_Product.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_025_ReportDeviceFailure.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_020_shift.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_030_OrderColor.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_135_RFID.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_BarcodeDetail.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_SumSaleFi.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_50_TypeCotton.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_05_Machines.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_105_Production.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_60_ReciptKnitting.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_14_TransferCheq.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_015_ExportDoc_Return.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_030_SaleSanadInfo.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Properties.Resources.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Form01_ReportForm.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_003_MojoodiMaghtaiTedadi.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_009_KardexTedadi.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_010_KardexRiyali.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_MaghtaeiTedadi.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt_A5.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend_A5.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Conflict.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Order.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Pack.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_StockRial.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_002_StoreFaktor.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_003_ViewFactorSale.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_004_UpdateBrand.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_005_RportSale.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_011_ResidInformationDialog.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_019_Sale_Signatures.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_030_SaleSanadInfo.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Form_25_SpecsTechnical.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_20_ColorDefinition.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_Type_WHRS.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_WHRS.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_35_Branchs.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_40_PersonInfo.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_45_FiSale.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Setting_15_Weighbridge.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form01_Backup.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form02_Restore.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._01_Login.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._02_CompanyList.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._03_FinanceYearList.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_50_SendPackaging2.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_35_packingNew.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Frm_01_ReportPackiging.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_05_TypeCloth.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_10_TypeColor.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_20_ReciptClothRaw.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_25_OrderColor.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_30_Production.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_55_ReciptPackaging2.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form01_PrintRecChq.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form02_ExportDocForReceive.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form03_BanksBox.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form04_ExportDocForReceive.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form06_ExportDocumentForFirstValue.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form07_ExportDocForPaidCash.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form08_TotalDoc_Receive.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_006_Handcheckback.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_new_Recipt_Cheques.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques_Group.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_02_Transfer_Banck.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_03_Transfer_Person.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_04_Recipt_checks.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_05_Return_checks.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_06_Return_Expense.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_07_Refund_Check.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_08_ViewReceivedChq.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_09_Recipt_Money.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_10_PayCash.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_11_View_Recipt_Money.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_12_View_PayCash.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_13_Rasgiri.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Report_Statuscheq.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_002_StoreFaktor.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_003_FaktorKharid.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_009_ExportDocInformation.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.GenerateResource.cache
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CoreCompileInputs.cache
+G:\PCOLOR-New\PCLOR\bin\Debug\PCLOR.pdb
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.CrystalReports.Design.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.Data.AdoDotNetInterop.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportSource.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.Shared.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.Windows.Forms.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\FlashControlV71.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Smo.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.Web.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\ShockwaveFlashObjects.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Diagnostics.STrace.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\ADODB.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\stdole.dll
+G:\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_140_Report_TransferBranch.resources
+G:\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe.config
+G:\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe.licenses
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form4.resources
+G:\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csprojAssemblyReference.cache
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe.config
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\PCLOR.pdb
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Smo.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.Web.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\ShockwaveFlashObjects.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Dmf.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\ADODB.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\bin\Debug\stdole.dll
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csprojAssemblyReference.cache
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form4.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Frm_Main.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Form33_ExportDocForReceipt.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_001_MarjooiSale.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_MarjooiSaleBarcod.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_002_ViewFactorReturn.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_003_Product_Return.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_014_ResidDialog_Return.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_30_Production_Edite.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Form1.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_005_SelectMachine.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_010_ProgramMachine.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_015_Product.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_025_ReportDeviceFailure.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_020_shift.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_030_OrderColor.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Product.Frm_135_RFID.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_BarcodeDetail.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Rpt_SumSaleFi.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_50_TypeCotton.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_05_Machines.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_105_Production.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_50_SendPackaging2.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_60_ReciptKnitting.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_140_Report_TransferBranch.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_14_TransferCheq.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_015_ExportDoc_Return.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_030_SaleSanadInfo.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Properties.Resources.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Form01_ReportForm.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_003_MojoodiMaghtaiTedadi.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_009_KardexTedadi.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_010_KardexRiyali.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_MaghtaeiTedadi.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodeRecipt_A5.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_BarcodSend_A5.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Conflict.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Order.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_Report_Pack.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Report.Frm_StockRial.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_002_StoreFaktor.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_003_ViewFactorSale.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_004_UpdateBrand.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_005_RportSale.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_011_ResidInformationDialog.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_019_Sale_Signatures.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._002_Sale.Frm_030_SaleSanadInfo.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Form_25_SpecsTechnical.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_20_ColorDefinition.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_Type_WHRS.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_30_WHRS.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_35_Branchs.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_40_PersonInfo.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_45_FiSale.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Setting_15_Weighbridge.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form01_Backup.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms.Form02_Restore.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._01_Login.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._02_CompanyList.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_Frms._03_FinanceYearList.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_35_packingNew.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Frm_01_ReportPackiging.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_05_TypeCloth.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_10_TypeColor.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_20_ReciptClothRaw.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_25_OrderColor.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_30_Production.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_55_ReciptPackaging2.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form01_PrintRecChq.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form02_ExportDocForReceive.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form03_BanksBox.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form04_ExportDocForReceive.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form06_ExportDocumentForFirstValue.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form07_ExportDocForPaidCash.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Form08_TotalDoc_Receive.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_006_Handcheckback.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_new_Recipt_Cheques.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Recipt_Cheques_Group.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_02_Transfer_Banck.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_03_Transfer_Person.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_04_Recipt_checks.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_05_Return_checks.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_06_Return_Expense.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_07_Refund_Check.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_08_ViewReceivedChq.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_09_Recipt_Money.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_10_PayCash.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_11_View_Recipt_Money.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_12_View_PayCash.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_13_Rasgiri.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_01_Report_Statuscheq.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_002_StoreFaktor.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_003_FaktorKharid.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_009_ExportDocInformation.resources
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.GenerateResource.cache
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe.licenses
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CoreCompileInputs.cache
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
+G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb

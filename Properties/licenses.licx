@@ -1,0 +1,14 @@
+Janus.Windows.UI.Tab.UITab, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.EditControls.UIGroupBox, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.UI.Dock.UIPanelManager, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.EditControls.UIButton, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.GridEX.EditControls.NumericEditBox, Janus.Windows.GridEX.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.GridEX.EditControls.EditBox, Janus.Windows.GridEX.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.EditControls.UICheckBox, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.GridEX.GridEX, Janus.Windows.GridEX.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.GridEX.EditControls.MaskedEditBox, Janus.Windows.GridEX.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.ExplorerBar.ExplorerBar, Janus.Windows.ExplorerBar.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.GridEX.EditControls.CheckedComboBox, Janus.Windows.GridEX.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.EditControls.UIRadioButton, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.EditControls.UIComboBox, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf
+Janus.Windows.GridEX.EditControls.MultiColumnCombo, Janus.Windows.GridEX.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf

@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="label2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label5.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label4.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label9.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label10.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label6.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label7.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label8.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="column04Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="column03Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label11.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label15.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label12.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label14.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label13.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="VisualStyleManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>691, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bt_Del.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA64AAAOuAFqQfVbAAABb0lE
+        QVQ4T7WQTSjDYRzHd1XeSu3iglo5IJO8hGQypLHIhMjMJAcOi4R2cXAg5UIOuEgOJCXlROI0b/Pamlp/
+        LVLaBf+4PB9jqLW/seJ7eep5vt/P7/v8VH8iXCfQbQTHDh9XkYmVeURnFcKsh631sBC8HliaCfawtgC9
+        JkS7HtFRAXMTipC3hsJcBiM9oe+cOgKQumxEYwHYmoJMYsiKMOXCpD1sQxWL04jK1HcQw1Zwn8FYfwDq
+        Pz9s4YXHBc3FgS8ZsxD1edDX8rvwp9jf9VfOQxjSoUYbYfhGgsZCyElA1sbzoI2F2uxf1r+5BlM+FCXi
+        sxjg4uh9uXdpfsjy7A8LvL+DVh2PJUm4S9Px7W1/BRi14dTEIJ8cKEN4eYZBC+iSOU5T49tYDTHelmcg
+        tVUje69DIexuIueqcaZEIXU1gPykOGlHE4fsdCgApkaQUqNx6zNBulKu6Zds74bzQwXApRPGB+Bw79vw
+        P0ilegWKIwMchCbSyQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bt_Save.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIySURBVDhPrZLfS5NRGMfff6H7boIuuq2pMZyL1eAt11CW
+        DcOKsB9vpFmaLtNExco0av6CbIVLJ61Wk3BSkT/AFCkRZSpZmrmiJQ41xSaCwdfznL15XEUX0Reem5f3
+        8znnec4j/Zc8fxYGla91CS3eRTx0z6OpMYS7jmnU1X6B/VYA18snUVoyjsKCt8jLHcH5c36ouCQR2NUJ
+        1Nas4G9ZXlmFKbULh1Kf8lJxSfI+WeCCyopv6q+/h+DQ/DJ2WV5Ao1FgPegRAveDOS4oLfmq/h6dn/DH
+        4AJizD4UXJrCAUuzEDgbZrjgou2DiohshIcnQtgme5GTPYbkJKcQ1N8OckHW2REVi+RXuM8fxGaDG4oy
+        ALPZIQQ11Z+5QDk1oKJ/hjv7P2FTfCMOH3mFxMQ6IbhROYWOdrCnBI4dfwPr0V4+bRoY9UzXppMjcDdS
+        rC8hy3YhuFI2gTYf2A4Aza4f7N2/o/zaLB8qDYx6zszwr8P7k1thNFYIweXCMXgeAfedq2xxwjClZUeV
+        Jd2GtDNFETiJwfs8MBjKhMCWN8pgoLoqzE8miH1GjE7G4PsZjE7OQsm9ij2mFg7rdrug1xcJAa2l4w7W
+        r00Cgk/n38S7wBwC04u4UGxHrMHF4CbEJtyDLj5fCDIzhljfSxzeavRgyw4Zj9t64GvvQ0d3P3pfD2Kv
+        2QqNvgFxDN6urYdWmyMElJMnevh60obRktA701PRtGlg1DOdSkXwzrisaMG/RZLWAE60OMW5fNhvAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="bt_New.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAChUlEQVQ4T6WT/UtTURzG/Vv0lwIhKTEL
+        BTWlBAtlZbNNVHSaLudsis52N5fOuc0XMp0bvlTUhm6jkW7TOR2+YCZOLV2kXocSbRRBUBv++nTPhk5N
+        guiB58D9fs/nufece04MgP/yHwWNqy6u3VlLtToEdPN4VVDypiLY8LqUFpmLKcEIN+70/BMPGpeIpZys
+        Dbxa68VKYAHe7+tY+7aMSZ8VMmc1Kg3sAO/FbdZx5hQsDLl2rdj/tYuZLw4Y6AE839bCumfA4tdZqOfF
+        KBrODXEGco5CwoN6ShTLwP6JHRN2f25haKsHT1fb0eVphdarQZ9Xja6NFkzsW0E5+cjX3fDn9WbGHgUw
+        sLR/SYFPPzaYN/ahd1MN1TsZ04pIsSqGZIEP6VIN7HsW3B3OQs6TNCnTigS02Ktph8/CfKoRHStytC1L
+        IJ4RhGGiKgsHDdPFEE1xof+gQc9iM653pdBMKxIgHas8cH92oP+jhoGbwtBZEk4WQDpXCZN3CBma5AOm
+        FAlosvIOxn2jUK9TkHvqw5PPEgmg3BUweweR2p4YDai3lNA6jxraTRWa3vIhnCsFz3wnDBERkPihk4N+
+        jwKd7ke4okiILkE4Wii9b2bB5jNBPFeGWndReM2HIrDAzkbdBBe2HSOudScj8XF8dBP5xoLY8pf5fspZ
+        hTF65GjDCFhjJyYwB+PbBjww3SOwP0F2PvobiUue5bEKB2+GGm1lsDMhOo8S1HQ5JFNl0K20wcbAfBMb
+        ifL4EAOfPEiHZuuzWSxtViBXn47ueQrG91oY17VQuRuR0ZlE4MBxmPhEAPGtnvS47O5UKrPjKp2mSgqm
+        KC8GL7deoC/J46kE2bm/X6Z/N2J+A0FGyx8pOKmLAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bt_DelDoc.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEgASAIelAP9HR8Obm/81Nf9ubv9CQv9gYP99ff+iov8kJOrq6v9NTf9kZP+RkXUHB52Ojqcj
+        I+UvL98ZGa4AAM2Hh/9dXf00NPhCQqsEBNPQ0PxaWv9bW9MPD/z6+soREfv7+/9oaMOBgf+8vNgLC8Od
+        ncqGhvNDQ/w5Od/b230HB56Pj/+SkvUxMf2Rkf+kpP9nZ/8mJukSEtXR0fxtbezr6/+FhXswMP8xMf+j
+        o/Pz87WmpvDw8PhgYP4oKHI3N51hYf+Pj6tbW/xKSvlJSaUoKNOMjMleXtcaGv9jY8wYGNvY2NAVFfXz
+        897c3LCamv9XV/9+fv90dPVRUcW/v6iCgv91df9cXNHOzucvL9DOzu/q6v9BQf98fPZWVuo0NMV4eKKO
+        jtokJP9fX78rK/++vt4mJvlbW80aGvY2Nv8vL9vT04UKCvRXV8OSkv9hYft2dtiGhtFQUKBHR+B+fqMy
+        MuXk5N9tbbMCAt3U1PdKSvx6eqIKCuEmJvhTU+jn580gIPVHR+1GRqYmJv9TU+jg4NsZGeIvL6mXl55e
+        XtvU1MympppISP+5udbV1f+1tf2JifSkpKk6Ot94eKdtba2WlptPT6Jra/9RUf2YmHMvL8pTU/9vb+hf
+        X+aUlNLOztLQ0M6trfuxsa4CAqZCQsiSku7q6v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        ACH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAClACwAAAAAEgASAAAI8ABLCRxIsKDBgwgFkiIB6k2agiMe
+        cfpEkAiLEI3kIBoY4NKiMZtODJTkh8aNA5HulArgqMWBHXqsDMzRAAkVBgzqgMij4keUCz0SDPTgAIUS
+        F0+2QDFgAE8oTBgMplCzQcOAAZos2KmBBeEXM04WLPggZAgjhEu8CCrQJkwBCoASHcxS5IUAACXIBNEi
+        YMWogoPgIEBD4E8HCWAyWCJwZgKHgZkQ2FDAxYgiQw8gyKgCwASbgWJ4KChDiBKdUlICXXFzpAKQgXFg
+        8IlwSKjATnO6rBExZWAMSIUq4SjIRNQeHzMIemqi42CSSX0SSi8VEAA7
+</value>
+  </data>
+  <data name="mnu_DelDraft.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAA+pJREFUSEu1
+        lO9PWlcYx8nWZaudW5PZmJh2C4nRWsUfE6ziLyooFuQ3KDZbO9u6jWXZCDWZUlDrXm3rfrzb1nV/iP+B
+        8saXFqjjcr2/gLXEmLR9UfzuuVdEriN9s+xJPuHynHM/5znPPTkaAP8LNZPVMKc1Rva0JsjWaUJs3WtR
+        9sypCPPuW9pac6upmZTZrdPY2LrXN7j3GyEO6lEIegk/pNF+cM3nwb53ZpNreCdMilO13v9XgiprYuvf
+        SPAXtSh+E8H+g1+x/4fMb8Tv2H9I/PkAxdgihN4O7J4/t15oaKg/6VH9KTRo6rNn39zK+5zILy5AinyF
+        vfvfYe9H4qfviR+w9zPxy33k41H8vRpD4fosdrVNW2zrhaZq17GYtsSee3s9ZzVBmJ/Do9kgsmtryEz7
+        UFy9S8RQvBdHcS0O7vYcHoc+R/L6xxC/DCHvd4Jr1SZqirnGs2FBr4Nw4yM8mplG6flzSgPZb9fwl8OO
+        J3e+xtOFMHavzSD92ac4ePkSpRcvkKQCxNA8xHETdnUttiNfRUy9SuQDLnAeB7IrK5Q6juzqCnasFrA0
+        lp6/DZD0KLL3VsHRYoVbN6jnug1KHYuZDxq1XEcL8tMe5OnrPx7qB0uy6sjGY0jfuqmSsiTdsZhQmP+E
+        mINwZQj8gMFIQ4diruVChO9qg2QdgzQ1AclhRUrfA4ZkqiiVyg+00HIc6cF+5Gb9yF0LIBf0QbSMgh++
+        HKThsvhSc5RrbwanawXf3wPRPASJepbqakcmuqSIqiMTjSoLS24bJJcN4uQYVTuoVCxahkM0pSzubA3x
+        3W3ge9rB09nkDV3gL/cgdakF6Ztzqu3LkVlaQlLXBmFsGIKZsIxAGB+FMHEFgtUcpSmHYl7fGeQNneD7
+        uhUhP9CLNEl3vqDFq7ZfHUzsLpK0I4HaJ1w1Q7RZINonIExNRmi4LB7oNvJGPfhBA4ShPqQ6LiKzcAc4
+        OFAkcshVnmxLdnmZWtIN0TEJ0XUVottO38eh3COKWEYYGdgQTEZkDN0kWZTfq4RSXY+O6KRn9Qdl4nEw
+        5lGIfhfEgHuTUoqvIhbHR2xyn5jhfmy7XSg9e0bpw6qSclVOqog+VLLvQzrny8qYPGfb6wFrt0Ka8cqE
+        Ka0Wy1CfEnKfmBEjtj1u5bil+noheqcg0v2hVEVnXT5mDB03WcpYzWWpZx0mU+WmU4kLzvEmyW3fEj1T
+        yE6awdDhp+0dVaNCFh5X6tsqOJ2qG04llpEnSAHP+knRK0gUgk7VzSaj+lOBtkQvhKWgd/OEpJoNcdpX
+        uXROUjNZjRQIaHMzvggtEqXfEPUymAv6lfvgVdRM/neg+QcSFzBfKxJWkwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bt_NotConfirmDraft.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="bt_ReturnFactor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEASABIAAD/4QBKRXhpZgAATU0AKgAAAAgAAwEaAAUAAAABAAAAMgEbAAUAAAAB
+        AAAAOgEoAAMAAAABAAIAAAAAAAAASAAAAAEAAABIAAAAAQAA/9sAQwADAgIDAgIDAwMDBAMDBAUIBQUE
+        BAUKBwcGCAwKDAwLCgsLDQ4SEA0OEQ4LCxAWEBETFBUVFQwPFxgWFBgSFBUU/9sAQwEDBAQFBAUJBQUJ
+        FA0LDRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU/8AAEQgA
+        IAAgAwERAAIRAQMRAf/EABoAAAICAwAAAAAAAAAAAAAAAAcIBQYBAwn/xAApEAACAgECBQQDAQEBAAAA
+        AAABAgMEBQYRABIhMUEHCFFhEzJxoUJy/8QAGgEBAAIDAQAAAAAAAAAAAAAABwUGAQIDBP/EAC0RAAED
+        AgMHAwQDAAAAAAAAAAECAwQAEQUGIRIxQWGBkbEHUXETFDNiksHh/9oADAMBAAIRAxEAPwDqNmMxTwOO
+        mvX51r1YRuzt/gA8knoAO/HnkSGorSnnlWSN5ruww5JcDTQuo0Ic5683ntmHE0q9YHfkFuNrErAAkkxo
+        yBeg325j97cF8rOyi6WoTd/kEnTkCANP2vV+YywyhsLlLPQhI7kG/asYD17uNMi5KpWuRN+zUkaCRR8h
+        Hdw385gf7xygZ7S64ESEC3K4PYkg/wAr1vLyogJKo6iD+1iO4At2ov4fMU8/job9CdbFWYbq6/6CPBB6
+        EHtwqx5DUppLzKrpO40fPsORnC06LKFBP3DapljztHDpJyx1qq3WQH9pJHdI2P8A5EUu3231wS+oGJOR
+        0txkGwOvXcO1j1pFyhCS4lx8jW9ug1Pe4qV9ENJ6eyOkreQFpchkbsT17kn6vVVgQYwO69Dvzef5xIZO
+        wrDlYcp9CttawQo8U3Go5fPGo7Mc6YmYGlJ2UpIKRwNuPP44VSfWb0zX09wkeewll7WNWVYp4rDBmi5j
+        srKw23G5A2+xxUM1ZTawuN99BUdkHUHW19xB+as2XccViMj7OWLKO4jjbhUp7Ztbz5PM5DESsClis11U
+        G+yyRuiSMOv/AEJYt/sb+eJ/0/xFx9DkZZ3a9dx73HWvBnTD0MfTfR726HUdrGoz3Z0bGDymO1HHCXq2
+        6y46SUA7RSo7vFzfAYSygfa7eeMeoWGOSENS0bk6HyP7rXJc1tClxVnU6jwfApesB6g5XS9q9PRtFRer
+        SVbUL9UmjZSuzD5G+4Pjgpw2fJwsrDB0UCkjgQRakudBjzwn6o1SQQeII1qwV9UZDTHpfmMFkLDfjzbV
+        Xp0Hk5miVJFlaXbc8gYKoA899uLAl9+Fg70OQr8uzspvewBBvyvYCoZTLMvFGpTCfx7W0bb7i1udtTRY
+        9neBs3cvmNROhWlWrnHQyEHaSV3R5QPkKIogfs7eOL1kDDlstuS1iwOg8nwKp2dZyHVojJOo1PgeTTH6
+        s07R1Zp29iclTjv07MZR4JezfH8IPUEduFl5lt9stOi6TvFGbTq2Vhxs2IpLdWe0/WVDIzHT7Q3aJYmO
+        LIOVkQb9B+RVPNsPJXf+8Fs7IbbiyuI5sg8DSNDzkttATJb2j7itOmPahrO3fiObWClSDAyRY9y0jjft
+        +RlHL56hd/jbjMHIjbawuW7tAcB/tYl5yWtBTFb2T7mnT0Tp+rpXTFDFUqMWOq1owiV4uy/PXyT3JPfh
+        RZZbYbDTQskbhR066t5ZccNya//Z
+</value>
+  </data>
+  <data name="bt_Cancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAACmVJREFUWEe9
+        l3lQVFcWxiNgjMvouKKgLEERkVHHRKuyqNFo1DFxJlEzkuioUSpxmaDEwQ0VlQgEMAKCqKwiS7MIYZNN
+        EFBEUJGGhmbtppumBXojiXH+++acZ3cVZSlamTK36qt3+/Zdfvc7577ltZctI0eOdCXdID02iuuuxr//
+        2EILB26YNha1OzdAun4xJMtdUPGeHbiN/zN2+2MKu8ALt25ZicY1b6NuziTUzx4HydwJaH5nsgA1YsSI
+        L4zdX33h0NR9/RlaNn6AehcC+etESBdYEswUtC2yQs1yR3bpBnUdYtSrLbTYY7n7F2hkkIWWaHnXCu2L
+        pkK21AadK+zQtW0ZAz2mruYkE9QrAcOQIUM4HGjf+D5a3yOQJQSyzAaKlQSyxgHqv89Aj9dmoQ/3f1o8
+        3szMDEOHDmVojBs3DpMmTRLE9VGjRnG/lys8WX+vGB8sWoDqDx0h/9AWypX2UH1sBFnnBM32d9DutZ0W
+        GI/7NxMgk2RD01mMX3sq8FvfLTzWVD6R9jbpDh7ravBf/T1Bj3X3MH78eAZ6OTd5V31tSTh7cp2QuJ3k
+        ivrTmejZMAsaV2cYvvsbtH574LlyMd4YNhTlV7+G+Lo7OqsPold8FFrJMegaj5NOQNfkA13zD9C3hsDQ
+        dl6Qvi0cVlZWDGQK9eBl+PDhBCRCS6U3trm+L0CJP3FB3+5l0PvthOyYG9zmO2GXw3i8/ro5ikU78KDI
+        HR1Vnuip8xKANBJvaBt9oJX6Q9cSTBARMHREwSCLEa729vYMNJRkJiw6WBk9ejR62tLQVu2LmsJjcJph
+        hQUTR2PsqJGCVk+3RtgcS+QvnIx5s62QGf0vVOftQdvtg+iuZZiTpFPQNvmSO0GCIwzRL4tHvzwBBnk8
+        nJycGOgN0otdsrS0RF9HBuT3gyAuP42IwC3khIUA0LF0miCuW1iYwd1tERLCvqSw7Ya0/BC6ar2haTxN
+        8iV3AgkoBPr2S+QMwXQmk0QElQwXFxcGGkGyIA0OZGNjA60sG0pxKCSVgbiZ7YVA7w2YO9saQwnCwtyM
+        J8PSd6fjiPsKRP/oikLRLtRc24/2O8ehrjuNXok/tM0/QtcaRkDR5EoS+hWppHRSGubOnctzjCRx2AYH
+        cnBwgF55DV0NEWi6E4w7hT7ITdyHy+e2Idx3Az5eMRuOb07E2pUu8P5uNWKDN6NAtAfVBQfQUHYMsrun
+        oRYHoK8pGJpmSuKOyzB0phBIBilTuM6bN28g0OB55OjoCENXEVSN0Wi7dwG1ZYEoyTiMzLhduBK2FSE+
+        63DY/SN47l6B4O8/R+L5r8ghd9wv8oK08hQ6anyhqA2Aqj4YDyUR6GuJI6A09CsJRpklQM2ZM4eBRpE4
+        ZIOXWbNmwaAqwcPmK5DVRaHhFrlUcBJFad8hO343rkZ/A9FFNySEbycYN2TE7UZZpifuFR1DQ7kPWqv8
+        0SU+C1XDOXRLLqK7KQ6a9lQYFFkwKHNIWaYcMgEN7tDMmTPJoVICSkCXJB4td8MhitqLqvyjCKJcup7u
+        gfMBm3AhcDNKMw7gVs4RVOUdRUPFaUhu+qG9JgiKByFQU8j7WmPQ25oIfWemESaX0iEHzs7OA4EGz6Fp
+        06bh5+4y9LYkQi29AvmDSGTG76fTthV+R9Yj1HcTAo7/E0EnXZEe82+Iy04jI3Yf5ZknZPdDkSc6iILU
+        I+htjoG2PQE6WRr0ihwhLw3KAqpfMx37lwOytrbGz+pysllEQEmUSzEI9fsK+SmeiA5xQ+TZHUiLdsdZ
+        n00457cVMaHfIC5sJ8IDdlCYLkAUuQ8x5/agNOt7lOb4Q3w7CjpFHvSUl4KU+eA8paUY6MVJzQ790lMJ
+        TUcaein2D6UUuoZIKOvC0FkbCjmpk+rK+vOkCKpH4NwPO+B77Et000G4cGYXokK+FTYUGbIPZXl0L+oq
+        hK6rBHrKTb2iCDNmzBgI9HyHRCLR1NnOM/FrXzXtKhs6in1vi4jyKZ52f0lwgNUtuUSLR0LdFAUlwzZE
+        0e9Y6htPIEm0GREpHVr5TzTHNehUxQRVRkA3BDC+tdByLwby9/dfsHrVEjzS1KJfVSBYfSP3DC6e3Yvi
+        jFPoaY6FKHo/iq6eQHIUX08Kp6i7KV5IXnaFT5Sm46oAo5XnQUuO6JSlBFMOfXc51cueBnp+yNavX79m
+        s+taPNKKCaiEVIyrCT6IDPVAauwhpEQfQGzYXoLxhCjmIOkQ6irOoaeFXWGQNFIG3emzCCYX2s58aJUl
+        5AqBqG7SlURAdnZ2DMQ3xsGTevHixR4HPLbjkU6CftpNP1lcnh8u7DYtzouc+lZYXC1NxLVUHxT/5I/2
+        B5dxgRwsyQ4imJ9QmhtMroaiqzkbVaWxKMuPonARCAEJV4IzPu1fDPTWW29FBPp64Dd9E/rVN2Gg469X
+        FkIjz6ZXknT0tqVA3ZyMrqYkKCRJqKcT1NWUgogf9+F69hmE/OCOuAgvAgqHqjkPF0K8UFYQQxCVFK4q
+        CtttAcp4yl4M5OLiXJByJRCP9FICukV37DKyuIiActDXnoGe1jSomlLRKRFBJk4miaiehpobkaitiEZS
+        9AkUZYUgLd4XSmku0hODUF+TgV4FzfXwLgzqGgKrNN2pTUDPLuvWrds2ffp09KkeEFAzuUMWUzJqFeSQ
+        jIAoHA9bM6CSXoW8IRUddSmC5A1PgB62ZlGfXILPF15nNQoaq6Q51FU0VzUB3aNN3hVcegro2Q7Nnz/f
+        49B/3Ch/msgZtrgCWnqEaOXkkOwaLZZDL25Z6G7OhKIxHbL6VEFc57aeNgqrLI+ACmlMCcGU0XgCUhEM
+        OcMwhm5yiMJnfHT8ifR8hyjzo24UpxOQlCapFJJPqyihBQoIKE8A6m3PFpxggC5phiCuc1tvO7koABXQ
+        6bpOYwlIdUsIkaH7juCUjtzRKitMp2w06XXSMx0aMnnyZPyqZZgnJ6Hxbjrqq5KQGHUCwf57sWPLJ9i+
+        eQ327vwcxw9uw+WIw7hfHi3kDoMyMIM/CVkRAZUKR1yAEo57BcTVqUiO8cPYsWMZaAzpuTdGM1tbW/yi
+        keBSuDcuhh7FZ2uXYeHbfyl8Z4FL6pv2UwPtbCYHODna7newt/aa6WhzxnaaZcD8eY731q56Fxs/W4Yd
+        Wz/BicNulNgn0XCH7kuUR+KqFBRmn0f42UM44LEVrutXYemShaDNf0trcsieCcQN5vwuzd9LEyZMANXL
+        6VX2AH3YbaSPulXm5ubLqc8HpI9IXF9CWkZaTVpJ+pQUSJ9QpywsLJKHDRsG/nqhDwbZmDFjbpEu0fPL
+        m3LnH3RwFkyZMsWZ+g8nPfMlnxs4ufgrYCxpCsmWZE+yM+pN0nSSg1Gm/6aSuP9E0jgSj+dQ/Jk0nsTt
+        /L81ydSX200J/czHxkAgnsySZGUU13kC02K8EPfhCVn8POLjy7vlBB2oYSRu5/85gQf2H/QZJoSMxBPw
+        ANPuGIIn4QkYlv/niVi8Ab7yOJN4AZ6LrwNl6suQpjHcPmgxucSL8vcSi3fHIKZJuM/vLTx2oF6qcEde
+        2LQjvr7Ubv7/8tpr/wP8DOJBprN1+AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="mnu_CancelCancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        v2EAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="بهروزرسانیقیمتپیشنهادیToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6
+        JQAAgIMAAPn/AACA6AAAdTAAAOpgAAA6lwAAF2+XqZnUAAACgUlEQVRYR8XXvUorURSG4ShREu1UbOwM
+        /hQWXoSFIkJqsQkMwU6ws4u3IIhWgrWFiFVIdRoRUfxr9A6sFNRGQee8a9gTVvZZGWcy4BGeYNbe+/uG
+        mAmxEIbhf2UO8wqCYN6aW8xhryguYhsf6Lf2+MxhLyicwjlCZ9Ta5zOHWVFWx7sqFzPWXp85TIuScZyo
+        Um0HcmFVTFjnhTlMg9BlPMEqt9xgDR3vjY7QNAgYwi6+YRX9pImROO+fAu1PoVBGBX3ynINjeHBBeZyh
+        JJndimewjxoG9BoH5W/64oLyaEieX1xEA59Y12sahydxpcJ68YpyO5TCQRwjxKkutHC4hD0X5ruG/Cxi
+        E7ew9i21Ayk9cOViQZclIWQVbypUHHl7htFS67GNaAOFK6r8GdGbLi2CZnGvglvGnjl8qT1iK1qk8FJd
+        wIV/2O2pWPMYYXJ7Hrrgyy57Ht16rCbB06pcNK3DzO8QWGsaofJz12VNPgP0BUxLsNxq+gIercPM41fp
+        EEPWnhjB5qvF/EKVR6+SBG+54NgX5vzDzFpqzz1m/T1JKOzDs7qAFZlL8IYKjknZsA7g+ZFaF29Y1XuS
+        ULigyg/iuQQvqVDtFptYRIBrWPv2EH2sJqH01JUfYzCeywXI5/2rC+vVFSZ1oUbhOj7RQFGvRQ8clo9f
+        KziLF1R1OGUDqGEf5heU6IGDJZy5oDweMCaZFMqbroKyLvS1f+HgCJouKKtv7CLx9rR0PCGgH2u4gVVk
+        ecKyzsnCHApCJ1BFHTuwyk8wbp1Pyxz6KJEvKLr4HXVrb1bm0EfZqCo/x5S1rxfm0EehvDc+sI2O+zgv
+        c2ihOPX/e1mYw99kDn9PWPgL7EvtFcMOepUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="toolStripButton7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGiSURBVDhPtZHdS8JQAMUHQf9X4JP/Sk9GBUEwFDQTnOI3
+        AxPM6Zgfr4UvVtqLMBIJSUoMIghFsU38GnG7Z97hx4NPdeBwz85+ZxeU+zeJsiyEs1kNRmb1bsUlyZ7I
+        5Uo4MZwaBoGRE7J8QHsJJ8M3FZMkW6pY1N+6XSNVKOjhTEabLBYERr7K5/U23lEGLJutFEmn5RcKjOdz
+        UqlUfqwMtzodAx0yerBstpKQTNoSqZQO8Hs6JTDy9jMYsGy2lF8UBX84rMHP9LbhZEJua7WZTxQb8E21
+        OkP31G4bFocNm3McT4v+eEws46aLWEzlFWVfUZS9y3i8jm6dwYbNlx/40jRiGbA7FGphDLsjERXdOrPx
+        AWcgIPDBoAbXWy3jczQi1+XyzBkMqjAyusdm07A4bNh8qXO/3+6JRs0f8WM4JDDy9jMYsGy20pnXW6rR
+        G94HAxN8aDTMDN+pqvk3IoMBy2YrnXg8dj4aHd/T4bHPp5/yvNbp9wmMjA7vwIBls005XC77kctVwnlI
+        R6+9HoGR198xfLccTqeAoTmmmdV/LY77Be5YzsHEjZ8gAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="bindingNavigator1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>537, 17</value>
+  </metadata>
+  <data name="bindingNavigator1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        V3syjP4NdkPOpG7+LA8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAASpJREFUOE9jGDygcNbz/00Lnv/PnPj4P1QIA4S3P8Apx5A789n/VUfe/8elKL77
+        wf/ghmu4DciY8vT/wn0fsCqK73n4f+n+///9qy/gNiCh58n/aVveYyiKaL8P1pw56/9/r9ITuA2I7Hr0
+        v3f1BxRFoa33wJpb1wFt7/z73yX/AG4DApsf/q+b/w6uKLjl7v9Fe///7wBqzpjz879d3c//9hnbcRvg
+        UXX/f/60NyiK7Ipv/0+f8/u/f9e3/zqF7/5bJKzHbYB96d3/2ZNfYyjSTzn/36ToxX+VrE//jSOX4TbA
+        Iu/O/9T+11gVGSSd+C+b9vW/bvA83AYYZt3+H9byEqci/dTL/zV8p+E2QCftxn+/6od4Fal4TMBtgFPu
+        lf8gBXgVDULAwAAA8HbAq6XlmnAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAALZJREFUOE9jGDogvP3BfyiTdBDf/eB/cMM18gyI73n4f+n+///9qy+QbkBE+32w
+        5sxZ//97lZ4gzYDQ1ntgza3rgLZ3/v3vkn+AeAOCW+7+X7T3//8OoOaMOT//29X9/G+fsZ00F9gV3/6f
+        Puf3f/+ub/91Ct/9t0hYT3oY6Kec/29S9OK/Stan/8aRy0g3AAQMkk78l037+l83eB55BoCAfurl/xq+
+        08g3AARUPCZQZsBgBQwMANAUYJgEulBVAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAKNJREFUOE9jGHygcNbz/1AmeSB35rP/Cd33yDckY8rT//P2//6f0HWHPEMSep78
+        n73v1//OrX//u5VeJt2QyK5H/6ds+/W/ZOnf/wnT//63yT1LmiGBzQ//t659D9ZsXPLlv3T0tf/GkcuI
+        N8Sj6v7/krnv4JoVXXpIc4F96d3/gS3PyNMMAhZ5d/7bFFwhTzMIGGbdJl8zCOik3SBf81AEDAwAoH5f
+        oAc0QjgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAASxJREFUOE9jGFygcNbz/1AmBgDJNS14/j9z4mOcahhyZz77n9B9D6sCkNyqI+//
+        h7c/wG1AxpSn/+ft//0/oesOhiKQ3MJ9H/4HN1zDbUBCz5P/s/f9+t+59e9/t9LLKApBctO2vP/vX30B
+        twGRXY/+T9n263/J0r//E6b//W+TexauGCTXu/rDf6/SE7gNCGx++L917XuwZuOSL/+lo6/9N45cBtYA
+        kqub/+6/S/4B3AZ4VN3/XzL3HVyzoksPXDFILn/am//2GdtxG2Bfevd/YMszDM0gAJLLnvz6v0XCetwG
+        WOTd+W9TcAVDMwiA5FL7X8O9hBUYZt3GqhkEQHJhLS//6wbPw22ATtoNnJIgOb/qh/81fKfhNgAfcMq9
+        8l/FYwIYQ4UGBWBgAAC+0b+zuQxOnAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bt_Print.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ4SURBVDhPjZJPTxNRFMVnZ/gclA3hE7iZpKQNKrEJsCgL
+        ogVZSljQRRvbAauLBkpiQlOFJQkY0JiQlEgaHKWlLVBCoNU2Bq2gQlEqMC2dTv8d7zwKaqjGk/wW8965
+        59373nC/S3fvze3W4bDPIAgVw0gYBldYNoysyK30fdUcGKva/q5rwlzhUJLxI5tHOnPGoZRHfE+CbW4X
+        PY9iuZa781eq9svSCy9zJ6cK1j+XiCLCnxQsbeeRL5axvlfCg/ldaC2vpqr2y7rhDMpqwAYFbHwpYXWn
+        gMAHBcmDLHUi4+DoFLpbS8Wq/U+5XK463ikqx1kFUTotuk+nsi4K8L07hTeWwTGNxt8XlY6Ojrpq2ZkG
+        Bwd7hoaGMq3OZRxRQHy/grcUsEVBkZ0iG2PxfY72CmhxBNDZ2Zlpa2vrYcVUqBsfH0ckEsHN4RDSFJBI
+        VRAnol/L2KRRQtSFn0ZJU8D1hyH4/X4MDAxAr9frOEEQtkhIpVKw2Wz/heoNBAJob2/fVjtQSqUSVNbW
+        1iBJ0j8JBoPMq9Lf31/h7HY7FEVhzM7OIplMsqBaqHuTk5MXfpPJBM5qtSIejzM8Hg8SiQREUayJ6hkd
+        Hb3w8zwPzmw2w+fzMegpEYvFsLCwUJNoNAqHw3Hhb2xsBEdzwOv1MtxuN+hOGBaLBX19faxNejI0NzdD
+        q9WytXN/Q0MDOGqjPD09zRbUwplnL7D4erkmT2eeo6mpiXknJiZQX18Prru7+0lXV9eW0WiEyR1CTlZw
+        eKLgO3FwnMdeWsbOtyw+piTk8gWYxkLQaDRq8SZhZT/TuXi3WO59vIpezy/uMFYY6h4/JpardhLH/QSg
+        MpEksK/B3wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bt_Search.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVDhPjZLfS1NhGMePmRe7iAT7C4Toqpu6Kawt9GJK
+        JGp5YWlOtC2zWOYolGq5OaeMNdtxw6OZOdM67rRpzi1d82RgJBlLGcxwi83ElJmb0/0wfX07xtvFIYZ+
+        4OV94Hk+X94HXuwfdffwfLXaYDW8GF4ZHJz8NWAe95Ev3+lI0nEMjSRGfEtVq3xMQmrSC2maBi6Xa9sX
+        isH3Th+0WCbmKWosA43+T2nx/TxJ3VOIM6I9vL5Bh8MRNzq7tXVmCQ4PfXSbTPY0pLApvfrAfls/BTXO
+        YKx3Nhx5G2BOKBT9EAzGrCvhSIcrFO23u6H59ZgIKWwulkiXTkgWv5abfi9opoKx559W4l3ejfVudyz4
+        jKmb6eVN9ZtFaKYcPUhhU1CsCHDyfhrSq+Mdl4jtgZtmYKukAFlsAD2CXjAiMG59r5W6tsk+6xBS2FzI
+        veM/ft01mqEC2nIS6GTjQKf5AnSNE0AvokBrZgvQS7QzAUPXgA4pbPiZ19qzyjpXSxlZOw30o6uA+BwH
+        BL0GiLZZgIuNG/2aNltUg1N8pLDhckVHs7OrlivklrlX83HiBwD4FgCtS8xt8qwbm4iRNRw3R/XNmsT/
+        gcutOJuTU+muvIFvdhrpb2O0c9pgdMzLld0RSU1LoEHVG9HWXBn2PuTIYSGWjDQ2PJ7wCJ9fVZWfK+kr
+        KqqzCQSyJ0KhIutymTRdlMu3zvbkwa05MfQoU9sThiSi/jT2yN+cBncW5TDuuQs9jYfaoRQ7gNp7U30K
+        4yh4SYRfmQp3FmR/Q7yKVGJKiKWgkb0RnsRSGnlJbf4mJoR5CWDWmWs4rETt/SHlYQd3Q3zMOgvmQkiq
+        JeOotX92Q+rPJDcJz5+zlghUBX8A65Bv/71aGjQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bt_ViewFactors.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARvSURBVEhLxZV/TNR1GMfvuDyIwIOTA+44wNp0jczpYC5j
+        RY5WGOWWm0QrOBdrNzRuZTQIG4TuNEvzSn4UIdMhSDW6boo5UK8gzCRxkZkB8eM4fnggV5DS6c53z/Oh
+        b/Ir0/7p2V4bxx/v9/N9fn1k/1coiJVEI4FbwE2MEgOEg8gh7iLkxJyhu3fhPLjOZML5ZSIcDbHo/WIx
+        OmxROHtQj6a9Ohwt0s7iq3IdyvM1iLlHeZ00lhJ+Qm2OaOg7Foehb9PQd/wBnK6MQEOpDrU7w1FRoIEl
+        ewF2mNQC/pv5YPPk/zc9r4JW63uVNNYQQUJtRqhD1Qq4WrPQ35iE72v0+LoiAoff16J6W5gQevvlGwYS
+        pa+HIGd9EJ562J9Llk48SsxnwZlRW1+iFQZ9x1ag5YBeZG/dFY79W0Lx3mshs8R3vrJAGJieVSEhYb6X
+        NNhkETGPBadGMDGZfdMTOPdpJE7ui8CRPVrUvBWGsjc0QkwSlr6kOHcy+5VL/VBYWIj0JwPZ4DEikEWn
+        RhlnP3TaILI/U6WHvUwH2+5wVG4NFUKS+FQTNubsE1fceT05ORkWi4UNniam9YB/wG5P8HLtz9dG4tT+
+        CLDhJzvCxHS8u2l27ffkhCAvIxjxy/yQkpJyxWg0IjY2dk6DX7je0uTwOPLYHbKEo8ocKmo8U5zhpr+a
+        FoTV8f5ISkqC057A4kwGwSUXcTdBtd+IwZNr0X046qajKcFftHWDGg8t9wNnbjKZxNeQ1jViLaEhRFRx
+        My+2vCCW6t+aKyHVnkczNTUVzhPx0AQreAfKidWEisV5pfHDocTuwW9S0Xs05paay5g3qrEqzg/c2Ozs
+        bJQXqP8grd+JdcR9hC8h28b1ttsrvKMX3sGlc/kYacvB8FkTXN8ZwabcE97sqfDp4OXjkUxPT6eTskrK
+        /iPicYLrL5f5KuQ/j54346VnVFi/JvC2SEsOQEZGBnJzc0UpSfAywdnHEEqCrppGITrPk2AwGK7xp5aU
+        lMBms8FqtaK5uRmtra2or69HY2Mjmpqa0NLSgra2NrS3t6O4uBiO+uVYolF6SI5rn0SoiclLynfnwmeR
+        Ytzy8/PhdDoFvb296O7uFoyNjcHr9WJ8fPxvampqUFdXh6ysLJG9XC7j+k/PnoObxAvFJjyWPPMdHR1w
+        uVxwu92CgYEBdHV1CVPJ2OFwIC8vj/rzIO5f5DtBUtLk3Mj+r+CHBUqlfCTb4D9eadZf/Nyy0M0bzItW
+        WlqKzs5O9Pf3Y3h4GB6PR2A2m1FdXY2hU8/Bx2da9mJyZsZi4kXiBMGv0q/E+JbMEE/RBo3Huls1caQo
+        6srxD3W49OOb6OnpEV/I4tHRSl6q2bWfEVwzXgo9EUckEkbiY8JJ/EaMZq4LuLydDKsKtFetu1QTB7eH
+        ue9QyLg80+b+ZsFvsT/BZ5YPVQSxjGBDA7GX+Ing93eEGCQ2E3yaJ+f+NoMN+V2VDMOJJUQCwSVhHiGi
+        iVmPy38JH4LLwOeFn0MmgPgHcZnsT0WJLh5FJmYTAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="FinalSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJFSURBVDhPjZJdSNNhFIcPDLwNJYqGa6mruVKomy4bdCcI
+        XQh5kRcVhRchUUj05UV0kVFCZkQLmWXDmH1QOVc5c/ahDv+1fzqnrNQ1tpqbWVAQocavc97Nduc68Hv3
+        8p7nOWOHEdcaMhgcZCwdJaNZW2s2a+Yyi2axlGs2m+1fLOU2bZ1xo8b8HpFyZShwUt1N0P4nKsc7BzAY
+        0BGOzCKRTGMuvQBfaBqewBhOul+BNlQvslWTkaWKSoJKPsA57EHT/WHoEx/wKZ5Ean6BP79gU8sjVDs8
+        aHD2gep7QTvVkNqVAbqIdOQp6FgfLniD+BiNq29OJFOYiMxg85kOVDW7cPD6Y8VQA7PmvUts7+MBpTod
+        fQ460Q8668cVfxif5+aRTH9FZCaG4XchNN54gMZWF2pb3KAmP7MveBA7RSY9M+DUAOgc/77mIex2aaj3
+        hnDIM4a6hxpquoZQ1d6PXa09KLvYoxjFnmZHXFrPx/nXoEsjoDYN5AiCnO9Bt8dBd0KZyF3epCeMsOKI
+        q47LAVTcDePn4jJ+Lf9ZNcIIK05uwLW3sPdO439LWHEyA4q36NSuw+6bzbbzl90XhTjKJRMfneOwD8ay
+        7fwlrDjKJZNVp64w7G/i2Xb+EpZkD+Kqwz0J+0gi285fwlL3ZHZAsTVI3VPY9jKG77+X1JZXizDC0r0p
+        3gG7VFBwi64+A3l5s35ezihPD6dA0W+g5I9M5C5v0hNG2Db+J4rLVciXDirZGiRrpa5SsV2nSsmOXORt
+        pS+sOESFfwFC4o+eVxey/wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="uiPanelManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>172, 56</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>170</value>
+  </metadata>
+  <metadata name="table_011_Child1_SaleFactorBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>195, 95</value>
+  </metadata>
+  <metadata name="table_010_SaleFactorBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>568, 56</value>
+  </metadata>
+  <metadata name="dataSet_01_Sale.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>429, 56</value>
+  </metadata>
+  <data name="gridEX_List_DesignTimeLayout_Reference_0.Instance" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAANkE3LLaAgAAAqFJREFUOE+F
+        kF1IU2Ecxt+8ybu676IagkasIk0lTDPbDKJ55uZHpu3jbOJKd9xchmzTDAMJLaNyax82tzNLJYRQ0qtC
+        EQuE6rihll/r42JFN13UTfF0znawrMQHfpyH8/yf//ueQ/6nNGVaRy1bG9P79FHaR0cFL6EkrWK8teRW
+        2aMXX2Yw/WES0x8n8Zz38saTITHeWnlM1uBAzIPQggtBHsHnWbICYrypUnJNmX5Z07FwZVAe615sxs35
+        JIKvYuUrxbYCNtd02C/MJisblZJ/S/ru6kot2hZrYF8oxZUldQL7ggqO+Sq0vKnG0RsZa/zstmRlo1K8
+        neWTxpGM79q36WBWj8C+JkPLaiGMS/tQEt2Jc0O7vvk6K6b42X8XnJVlhKf9BgRa5T8drBTt70/j3ud6
+        9H6qgzNWBCe7H/2txT+mvHpcZ04FxVpSbZcMHWM91ctdRikcZRI4lHvhtOfgyYoLo8t34GzJhp2SwM5n
+        1zTpeOrRfW2ur+kR64TY6ioGZ72V6LXk4661AO6mQtxuOI773TT6umj0NJyAy1aEXv6925qPWW8VLl+s
+        nBDrhFiMqvHXLgrRhyZEQlpEWT0PDS5wHnP9Gt7rEOXfR4JacDwRbykcF9QzyTYvRkeNci4F4i8DYJlD
+        CDEH/uJgAo9JivisD3NuBWwG5TOxToiZpkY4N4U49wCsNRvRMP0H/G1EhCzOsRAOsxpKfn8Co1MOcV5V
+        YkE/k4kBWw7CtmwRwScRMmFBxKsGo6cei3VC6nWlLOevWL9BxFcOzqNafya8vxxsU05iwSv+f5m11LBY
+        J6RBrw5E+oQF4cTA5oR4wpjzl0E4VKwTkppKdjOaM2OMrmTCrFOMN+qp8UZamUTwImaedkv1FKNRjO3Y
+        TvYQQsgv9OzFNw/pLtcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="gridEX_List_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Key&gt;IBindingList&lt;/Key&gt;&lt;Caption&gt;IBindingList&lt;/Caption&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Stock"&gt;&lt;ButtonDisplayMode&gt;Always&lt;/ButtonDisplayMode&gt;&lt;AllowSize&gt;False&lt;/AllowSize&gt;&lt;ButtonImage Reference="GridEXLayoutData.RootTable.Columns.Column0.ButtonImage" /&gt;&lt;ButtonToolTipText&gt;نمایش موجودی کالا در انبارها&lt;/ButtonToolTipText&gt;&lt;ButtonStyle&gt;Image&lt;/ButtonStyle&gt;&lt;CellToolTipText /&gt;&lt;BoundMode&gt;Unbound&lt;/BoundMode&gt;&lt;ColumnType&gt;Image&lt;/ColumnType&gt;&lt;Key&gt;Stock&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;18&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="columnid"&gt;&lt;Caption&gt;columnid&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;columnid&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;columnid&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column1&gt;&lt;Column2 ID="Column34"&gt;&lt;AllowRemove&gt;True&lt;/AllowRemove&gt;&lt;Caption&gt;سری ساخت&lt;/Caption&gt;&lt;DataTypeCode&gt;String&lt;/DataTypeCode&gt;&lt;DataMember&gt;Column34&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;Column34&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Width&gt;78&lt;/Width&gt;&lt;UseHeaderSelector&gt;False&lt;/UseHeaderSelector&gt;&lt;/Column2&gt;&lt;Column3 ID="column01"&gt;&lt;Caption&gt;column01&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;column01&lt;/DataMember&gt;&lt;Key&gt;column01&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column3&gt;&lt;Column4 ID="GoodCode"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;Caption&gt;کد کالا&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;Column02&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;Key&gt;GoodCode&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;83&lt;/Width&gt;&lt;DropDownIndex&gt;7&lt;/DropDownIndex&gt;&lt;AutoComplete&gt;False&lt;/AutoComplete&gt;&lt;/Column4&gt;&lt;Column5 ID="column02"&gt;&lt;AllowRemove&gt;False&lt;/AllowRemove&gt;&lt;Caption&gt;نام کالا&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;column02&lt;/DataMember&gt;&lt;Key&gt;column02&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;DropDownIndex&gt;8&lt;/DropDownIndex&gt;&lt;AutoComplete&gt;False&lt;/AutoComplete&gt;&lt;/Column5&gt;&lt;Column6 ID="Availavle"&gt;&lt;Caption&gt;موجودی قابل فروش&lt;/Caption&gt;&lt;DataMember&gt;Availavle&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.####&lt;/FormatString&gt;&lt;Key&gt;Availavle&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;112&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="column03"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;Caption&gt;واحد شمارش&lt;/Caption&gt;&lt;DataTypeCode&gt;Int16&lt;/DataTypeCode&gt;&lt;DataMember&gt;column03&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;Key&gt;column03&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;78&lt;/Width&gt;&lt;DropDownIndex&gt;9&lt;/DropDownIndex&gt;&lt;/Column7&gt;&lt;Column8 ID="column14"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;Caption&gt;نوع ارز&lt;/Caption&gt;&lt;DataTypeCode&gt;Int16&lt;/DataTypeCode&gt;&lt;DataMember&gt;column14&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;EditType&gt;MultiColumnCombo&lt;/EditType&gt;&lt;Key&gt;column14&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;65&lt;/Width&gt;&lt;DropDownIndex&gt;5&lt;/DropDownIndex&gt;&lt;/Column8&gt;&lt;Column9 ID="column15"&gt;&lt;Caption&gt;ارزش ارز&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column15&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column15&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;74&lt;/Width&gt;&lt;DefaultValue&gt;0&lt;/DefaultValue&gt;&lt;DefaultValueType&gt;System.Double&lt;/DefaultValueType&gt;&lt;/Column9&gt;&lt;Column10 ID="column04"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;تعداد کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column04&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column04&lt;/Key&gt;&lt;NullText&gt;0&lt;/NullText&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;64&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column10&gt;&lt;Column11 ID="column05"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;تعداد بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column05&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column05&lt;/Key&gt;&lt;NullText&gt;0&lt;/NullText&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;62&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column11&gt;&lt;Column12 ID="column06"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;AllowRemove&gt;False&lt;/AllowRemove&gt;&lt;Caption&gt;تعداد جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;column06&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column06&lt;/Key&gt;&lt;NullText&gt;0&lt;/NullText&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;78&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column12&gt;&lt;Column13 ID="column07"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;AllowRemove&gt;False&lt;/AllowRemove&gt;&lt;Caption&gt;تعداد کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;column07&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column07&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Width&gt;64&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column13&gt;&lt;Column14 ID="Column36"&gt;&lt;Caption&gt;وزن واحد&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;Column36&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;Column36&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column14&gt;&lt;Column15 ID="Column37"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;وزن کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;Column37&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;Column37&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column15&gt;&lt;Column16 ID="column08"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;قیمت کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column08&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column08&lt;/Key&gt;&lt;Position&gt;16&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;65&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column16&gt;&lt;Column17 ID="column09"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;قیمت بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column09&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column09&lt;/Key&gt;&lt;Position&gt;17&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;70&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column17&gt;&lt;Column18 ID="column10"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;AllowRemove&gt;False&lt;/AllowRemove&gt;&lt;Caption&gt;قیمت فروش&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column10&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column10&lt;/Key&gt;&lt;Position&gt;18&lt;/Position&gt;&lt;Width&gt;69&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;LimitToList&gt;False&lt;/LimitToList&gt;&lt;/Column18&gt;&lt;Column19 ID="Column33"&gt;&lt;Caption&gt;ضریب&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;Column33&lt;/DataMember&gt;&lt;FormatString&gt;###0.###&lt;/FormatString&gt;&lt;Key&gt;Column33&lt;/Key&gt;&lt;Position&gt;19&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;60&lt;/Width&gt;&lt;DefaultValue&gt;100&lt;/DefaultValue&gt;&lt;DefaultValueType&gt;System.Double&lt;/DefaultValueType&gt;&lt;/Column19&gt;&lt;Column20 ID="column11"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;AllowRemove&gt;False&lt;/AllowRemove&gt;&lt;Caption&gt;قیمت کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column11&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column11&lt;/Key&gt;&lt;Position&gt;20&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Width&gt;65&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column20&gt;&lt;Column21 ID="column16"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;AllowRemove&gt;True&lt;/AllowRemove&gt;&lt;Caption&gt;درصد تخفیف خطی&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column16&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column16&lt;/Key&gt;&lt;Position&gt;21&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column21&gt;&lt;Column22 ID="column17"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;AllowRemove&gt;True&lt;/AllowRemove&gt;&lt;Caption&gt;مبلغ تخفیف خطی&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column17&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column17&lt;/Key&gt;&lt;Position&gt;22&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column22&gt;&lt;Column23 ID="column18"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;AllowRemove&gt;True&lt;/AllowRemove&gt;&lt;Caption&gt;درصد اضافه خطی&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column18&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column18&lt;/Key&gt;&lt;Position&gt;23&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column23&gt;&lt;Column24 ID="column19"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;AllowRemove&gt;True&lt;/AllowRemove&gt;&lt;Caption&gt;مبلغ اضافه خطی&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column19&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column19&lt;/Key&gt;&lt;Position&gt;24&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column24&gt;&lt;Column25 ID="column20"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;AllowRemove&gt;True&lt;/AllowRemove&gt;&lt;Caption&gt;خالص خطی&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column20&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column20&lt;/Key&gt;&lt;Position&gt;25&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;/Column25&gt;&lt;Column26 ID="column21"&gt;&lt;Caption&gt;مرکز هزینه&lt;/Caption&gt;&lt;DataTypeCode&gt;Int16&lt;/DataTypeCode&gt;&lt;DataMember&gt;column21&lt;/DataMember&gt;&lt;EditType&gt;MultiColumnCombo&lt;/EditType&gt;&lt;Key&gt;column21&lt;/Key&gt;&lt;Position&gt;26&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;DropDownIndex&gt;3&lt;/DropDownIndex&gt;&lt;/Column26&gt;&lt;Column27 ID="column22"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;Caption&gt;پروژه&lt;/Caption&gt;&lt;DataTypeCode&gt;Int16&lt;/DataTypeCode&gt;&lt;DataMember&gt;column22&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;EditType&gt;MultiColumnCombo&lt;/EditType&gt;&lt;Key&gt;column22&lt;/Key&gt;&lt;Position&gt;27&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;DropDownIndex&gt;4&lt;/DropDownIndex&gt;&lt;/Column27&gt;&lt;Column28 ID="tedaddarkartoon"&gt;&lt;Caption&gt;tedaddarkartoon&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;Column31&lt;/DataMember&gt;&lt;Key&gt;tedaddarkartoon&lt;/Key&gt;&lt;Position&gt;28&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column28&gt;&lt;Column29 ID="tedaddarbaste"&gt;&lt;Caption&gt;tedaddarbaste&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;Column32&lt;/DataMember&gt;&lt;Key&gt;tedaddarbaste&lt;/Key&gt;&lt;Position&gt;29&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column29&gt;&lt;Column30 ID="column29"&gt;&lt;Caption&gt;شماره idchild حواله&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;column29&lt;/DataMember&gt;&lt;Key&gt;column29&lt;/Key&gt;&lt;Position&gt;30&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column30&gt;&lt;Column31 ID="column28"&gt;&lt;Caption&gt;شماره idchild پیش فاکتور&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;column28&lt;/DataMember&gt;&lt;Key&gt;column28&lt;/Key&gt;&lt;Position&gt;31&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column31&gt;&lt;Column32 ID="column27"&gt;&lt;Caption&gt;شماره ایدیidchild  سفارش&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;column27&lt;/DataMember&gt;&lt;Key&gt;column27&lt;/Key&gt;&lt;Position&gt;32&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column32&gt;&lt;Column33 ID="column26"&gt;&lt;Caption&gt;شماره id حواله&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;column26&lt;/DataMember&gt;&lt;Key&gt;column26&lt;/Key&gt;&lt;Position&gt;33&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column33&gt;&lt;Column34 ID="column24"&gt;&lt;Caption&gt;شماره پیش فاکتور&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;column24&lt;/DataMember&gt;&lt;Key&gt;column24&lt;/Key&gt;&lt;Position&gt;34&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column34&gt;&lt;Column35 ID="column25"&gt;&lt;Caption&gt;شماره سفارش&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;column25&lt;/DataMember&gt;&lt;Key&gt;column25&lt;/Key&gt;&lt;Position&gt;35&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column35&gt;&lt;Column36 ID="column30"&gt;&lt;Caption&gt;جایزه&lt;/Caption&gt;&lt;DataTypeCode&gt;Boolean&lt;/DataTypeCode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;column30&lt;/DataMember&gt;&lt;EditType&gt;CheckBox&lt;/EditType&gt;&lt;Key&gt;column30&lt;/Key&gt;&lt;Position&gt;36&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;48&lt;/Width&gt;&lt;DefaultValue&gt;False&lt;/DefaultValue&gt;&lt;DefaultValueType&gt;System.Boolean&lt;/DefaultValueType&gt;&lt;/Column36&gt;&lt;Column37 ID="Column35"&gt;&lt;AllowRemove&gt;True&lt;/AllowRemove&gt;&lt;Caption&gt;تاریخ اعتبار&lt;/Caption&gt;&lt;DataTypeCode&gt;String&lt;/DataTypeCode&gt;&lt;DataMember&gt;Column35&lt;/DataMember&gt;&lt;InputMask&gt;0000/00/00&lt;/InputMask&gt;&lt;Key&gt;Column35&lt;/Key&gt;&lt;Position&gt;37&lt;/Position&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column37&gt;&lt;Column38 ID="column23"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;AllowRemove&gt;True&lt;/AllowRemove&gt;&lt;Caption&gt;توضیحات&lt;/Caption&gt;&lt;DataTypeCode&gt;String&lt;/DataTypeCode&gt;&lt;DataMember&gt;column23&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;Key&gt;column23&lt;/Key&gt;&lt;Position&gt;38&lt;/Position&gt;&lt;/Column38&gt;&lt;Column39 ID="Column38"&gt;&lt;Caption&gt;برند&lt;/Caption&gt;&lt;DataTypeCode&gt;String&lt;/DataTypeCode&gt;&lt;DataMember&gt;Column38&lt;/DataMember&gt;&lt;Key&gt;Column38&lt;/Key&gt;&lt;Position&gt;39&lt;/Position&gt;&lt;/Column39&gt;&lt;Column40 ID="Column39"&gt;&lt;Caption&gt;تامین کننده&lt;/Caption&gt;&lt;DataTypeCode&gt;String&lt;/DataTypeCode&gt;&lt;DataMember&gt;Column39&lt;/DataMember&gt;&lt;Key&gt;Column39&lt;/Key&gt;&lt;Position&gt;40&lt;/Position&gt;&lt;/Column40&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;5&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;FormatConditions Collection="true" ElementName="Condition"&gt;&lt;Condition0 ID="FormatCondition1"&gt;&lt;ColIndex&gt;36&lt;/ColIndex&gt;&lt;FormatStyle&gt;&lt;BackColor&gt;255, 255, 192&lt;/BackColor&gt;&lt;BackColorGradient&gt;255, 224, 192&lt;/BackColorGradient&gt;&lt;BackgroundGradientMode&gt;Vertical&lt;/BackgroundGradientMode&gt;&lt;/FormatStyle&gt;&lt;Value1&gt;True&lt;/Value1&gt;&lt;Key&gt;FormatCondition1&lt;/Key&gt;&lt;/Condition0&gt;&lt;/FormatConditions&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;DropDowns Collection="true" ElementName="DropDown"&gt;&lt;DropDown0 ID="GoodCode"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="GoodID"&gt;&lt;Caption&gt;GoodID&lt;/Caption&gt;&lt;DataMember&gt;GoodID&lt;/DataMember&gt;&lt;Key&gt;GoodID&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="GoodCode"&gt;&lt;Caption&gt;کد کالا&lt;/Caption&gt;&lt;DataMember&gt;GoodCode&lt;/DataMember&gt;&lt;Key&gt;GoodCode&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;80&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="GoodName"&gt;&lt;Caption&gt;نام کالا&lt;/Caption&gt;&lt;DataMember&gt;GoodName&lt;/DataMember&gt;&lt;Key&gt;GoodName&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;250&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="CountUnit"&gt;&lt;Caption&gt;واحد شمارش&lt;/Caption&gt;&lt;DataMember&gt;CountUnit&lt;/DataMember&gt;&lt;Key&gt;CountUnit&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column3&gt;&lt;Column4 ID="MainGroupName"&gt;&lt;Caption&gt;گروه اصلی&lt;/Caption&gt;&lt;DataMember&gt;MainGroupName&lt;/DataMember&gt;&lt;Key&gt;MainGroupName&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;/Column4&gt;&lt;Column5 ID="SubGroupName"&gt;&lt;Caption&gt;نام گروه فرعی&lt;/Caption&gt;&lt;DataMember&gt;SubGroupName&lt;/DataMember&gt;&lt;Key&gt;SubGroupName&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;/Column5&gt;&lt;Column6 ID="NumberInBox"&gt;&lt;Caption&gt;تعداد در کارتن&lt;/Caption&gt;&lt;DataMember&gt;NumberInBox&lt;/DataMember&gt;&lt;Key&gt;NumberInBox&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;80&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="NumberInPack"&gt;&lt;Caption&gt;تعداد در بسته&lt;/Caption&gt;&lt;DataMember&gt;NumberInPack&lt;/DataMember&gt;&lt;Key&gt;NumberInPack&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Width&gt;80&lt;/Width&gt;&lt;/Column7&gt;&lt;Column8 ID="SaleBoxPrice"&gt;&lt;Caption&gt;قیمت فروش کارتن&lt;/Caption&gt;&lt;DataMember&gt;SaleBoxPrice&lt;/DataMember&gt;&lt;Key&gt;SaleBoxPrice&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column8&gt;&lt;Column9 ID="SalePackPrice"&gt;&lt;Caption&gt;قیمت فروش بسته&lt;/Caption&gt;&lt;DataMember&gt;SalePackPrice&lt;/DataMember&gt;&lt;Key&gt;SalePackPrice&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column9&gt;&lt;Column10 ID="SalePrice"&gt;&lt;Caption&gt;قیمت فروش&lt;/Caption&gt;&lt;DataMember&gt;SalePrice&lt;/DataMember&gt;&lt;Key&gt;SalePrice&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column10&gt;&lt;Column11 ID="Extra"&gt;&lt;Caption&gt;Extra&lt;/Caption&gt;&lt;DataMember&gt;Extra&lt;/DataMember&gt;&lt;Key&gt;Extra&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column11&gt;&lt;Column12 ID="Discount"&gt;&lt;Caption&gt;Discount&lt;/Caption&gt;&lt;DataMember&gt;Discount&lt;/DataMember&gt;&lt;Key&gt;Discount&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column12&gt;&lt;Column13 ID="Weight"&gt;&lt;Caption&gt;Weight&lt;/Caption&gt;&lt;DataMember&gt;Weight&lt;/DataMember&gt;&lt;Key&gt;Weight&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column13&gt;&lt;Column14 ID="SaleReamin"&gt;&lt;Caption&gt;موجودی قابل فروش تاتاریخ&lt;/Caption&gt;&lt;DataMember&gt;SaleReamin&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;SaleReamin&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;/Column14&gt;&lt;Column15 ID="RealReamin"&gt;&lt;Caption&gt;موجودی واقعی تاتاریخ&lt;/Caption&gt;&lt;DataMember&gt;RealReamin&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;RealReamin&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;/Column15&gt;&lt;Column16 ID="TotalSaleReamin"&gt;&lt;Caption&gt;موجودی قابل فروش کل&lt;/Caption&gt;&lt;DataMember&gt;TotalSaleReamin&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;TotalSaleReamin&lt;/Key&gt;&lt;Position&gt;16&lt;/Position&gt;&lt;/Column16&gt;&lt;Column17 ID="TotalRealReamin"&gt;&lt;Caption&gt;موجودی واقعی کل&lt;/Caption&gt;&lt;DataMember&gt;TotalRealReamin&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;TotalRealReamin&lt;/Key&gt;&lt;Position&gt;17&lt;/Position&gt;&lt;/Column17&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;Font&gt;Microsoft Sans Serif, 8.25pt&lt;/Font&gt;&lt;VisualStyle&gt;Office2007&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;RowHeaders&gt;True&lt;/RowHeaders&gt;&lt;Key&gt;GoodCode&lt;/Key&gt;&lt;DisplayMember&gt;GoodCode&lt;/DisplayMember&gt;&lt;ValueMember&gt;GoodID&lt;/ValueMember&gt;&lt;/DropDown0&gt;&lt;DropDown1 ID="GoodName"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="GoodID"&gt;&lt;Caption&gt;GoodID&lt;/Caption&gt;&lt;DataMember&gt;GoodID&lt;/DataMember&gt;&lt;Key&gt;GoodID&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="GoodCode"&gt;&lt;Caption&gt;کد کالا&lt;/Caption&gt;&lt;DataMember&gt;GoodCode&lt;/DataMember&gt;&lt;Key&gt;GoodCode&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;80&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="GoodName"&gt;&lt;Caption&gt;نام کالا&lt;/Caption&gt;&lt;DataMember&gt;GoodName&lt;/DataMember&gt;&lt;Key&gt;GoodName&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;250&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="CountUnit"&gt;&lt;Caption&gt;واحد شمارش&lt;/Caption&gt;&lt;DataMember&gt;CountUnit&lt;/DataMember&gt;&lt;Key&gt;CountUnit&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column3&gt;&lt;Column4 ID="MainGroupName"&gt;&lt;Caption&gt;گروه اصلی&lt;/Caption&gt;&lt;DataMember&gt;MainGroupName&lt;/DataMember&gt;&lt;Key&gt;MainGroupName&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;/Column4&gt;&lt;Column5 ID="SubGroupName"&gt;&lt;Caption&gt;گروه فرعی&lt;/Caption&gt;&lt;DataMember&gt;SubGroupName&lt;/DataMember&gt;&lt;Key&gt;SubGroupName&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;/Column5&gt;&lt;Column6 ID="NumberInBox"&gt;&lt;Caption&gt;تعداد در کارتن&lt;/Caption&gt;&lt;DataMember&gt;NumberInBox&lt;/DataMember&gt;&lt;Key&gt;NumberInBox&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;80&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="NumberInPack"&gt;&lt;Caption&gt;تعداد در بسته&lt;/Caption&gt;&lt;DataMember&gt;NumberInPack&lt;/DataMember&gt;&lt;Key&gt;NumberInPack&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Width&gt;80&lt;/Width&gt;&lt;/Column7&gt;&lt;Column8 ID="SaleBoxPrice"&gt;&lt;Caption&gt;قیمت فروش کارتن&lt;/Caption&gt;&lt;DataMember&gt;SaleBoxPrice&lt;/DataMember&gt;&lt;Key&gt;SaleBoxPrice&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column8&gt;&lt;Column9 ID="SalePackPrice"&gt;&lt;Caption&gt;قیمت فروش بسته&lt;/Caption&gt;&lt;DataMember&gt;SalePackPrice&lt;/DataMember&gt;&lt;Key&gt;SalePackPrice&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column9&gt;&lt;Column10 ID="SalePrice"&gt;&lt;Caption&gt;قیمت فروش&lt;/Caption&gt;&lt;DataMember&gt;SalePrice&lt;/DataMember&gt;&lt;Key&gt;SalePrice&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column10&gt;&lt;Column11 ID="Extra"&gt;&lt;Caption&gt;اضافه&lt;/Caption&gt;&lt;DataMember&gt;Extra&lt;/DataMember&gt;&lt;Key&gt;Extra&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column11&gt;&lt;Column12 ID="Discount"&gt;&lt;Caption&gt;تخفیف&lt;/Caption&gt;&lt;DataMember&gt;Discount&lt;/DataMember&gt;&lt;Key&gt;Discount&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column12&gt;&lt;Column13 ID="Weight"&gt;&lt;Caption&gt;Weight&lt;/Caption&gt;&lt;DataMember&gt;Weight&lt;/DataMember&gt;&lt;Key&gt;Weight&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column13&gt;&lt;Column14 ID="SaleReamin"&gt;&lt;Caption&gt;موجودی قابل فروش تاتاریخ&lt;/Caption&gt;&lt;DataMember&gt;SaleReamin&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;SaleReamin&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;/Column14&gt;&lt;Column15 ID="RealReamin"&gt;&lt;Caption&gt;موجودی واقعی تاتاریخ&lt;/Caption&gt;&lt;DataMember&gt;RealReamin&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;RealReamin&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;/Column15&gt;&lt;Column16 ID="TotalSaleReamin"&gt;&lt;Caption&gt;موجودی قابل فروش کل&lt;/Caption&gt;&lt;DataMember&gt;TotalSaleReamin&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;TotalSaleReamin&lt;/Key&gt;&lt;Position&gt;16&lt;/Position&gt;&lt;/Column16&gt;&lt;Column17 ID="TotalRealReamin"&gt;&lt;Caption&gt;موجودی واقعی کل&lt;/Caption&gt;&lt;DataMember&gt;TotalRealReamin&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;TotalRealReamin&lt;/Key&gt;&lt;Position&gt;17&lt;/Position&gt;&lt;/Column17&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;2&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;Font&gt;Microsoft Sans Serif, 8.25pt&lt;/Font&gt;&lt;VisualStyle&gt;Office2007&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;RowHeaders&gt;True&lt;/RowHeaders&gt;&lt;Key&gt;GoodName&lt;/Key&gt;&lt;DisplayMember&gt;GoodName&lt;/DisplayMember&gt;&lt;ValueMember&gt;GoodID&lt;/ValueMember&gt;&lt;/DropDown1&gt;&lt;DropDown2 ID="CountUnit"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="kalaID"&gt;&lt;Caption&gt;kalaID&lt;/Caption&gt;&lt;DataMember&gt;kalaID&lt;/DataMember&gt;&lt;Key&gt;kalaID&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="countiD"&gt;&lt;Caption&gt;countiD&lt;/Caption&gt;&lt;DataMember&gt;countiD&lt;/DataMember&gt;&lt;Key&gt;countiD&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column1&gt;&lt;Column2 ID="buy"&gt;&lt;Caption&gt;buy&lt;/Caption&gt;&lt;DataMember&gt;buy&lt;/DataMember&gt;&lt;Key&gt;buy&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column2&gt;&lt;Column3 ID="sale"&gt;&lt;Caption&gt;sale&lt;/Caption&gt;&lt;DataMember&gt;sale&lt;/DataMember&gt;&lt;Key&gt;sale&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column3&gt;&lt;Column4 ID="customer"&gt;&lt;Caption&gt;customer&lt;/Caption&gt;&lt;DataMember&gt;customer&lt;/DataMember&gt;&lt;Key&gt;customer&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column4&gt;&lt;Column5 ID="zarib"&gt;&lt;Caption&gt;zarib&lt;/Caption&gt;&lt;DataMember&gt;zarib&lt;/DataMember&gt;&lt;Key&gt;zarib&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column5&gt;&lt;Column6 ID="countName"&gt;&lt;DataMember&gt;countName&lt;/DataMember&gt;&lt;Key&gt;countName&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;/Column6&gt;&lt;/Columns&gt;&lt;FormatConditions Collection="true" ElementName="Condition"&gt;&lt;Condition0 ID="FormatCondition1"&gt;&lt;ColIndex&gt;0&lt;/ColIndex&gt;&lt;FormatStyle&gt;&lt;BackColor&gt;Red&lt;/BackColor&gt;&lt;/FormatStyle&gt;&lt;Key&gt;FormatCondition1&lt;/Key&gt;&lt;FilterCondition&gt;&lt;ColumnIndex&gt;0&lt;/ColumnIndex&gt;&lt;ConditionOperator&gt;IsNull&lt;/ConditionOperator&gt;&lt;/FilterCondition&gt;&lt;/Condition0&gt;&lt;/FormatConditions&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;Font&gt;Microsoft Sans Serif, 8.25pt&lt;/Font&gt;&lt;VisualStyle&gt;Office2007&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;RowHeaders&gt;True&lt;/RowHeaders&gt;&lt;Key&gt;CountUnit&lt;/Key&gt;&lt;DisplayMember&gt;countName&lt;/DisplayMember&gt;&lt;ValueMember&gt;countiD&lt;/ValueMember&gt;&lt;/DropDown2&gt;&lt;DropDown3 ID="Center"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column00"&gt;&lt;Caption&gt;Column00&lt;/Caption&gt;&lt;DataMember&gt;Column00&lt;/DataMember&gt;&lt;Key&gt;Column00&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="Column01"&gt;&lt;Caption&gt;کد مرکز هزینه&lt;/Caption&gt;&lt;DataMember&gt;Column01&lt;/DataMember&gt;&lt;Key&gt;Column01&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;Column2 ID="Column02"&gt;&lt;Caption&gt;نام مرکز هزینه&lt;/Caption&gt;&lt;DataMember&gt;Column02&lt;/DataMember&gt;&lt;Key&gt;Column02&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;/Column2&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;Font&gt;Microsoft Sans Serif, 8.25pt&lt;/Font&gt;&lt;VisualStyle&gt;Office2007&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;RowHeaders&gt;True&lt;/RowHeaders&gt;&lt;Key&gt;Center&lt;/Key&gt;&lt;DisplayMember&gt;Column02&lt;/DisplayMember&gt;&lt;ValueMember&gt;Column00&lt;/ValueMember&gt;&lt;/DropDown3&gt;&lt;DropDown4 ID="Project"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column00"&gt;&lt;Caption&gt;Column00&lt;/Caption&gt;&lt;DataMember&gt;Column00&lt;/DataMember&gt;&lt;Key&gt;Column00&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="Column01"&gt;&lt;Caption&gt;کد پروژه&lt;/Caption&gt;&lt;DataMember&gt;Column01&lt;/DataMember&gt;&lt;Key&gt;Column01&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;Column2 ID="Column02"&gt;&lt;Caption&gt;نام پروژه&lt;/Caption&gt;&lt;DataMember&gt;Column02&lt;/DataMember&gt;&lt;Key&gt;Column02&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;/Column2&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;Font&gt;Microsoft Sans Serif, 8.25pt&lt;/Font&gt;&lt;VisualStyle&gt;Office2007&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;RowHeaders&gt;True&lt;/RowHeaders&gt;&lt;Key&gt;Project&lt;/Key&gt;&lt;DisplayMember&gt;Column02&lt;/DisplayMember&gt;&lt;ValueMember&gt;Column00&lt;/ValueMember&gt;&lt;/DropDown4&gt;&lt;DropDown5 ID="Currency"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column01"&gt;&lt;DataMember&gt;Column01&lt;/DataMember&gt;&lt;Key&gt;Column01&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;Column1 ID="Column02"&gt;&lt;Caption&gt;Column02&lt;/Caption&gt;&lt;DataMember&gt;Column02&lt;/DataMember&gt;&lt;Key&gt;Column02&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column1&gt;&lt;Column2 ID="Column00"&gt;&lt;Caption&gt;Column00&lt;/Caption&gt;&lt;DataMember&gt;Column00&lt;/DataMember&gt;&lt;Key&gt;Column00&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column2&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnAutoResize&gt;True&lt;/ColumnAutoResize&gt;&lt;ColumnHeaders&gt;False&lt;/ColumnHeaders&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;RowHeaders&gt;True&lt;/RowHeaders&gt;&lt;Key&gt;Currency&lt;/Key&gt;&lt;DisplayMember&gt;Column01&lt;/DisplayMember&gt;&lt;ValueMember&gt;Column00&lt;/ValueMember&gt;&lt;/DropDown5&gt;&lt;DropDown6 ID="Price"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column01"&gt;&lt;Caption&gt;عنوان&lt;/Caption&gt;&lt;DataMember&gt;Column01&lt;/DataMember&gt;&lt;Key&gt;Column01&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="Column02"&gt;&lt;Caption&gt;مبلغ&lt;/Caption&gt;&lt;DataMember&gt;Column02&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###;(#,##0.###);0&lt;/FormatString&gt;&lt;Key&gt;Column02&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;Key&gt;Price&lt;/Key&gt;&lt;DisplayMember&gt;Column02&lt;/DisplayMember&gt;&lt;ValueMember&gt;Column02&lt;/ValueMember&gt;&lt;/DropDown6&gt;&lt;DropDown7 ID="Codecommodity"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="ColumnId"&gt;&lt;Caption&gt;ColumnId&lt;/Caption&gt;&lt;DataMember&gt;ColumnId&lt;/DataMember&gt;&lt;Key&gt;ColumnId&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;Column1 ID="Column01"&gt;&lt;Caption&gt;Column01&lt;/Caption&gt;&lt;DataMember&gt;Column01&lt;/DataMember&gt;&lt;Key&gt;Column01&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;Key&gt;Codecommodity&lt;/Key&gt;&lt;DisplayMember&gt;Column01&lt;/DisplayMember&gt;&lt;ValueMember&gt;ColumnId&lt;/ValueMember&gt;&lt;/DropDown7&gt;&lt;DropDown8 ID="Namecommodity"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="columnId"&gt;&lt;Caption&gt;columnId&lt;/Caption&gt;&lt;DataMember&gt;columnId&lt;/DataMember&gt;&lt;Key&gt;columnId&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;Column1 ID="Column02"&gt;&lt;Caption&gt;Column02&lt;/Caption&gt;&lt;DataMember&gt;Column02&lt;/DataMember&gt;&lt;Key&gt;Column02&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;Key&gt;Namecommodity&lt;/Key&gt;&lt;DisplayMember&gt;Column02&lt;/DisplayMember&gt;&lt;ValueMember&gt;columnId&lt;/ValueMember&gt;&lt;/DropDown8&gt;&lt;DropDown9 ID="UnitCount"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="column00"&gt;&lt;Caption&gt;column00&lt;/Caption&gt;&lt;DataMember&gt;column00&lt;/DataMember&gt;&lt;Key&gt;column00&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;Column1 ID="Column01"&gt;&lt;Caption&gt;Column01&lt;/Caption&gt;&lt;DataMember&gt;Column01&lt;/DataMember&gt;&lt;Key&gt;Column01&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;Key&gt;UnitCount&lt;/Key&gt;&lt;DisplayMember&gt;Column01&lt;/DisplayMember&gt;&lt;ValueMember&gt;column00&lt;/ValueMember&gt;&lt;/DropDown9&gt;&lt;/DropDowns&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>319, 56</value>
+  </metadata>
+  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABu
+        CAAAAk1TRnQBSQFMAwEBAAHwAQoB8AEKARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        AUADAAEQAwABAQEAAQgGAAEEGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
+        AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
+        AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm
+        AwABmQMAAcwCAAEzAwACMwIAATMBZgIAATMBmQIAATMBzAIAATMB/wIAAWYDAAFmATMCAAJmAgABZgGZ
+        AgABZgHMAgABZgH/AgABmQMAAZkBMwIAAZkBZgIAApkCAAGZAcwCAAGZAf8CAAHMAwABzAEzAgABzAFm
+        AgABzAGZAgACzAIAAcwB/wIAAf8BZgIAAf8BmQIAAf8BzAEAATMB/wIAAf8BAAEzAQABMwEAAWYBAAEz
+        AQABmQEAATMBAAHMAQABMwEAAf8BAAH/ATMCAAMzAQACMwFmAQACMwGZAQACMwHMAQACMwH/AQABMwFm
+        AgABMwFmATMBAAEzAmYBAAEzAWYBmQEAATMBZgHMAQABMwFmAf8BAAEzAZkCAAEzAZkBMwEAATMBmQFm
+        AQABMwKZAQABMwGZAcwBAAEzAZkB/wEAATMBzAIAATMBzAEzAQABMwHMAWYBAAEzAcwBmQEAATMCzAEA
+        ATMBzAH/AQABMwH/ATMBAAEzAf8BZgEAATMB/wGZAQABMwH/AcwBAAEzAv8BAAFmAwABZgEAATMBAAFm
+        AQABZgEAAWYBAAGZAQABZgEAAcwBAAFmAQAB/wEAAWYBMwIAAWYCMwEAAWYBMwFmAQABZgEzAZkBAAFm
+        ATMBzAEAAWYBMwH/AQACZgIAAmYBMwEAA2YBAAJmAZkBAAJmAcwBAAFmAZkCAAFmAZkBMwEAAWYBmQFm
+        AQABZgKZAQABZgGZAcwBAAFmAZkB/wEAAWYBzAIAAWYBzAEzAQABZgHMAZkBAAFmAswBAAFmAcwB/wEA
+        AWYB/wIAAWYB/wEzAQABZgH/AZkBAAFmAf8BzAEAAcwBAAH/AQAB/wEAAcwBAAKZAgABmQEzAZkBAAGZ
+        AQABmQEAAZkBAAHMAQABmQMAAZkCMwEAAZkBAAFmAQABmQEzAcwBAAGZAQAB/wEAAZkBZgIAAZkBZgEz
+        AQABmQEzAWYBAAGZAWYBmQEAAZkBZgHMAQABmQEzAf8BAAKZATMBAAKZAWYBAAOZAQACmQHMAQACmQH/
+        AQABmQHMAgABmQHMATMBAAFmAcwBZgEAAZkBzAGZAQABmQLMAQABmQHMAf8BAAGZAf8CAAGZAf8BMwEA
+        AZkBzAFmAQABmQH/AZkBAAGZAf8BzAEAAZkC/wEAAcwDAAGZAQABMwEAAcwBAAFmAQABzAEAAZkBAAHM
+        AQABzAEAAZkBMwIAAcwCMwEAAcwBMwFmAQABzAEzAZkBAAHMATMBzAEAAcwBMwH/AQABzAFmAgABzAFm
+        ATMBAAGZAmYBAAHMAWYBmQEAAcwBZgHMAQABmQFmAf8BAAHMAZkCAAHMAZkBMwEAAcwBmQFmAQABzAKZ
+        AQABzAGZAcwBAAHMAZkB/wEAAswCAALMATMBAALMAWYBAALMAZkBAAPMAQACzAH/AQABzAH/AgABzAH/
+        ATMBAAGZAf8BZgEAAcwB/wGZAQABzAH/AcwBAAHMAv8BAAHMAQABMwEAAf8BAAFmAQAB/wEAAZkBAAHM
+        ATMCAAH/AjMBAAH/ATMBZgEAAf8BMwGZAQAB/wEzAcwBAAH/ATMB/wEAAf8BZgIAAf8BZgEzAQABzAJm
+        AQAB/wFmAZkBAAH/AWYBzAEAAcwBZgH/AQAB/wGZAgAB/wGZATMBAAH/AZkBZgEAAf8CmQEAAf8BmQHM
+        AQAB/wGZAf8BAAH/AcwCAAH/AcwBMwEAAf8BzAFmAQAB/wHMAZkBAAH/AswBAAH/AcwB/wEAAv8BMwEA
+        AcwB/wFmAQAC/wGZAQAC/wHMAQACZgH/AQABZgH/AWYBAAFmAv8BAAH/AmYBAAH/AWYB/wEAAv8BZgEA
+        ASEBAAGlAQADXwEAA3cBAAOGAQADlgEAA8sBAAOyAQAD1wEAA90BAAPjAQAD6gEAA/EBAAP4AQAB8AH7
+        Af8BAAGkAqABAAOAAwAB/wIAAf8DAAL/AQAB/wMAAf8BAAH/AQAC/wIAA/9CAAH0DPEB9DIAAZkBkwEc
+        AXQBHAFMAukBbwIcAXQBHAGZMgABmQH0AZoB9AEaAXQCIAF0AcMBmgHDAZoBmTIAAZkBmgH0AZoB9gF0
+        AiABkwIaAZoBGgGZMgABmQH2AZoB9gHDAZMCJQF0AfYBGgHDAZoBmTIAAZkBGgH2ARoB/wF0AiUBmgHD
+        AfYBGgHDAZkyAAGZAfYBGgH2AcMBkwIsAZkB/wEaAfYBGgGZMgABmQF0A5kBmgJNAZoDmQGTAZkyAAGZ
+        AZoCGgEbAZoCTQGaBBoBmTIAAfQBTAFGAkwBRgIlAUYCTAFGAW8B/zMAAZkBHwMlAkYBIAMlAfM0AAEb
+        ASUBTQElAfIC/wF0AiUBbwH/NAAB/wFvAU0BGgMAAfQBTQElARs2AAH/AfQFAAIadAABQgFNAT4HAAE+
+        AwABKAMAAUADAAEQAwABAQEAAQEFAAGAFwAD/wEAAv8GAAGAAQEGAAGAAQEGAAGAAQEGAAGAAQEGAAGA
+        AQEGAAGAAQEGAAGAAQEGAAGAAQEGAAGAAQEGAAGAAQEGAAHAAQMGAAHAAQMGAAHDAYcGAAHnAc8GAAL/
+        BgAL
+</value>
+  </data>
+  <data name="mlt_Draft_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Columnid"&gt;&lt;Caption&gt;Columnid&lt;/Caption&gt;&lt;DataMember&gt;Columnid&lt;/DataMember&gt;&lt;Key&gt;Columnid&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;Column1 ID="Column01"&gt;&lt;Caption&gt;Column01&lt;/Caption&gt;&lt;DataMember&gt;Column01&lt;/DataMember&gt;&lt;Key&gt;Column01&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;VisualStyle&gt;VS2010&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;Column01&lt;/DisplayMember&gt;&lt;ValueMember&gt;ColumnId&lt;/ValueMember&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="mlt_Doc_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Colunmid"&gt;&lt;Caption&gt;Colunmid&lt;/Caption&gt;&lt;DataMember&gt;Colunmid&lt;/DataMember&gt;&lt;Key&gt;Colunmid&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="Column00"&gt;&lt;Caption&gt;شماره سند&lt;/Caption&gt;&lt;DataMember&gt;Column00&lt;/DataMember&gt;&lt;Key&gt;Column00&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;VisualStyle&gt;VS2010&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;Column00&lt;/DisplayMember&gt;&lt;ValueMember&gt;ColumnId&lt;/ValueMember&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="mlt_Function_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Key&gt;table_005_PwhrsOperation&lt;/Key&gt;&lt;Caption&gt;table_005_PwhrsOperation&lt;/Caption&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="columnid"&gt;&lt;Caption&gt;columnid&lt;/Caption&gt;&lt;DataTypeCode&gt;Int16&lt;/DataTypeCode&gt;&lt;TypeNameEmptyStringValue&gt;NULL&lt;/TypeNameEmptyStringValue&gt;&lt;EmptyStringValue /&gt;&lt;DataMember&gt;columnid&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;columnid&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="column01"&gt;&lt;Caption&gt;کد عملکرد&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;TypeNameEmptyStringValue&gt;NULL&lt;/TypeNameEmptyStringValue&gt;&lt;EmptyStringValue /&gt;&lt;DataMember&gt;column01&lt;/DataMember&gt;&lt;Key&gt;column01&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;Column2 ID="column02"&gt;&lt;Caption&gt;نام عملکرد&lt;/Caption&gt;&lt;DataTypeCode&gt;String&lt;/DataTypeCode&gt;&lt;TypeNameEmptyStringValue&gt;System.String&lt;/TypeNameEmptyStringValue&gt;&lt;EmptyStringValue /&gt;&lt;DataMember&gt;column02&lt;/DataMember&gt;&lt;Key&gt;column02&lt;/Key&gt;&lt;MaxLength&gt;100&lt;/MaxLength&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column2&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;VisualStyle&gt;VS2010&lt;/VisualStyle&gt;&lt;OfficeColorScheme&gt;Custom&lt;/OfficeColorScheme&gt;&lt;OfficeCustomColor&gt;SteelBlue&lt;/OfficeCustomColor&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnAutoResize&gt;True&lt;/ColumnAutoResize&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;RowHeaders&gt;True&lt;/RowHeaders&gt;&lt;DisplayMember&gt;column02&lt;/DisplayMember&gt;&lt;ValueMember&gt;Columnid&lt;/ValueMember&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="mlt_Ware_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Key&gt;Table_001_PWHRS&lt;/Key&gt;&lt;Caption&gt;Table_001_PWHRS&lt;/Caption&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="columnid"&gt;&lt;Caption&gt;columnid&lt;/Caption&gt;&lt;DataTypeCode&gt;Int16&lt;/DataTypeCode&gt;&lt;TypeNameEmptyStringValue&gt;NULL&lt;/TypeNameEmptyStringValue&gt;&lt;EmptyStringValue /&gt;&lt;DataMember&gt;columnid&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;columnid&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="column01"&gt;&lt;Caption&gt;کد انبار&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;TypeNameEmptyStringValue&gt;NULL&lt;/TypeNameEmptyStringValue&gt;&lt;EmptyStringValue /&gt;&lt;DataMember&gt;column01&lt;/DataMember&gt;&lt;Key&gt;column01&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;150&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="column02"&gt;&lt;Caption&gt;نام انبار&lt;/Caption&gt;&lt;DataTypeCode&gt;String&lt;/DataTypeCode&gt;&lt;TypeNameEmptyStringValue&gt;System.String&lt;/TypeNameEmptyStringValue&gt;&lt;EmptyStringValue /&gt;&lt;DataMember&gt;column02&lt;/DataMember&gt;&lt;Key&gt;column02&lt;/Key&gt;&lt;MaxLength&gt;100&lt;/MaxLength&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column2&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;VisualStyle&gt;VS2010&lt;/VisualStyle&gt;&lt;OfficeColorScheme&gt;Custom&lt;/OfficeColorScheme&gt;&lt;OfficeCustomColor&gt;SteelBlue&lt;/OfficeCustomColor&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnAutoResize&gt;True&lt;/ColumnAutoResize&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;RowHeaders&gt;True&lt;/RowHeaders&gt;&lt;DisplayMember&gt;Column02&lt;/DisplayMember&gt;&lt;ValueMember&gt;columnid&lt;/ValueMember&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="mlt_NameCustomer_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Columnid"&gt;&lt;Caption&gt;Columnid&lt;/Caption&gt;&lt;DataMember&gt;Columnid&lt;/DataMember&gt;&lt;Key&gt;Columnid&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="Column01"&gt;&lt;Caption&gt;کد مشتری&lt;/Caption&gt;&lt;DataMember&gt;Column01&lt;/DataMember&gt;&lt;Key&gt;Column01&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;150&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="Column02"&gt;&lt;Caption&gt;نام مشتری&lt;/Caption&gt;&lt;DataMember&gt;Column02&lt;/DataMember&gt;&lt;Key&gt;Column02&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column2&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;VisualStyle&gt;VS2010&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;Column02&lt;/DisplayMember&gt;&lt;ValueMember&gt;Columnid&lt;/ValueMember&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <metadata name="table_012_Child2_SaleFactorBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>757, 95</value>
+  </metadata>
+  <data name="gridEX_Extra_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Key&gt;IBindingList&lt;/Key&gt;&lt;Caption&gt;سایر اضافات و کسورات&lt;/Caption&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="columnid"&gt;&lt;Caption&gt;columnid&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;columnid&lt;/DataMember&gt;&lt;EditType&gt;NoEdit&lt;/EditType&gt;&lt;Key&gt;columnid&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="column01"&gt;&lt;Caption&gt;column01&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;column01&lt;/DataMember&gt;&lt;Key&gt;column01&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column1&gt;&lt;Column2 ID="column02"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;Caption&gt;نام&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;column02&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;EditType&gt;MultiColumnCombo&lt;/EditType&gt;&lt;Key&gt;column02&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;133&lt;/Width&gt;&lt;DropDownIndex&gt;0&lt;/DropDownIndex&gt;&lt;/Column2&gt;&lt;Column3 ID="column03"&gt;&lt;Caption&gt;درصد&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column03&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column03&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Width&gt;62&lt;/Width&gt;&lt;/Column3&gt;&lt;Column4 ID="column04"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;مبلغ&lt;/Caption&gt;&lt;DataTypeCode&gt;Decimal&lt;/DataTypeCode&gt;&lt;DataMember&gt;column04&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;column04&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Width&gt;99&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.##&lt;/TotalFormatString&gt;&lt;/Column4&gt;&lt;Column5 ID="column05"&gt;&lt;Caption&gt;نوع&lt;/Caption&gt;&lt;DataTypeCode&gt;Boolean&lt;/DataTypeCode&gt;&lt;DataMember&gt;column05&lt;/DataMember&gt;&lt;Key&gt;column05&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;64&lt;/Width&gt;&lt;HasValueList&gt;True&lt;/HasValueList&gt;&lt;ValueList Collection="true" ElementName="Item"&gt;&lt;Item0 ID="True"&gt;&lt;Text&gt;تخفیف&lt;/Text&gt;&lt;ValueType&gt;System.Boolean&lt;/ValueType&gt;&lt;Value&gt;True&lt;/Value&gt;&lt;/Item0&gt;&lt;Item1 ID="False"&gt;&lt;Text&gt;اضافه&lt;/Text&gt;&lt;ValueType&gt;System.Boolean&lt;/ValueType&gt;&lt;Value&gt;False&lt;/Value&gt;&lt;/Item1&gt;&lt;/ValueList&gt;&lt;/Column5&gt;&lt;Column6 ID="column06"&gt;&lt;Caption&gt;توضیحات&lt;/Caption&gt;&lt;DataTypeCode&gt;String&lt;/DataTypeCode&gt;&lt;DataMember&gt;column06&lt;/DataMember&gt;&lt;Key&gt;column06&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;327&lt;/Width&gt;&lt;/Column6&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;DropDowns Collection="true" ElementName="DropDown"&gt;&lt;DropDown0 ID="Type"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="columnid"&gt;&lt;Caption&gt;columnid&lt;/Caption&gt;&lt;DataMember&gt;columnid&lt;/DataMember&gt;&lt;Key&gt;columnid&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="column01"&gt;&lt;Caption&gt;نام کسر اضافه&lt;/Caption&gt;&lt;DataMember&gt;column01&lt;/DataMember&gt;&lt;Key&gt;column01&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;Column2 ID="column02"&gt;&lt;Caption&gt;تخفیف یا اضافه&lt;/Caption&gt;&lt;DataMember&gt;column02&lt;/DataMember&gt;&lt;Key&gt;column02&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column2&gt;&lt;Column3 ID="column03"&gt;&lt;Caption&gt;درصد یا مبلغ&lt;/Caption&gt;&lt;DataMember&gt;column03&lt;/DataMember&gt;&lt;Key&gt;column03&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column3&gt;&lt;Column4 ID="column04"&gt;&lt;Caption&gt;مقدار&lt;/Caption&gt;&lt;DataMember&gt;column04&lt;/DataMember&gt;&lt;Key&gt;column04&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;HasValueList&gt;True&lt;/HasValueList&gt;&lt;/Column4&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;Font&gt;Microsoft Sans Serif, 8.25pt&lt;/Font&gt;&lt;VisualStyle&gt;Office2007&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;RowHeaders&gt;True&lt;/RowHeaders&gt;&lt;Key&gt;Type&lt;/Key&gt;&lt;DisplayMember&gt;column01&lt;/DisplayMember&gt;&lt;ValueMember&gt;columnid&lt;/ValueMember&gt;&lt;/DropDown0&gt;&lt;/DropDowns&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <metadata name="table_010_SaleFactorTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>812, 56</value>
+  </metadata>
+  <metadata name="tableAdapterManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <metadata name="table_012_Child2_SaleFactorTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <metadata name="GoodbindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>856, 17</value>
+  </metadata>
+  <metadata name="table_011_Child1_SaleFactorTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>479, 95</value>
+  </metadata>
+</root>
