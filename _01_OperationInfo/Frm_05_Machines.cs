@@ -1,4 +1,5 @@
-﻿using PCLOR.Classes;
+﻿using Dapper;
+using PCLOR.Classes;
 using PCLOR.Models;
 using System;
 using System.Collections.Generic;
@@ -33,41 +34,64 @@ namespace PCLOR._01_OperationInfo
             if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 147))
                 button1.Visible = true;
 
-            var result = ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=27");
-            var points = Newtonsoft.Json.JsonConvert.DeserializeObject<IEnumerable<MachinePoint>>(result).OrderBy(x => x.Y).ToList();
-
-            machines = ClDoc.ReturnTable(ConPCLOR, @"SELECT ID, Code, NameMachine,REPLACE (REPLACE (namemachine, '200', ''), '-', '') as Name, cast(1 as bit) as Status, null as Description FROM [dbo].[Table_60_SpecsTechnical] where namemachine like '%200%'").ToList<Machine>();
-            var buttons = this.Controls.OfType<Button>().Where(b => b.Name.StartsWith("B"));
-
-            buttons.ToList().ForEach(button =>
+            //var result = ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=27");
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
-                var point = points.FirstOrDefault(p => p.Name.Equals(button.Name));
-                if (point != null)
-                    button.Location = new Point(point.X, point.Y);
 
-                var machine = machines.FirstOrDefault(m => m.Name.Equals(button.Name));
-                if (machine != null)
+
+                //var t=db.Query("SELECT X, Y, namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1",null,commandType:CommandType.Text);
+                var points = db.Query<MachinePoint>("SELECT X, Y, ID ,namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1",null,commandType:CommandType.Text).OrderBy(x=>x.Y).ToList();
+
+                //var result = ClDoc.ReturnTable(ConPCLOR, @" SELECT X, Y, namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1  ");
+                //var points = Newtonsoft.Json.JsonConvert.DeserializeObject<IEnumerable<MachinePoint>>(result.ToString()).OrderBy(x => x.Y).ToList();
+                machines = ClDoc.ReturnTable(ConPCLOR, @"SELECT ID, Code, namemachine as Namemachine,namemachine as Name ,  status as Status, Specstechnical as Description FROM [dbo].[Table_60_SpecsTechnical]  where  status=1").ToList<Machine>();
+                foreach (var item in machines)
                 {
-                    if (machine.Status.Equals(false))
-                        button.BackColor = SystemColors.WindowFrame;
-
-                    ToolTip toolTip = new ToolTip();
-                    toolTip.SetToolTip(button, machine.Description);
-
-                    button.Tag = machine;
+                    Button button = new Button();
+                    button.Text = item.NameMachine;
+                    var point = points.FirstOrDefault(c=>c.ID==item.ID);
+                    button.Location = new Point(point.X, point.Y);
+                    button.Draggable(false);
                     button.Click += Button_Click;
+                    Controls.Add(button);
                 }
-                else
-                    button.BackColor = SystemColors.WindowFrame;
-            });
+                
+                
+                
+                
+                
+                var buttons = this.Controls.OfType<Button>().Where(b => b.Name.StartsWith("B"));
 
-            for (int i = 0; i < points.Count; i++)
-            {
-                var point = points[i];
-                var button = buttons.FirstOrDefault(m => m.Name.Equals(point.Name));
+                buttons.ToList().ForEach(button =>
+                {
+                    var point = points.FirstOrDefault(p => p.Name.Equals(button.Name));
+                    if (point != null)
+                        button.Location = new Point(point.X, point.Y);
 
-                if (button != null)
-                    button.TabIndex = i + 1;
+                    var machine = machines.FirstOrDefault(m => m.Name.Equals(button.Name));
+                    if (machine != null)
+                    {
+                        if (machine.Status.Equals(false))
+                            button.BackColor = SystemColors.WindowFrame;
+
+                        ToolTip toolTip = new ToolTip();
+                        toolTip.SetToolTip(button, machine.Description);
+
+                        button.Tag = machine;
+                        button.Click += Button_Click;
+                    }
+                    else
+                        button.BackColor = SystemColors.WindowFrame;
+                });
+
+                for (int i = 0; i < points.Count; i++)
+                {
+                    var point = points[i];
+                    var button = buttons.FirstOrDefault(m => m.Name.Equals(point.Name));
+
+                    if (button != null)
+                        button.TabIndex = i + 1;
+                }
             }
         }
 

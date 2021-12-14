@@ -1319,23 +1319,30 @@ ORDER BY Barcode");
 
         private void buttonItem72_Click(object sender, EventArgs e)
         {
-            if (!CheckOpenForms("Frm_005_SelectMachine"))
-            {
-                Class_UserScope UserScope = new Class_UserScope();
-                if (UserScope.CheckScope(_UserName, "Column44", 148))
-                {
-                    Product.Frm_005_SelectMachine frm = new Product.Frm_005_SelectMachine();
 
-                    frm.MdiParent = this;
-                    if (frm.MdiParent.MdiChildren.Length > 1 && frm.MdiParent.MdiChildren[0].WindowState == FormWindowState.Maximized)
-                    {
-                        frm.MdiParent.MdiChildren[0].WindowState = FormWindowState.Normal; frm.WindowState = FormWindowState.Maximized;
-                    }
-                    frm.Show(); frm.Focus();
-                }
-                else
-                    Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
-            }
+
+
+            Frm_05_Machines frm_05_Machines = new Frm_05_Machines();
+            frm_05_Machines.Show();
+
+
+            //if (!CheckOpenForms("Frm_005_SelectMachine"))
+            //{
+            //    Class_UserScope UserScope = new Class_UserScope();
+            //    if (UserScope.CheckScope(_UserName, "Column44", 148))
+            //    {
+            //        Product.Frm_005_SelectMachine frm = new Product.Frm_005_SelectMachine();
+
+            //        frm.MdiParent = this;
+            //        if (frm.MdiParent.MdiChildren.Length > 1 && frm.MdiParent.MdiChildren[0].WindowState == FormWindowState.Maximized)
+            //        {
+            //            frm.MdiParent.MdiChildren[0].WindowState = FormWindowState.Normal; frm.WindowState = FormWindowState.Maximized;
+            //        }
+            //        frm.Show(); frm.Focus();
+            //    }
+            //    else
+            //        Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
+            //}
         }
 
         private void bt_Programmachine_Click(object sender, EventArgs e)
@@ -1573,27 +1580,26 @@ ORDER BY Barcode");
         {
 
 
-            Frm_05_Machines frm_05_Machines = new Frm_05_Machines();
-            frm_05_Machines.Show();
 
 
-            //if (!CheckOpenForms("Frm_Rpt_BarcodeDetail"))
-            //{
-            //    Class_UserScope UserScope = new Class_UserScope();
-            //    if (UserScope.CheckScope(_UserName, "Column44", 160))
-            //    {
-            //        Report.Frm_Rpt_BarcodeDetail frm = new Report.Frm_Rpt_BarcodeDetail();
 
-            //        frm.MdiParent = this;
-            //        if (frm.MdiParent.MdiChildren.Length > 1 && frm.MdiParent.MdiChildren[0].WindowState == FormWindowState.Maximized)
-            //        {
-            //            frm.MdiParent.MdiChildren[0].WindowState = FormWindowState.Normal; frm.WindowState = FormWindowState.Maximized;
-            //        }
-            //        frm.Show(); frm.Focus();
-            //    }
-            //    else
-            //        Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
-            //}
+            if (!CheckOpenForms("Frm_Rpt_BarcodeDetail"))
+            {
+                Class_UserScope UserScope = new Class_UserScope();
+                if (UserScope.CheckScope(_UserName, "Column44", 160))
+                {
+                    Report.Frm_Rpt_BarcodeDetail frm = new Report.Frm_Rpt_BarcodeDetail();
+
+                    frm.MdiParent = this;
+                    if (frm.MdiParent.MdiChildren.Length > 1 && frm.MdiParent.MdiChildren[0].WindowState == FormWindowState.Maximized)
+                    {
+                        frm.MdiParent.MdiChildren[0].WindowState = FormWindowState.Normal; frm.WindowState = FormWindowState.Maximized;
+                    }
+                    frm.Show(); frm.Focus();
+                }
+                else
+                    Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
+            }
         }
 
         private void buttonItem76_Click(object sender, EventArgs e)

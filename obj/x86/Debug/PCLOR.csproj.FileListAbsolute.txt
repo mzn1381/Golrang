@@ -1209,3 +1209,6 @@ G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CoreCompileInp
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.Contrib.dll
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.dll
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.xml
