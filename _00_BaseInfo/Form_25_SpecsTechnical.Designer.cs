@@ -36,9 +36,9 @@
             System.Windows.Forms.Label radioForProduction;
             System.Windows.Forms.Label label2;
             System.Windows.Forms.Label label3;
+            System.Windows.Forms.Label label4;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_25_SpecsTechnical));
             Janus.Windows.GridEX.GridEXLayout gridEX1_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
-            System.Windows.Forms.Label label4;
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.table_60_SpecsTechnicalBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet_05_PCLOR = new PCLOR.data_PCLOR.DataSet_05_PCLOR();
@@ -61,6 +61,7 @@
             this.gridEX1 = new Janus.Windows.GridEX.GridEX();
             this.uiPanel0 = new Janus.Windows.UI.Dock.UIPanel();
             this.uiPanel0Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
+            this.checkStatus = new System.Windows.Forms.CheckBox();
             this.yNumeric = new System.Windows.Forms.NumericUpDown();
             this.xNumeric = new System.Windows.Forms.NumericUpDown();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -72,7 +73,6 @@
             this.tableAdapterManager = new PCLOR.data_PCLOR.DataSet_05_PCLORTableAdapters.TableAdapterManager();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.فعالکردنپنلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkStatus = new System.Windows.Forms.CheckBox();
             label14 = new System.Windows.Forms.Label();
             label11 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
@@ -170,6 +170,17 @@
             label3.TabIndex = 69;
             label3.Text = "مختصات Y دستگاه :";
             // 
+            // label4
+            // 
+            label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(172, 143);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(59, 17);
+            label4.TabIndex = 71;
+            label4.Text = "وضعیت :";
+            label4.Click += new System.EventHandler(this.radioForProduction_Click);
+            // 
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = null;
@@ -202,7 +213,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(665, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(665, 27);
             this.bindingNavigator1.TabIndex = 4;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -220,7 +231,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(46, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(46, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -230,7 +241,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -239,13 +250,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -260,7 +271,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -268,7 +279,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             this.bindingNavigatorMoveNextItem.Click += new System.EventHandler(this.bindingNavigatorMoveNextItem_Click);
             // 
@@ -278,34 +289,34 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_Delete
             // 
             this.btn_Delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_Delete.Image")));
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.RightToLeftAutoMirrorImage = true;
-            this.btn_Delete.Size = new System.Drawing.Size(61, 28);
+            this.btn_Delete.Size = new System.Drawing.Size(61, 24);
             this.btn_Delete.Text = "حذف";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_New
             // 
             this.btn_New.Image = ((System.Drawing.Image)(resources.GetObject("btn_New.Image")));
             this.btn_New.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_New.Name = "btn_New";
-            this.btn_New.Size = new System.Drawing.Size(61, 28);
+            this.btn_New.Size = new System.Drawing.Size(61, 24);
             this.btn_New.Text = "جدید";
             this.btn_New.Click += new System.EventHandler(this.btn_New_Click);
             // 
@@ -314,7 +325,7 @@
             this.btn_Save.Image = ((System.Drawing.Image)(resources.GetObject("btn_Save.Image")));
             this.btn_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(66, 28);
+            this.btn_Save.Size = new System.Drawing.Size(66, 24);
             this.btn_Save.Text = "ذخیره";
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
@@ -331,7 +342,7 @@
             // 
             this.uiPanelManager1.BeginPanelInfo();
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("4744f448-f010-4ed2-8b96-0788ffe4d57e"), Janus.Windows.UI.Dock.PanelDockStyle.Bottom, new System.Drawing.Size(659, 170), true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("da1ab452-d736-403c-b2a3-cdc09ed1252b"), Janus.Windows.UI.Dock.PanelDockStyle.Fill, new System.Drawing.Size(659, 241), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("da1ab452-d736-403c-b2a3-cdc09ed1252b"), Janus.Windows.UI.Dock.PanelDockStyle.Fill, new System.Drawing.Size(659, 245), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("da1ab452-d736-403c-b2a3-cdc09ed1252b"), new System.Drawing.Point(489, 349), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("4744f448-f010-4ed2-8b96-0788ffe4d57e"), new System.Drawing.Point(-1, -1), new System.Drawing.Size(-1, -1), false);
             this.uiPanelManager1.EndPanelInfo();
@@ -407,9 +418,9 @@
             this.uiPanel0.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.FloatingLocation = new System.Drawing.Point(489, 349);
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
-            this.uiPanel0.Location = new System.Drawing.Point(3, 34);
+            this.uiPanel0.Location = new System.Drawing.Point(3, 30);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(659, 241);
+            this.uiPanel0.Size = new System.Drawing.Size(659, 245);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "اطلاعات دستگاه";
             this.uiPanel0.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -434,8 +445,18 @@
             this.uiPanel0Container.Controls.Add(label11);
             this.uiPanel0Container.Location = new System.Drawing.Point(1, 24);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(657, 216);
+            this.uiPanel0Container.Size = new System.Drawing.Size(657, 220);
             this.uiPanel0Container.TabIndex = 0;
+            // 
+            // checkStatus
+            // 
+            this.checkStatus.AutoSize = true;
+            this.checkStatus.Location = new System.Drawing.Point(105, 143);
+            this.checkStatus.Name = "checkStatus";
+            this.checkStatus.Size = new System.Drawing.Size(18, 17);
+            this.checkStatus.TabIndex = 74;
+            this.checkStatus.UseVisualStyleBackColor = true;
+            this.checkStatus.CheckedChanged += new System.EventHandler(this.checkStatus_CheckedChanged);
             // 
             // yNumeric
             // 
@@ -594,27 +615,6 @@
             this.فعالکردنپنلToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
             this.فعالکردنپنلToolStripMenuItem.Text = "فعال کردن پنل";
             this.فعالکردنپنلToolStripMenuItem.Click += new System.EventHandler(this.فعالکردنپنلToolStripMenuItem_Click);
-            // 
-            // checkStatus
-            // 
-            this.checkStatus.AutoSize = true;
-            this.checkStatus.Location = new System.Drawing.Point(105, 143);
-            this.checkStatus.Name = "checkStatus";
-            this.checkStatus.Size = new System.Drawing.Size(18, 17);
-            this.checkStatus.TabIndex = 74;
-            this.checkStatus.UseVisualStyleBackColor = true;
-            this.checkStatus.CheckedChanged += new System.EventHandler(this.checkStatus_CheckedChanged);
-            // 
-            // label4
-            // 
-            label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(172, 143);
-            label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(59, 17);
-            label4.TabIndex = 71;
-            label4.Text = "وضعیت :";
-            label4.Click += new System.EventHandler(this.radioForProduction_Click);
             // 
             // Form_25_SpecsTechnical
             // 

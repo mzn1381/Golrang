@@ -52,6 +52,10 @@ namespace PCLOR._00_BaseInfo
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
+
+
+
+
             try
             {
                 if (txt_NameColor.Text == "")
@@ -249,6 +253,14 @@ namespace PCLOR._00_BaseInfo
 
             //radioButton2.Checked = true;
             //txt_Code.Text = "@@@@";
+            uiPanel0.Enabled = true;
+            //xNumeric.Value
+            xNumeric.Value = Convert.ToDecimal(((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["X"].ToString());
+            yNumeric.Value = Convert.ToDecimal(((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["Y"].ToString());
+            checkStatus.Checked = (bool)((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["status"];
+            radioButton1.Checked = (bool)((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForColor"];
+            radioButton2.Checked = (bool)((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForProduction"];
+
         }
 
         private void gridEX1_RowDoubleClick(object sender, Janus.Windows.GridEX.RowActionEventArgs e)
