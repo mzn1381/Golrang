@@ -452,6 +452,12 @@
     <Compile Include="Report\Frm_Rpt_SumSaleFi.Designer.cs">
       <DependentUpon>Frm_Rpt_SumSaleFi.cs</DependentUpon>
     </Compile>
+    <Compile Include="_00_BaseInfo\Form_55_EditSpecsTechnical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Form_55_EditSpecsTechnical.Designer.cs">
+      <DependentUpon>Form_55_EditSpecsTechnical.cs</DependentUpon>
+    </Compile>
     <Compile Include="_00_BaseInfo\Frm_50_TypeCotton.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1141,6 +1147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Frm_Rpt_SumSaleFi.resx">
       <DependentUpon>Frm_Rpt_SumSaleFi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Form_55_EditSpecsTechnical.resx">
+      <DependentUpon>Form_55_EditSpecsTechnical.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="_00_BaseInfo\Frm_50_TypeCotton.resx">
       <DependentUpon>Frm_50_TypeCotton.cs</DependentUpon>

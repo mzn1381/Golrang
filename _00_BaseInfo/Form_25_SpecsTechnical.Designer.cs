@@ -32,8 +32,6 @@
             System.Windows.Forms.Label label14;
             System.Windows.Forms.Label label11;
             System.Windows.Forms.Label label1;
-            System.Windows.Forms.Label radioForColor;
-            System.Windows.Forms.Label radioForProduction;
             System.Windows.Forms.Label label2;
             System.Windows.Forms.Label label3;
             System.Windows.Forms.Label label4;
@@ -64,8 +62,6 @@
             this.checkStatus = new System.Windows.Forms.CheckBox();
             this.yNumeric = new System.Windows.Forms.NumericUpDown();
             this.xNumeric = new System.Windows.Forms.NumericUpDown();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.txt_Spect = new System.Windows.Forms.TextBox();
             this.txt_NameColor = new System.Windows.Forms.TextBox();
             this.txt_Code = new System.Windows.Forms.TextBox();
@@ -76,8 +72,6 @@
             label14 = new System.Windows.Forms.Label();
             label11 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
-            radioForColor = new System.Windows.Forms.Label();
-            radioForProduction = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
@@ -128,28 +122,6 @@
             label1.TabIndex = 71;
             label1.Text = "مشخصات فنی  :";
             // 
-            // radioForColor
-            // 
-            radioForColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            radioForColor.AutoSize = true;
-            radioForColor.Location = new System.Drawing.Point(137, 40);
-            radioForColor.Name = "radioForColor";
-            radioForColor.Size = new System.Drawing.Size(94, 17);
-            radioForColor.TabIndex = 71;
-            radioForColor.Text = "مخصوص رنگ :";
-            radioForColor.Click += new System.EventHandler(this.radioForColor_Click);
-            // 
-            // radioForProduction
-            // 
-            radioForProduction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            radioForProduction.AutoSize = true;
-            radioForProduction.Location = new System.Drawing.Point(129, 94);
-            radioForProduction.Name = "radioForProduction";
-            radioForProduction.Size = new System.Drawing.Size(102, 17);
-            radioForProduction.TabIndex = 71;
-            radioForProduction.Text = "مخصوص تولید  :";
-            radioForProduction.Click += new System.EventHandler(this.radioForProduction_Click);
-            // 
             // label2
             // 
             label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -174,7 +146,7 @@
             // 
             label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(172, 143);
+            label4.Location = new System.Drawing.Point(176, 181);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(59, 17);
             label4.TabIndex = 71;
@@ -430,12 +402,8 @@
             this.uiPanel0Container.Controls.Add(this.checkStatus);
             this.uiPanel0Container.Controls.Add(this.yNumeric);
             this.uiPanel0Container.Controls.Add(this.xNumeric);
-            this.uiPanel0Container.Controls.Add(this.radioButton2);
-            this.uiPanel0Container.Controls.Add(this.radioButton1);
             this.uiPanel0Container.Controls.Add(this.txt_Spect);
             this.uiPanel0Container.Controls.Add(label4);
-            this.uiPanel0Container.Controls.Add(radioForProduction);
-            this.uiPanel0Container.Controls.Add(radioForColor);
             this.uiPanel0Container.Controls.Add(label1);
             this.uiPanel0Container.Controls.Add(this.txt_NameColor);
             this.uiPanel0Container.Controls.Add(this.txt_Code);
@@ -451,7 +419,7 @@
             // checkStatus
             // 
             this.checkStatus.AutoSize = true;
-            this.checkStatus.Location = new System.Drawing.Point(105, 143);
+            this.checkStatus.Location = new System.Drawing.Point(109, 181);
             this.checkStatus.Name = "checkStatus";
             this.checkStatus.Size = new System.Drawing.Size(18, 17);
             this.checkStatus.TabIndex = 74;
@@ -503,29 +471,6 @@
             0,
             0});
             this.xNumeric.ValueChanged += new System.EventHandler(this.xNumeric_ValueChanged);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Checked = true;
-            this.radioButton2.Location = new System.Drawing.Point(106, 94);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(17, 16);
-            this.radioButton2.TabIndex = 72;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(106, 40);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(17, 16);
-            this.radioButton1.TabIndex = 72;
-            this.radioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // txt_Spect
             // 
@@ -685,8 +630,6 @@
         private data_PCLOR.DataSet_05_PCLORTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem فعالکردنپنلToolStripMenuItem;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         public data_PCLOR.DataSet_05_PCLORTableAdapters.Table_60_SpecsTechnicalTableAdapter table_60_SpecsTechnicalTableAdapter;
         private System.Windows.Forms.NumericUpDown yNumeric;
         private System.Windows.Forms.NumericUpDown xNumeric;

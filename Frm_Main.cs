@@ -1322,27 +1322,28 @@ ORDER BY Barcode");
 
 
 
-            Frm_05_Machines frm_05_Machines = new Frm_05_Machines();
-            frm_05_Machines.Show();
+            
 
 
-            //if (!CheckOpenForms("Frm_005_SelectMachine"))
-            //{
-            //    Class_UserScope UserScope = new Class_UserScope();
-            //    if (UserScope.CheckScope(_UserName, "Column44", 148))
-            //    {
-            //        Product.Frm_005_SelectMachine frm = new Product.Frm_005_SelectMachine();
+            if (!CheckOpenForms("Frm_005_SelectMachine"))
+            {
+                Class_UserScope UserScope = new Class_UserScope();
+                if (UserScope.CheckScope(_UserName, "Column44", 148))
+                {
 
-            //        frm.MdiParent = this;
-            //        if (frm.MdiParent.MdiChildren.Length > 1 && frm.MdiParent.MdiChildren[0].WindowState == FormWindowState.Maximized)
-            //        {
-            //            frm.MdiParent.MdiChildren[0].WindowState = FormWindowState.Normal; frm.WindowState = FormWindowState.Maximized;
-            //        }
-            //        frm.Show(); frm.Focus();
-            //    }
-            //    else
-            //        Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
-            //}
+                    Frm_05_Machines frm_05_Machines = new Frm_05_Machines();
+
+
+                    frm_05_Machines.MdiParent = this;
+                    if (frm_05_Machines.MdiParent.MdiChildren.Length > 1 && frm_05_Machines.MdiParent.MdiChildren[0].WindowState == FormWindowState.Maximized)
+                    {
+                        frm_05_Machines.MdiParent.MdiChildren[0].WindowState = FormWindowState.Normal; frm_05_Machines.WindowState = FormWindowState.Maximized;
+                    }
+                    frm_05_Machines.Show(); frm_05_Machines.Focus();
+                }
+                else
+                    Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
+            }
         }
 
         private void bt_Programmachine_Click(object sender, EventArgs e)

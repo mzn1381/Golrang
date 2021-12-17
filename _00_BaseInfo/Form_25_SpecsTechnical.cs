@@ -13,7 +13,7 @@ namespace PCLOR._00_BaseInfo
     public partial class Form_25_SpecsTechnical : Form
     {
         SqlConnection ConPCLOR = new SqlConnection(Properties.Settings.Default.PCLOR);
-        
+
         Classes.Class_Documents ClDoc = new Classes.Class_Documents();
 
         public Form_25_SpecsTechnical()
@@ -32,12 +32,12 @@ namespace PCLOR._00_BaseInfo
             Classes.Class_UserScope UserScope = new Classes.Class_UserScope();
             if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 11))
             {
-                  table_60_SpecsTechnicalBindingSource.AddNew();
-                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForProduction"] =true;
-                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForColor"] =false;
-                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["status"] =true;
-                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["X"] =xNumeric.Value;
-                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["Y"] =yNumeric.Value;
+                table_60_SpecsTechnicalBindingSource.AddNew();
+                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForProduction"] = true;
+                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForColor"] = false;
+                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["status"] = true;
+                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["X"] = xNumeric.Value;
+                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["Y"] = yNumeric.Value;
                 txt_NameColor.Focus();
                 btn_New.Enabled = false;
                 uiPanel0.Enabled = true;
@@ -200,22 +200,13 @@ namespace PCLOR._00_BaseInfo
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
-            
         {
-            if (radioButton1.Checked)
-            {
-                (((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForColor"]) = true;
-                (((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForProduction"]) = false;
-            }
 
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton1.Checked) { 
-            (((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForProduction"]) = true;
-                (((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForColor"]) = false;
-            }
+
         }
 
         private void gridEX1_FormattingRow(object sender, Janus.Windows.GridEX.RowLoadEventArgs e)
@@ -225,7 +216,7 @@ namespace PCLOR._00_BaseInfo
 
         private void gridEX1_RowCheckStateChanging(object sender, Janus.Windows.GridEX.RowCheckStateChangingEventArgs e)
         {
-            
+
         }
 
         private void gridEX1_RowCheckStateChanged(object sender, Janus.Windows.GridEX.RowCheckStateChangeEventArgs e)
@@ -258,8 +249,6 @@ namespace PCLOR._00_BaseInfo
             xNumeric.Value = Convert.ToDecimal(((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["X"].ToString());
             yNumeric.Value = Convert.ToDecimal(((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["Y"].ToString());
             checkStatus.Checked = (bool)((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["status"];
-            radioButton1.Checked = (bool)((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForColor"];
-            radioButton2.Checked = (bool)((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForProduction"];
 
         }
 

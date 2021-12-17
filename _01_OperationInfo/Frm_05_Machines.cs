@@ -40,7 +40,7 @@ namespace PCLOR._01_OperationInfo
 
 
                 //var t=db.Query("SELECT X, Y, namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1",null,commandType:CommandType.Text);
-                var points = db.Query<MachinePoint>("SELECT X, Y, ID ,namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1",null,commandType:CommandType.Text).OrderBy(x=>x.Y).ToList();
+                var points = db.Query<MachinePoint>("SELECT X, Y, ID ,namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1", null, commandType: CommandType.Text).OrderBy(x => x.Y).ToList();
 
                 //var result = ClDoc.ReturnTable(ConPCLOR, @" SELECT X, Y, namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1  ");
                 //var points = Newtonsoft.Json.JsonConvert.DeserializeObject<IEnumerable<MachinePoint>>(result.ToString()).OrderBy(x => x.Y).ToList();
@@ -49,74 +49,91 @@ namespace PCLOR._01_OperationInfo
                 {
                     Button button = new Button();
                     button.Text = item.NameMachine;
-                    var point = points.FirstOrDefault(c=>c.ID==item.ID);
+                    var point = points.FirstOrDefault(c => c.ID == item.ID);
                     button.Location = new Point(point.X, point.Y);
                     button.Draggable(false);
+                    button.Tag = item;
+                    button.Width = 55;
+                    button.Height = 55;
                     button.Click += Button_Click;
                     Controls.Add(button);
                 }
-                
-                
-                
-                
-                
-                var buttons = this.Controls.OfType<Button>().Where(b => b.Name.StartsWith("B"));
 
-                buttons.ToList().ForEach(button =>
-                {
-                    var point = points.FirstOrDefault(p => p.Name.Equals(button.Name));
-                    if (point != null)
-                        button.Location = new Point(point.X, point.Y);
 
-                    var machine = machines.FirstOrDefault(m => m.Name.Equals(button.Name));
-                    if (machine != null)
-                    {
-                        if (machine.Status.Equals(false))
-                            button.BackColor = SystemColors.WindowFrame;
 
-                        ToolTip toolTip = new ToolTip();
-                        toolTip.SetToolTip(button, machine.Description);
 
-                        button.Tag = machine;
-                        button.Click += Button_Click;
-                    }
-                    else
-                        button.BackColor = SystemColors.WindowFrame;
-                });
 
-                for (int i = 0; i < points.Count; i++)
-                {
-                    var point = points[i];
-                    var button = buttons.FirstOrDefault(m => m.Name.Equals(point.Name));
+                //var buttons = this.Controls.OfType<Button>().Where(b => b.Name.StartsWith("B"));
 
-                    if (button != null)
-                        button.TabIndex = i + 1;
-                }
+                //buttons.ToList().ForEach(button =>
+                //{
+                //    var point = points.FirstOrDefault(p => p.Name.Equals(button.Name));
+                //    if (point != null)
+                //        button.Location = new Point(point.X, point.Y);
+
+                //    var machine = machines.FirstOrDefault(m => m.Name.Equals(button.Name));
+                //    if (machine != null)
+                //    {
+                //        if (machine.Status.Equals(false))
+                //            button.BackColor = SystemColors.WindowFrame;
+
+                //        ToolTip toolTip = new ToolTip();
+                //        toolTip.SetToolTip(button, machine.Description);
+
+                //        button.Tag = machine;
+                //        button.Click += Button_Click;
+                //    }
+                //    else
+                //        button.BackColor = SystemColors.WindowFrame;
+                //});
+
+                //for (int i = 0; i < points.Count; i++)
+                //{
+                //    var point = points[i];
+                //    var button = buttons.FirstOrDefault(m => m.Name.Equals(point.Name));
+
+                //    if (button != null)
+                //        button.TabIndex = i + 1;
+                //}
             }
         }
 
         private void Button_Click(object sender, EventArgs e)
         {
-            if (startDragging)
-                return;
+            //if (startDragging)
+            //    return;
 
-            SelectedMachine = (Machine)((Button)sender).Tag;
-            this.DialogResult = DialogResult.OK;
+            //SelectedMachine = (Machine)((Button)sender).Tag;
+            //this.DialogResult = DialogResult.OK;
+            //MessageBox.Show("Test");
         }
 
         bool startDragging = false;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var buttons = this.Controls.OfType<Button>().Where(b => b.Name.StartsWith("B")).ToList();
+            var buttons = this.Controls.OfType<Button>().ToList();
 
             startDragging = !startDragging;
             button1.Text = startDragging ? "ذخیره تغییرات" : "شروع جابجایی";
             buttons.ForEach(x => x.Draggable(startDragging));
 
-            if (startDragging == false)
+            //if (startDragging == false)
+            //{
+            //    var result = ClDoc.ExScalar(ConPCLOR.ConnectionString, string.Format("update Table_80_Setting set value=N'{0}' where ID=27   select @@rowcount", Newtonsoft.Json.JsonConvert.SerializeObject(buttons.Select(x => new MachinePoint { Name = x.Name, X = x.Location.X, Y = x.Location.Y }))));
+            //}
+        }
+
+        private void Frm_05_Machines_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var buttons = this.Controls.OfType<Button>().ToList();
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
-                var result = ClDoc.ExScalar(ConPCLOR.ConnectionString, string.Format("update Table_80_Setting set value=N'{0}' where ID=27   select @@rowcount", Newtonsoft.Json.JsonConvert.SerializeObject(buttons.Select(x => new MachinePoint { Name = x.Name, X = x.Location.X, Y = x.Location.Y }))));
+                for (int i = 0; i < buttons.Count; i++)
+                {
+                    var btn = buttons[i];
+                    db.Execute($" update Table_60_SpecsTechnical set X =  {btn.Location.X}  ,  Y=  {btn.Location.Y} where ID = {((Machine)btn.Tag).ID} ",commandType:CommandType.Text);
+                }
             }
         }
     }
