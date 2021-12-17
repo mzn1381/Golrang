@@ -1320,12 +1320,7 @@ ORDER BY Barcode");
         private void buttonItem72_Click(object sender, EventArgs e)
         {
 
-
-
-            
-
-
-            if (!CheckOpenForms("Frm_005_SelectMachine"))
+            if (!CheckOpenForms("Frm_05_Machines"))
             {
                 Class_UserScope UserScope = new Class_UserScope();
                 if (UserScope.CheckScope(_UserName, "Column44", 148))

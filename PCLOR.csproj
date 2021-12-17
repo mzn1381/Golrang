@@ -379,8 +379,10 @@
     <Compile Include="MarjooiSale\Frm_30_Production_Edite.designer.cs">
       <DependentUpon>Frm_30_Production_Edite.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\FabricTypeDropDownViewModel.cs" />
     <Compile Include="Models\Machine.cs" />
     <Compile Include="Models\MachinePoint.cs" />
+    <Compile Include="Models\YarnTypeDropDownViewModel.cs" />
     <Compile Include="Product\DataSet_05_Product.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

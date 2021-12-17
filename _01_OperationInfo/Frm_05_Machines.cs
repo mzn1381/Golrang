@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using PCLOR._00_BaseInfo;
 using PCLOR.Classes;
 using PCLOR.Models;
 using System;
@@ -37,13 +38,7 @@ namespace PCLOR._01_OperationInfo
             //var result = ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=27");
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
-
-
-                //var t=db.Query("SELECT X, Y, namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1",null,commandType:CommandType.Text);
                 var points = db.Query<MachinePoint>("SELECT X, Y, ID ,namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1", null, commandType: CommandType.Text).OrderBy(x => x.Y).ToList();
-
-                //var result = ClDoc.ReturnTable(ConPCLOR, @" SELECT X, Y, namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1  ");
-                //var points = Newtonsoft.Json.JsonConvert.DeserializeObject<IEnumerable<MachinePoint>>(result.ToString()).OrderBy(x => x.Y).ToList();
                 machines = ClDoc.ReturnTable(ConPCLOR, @"SELECT ID, Code, namemachine as Namemachine,namemachine as Name ,  status as Status, Specstechnical as Description FROM [dbo].[Table_60_SpecsTechnical]  where  status=1").ToList<Machine>();
                 foreach (var item in machines)
                 {
@@ -63,49 +58,17 @@ namespace PCLOR._01_OperationInfo
 
 
 
-                //var buttons = this.Controls.OfType<Button>().Where(b => b.Name.StartsWith("B"));
-
-                //buttons.ToList().ForEach(button =>
-                //{
-                //    var point = points.FirstOrDefault(p => p.Name.Equals(button.Name));
-                //    if (point != null)
-                //        button.Location = new Point(point.X, point.Y);
-
-                //    var machine = machines.FirstOrDefault(m => m.Name.Equals(button.Name));
-                //    if (machine != null)
-                //    {
-                //        if (machine.Status.Equals(false))
-                //            button.BackColor = SystemColors.WindowFrame;
-
-                //        ToolTip toolTip = new ToolTip();
-                //        toolTip.SetToolTip(button, machine.Description);
-
-                //        button.Tag = machine;
-                //        button.Click += Button_Click;
-                //    }
-                //    else
-                //        button.BackColor = SystemColors.WindowFrame;
-                //});
-
-                //for (int i = 0; i < points.Count; i++)
-                //{
-                //    var point = points[i];
-                //    var button = buttons.FirstOrDefault(m => m.Name.Equals(point.Name));
-
-                //    if (button != null)
-                //        button.TabIndex = i + 1;
-                //}
             }
         }
 
         private void Button_Click(object sender, EventArgs e)
         {
-            //if (startDragging)
-            //    return;
+            var btn = sender as Button;
+            var machine = ((Machine)btn.Tag);
 
-            //SelectedMachine = (Machine)((Button)sender).Tag;
-            //this.DialogResult = DialogResult.OK;
-            //MessageBox.Show("Test");
+            Form_55_EditSpecsTechnical form_55 = new Form_55_EditSpecsTechnical(machine.ID);
+            form_55.ShowDialog();
+            
         }
 
         bool startDragging = false;
