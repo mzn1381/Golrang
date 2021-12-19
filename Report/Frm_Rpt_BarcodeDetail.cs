@@ -14,7 +14,7 @@ namespace PCLOR.Report
     public partial class Frm_Rpt_BarcodeDetail : Form
     {
 
-        SqlConnection ConBase = new SqlConnection(Properties.Settings.Default.PBASE);
+        //SqlConnection ConBase = new SqlConnection(Properties.Settings.Default.PBASE);
         SqlConnection ConPCLOR = new SqlConnection(Properties.Settings.Default.PCLOR);
         Classes.Class_Documents ClDoc = new Classes.Class_Documents();
 

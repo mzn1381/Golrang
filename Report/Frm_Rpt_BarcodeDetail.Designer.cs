@@ -51,6 +51,7 @@
             this.bindingNavigator1.CountItem = null;
             this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsexcel});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
@@ -61,7 +62,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(740, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(740, 27);
             this.bindingNavigator1.TabIndex = 13;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -70,7 +71,7 @@
             this.tsexcel.Image = ((System.Drawing.Image)(resources.GetObject("tsexcel.Image")));
             this.tsexcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsexcel.Name = "tsexcel";
-            this.tsexcel.Size = new System.Drawing.Size(98, 22);
+            this.tsexcel.Size = new System.Drawing.Size(122, 24);
             this.tsexcel.Text = "ارسال به اکسل";
             this.tsexcel.Click += new System.EventHandler(this.tsexcel_Click);
             // 
@@ -97,13 +98,13 @@
             this.gridEX1.FilterRowUpdateMode = Janus.Windows.GridEX.FilterRowUpdateMode.WhenValueChanges;
             this.gridEX1.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid;
             this.gridEX1.GroupByBoxVisible = false;
-            this.gridEX1.Location = new System.Drawing.Point(3, 28);
+            this.gridEX1.Location = new System.Drawing.Point(3, 30);
             this.gridEX1.Name = "gridEX1";
             this.gridEX1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.gridEX1.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX1.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.SettingsKey = "gridfrm_3";
-            this.gridEX1.Size = new System.Drawing.Size(734, 476);
+            this.gridEX1.Size = new System.Drawing.Size(734, 474);
             this.gridEX1.TabIndex = 26;
             this.gridEX1.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.TotalRowFormatStyle.BackColor = System.Drawing.Color.AliceBlue;
@@ -120,7 +121,7 @@
             // 
             // Frm_Rpt_BarcodeDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 507);
             this.Controls.Add(this.gridEX1);

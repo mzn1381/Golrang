@@ -158,7 +158,7 @@ namespace PCLOR.Product
             // 
             label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label7.AutoSize = true;
-            label7.Location = new System.Drawing.Point(223, 10);
+            label7.Location = new System.Drawing.Point(258, 10);
             label7.Name = "label7";
             label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label7.Size = new System.Drawing.Size(98, 17);
@@ -169,7 +169,7 @@ namespace PCLOR.Product
             // 
             label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(223, 112);
+            label6.Location = new System.Drawing.Point(258, 112);
             label6.Name = "label6";
             label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label6.Size = new System.Drawing.Size(65, 17);
@@ -180,7 +180,7 @@ namespace PCLOR.Product
             // 
             label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label9.AutoSize = true;
-            label9.Location = new System.Drawing.Point(223, 87);
+            label9.Location = new System.Drawing.Point(258, 87);
             label9.Name = "label9";
             label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label9.Size = new System.Drawing.Size(79, 17);
@@ -191,7 +191,7 @@ namespace PCLOR.Product
             // 
             label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label8.AutoSize = true;
-            label8.Location = new System.Drawing.Point(223, 317);
+            label8.Location = new System.Drawing.Point(258, 317);
             label8.Name = "label8";
             label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label8.Size = new System.Drawing.Size(94, 17);
@@ -202,7 +202,7 @@ namespace PCLOR.Product
             // 
             label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label14.AutoSize = true;
-            label14.Location = new System.Drawing.Point(223, 36);
+            label14.Location = new System.Drawing.Point(258, 36);
             label14.Name = "label14";
             label14.Size = new System.Drawing.Size(70, 17);
             label14.TabIndex = 11;
@@ -212,7 +212,7 @@ namespace PCLOR.Product
             // 
             label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(223, 61);
+            label4.Location = new System.Drawing.Point(258, 61);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(64, 17);
             label4.TabIndex = 161;
@@ -222,7 +222,7 @@ namespace PCLOR.Product
             // 
             label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(223, 138);
+            label3.Location = new System.Drawing.Point(258, 138);
             label3.Name = "label3";
             label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label3.Size = new System.Drawing.Size(61, 17);
@@ -234,7 +234,7 @@ namespace PCLOR.Product
             label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label10.AutoSize = true;
             label10.BackColor = System.Drawing.Color.Transparent;
-            label10.Location = new System.Drawing.Point(223, 239);
+            label10.Location = new System.Drawing.Point(258, 239);
             label10.Name = "label10";
             label10.Size = new System.Drawing.Size(67, 17);
             label10.TabIndex = 167;
@@ -245,7 +245,7 @@ namespace PCLOR.Product
             label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label11.AutoSize = true;
             label11.BackColor = System.Drawing.Color.Transparent;
-            label11.Location = new System.Drawing.Point(223, 214);
+            label11.Location = new System.Drawing.Point(258, 214);
             label11.Name = "label11";
             label11.Size = new System.Drawing.Size(70, 17);
             label11.TabIndex = 11;
@@ -255,7 +255,7 @@ namespace PCLOR.Product
             // 
             label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label12.AutoSize = true;
-            label12.Location = new System.Drawing.Point(223, 264);
+            label12.Location = new System.Drawing.Point(258, 264);
             label12.Name = "label12";
             label12.Size = new System.Drawing.Size(96, 17);
             label12.TabIndex = 169;
@@ -265,7 +265,7 @@ namespace PCLOR.Product
             // 
             label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label13.AutoSize = true;
-            label13.Location = new System.Drawing.Point(223, 289);
+            label13.Location = new System.Drawing.Point(258, 289);
             label13.Name = "label13";
             label13.Size = new System.Drawing.Size(99, 17);
             label13.TabIndex = 171;
@@ -275,7 +275,7 @@ namespace PCLOR.Product
             // 
             label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label15.AutoSize = true;
-            label15.Location = new System.Drawing.Point(223, 188);
+            label15.Location = new System.Drawing.Point(258, 188);
             label15.Name = "label15";
             label15.Size = new System.Drawing.Size(44, 17);
             label15.TabIndex = 173;
@@ -285,7 +285,7 @@ namespace PCLOR.Product
             // 
             label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label16.AutoSize = true;
-            label16.Location = new System.Drawing.Point(223, 165);
+            label16.Location = new System.Drawing.Point(258, 165);
             label16.Name = "label16";
             label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label16.Size = new System.Drawing.Size(84, 17);
@@ -296,7 +296,7 @@ namespace PCLOR.Product
             // 
             label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label17.AutoSize = true;
-            label17.Location = new System.Drawing.Point(567, 33);
+            label17.Location = new System.Drawing.Point(677, 33);
             label17.Name = "label17";
             label17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label17.Size = new System.Drawing.Size(64, 17);
@@ -316,8 +316,8 @@ namespace PCLOR.Product
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("e867d30d-95ce-4008-b388-e8c7f95c8f10"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(308, 474), true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("5cb824b8-2fb4-4915-8cca-ab4ec8579ca4"), Janus.Windows.UI.Dock.PanelDockStyle.Bottom, new System.Drawing.Size(426, 273), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("e867d30d-95ce-4008-b388-e8c7f95c8f10"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(343, 474), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("5cb824b8-2fb4-4915-8cca-ab4ec8579ca4"), Janus.Windows.UI.Dock.PanelDockStyle.Bottom, new System.Drawing.Size(501, 273), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("e867d30d-95ce-4008-b388-e8c7f95c8f10"), new System.Drawing.Point(849, 370), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("5cb824b8-2fb4-4915-8cca-ab4ec8579ca4"), new System.Drawing.Point(214, 351), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.EndPanelInfo();
@@ -327,9 +327,9 @@ namespace PCLOR.Product
             this.uiPanel0.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.FloatingLocation = new System.Drawing.Point(849, 370);
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
-            this.uiPanel0.Location = new System.Drawing.Point(429, 30);
+            this.uiPanel0.Location = new System.Drawing.Point(504, 30);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(308, 474);
+            this.uiPanel0.Size = new System.Drawing.Size(343, 474);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "اطلاعات تولید";
             this.uiPanel0.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -366,7 +366,7 @@ namespace PCLOR.Product
             this.uiPanel0Container.Controls.Add(this.txt_Id);
             this.uiPanel0Container.Location = new System.Drawing.Point(5, 24);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(302, 449);
+            this.uiPanel0Container.Size = new System.Drawing.Size(337, 449);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // txt_Description
@@ -387,7 +387,7 @@ namespace PCLOR.Product
             this.txt_Lastshift.Name = "txt_Lastshift";
             this.txt_Lastshift.ReadOnly = true;
             this.txt_Lastshift.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_Lastshift.Size = new System.Drawing.Size(208, 24);
+            this.txt_Lastshift.Size = new System.Drawing.Size(243, 24);
             this.txt_Lastshift.TabIndex = 180;
             // 
             // txt_Lastdate
@@ -398,7 +398,7 @@ namespace PCLOR.Product
             this.txt_Lastdate.Name = "txt_Lastdate";
             this.txt_Lastdate.ReadOnly = true;
             this.txt_Lastdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_Lastdate.Size = new System.Drawing.Size(208, 24);
+            this.txt_Lastdate.Size = new System.Drawing.Size(243, 24);
             this.txt_Lastdate.TabIndex = 179;
             // 
             // mlt_shift
@@ -415,7 +415,7 @@ namespace PCLOR.Product
             this.mlt_shift.SelectedIndex = -1;
             this.mlt_shift.SelectedItem = null;
             this.mlt_shift.SettingsKey = "mlt_Id";
-            this.mlt_shift.Size = new System.Drawing.Size(208, 24);
+            this.mlt_shift.Size = new System.Drawing.Size(243, 24);
             this.mlt_shift.TabIndex = 11;
             this.mlt_shift.ValueMember = "ID";
             this.mlt_shift.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -435,7 +435,7 @@ namespace PCLOR.Product
             this.mlt_codecustomer.SelectedIndex = -1;
             this.mlt_codecustomer.SelectedItem = null;
             this.mlt_codecustomer.SettingsKey = "mlt_unit";
-            this.mlt_codecustomer.Size = new System.Drawing.Size(208, 24);
+            this.mlt_codecustomer.Size = new System.Drawing.Size(243, 24);
             this.mlt_codecustomer.TabIndex = 9;
             this.mlt_codecustomer.TextAlignment = Janus.Windows.GridEX.TextAlignment.Near;
             this.mlt_codecustomer.ValueMember = "Columnid";
@@ -481,7 +481,7 @@ namespace PCLOR.Product
             this.mlt_Ware.SelectedIndex = -1;
             this.mlt_Ware.SelectedItem = null;
             this.mlt_Ware.SelectInDataSource = true;
-            this.mlt_Ware.Size = new System.Drawing.Size(208, 24);
+            this.mlt_Ware.Size = new System.Drawing.Size(243, 24);
             this.mlt_Ware.TabIndex = 12;
             this.mlt_Ware.ValueMember = "columnid";
             this.mlt_Ware.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -495,7 +495,7 @@ namespace PCLOR.Product
             this.txt_NumberWeave.Name = "txt_NumberWeave";
             this.txt_NumberWeave.ReadOnly = true;
             this.txt_NumberWeave.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_NumberWeave.Size = new System.Drawing.Size(208, 24);
+            this.txt_NumberWeave.Size = new System.Drawing.Size(243, 24);
             this.txt_NumberWeave.TabIndex = 10;
             this.txt_NumberWeave.Text = "0";
             this.txt_NumberWeave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NumberWeave_KeyPress);
@@ -514,7 +514,7 @@ namespace PCLOR.Product
             this.mlt_Function.SelectedIndex = -1;
             this.mlt_Function.SelectedItem = null;
             this.mlt_Function.SelectInDataSource = true;
-            this.mlt_Function.Size = new System.Drawing.Size(208, 24);
+            this.mlt_Function.Size = new System.Drawing.Size(243, 24);
             this.mlt_Function.TabIndex = 13;
             this.mlt_Function.ValueMember = "columnid";
             this.mlt_Function.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -527,7 +527,7 @@ namespace PCLOR.Product
             this.txt_Time.Location = new System.Drawing.Point(9, 57);
             this.txt_Time.Name = "txt_Time";
             this.txt_Time.ReadOnly = true;
-            this.txt_Time.Size = new System.Drawing.Size(208, 24);
+            this.txt_Time.Size = new System.Drawing.Size(243, 24);
             this.txt_Time.TabIndex = 3;
             this.txt_Time.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mlt_Num_Programer_KeyPress);
             // 
@@ -540,7 +540,7 @@ namespace PCLOR.Product
             this.txt_Dat.Mask = "0000/00/00";
             this.txt_Dat.Name = "txt_Dat";
             this.txt_Dat.ReadOnly = true;
-            this.txt_Dat.Size = new System.Drawing.Size(208, 24);
+            this.txt_Dat.Size = new System.Drawing.Size(243, 24);
             this.txt_Dat.TabIndex = 2;
             this.txt_Dat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mlt_Num_Programer_KeyPress);
             // 
@@ -556,7 +556,7 @@ namespace PCLOR.Product
             this.mlt_Num_Programer.SelectedIndex = -1;
             this.mlt_Num_Programer.SelectedItem = null;
             this.mlt_Num_Programer.SettingsKey = "mlt_Id";
-            this.mlt_Num_Programer.Size = new System.Drawing.Size(208, 24);
+            this.mlt_Num_Programer.Size = new System.Drawing.Size(243, 24);
             this.mlt_Num_Programer.TabIndex = 0;
             this.mlt_Num_Programer.ValueMember = "ID";
             this.mlt_Num_Programer.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -578,7 +578,7 @@ namespace PCLOR.Product
             this.mlt_TypeCloth.SelectedIndex = -1;
             this.mlt_TypeCloth.SelectedItem = null;
             this.mlt_TypeCloth.SettingsKey = "mlt_Id";
-            this.mlt_TypeCloth.Size = new System.Drawing.Size(208, 24);
+            this.mlt_TypeCloth.Size = new System.Drawing.Size(243, 24);
             this.mlt_TypeCloth.TabIndex = 5;
             this.mlt_TypeCloth.ValueMember = "ID";
             this.mlt_TypeCloth.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -599,7 +599,7 @@ namespace PCLOR.Product
             this.mlt_Machine.SelectedIndex = -1;
             this.mlt_Machine.SelectedItem = null;
             this.mlt_Machine.SettingsKey = "mlt_Id";
-            this.mlt_Machine.Size = new System.Drawing.Size(208, 24);
+            this.mlt_Machine.Size = new System.Drawing.Size(243, 24);
             this.mlt_Machine.TabIndex = 4;
             this.mlt_Machine.ValueMember = "ID";
             this.mlt_Machine.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -613,7 +613,7 @@ namespace PCLOR.Product
             this.txt_Id.Location = new System.Drawing.Point(72, 6);
             this.txt_Id.Name = "txt_Id";
             this.txt_Id.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_Id.Size = new System.Drawing.Size(19, 24);
+            this.txt_Id.Size = new System.Drawing.Size(54, 24);
             this.txt_Id.TabIndex = 178;
             // 
             // uiPanel1
@@ -623,7 +623,7 @@ namespace PCLOR.Product
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
             this.uiPanel1.Location = new System.Drawing.Point(3, 231);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(426, 273);
+            this.uiPanel1.Size = new System.Drawing.Size(501, 273);
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = "تولیدات ثبت شده";
             this.uiPanel1.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -633,7 +633,7 @@ namespace PCLOR.Product
             this.uiPanel1Container.Controls.Add(this.gridEX2);
             this.uiPanel1Container.Location = new System.Drawing.Point(1, 28);
             this.uiPanel1Container.Name = "uiPanel1Container";
-            this.uiPanel1Container.Size = new System.Drawing.Size(424, 244);
+            this.uiPanel1Container.Size = new System.Drawing.Size(499, 244);
             this.uiPanel1Container.TabIndex = 0;
             // 
             // gridEX2
@@ -663,7 +663,7 @@ namespace PCLOR.Product
             this.gridEX2.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.ScrollBars = Janus.Windows.GridEX.ScrollBars.Both;
             this.gridEX2.SettingsKey = "Frm_15_InfoServiceGrid_61";
-            this.gridEX2.Size = new System.Drawing.Size(424, 244);
+            this.gridEX2.Size = new System.Drawing.Size(499, 244);
             this.gridEX2.TabIndex = 1;
             this.gridEX2.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -680,7 +680,7 @@ namespace PCLOR.Product
             this.txt_Number.Location = new System.Drawing.Point(551, 30);
             this.txt_Number.Name = "txt_Number";
             this.txt_Number.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_Number.Size = new System.Drawing.Size(10, 24);
+            this.txt_Number.Size = new System.Drawing.Size(120, 24);
             this.txt_Number.TabIndex = 1;
             this.txt_Number.Visible = false;
             this.txt_Number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mlt_Num_Programer_KeyPress);
@@ -727,7 +727,7 @@ namespace PCLOR.Product
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(740, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(850, 27);
             this.bindingNavigator1.TabIndex = 8;
             this.bindingNavigator1.Text = "bindingNavigator1";
             this.bindingNavigator1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bindingNavigator1_KeyPress);
@@ -864,7 +864,7 @@ namespace PCLOR.Product
             this.uiGroupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiGroupBox1.Location = new System.Drawing.Point(3, 30);
             this.uiGroupBox1.Name = "uiGroupBox1";
-            this.uiGroupBox1.Size = new System.Drawing.Size(426, 201);
+            this.uiGroupBox1.Size = new System.Drawing.Size(501, 201);
             this.uiGroupBox1.TabIndex = 28;
             this.uiGroupBox1.Text = "وزن طاقه";
             this.uiGroupBox1.Click += new System.EventHandler(this.uiGroupBox1_Click);
@@ -876,7 +876,7 @@ namespace PCLOR.Product
             this.uiGroupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.uiGroupBox2.Location = new System.Drawing.Point(3, 96);
             this.uiGroupBox2.Name = "uiGroupBox2";
-            this.uiGroupBox2.Size = new System.Drawing.Size(420, 46);
+            this.uiGroupBox2.Size = new System.Drawing.Size(495, 46);
             this.uiGroupBox2.TabIndex = 202;
             this.uiGroupBox2.Text = "نوع چاپ";
             // 
@@ -898,7 +898,7 @@ namespace PCLOR.Product
             | System.Windows.Forms.AnchorStyles.Right)));
             this.uiComboBox1.Location = new System.Drawing.Point(45, 18);
             this.uiComboBox1.Name = "uiComboBox1";
-            this.uiComboBox1.Size = new System.Drawing.Size(369, 24);
+            this.uiComboBox1.Size = new System.Drawing.Size(444, 24);
             this.uiComboBox1.TabIndex = 200;
             this.uiComboBox1.VisualStyle = Janus.Windows.UI.VisualStyle.VS2010;
             // 
@@ -907,7 +907,7 @@ namespace PCLOR.Product
             this.rb_select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rb_select.AutoSize = true;
             this.rb_select.Checked = true;
-            this.rb_select.Location = new System.Drawing.Point(164, 69);
+            this.rb_select.Location = new System.Drawing.Point(201, 69);
             this.rb_select.Name = "rb_select";
             this.rb_select.Size = new System.Drawing.Size(100, 21);
             this.rb_select.TabIndex = 196;
@@ -921,7 +921,7 @@ namespace PCLOR.Product
             // 
             this.ch_Auto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ch_Auto.AutoSize = true;
-            this.ch_Auto.Location = new System.Drawing.Point(9, 70);
+            this.ch_Auto.Location = new System.Drawing.Point(46, 70);
             this.ch_Auto.Name = "ch_Auto";
             this.ch_Auto.Size = new System.Drawing.Size(118, 21);
             this.ch_Auto.TabIndex = 198;
@@ -934,7 +934,7 @@ namespace PCLOR.Product
             // 
             this.rb_Auto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rb_Auto.AutoSize = true;
-            this.rb_Auto.Location = new System.Drawing.Point(308, 69);
+            this.rb_Auto.Location = new System.Drawing.Point(345, 69);
             this.rb_Auto.Name = "rb_Auto";
             this.rb_Auto.Size = new System.Drawing.Size(112, 21);
             this.rb_Auto.TabIndex = 197;
@@ -950,7 +950,7 @@ namespace PCLOR.Product
             this.txt_weight.FormatString = "#,##0.###";
             this.txt_weight.Location = new System.Drawing.Point(3, 20);
             this.txt_weight.Name = "txt_weight";
-            this.txt_weight.Size = new System.Drawing.Size(420, 56);
+            this.txt_weight.Size = new System.Drawing.Size(495, 56);
             this.txt_weight.TabIndex = 195;
             this.txt_weight.Text = "0";
             this.txt_weight.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center;
@@ -968,7 +968,7 @@ namespace PCLOR.Product
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox1.Location = new System.Drawing.Point(3, 142);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(420, 56);
+            this.groupBox1.Size = new System.Drawing.Size(495, 56);
             this.groupBox1.TabIndex = 182;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "شماره کارت ";
@@ -980,7 +980,7 @@ namespace PCLOR.Product
             this.txt_RFID.Multiline = true;
             this.txt_RFID.Name = "txt_RFID";
             this.txt_RFID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_RFID.Size = new System.Drawing.Size(414, 33);
+            this.txt_RFID.Size = new System.Drawing.Size(489, 33);
             this.txt_RFID.TabIndex = 181;
             this.txt_RFID.TextChanged += new System.EventHandler(this.txt_RFID_TextChanged);
             this.txt_RFID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_RFID_KeyPress);
@@ -1013,7 +1013,7 @@ namespace PCLOR.Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 507);
+            this.ClientSize = new System.Drawing.Size(850, 507);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.uiGroupBox1);
             this.Controls.Add(label17);

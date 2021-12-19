@@ -270,6 +270,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicFunction\BasicFunction.cs" />
     <Compile Include="Classes\CheckCredits.cs" />
     <Compile Include="Classes\Class_BasicOperation.cs" />
     <Compile Include="Classes\Class_ChangeConnectionString.cs" />
@@ -304,6 +305,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet_15_Ware.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EnumStatusesDevice\Frm_05_Machine_Status.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -465,6 +467,12 @@
     </Compile>
     <Compile Include="_00_BaseInfo\Frm_50_TypeCotton.Designer.cs">
       <DependentUpon>Frm_50_TypeCotton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_60_RegDescriptionForDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_60_RegDescriptionForDevice.Designer.cs">
+      <DependentUpon>Frm_60_RegDescriptionForDevice.cs</DependentUpon>
     </Compile>
     <Compile Include="_01_OperationInfo\Frm_05_Machines.cs">
       <SubType>Form</SubType>
@@ -1156,6 +1164,9 @@
     <EmbeddedResource Include="_00_BaseInfo\Frm_50_TypeCotton.resx">
       <DependentUpon>Frm_50_TypeCotton.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Frm_60_RegDescriptionForDevice.resx">
+      <DependentUpon>Frm_60_RegDescriptionForDevice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="_01_OperationInfo\Frm_05_Machines.resx">
       <DependentUpon>Frm_05_Machines.cs</DependentUpon>
     </EmbeddedResource>
@@ -1669,6 +1680,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

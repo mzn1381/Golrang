@@ -67,19 +67,6 @@
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.labelItem3 = new DevComponents.DotNetBar.LabelItem();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.buttonItem53 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem25 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem26 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem19 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem17 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem15 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem14 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem37 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem18 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem20 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem24 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem27 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem78 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem74 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem76 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem72 = new DevComponents.DotNetBar.ButtonItem();
@@ -87,23 +74,7 @@
             this.bt_Product = new DevComponents.DotNetBar.ButtonItem();
             this.btn_report = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem73 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem55 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem52 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem56 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem54 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem57 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem40 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem61 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem41 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem42 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem43 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem47 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem48 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem49 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem58 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem50 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem51 = new DevComponents.DotNetBar.ButtonItem();
-            this.bt_Ras = new DevComponents.DotNetBar.ButtonItem();
+            this.btnDescriptionForDevices = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem39 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem64 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem33 = new DevComponents.DotNetBar.ButtonItem();
@@ -138,6 +109,36 @@
             this.buttonItem68 = new DevComponents.DotNetBar.ButtonItem();
             this.btnReturnFactor = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem69 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem53 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem25 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem26 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem19 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem17 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem15 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem14 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem37 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem18 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem20 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem24 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem27 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem78 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem55 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem52 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem56 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem54 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem57 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem40 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem61 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem41 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem42 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem43 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem47 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem48 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem49 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem58 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem50 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem51 = new DevComponents.DotNetBar.ButtonItem();
+            this.bt_Ras = new DevComponents.DotNetBar.ButtonItem();
             this.applicationButton1 = new DevComponents.DotNetBar.ApplicationButton();
             this.itemContainer1 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer2 = new DevComponents.DotNetBar.ItemContainer();
@@ -175,12 +176,12 @@
             // 
             this.ribbonControl1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonControl1.Controls.Add(this.ribbonPanel7);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel4);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel3);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel6);
             this.ribbonControl1.Controls.Add(this.ribbonPanel5);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel3);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel4);
             this.ribbonControl1.Controls.Add(this.ribbonPanel2);
             this.ribbonControl1.Controls.Add(this.ribbonPanel1);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel6);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.ribbonControl1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.ribbonTabItem1,
@@ -225,11 +226,11 @@
             this.ribbonPanel3.Controls.Add(this.ribbonBar4);
             this.ribbonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ribbonPanel3.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.ribbonPanel3.Location = new System.Drawing.Point(0, 27);
+            this.ribbonPanel3.Location = new System.Drawing.Point(0, 0);
             this.ribbonPanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonPanel3.Name = "ribbonPanel3";
             this.ribbonPanel3.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel3.Size = new System.Drawing.Size(1054, 123);
+            this.ribbonPanel3.Size = new System.Drawing.Size(1054, 150);
             // 
             // 
             // 
@@ -270,7 +271,7 @@
             this.ribbonBar4.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonBar4.Name = "ribbonBar4";
-            this.ribbonBar4.Size = new System.Drawing.Size(524, 120);
+            this.ribbonBar4.Size = new System.Drawing.Size(524, 147);
             this.ribbonBar4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar4.TabIndex = 1;
             // 
@@ -287,10 +288,10 @@
             this.ribbonPanel6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonPanel6.Controls.Add(this.ribbonBar6);
             this.ribbonPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel6.Location = new System.Drawing.Point(0, 27);
+            this.ribbonPanel6.Location = new System.Drawing.Point(0, 0);
             this.ribbonPanel6.Name = "ribbonPanel6";
             this.ribbonPanel6.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel6.Size = new System.Drawing.Size(1054, 123);
+            this.ribbonPanel6.Size = new System.Drawing.Size(1054, 150);
             // 
             // 
             // 
@@ -330,7 +331,7 @@
             this.buttonItem79});
             this.ribbonBar6.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar6.Name = "ribbonBar6";
-            this.ribbonBar6.Size = new System.Drawing.Size(1051, 120);
+            this.ribbonBar6.Size = new System.Drawing.Size(1051, 147);
             this.ribbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar6.TabIndex = 0;
             // 
@@ -361,10 +362,10 @@
             this.ribbonPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonPanel4.Controls.Add(this.ribbonBar2);
             this.ribbonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel4.Location = new System.Drawing.Point(0, 27);
+            this.ribbonPanel4.Location = new System.Drawing.Point(0, 0);
             this.ribbonPanel4.Name = "ribbonPanel4";
             this.ribbonPanel4.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel4.Size = new System.Drawing.Size(1054, 123);
+            this.ribbonPanel4.Size = new System.Drawing.Size(1054, 150);
             // 
             // 
             // 
@@ -398,7 +399,7 @@
             this.buttonItem31});
             this.ribbonBar2.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar2.Name = "ribbonBar2";
-            this.ribbonBar2.Size = new System.Drawing.Size(249, 120);
+            this.ribbonBar2.Size = new System.Drawing.Size(249, 147);
             this.ribbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar2.TabIndex = 0;
             // 
@@ -453,7 +454,8 @@
             this.bt_Programmachine,
             this.bt_Product,
             this.btn_report,
-            this.buttonItem73});
+            this.buttonItem73,
+            this.btnDescriptionForDevices});
             this.ribbonBar7.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar7.Name = "ribbonBar7";
             this.ribbonBar7.Size = new System.Drawing.Size(395, 120);
@@ -474,11 +476,11 @@
             this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonPanel1.Controls.Add(this.ribbonBar1);
             this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel1.Location = new System.Drawing.Point(0, 27);
+            this.ribbonPanel1.Location = new System.Drawing.Point(0, 0);
             this.ribbonPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel1.Size = new System.Drawing.Size(1054, 123);
+            this.ribbonPanel1.Size = new System.Drawing.Size(1054, 150);
             // 
             // 
             // 
@@ -521,7 +523,7 @@
             this.ribbonBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonBar1.Name = "ribbonBar1";
             this.ribbonBar1.ResizeItemsToFit = false;
-            this.ribbonBar1.Size = new System.Drawing.Size(548, 120);
+            this.ribbonBar1.Size = new System.Drawing.Size(548, 147);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar1.TabIndex = 0;
             // 
@@ -538,11 +540,11 @@
             this.ribbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonPanel2.Controls.Add(this.ribbonBar3);
             this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel2.Location = new System.Drawing.Point(0, 27);
+            this.ribbonPanel2.Location = new System.Drawing.Point(0, 0);
             this.ribbonPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonPanel2.Name = "ribbonPanel2";
             this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel2.Size = new System.Drawing.Size(1054, 123);
+            this.ribbonPanel2.Size = new System.Drawing.Size(1054, 150);
             // 
             // 
             // 
@@ -580,7 +582,7 @@
             this.ribbonBar3.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonBar3.Name = "ribbonBar3";
-            this.ribbonBar3.Size = new System.Drawing.Size(413, 120);
+            this.ribbonBar3.Size = new System.Drawing.Size(413, 147);
             this.ribbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar3.TabIndex = 0;
             // 
@@ -598,10 +600,10 @@
             this.ribbonPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonPanel5.Controls.Add(this.ribbonBar5);
             this.ribbonPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel5.Location = new System.Drawing.Point(0, 27);
+            this.ribbonPanel5.Location = new System.Drawing.Point(0, 0);
             this.ribbonPanel5.Name = "ribbonPanel5";
             this.ribbonPanel5.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel5.Size = new System.Drawing.Size(1054, 123);
+            this.ribbonPanel5.Size = new System.Drawing.Size(1054, 150);
             // 
             // 
             // 
@@ -639,7 +641,7 @@
             this.buttonItem65});
             this.ribbonBar5.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar5.Name = "ribbonBar5";
-            this.ribbonBar5.Size = new System.Drawing.Size(388, 120);
+            this.ribbonBar5.Size = new System.Drawing.Size(388, 147);
             this.ribbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar5.TabIndex = 0;
             // 
@@ -656,6 +658,7 @@
             this.ribbonTabItem1.Name = "ribbonTabItem1";
             this.ribbonTabItem1.Panel = this.ribbonPanel1;
             this.ribbonTabItem1.Text = "اطلاعت پایه";
+            this.ribbonTabItem1.Click += new System.EventHandler(this.ribbonTabItem1_Click);
             // 
             // ribbonTabItem2
             // 
@@ -803,139 +806,6 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // buttonItem53
-            // 
-            this.buttonItem53.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem53.Image")));
-            this.buttonItem53.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonItem53.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem53.Name = "buttonItem53";
-            this.buttonItem53.SubItemsExpandWidth = 14;
-            this.buttonItem53.Text = "معرفی صندوقها و بانکها ";
-            this.buttonItem53.Click += new System.EventHandler(this.buttonItem53_Click);
-            // 
-            // buttonItem25
-            // 
-            this.buttonItem25.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem25.Image")));
-            this.buttonItem25.ImageFixedSize = new System.Drawing.Size(45, 45);
-            this.buttonItem25.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem25.Name = "buttonItem25";
-            this.buttonItem25.SubItemsExpandWidth = 14;
-            this.buttonItem25.Text = "معرفی شعبه ";
-            this.buttonItem25.Click += new System.EventHandler(this.buttonItem25_Click);
-            // 
-            // buttonItem26
-            // 
-            this.buttonItem26.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem26.Image")));
-            this.buttonItem26.ImageFixedSize = new System.Drawing.Size(45, 45);
-            this.buttonItem26.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem26.Name = "buttonItem26";
-            this.buttonItem26.SubItemsExpandWidth = 14;
-            this.buttonItem26.Text = "معرفی اشخاص";
-            this.buttonItem26.Click += new System.EventHandler(this.buttonItem26_Click);
-            // 
-            // buttonItem19
-            // 
-            this.buttonItem19.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem19.Image")));
-            this.buttonItem19.ImageFixedSize = new System.Drawing.Size(45, 45);
-            this.buttonItem19.ImagePaddingHorizontal = 6;
-            this.buttonItem19.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem19.Name = "buttonItem19";
-            this.buttonItem19.SubItemsExpandWidth = 14;
-            this.buttonItem19.Text = "معرفی دستگاه ها";
-            this.buttonItem19.Click += new System.EventHandler(this.buttonItem19_Click);
-            // 
-            // buttonItem17
-            // 
-            this.buttonItem17.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem17.Image")));
-            this.buttonItem17.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonItem17.ImagePaddingHorizontal = 6;
-            this.buttonItem17.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem17.Name = "buttonItem17";
-            this.buttonItem17.PopupWidth = 100;
-            this.buttonItem17.SubItemsExpandWidth = 11;
-            this.buttonItem17.Text = "معرفی رنگ ";
-            this.buttonItem17.Click += new System.EventHandler(this.buttonItem17_Click);
-            // 
-            // buttonItem15
-            // 
-            this.buttonItem15.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem15.Image")));
-            this.buttonItem15.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonItem15.ImagePaddingHorizontal = 6;
-            this.buttonItem15.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem15.Name = "buttonItem15";
-            this.buttonItem15.SubItemsExpandWidth = 14;
-            this.buttonItem15.Text = "فرمول رنگ";
-            this.buttonItem15.Click += new System.EventHandler(this.buttonItem15_Click);
-            // 
-            // buttonItem14
-            // 
-            this.buttonItem14.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem14.Image")));
-            this.buttonItem14.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonItem14.ImagePaddingHorizontal = 6;
-            this.buttonItem14.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem14.Name = "buttonItem14";
-            this.buttonItem14.SubItemsExpandWidth = 14;
-            this.buttonItem14.Text = "انواع پارچه";
-            this.buttonItem14.Click += new System.EventHandler(this.buttonItem14_Click);
-            // 
-            // buttonItem37
-            // 
-            this.buttonItem37.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem37.Image")));
-            this.buttonItem37.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonItem37.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem37.Name = "buttonItem37";
-            this.buttonItem37.SubItemsExpandWidth = 14;
-            this.buttonItem37.Text = "فروش پارچه";
-            this.buttonItem37.Visible = false;
-            this.buttonItem37.Click += new System.EventHandler(this.buttonItem37_Click);
-            // 
-            // buttonItem18
-            // 
-            this.buttonItem18.AutoExpandOnClick = true;
-            this.buttonItem18.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem18.Image")));
-            this.buttonItem18.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonItem18.ImagePaddingHorizontal = 6;
-            this.buttonItem18.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem18.Name = "buttonItem18";
-            this.buttonItem18.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem20,
-            this.buttonItem24,
-            this.buttonItem27,
-            this.buttonItem78});
-            this.buttonItem18.SubItemsExpandWidth = 14;
-            this.buttonItem18.Text = "تنظیمات ";
-            this.buttonItem18.Click += new System.EventHandler(this.buttonItem18_Click);
-            // 
-            // buttonItem20
-            // 
-            this.buttonItem20.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem20.Image")));
-            this.buttonItem20.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem20.Name = "buttonItem20";
-            this.buttonItem20.Text = "تنظیمات";
-            this.buttonItem20.Click += new System.EventHandler(this.buttonItem20_Click_1);
-            // 
-            // buttonItem24
-            // 
-            this.buttonItem24.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem24.Image")));
-            this.buttonItem24.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem24.Name = "buttonItem24";
-            this.buttonItem24.Text = "معرفی تمامی انبار ها";
-            this.buttonItem24.Click += new System.EventHandler(this.buttonItem24_Click);
-            // 
-            // buttonItem27
-            // 
-            this.buttonItem27.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem27.Image")));
-            this.buttonItem27.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem27.Name = "buttonItem27";
-            this.buttonItem27.Text = "تنظیمات پیش فرض انبار ها";
-            this.buttonItem27.Click += new System.EventHandler(this.buttonItem27_Click);
-            // 
-            // buttonItem78
-            // 
-            this.buttonItem78.Name = "buttonItem78";
-            this.buttonItem78.Text = "تنظیمات RFId";
-            this.buttonItem78.Click += new System.EventHandler(this.buttonItem78_Click);
-            // 
             // buttonItem74
             // 
             this.buttonItem74.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem74.Image")));
@@ -1006,173 +876,16 @@
             this.buttonItem73.Text = "اظهارات";
             this.buttonItem73.Click += new System.EventHandler(this.buttonItem73_Click);
             // 
-            // buttonItem55
+            // btnDescriptionForDevices
             // 
-            this.buttonItem55.AutoExpandOnClick = true;
-            this.buttonItem55.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem55.Image")));
-            this.buttonItem55.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonItem55.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem55.Name = "buttonItem55";
-            this.buttonItem55.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem52,
-            this.buttonItem56,
-            this.buttonItem54,
-            this.buttonItem57});
-            this.buttonItem55.SubItemsExpandWidth = 14;
-            this.buttonItem55.Text = "دریافت و پرداخت نقد";
-            // 
-            // buttonItem52
-            // 
-            this.buttonItem52.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem52.Image")));
-            this.buttonItem52.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem52.Name = "buttonItem52";
-            this.buttonItem52.SubItemsExpandWidth = 14;
-            this.buttonItem52.Text = "دریافت نقد";
-            this.buttonItem52.Click += new System.EventHandler(this.buttonItem52_Click);
-            // 
-            // buttonItem56
-            // 
-            this.buttonItem56.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem56.Image")));
-            this.buttonItem56.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem56.Name = "buttonItem56";
-            this.buttonItem56.Text = "مشاهده دریافتها";
-            this.buttonItem56.Click += new System.EventHandler(this.buttonItem56_Click);
-            // 
-            // buttonItem54
-            // 
-            this.buttonItem54.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem54.Image")));
-            this.buttonItem54.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem54.Name = "buttonItem54";
-            this.buttonItem54.SubItemsExpandWidth = 14;
-            this.buttonItem54.Text = "پرداخت نقد";
-            this.buttonItem54.Click += new System.EventHandler(this.buttonItem54_Click);
-            // 
-            // buttonItem57
-            // 
-            this.buttonItem57.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem57.Image")));
-            this.buttonItem57.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem57.Name = "buttonItem57";
-            this.buttonItem57.Text = "مشاهده پرداختها";
-            this.buttonItem57.Click += new System.EventHandler(this.buttonItem57_Click);
-            // 
-            // buttonItem40
-            // 
-            this.buttonItem40.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem40.Image")));
-            this.buttonItem40.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonItem40.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem40.Name = "buttonItem40";
-            this.buttonItem40.SubItemsExpandWidth = 14;
-            this.buttonItem40.Text = "دریافت چک";
-            this.buttonItem40.Click += new System.EventHandler(this.buttonItem40_Click_1);
-            // 
-            // buttonItem61
-            // 
-            this.buttonItem61.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem61.Image")));
-            this.buttonItem61.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonItem61.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem61.Name = "buttonItem61";
-            this.buttonItem61.SubItemsExpandWidth = 14;
-            this.buttonItem61.Text = "ثبت گروهی اسناد دریافتنی";
-            this.buttonItem61.Click += new System.EventHandler(this.buttonItem61_Click);
-            // 
-            // buttonItem41
-            // 
-            this.buttonItem41.AutoExpandOnClick = true;
-            this.buttonItem41.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem41.Image")));
-            this.buttonItem41.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonItem41.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem41.Name = "buttonItem41";
-            this.buttonItem41.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem42,
-            this.buttonItem43,
-            this.buttonItem47,
-            this.buttonItem48,
-            this.buttonItem49,
-            this.buttonItem58,
-            this.buttonItem50});
-            this.buttonItem41.SubItemsExpandWidth = 14;
-            this.buttonItem41.Text = "گردش اسناد دریافتنی";
-            this.buttonItem41.Click += new System.EventHandler(this.buttonItem41_Click_1);
-            // 
-            // buttonItem42
-            // 
-            this.buttonItem42.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem42.Image")));
-            this.buttonItem42.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem42.Name = "buttonItem42";
-            this.buttonItem42.Text = "واگذاری چک به بانک";
-            this.buttonItem42.Click += new System.EventHandler(this.buttonItem42_Click_1);
-            // 
-            // buttonItem43
-            // 
-            this.buttonItem43.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem43.Image")));
-            this.buttonItem43.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem43.Name = "buttonItem43";
-            this.buttonItem43.Text = "واگذاری چک به شخص";
-            this.buttonItem43.Click += new System.EventHandler(this.buttonItem43_Click_1);
-            // 
-            // buttonItem47
-            // 
-            this.buttonItem47.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem47.Image")));
-            this.buttonItem47.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem47.Name = "buttonItem47";
-            this.buttonItem47.Text = "وصول چک";
-            this.buttonItem47.Click += new System.EventHandler(this.buttonItem47_Click);
-            // 
-            // buttonItem48
-            // 
-            this.buttonItem48.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem48.Image")));
-            this.buttonItem48.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem48.Name = "buttonItem48";
-            this.buttonItem48.Text = "برگشت چک از بانک";
-            this.buttonItem48.Click += new System.EventHandler(this.buttonItem48_Click);
-            // 
-            // buttonItem49
-            // 
-            this.buttonItem49.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem49.Image")));
-            this.buttonItem49.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem49.Name = "buttonItem49";
-            this.buttonItem49.Text = "برگشت چک از خرج ";
-            this.buttonItem49.Click += new System.EventHandler(this.buttonItem49_Click);
-            // 
-            // buttonItem58
-            // 
-            this.buttonItem58.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem58.Image")));
-            this.buttonItem58.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem58.Name = "buttonItem58";
-            this.buttonItem58.Text = "برگشت چک دستی";
-            this.buttonItem58.Click += new System.EventHandler(this.buttonItem58_Click);
-            // 
-            // buttonItem50
-            // 
-            this.buttonItem50.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem50.Image")));
-            this.buttonItem50.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem50.Name = "buttonItem50";
-            this.buttonItem50.Text = "استرداد چک";
-            this.buttonItem50.Click += new System.EventHandler(this.buttonItem50_Click);
-            // 
-            // buttonItem51
-            // 
-            this.buttonItem51.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem51.Image")));
-            this.buttonItem51.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonItem51.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem51.Name = "buttonItem51";
-            this.buttonItem51.SubItemsExpandWidth = 14;
-            this.buttonItem51.Text = "مشاهده اسناد دریافتنی";
-            this.buttonItem51.Click += new System.EventHandler(this.buttonItem51_Click);
-            // 
-            // bt_Ras
-            // 
-            this.bt_Ras.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.bt_Ras.Image = ((System.Drawing.Image)(resources.GetObject("bt_Ras.Image")));
-            this.bt_Ras.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.bt_Ras.ImageListSizeSelection = DevComponents.DotNetBar.eButtonImageListSelection.Large;
-            this.bt_Ras.ImagePaddingHorizontal = 20;
-            this.bt_Ras.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.bt_Ras.Name = "bt_Ras";
-            this.bt_Ras.SubItemsExpandWidth = 14;
-            this.bt_Ras.Text = "رأس گیری";
-            this.bt_Ras.Visible = false;
-            this.bt_Ras.Click += new System.EventHandler(this.bt_Ras_Click);
+            this.btnDescriptionForDevices.Image = global::PCLOR.Properties.Resources.me_bg1;
+            this.btnDescriptionForDevices.ImageListSizeSelection = DevComponents.DotNetBar.eButtonImageListSelection.Medium;
+            this.btnDescriptionForDevices.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnDescriptionForDevices.ImageSmall = global::PCLOR.Properties.Resources.me_bg;
+            this.btnDescriptionForDevices.Name = "btnDescriptionForDevices";
+            this.btnDescriptionForDevices.SubItemsExpandWidth = 14;
+            this.btnDescriptionForDevices.Text = "ثبت اظهارات دستگاه";
+            this.btnDescriptionForDevices.Click += new System.EventHandler(this.btnDescriptionForDevices_Click);
             // 
             // buttonItem39
             // 
@@ -1521,6 +1234,307 @@
             this.buttonItem69.Name = "buttonItem69";
             this.buttonItem69.Text = "دستور تولید اصلاحی";
             this.buttonItem69.Click += new System.EventHandler(this.buttonItem69_Click);
+            // 
+            // buttonItem53
+            // 
+            this.buttonItem53.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem53.Image")));
+            this.buttonItem53.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem53.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem53.Name = "buttonItem53";
+            this.buttonItem53.SubItemsExpandWidth = 14;
+            this.buttonItem53.Text = "معرفی صندوقها و بانکها ";
+            this.buttonItem53.Click += new System.EventHandler(this.buttonItem53_Click);
+            // 
+            // buttonItem25
+            // 
+            this.buttonItem25.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem25.Image")));
+            this.buttonItem25.ImageFixedSize = new System.Drawing.Size(45, 45);
+            this.buttonItem25.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem25.Name = "buttonItem25";
+            this.buttonItem25.SubItemsExpandWidth = 14;
+            this.buttonItem25.Text = "معرفی شعبه ";
+            this.buttonItem25.Click += new System.EventHandler(this.buttonItem25_Click);
+            // 
+            // buttonItem26
+            // 
+            this.buttonItem26.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem26.Image")));
+            this.buttonItem26.ImageFixedSize = new System.Drawing.Size(45, 45);
+            this.buttonItem26.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem26.Name = "buttonItem26";
+            this.buttonItem26.SubItemsExpandWidth = 14;
+            this.buttonItem26.Text = "معرفی اشخاص";
+            this.buttonItem26.Click += new System.EventHandler(this.buttonItem26_Click);
+            // 
+            // buttonItem19
+            // 
+            this.buttonItem19.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem19.Image")));
+            this.buttonItem19.ImageFixedSize = new System.Drawing.Size(45, 45);
+            this.buttonItem19.ImagePaddingHorizontal = 6;
+            this.buttonItem19.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem19.Name = "buttonItem19";
+            this.buttonItem19.SubItemsExpandWidth = 14;
+            this.buttonItem19.Text = "معرفی دستگاه ها";
+            this.buttonItem19.Click += new System.EventHandler(this.buttonItem19_Click);
+            // 
+            // buttonItem17
+            // 
+            this.buttonItem17.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem17.Image")));
+            this.buttonItem17.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem17.ImagePaddingHorizontal = 6;
+            this.buttonItem17.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem17.Name = "buttonItem17";
+            this.buttonItem17.PopupWidth = 100;
+            this.buttonItem17.SubItemsExpandWidth = 11;
+            this.buttonItem17.Text = "معرفی رنگ ";
+            this.buttonItem17.Click += new System.EventHandler(this.buttonItem17_Click);
+            // 
+            // buttonItem15
+            // 
+            this.buttonItem15.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem15.Image")));
+            this.buttonItem15.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem15.ImagePaddingHorizontal = 6;
+            this.buttonItem15.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem15.Name = "buttonItem15";
+            this.buttonItem15.SubItemsExpandWidth = 14;
+            this.buttonItem15.Text = "فرمول رنگ";
+            this.buttonItem15.Click += new System.EventHandler(this.buttonItem15_Click);
+            // 
+            // buttonItem14
+            // 
+            this.buttonItem14.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem14.Image")));
+            this.buttonItem14.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem14.ImagePaddingHorizontal = 6;
+            this.buttonItem14.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem14.Name = "buttonItem14";
+            this.buttonItem14.SubItemsExpandWidth = 14;
+            this.buttonItem14.Text = "انواع پارچه";
+            this.buttonItem14.Click += new System.EventHandler(this.buttonItem14_Click);
+            // 
+            // buttonItem37
+            // 
+            this.buttonItem37.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem37.Image")));
+            this.buttonItem37.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem37.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem37.Name = "buttonItem37";
+            this.buttonItem37.SubItemsExpandWidth = 14;
+            this.buttonItem37.Text = "فروش پارچه";
+            this.buttonItem37.Visible = false;
+            this.buttonItem37.Click += new System.EventHandler(this.buttonItem37_Click);
+            // 
+            // buttonItem18
+            // 
+            this.buttonItem18.AutoExpandOnClick = true;
+            this.buttonItem18.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem18.Image")));
+            this.buttonItem18.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem18.ImagePaddingHorizontal = 6;
+            this.buttonItem18.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem18.Name = "buttonItem18";
+            this.buttonItem18.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem20,
+            this.buttonItem24,
+            this.buttonItem27,
+            this.buttonItem78});
+            this.buttonItem18.SubItemsExpandWidth = 14;
+            this.buttonItem18.Text = "تنظیمات ";
+            this.buttonItem18.Click += new System.EventHandler(this.buttonItem18_Click);
+            // 
+            // buttonItem20
+            // 
+            this.buttonItem20.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem20.Image")));
+            this.buttonItem20.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem20.Name = "buttonItem20";
+            this.buttonItem20.Text = "تنظیمات";
+            this.buttonItem20.Click += new System.EventHandler(this.buttonItem20_Click_1);
+            // 
+            // buttonItem24
+            // 
+            this.buttonItem24.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem24.Image")));
+            this.buttonItem24.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem24.Name = "buttonItem24";
+            this.buttonItem24.Text = "معرفی تمامی انبار ها";
+            this.buttonItem24.Click += new System.EventHandler(this.buttonItem24_Click);
+            // 
+            // buttonItem27
+            // 
+            this.buttonItem27.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem27.Image")));
+            this.buttonItem27.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem27.Name = "buttonItem27";
+            this.buttonItem27.Text = "تنظیمات پیش فرض انبار ها";
+            this.buttonItem27.Click += new System.EventHandler(this.buttonItem27_Click);
+            // 
+            // buttonItem78
+            // 
+            this.buttonItem78.Name = "buttonItem78";
+            this.buttonItem78.Text = "تنظیمات RFId";
+            this.buttonItem78.Click += new System.EventHandler(this.buttonItem78_Click);
+            // 
+            // buttonItem55
+            // 
+            this.buttonItem55.AutoExpandOnClick = true;
+            this.buttonItem55.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem55.Image")));
+            this.buttonItem55.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem55.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem55.Name = "buttonItem55";
+            this.buttonItem55.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem52,
+            this.buttonItem56,
+            this.buttonItem54,
+            this.buttonItem57});
+            this.buttonItem55.SubItemsExpandWidth = 14;
+            this.buttonItem55.Text = "دریافت و پرداخت نقد";
+            // 
+            // buttonItem52
+            // 
+            this.buttonItem52.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem52.Image")));
+            this.buttonItem52.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem52.Name = "buttonItem52";
+            this.buttonItem52.SubItemsExpandWidth = 14;
+            this.buttonItem52.Text = "دریافت نقد";
+            this.buttonItem52.Click += new System.EventHandler(this.buttonItem52_Click);
+            // 
+            // buttonItem56
+            // 
+            this.buttonItem56.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem56.Image")));
+            this.buttonItem56.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem56.Name = "buttonItem56";
+            this.buttonItem56.Text = "مشاهده دریافتها";
+            this.buttonItem56.Click += new System.EventHandler(this.buttonItem56_Click);
+            // 
+            // buttonItem54
+            // 
+            this.buttonItem54.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem54.Image")));
+            this.buttonItem54.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem54.Name = "buttonItem54";
+            this.buttonItem54.SubItemsExpandWidth = 14;
+            this.buttonItem54.Text = "پرداخت نقد";
+            this.buttonItem54.Click += new System.EventHandler(this.buttonItem54_Click);
+            // 
+            // buttonItem57
+            // 
+            this.buttonItem57.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem57.Image")));
+            this.buttonItem57.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem57.Name = "buttonItem57";
+            this.buttonItem57.Text = "مشاهده پرداختها";
+            this.buttonItem57.Click += new System.EventHandler(this.buttonItem57_Click);
+            // 
+            // buttonItem40
+            // 
+            this.buttonItem40.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem40.Image")));
+            this.buttonItem40.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem40.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem40.Name = "buttonItem40";
+            this.buttonItem40.SubItemsExpandWidth = 14;
+            this.buttonItem40.Text = "دریافت چک";
+            this.buttonItem40.Click += new System.EventHandler(this.buttonItem40_Click_1);
+            // 
+            // buttonItem61
+            // 
+            this.buttonItem61.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem61.Image")));
+            this.buttonItem61.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem61.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem61.Name = "buttonItem61";
+            this.buttonItem61.SubItemsExpandWidth = 14;
+            this.buttonItem61.Text = "ثبت گروهی اسناد دریافتنی";
+            this.buttonItem61.Click += new System.EventHandler(this.buttonItem61_Click);
+            // 
+            // buttonItem41
+            // 
+            this.buttonItem41.AutoExpandOnClick = true;
+            this.buttonItem41.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem41.Image")));
+            this.buttonItem41.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem41.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem41.Name = "buttonItem41";
+            this.buttonItem41.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem42,
+            this.buttonItem43,
+            this.buttonItem47,
+            this.buttonItem48,
+            this.buttonItem49,
+            this.buttonItem58,
+            this.buttonItem50});
+            this.buttonItem41.SubItemsExpandWidth = 14;
+            this.buttonItem41.Text = "گردش اسناد دریافتنی";
+            this.buttonItem41.Click += new System.EventHandler(this.buttonItem41_Click_1);
+            // 
+            // buttonItem42
+            // 
+            this.buttonItem42.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem42.Image")));
+            this.buttonItem42.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem42.Name = "buttonItem42";
+            this.buttonItem42.Text = "واگذاری چک به بانک";
+            this.buttonItem42.Click += new System.EventHandler(this.buttonItem42_Click_1);
+            // 
+            // buttonItem43
+            // 
+            this.buttonItem43.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem43.Image")));
+            this.buttonItem43.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem43.Name = "buttonItem43";
+            this.buttonItem43.Text = "واگذاری چک به شخص";
+            this.buttonItem43.Click += new System.EventHandler(this.buttonItem43_Click_1);
+            // 
+            // buttonItem47
+            // 
+            this.buttonItem47.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem47.Image")));
+            this.buttonItem47.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem47.Name = "buttonItem47";
+            this.buttonItem47.Text = "وصول چک";
+            this.buttonItem47.Click += new System.EventHandler(this.buttonItem47_Click);
+            // 
+            // buttonItem48
+            // 
+            this.buttonItem48.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem48.Image")));
+            this.buttonItem48.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem48.Name = "buttonItem48";
+            this.buttonItem48.Text = "برگشت چک از بانک";
+            this.buttonItem48.Click += new System.EventHandler(this.buttonItem48_Click);
+            // 
+            // buttonItem49
+            // 
+            this.buttonItem49.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem49.Image")));
+            this.buttonItem49.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem49.Name = "buttonItem49";
+            this.buttonItem49.Text = "برگشت چک از خرج ";
+            this.buttonItem49.Click += new System.EventHandler(this.buttonItem49_Click);
+            // 
+            // buttonItem58
+            // 
+            this.buttonItem58.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem58.Image")));
+            this.buttonItem58.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem58.Name = "buttonItem58";
+            this.buttonItem58.Text = "برگشت چک دستی";
+            this.buttonItem58.Click += new System.EventHandler(this.buttonItem58_Click);
+            // 
+            // buttonItem50
+            // 
+            this.buttonItem50.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem50.Image")));
+            this.buttonItem50.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem50.Name = "buttonItem50";
+            this.buttonItem50.Text = "استرداد چک";
+            this.buttonItem50.Click += new System.EventHandler(this.buttonItem50_Click);
+            // 
+            // buttonItem51
+            // 
+            this.buttonItem51.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem51.Image")));
+            this.buttonItem51.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem51.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem51.Name = "buttonItem51";
+            this.buttonItem51.SubItemsExpandWidth = 14;
+            this.buttonItem51.Text = "مشاهده اسناد دریافتنی";
+            this.buttonItem51.Click += new System.EventHandler(this.buttonItem51_Click);
+            // 
+            // bt_Ras
+            // 
+            this.bt_Ras.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.bt_Ras.Image = ((System.Drawing.Image)(resources.GetObject("bt_Ras.Image")));
+            this.bt_Ras.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.bt_Ras.ImageListSizeSelection = DevComponents.DotNetBar.eButtonImageListSelection.Large;
+            this.bt_Ras.ImagePaddingHorizontal = 20;
+            this.bt_Ras.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.bt_Ras.Name = "bt_Ras";
+            this.bt_Ras.SubItemsExpandWidth = 14;
+            this.bt_Ras.Text = "رأس گیری";
+            this.bt_Ras.Visible = false;
+            this.bt_Ras.Click += new System.EventHandler(this.bt_Ras_Click);
             // 
             // applicationButton1
             // 
@@ -1890,5 +1904,6 @@
         private DevComponents.DotNetBar.ButtonItem buttonItem77;
         private DevComponents.DotNetBar.ButtonItem buttonItem78;
         private DevComponents.DotNetBar.ButtonItem buttonItem79;
+        private DevComponents.DotNetBar.ButtonItem btnDescriptionForDevices;
     }
 }

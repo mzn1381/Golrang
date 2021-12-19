@@ -8,7 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 namespace PCLOR.Classes
 {
-    class Class_Documents
+  public  class Class_Documents
     {
         SqlConnection ConWare = new SqlConnection(Properties.Settings.Default.PWHRS);
 
