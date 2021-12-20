@@ -5,9 +5,10 @@ using System.Text;
 
 namespace PCLOR.EnumStatusesDevice
 {
-   public enum Frm_05_Machine_Status
+    public enum Frm_05_Machine_Status
     {
-        RegisterDetailForDevice=1,
-        EditOrViewDevice=2
+        RegisterDetailForDevice = 1,
+        EditOrViewDevice = 2,
+        CreateProductForDevice = 3
     }
 }

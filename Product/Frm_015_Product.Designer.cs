@@ -934,7 +934,7 @@ namespace PCLOR.Product
             // 
             this.rb_Auto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rb_Auto.AutoSize = true;
-            this.rb_Auto.Location = new System.Drawing.Point(345, 69);
+            this.rb_Auto.Location = new System.Drawing.Point(354, 69);
             this.rb_Auto.Name = "rb_Auto";
             this.rb_Auto.Size = new System.Drawing.Size(112, 21);
             this.rb_Auto.TabIndex = 197;

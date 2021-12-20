@@ -1578,6 +1578,11 @@ ORDER BY Barcode");
                     Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
         }
 
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void buttonItem71_Click(object sender, EventArgs e)
         {
             if (!CheckOpenForms("Frm_Rpt_BarcodeDetail"))

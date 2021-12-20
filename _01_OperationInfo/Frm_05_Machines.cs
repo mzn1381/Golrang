@@ -3,6 +3,7 @@ using PCLOR.Classes;
 using PCLOR.EnumStatusesDevice;
 using PCLOR.Models;
 using PCLOR.MyBasicFunction;
+using PCLOR.Product;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -35,15 +36,26 @@ namespace PCLOR._01_OperationInfo
 
             if (Status==Frm_05_Machine_Status.RegisterDetailForDevice)
                 this.Text = "لیست دستگاه ها برای ثبت اظهارات";
-
+            else if(Status==Frm_05_Machine_Status.CreateProductForDevice)
+                this.Text = "لیست تولید دستگاه ها";
             Class_UserScope UserScope = new Class_UserScope();
-            
             if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 147))
                 button1.Visible = true;
             if (Status == Frm_05_Machine_Status.EditOrViewDevice)
                 BasicFunction.LoadDevices(ButtonEditViewDetail_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls);
             else if (Status == Frm_05_Machine_Status.RegisterDetailForDevice)
                 BasicFunction.LoadDevices(ButtonRegisterDescriptionDevice_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls);
+            else if(Status == Frm_05_Machine_Status.CreateProductForDevice)
+                BasicFunction.LoadDevices(ButtonCreateProduct_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls);
+        }
+
+
+        private void ButtonCreateProduct_Click(object sender, EventArgs e)
+        {
+            var btn = sender as Button;
+            var machine = ((Machine)btn.Tag);
+            Frm_015_Product form_55 = new Frm_015_Product(machine.ID);
+            form_55.ShowDialog();
         }
 
         private void ButtonEditViewDetail_Click(object sender, EventArgs e)
@@ -76,6 +88,11 @@ namespace PCLOR._01_OperationInfo
         private void Frm_05_Machines_FormClosing(object sender, FormClosingEventArgs e)
         {
             BasicFunction.SaveLocationDevices(Controls, ConPCLOR);
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

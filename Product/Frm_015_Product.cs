@@ -22,7 +22,7 @@ namespace PCLOR.Product
         SerialPort comport = new SerialPort();
         Classes.Class_Documents ClDoc = new Classes.Class_Documents();
         int ResidNum = 0;
-        int _Id = 0;
+       private int DeviceId = 0;
         bool Machine = false;
 
         private void OpenPort()
@@ -65,7 +65,7 @@ namespace PCLOR.Product
         {
 
             InitializeComponent();
-            _Id = Id;
+            DeviceId = Id;
             Machine = true;
         }
 
