@@ -1756,6 +1756,7 @@
             this.buttonItem80.Name = "buttonItem80";
             this.buttonItem80.SubItemsExpandWidth = 14;
             this.buttonItem80.Text = "تولید دستگاه ها ";
+            this.buttonItem80.Click += new System.EventHandler(this.buttonItem80_Click);
             // 
             // Frm_Main
             // 

@@ -1583,6 +1583,26 @@ ORDER BY Barcode");
 
         }
 
+        private void buttonItem80_Click(object sender, EventArgs e)
+        {
+            Class_UserScope UserScope = new Class_UserScope();
+            if (UserScope.CheckScope(_UserName, "Column44", 148))
+            {
+
+                Frm_05_Machines frm_05_Machines = new Frm_05_Machines(Frm_05_Machine_Status.CreateProductForDevice);
+
+
+                frm_05_Machines.MdiParent = this;
+                if (frm_05_Machines.MdiParent.MdiChildren.Length > 1 && frm_05_Machines.MdiParent.MdiChildren[0].WindowState == FormWindowState.Maximized)
+                {
+                    frm_05_Machines.MdiParent.MdiChildren[0].WindowState = FormWindowState.Normal; frm_05_Machines.WindowState = FormWindowState.Maximized;
+                }
+                frm_05_Machines.Show(); frm_05_Machines.Focus();
+            }
+            else
+                Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
+        }
+
         private void buttonItem71_Click(object sender, EventArgs e)
         {
             if (!CheckOpenForms("Frm_Rpt_BarcodeDetail"))

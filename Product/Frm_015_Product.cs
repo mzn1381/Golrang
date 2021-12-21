@@ -75,12 +75,12 @@ namespace PCLOR.Product
             gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
             gridEX2.DropDowns["Customer"].DataSource = ClDoc.ReturnTable(ConBase, @"select Columnid,Column02 from Table_045_PersonInfo");
 
-            gridEX2.DropDowns["Programer"].DataSource = mlt_Num_Programer.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,Number from Table_100_ProgramMachine");
-            gridEX2.DropDowns["shift"].DataSource = mlt_shift.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,Shift from Table_105_DefinitionWorkShift");
-            gridEX2.DropDowns["Machine"].DataSource = mlt_Machine.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select Id,namemachine from Table_60_SpecsTechnical");
-            gridEX2.DropDowns["TypeCloth"].DataSource = mlt_TypeCloth.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeCloth,CodeCommondity from Table_005_TypeCloth");
-            gridEX2.DropDowns["cottone"].DataSource = ClDoc.ReturnTable(ConPCLOR, @"select Id,code,NameCotton from Table_120_TypeCotton");
-            mlt_codecustomer.DataSource = ClDoc.ReturnTable(ConBase, @"select Columnid,column01,Column02  from Table_045_PersonInfo");
+            //gridEX2.DropDowns["Programer"].DataSource = mlt_Num_Programer.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,Number from Table_100_ProgramMachine");
+            //gridEX2.DropDowns["shift"].DataSource = mlt_shift.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,Shift from Table_105_DefinitionWorkShift");
+            //gridEX2.DropDowns["Machine"].DataSource = mlt_Machine.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select Id,namemachine from Table_60_SpecsTechnical");
+            //gridEX2.DropDowns["TypeCloth"].DataSource = mlt_TypeCloth.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeCloth,CodeCommondity from Table_005_TypeCloth");
+            //gridEX2.DropDowns["cottone"].DataSource = ClDoc.ReturnTable(ConPCLOR, @"select Id,code,NameCotton from Table_120_TypeCotton");
+            //mlt_codecustomer.DataSource = ClDoc.ReturnTable(ConBase, @"select Columnid,column01,Column02  from Table_045_PersonInfo");
             mlt_Ware.DataSource = ClDoc.ReturnTable(ConWare, @"select Columnid,Column01,Column02 from Table_001_PWHRS");
             mlt_Function.DataSource = ClDoc.ReturnTable(ConWare, @"select Columnid,Column01,Column02 from table_005_PwhrsOperation where Column16=0");
 
@@ -93,7 +93,7 @@ namespace PCLOR.Product
             mlt_Ware.Value = ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=31");
 
             mlt_Function.Value = ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=30");
-            mlt_Num_Programer.Focus();
+            //mlt_Num_Programer.Focus();
         }
 
 
@@ -105,16 +105,16 @@ namespace PCLOR.Product
             if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 146))
             {
 
-                if (mlt_Num_Programer.Text == "" || mlt_Num_Programer.Text == "0")
-                {
-                    Class_BasicOperation.ShowMsg("", "لطفا شماره دستگاه مورد نظر را وارد نمایید", Class_BasicOperation.MessageType.None);
+                //if (mlt_Num_Programer.Text == "" || mlt_Num_Programer.Text == "0")
+                //{
+                //    Class_BasicOperation.ShowMsg("", "لطفا شماره دستگاه مورد نظر را وارد نمایید", Class_BasicOperation.MessageType.None);
 
-                }
-                if (mlt_shift.Value == null || mlt_shift.Text == "")
-                {
-                    Class_BasicOperation.ShowMsg("", "لطفا شیفت کاری مورد نظر را وارد نمایید", Class_BasicOperation.MessageType.None);
+                //}
+                //if (mlt_shift.Value == null || mlt_shift.Text == "")
+                //{
+                //    Class_BasicOperation.ShowMsg("", "لطفا شیفت کاری مورد نظر را وارد نمایید", Class_BasicOperation.MessageType.None);
 
-                }
+                //}
                 if (txt_weight.Text == "" || txt_weight.Text == "0")
                 {
                     Class_BasicOperation.ShowMsg("", "لطفا وزن مورد نظر را وارد نمایید", Class_BasicOperation.MessageType.None);
@@ -132,15 +132,15 @@ namespace PCLOR.Product
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Barcode"] = Barcode;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["weight"] = weigh;
 
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ProgramerMachine"] = mlt_Num_Programer.Value;
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Machine"] = mlt_Machine.Value;
+                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ProgramerMachine"] = mlt_Num_Programer.Value;
+                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Machine"] = mlt_Machine.Value;
 
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ClothType"] = mlt_TypeCloth.Value;
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ReportDescriptin"] = txt_Description.Text;
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["shift"] = mlt_shift.Value;
+                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ClothType"] = mlt_TypeCloth.Value;
+                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ReportDescriptin"] = txt_Description.Text;
+                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["shift"] = mlt_shift.Value;
 
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Date"] = txt_Dat.Text;
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Time"] = txt_Time.Text;
+                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Date"] = txt_Dat.Text;
+                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Time"] = txt_Time.Text;
 
 
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["UserSabt"] = Class_BasicOperation._UserName;
@@ -190,31 +190,31 @@ namespace PCLOR.Product
         {
             try
             {
-                if (mlt_Num_Programer.Value.ToString() != "")
-                {
+                //if (mlt_Num_Programer.Value.ToString() != "")
+                //{
 
-                    DataTable dt = new DataTable();
+                //    DataTable dt = new DataTable();
 
-                    dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT        Machine, Cloth,d.IDCotton,Weave,Printer
-                        FROM            dbo.Table_100_ProgramMachine h INNER JOIN Table_125_DetailTypeCotton d on  d.fk=h.id where h.Id=" + mlt_Num_Programer.Value + "");
+                //    dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT        Machine, Cloth,d.IDCotton,Weave,Printer
+                //        FROM            dbo.Table_100_ProgramMachine h INNER JOIN Table_125_DetailTypeCotton d on  d.fk=h.id where h.Id=" + mlt_Num_Programer.Value + "");
 
-                    if (dt.Rows.Count > 0)
-                    {
-                        mlt_Machine.Value = dt.Rows[0]["Machine"];
-                        mlt_TypeCloth.Value = dt.Rows[0]["Cloth"];
-                        txt_NumberWeave.Text = dt.Rows[0]["Weave"].ToString();
-                        txt_Dat.Text = FarsiLibrary.Utils.PersianDate.Now.ToString("YYYY/MM/DD");
-                        uiComboBox1.Text = dt.Rows[0]["Printer"].ToString();
-                        txt_Time.Text = DateTime.Now.ToString("HH:mm");
-                        if (Properties.Settings.Default.Print != "")
-                        {
-                            uiComboBox1.Text = Properties.Settings.Default.Print;
+                //    if (dt.Rows.Count > 0)
+                //    {
+                //        mlt_Machine.Value = dt.Rows[0]["Machine"];
+                //        mlt_TypeCloth.Value = dt.Rows[0]["Cloth"];
+                //        txt_NumberWeave.Text = dt.Rows[0]["Weave"].ToString();
+                //        txt_Dat.Text = FarsiLibrary.Utils.PersianDate.Now.ToString("YYYY/MM/DD");
+                //        uiComboBox1.Text = dt.Rows[0]["Printer"].ToString();
+                //        txt_Time.Text = DateTime.Now.ToString("HH:mm");
+                //        if (Properties.Settings.Default.Print != "")
+                //        {
+                //            uiComboBox1.Text = Properties.Settings.Default.Print;
 
-                        }
-                    }
+                //        }
+                //    }
 
-                    table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(mlt_Num_Programer.Value));
-                }
+                //    table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(mlt_Num_Programer.Value));
+                //}
             }
             catch
             {
@@ -238,8 +238,9 @@ namespace PCLOR.Product
                     return;
                 }
                 if (mlt_Function.Text.Trim() == "0" || mlt_Function.Text.Trim() == "" || mlt_Ware.Text.Trim() == "0"
-                    || mlt_Ware.Text.Trim() == "" || mlt_shift.Text.Trim() == ""
-                    || mlt_codecustomer.Text == "" || mlt_Function.Text.All(char.IsDigit) || mlt_Ware.Text.All(char.IsDigit))
+                    //|| mlt_Ware.Text.Trim() == "" || mlt_shift.Text.Trim() == ""
+                    //|| mlt_codecustomer.Text == "" || mlt_Function.Text.All(char.IsDigit) || mlt_Ware.Text.All(char.IsDigit)
+                    )
                 {
                     MessageBox.Show("اطلاعات مورد نیاز را تکمیل کنید");
                     return;
@@ -255,56 +256,52 @@ namespace PCLOR.Product
 
 
 
-                string lastdate = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isnull((select top(1) Time from Table_115_Product where Machine=" + mlt_Machine.Value + "  order by Date,DateSabt Desc),'0:0')");
-                string LastShift = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isnull((SELECT        TOP (1)  dbo.Table_105_DefinitionWorkShift.TimeEnd
-                                 FROM            dbo.Table_105_DefinitionWorkShift LEFT OUTER JOIN
-                                 dbo.Table_115_Product ON dbo.Table_105_DefinitionWorkShift.ID = dbo.Table_115_Product.shift
-                                WHERE        (dbo.Table_115_Product.Machine = " + mlt_Machine.Value + @")
-                                ORDER BY dbo.Table_115_Product.Date DESC),'0:0')");
-                txt_Lastdate.Text = lastdate;
-                txt_Lastshift.Text = LastShift;
-                if (lastdate != "00:00:00" && LastShift != "00:00:00")
-                {
-                    if (Convert.ToDateTime(txt_Time.Text) < Convert.ToDateTime(txt_Lastshift.Text) && Convert.ToDateTime(txt_Lastdate.Text) < Convert.ToDateTime(txt_Lastshift.Text))
-                    {
-                        chek_TowPerson.Checked = true;
-                    }
-                    else
-                    {
-                        chek_TowPerson.Checked = false;
+                //string lastdate = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isnull((select top(1) Time from Table_115_Product where Machine=" + mlt_Machine.Value + "  order by Date,DateSabt Desc),'0:0')");
+                //string LastShift = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isnull((SELECT        TOP (1)  dbo.Table_105_DefinitionWorkShift.TimeEnd
+                //                 FROM            dbo.Table_105_DefinitionWorkShift LEFT OUTER JOIN
+                //                 dbo.Table_115_Product ON dbo.Table_105_DefinitionWorkShift.ID = dbo.Table_115_Product.shift
+                //                WHERE        (dbo.Table_115_Product.Machine = " + mlt_Machine.Value + @")
+                //                ORDER BY dbo.Table_115_Product.Date DESC),'0:0')");
+                //txt_Lastdate.Text = lastdate;
+                //txt_Lastshift.Text = LastShift;
+                //if (lastdate != "00:00:00" && LastShift != "00:00:00")
+                //{
+                //    if (Convert.ToDateTime(txt_Time.Text) < Convert.ToDateTime(txt_Lastshift.Text) && Convert.ToDateTime(txt_Lastdate.Text) < Convert.ToDateTime(txt_Lastshift.Text))
+                //    {
+                //        chek_TowPerson.Checked = true;
+                //    }
+                //    else
+                //    {
+                //        chek_TowPerson.Checked = false;
 
-                    }
-                }
+                //    }
+                //}
 
-                string idrfid = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isnull((select Id from  Table_135_RFIDPerson  where CodeRFID=" + txt_RFID.Text + "),0)");
+                //string idrfid = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isnull((select Id from  Table_135_RFIDPerson  where CodeRFID=" + txt_RFID.Text + "),0)");
 
-                table_115_ProductBindingSource.EndEdit();
-                table_115_ProductTableAdapter.Update(dataSet_05_Product.Table_115_Product);
-                Recipt();
-                ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, @"update Table_80_Setting set value=" + mlt_Ware.Value + " where Id=31 ;" +
-                    " update Table_115_Product set RFID=" + idrfid + ",Operator=" + mlt_codecustomer.Value + ",TimeLastProduct='" + txt_Lastdate.Text + "'" +
-                    ",TimeLastShift='" + txt_Lastshift.Text + "',ReportDescriptin='" + txt_Description.Text + "' where id in (" + ID.TrimEnd(',') + ") " +
-                    " Update Table_100_ProgramMachine set Printer=N'" + uiComboBox1.Text + "' where ID=" + mlt_Num_Programer.Value);
+                //table_115_ProductBindingSource.EndEdit();
+                //table_115_ProductTableAdapter.Update(dataSet_05_Product.Table_115_Product);
+                //Recipt();
+                //ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, @"update Table_80_Setting set value=" + mlt_Ware.Value + " where Id=31 ;" +
+                //    " update Table_115_Product set RFID=" + idrfid + ",Operator=" + mlt_codecustomer.Value + ",TimeLastProduct='" + txt_Lastdate.Text + "'" +
+                //    ",TimeLastShift='" + txt_Lastshift.Text + "',ReportDescriptin='" + txt_Description.Text + "' where id in (" + ID.TrimEnd(',') + ") " +
+                //    " Update Table_100_ProgramMachine set Printer=N'" + uiComboBox1.Text + "' where ID=" + mlt_Num_Programer.Value);
 
-                Class_BasicOperation.ShowMsg("", "اطلاعات با موفقیت دخیره شد" + Environment.NewLine + "رسید به شماره" + ResidNum + "با موفقیت صدور شد", Class_BasicOperation.MessageType.Information);
-                gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
-                table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(mlt_Num_Programer.Value));
-                gridEX2.MoveTo(Position);
+                //Class_BasicOperation.ShowMsg("", "اطلاعات با موفقیت دخیره شد" + Environment.NewLine + "رسید به شماره" + ResidNum + "با موفقیت صدور شد", Class_BasicOperation.MessageType.Information);
+                //gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
+                //table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(mlt_Num_Programer.Value));
+                //gridEX2.MoveTo(Position);
 
             }
         }
         string ID = "";
-
         private void Recipt()
         {
-
             try
             {
                 ResidNum = ClDoc.MaxNumber(ConWare.ConnectionString, "Table_011_PwhrsReceipt", "Column01");
-
                 string commandtxt = string.Empty;
                 commandtxt = @"Declare @Key int";
-
                 commandtxt += @" INSERT INTO Table_011_PwhrsReceipt (
                                                                             [column01],
                                                                             [column02],
@@ -317,15 +314,14 @@ namespace PCLOR.Product
                                                                             [column10],
                                                                             [column11]
                                                                  
-                                                                          ) VALUES (" + ResidNum + ",'" + txt_Dat.Text + "' ," + mlt_Ware.Value.ToString() + "," + mlt_Function.Value.ToString() + ","
-                                                                   + mlt_codecustomer.Value.ToString() + ",'" + "رسید صادره بابت رسید پارچه خام ش" + txt_Number.Text + "','" + Class_BasicOperation._UserName + "',getdate(),'" + Class_BasicOperation._UserName + "',getdate()); SET @Key=Scope_Identity() ";
+                                                                          ) VALUES (" + ResidNum + ",'" + DateTime.Now + "' ," + mlt_Ware.Value.ToString() + "," + mlt_Function.Value.ToString() + ","
+                                                                   + lblOperationCode.Text + ",'" + "رسید صادره بابت رسید پارچه خام ش" + txt_Number.Text + "','" + Class_BasicOperation._UserName + "',getdate(),'" + Class_BasicOperation._UserName + "',getdate()); SET @Key=Scope_Identity() ";
 
                 foreach (DataRowView Rows in table_115_ProductBindingSource)
                 {
                     if (Rows["NumberRecipt"].ToString() == "0" || Rows["NumberRecipt"].ToString() == "")
                     {
                         ID = ID + Rows["ID"] + ",";
-
                         commandtxt += @" INSERT INTO Table_012_Child_PwhrsReceipt (
                                     [column01]
                                    ,[column02]
@@ -344,24 +340,18 @@ namespace PCLOR.Product
                                    ,[Column34]
                                    ,[Column35]
                                    ,[Column37]
-                           ) VALUES (@Key," + (((DataRowView)mlt_TypeCloth.DropDownList.FindItem(mlt_TypeCloth.Value))["CodeCommondity"].ToString()) + ",1," + 1 +
+                           ) VALUES (@Key," + /*(((DataRowView)mlt_TypeCloth.DropDownList.FindItem(mlt_TypeCloth.Value))["CodeCommondity"].ToString()) +*/ ",1," + 1 +
             "," + 1 + ",0,0,'" + Class_BasicOperation._UserName + "',getdate(),'" + Class_BasicOperation._UserName + "',getdate(),0,0," + Rows["Barcode"].ToString() + "," + Rows["Weight"] + "," + Rows["Weight"] + ",'" + Rows["Machine"] + "');";
                     }
                 }
                 commandtxt += "update " + ConPCLOR.Database + ".dbo.Table_115_Product set NumberRecipt=@Key where ID in ( " + ID.TrimEnd(',') + ")";
                 Class_BasicOperation.SqlTransactionMethod(ConWare.ConnectionString, commandtxt);
-
-
             }
             catch (Exception ex)
             {
-
                 Class_BasicOperation.CheckExceptionType(ex, this.Name);
             }
-
         }
-
-
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
@@ -486,8 +476,8 @@ namespace PCLOR.Product
         private void mlt_Num_Programer_KeyPress_1(object sender, KeyPressEventArgs e)
         {
 
-            if (e.KeyChar == 13)
-                mlt_shift.Focus();
+            //if (e.KeyChar == 13)
+                //mlt_shift.Focus();
 
         }
 
@@ -564,20 +554,20 @@ namespace PCLOR.Product
         {
             if (e.KeyChar == 13)
             {
-                if (txt_RFID.Text != "" || txt_RFID.Text != "0")
+                if (/*txt_RFID.Text != "" || txt_RFID.Text != "0"*/true)
                 {
-                    string v = ClDoc.ExScalar(ConBase.ConnectionString, @"select isnull((select ColumnId from Table_045_PersonInfo where Column148 =" + txt_RFID.Text + "),0)");
-                    if (v != "0")
-                    {
-                        mlt_codecustomer.Value = int.Parse(v);
-                        btn_Save_Click(sender, e);
+                    //string v = ClDoc.ExScalar(ConBase.ConnectionString, @"select isnull((select ColumnId from Table_045_PersonInfo where Column148 =" + txt_RFID.Text + "),0)");
+                    //if (v != "0")
+                    //{
+                    //    //mlt_codecustomer.Value = int.Parse(v);
+                    //    btn_Save_Click(sender, e);
 
-                    }
-                    else
-                    {
-                        Class_BasicOperation.ShowMsg("", "برای این کارت شخصی تعریف نشده است لطفا برای آن شخصی را معرفی کنید", Class_BasicOperation.MessageType.Warning);
-                        return;
-                    }
+                    //}
+                    //else
+                    //{
+                    //    Class_BasicOperation.ShowMsg("", "برای این کارت شخصی تعریف نشده است لطفا برای آن شخصی را معرفی کنید", Class_BasicOperation.MessageType.Warning);
+                    //    return;
+                    //}
 
                 }
             }
@@ -613,7 +603,7 @@ namespace PCLOR.Product
         {
             if (e.KeyChar == 13)
             {
-                mlt_shift.Focus();
+                //mlt_shift.Focus();
             }
         }
 
@@ -658,6 +648,11 @@ namespace PCLOR.Product
         }
 
         private void txt_weight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiPanel0_Click(object sender, EventArgs e)
         {
 
         }
