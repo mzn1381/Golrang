@@ -385,6 +385,11 @@
     <Compile Include="Models\Machine.cs" />
     <Compile Include="Models\MachinePoint.cs" />
     <Compile Include="Models\YarnTypeDropDownViewModel.cs" />
+    <Compile Include="PCLOR_1_1400DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PCLOR_1_1400DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Product\DataSet_05_Product.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1537,6 +1542,17 @@
       <DependentUpon>DataSet_01_Sale.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="PCLOR_1_1400DataSet.xsc">
+      <DependentUpon>PCLOR_1_1400DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PCLOR_1_1400DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PCLOR_1_1400DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PCLOR_1_1400DataSet.xss">
+      <DependentUpon>PCLOR_1_1400DataSet.xsd</DependentUpon>
+    </None>
     <None Include="Product\DataSet_05_Product.xsc">
       <DependentUpon>DataSet_05_Product.xsd</DependentUpon>
     </None>

@@ -54,8 +54,8 @@ namespace PCLOR._01_OperationInfo
         {
             var btn = sender as Button;
             var machine = ((Machine)btn.Tag);
-            Frm_015_Product form_55 = new Frm_015_Product(machine.ID);
-            form_55.ShowDialog();
+            Frm_015_Product form_015 = new Frm_015_Product(machine.ID);
+            form_015.ShowDialog();
         }
 
         private void ButtonEditViewDetail_Click(object sender, EventArgs e)

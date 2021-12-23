@@ -1,4 +1,7 @@
-﻿using Stimulsoft.Report.Components;
+﻿using Dapper;
+using PCLOR.Classes;
+using PCLOR.Models;
+using Stimulsoft.Report.Components;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,7 +25,7 @@ namespace PCLOR.Product
         SerialPort comport = new SerialPort();
         Classes.Class_Documents ClDoc = new Classes.Class_Documents();
         int ResidNum = 0;
-       private int DeviceId = 0;
+        private int DeviceId = 0;
         bool Machine = false;
 
         private void OpenPort()
@@ -71,10 +74,12 @@ namespace PCLOR.Product
 
         private void Frm_015_Product_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'pCLOR_1_1400DataSet.Table_115_Product' table. You can move, or remove it, as needed.
+            this.table_115_ProductTableAdapter1.Fill(this.pCLOR_1_1400DataSet.Table_115_Product);
 
             gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
             gridEX2.DropDowns["Customer"].DataSource = ClDoc.ReturnTable(ConBase, @"select Columnid,Column02 from Table_045_PersonInfo");
-
+            FillDetailMachine();
             //gridEX2.DropDowns["Programer"].DataSource = mlt_Num_Programer.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,Number from Table_100_ProgramMachine");
             //gridEX2.DropDowns["shift"].DataSource = mlt_shift.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,Shift from Table_105_DefinitionWorkShift");
             //gridEX2.DropDowns["Machine"].DataSource = mlt_Machine.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select Id,namemachine from Table_60_SpecsTechnical");
@@ -128,12 +133,12 @@ namespace PCLOR.Product
 
                 double weigh = Convert.ToDouble(txt_weight.Text) / 1000;
 
-
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Barcode"] = Barcode;
+                var t = (DataRowView)table_115_ProductBindingSource.CurrencyManager.Current;
+               ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Barcode"] = (object)Barcode;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["weight"] = weigh;
 
-                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ProgramerMachine"] = mlt_Num_Programer.Value;
-                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Machine"] = mlt_Machine.Value;
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ProgramerMachine"] = DeviceId;
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Machine"] = lblNameDevice;
 
                 //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ClothType"] = mlt_TypeCloth.Value;
                 //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ReportDescriptin"] = txt_Description.Text;
@@ -225,7 +230,46 @@ namespace PCLOR.Product
 
         }
 
+        public string StatusShift()
+        {
+            if (DateTime.Now.Hour >= 6)
+                return "شب";
+            return "صبح ";
+        }
 
+        public Machine GetMachine(int ID)
+        {
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+                var query = $@"select m.*,c.NameCotton as YarnTypeName,t.TypeCloth as FabricTypeName 
+                                from Table_60_SpecsTechnical as m
+                                inner join Table_120_TypeCotton as c
+                                on m.YarnType = c.ID
+                                inner join Table_005_TypeCloth as t
+                                on m.FabricType = t.ID
+                                where m.ID ={ID}
+                                                ";
+                var machine = db.QueryFirstOrDefault<Machine>(query, null, commandType: CommandType.Text);
+                return machine;
+            }
+        }
+       
+        public void FillDetailMachine()
+        {
+            var machine = GetMachine(DeviceId);
+            lblDateCreate.Text = DateTime.Now.ToShamsi();
+            lblGapDevice.Text = machine.Gap.ToString();
+            lblNameDevice.Text = machine.NameMachine;
+            lblRoundStop.Text = machine.RoundStop.ToString();
+            lblShiftOperator.Text = StatusShift();
+            lblYarnType.Text = machine.YarnTypeName;
+            lblTeeny.Text = machine.teeny.ToString();
+            lblTextureLimit.Text = machine.TextureLimit.ToString();
+            lblTypeDevice.Text = machine.DeviceMark;
+            lblTypeFabric.Text = machine.FabricTypeName;
+            lblCreateTime.Text = DateTime.Now.TimeOfDay.Hours.ToString("00")+":"+ DateTime.Now.TimeOfDay.Minutes.ToString("00");
+            lblArea.Text = machine.Area.ToString();
+        }
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
@@ -291,12 +335,12 @@ namespace PCLOR.Product
                     //",TimeLastShift='" + txt_Lastshift.Text + 
                     "',ReportDescriptin='" + txt_Description.Text +
                     "' where id in (" + ID.TrimEnd(',') + ") ");
-                    //+
-                    //" Update Table_100_ProgramMachine set Printer=N'" + uiComboBox1.Text + "' where ID=" + mlt_Num_Programer.Value);
+                //+
+                //" Update Table_100_ProgramMachine set Printer=N'" + uiComboBox1.Text + "' where ID=" + mlt_Num_Programer.Value);
 
                 Class_BasicOperation.ShowMsg("", "اطلاعات با موفقیت دخیره شد" + Environment.NewLine + "رسید به شماره" + ResidNum + "با موفقیت صدور شد", Class_BasicOperation.MessageType.Information);
                 gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
-                table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(ID));
+                table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(DeviceId));
                 gridEX2.MoveTo(Position);
 
             }
@@ -483,12 +527,12 @@ namespace PCLOR.Product
             }
         }
 
-       
+
         private void mlt_Num_Programer_KeyPress_1(object sender, KeyPressEventArgs e)
         {
 
             //if (e.KeyChar == 13)
-                //mlt_shift.Focus();
+            //mlt_shift.Focus();
 
         }
 
@@ -641,15 +685,15 @@ namespace PCLOR.Product
 
         private void ch_Auto_CheckedChanged(object sender, EventArgs e)
         {
-//            if (ch_Auto.Checked == true)
-//            {
+            //            if (ch_Auto.Checked == true)
+            //            {
 
-//                Print1(dataSet_05_Product.Table_115_Product.Compute("Max(ID)", "").ToString(), uiComboBox1.Text);
+            //                Print1(dataSet_05_Product.Table_115_Product.Compute("Max(ID)", "").ToString(), uiComboBox1.Text);
 
-//            }
-//            DataTable dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT        dbo.Table_100_ProgramMachine.Number AS numdivice, dbo.Table_115_Product.ID, dbo.Table_115_Product.Barcode
-//FROM            dbo.Table_115_Product INNER JOIN
-//                         dbo.Table_100_ProgramMachine ON dbo.Table_115_Product.ProgramerMachine = dbo.Table_100_ProgramMachine.ID");
+            //            }
+            //            DataTable dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT        dbo.Table_100_ProgramMachine.Number AS numdivice, dbo.Table_115_Product.ID, dbo.Table_115_Product.Barcode
+            //FROM            dbo.Table_115_Product INNER JOIN
+            //                         dbo.Table_100_ProgramMachine ON dbo.Table_115_Product.ProgramerMachine = dbo.Table_100_ProgramMachine.ID");
 
         }
 

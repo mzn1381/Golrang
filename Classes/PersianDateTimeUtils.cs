@@ -122,7 +122,13 @@ namespace PCLOR.Classes
             return dt == null ? string.Empty : ToShortPersianDateString(dt.Value);
         }
 
-        
+        public static string ToShamsi(this DateTime dt)
+        {
+            var pc = new PersianCalendar();
+            return pc.GetYear(dt)+"/"+pc.GetMonth(dt)+"/"+pc.GetDayOfMonth(dt);
+        }
+
+
         /// <summary>
         /// تبدیل تاریخ میلادی به شمسی
         /// با قالبی مانند 1395/10/21 10:20

@@ -41,25 +41,17 @@ namespace PCLOR.Product
             System.Windows.Forms.Label label7;
             System.Windows.Forms.Label label6;
             System.Windows.Forms.Label label9;
-            System.Windows.Forms.Label label8;
-            System.Windows.Forms.Label label13;
             System.Windows.Forms.Label label25;
             Janus.Windows.GridEX.GridEXLayout gridEX2_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_Ware_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_015_Product));
             Janus.Windows.GridEX.GridEXLayout mlt_Function_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
-            this.lblShift = new System.Windows.Forms.Label();
-            this.lblTextureLimit = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblTimeCreate = new System.Windows.Forms.Label();
-            this.lblDateCreate = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblTypeFabric = new System.Windows.Forms.Label();
-            this.lblTypeDevice = new System.Windows.Forms.Label();
             this.uiPanelManager1 = new Janus.Windows.UI.Dock.UIPanelManager(this.components);
             this.uiPanel0 = new Janus.Windows.UI.Dock.UIPanel();
             this.uiPanel1 = new Janus.Windows.UI.Dock.UIPanel();
@@ -99,21 +91,29 @@ namespace PCLOR.Product
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btn_delete_recipt = new System.Windows.Forms.ToolStripMenuItem();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.lblGapDevice = new System.Windows.Forms.Label();
-            this.lblRoundStop = new System.Windows.Forms.Label();
-            this.lblNameDevice = new System.Windows.Forms.Label();
             this.chek_TowPerson = new System.Windows.Forms.CheckBox();
             this.mlt_Ware = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.mlt_Function = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
-            this.label5 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lblOperationCode = new System.Windows.Forms.Label();
-            this.lblOperationName = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.lblShiftOperator = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.lblNameDevice = new System.Windows.Forms.TextBox();
+            this.lblTypeFabric = new System.Windows.Forms.TextBox();
+            this.lblCreateTime = new System.Windows.Forms.TextBox();
+            this.lblShiftOperator = new System.Windows.Forms.TextBox();
+            this.lblDateCreate = new System.Windows.Forms.TextBox();
+            this.lblTypeDevice = new System.Windows.Forms.TextBox();
+            this.lblOperatorName = new System.Windows.Forms.TextBox();
+            this.lblTextureLimit = new System.Windows.Forms.TextBox();
+            this.lblRoundStop = new System.Windows.Forms.TextBox();
+            this.lblOperationCode = new System.Windows.Forms.TextBox();
+            this.lblYarnType = new System.Windows.Forms.TextBox();
+            this.lblGapDevice = new System.Windows.Forms.TextBox();
+            this.lblTeeny = new System.Windows.Forms.TextBox();
+            this.lblArea = new System.Windows.Forms.TextBox();
+            this.lblShift = new System.Windows.Forms.TextBox();
+            this.pCLOR_1_1400DataSet = new PCLOR.PCLOR_1_1400DataSet();
+            this.table_115_ProductTableAdapter1 = new PCLOR.PCLOR_1_1400DataSetTableAdapters.Table_115_ProductTableAdapter();
+            this.tbl115productbinding = new System.Windows.Forms.BindingSource(this.components);
             label17 = new System.Windows.Forms.Label();
             label16 = new System.Windows.Forms.Label();
             label15 = new System.Windows.Forms.Label();
@@ -125,8 +125,6 @@ namespace PCLOR.Product
             label7 = new System.Windows.Forms.Label();
             label6 = new System.Windows.Forms.Label();
             label9 = new System.Windows.Forms.Label();
-            label8 = new System.Windows.Forms.Label();
-            label13 = new System.Windows.Forms.Label();
             label25 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).BeginInit();
@@ -150,6 +148,8 @@ namespace PCLOR.Product
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mlt_Ware)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mlt_Function)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pCLOR_1_1400DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl115productbinding)).BeginInit();
             this.SuspendLayout();
             // 
             // label17
@@ -168,7 +168,7 @@ namespace PCLOR.Product
             // 
             label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label16.AutoSize = true;
-            label16.Location = new System.Drawing.Point(767, 347);
+            label16.Location = new System.Drawing.Point(742, 356);
             label16.Name = "label16";
             label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label16.Size = new System.Drawing.Size(84, 17);
@@ -179,7 +179,7 @@ namespace PCLOR.Product
             // 
             label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label15.AutoSize = true;
-            label15.Location = new System.Drawing.Point(767, 215);
+            label15.Location = new System.Drawing.Point(742, 224);
             label15.Name = "label15";
             label15.Size = new System.Drawing.Size(67, 17);
             label15.TabIndex = 205;
@@ -200,7 +200,7 @@ namespace PCLOR.Product
             // 
             label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(980, 391);
+            label3.Location = new System.Drawing.Point(996, 391);
             label3.Name = "label3";
             label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label3.Size = new System.Drawing.Size(61, 17);
@@ -222,7 +222,7 @@ namespace PCLOR.Product
             // 
             label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label14.AutoSize = true;
-            label14.Location = new System.Drawing.Point(980, 126);
+            label14.Location = new System.Drawing.Point(996, 126);
             label14.Name = "label14";
             label14.Size = new System.Drawing.Size(70, 17);
             label14.TabIndex = 190;
@@ -232,7 +232,7 @@ namespace PCLOR.Product
             // 
             label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(768, 126);
+            label4.Location = new System.Drawing.Point(743, 135);
             label4.Name = "label4";
             label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label4.Size = new System.Drawing.Size(68, 17);
@@ -243,7 +243,7 @@ namespace PCLOR.Product
             // 
             label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label7.AutoSize = true;
-            label7.Location = new System.Drawing.Point(981, 89);
+            label7.Location = new System.Drawing.Point(993, 89);
             label7.Name = "label7";
             label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label7.Size = new System.Drawing.Size(85, 17);
@@ -254,7 +254,7 @@ namespace PCLOR.Product
             // 
             label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(980, 343);
+            label6.Location = new System.Drawing.Point(996, 343);
             label6.Name = "label6";
             label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label6.Size = new System.Drawing.Size(65, 17);
@@ -265,95 +265,32 @@ namespace PCLOR.Product
             // 
             label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label9.AutoSize = true;
-            label9.Location = new System.Drawing.Point(981, 209);
+            label9.Location = new System.Drawing.Point(996, 209);
             label9.Name = "label9";
             label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label9.Size = new System.Drawing.Size(79, 17);
             label9.TabIndex = 197;
             label9.Text = "نوع دستگاه:";
             // 
-            // label8
-            // 
-            label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            label8.AutoSize = true;
-            label8.Location = new System.Drawing.Point(767, 391);
-            label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(68, 17);
-            label8.TabIndex = 205;
-            label8.Text = "نام اپراتور :";
-            // 
-            // label13
-            // 
-            label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            label13.AutoSize = true;
-            label13.Location = new System.Drawing.Point(916, 391);
-            label13.Name = "label13";
-            label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            label13.Size = new System.Drawing.Size(61, 17);
-            label13.TabIndex = 203;
-            label13.Text = "حد بافت:";
-            // 
             // label25
             // 
             label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label25.AutoSize = true;
-            label25.Location = new System.Drawing.Point(982, 165);
+            label25.Location = new System.Drawing.Point(996, 165);
             label25.Name = "label25";
             label25.Size = new System.Drawing.Size(68, 17);
             label25.TabIndex = 205;
             label25.Text = "نام اپراتور :";
             // 
-            // lblShift
-            // 
-            this.lblShift.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblShift.AutoSize = true;
-            this.lblShift.Location = new System.Drawing.Point(653, 347);
-            this.lblShift.Name = "lblShift";
-            this.lblShift.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblShift.Size = new System.Drawing.Size(84, 17);
-            this.lblShift.TabIndex = 208;
-            this.lblShift.Text = "شیفت کاری:";
-            // 
-            // lblTextureLimit
-            // 
-            this.lblTextureLimit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTextureLimit.AutoSize = true;
-            this.lblTextureLimit.Location = new System.Drawing.Point(908, 391);
-            this.lblTextureLimit.Name = "lblTextureLimit";
-            this.lblTextureLimit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblTextureLimit.Size = new System.Drawing.Size(61, 17);
-            this.lblTextureLimit.TabIndex = 202;
-            this.lblTextureLimit.Text = "حد بافت:";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(898, 296);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 17);
-            this.label2.TabIndex = 200;
-            this.label2.Text = "زمان ثبت:";
-            // 
             // lblTimeCreate
             // 
             this.lblTimeCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTimeCreate.AutoSize = true;
-            this.lblTimeCreate.Location = new System.Drawing.Point(977, 296);
+            this.lblTimeCreate.Location = new System.Drawing.Point(996, 296);
             this.lblTimeCreate.Name = "lblTimeCreate";
             this.lblTimeCreate.Size = new System.Drawing.Size(64, 17);
             this.lblTimeCreate.TabIndex = 201;
             this.lblTimeCreate.Text = "زمان ثبت:";
-            // 
-            // lblDateCreate
-            // 
-            this.lblDateCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDateCreate.AutoSize = true;
-            this.lblDateCreate.Location = new System.Drawing.Point(901, 126);
-            this.lblDateCreate.Name = "lblDateCreate";
-            this.lblDateCreate.Size = new System.Drawing.Size(70, 17);
-            this.lblDateCreate.TabIndex = 192;
-            this.lblDateCreate.Text = "تاریخ ثبت :";
             // 
             // label20
             // 
@@ -370,7 +307,7 @@ namespace PCLOR.Product
             // 
             this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(769, 304);
+            this.label23.Location = new System.Drawing.Point(744, 313);
             this.label23.Name = "label23";
             this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label23.Size = new System.Drawing.Size(43, 17);
@@ -381,7 +318,7 @@ namespace PCLOR.Product
             // 
             this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(768, 260);
+            this.label21.Location = new System.Drawing.Point(743, 269);
             this.label21.Name = "label21";
             this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label21.Size = new System.Drawing.Size(53, 17);
@@ -392,7 +329,7 @@ namespace PCLOR.Product
             // 
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(768, 172);
+            this.label18.Location = new System.Drawing.Point(743, 181);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label18.Size = new System.Drawing.Size(44, 17);
@@ -403,34 +340,12 @@ namespace PCLOR.Product
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(768, 80);
+            this.label1.Location = new System.Drawing.Point(743, 89);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(90, 17);
             this.label1.TabIndex = 183;
             this.label1.Text = "دور تا استوپ :";
-            // 
-            // lblTypeFabric
-            // 
-            this.lblTypeFabric.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTypeFabric.AutoSize = true;
-            this.lblTypeFabric.Location = new System.Drawing.Point(900, 343);
-            this.lblTypeFabric.Name = "lblTypeFabric";
-            this.lblTypeFabric.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblTypeFabric.Size = new System.Drawing.Size(65, 17);
-            this.lblTypeFabric.TabIndex = 198;
-            this.lblTypeFabric.Text = "نوع پارچه:";
-            // 
-            // lblTypeDevice
-            // 
-            this.lblTypeDevice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTypeDevice.AutoSize = true;
-            this.lblTypeDevice.Location = new System.Drawing.Point(893, 209);
-            this.lblTypeDevice.Name = "lblTypeDevice";
-            this.lblTypeDevice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblTypeDevice.Size = new System.Drawing.Size(79, 17);
-            this.lblTypeDevice.TabIndex = 196;
-            this.lblTypeDevice.Text = "نوع دستگاه:";
             // 
             // uiPanelManager1
             // 
@@ -444,7 +359,7 @@ namespace PCLOR.Product
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("e867d30d-95ce-4008-b388-e8c7f95c8f10"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(453, 680), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("e867d30d-95ce-4008-b388-e8c7f95c8f10"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(453, 676), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("5cb824b8-2fb4-4915-8cca-ab4ec8579ca4"), Janus.Windows.UI.Dock.PanelDockStyle.Bottom, new System.Drawing.Size(627, 273), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("e867d30d-95ce-4008-b388-e8c7f95c8f10"), new System.Drawing.Point(849, 370), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("5cb824b8-2fb4-4915-8cca-ab4ec8579ca4"), new System.Drawing.Point(214, 351), new System.Drawing.Size(200, 200), false);
@@ -454,9 +369,9 @@ namespace PCLOR.Product
             // 
             this.uiPanel0.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.FloatingLocation = new System.Drawing.Point(849, 370);
-            this.uiPanel0.Location = new System.Drawing.Point(630, 30);
+            this.uiPanel0.Location = new System.Drawing.Point(630, 34);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(453, 680);
+            this.uiPanel0.Size = new System.Drawing.Size(453, 676);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "اطلاعات دستگاه ";
             this.uiPanel0.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -490,7 +405,7 @@ namespace PCLOR.Product
             this.gridEX2.AlternatingColors = true;
             this.gridEX2.BuiltInTextsData = resources.GetString("gridEX2.BuiltInTextsData");
             this.gridEX2.ColumnAutoSizeMode = Janus.Windows.GridEX.ColumnAutoSizeMode.DisplayedCellsAndHeader;
-            this.gridEX2.DataSource = this.table_115_ProductBindingSource;
+            this.gridEX2.DataSource = this.tbl115productbinding;
             gridEX2_DesignTimeLayout.LayoutString = resources.GetString("gridEX2_DesignTimeLayout.LayoutString");
             this.gridEX2.DesignTimeLayout = gridEX2_DesignTimeLayout;
             this.gridEX2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -600,7 +515,7 @@ namespace PCLOR.Product
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1086, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1086, 31);
             this.bindingNavigator1.TabIndex = 8;
             this.bindingNavigator1.Text = "bindingNavigator1";
             this.bindingNavigator1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bindingNavigator1_KeyPress);
@@ -608,7 +523,7 @@ namespace PCLOR.Product
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(46, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(46, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -618,7 +533,7 @@ namespace PCLOR.Product
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -627,13 +542,13 @@ namespace PCLOR.Product
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -648,7 +563,7 @@ namespace PCLOR.Product
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -656,7 +571,7 @@ namespace PCLOR.Product
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -665,34 +580,34 @@ namespace PCLOR.Product
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_Delete
             // 
             this.btn_Delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_Delete.Image")));
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.RightToLeftAutoMirrorImage = true;
-            this.btn_Delete.Size = new System.Drawing.Size(61, 24);
+            this.btn_Delete.Size = new System.Drawing.Size(61, 28);
             this.btn_Delete.Text = "حذف";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_New
             // 
             this.btn_New.Image = ((System.Drawing.Image)(resources.GetObject("btn_New.Image")));
             this.btn_New.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_New.Name = "btn_New";
-            this.btn_New.Size = new System.Drawing.Size(61, 24);
+            this.btn_New.Size = new System.Drawing.Size(61, 28);
             this.btn_New.Text = "جدید";
             this.btn_New.Click += new System.EventHandler(this.btn_New_Click);
             // 
@@ -701,7 +616,7 @@ namespace PCLOR.Product
             this.btn_Save.Image = ((System.Drawing.Image)(resources.GetObject("btn_Save.Image")));
             this.btn_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(66, 24);
+            this.btn_Save.Size = new System.Drawing.Size(66, 28);
             this.btn_Save.Text = "ذخیره";
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
@@ -716,9 +631,9 @@ namespace PCLOR.Product
             this.uiGroupBox1.Controls.Add(this.groupBox1);
             this.uiGroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiGroupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiGroupBox1.Location = new System.Drawing.Point(3, 30);
+            this.uiGroupBox1.Location = new System.Drawing.Point(3, 34);
             this.uiGroupBox1.Name = "uiGroupBox1";
-            this.uiGroupBox1.Size = new System.Drawing.Size(627, 407);
+            this.uiGroupBox1.Size = new System.Drawing.Size(627, 403);
             this.uiGroupBox1.TabIndex = 28;
             this.uiGroupBox1.Text = "وزن طاقه";
             this.uiGroupBox1.Click += new System.EventHandler(this.uiGroupBox1_Click);
@@ -749,7 +664,7 @@ namespace PCLOR.Product
             this.uiGroupBox2.Controls.Add(this.uiButton1);
             this.uiGroupBox2.Controls.Add(this.uiComboBox1);
             this.uiGroupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.uiGroupBox2.Location = new System.Drawing.Point(3, 213);
+            this.uiGroupBox2.Location = new System.Drawing.Point(3, 209);
             this.uiGroupBox2.Name = "uiGroupBox2";
             this.uiGroupBox2.Size = new System.Drawing.Size(621, 70);
             this.uiGroupBox2.TabIndex = 202;
@@ -842,7 +757,7 @@ namespace PCLOR.Product
             // 
             this.groupBox1.Controls.Add(this.txt_Description);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(3, 283);
+            this.groupBox1.Location = new System.Drawing.Point(3, 279);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(621, 121);
             this.groupBox1.TabIndex = 182;
@@ -865,55 +780,9 @@ namespace PCLOR.Product
             this.btn_delete_recipt.Text = "حذف رسید";
             this.btn_delete_recipt.Click += new System.EventHandler(this.btn_delete_recipt_Click);
             // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(662, 259);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(76, 17);
-            this.label22.TabIndex = 213;
-            this.label22.Text = "نام دستگاه ";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(662, 172);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(76, 17);
-            this.label19.TabIndex = 212;
-            this.label19.Text = "نام دستگاه ";
-            // 
-            // lblGapDevice
-            // 
-            this.lblGapDevice.AutoSize = true;
-            this.lblGapDevice.Location = new System.Drawing.Point(662, 125);
-            this.lblGapDevice.Name = "lblGapDevice";
-            this.lblGapDevice.Size = new System.Drawing.Size(76, 17);
-            this.lblGapDevice.TabIndex = 211;
-            this.lblGapDevice.Text = "نام دستگاه ";
-            // 
-            // lblRoundStop
-            // 
-            this.lblRoundStop.AutoSize = true;
-            this.lblRoundStop.Location = new System.Drawing.Point(662, 80);
-            this.lblRoundStop.Name = "lblRoundStop";
-            this.lblRoundStop.Size = new System.Drawing.Size(76, 17);
-            this.lblRoundStop.TabIndex = 210;
-            this.lblRoundStop.Text = "نام دستگاه ";
-            // 
-            // lblNameDevice
-            // 
-            this.lblNameDevice.AutoSize = true;
-            this.lblNameDevice.Location = new System.Drawing.Point(900, 89);
-            this.lblNameDevice.Name = "lblNameDevice";
-            this.lblNameDevice.Size = new System.Drawing.Size(76, 17);
-            this.lblNameDevice.TabIndex = 209;
-            this.lblNameDevice.Text = "نام دستگاه ";
-            // 
             // chek_TowPerson
             // 
             this.chek_TowPerson.AutoSize = true;
-            this.chek_TowPerson.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.table_115_ProductBindingSource, "PersonShift", true));
             this.chek_TowPerson.Enabled = false;
             this.chek_TowPerson.Location = new System.Drawing.Point(943, 667);
             this.chek_TowPerson.Name = "chek_TowPerson";
@@ -960,15 +829,6 @@ namespace PCLOR.Product
             this.mlt_Function.ValueMember = "columnid";
             this.mlt_Function.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(663, 304);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 17);
-            this.label5.TabIndex = 213;
-            this.label5.Text = "نام دستگاه ";
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(661, 438);
@@ -978,54 +838,148 @@ namespace PCLOR.Product
             this.textBox2.Size = new System.Drawing.Size(333, 71);
             this.textBox2.TabIndex = 214;
             // 
-            // lblOperationCode
-            // 
-            this.lblOperationCode.AutoSize = true;
-            this.lblOperationCode.Location = new System.Drawing.Point(687, 215);
-            this.lblOperationCode.Name = "lblOperationCode";
-            this.lblOperationCode.Size = new System.Drawing.Size(50, 17);
-            this.lblOperationCode.TabIndex = 215;
-            this.lblOperationCode.Text = "label12";
-            // 
-            // lblOperationName
-            // 
-            this.lblOperationName.AutoSize = true;
-            this.lblOperationName.Location = new System.Drawing.Point(687, 391);
-            this.lblOperationName.Name = "lblOperationName";
-            this.lblOperationName.Size = new System.Drawing.Size(50, 17);
-            this.lblOperationName.TabIndex = 215;
-            this.lblOperationName.Text = "label12";
-            // 
             // label12
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(977, 250);
+            this.label12.Location = new System.Drawing.Point(996, 250);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(60, 17);
             this.label12.TabIndex = 201;
             this.label12.Text = "شیفت : ";
             // 
+            // lblNameDevice
+            // 
+            this.lblNameDevice.Location = new System.Drawing.Point(894, 86);
+            this.lblNameDevice.Name = "lblNameDevice";
+            this.lblNameDevice.ReadOnly = true;
+            this.lblNameDevice.Size = new System.Drawing.Size(100, 24);
+            this.lblNameDevice.TabIndex = 216;
+            // 
+            // lblTypeFabric
+            // 
+            this.lblTypeFabric.Location = new System.Drawing.Point(894, 340);
+            this.lblTypeFabric.Name = "lblTypeFabric";
+            this.lblTypeFabric.ReadOnly = true;
+            this.lblTypeFabric.Size = new System.Drawing.Size(100, 24);
+            this.lblTypeFabric.TabIndex = 217;
+            // 
+            // lblCreateTime
+            // 
+            this.lblCreateTime.Location = new System.Drawing.Point(894, 293);
+            this.lblCreateTime.Name = "lblCreateTime";
+            this.lblCreateTime.ReadOnly = true;
+            this.lblCreateTime.Size = new System.Drawing.Size(100, 24);
+            this.lblCreateTime.TabIndex = 218;
+            // 
             // lblShiftOperator
             // 
-            this.lblShiftOperator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblShiftOperator.AutoSize = true;
-            this.lblShiftOperator.Location = new System.Drawing.Point(898, 250);
+            this.lblShiftOperator.Location = new System.Drawing.Point(894, 247);
             this.lblShiftOperator.Name = "lblShiftOperator";
-            this.lblShiftOperator.Size = new System.Drawing.Size(51, 17);
-            this.lblShiftOperator.TabIndex = 200;
-            this.lblShiftOperator.Text = "شیفت ";
+            this.lblShiftOperator.ReadOnly = true;
+            this.lblShiftOperator.Size = new System.Drawing.Size(100, 24);
+            this.lblShiftOperator.TabIndex = 219;
             // 
-            // label24
+            // lblDateCreate
             // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(904, 165);
-            this.label24.Name = "label24";
-            this.label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label24.Size = new System.Drawing.Size(61, 17);
-            this.label24.TabIndex = 202;
-            this.label24.Text = "حد بافت:";
+            this.lblDateCreate.Location = new System.Drawing.Point(894, 123);
+            this.lblDateCreate.Name = "lblDateCreate";
+            this.lblDateCreate.ReadOnly = true;
+            this.lblDateCreate.Size = new System.Drawing.Size(100, 24);
+            this.lblDateCreate.TabIndex = 220;
+            // 
+            // lblTypeDevice
+            // 
+            this.lblTypeDevice.Location = new System.Drawing.Point(894, 206);
+            this.lblTypeDevice.Name = "lblTypeDevice";
+            this.lblTypeDevice.ReadOnly = true;
+            this.lblTypeDevice.Size = new System.Drawing.Size(100, 24);
+            this.lblTypeDevice.TabIndex = 221;
+            // 
+            // lblOperatorName
+            // 
+            this.lblOperatorName.Location = new System.Drawing.Point(894, 162);
+            this.lblOperatorName.Name = "lblOperatorName";
+            this.lblOperatorName.ReadOnly = true;
+            this.lblOperatorName.Size = new System.Drawing.Size(100, 24);
+            this.lblOperatorName.TabIndex = 222;
+            // 
+            // lblTextureLimit
+            // 
+            this.lblTextureLimit.Location = new System.Drawing.Point(894, 388);
+            this.lblTextureLimit.Name = "lblTextureLimit";
+            this.lblTextureLimit.ReadOnly = true;
+            this.lblTextureLimit.Size = new System.Drawing.Size(100, 24);
+            this.lblTextureLimit.TabIndex = 217;
+            // 
+            // lblRoundStop
+            // 
+            this.lblRoundStop.Location = new System.Drawing.Point(641, 86);
+            this.lblRoundStop.Name = "lblRoundStop";
+            this.lblRoundStop.ReadOnly = true;
+            this.lblRoundStop.Size = new System.Drawing.Size(100, 24);
+            this.lblRoundStop.TabIndex = 217;
+            // 
+            // lblOperationCode
+            // 
+            this.lblOperationCode.Location = new System.Drawing.Point(641, 221);
+            this.lblOperationCode.Name = "lblOperationCode";
+            this.lblOperationCode.ReadOnly = true;
+            this.lblOperationCode.Size = new System.Drawing.Size(100, 24);
+            this.lblOperationCode.TabIndex = 217;
+            // 
+            // lblYarnType
+            // 
+            this.lblYarnType.Location = new System.Drawing.Point(641, 266);
+            this.lblYarnType.Name = "lblYarnType";
+            this.lblYarnType.ReadOnly = true;
+            this.lblYarnType.Size = new System.Drawing.Size(100, 24);
+            this.lblYarnType.TabIndex = 217;
+            // 
+            // lblGapDevice
+            // 
+            this.lblGapDevice.Location = new System.Drawing.Point(641, 132);
+            this.lblGapDevice.Name = "lblGapDevice";
+            this.lblGapDevice.ReadOnly = true;
+            this.lblGapDevice.Size = new System.Drawing.Size(100, 24);
+            this.lblGapDevice.TabIndex = 217;
+            // 
+            // lblTeeny
+            // 
+            this.lblTeeny.Location = new System.Drawing.Point(641, 178);
+            this.lblTeeny.Name = "lblTeeny";
+            this.lblTeeny.ReadOnly = true;
+            this.lblTeeny.Size = new System.Drawing.Size(100, 24);
+            this.lblTeeny.TabIndex = 217;
+            // 
+            // lblArea
+            // 
+            this.lblArea.Location = new System.Drawing.Point(641, 310);
+            this.lblArea.Name = "lblArea";
+            this.lblArea.ReadOnly = true;
+            this.lblArea.Size = new System.Drawing.Size(100, 24);
+            this.lblArea.TabIndex = 217;
+            // 
+            // lblShift
+            // 
+            this.lblShift.Location = new System.Drawing.Point(641, 353);
+            this.lblShift.Name = "lblShift";
+            this.lblShift.ReadOnly = true;
+            this.lblShift.Size = new System.Drawing.Size(100, 24);
+            this.lblShift.TabIndex = 217;
+            // 
+            // pCLOR_1_1400DataSet
+            // 
+            this.pCLOR_1_1400DataSet.DataSetName = "PCLOR_1_1400DataSet";
+            this.pCLOR_1_1400DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // table_115_ProductTableAdapter1
+            // 
+            this.table_115_ProductTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tbl115productbinding
+            // 
+            this.tbl115productbinding.DataMember = "Table_115_Product";
             // 
             // Frm_015_Product
             // 
@@ -1033,34 +987,33 @@ namespace PCLOR.Product
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1086, 713);
             this.ContextMenuStrip = this.contextMenuStrip1;
-            this.Controls.Add(this.lblOperationName);
-            this.Controls.Add(this.lblOperationCode);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label19);
+            this.Controls.Add(this.lblOperatorName);
+            this.Controls.Add(this.lblTypeDevice);
+            this.Controls.Add(this.lblDateCreate);
+            this.Controls.Add(this.lblShiftOperator);
+            this.Controls.Add(this.lblCreateTime);
+            this.Controls.Add(this.lblTeeny);
             this.Controls.Add(this.lblGapDevice);
-            this.Controls.Add(this.lblRoundStop);
-            this.Controls.Add(this.lblNameDevice);
             this.Controls.Add(this.lblShift);
+            this.Controls.Add(this.lblArea);
+            this.Controls.Add(this.lblYarnType);
+            this.Controls.Add(this.lblOperationCode);
+            this.Controls.Add(this.lblRoundStop);
+            this.Controls.Add(this.lblTextureLimit);
+            this.Controls.Add(this.lblTypeFabric);
+            this.Controls.Add(this.lblNameDevice);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(label16);
             this.Controls.Add(label25);
-            this.Controls.Add(label8);
             this.Controls.Add(label15);
             this.Controls.Add(this.chek_TowPerson);
             this.Controls.Add(this.mlt_Ware);
             this.Controls.Add(label11);
-            this.Controls.Add(this.label24);
-            this.Controls.Add(this.lblTextureLimit);
-            this.Controls.Add(label13);
             this.Controls.Add(label3);
             this.Controls.Add(this.mlt_Function);
             this.Controls.Add(label10);
-            this.Controls.Add(this.lblShiftOperator);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lblTimeCreate);
-            this.Controls.Add(this.lblDateCreate);
             this.Controls.Add(label14);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label23);
@@ -1069,9 +1022,7 @@ namespace PCLOR.Product
             this.Controls.Add(label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(label7);
-            this.Controls.Add(this.lblTypeFabric);
             this.Controls.Add(label6);
-            this.Controls.Add(this.lblTypeDevice);
             this.Controls.Add(label9);
             this.Controls.Add(this.uiGroupBox1);
             this.Controls.Add(label17);
@@ -1114,6 +1065,8 @@ namespace PCLOR.Product
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mlt_Ware)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mlt_Function)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pCLOR_1_1400DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl115productbinding)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1162,35 +1115,37 @@ namespace PCLOR.Product
         private System.Windows.Forms.RadioButton rb_Auto;
         private Janus.Windows.GridEX.EditControls.NumericEditBox txt_weight;
         private Janus.Windows.EditControls.UIGroupBox uiGroupBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label lblGapDevice;
-        private System.Windows.Forms.Label lblRoundStop;
-        private System.Windows.Forms.Label lblNameDevice;
         private System.Windows.Forms.CheckBox chek_TowPerson;
         private Janus.Windows.GridEX.EditControls.MultiColumnCombo mlt_Ware;
         private System.Windows.Forms.TextBox textBox1;
         private Janus.Windows.GridEX.EditControls.MultiColumnCombo mlt_Function;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lblOperationCode;
-        private System.Windows.Forms.Label lblShift;
-        private System.Windows.Forms.Label lblTextureLimit;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTimeCreate;
-        private System.Windows.Forms.Label lblDateCreate;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblTypeFabric;
-        private System.Windows.Forms.Label lblTypeDevice;
         private Janus.Windows.EditControls.UIGroupBox uiGroupBox3;
         private System.Windows.Forms.TextBox txtCodeTag;
-        private System.Windows.Forms.Label lblOperationName;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label lblShiftOperator;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox lblNameDevice;
+        private System.Windows.Forms.TextBox lblOperatorName;
+        private System.Windows.Forms.TextBox lblTypeDevice;
+        private System.Windows.Forms.TextBox lblDateCreate;
+        private System.Windows.Forms.TextBox lblShiftOperator;
+        private System.Windows.Forms.TextBox lblCreateTime;
+        private System.Windows.Forms.TextBox lblTeeny;
+        private System.Windows.Forms.TextBox lblGapDevice;
+        private System.Windows.Forms.TextBox lblShift;
+        private System.Windows.Forms.TextBox lblArea;
+        private System.Windows.Forms.TextBox lblYarnType;
+        private System.Windows.Forms.TextBox lblOperationCode;
+        private System.Windows.Forms.TextBox lblRoundStop;
+        private System.Windows.Forms.TextBox lblTextureLimit;
+        private System.Windows.Forms.TextBox lblTypeFabric;
+        private PCLOR_1_1400DataSet pCLOR_1_1400DataSet;
+        private PCLOR_1_1400DataSetTableAdapters.Table_115_ProductTableAdapter table_115_ProductTableAdapter1;
+        private System.Windows.Forms.BindingSource tbl115productbinding;
     }
 }

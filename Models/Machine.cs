@@ -24,5 +24,7 @@ namespace PCLOR.Models
         public decimal RoundStop { get; set; }
         public int TextureLimit { get; set; }
         public Int64 FabricType { get; set; }
+        public string YarnTypeName { get; set; }
+        public string FabricTypeName { get; set; }
     }
 }
