@@ -277,7 +277,7 @@ namespace PCLOR.Product
                 //    }
                 //}
 
-                string idrfid = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isnull((select Id from  Table_135_RFIDPerson  where CodeRFID=" + txt_RFID.Text + "),0)");
+                string idrfid = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isnull((select Id from  Table_135_RFIDPerson  where CodeRFID=" + txtCodeTag.Text + "),0)");
 
                 table_115_ProductBindingSource.EndEdit();
                 table_115_ProductTableAdapter.Update(dataSet_05_Product.Table_115_Product);
@@ -285,18 +285,18 @@ namespace PCLOR.Product
 
                 Recipt();
                 ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, @"update Table_80_Setting set value=" + mlt_Ware.Value + " where Id=31 ;" +
-                    " update Table_115_Product set RFID=" + idrfid + ",Operator=" + lblOperationCode.Text + 
+                    " update Table_115_Product set RFID=" + idrfid + ",Operator=" + lblOperationCode.Text +
                     //",TimeLastProduct='" + txt_Lastdate.Text + 
                     "'" +
                     //",TimeLastShift='" + txt_Lastshift.Text + 
-                    "',ReportDescriptin='" + txt_Description.Text + 
-                    "' where id in (" + ID.TrimEnd(',') + ") "
-                    +
-                    " Update Table_100_ProgramMachine set Printer=N'" + uiComboBox1.Text + "' where ID=" + mlt_Num_Programer.Value);
+                    "',ReportDescriptin='" + txt_Description.Text +
+                    "' where id in (" + ID.TrimEnd(',') + ") ");
+                    //+
+                    //" Update Table_100_ProgramMachine set Printer=N'" + uiComboBox1.Text + "' where ID=" + mlt_Num_Programer.Value);
 
                 Class_BasicOperation.ShowMsg("", "اطلاعات با موفقیت دخیره شد" + Environment.NewLine + "رسید به شماره" + ResidNum + "با موفقیت صدور شد", Class_BasicOperation.MessageType.Information);
                 gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
-                table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(mlt_Num_Programer.Value));
+                table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(ID));
                 gridEX2.MoveTo(Position);
 
             }
@@ -664,6 +664,11 @@ namespace PCLOR.Product
         }
 
         private void uiPanel0_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiButton1_Click_1(object sender, EventArgs e)
         {
 
         }
