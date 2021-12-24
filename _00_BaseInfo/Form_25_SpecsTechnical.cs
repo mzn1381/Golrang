@@ -33,8 +33,8 @@ namespace PCLOR._00_BaseInfo
             if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 11))
             {
                 table_60_SpecsTechnicalBindingSource.AddNew();
-                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForProduction"] = true;
-                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForColor"] = false;
+                //((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForProduction"] = true;
+                //((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsForColor"] = false;
                 ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["status"] = true;
                 ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["X"] = xNumeric.Value;
                 ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["Y"] = yNumeric.Value;

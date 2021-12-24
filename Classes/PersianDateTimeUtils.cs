@@ -125,7 +125,7 @@ namespace PCLOR.Classes
         public static string ToShamsi(this DateTime dt)
         {
             var pc = new PersianCalendar();
-            return pc.GetYear(dt)+"/"+pc.GetMonth(dt)+"/"+pc.GetDayOfMonth(dt);
+            return pc.GetYear(dt).ToString("00")+"/"+pc.GetMonth(dt).ToString("00")+"/"+pc.GetDayOfMonth(dt).ToString("00");
         }
 
 

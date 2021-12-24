@@ -676,6 +676,10 @@ namespace PCLOR.Classes
         {
             using (SqlConnection Con = new SqlConnection(ConString))
             {
+                if (string.IsNullOrEmpty(query))
+                {
+                    query = "-1";
+                }
                 Con.Open();
                 SqlCommand Select = new SqlCommand(query, Con);
                 return Select.ExecuteScalar().ToString();

@@ -94,7 +94,7 @@ SELECT ID, ProgramerMachine, Number, Machine, Operator, Date, Time, ClothType, C
                   </DbCommand>
                 </InsertCommand>
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT ID, ProgramerMachine, Number, Machine, Operator, Date, Time, ClothType, CottonType, TimeLastProduct, TimeLastShift, PersonShift, NumberWeave, Weight, Barcode, ReportDescriptin, shift, NumberRecipt, UserSabt, DateSabt, UserEdite, DateEdite, RFID, Printer FROM dbo.Table_115_Product</CommandText>
                     <Parameters />
                   </DbCommand>
@@ -214,7 +214,7 @@ SELECT ID, ProgramerMachine, Number, Machine, Operator, Date, Time, ClothType, C
   <xs:element name="PCLOR_1_1400DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PCLOR_1_1400DataSet" msprop:Generator_UserDSName="PCLOR_1_1400DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Table_115_Product" msprop:Generator_TableClassName="Table_115_ProductDataTable" msprop:Generator_TableVarName="tableTable_115_Product" msprop:Generator_TablePropName="Table_115_Product" msprop:Generator_RowDeletingName="Table_115_ProductRowDeleting" msprop:Generator_RowChangingName="Table_115_ProductRowChanging" msprop:Generator_RowEvHandlerName="Table_115_ProductRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_115_ProductRowDeleted" msprop:Generator_UserTableName="Table_115_Product" msprop:Generator_RowChangedName="Table_115_ProductRowChanged" msprop:Generator_RowEvArgName="Table_115_ProductRowChangeEvent" msprop:Generator_RowClassName="Table_115_ProductRow">
+        <xs:element name="Table_115_Product" msprop:Generator_TableClassName="Table_115_ProductDataTable" msprop:Generator_TableVarName="tableTable_115_Product" msprop:Generator_RowChangedName="Table_115_ProductRowChanged" msprop:Generator_TablePropName="Table_115_Product" msprop:Generator_RowDeletingName="Table_115_ProductRowDeleting" msprop:Generator_RowChangingName="Table_115_ProductRowChanging" msprop:Generator_RowEvHandlerName="Table_115_ProductRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_115_ProductRowDeleted" msprop:Generator_RowClassName="Table_115_ProductRow" msprop:Generator_UserTableName="Table_115_Product" msprop:Generator_RowEvArgName="Table_115_ProductRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />

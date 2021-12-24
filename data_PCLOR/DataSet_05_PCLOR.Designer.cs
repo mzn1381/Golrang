@@ -138,6 +138,8 @@ namespace PCLOR.data_PCLOR {
         
         private global::System.Data.DataRelation relationFK_Table_030_DetailOrderColor_Table_60_SpecsTechnical;
         
+        private global::System.Data.DataRelation relationFK_Table_60_SpecsTechnical_Table_005_TypeCloth;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1034,6 +1036,7 @@ namespace PCLOR.data_PCLOR {
             this.relationFK_Table_110_ProductionDetail_Table_105_Production = this.Relations["FK_Table_110_ProductionDetail_Table_105_Production"];
             this.relationFK_Table_115_ProductionColor_Table_010_TypeColor = this.Relations["FK_Table_115_ProductionColor_Table_010_TypeColor"];
             this.relationFK_Table_030_DetailOrderColor_Table_60_SpecsTechnical = this.Relations["FK_Table_030_DetailOrderColor_Table_60_SpecsTechnical"];
+            this.relationFK_Table_60_SpecsTechnical_Table_005_TypeCloth = this.Relations["FK_Table_60_SpecsTechnical_Table_005_TypeCloth"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1263,6 +1266,10 @@ namespace PCLOR.data_PCLOR {
                         this.tableTable_60_SpecsTechnical.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableTable_030_DetailOrderColor.MachineColumn}, false);
             this.Relations.Add(this.relationFK_Table_030_DetailOrderColor_Table_60_SpecsTechnical);
+            this.relationFK_Table_60_SpecsTechnical_Table_005_TypeCloth = new global::System.Data.DataRelation("FK_Table_60_SpecsTechnical_Table_005_TypeCloth", new global::System.Data.DataColumn[] {
+                        this.tableTable_005_TypeCloth.IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableTable_60_SpecsTechnical.FabricTypeColumn}, false);
+            this.Relations.Add(this.relationFK_Table_60_SpecsTechnical_Table_005_TypeCloth);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5107,13 +5114,27 @@ namespace PCLOR.data_PCLOR {
             
             private global::System.Data.DataColumn columnstatus;
             
-            private global::System.Data.DataColumn columnIsForProduction;
-            
-            private global::System.Data.DataColumn columnIsForColor;
-            
             private global::System.Data.DataColumn columnX;
             
             private global::System.Data.DataColumn columnY;
+            
+            private global::System.Data.DataColumn columnDeviceMark;
+            
+            private global::System.Data.DataColumn columnGap;
+            
+            private global::System.Data.DataColumn columnteeny;
+            
+            private global::System.Data.DataColumn columnArea;
+            
+            private global::System.Data.DataColumn columnYarnType;
+            
+            private global::System.Data.DataColumn columnRoundStop;
+            
+            private global::System.Data.DataColumn columnTextureLimit;
+            
+            private global::System.Data.DataColumn columnDescription;
+            
+            private global::System.Data.DataColumn columnFabricType;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -5190,22 +5211,6 @@ namespace PCLOR.data_PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn IsForProductionColumn {
-                get {
-                    return this.columnIsForProduction;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn IsForColorColumn {
-                get {
-                    return this.columnIsForColor;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn XColumn {
                 get {
                     return this.columnX;
@@ -5217,6 +5222,78 @@ namespace PCLOR.data_PCLOR {
             public global::System.Data.DataColumn YColumn {
                 get {
                     return this.columnY;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DeviceMarkColumn {
+                get {
+                    return this.columnDeviceMark;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn GapColumn {
+                get {
+                    return this.columnGap;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn teenyColumn {
+                get {
+                    return this.columnteeny;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn AreaColumn {
+                get {
+                    return this.columnArea;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn YarnTypeColumn {
+                get {
+                    return this.columnYarnType;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn RoundStopColumn {
+                get {
+                    return this.columnRoundStop;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TextureLimitColumn {
+                get {
+                    return this.columnTextureLimit;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DescriptionColumn {
+                get {
+                    return this.columnDescription;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn FabricTypeColumn {
+                get {
+                    return this.columnFabricType;
                 }
             }
             
@@ -5257,7 +5334,7 @@ namespace PCLOR.data_PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Table_60_SpecsTechnicalRow AddTable_60_SpecsTechnicalRow(string namemachine, string Specstechnical, bool status, bool IsForProduction, bool IsForColor, short X, short Y) {
+            public Table_60_SpecsTechnicalRow AddTable_60_SpecsTechnicalRow(string namemachine, string Specstechnical, bool status, short X, short Y, string DeviceMark, short Gap, decimal teeny, decimal Area, int YarnType, decimal RoundStop, short TextureLimit, string Description, Table_005_TypeClothRow parentTable_005_TypeClothRowByFK_Table_60_SpecsTechnical_Table_005_TypeCloth) {
                 Table_60_SpecsTechnicalRow rowTable_60_SpecsTechnicalRow = ((Table_60_SpecsTechnicalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -5265,10 +5342,20 @@ namespace PCLOR.data_PCLOR {
                         namemachine,
                         Specstechnical,
                         status,
-                        IsForProduction,
-                        IsForColor,
                         X,
-                        Y};
+                        Y,
+                        DeviceMark,
+                        Gap,
+                        teeny,
+                        Area,
+                        YarnType,
+                        RoundStop,
+                        TextureLimit,
+                        Description,
+                        null};
+                if ((parentTable_005_TypeClothRowByFK_Table_60_SpecsTechnical_Table_005_TypeCloth != null)) {
+                    columnValuesArray[15] = parentTable_005_TypeClothRowByFK_Table_60_SpecsTechnical_Table_005_TypeCloth[0];
+                }
                 rowTable_60_SpecsTechnicalRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTable_60_SpecsTechnicalRow);
                 return rowTable_60_SpecsTechnicalRow;
@@ -5303,10 +5390,17 @@ namespace PCLOR.data_PCLOR {
                 this.columnnamemachine = base.Columns["namemachine"];
                 this.columnSpecstechnical = base.Columns["Specstechnical"];
                 this.columnstatus = base.Columns["status"];
-                this.columnIsForProduction = base.Columns["IsForProduction"];
-                this.columnIsForColor = base.Columns["IsForColor"];
                 this.columnX = base.Columns["X"];
                 this.columnY = base.Columns["Y"];
+                this.columnDeviceMark = base.Columns["DeviceMark"];
+                this.columnGap = base.Columns["Gap"];
+                this.columnteeny = base.Columns["teeny"];
+                this.columnArea = base.Columns["Area"];
+                this.columnYarnType = base.Columns["YarnType"];
+                this.columnRoundStop = base.Columns["RoundStop"];
+                this.columnTextureLimit = base.Columns["TextureLimit"];
+                this.columnDescription = base.Columns["Description"];
+                this.columnFabricType = base.Columns["FabricType"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5322,14 +5416,28 @@ namespace PCLOR.data_PCLOR {
                 base.Columns.Add(this.columnSpecstechnical);
                 this.columnstatus = new global::System.Data.DataColumn("status", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnstatus);
-                this.columnIsForProduction = new global::System.Data.DataColumn("IsForProduction", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIsForProduction);
-                this.columnIsForColor = new global::System.Data.DataColumn("IsForColor", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIsForColor);
                 this.columnX = new global::System.Data.DataColumn("X", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnX);
                 this.columnY = new global::System.Data.DataColumn("Y", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnY);
+                this.columnDeviceMark = new global::System.Data.DataColumn("DeviceMark", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDeviceMark);
+                this.columnGap = new global::System.Data.DataColumn("Gap", typeof(short), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGap);
+                this.columnteeny = new global::System.Data.DataColumn("teeny", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnteeny);
+                this.columnArea = new global::System.Data.DataColumn("Area", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArea);
+                this.columnYarnType = new global::System.Data.DataColumn("YarnType", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnYarnType);
+                this.columnRoundStop = new global::System.Data.DataColumn("RoundStop", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRoundStop);
+                this.columnTextureLimit = new global::System.Data.DataColumn("TextureLimit", typeof(short), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTextureLimit);
+                this.columnDescription = new global::System.Data.DataColumn("Description", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescription);
+                this.columnFabricType = new global::System.Data.DataColumn("FabricType", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFabricType);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -5344,10 +5452,10 @@ namespace PCLOR.data_PCLOR {
                 this.columnnamemachine.MaxLength = 2147483647;
                 this.columnSpecstechnical.MaxLength = 2147483647;
                 this.columnstatus.AllowDBNull = false;
-                this.columnIsForProduction.AllowDBNull = false;
-                this.columnIsForColor.AllowDBNull = false;
                 this.columnX.AllowDBNull = false;
                 this.columnY.AllowDBNull = false;
+                this.columnDeviceMark.MaxLength = 100;
+                this.columnDescription.MaxLength = 800;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16538,28 +16646,6 @@ namespace PCLOR.data_PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsForProduction {
-                get {
-                    return ((bool)(this[this.tableTable_60_SpecsTechnical.IsForProductionColumn]));
-                }
-                set {
-                    this[this.tableTable_60_SpecsTechnical.IsForProductionColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsForColor {
-                get {
-                    return ((bool)(this[this.tableTable_60_SpecsTechnical.IsForColorColumn]));
-                }
-                set {
-                    this[this.tableTable_60_SpecsTechnical.IsForColorColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public short X {
                 get {
                     return ((short)(this[this.tableTable_60_SpecsTechnical.XColumn]));
@@ -16577,6 +16663,162 @@ namespace PCLOR.data_PCLOR {
                 }
                 set {
                     this[this.tableTable_60_SpecsTechnical.YColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string DeviceMark {
+                get {
+                    try {
+                        return ((string)(this[this.tableTable_60_SpecsTechnical.DeviceMarkColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DeviceMark\' in table \'Table_60_SpecsTechnical\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.DeviceMarkColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public short Gap {
+                get {
+                    try {
+                        return ((short)(this[this.tableTable_60_SpecsTechnical.GapColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Gap\' in table \'Table_60_SpecsTechnical\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.GapColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal teeny {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableTable_60_SpecsTechnical.teenyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'teeny\' in table \'Table_60_SpecsTechnical\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.teenyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal Area {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableTable_60_SpecsTechnical.AreaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Area\' in table \'Table_60_SpecsTechnical\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.AreaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int YarnType {
+                get {
+                    try {
+                        return ((int)(this[this.tableTable_60_SpecsTechnical.YarnTypeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'YarnType\' in table \'Table_60_SpecsTechnical\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.YarnTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal RoundStop {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableTable_60_SpecsTechnical.RoundStopColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RoundStop\' in table \'Table_60_SpecsTechnical\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.RoundStopColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public short TextureLimit {
+                get {
+                    try {
+                        return ((short)(this[this.tableTable_60_SpecsTechnical.TextureLimitColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TextureLimit\' in table \'Table_60_SpecsTechnical\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.TextureLimitColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Description {
+                get {
+                    try {
+                        return ((string)(this[this.tableTable_60_SpecsTechnical.DescriptionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Description\' in table \'Table_60_SpecsTechnical\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.DescriptionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public long FabricType {
+                get {
+                    try {
+                        return ((long)(this[this.tableTable_60_SpecsTechnical.FabricTypeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FabricType\' in table \'Table_60_SpecsTechnical\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.FabricTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public Table_005_TypeClothRow Table_005_TypeClothRow {
+                get {
+                    return ((Table_005_TypeClothRow)(this.GetParentRow(this.Table.ParentRelations["FK_Table_60_SpecsTechnical_Table_005_TypeCloth"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_Table_60_SpecsTechnical_Table_005_TypeCloth"]);
                 }
             }
             
@@ -16614,6 +16856,114 @@ namespace PCLOR.data_PCLOR {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetSpecstechnicalNull() {
                 this[this.tableTable_60_SpecsTechnical.SpecstechnicalColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDeviceMarkNull() {
+                return this.IsNull(this.tableTable_60_SpecsTechnical.DeviceMarkColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDeviceMarkNull() {
+                this[this.tableTable_60_SpecsTechnical.DeviceMarkColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsGapNull() {
+                return this.IsNull(this.tableTable_60_SpecsTechnical.GapColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetGapNull() {
+                this[this.tableTable_60_SpecsTechnical.GapColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsteenyNull() {
+                return this.IsNull(this.tableTable_60_SpecsTechnical.teenyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetteenyNull() {
+                this[this.tableTable_60_SpecsTechnical.teenyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsAreaNull() {
+                return this.IsNull(this.tableTable_60_SpecsTechnical.AreaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetAreaNull() {
+                this[this.tableTable_60_SpecsTechnical.AreaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsYarnTypeNull() {
+                return this.IsNull(this.tableTable_60_SpecsTechnical.YarnTypeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetYarnTypeNull() {
+                this[this.tableTable_60_SpecsTechnical.YarnTypeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsRoundStopNull() {
+                return this.IsNull(this.tableTable_60_SpecsTechnical.RoundStopColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetRoundStopNull() {
+                this[this.tableTable_60_SpecsTechnical.RoundStopColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsTextureLimitNull() {
+                return this.IsNull(this.tableTable_60_SpecsTechnical.TextureLimitColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetTextureLimitNull() {
+                this[this.tableTable_60_SpecsTechnical.TextureLimitColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDescriptionNull() {
+                return this.IsNull(this.tableTable_60_SpecsTechnical.DescriptionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDescriptionNull() {
+                this[this.tableTable_60_SpecsTechnical.DescriptionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsFabricTypeNull() {
+                return this.IsNull(this.tableTable_60_SpecsTechnical.FabricTypeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetFabricTypeNull() {
+                this[this.tableTable_60_SpecsTechnical.FabricTypeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17113,6 +17463,17 @@ namespace PCLOR.data_PCLOR {
                 }
                 else {
                     return ((Table_030_DetailOrderColorRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Table_030_DetailOrderColor_Table_005_TypeCloth"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public Table_60_SpecsTechnicalRow[] GetTable_60_SpecsTechnicalRows() {
+                if ((this.Table.ChildRelations["FK_Table_60_SpecsTechnical_Table_005_TypeCloth"] == null)) {
+                    return new Table_60_SpecsTechnicalRow[0];
+                }
+                else {
+                    return ((Table_60_SpecsTechnicalRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Table_60_SpecsTechnical_Table_005_TypeCloth"])));
                 }
             }
         }
@@ -28231,57 +28592,144 @@ SELECT ID, Barcode, IDProduct, date, Time, weight, Qty, NumberDraft, NumberRecip
             tableMapping.ColumnMappings.Add("namemachine", "namemachine");
             tableMapping.ColumnMappings.Add("Specstechnical", "Specstechnical");
             tableMapping.ColumnMappings.Add("status", "status");
-            tableMapping.ColumnMappings.Add("IsForProduction", "IsForProduction");
-            tableMapping.ColumnMappings.Add("IsForColor", "IsForColor");
             tableMapping.ColumnMappings.Add("X", "X");
             tableMapping.ColumnMappings.Add("Y", "Y");
+            tableMapping.ColumnMappings.Add("Expr1", "Expr1");
+            tableMapping.ColumnMappings.Add("Expr2", "Expr2");
+            tableMapping.ColumnMappings.Add("Expr3", "Expr3");
+            tableMapping.ColumnMappings.Add("Expr4", "Expr4");
+            tableMapping.ColumnMappings.Add("Expr5", "Expr5");
+            tableMapping.ColumnMappings.Add("Expr6", "Expr6");
+            tableMapping.ColumnMappings.Add("Expr7", "Expr7");
+            tableMapping.ColumnMappings.Add("DeviceMark", "DeviceMark");
+            tableMapping.ColumnMappings.Add("Gap", "Gap");
+            tableMapping.ColumnMappings.Add("teeny", "teeny");
+            tableMapping.ColumnMappings.Add("Area", "Area");
+            tableMapping.ColumnMappings.Add("YarnType", "YarnType");
+            tableMapping.ColumnMappings.Add("RoundStop", "RoundStop");
+            tableMapping.ColumnMappings.Add("TextureLimit", "TextureLimit");
+            tableMapping.ColumnMappings.Add("Description", "Description");
+            tableMapping.ColumnMappings.Add("FabricType", "FabricType");
+            tableMapping.ColumnMappings.Add("Expr8", "Expr8");
+            tableMapping.ColumnMappings.Add("Expr9", "Expr9");
+            tableMapping.ColumnMappings.Add("Expr10", "Expr10");
+            tableMapping.ColumnMappings.Add("Expr11", "Expr11");
+            tableMapping.ColumnMappings.Add("Expr12", "Expr12");
+            tableMapping.ColumnMappings.Add("Expr13", "Expr13");
+            tableMapping.ColumnMappings.Add("Expr14", "Expr14");
+            tableMapping.ColumnMappings.Add("Expr15", "Expr15");
+            tableMapping.ColumnMappings.Add("Expr16", "Expr16");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Table_60_SpecsTechnical] WHERE (([ID] = @Original_ID) AND ((@IsNull_Code = 1 AND [Code] IS NULL) OR ([Code] = @Original_Code)) AND ([status] = @Original_status) AND ([IsForProduction] = @Original_IsForProduction) AND ([IsForColor] = @Original_IsForColor) AND ([X] = @Original_X) AND ([Y] = @Original_Y))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Table_60_SpecsTechnical] WHERE (([ID] = @Original_ID) AND ((@IsNull_Code = 1 AND [Code] IS NULL) OR ([Code] = @Original_Code)) AND ([status] = @Original_status) AND ([X] = @Original_X) AND ([Y] = @Original_Y) AND ((@IsNull_DeviceMark = 1 AND [DeviceMark] IS NULL) OR ([DeviceMark] = @Original_DeviceMark)) AND ((@IsNull_Gap = 1 AND [Gap] IS NULL) OR ([Gap] = @Original_Gap)) AND ((@IsNull_teeny = 1 AND [teeny] IS NULL) OR ([teeny] = @Original_teeny)) AND ((@IsNull_Area = 1 AND [Area] IS NULL) OR ([Area] = @Original_Area)) AND ((@IsNull_YarnType = 1 AND [YarnType] IS NULL) OR ([YarnType] = @Original_YarnType)) AND ((@IsNull_RoundStop = 1 AND [RoundStop] IS NULL) OR ([RoundStop] = @Original_RoundStop)) AND ((@IsNull_TextureLimit = 1 AND [TextureLimit] IS NULL) OR ([TextureLimit] = @Original_TextureLimit)) AND ((@IsNull_Description = 1 AND [Description] IS NULL) OR ([Description] = @Original_Description)) AND ((@IsNull_FabricType = 1 AND [FabricType] IS NULL) OR ([FabricType] = @Original_FabricType)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_status", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IsForProduction", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsForProduction", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IsForColor", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsForColor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_X", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "X", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Y", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Y", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DeviceMark", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeviceMark", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DeviceMark", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeviceMark", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gap", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gap", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gap", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gap", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_teeny", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "teeny", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_teeny", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "teeny", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Area", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Area", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Area", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "Area", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_YarnType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YarnType", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_YarnType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YarnType", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_RoundStop", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RoundStop", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RoundStop", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 4, "RoundStop", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TextureLimit", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TextureLimit", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Description", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_FabricType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FabricType", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Table_60_SpecsTechnical] ([Code], [namemachine], [Specstechnical], [status], [IsForProduction], [IsForColor], [X], [Y]) VALUES (@Code, @namemachine, @Specstechnical, @status, @IsForProduction, @IsForColor, @X, @Y);
-SELECT ID, Code, namemachine, Specstechnical, status, IsForProduction, IsForColor, X, Y FROM Table_60_SpecsTechnical WHERE (ID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Table_60_SpecsTechnical] ([Code], [namemachine], [Specstechnical], [status], [X], [Y], [DeviceMark], [Gap], [teeny], [Area], [YarnType], [RoundStop], [TextureLimit], [Description], [FabricType]) VALUES (@Code, @namemachine, @Specstechnical, @status, @X, @Y, @DeviceMark, @Gap, @teeny, @Area, @YarnType, @RoundStop, @TextureLimit, @Description, @FabricType);
+SELECT ID, Code, namemachine, Specstechnical, status, X, Y, DeviceMark, Gap, teeny, Area, YarnType, RoundStop, TextureLimit, Description, FabricType FROM Table_60_SpecsTechnical WHERE (ID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@namemachine", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "namemachine", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Specstechnical", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Specstechnical", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@status", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsForProduction", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsForProduction", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsForColor", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsForColor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@X", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "X", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Y", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Y", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DeviceMark", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeviceMark", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gap", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gap", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@teeny", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "teeny", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Area", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "Area", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YarnType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YarnType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RoundStop", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 4, "RoundStop", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TextureLimit", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FabricType", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [Table_60_SpecsTechnical] SET [Code] = @Code, [namemachine] = @namemachine, [Specstechnical] = @Specstechnical, [status] = @status, [IsForProduction] = @IsForProduction, [IsForColor] = @IsForColor, [X] = @X, [Y] = @Y WHERE (([ID] = @Original_ID) AND ((@IsNull_Code = 1 AND [Code] IS NULL) OR ([Code] = @Original_Code)) AND ([status] = @Original_status) AND ([IsForProduction] = @Original_IsForProduction) AND ([IsForColor] = @Original_IsForColor) AND ([X] = @Original_X) AND ([Y] = @Original_Y));
-SELECT ID, Code, namemachine, Specstechnical, status, IsForProduction, IsForColor, X, Y FROM Table_60_SpecsTechnical WHERE (ID = @ID)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [Table_60_SpecsTechnical] SET [Code] = @Code, [namemachine] = @namemachine" +
+                ", [Specstechnical] = @Specstechnical, [status] = @status, [X] = @X, [Y] = @Y, [D" +
+                "eviceMark] = @DeviceMark, [Gap] = @Gap, [teeny] = @teeny, [Area] = @Area, [YarnT" +
+                "ype] = @YarnType, [RoundStop] = @RoundStop, [TextureLimit] = @TextureLimit, [Des" +
+                "cription] = @Description, [FabricType] = @FabricType WHERE (([ID] = @Original_ID" +
+                ") AND ((@IsNull_Code = 1 AND [Code] IS NULL) OR ([Code] = @Original_Code)) AND (" +
+                "[status] = @Original_status) AND ([X] = @Original_X) AND ([Y] = @Original_Y) AND" +
+                " ((@IsNull_DeviceMark = 1 AND [DeviceMark] IS NULL) OR ([DeviceMark] = @Original" +
+                "_DeviceMark)) AND ((@IsNull_Gap = 1 AND [Gap] IS NULL) OR ([Gap] = @Original_Gap" +
+                ")) AND ((@IsNull_teeny = 1 AND [teeny] IS NULL) OR ([teeny] = @Original_teeny)) " +
+                "AND ((@IsNull_Area = 1 AND [Area] IS NULL) OR ([Area] = @Original_Area)) AND ((@" +
+                "IsNull_YarnType = 1 AND [YarnType] IS NULL) OR ([YarnType] = @Original_YarnType)" +
+                ") AND ((@IsNull_RoundStop = 1 AND [RoundStop] IS NULL) OR ([RoundStop] = @Origin" +
+                "al_RoundStop)) AND ((@IsNull_TextureLimit = 1 AND [TextureLimit] IS NULL) OR ([T" +
+                "extureLimit] = @Original_TextureLimit)) AND ((@IsNull_Description = 1 AND [Descr" +
+                "iption] IS NULL) OR ([Description] = @Original_Description)) AND ((@IsNull_Fabri" +
+                "cType = 1 AND [FabricType] IS NULL) OR ([FabricType] = @Original_FabricType)));\r" +
+                "\nSELECT ID, Code, namemachine, Specstechnical, status, X, Y, DeviceMark, Gap, te" +
+                "eny, Area, YarnType, RoundStop, TextureLimit, Description, FabricType FROM Table" +
+                "_60_SpecsTechnical WHERE (ID = @ID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@namemachine", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "namemachine", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Specstechnical", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Specstechnical", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@status", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsForProduction", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsForProduction", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsForColor", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsForColor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@X", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "X", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Y", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Y", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DeviceMark", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeviceMark", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gap", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gap", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@teeny", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "teeny", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Area", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "Area", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YarnType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YarnType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RoundStop", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 4, "RoundStop", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TextureLimit", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FabricType", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_status", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IsForProduction", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsForProduction", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IsForColor", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsForColor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_X", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "X", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Y", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Y", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DeviceMark", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeviceMark", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DeviceMark", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeviceMark", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Gap", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gap", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gap", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gap", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_teeny", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "teeny", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_teeny", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "teeny", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Area", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Area", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Area", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "Area", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_YarnType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YarnType", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_YarnType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YarnType", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_RoundStop", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RoundStop", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RoundStop", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 4, "RoundStop", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TextureLimit", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TextureLimit", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Description", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_FabricType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FabricType", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -28298,19 +28746,20 @@ SELECT ID, Code, namemachine, Specstechnical, status, IsForProduction, IsForColo
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, Code, namemachine, Specstechnical, status, IsForProduction, IsForColor" +
-                ", X, Y\r\nFROM     Table_60_SpecsTechnical";
+            this._commandCollection[0].CommandText = "SELECT Table_60_SpecsTechnical.*\r\nFROM     Table_60_SpecsTechnical";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT Code, ID, IsForColor, IsForProduction, Specstechnical, X, Y, namemachine, " +
-                "status FROM Table_60_SpecsTechnical WHERE (ID = @Id)";
+            this._commandCollection[1].CommandText = "SELECT Area, Code, Description, DeviceMark, FabricType, Gap, ID, RoundStop, Specs" +
+                "technical, TextureLimit, X, Y, YarnType, namemachine, status, teeny FROM Table_6" +
+                "0_SpecsTechnical WHERE (ID = @Id)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT Code, ID, IsForColor, IsForProduction, Specstechnical, X, Y, namemachine, " +
-                "status FROM Table_60_SpecsTechnical WHERE (IsForColor = 1)";
+            this._commandCollection[2].CommandText = "SELECT Area, Code, Description, DeviceMark, FabricType, Gap, ID, RoundStop, Specs" +
+                "technical, TextureLimit, X, Y, YarnType, namemachine, status, teeny FROM Table_6" +
+                "0_SpecsTechnical WHERE (IsForColor = 1)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -28404,168 +28853,6 @@ SELECT ID, Code, namemachine, Specstechnical, status, IsForProduction, IsForColo
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(long Original_ID, global::System.Nullable<int> Original_Code, bool Original_status, bool Original_IsForProduction, bool Original_IsForColor, short Original_X, short Original_Y) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((long)(Original_ID));
-            if ((Original_Code.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_Code.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((bool)(Original_status));
-            this.Adapter.DeleteCommand.Parameters[4].Value = ((bool)(Original_IsForProduction));
-            this.Adapter.DeleteCommand.Parameters[5].Value = ((bool)(Original_IsForColor));
-            this.Adapter.DeleteCommand.Parameters[6].Value = ((short)(Original_X));
-            this.Adapter.DeleteCommand.Parameters[7].Value = ((short)(Original_Y));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> Code, string namemachine, string Specstechnical, bool status, bool IsForProduction, bool IsForColor, short X, short Y) {
-            if ((Code.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Code.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            if ((namemachine == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(namemachine));
-            }
-            if ((Specstechnical == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Specstechnical));
-            }
-            this.Adapter.InsertCommand.Parameters[3].Value = ((bool)(status));
-            this.Adapter.InsertCommand.Parameters[4].Value = ((bool)(IsForProduction));
-            this.Adapter.InsertCommand.Parameters[5].Value = ((bool)(IsForColor));
-            this.Adapter.InsertCommand.Parameters[6].Value = ((short)(X));
-            this.Adapter.InsertCommand.Parameters[7].Value = ((short)(Y));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    global::System.Nullable<int> Code, 
-                    string namemachine, 
-                    string Specstechnical, 
-                    bool status, 
-                    bool IsForProduction, 
-                    bool IsForColor, 
-                    short X, 
-                    short Y, 
-                    long Original_ID, 
-                    global::System.Nullable<int> Original_Code, 
-                    bool Original_status, 
-                    bool Original_IsForProduction, 
-                    bool Original_IsForColor, 
-                    short Original_X, 
-                    short Original_Y, 
-                    long ID) {
-            if ((Code.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Code.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            if ((namemachine == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(namemachine));
-            }
-            if ((Specstechnical == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Specstechnical));
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((bool)(status));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((bool)(IsForProduction));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((bool)(IsForColor));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((short)(X));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((short)(Y));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((long)(Original_ID));
-            if ((Original_Code.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_Code.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((bool)(Original_status));
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((bool)(Original_IsForProduction));
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((bool)(Original_IsForColor));
-            this.Adapter.UpdateCommand.Parameters[14].Value = ((short)(Original_X));
-            this.Adapter.UpdateCommand.Parameters[15].Value = ((short)(Original_Y));
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((long)(ID));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> Code, string namemachine, string Specstechnical, bool status, bool IsForProduction, bool IsForColor, short X, short Y, long Original_ID, global::System.Nullable<int> Original_Code, bool Original_status, bool Original_IsForProduction, bool Original_IsForColor, short Original_X, short Original_Y) {
-            return this.Update(Code, namemachine, Specstechnical, status, IsForProduction, IsForColor, X, Y, Original_ID, Original_Code, Original_status, Original_IsForProduction, Original_IsForColor, Original_X, Original_Y, Original_ID);
         }
     }
     
@@ -40308,6 +40595,15 @@ SELECT ID, FK, Serial, Weight, Machine FROM Table_110_ProductionDetail WHERE (ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateUpdatedRows(DataSet_05_PCLOR dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._table_005_TypeClothTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Table_005_TypeCloth.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._table_005_TypeClothTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._table_025_HederOrderColorTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Table_025_HederOrderColor.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -40323,15 +40619,6 @@ SELECT ID, FK, Serial, Weight, Machine FROM Table_110_ProductionDetail WHERE (ID
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._table_010_TypeColorTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._table_005_TypeClothTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Table_005_TypeCloth.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._table_005_TypeClothTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -40606,6 +40893,14 @@ SELECT ID, FK, Serial, Weight, Machine FROM Table_110_ProductionDetail WHERE (ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateInsertedRows(DataSet_05_PCLOR dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._table_005_TypeClothTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Table_005_TypeCloth.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._table_005_TypeClothTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._table_025_HederOrderColorTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Table_025_HederOrderColor.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -40619,14 +40914,6 @@ SELECT ID, FK, Serial, Weight, Machine FROM Table_110_ProductionDetail WHERE (ID
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._table_010_TypeColorTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._table_005_TypeClothTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Table_005_TypeCloth.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._table_005_TypeClothTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -41104,14 +41391,6 @@ SELECT ID, FK, Serial, Weight, Machine FROM Table_110_ProductionDetail WHERE (ID
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._table_005_TypeClothTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Table_005_TypeCloth.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._table_005_TypeClothTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._table_010_TypeColorTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Table_010_TypeColor.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -41125,6 +41404,14 @@ SELECT ID, FK, Serial, Weight, Machine FROM Table_110_ProductionDetail WHERE (ID
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._table_025_HederOrderColorTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._table_005_TypeClothTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Table_005_TypeCloth.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._table_005_TypeClothTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }

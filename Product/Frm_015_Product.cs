@@ -26,8 +26,10 @@ namespace PCLOR.Product
         Classes.Class_Documents ClDoc = new Classes.Class_Documents();
         int ResidNum = 0;
         private int DeviceId = 0;
+        private int clothType = 0;
+        private int cottonType = 0;
         bool Machine = false;
-
+        List<object> src = new List<object>();
         private void OpenPort()
         {
             bool error = false;
@@ -133,19 +135,28 @@ namespace PCLOR.Product
 
                 double weigh = Convert.ToDouble(txt_weight.Text) / 1000;
 
-                var t = (DataRowView)table_115_ProductBindingSource.CurrencyManager.Current;
-               ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Barcode"] = (object)Barcode;
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Barcode"] = Barcode;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["weight"] = weigh;
 
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ProgramerMachine"] = DeviceId;
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Machine"] = lblNameDevice;
+                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ProgramerMachine"] = DeviceId;
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Machine"] = DeviceId;
 
-                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ClothType"] = mlt_TypeCloth.Value;
-                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ReportDescriptin"] = txt_Description.Text;
-                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["shift"] = mlt_shift.Value;
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ClothType"] = clothType;
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["CottonType"] = cottonType;
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ReportDescriptin"] = txt_Description.Text;
+                if (lblShiftOperator.Text.Trim().ToLower() == "شب")
+                {
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["shift"] = 3;
 
-                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Date"] = txt_Dat.Text;
-                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Time"] = txt_Time.Text;
+                }
+                else if (lblShiftOperator.Text.Trim().ToLower() == "صبح")
+                {
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["shift"] = 2;
+
+                }
+
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Date"] = lblDateCreate.Text;
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Time"] = lblCreateTime.Text;
 
 
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["UserSabt"] = Class_BasicOperation._UserName;
@@ -160,8 +171,11 @@ namespace PCLOR.Product
                 //    ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, @"update Table_115_Product set Number=" + txt_Number.Text + " where Id=" + txt_Id.Text);
 
                 //}
+                src.Add((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current);
                 table_115_ProductBindingSource.EndEdit();
-                table_115_ProductTableAdapter.Update(dataSet_05_Product.Table_115_Product);
+                gridEX2.MoveLast();
+                table_115_ProductTableAdapter1.Update(pCLOR_1_1400DataSet.Table_115_Product);
+                //table_115_ProductTableAdapter.Update(dataSet_05_Product.Table_115_Product);
                 //table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product,Convert.ToInt32 (mlt_Num_Programer.Value));
                 txt_weight.Text = "0";
                 txt_weight.Focus();
@@ -253,10 +267,12 @@ namespace PCLOR.Product
                 return machine;
             }
         }
-       
+
         public void FillDetailMachine()
         {
             var machine = GetMachine(DeviceId);
+            clothType = (int)machine.FabricType;
+            cottonType = machine.YarnType;
             lblDateCreate.Text = DateTime.Now.ToShamsi();
             lblGapDevice.Text = machine.Gap.ToString();
             lblNameDevice.Text = machine.NameMachine;
@@ -267,8 +283,9 @@ namespace PCLOR.Product
             lblTextureLimit.Text = machine.TextureLimit.ToString();
             lblTypeDevice.Text = machine.DeviceMark;
             lblTypeFabric.Text = machine.FabricTypeName;
-            lblCreateTime.Text = DateTime.Now.TimeOfDay.Hours.ToString("00")+":"+ DateTime.Now.TimeOfDay.Minutes.ToString("00");
+            lblCreateTime.Text = DateTime.Now.TimeOfDay.Hours.ToString("00") + ":" + DateTime.Now.TimeOfDay.Minutes.ToString("00");
             lblArea.Text = machine.Area.ToString();
+            txtDescDevice.Text = machine.Description;
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
@@ -276,7 +293,7 @@ namespace PCLOR.Product
             if (table_115_ProductBindingSource.Count > 0)
             {
 
-                if (((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["NumberRecipt"].ToString() != "0")
+                if (string.IsNullOrEmpty(((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["NumberRecipt"].ToString()) == false)
                 {
                     Class_BasicOperation.ShowMsg("", "برای این کارت تولید رسید ثبت شده است ابتدا رسید آن را حذف کنید", Class_BasicOperation.MessageType.Stop);
                     return;
@@ -320,11 +337,16 @@ namespace PCLOR.Product
 
                 //    }
                 //}
-
-                string idrfid = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isnull((select Id from  Table_135_RFIDPerson  where CodeRFID=" + txtCodeTag.Text + "),0)");
+                var code = txtCodeTag.Text;
+                if (string.IsNullOrEmpty(code))
+                {
+                    code = "-1";
+                }
+                string idrfid = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"
+                                                        select isnull( (select  Id  from  Table_135_RFIDPerson  where CodeRFID = " + code + ") , 0 ) ");
 
                 table_115_ProductBindingSource.EndEdit();
-                table_115_ProductTableAdapter.Update(dataSet_05_Product.Table_115_Product);
+                table_115_ProductTableAdapter1.Update(pCLOR_1_1400DataSet.Table_115_Product);
 
 
                 Recipt();
@@ -340,9 +362,9 @@ namespace PCLOR.Product
 
                 Class_BasicOperation.ShowMsg("", "اطلاعات با موفقیت دخیره شد" + Environment.NewLine + "رسید به شماره" + ResidNum + "با موفقیت صدور شد", Class_BasicOperation.MessageType.Information);
                 gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
-                table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(DeviceId));
+                //table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(DeviceId));
                 gridEX2.MoveTo(Position);
-
+                this.Close();
             }
         }
         string ID = "";
@@ -352,12 +374,14 @@ namespace PCLOR.Product
 
         private void Recipt()
         {
-            try
+            using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
             {
-                ResidNum = ClDoc.MaxNumber(ConWare.ConnectionString, "Table_011_PwhrsReceipt", "Column01");
-                string commandtxt = string.Empty;
-                commandtxt = @"Declare @Key int";
-                commandtxt += @" INSERT INTO Table_011_PwhrsReceipt (
+                try
+                {
+                    ResidNum = ClDoc.MaxNumber(ConWare.ConnectionString, "Table_011_PwhrsReceipt", "Column01");
+                    string commandtxt = string.Empty;
+                    //commandtxt = @"Declare   @Key   int";
+                    commandtxt += $@" INSERT INTO Table_011_PwhrsReceipt (
                                                                             [column01],
                                                                             [column02],
                                                                             [column03],
@@ -369,17 +393,21 @@ namespace PCLOR.Product
                                                                             [column10],
                                                                             [column11]
                                                                  
-                                                                          ) VALUES (" + ResidNum + ",'" + DateTime.Now + "' ," + mlt_Ware.Value.ToString() + "," + mlt_Function.Value.ToString() + ","
-                                                                   + lblOperationCode.Text + ",'" + "رسید صادره بابت رسید پارچه خام ش" + txt_Number.Text + "','" + Class_BasicOperation._UserName + "',getdate(),'" + Class_BasicOperation._UserName + "',getdate()); SET @Key=Scope_Identity() ";
-
-                foreach (DataRowView Rows in table_115_ProductBindingSource)
-                {
-                    if (Rows["NumberRecipt"].ToString() == "0" || Rows["NumberRecipt"].ToString() == "")
+                                                                          ) VALUES (  {ResidNum} , N'{DateTime.Now.ToShamsi()}'  , {mlt_Ware.Value.ToString()},  {mlt_Function.Value.ToString()} ,
+                                                                        {(string.IsNullOrEmpty(lblOperationCode.Text) ? "N''": lblOperationCode.Text)},N'رسید صادره بابت رسید پارچه خام شماره {txt_Number.Text}' , N'{Class_BasicOperation._UserName}' ,getdate(), N'{Class_BasicOperation._UserName}', getdate() );
+                                                                       select  Max(columnid)  from Table_011_PwhrsReceipt";
+                    var Key = db.QueryFirstOrDefault<int>(commandtxt, null, commandType: CommandType.Text);
+                    string query = "";
+                    foreach (DataRowView Rows in table_115_ProductBindingSource)
                     {
-                        ID = ID + Rows["ID"] + ",";
-                        commandtxt += @" INSERT INTO Table_012_Child_PwhrsReceipt (
+                        if (string.IsNullOrEmpty(Rows["NumberRecipt"].ToString()) || Rows["NumberRecipt"].ToString() == "0")
+                        {
+
+
+
+                            ID = ID + Rows["ID"] + ",";
+                            query = $@" INSERT INTO Table_012_Child_PwhrsReceipt (
                                     [column01]
-                                   ,[column02]
                                    ,[column03]
                                    ,[column06]
                                    ,[column07]
@@ -395,17 +423,24 @@ namespace PCLOR.Product
                                    ,[Column34]
                                    ,[Column35]
                                    ,[Column37]
-                           ) VALUES (@Key," + /*(((DataRowView)mlt_TypeCloth.DropDownList.FindItem(mlt_TypeCloth.Value))["CodeCommondity"].ToString()) +*/ ",1," + 1 +
-            "," + 1 + ",0,0,'" + Class_BasicOperation._UserName + "',getdate(),'" + Class_BasicOperation._UserName + "',getdate(),0,0," + Rows["Barcode"].ToString() + "," + Rows["Weight"] + "," + Rows["Weight"] + ",'" + Rows["Machine"] + "');";
+                           ) VALUES (
+  
+               {Key},1,1,1,0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}' ,getdate(),0,0, N'{Rows["Barcode"].ToString()}' , {Rows["Weight"]} , {Rows["Weight"]} , N'{Rows["Machine"] }' );";
+                            db.Execute(query, null, commandType: CommandType.Text);
+                        }
                     }
+                    var t = ID.TrimEnd(',');
+                    var queryFinall = $"update  Table_115_Product  set  NumberRecipt={Key}  where  ID  in  ({ID.TrimEnd(',')})";
+                    db.ConnectionString = ConPCLOR.ConnectionString;
+                    db.Execute(queryFinall, null, commandType: CommandType.Text);
+                    //Class_BasicOperation.SqlTransactionMethod(ConWare.ConnectionString, commandtxt);
                 }
-                commandtxt += "update " + ConPCLOR.Database + ".dbo.Table_115_Product set NumberRecipt=@Key where ID in ( " + ID.TrimEnd(',') + ")";
-                Class_BasicOperation.SqlTransactionMethod(ConWare.ConnectionString, commandtxt);
+                catch (Exception ex)
+                {
+                    Class_BasicOperation.CheckExceptionType(ex, this.Name);
+                }
             }
-            catch (Exception ex)
-            {
-                Class_BasicOperation.CheckExceptionType(ex, this.Name);
-            }
+
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
