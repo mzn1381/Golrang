@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using Dapper;
 
 namespace PCLOR._00_BaseInfo
 {
@@ -33,9 +34,9 @@ namespace PCLOR._00_BaseInfo
             {
                 bool isadmin = ChA.IsAdmin(Class_BasicOperation._UserName, Class_BasicOperation._OrgCode.ToString(), Class_BasicOperation._FinYear);
                 mlt_Branch.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,CodeBranch,NameBranch from Table_85_Branchs where 'True'='" + isadmin + "' or Id in (select Column133 from PBASE_" + Class_BasicOperation._OrgCode + ".dbo.table_045_personinfo where Column23=N'" + Class_BasicOperation._UserName + "' )");
-          
+
                 this.table_045_PersonInfoTableAdapter.FillByBranch(dataSet_10_PersonInfo.Table_045_PersonInfo, isadmin.ToString(), Class_BasicOperation._UserName);
-              
+
                 gridEX1.DropDowns["Branchs"].DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,NameBranch from Table_85_Branchs");
 
                 SqlDataAdapter Adapter = new SqlDataAdapter("Select Column00,Column01 from Table_040_PersonGroups", ConBase);
@@ -61,7 +62,7 @@ namespace PCLOR._00_BaseInfo
                 this.table_045_PersonInfoBindingSource.MoveLast();
                 this.table_045_PersonInfoBindingSource_PositionChanged(sender, e);
             }
-            catch { }  
+            catch { }
         }
         private void bt_New_Click(object sender, EventArgs e)
         {
@@ -76,15 +77,15 @@ namespace PCLOR._00_BaseInfo
 
                 if (!isadmin)
                 {
-                    if(Class_BasicOperation._Branch!=0)
-                    mlt_Branch.Value = Class_BasicOperation._Branch;
+                    if (Class_BasicOperation._Branch != 0)
+                        mlt_Branch.Value = Class_BasicOperation._Branch;
 
                 }
-               
-              
+
+
                 bt_New.Enabled = false;
                 txt_FirstName.Focus();
-        
+
             }
             catch
             { }
@@ -145,18 +146,18 @@ namespace PCLOR._00_BaseInfo
         {
             try
             {
-                if (rdb_Active.Checked == null || rdb_Inactive.Checked == null || txt_FirstName.Text=="" ||txt_Name.Text==""||txt_NationalCode.Text=="")
+                if (rdb_Active.Checked == null || rdb_Inactive.Checked == null || txt_FirstName.Text == "" || txt_Name.Text == "" || txt_NationalCode.Text == "")
                 {
                     MessageBox.Show("اطلاعات مورد نیاز را تکمیل کنید");
                 }
                 else
                 {
                     var id = int.Parse(((DataRowView)table_045_PersonInfoBindingSource.CurrencyManager.Current)["ColumnId"].ToString());
-                    bool tagVerify = Convert.ToBoolean( ClDoc.ExScalar(ConBase.ConnectionString, string.Format("select cast(case when exists (select 1 from [dbo].[Table_045_PersonInfo] where Column148=N'{0}' and ColumnId <> {1}) then 0 else 1 end as bit)", txtTag.Text, id)));
+                    bool tagVerify = Convert.ToBoolean(ClDoc.ExScalar(ConBase.ConnectionString, string.Format("select cast(case when exists (select 1 from [dbo].[Table_045_PersonInfo] where Column148=N'{0}' and ColumnId <> {1}) then 0 else 1 end as bit)", txtTag.Text, id)));
 
                     if (tagVerify)
                     {
-                        if(tagVerify.Equals(false))
+                        if (tagVerify.Equals(false))
                         {
                             MessageBox.Show("تگ وارد شده تکراری می باشد");
                             return;
@@ -174,13 +175,24 @@ namespace PCLOR._00_BaseInfo
                     this.table_045_PersonInfoTableAdapter.Update(dataSet_10_PersonInfo.Table_045_PersonInfo);
                     this.table_045_PersonScopeTableAdapter.Update(dataSet_10_PersonInfo.Table_045_PersonScope);
                     this.table_040_PersonGroupsTableAdapter.Update(dataSet_10_PersonInfo.Table_040_PersonGroups);
-  //table_045_PersonInfoTableAdapter.FillByNumber(dataSet_10_PersonInfo.Table_045_PersonInfo, int.Parse(txt_ID.Text));
+                    //table_045_PersonInfoTableAdapter.FillByNumber(dataSet_10_PersonInfo.Table_045_PersonInfo, int.Parse(txt_ID.Text));
                     dataSet_10_PersonInfo.EnforceConstraints = true;
-
-                  
+                    if (!string.IsNullOrWhiteSpace(txtTag.Text.Trim()))
+                    {
+                        using (IDbConnection db = new SqlConnection(ConBase.ConnectionString))
+                        {
+                            var query = $@"
+                                               Insert into PCLOR_1_1400.dbo.Table_135_RFIDPerson
+                                               (Person,CodeRFID)
+                                               select ColumnId,{txtTag.Text}
+                                               from Table_045_PersonInfo
+                                               where ColumnId = (select MAX(ColumnId) from Table_045_PersonInfo)";
+                            db.Execute(query, null, commandType: CommandType.Text);
+                        }
+                    }
                     MessageBox.Show("اطلاعات با موفقیت ذخیره شد");
                     bt_New.Enabled = true;
-                  
+
                 }
             }
             catch (System.Data.SqlClient.SqlException es)
@@ -203,15 +215,15 @@ namespace PCLOR._00_BaseInfo
 
         private void bt_Delte_Click(object sender, EventArgs e)
         {
-           
-           if (DialogResult.Yes == MessageBox.Show("آیا مایل به حذف این شخص هستید؟", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign))
-                    {
-                        if (Convert.ToInt32(gridEX1.CurrentRow.RowIndex) >= 0)
-                        {
-                            try
-                            {
 
-                                DataTable dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT     dbo.Table_020_HeaderReciptClothRow.CodeCustomer
+            if (DialogResult.Yes == MessageBox.Show("آیا مایل به حذف این شخص هستید؟", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign))
+            {
+                if (Convert.ToInt32(gridEX1.CurrentRow.RowIndex) >= 0)
+                {
+                    try
+                    {
+
+                        DataTable dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT     dbo.Table_020_HeaderReciptClothRow.CodeCustomer
                             FROM         dbo.Table_020_DetailReciptClothRaw INNER JOIN
                              dbo.Table_020_HeaderReciptClothRow ON dbo.Table_020_DetailReciptClothRaw.FK = dbo.Table_020_HeaderReciptClothRow.ID
                             WHERE     (dbo.Table_020_HeaderReciptClothRow.CodeCustomer = " + gridEX1.GetValue("ColumnId") + @")
@@ -222,7 +234,7 @@ namespace PCLOR._00_BaseInfo
                                 WHERE     (Table_025_HederOrderColor.CodeCustomer = " + gridEX1.GetValue("ColumnId") + ")");
 
 
-                                DataTable dtCheck = ClDoc.ReturnTable(ConPACNT, @"select tbl.*,
+                        DataTable dtCheck = ClDoc.ReturnTable(ConPACNT, @"select tbl.*,
 PERP_MAIN.dbo.Table_000_OrgInfo.Column01  as  CompName,
 PERP_MAIN.dbo.Table_000_OrgInfo.Column00 as Codecomp from (
  SELECT name,SUBSTRING(Name,7,(CHARINDEX('_',Name,7)-7)) as code 
@@ -231,34 +243,34 @@ PERP_MAIN.dbo.Table_000_OrgInfo.Column00 as Codecomp from (
  where code=" + Class_BasicOperation._OrgCode + "");
 
 
-                                if (dtCheck.Rows.Count > 0)
-                                {
-                                    foreach (DataRow dr in dtCheck.Rows)
-                                    {
-                                        CheckRelation.PersonInSanad(int.Parse(
-                                                ((DataRowView)this.table_045_PersonInfoBindingSource.CurrencyManager.Current)["ColumnId"].ToString())
-                                                , dr[0].ToString());
-                                    }
-                                }
-
-                                if (dt.Rows.Count > 0)
-                                {
-                                    MessageBox.Show("برای این شخص کارت تولید ثبت شده است امکان حذف آن را ندارید");
-                                    return;
-                                }
-                                else
-                                {
-                                    table_045_PersonInfoBindingSource.RemoveCurrent();
-                                    table_045_PersonInfoBindingSource.EndEdit();
-                                    table_045_PersonInfoTableAdapter.Update(dataSet_10_PersonInfo.Table_045_PersonInfo);
-                                    Class_BasicOperation.ShowMsg("", "شخص مورد نظر حذف گردید", Class_BasicOperation.MessageType.Information);
-                                }
+                        if (dtCheck.Rows.Count > 0)
+                        {
+                            foreach (DataRow dr in dtCheck.Rows)
+                            {
+                                CheckRelation.PersonInSanad(int.Parse(
+                                        ((DataRowView)this.table_045_PersonInfoBindingSource.CurrencyManager.Current)["ColumnId"].ToString())
+                                        , dr[0].ToString());
                             }
-                            catch (Exception ex)
-                            { Class_BasicOperation.CheckExceptionType(ex, this.Name); }
                         }
+
+                        if (dt.Rows.Count > 0)
+                        {
+                            MessageBox.Show("برای این شخص کارت تولید ثبت شده است امکان حذف آن را ندارید");
+                            return;
+                        }
+                        else
+                        {
+                            table_045_PersonInfoBindingSource.RemoveCurrent();
+                            table_045_PersonInfoBindingSource.EndEdit();
+                            table_045_PersonInfoTableAdapter.Update(dataSet_10_PersonInfo.Table_045_PersonInfo);
+                            Class_BasicOperation.ShowMsg("", "شخص مورد نظر حذف گردید", Class_BasicOperation.MessageType.Information);
+                        }
+                    }
+                    catch (Exception ex)
+                    { Class_BasicOperation.CheckExceptionType(ex, this.Name); }
+                }
             }
-                
+
         }
 
         private void txt_Code_KeyPress(object sender, KeyPressEventArgs e)
@@ -270,14 +282,14 @@ PERP_MAIN.dbo.Table_000_OrgInfo.Column00 as Codecomp from (
                     Class_BasicOperation.isEnter(e.KeyChar);
                 else if (!char.IsControl(e.KeyChar))
                     ((Janus.Windows.GridEX.EditControls.MultiColumnCombo)sender).DroppedDown = true;
-               
+
 
             }
             else
             {
                 if (e.KeyChar == 13)
                     Class_BasicOperation.isEnter(e.KeyChar);
-              
+
 
             }
         }
@@ -291,7 +303,7 @@ PERP_MAIN.dbo.Table_000_OrgInfo.Column00 as Codecomp from (
             }
             else
                 if (txt_Code.Text != "" && txt_Name.Text.Trim() != "")
-                    cmb_Scope.Enabled = true;
+                cmb_Scope.Enabled = true;
 
         }
         private void cmb_Scope_Enter(object sender, EventArgs e)
@@ -379,7 +391,7 @@ PERP_MAIN.dbo.Table_000_OrgInfo.Column00 as Codecomp from (
 
         private void bt_Print_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void Frm_40_PersonInfo_KeyDown(object sender, KeyEventArgs e)
@@ -436,9 +448,9 @@ PERP_MAIN.dbo.Table_000_OrgInfo.Column00 as Codecomp from (
             gridEX1.RemoveFilters();
         }
 
-      
 
-     
-       
+
+
+
     }
 }
