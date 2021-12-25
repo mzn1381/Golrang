@@ -350,14 +350,13 @@ namespace PCLOR.Product
 
 
                 Recipt();
-                ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, @"update Table_80_Setting set value=" + mlt_Ware.Value + " where Id=31 ;" +
-                    " update Table_115_Product set RFID=" + idrfid + ",Operator=" + lblOperationCode.Text +
-                    //",TimeLastProduct='" + txt_Lastdate.Text + 
-                    "'" +
-                    //",TimeLastShift='" + txt_Lastshift.Text + 
-                    "',ReportDescriptin='" + txt_Description.Text +
-                    "' where id in (" + ID.TrimEnd(',') + ") ");
+                ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, $@"update Table_80_Setting set value= N'{mlt_Ware.Value}'  where Id=31 
+                     update Table_115_Product set RFID={idrfid} ,Operator ={lblOperationCode.Text.Trim()}
+                    ,ReportDescriptin= N'{txt_Description.Text.Trim()}' 
+                     where id in ({ID.TrimEnd(',')}) ");
                 //+
+                //",TimeLastShift='" + txt_Lastshift.Text + 
+                //",TimeLastProduct='" + txt_Lastdate.Text + 
                 //" Update Table_100_ProgramMachine set Printer=N'" + uiComboBox1.Text + "' where ID=" + mlt_Num_Programer.Value);
 
                 Class_BasicOperation.ShowMsg("", "اطلاعات با موفقیت دخیره شد" + Environment.NewLine + "رسید به شماره" + ResidNum + "با موفقیت صدور شد", Class_BasicOperation.MessageType.Information);
@@ -378,6 +377,13 @@ namespace PCLOR.Product
             {
                 try
                 {
+                    var queryGetcommodity = $@"  SELECT c.CodeCommondity
+                                                 from PCLOR_1_1400.dbo.Table_60_SpecsTechnical as s inner join 
+                                                 PCLOR_1_1400.dbo.Table_005_TypeCloth as c on s.FabricType = c.ID
+                                                 where s.ID={DeviceId}
+                                                    ";
+                    var codeCommodity = db.QueryFirstOrDefault<int>(queryGetcommodity, null
+                        , commandType: CommandType.Text);
                     ResidNum = ClDoc.MaxNumber(ConWare.ConnectionString, "Table_011_PwhrsReceipt", "Column01");
                     string commandtxt = string.Empty;
                     //commandtxt = @"Declare   @Key   int";
@@ -394,7 +400,7 @@ namespace PCLOR.Product
                                                                             [column11]
                                                                  
                                                                           ) VALUES (  {ResidNum} , N'{DateTime.Now.ToShamsi()}'  , {mlt_Ware.Value.ToString()},  {mlt_Function.Value.ToString()} ,
-                                                                        {(string.IsNullOrEmpty(lblOperationCode.Text) ? "N''": lblOperationCode.Text)},N'رسید صادره بابت رسید پارچه خام شماره {txt_Number.Text}' , N'{Class_BasicOperation._UserName}' ,getdate(), N'{Class_BasicOperation._UserName}', getdate() );
+                                                                        {(string.IsNullOrEmpty(lblOperationCode.Text) ? "N''" : lblOperationCode.Text)},N'رسید صادره بابت رسید پارچه خام شماره {txt_Number.Text}' , N'{Class_BasicOperation._UserName}' ,getdate(), N'{Class_BasicOperation._UserName}', getdate() );
                                                                        select  Max(columnid)  from Table_011_PwhrsReceipt";
                     var Key = db.QueryFirstOrDefault<int>(commandtxt, null, commandType: CommandType.Text);
                     string query = "";
@@ -408,6 +414,7 @@ namespace PCLOR.Product
                             ID = ID + Rows["ID"] + ",";
                             query = $@" INSERT INTO Table_012_Child_PwhrsReceipt (
                                     [column01]
+                                    ,[column02]
                                    ,[column03]
                                    ,[column06]
                                    ,[column07]
@@ -425,7 +432,7 @@ namespace PCLOR.Product
                                    ,[Column37]
                            ) VALUES (
   
-               {Key},1,1,1,0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}' ,getdate(),0,0, N'{Rows["Barcode"].ToString()}' , {Rows["Weight"]} , {Rows["Weight"]} , N'{Rows["Machine"] }' );";
+               {Key},{codeCommodity},1,1,1,0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}' ,getdate(),0,0, N'{Rows["Barcode"].ToString()}' , {Rows["Weight"]} , {Rows["Weight"]} , N'{Rows["Machine"] }' );";
                             db.Execute(query, null, commandType: CommandType.Text);
                         }
                     }
@@ -749,6 +756,46 @@ namespace PCLOR.Product
 
         private void uiButton1_Click_1(object sender, EventArgs e)
         {
+
+        }
+
+        private void txtCodeTag_TextChanged(object sender, EventArgs e)
+        {
+
+
+
+
+
+        }
+
+        private void txtCodeTag_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                var t = (TextBox)sender;
+                var text = t.Text.Trim();
+                using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+                {
+                    try
+                    {
+                        var query = $@"
+              select p.Column01 as Code,p.Column04+' '+ p.Column05 as Name
+              from PCLOR_1_1400.dbo.Table_135_RFIDPerson as r
+              inner join PBASE_1.dbo.Table_045_PersonInfo as p
+              on p.ColumnId = r.Person
+              where r.CodeRFID =N'{text}'";
+                        var model = db.QueryFirstOrDefault<PersonInfoViewModel>(query, null, commandType: CommandType.Text);
+                        lblOperationCode.Text = model.Code;
+                        lblOperatorName.Text = model.Name;
+                        btn_Save_Click(sender, e);
+                    }
+                    catch (Exception es)
+                    {
+                        MessageBox.Show(es.Message);
+                    }
+
+                }
+            }
 
         }
     }

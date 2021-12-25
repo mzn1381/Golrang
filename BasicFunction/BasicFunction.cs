@@ -19,7 +19,8 @@ namespace PCLOR.MyBasicFunction
             using (IDbConnection db = new SqlConnection(connection))
             {
                 var points = db.Query<MachinePoint>("SELECT X, Y, ID ,namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1", null, commandType: CommandType.Text).OrderBy(x => x.Y).ToList();
-              var   machines = ClDoc.ReturnTable(ConPCLOR, @"SELECT ID, Code, namemachine as Namemachine,namemachine as Name ,  status as Status, Specstechnical as Description FROM [dbo].[Table_60_SpecsTechnical]  where  status=1").ToList<Machine>();
+              var   machines = ClDoc.ReturnTable(ConPCLOR, @"SELECT ID, Code, namemachine as Namemachine,namemachine as Name , TextureLimit,RoundStop,status as Status, Specstechnical ,Description,FabricType,YarnType,DeviceMark,X,Y ,Area, Gap,teeny FROM [dbo].[Table_60_SpecsTechnical]  where  status=1").ToList<Machine>();
+                var TT = machines.Where(c => c.TextureLimit == 0);
                 foreach (var item in machines)
                 {
                     Button button = new Button();
@@ -31,6 +32,10 @@ namespace PCLOR.MyBasicFunction
                     button.Width = 55;
                     button.Height = 55;
                     button.Click += Button_Click;
+                    if (item.TextureLimit==0)
+                    {
+                        button.BackColor = Color.IndianRed;
+                    }
                     Controls.Add(button);
                 }
 

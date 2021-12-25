@@ -184,7 +184,7 @@ namespace PCLOR._00_BaseInfo
                             var query = $@"
                                                Insert into PCLOR_1_1400.dbo.Table_135_RFIDPerson
                                                (Person,CodeRFID)
-                                               select ColumnId,{txtTag.Text}
+                                               select ColumnId,N'{txtTag.Text}'
                                                from Table_045_PersonInfo
                                                where ColumnId = (select MAX(ColumnId) from Table_045_PersonInfo)";
                             db.Execute(query, null, commandType: CommandType.Text);

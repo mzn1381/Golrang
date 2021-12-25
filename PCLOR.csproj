@@ -384,6 +384,7 @@
     <Compile Include="Models\FabricTypeDropDownViewModel.cs" />
     <Compile Include="Models\Machine.cs" />
     <Compile Include="Models\MachinePoint.cs" />
+    <Compile Include="Models\PersonInfoViewModel.cs" />
     <Compile Include="Models\ProductSourceViewModel.cs" />
     <Compile Include="Models\YarnTypeDropDownViewModel.cs" />
     <Compile Include="PCLOR_1_1400DataSet.Designer.cs">

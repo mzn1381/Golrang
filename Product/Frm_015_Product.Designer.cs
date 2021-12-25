@@ -57,8 +57,9 @@ namespace PCLOR.Product
             this.uiPanel1 = new Janus.Windows.UI.Dock.UIPanel();
             this.uiPanel1Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
             this.gridEX2 = new Janus.Windows.GridEX.GridEX();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.table_115_ProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pCLOR_1_1400DataSet = new PCLOR.PCLOR_1_1400DataSet();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txt_Description = new System.Windows.Forms.TextBox();
             this.txt_Number = new System.Windows.Forms.TextBox();
             this.table_120_TypeCottonBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -111,7 +112,6 @@ namespace PCLOR.Product
             this.lblTeeny = new System.Windows.Forms.TextBox();
             this.lblArea = new System.Windows.Forms.TextBox();
             this.lblShift = new System.Windows.Forms.TextBox();
-            this.pCLOR_1_1400DataSet = new PCLOR.PCLOR_1_1400DataSet();
             this.table_115_ProductTableAdapter1 = new PCLOR.PCLOR_1_1400DataSetTableAdapters.Table_115_ProductTableAdapter();
             label17 = new System.Windows.Forms.Label();
             label16 = new System.Windows.Forms.Label();
@@ -132,6 +132,7 @@ namespace PCLOR.Product
             this.uiPanel1Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridEX2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_115_ProductBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pCLOR_1_1400DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_120_TypeCottonBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_125_DetailTypeCottonBindingSource)).BeginInit();
@@ -147,7 +148,6 @@ namespace PCLOR.Product
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mlt_Ware)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mlt_Function)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCLOR_1_1400DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label17
@@ -432,6 +432,16 @@ namespace PCLOR.Product
             this.gridEX2.UseCompatibleTextRendering = false;
             this.gridEX2.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
             // 
+            // table_115_ProductBindingSource
+            // 
+            this.table_115_ProductBindingSource.DataMember = "Table_115_Product";
+            this.table_115_ProductBindingSource.DataSource = this.pCLOR_1_1400DataSet;
+            // 
+            // pCLOR_1_1400DataSet
+            // 
+            this.pCLOR_1_1400DataSet.DataSetName = "PCLOR_1_1400DataSet";
+            this.pCLOR_1_1400DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -445,11 +455,6 @@ namespace PCLOR.Product
             this.textBox1.TabIndex = 189;
             this.textBox1.Text = "0000";
             this.textBox1.Visible = false;
-            // 
-            // table_115_ProductBindingSource
-            // 
-            this.table_115_ProductBindingSource.DataMember = "Table_115_Product";
-            this.table_115_ProductBindingSource.DataSource = this.pCLOR_1_1400DataSet;
             // 
             // txt_Description
             // 
@@ -655,7 +660,8 @@ namespace PCLOR.Product
             this.txtCodeTag.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCodeTag.Size = new System.Drawing.Size(599, 67);
             this.txtCodeTag.TabIndex = 0;
-            this.txtCodeTag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Description_KeyPress);
+            this.txtCodeTag.TextChanged += new System.EventHandler(this.txtCodeTag_TextChanged);
+            this.txtCodeTag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodeTag_KeyPress);
             // 
             // uiGroupBox2
             // 
@@ -966,11 +972,6 @@ namespace PCLOR.Product
             this.lblShift.Size = new System.Drawing.Size(100, 24);
             this.lblShift.TabIndex = 217;
             // 
-            // pCLOR_1_1400DataSet
-            // 
-            this.pCLOR_1_1400DataSet.DataSetName = "PCLOR_1_1400DataSet";
-            this.pCLOR_1_1400DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // table_115_ProductTableAdapter1
             // 
             this.table_115_ProductTableAdapter1.ClearBeforeFill = true;
@@ -1040,6 +1041,7 @@ namespace PCLOR.Product
             this.uiPanel1Container.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridEX2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_115_ProductBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pCLOR_1_1400DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_120_TypeCottonBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_125_DetailTypeCottonBindingSource)).EndInit();
@@ -1059,7 +1061,6 @@ namespace PCLOR.Product
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mlt_Ware)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mlt_Function)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCLOR_1_1400DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
