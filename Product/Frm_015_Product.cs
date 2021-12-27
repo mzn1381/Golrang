@@ -29,7 +29,6 @@ namespace PCLOR.Product
         private int clothType = 0;
         private int cottonType = 0;
         bool Machine = false;
-        List<object> src = new List<object>();
         private void OpenPort()
         {
             bool error = false;
@@ -111,6 +110,13 @@ namespace PCLOR.Product
 
             if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 146))
             {
+                if (lblTextureLimit.Text.Trim().ToLower() == "0")
+                {
+                    MessageBox.Show("امکان ثبت تولید برای دستگاه وچد ندارد زیرا حد بافت به صفر رشیده است لطفا جهت ادامه ی ثبت تولید حد بافت دستگاه را افزیش دهید ", "اخطار", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+                    this.Close();
+                    return;
+                }
+
 
                 //if (mlt_Num_Programer.Text == "" || mlt_Num_Programer.Text == "0")
                 //{
@@ -122,17 +128,16 @@ namespace PCLOR.Product
                 //    Class_BasicOperation.ShowMsg("", "لطفا شیفت کاری مورد نظر را وارد نمایید", Class_BasicOperation.MessageType.None);
 
                 //}
-                if (txt_weight.Text == "" || txt_weight.Text == "0")
+                if (string.IsNullOrEmpty(txt_weight.Text)|| txt_weight.Text == "0")
                 {
                     Class_BasicOperation.ShowMsg("", "لطفا وزن مورد نظر را وارد نمایید", Class_BasicOperation.MessageType.None);
-
+                    return;
                 }
                 table_115_ProductBindingSource.AddNew();
                 //mlt_Machine.Value = _Id;
                 chek_TowPerson.Checked = false;
                 Int64 Barcode = Convert.ToInt64(ClDoc.ExScalar(ConPCLOR.ConnectionString, "select isnull((select max(Barcode) from Table_115_Product),9999)+1"));
                 //txt_Barcode.Text = Barcode.ToString();
-
                 double weigh = Convert.ToDouble(txt_weight.Text) / 1000;
 
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Barcode"] = Barcode;
@@ -171,17 +176,18 @@ namespace PCLOR.Product
                 //    ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, @"update Table_115_Product set Number=" + txt_Number.Text + " where Id=" + txt_Id.Text);
 
                 //}
-                src.Add((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current);
                 table_115_ProductBindingSource.EndEdit();
                 gridEX2.MoveLast();
                 table_115_ProductTableAdapter1.Update(pCLOR_1_1400DataSet.Table_115_Product);
-                //table_115_ProductTableAdapter.Update(dataSet_05_Product.Table_115_Product);
+                DecreaseTextureLimit(DeviceId);
                 //table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product,Convert.ToInt32 (mlt_Num_Programer.Value));
                 txt_weight.Text = "0";
                 txt_weight.Focus();
                 ch_Auto.Enabled = true;
 
             }
+
+
             else
             {
                 Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
@@ -785,6 +791,11 @@ namespace PCLOR.Product
               on p.ColumnId = r.Person
               where r.CodeRFID =N'{text}'";
                         var model = db.QueryFirstOrDefault<PersonInfoViewModel>(query, null, commandType: CommandType.Text);
+                        if (model is null || string.IsNullOrEmpty(model.Name) || string.IsNullOrEmpty(model.Name))
+                        {
+                            MessageBox.Show("برای کارت وارد شده کاربری ثبت نشده است لطفا ابتدا کاربر مورد نظر برای کارت را وارد کنید");
+                            return;
+                        }
                         lblOperationCode.Text = model.Code;
                         lblOperatorName.Text = model.Name;
                         btn_Save_Click(sender, e);
@@ -795,6 +806,29 @@ namespace PCLOR.Product
                     }
 
                 }
+            }
+
+        }
+
+        public void DecreaseTextureLimit(int DeviceId)
+        {
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+                try
+                {
+                    var query = $@"
+                                  update Table_60_SpecsTechnical Set
+                                  TextureLimit = TextureLimit-1
+                                  where ID = {DeviceId}";
+
+                    db.Execute(query, null, commandType: CommandType.Text);
+                    lblTextureLimit.Text = (Convert.ToInt64(lblTextureLimit.Text) - 1).ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
             }
 
         }

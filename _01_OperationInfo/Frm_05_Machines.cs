@@ -31,7 +31,7 @@ namespace PCLOR._01_OperationInfo
             InitializeComponent();
         }
 
-        private void Frm_05_Machines_Load(object sender, EventArgs e)
+        private  void Frm_05_Machines_Load(object sender, EventArgs e)
         {
             if (Status == Frm_05_Machine_Status.RegisterDetailForDevice)
                 this.Text = "لیست دستگاه ها برای ثبت اظهارات";
@@ -41,11 +41,11 @@ namespace PCLOR._01_OperationInfo
             if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 147))
                 button1.Visible = true;
             if (Status == Frm_05_Machine_Status.EditOrViewDevice)
-                BasicFunction.LoadDevices(ButtonEditViewDetail_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls);
+                BasicFunction.LoadDevices(ButtonEditViewDetail_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls,Status);
             else if (Status == Frm_05_Machine_Status.RegisterDetailForDevice)
-                BasicFunction.LoadDevices(ButtonRegisterDescriptionDevice_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls);
+                BasicFunction.LoadDevices(ButtonRegisterDescriptionDevice_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls,Status);
             else if (Status == Frm_05_Machine_Status.CreateProductForDevice)
-                BasicFunction.LoadDevices(ButtonCreateProduct_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls);
+                BasicFunction.LoadDevices(ButtonCreateProduct_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls,Status);
         }
 
 
@@ -74,7 +74,10 @@ namespace PCLOR._01_OperationInfo
             form_60.ShowDialog();
         }
 
-
+        public static void GetMessageForTextureLimit(object o, EventArgs args)
+        {
+            MessageBox.Show("حد بافت دتگاه صفر می باشد و امکان ثبت تولید نیست لطفا حد بافت را افزایش دهید ", "اخطار", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             var buttons = this.Controls.OfType<Button>().ToList();
@@ -93,6 +96,7 @@ namespace PCLOR._01_OperationInfo
                         break;
                     case Frm_05_Machine_Status.CreateProductForDevice:
                         item.Click -= ButtonCreateProduct_Click;
+                        item.Click -= GetMessageForTextureLimit;
                         break;
                     default:
                         break;
