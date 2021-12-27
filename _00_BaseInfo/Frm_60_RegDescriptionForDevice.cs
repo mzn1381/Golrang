@@ -29,6 +29,18 @@ namespace PCLOR._00_BaseInfo
         private void Frm_60_RegDescriptionForDevice_Load(object sender, EventArgs e)
         {
             txtDescForDevice.Text = GetDescForDevice(DeviceId);
+            try
+            {
+                SaveDescriptioForDevie();
+                MessageBox.Show("اظهارات با موفقیت ذخیره شد");
+                this.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                this.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

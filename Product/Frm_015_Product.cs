@@ -128,7 +128,7 @@ namespace PCLOR.Product
                 //    Class_BasicOperation.ShowMsg("", "لطفا شیفت کاری مورد نظر را وارد نمایید", Class_BasicOperation.MessageType.None);
 
                 //}
-                if (string.IsNullOrEmpty(txt_weight.Text)|| txt_weight.Text == "0")
+                if (string.IsNullOrEmpty(txt_weight.Text) || txt_weight.Text == "0")
                 {
                     Class_BasicOperation.ShowMsg("", "لطفا وزن مورد نظر را وارد نمایید", Class_BasicOperation.MessageType.None);
                     return;

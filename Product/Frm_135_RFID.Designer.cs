@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_135_RFID));
             Janus.Windows.GridEX.GridEXLayout gridEX2_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.table_135_RFIDPersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet_05_Product = new PCLOR.Product.DataSet_05_Product();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -46,16 +48,14 @@
             this.btn_Save = new System.Windows.Forms.ToolStripButton();
             this.uiPanelManager1 = new Janus.Windows.UI.Dock.UIPanelManager(this.components);
             this.gridEX2 = new Janus.Windows.GridEX.GridEX();
-            this.table_135_RFIDPersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet_05_Product = new PCLOR.Product.DataSet_05_Product();
             this.table_135_RFIDPersonTableAdapter = new PCLOR.Product.DataSet_05_ProductTableAdapters.Table_135_RFIDPersonTableAdapter();
             this.tableAdapterManager = new PCLOR.Product.DataSet_05_ProductTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridEX2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_135_RFIDPersonBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_05_Product)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEX2)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -67,6 +67,7 @@
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -88,14 +89,24 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(624, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(624, 31);
             this.bindingNavigator1.TabIndex = 3;
             this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // table_135_RFIDPersonBindingSource
+            // 
+            this.table_135_RFIDPersonBindingSource.DataMember = "Table_135_RFIDPerson";
+            this.table_135_RFIDPersonBindingSource.DataSource = this.dataSet_05_Product;
+            // 
+            // dataSet_05_Product
+            // 
+            this.dataSet_05_Product.DataSetName = "DataSet_05_Product";
+            this.dataSet_05_Product.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(46, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -105,7 +116,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -114,13 +125,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -135,7 +146,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -143,7 +154,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -152,34 +163,34 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_Delete
             // 
             this.btn_Delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_Delete.Image")));
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.RightToLeftAutoMirrorImage = true;
-            this.btn_Delete.Size = new System.Drawing.Size(50, 22);
+            this.btn_Delete.Size = new System.Drawing.Size(61, 28);
             this.btn_Delete.Text = "حذف";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_Save
             // 
             this.btn_Save.Image = ((System.Drawing.Image)(resources.GetObject("btn_Save.Image")));
             this.btn_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(53, 22);
+            this.btn_Save.Size = new System.Drawing.Size(66, 28);
             this.btn_Save.Text = "ذخیره";
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
@@ -206,14 +217,14 @@
             this.gridEX2.FilterRowUpdateMode = Janus.Windows.GridEX.FilterRowUpdateMode.WhenValueChanges;
             this.gridEX2.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid;
             this.gridEX2.GroupByBoxVisible = false;
-            this.gridEX2.Location = new System.Drawing.Point(3, 28);
+            this.gridEX2.Location = new System.Drawing.Point(3, 34);
             this.gridEX2.Name = "gridEX2";
             this.gridEX2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.gridEX2.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX2.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.ScrollBars = Janus.Windows.GridEX.ScrollBars.Both;
             this.gridEX2.SettingsKey = "Frm_15_InfoServiceGrid_61";
-            this.gridEX2.Size = new System.Drawing.Size(618, 347);
+            this.gridEX2.Size = new System.Drawing.Size(618, 341);
             this.gridEX2.TabIndex = 8;
             this.gridEX2.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -224,16 +235,6 @@
             this.gridEX2.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
             this.gridEX2.CellValueChanged += new Janus.Windows.GridEX.ColumnActionEventHandler(this.gridEX2_CellValueChanged);
             this.gridEX2.Error += new Janus.Windows.GridEX.ErrorEventHandler(this.gridEX2_Error);
-            // 
-            // table_135_RFIDPersonBindingSource
-            // 
-            this.table_135_RFIDPersonBindingSource.DataMember = "Table_135_RFIDPerson";
-            this.table_135_RFIDPersonBindingSource.DataSource = this.dataSet_05_Product;
-            // 
-            // dataSet_05_Product
-            // 
-            this.dataSet_05_Product.DataSetName = "DataSet_05_Product";
-            this.dataSet_05_Product.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // table_135_RFIDPersonTableAdapter
             // 
@@ -249,12 +250,13 @@
             this.tableAdapterManager.Table_120_TypeCottonTableAdapter = null;
             this.tableAdapterManager.Table_125_DetailTypeCottonTableAdapter = null;
             this.tableAdapterManager.Table_126_DetailTypeCottonProductTableAdapter = null;
+            this.tableAdapterManager.Table_130_TransferBranchTableAdapter = null;
             this.tableAdapterManager.Table_135_RFIDPersonTableAdapter = this.table_135_RFIDPersonTableAdapter;
             this.tableAdapterManager.UpdateOrder = PCLOR.Product.DataSet_05_ProductTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // Frm_135_RFID
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 378);
             this.Controls.Add(this.gridEX2);
@@ -268,10 +270,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridEX2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_135_RFIDPersonBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_05_Product)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEX2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
