@@ -36,9 +36,12 @@ namespace PCLOR._00_BaseInfo
         {
             if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 162))
             {
-            table_120_TypeCottonBindingSource.AddNew();
-            txt_Dat.Text= FarsiLibrary.Utils.PersianDate.Now.ToString("YYYY/MM/DD");
-            mlt_Commodity.Focus();
+                table_120_TypeCottonBindingSource.AddNew();
+                txt_Dat.Text = FarsiLibrary.Utils.PersianDate.Now.ToString("YYYY/MM/DD");
+                mlt_Commodity.Focus();
+                txtDescription1.Text = string.Empty;
+                txtDescription2.Text = string.Empty;
+                txtBrandName.Text = string.Empty;
             }
             else
             {
@@ -52,6 +55,9 @@ namespace PCLOR._00_BaseInfo
             {
                 txt_Number.Text = ClDoc.MaxNumber(Properties.Settings.Default.PCLOR, " Table_120_TypeCotton", "Code").ToString();
             }
+            ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["BrandName"] = txtBrandName.Text;
+            ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["Description1"] = txtDescription1.Text;
+            ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["Description2"] = txtDescription2.Text;
             table_120_TypeCottonBindingSource.EndEdit();
             table_120_TypeCottonTableAdapter.Update(dataSet_05_Product.Table_120_TypeCotton);
             Class_BasicOperation.ShowMsg("", "اطلاعات با موفقیت  دخیره شد", Class_BasicOperation.MessageType.Information);
@@ -120,7 +126,33 @@ namespace PCLOR._00_BaseInfo
 
         private void mlt_Commodity_Leave(object sender, EventArgs e)
         {
-           Class_BasicOperation.MultiColumnsRemoveFilter(sender);
+            Class_BasicOperation.MultiColumnsRemoveFilter(sender);
+
+        }
+
+        private void gridEX1_FormattingRow(object sender, Janus.Windows.GridEX.RowLoadEventArgs e)
+        {
+
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.table_120_TypeCottonTableAdapter.FillBy(this.dataSet_05_Product.Table_120_TypeCotton);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void gridEX1_SelectionChanged(object sender, EventArgs e)
+        {
+            txtBrandName.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["BrandName"].ToString();
+            txtDescription1.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["Description1"].ToString();
+            txtDescription2.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["Description2"].ToString();
 
         }
     }

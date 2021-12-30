@@ -60,6 +60,12 @@ namespace PCLOR._00_BaseInfo
             this.label11 = new System.Windows.Forms.Label();
             this.txtDeviceDescription = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.checkIsInfinitiveTextureLimit = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.numericSpeed = new System.Windows.Forms.NumericUpDown();
+            this.label15 = new System.Windows.Forms.Label();
+            this.checkIsDeffective = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericGap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listFabricType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericArea)).BeginInit();
@@ -67,6 +73,7 @@ namespace PCLOR._00_BaseInfo
             ((System.ComponentModel.ISupportInitialize)(this.numericTeeny)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericRoundStop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericTextureLimit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericSpeed)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDeciveMark
@@ -96,7 +103,7 @@ namespace PCLOR._00_BaseInfo
             // Status
             // 
             this.Status.AutoSize = true;
-            this.Status.Location = new System.Drawing.Point(178, 295);
+            this.Status.Location = new System.Drawing.Point(188, 300);
             this.Status.Name = "Status";
             this.Status.Size = new System.Drawing.Size(18, 17);
             this.Status.TabIndex = 3;
@@ -124,7 +131,7 @@ namespace PCLOR._00_BaseInfo
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(467, 480);
+            this.btnSave.Location = new System.Drawing.Point(465, 526);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(127, 44);
             this.btnSave.TabIndex = 6;
@@ -212,7 +219,7 @@ namespace PCLOR._00_BaseInfo
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(49, 480);
+            this.btnExit.Location = new System.Drawing.Point(47, 526);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(127, 44);
             this.btnExit.TabIndex = 6;
@@ -253,7 +260,7 @@ namespace PCLOR._00_BaseInfo
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(212, 293);
+            this.label9.Location = new System.Drawing.Point(219, 293);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 18);
             this.label9.TabIndex = 1;
@@ -317,7 +324,7 @@ namespace PCLOR._00_BaseInfo
             // 
             // txtDeviceDescription
             // 
-            this.txtDeviceDescription.Location = new System.Drawing.Point(37, 346);
+            this.txtDeviceDescription.Location = new System.Drawing.Point(35, 420);
             this.txtDeviceDescription.Multiline = true;
             this.txtDeviceDescription.Name = "txtDeviceDescription";
             this.txtDeviceDescription.Size = new System.Drawing.Size(499, 81);
@@ -327,27 +334,87 @@ namespace PCLOR._00_BaseInfo
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(542, 381);
+            this.label12.Location = new System.Drawing.Point(540, 455);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(111, 18);
             this.label12.TabIndex = 1;
             this.label12.Text = "اظهارات دستگاه ";
             this.label12.Click += new System.EventHandler(this.txtDeviceName_Click);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(212, 329);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(122, 18);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "حد بافت بی نهایت";
+            // 
+            // checkIsInfinitiveTextureLimit
+            // 
+            this.checkIsInfinitiveTextureLimit.AutoSize = true;
+            this.checkIsInfinitiveTextureLimit.Location = new System.Drawing.Point(188, 331);
+            this.checkIsInfinitiveTextureLimit.Name = "checkIsInfinitiveTextureLimit";
+            this.checkIsInfinitiveTextureLimit.Size = new System.Drawing.Size(18, 17);
+            this.checkIsInfinitiveTextureLimit.TabIndex = 3;
+            this.checkIsInfinitiveTextureLimit.UseVisualStyleBackColor = true;
+            this.checkIsInfinitiveTextureLimit.CheckedChanged += new System.EventHandler(this.checkIsInfinitiveTextureLimit_CheckedChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(558, 341);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(57, 18);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "سرعت ";
+            // 
+            // numericSpeed
+            // 
+            this.numericSpeed.Location = new System.Drawing.Point(414, 339);
+            this.numericSpeed.Name = "numericSpeed";
+            this.numericSpeed.Size = new System.Drawing.Size(138, 26);
+            this.numericSpeed.TabIndex = 2;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(212, 359);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(120, 18);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "دارای مشکل فنی";
+            // 
+            // checkIsDeffective
+            // 
+            this.checkIsDeffective.AutoSize = true;
+            this.checkIsDeffective.Location = new System.Drawing.Point(188, 361);
+            this.checkIsDeffective.Name = "checkIsDeffective";
+            this.checkIsDeffective.Size = new System.Drawing.Size(18, 17);
+            this.checkIsDeffective.TabIndex = 3;
+            this.checkIsDeffective.UseVisualStyleBackColor = true;
+            this.checkIsDeffective.CheckedChanged += new System.EventHandler(this.checkIsInfinitiveTextureLimit_CheckedChanged);
+            // 
             // Form_55_EditSpecsTechnical
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(667, 551);
+            this.ClientSize = new System.Drawing.Size(667, 595);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.listYarnType);
             this.Controls.Add(this.listFabricType);
+            this.Controls.Add(this.checkIsDeffective);
+            this.Controls.Add(this.checkIsInfinitiveTextureLimit);
             this.Controls.Add(this.Status);
+            this.Controls.Add(this.numericSpeed);
             this.Controls.Add(this.numericTextureLimit);
             this.Controls.Add(this.numericRoundStop);
             this.Controls.Add(this.numericTeeny);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.numericArea);
@@ -379,6 +446,7 @@ namespace PCLOR._00_BaseInfo
             ((System.ComponentModel.ISupportInitialize)(this.numericTeeny)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericRoundStop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericTextureLimit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericSpeed)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,5 +482,11 @@ namespace PCLOR._00_BaseInfo
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtDeviceDescription;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.CheckBox checkIsInfinitiveTextureLimit;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.NumericUpDown numericSpeed;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.CheckBox checkIsDeffective;
     }
 }

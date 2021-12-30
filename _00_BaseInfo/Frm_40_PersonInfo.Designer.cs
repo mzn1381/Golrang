@@ -140,7 +140,7 @@
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("307e518b-d41f-49e1-9faf-f3cc37d16590"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(320, 434), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("307e518b-d41f-49e1-9faf-f3cc37d16590"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(320, 430), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("307e518b-d41f-49e1-9faf-f3cc37d16590"), new System.Drawing.Point(680, 405), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.EndPanelInfo();
             // 
@@ -149,9 +149,9 @@
             this.uiPanel0.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.FloatingLocation = new System.Drawing.Point(680, 405);
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
-            this.uiPanel0.Location = new System.Drawing.Point(388, 30);
+            this.uiPanel0.Location = new System.Drawing.Point(388, 34);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(320, 434);
+            this.uiPanel0.Size = new System.Drawing.Size(320, 430);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "اشخاص معرفی شده";
             this.uiPanel0.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -189,7 +189,7 @@
             this.uiPanel0Container.Controls.Add(this.panel2);
             this.uiPanel0Container.Location = new System.Drawing.Point(5, 24);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(314, 409);
+            this.uiPanel0Container.Size = new System.Drawing.Size(314, 405);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // txt_Address
@@ -691,13 +691,13 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(711, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(711, 31);
             this.bindingNavigator1.TabIndex = 6;
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(46, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(46, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -707,7 +707,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             this.bindingNavigatorMoveFirstItem.Click += new System.EventHandler(this.bindingNavigatorMoveFirstItem_Click);
             // 
@@ -717,14 +717,14 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             this.bindingNavigatorMovePreviousItem.Click += new System.EventHandler(this.bindingNavigatorMovePreviousItem_Click);
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -739,7 +739,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -747,7 +747,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             this.bindingNavigatorMoveNextItem.Click += new System.EventHandler(this.bindingNavigatorMoveNextItem_Click);
             // 
@@ -757,14 +757,14 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             this.bindingNavigatorMoveLastItem.Click += new System.EventHandler(this.bindingNavigatorMoveLastItem_Click);
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // bt_Delete
             // 
@@ -773,7 +773,7 @@
             this.bt_Delete.Name = "bt_Delete";
             this.bt_Delete.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bt_Delete.RightToLeftAutoMirrorImage = true;
-            this.bt_Delete.Size = new System.Drawing.Size(61, 24);
+            this.bt_Delete.Size = new System.Drawing.Size(61, 28);
             this.bt_Delete.Text = "حذف";
             this.bt_Delete.ToolTipText = "Ctrl+D";
             this.bt_Delete.Click += new System.EventHandler(this.bt_Delte_Click);
@@ -781,7 +781,7 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // bt_Save
             // 
@@ -790,7 +790,7 @@
             this.bt_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bt_Save.Name = "bt_Save";
             this.bt_Save.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bt_Save.Size = new System.Drawing.Size(66, 24);
+            this.bt_Save.Size = new System.Drawing.Size(66, 28);
             this.bt_Save.Text = "ذخیره";
             this.bt_Save.ToolTipText = "Ctrl+S";
             this.bt_Save.Click += new System.EventHandler(this.bt_Save_Click);
@@ -798,7 +798,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bt_New
             // 
@@ -807,14 +807,14 @@
             this.bt_New.Name = "bt_New";
             this.bt_New.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bt_New.RightToLeftAutoMirrorImage = true;
-            this.bt_New.Size = new System.Drawing.Size(61, 24);
+            this.bt_New.Size = new System.Drawing.Size(61, 28);
             this.bt_New.Text = "جدید";
             this.bt_New.Click += new System.EventHandler(this.bt_New_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
             // 
             // bt_SendToExcel
             // 
@@ -824,7 +824,7 @@
             this.bt_SendToExcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bt_SendToExcel.Name = "bt_SendToExcel";
             this.bt_SendToExcel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bt_SendToExcel.Size = new System.Drawing.Size(29, 24);
+            this.bt_SendToExcel.Size = new System.Drawing.Size(29, 28);
             this.bt_SendToExcel.ToolTipText = "ارسال به Excel";
             this.bt_SendToExcel.Click += new System.EventHandler(this.bt_SendToExcel_Click);
             // 
@@ -855,9 +855,9 @@
             // 
             this.explorerBar1.Controls.Add(this.gridEX1);
             this.explorerBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.explorerBar1.Location = new System.Drawing.Point(3, 30);
+            this.explorerBar1.Location = new System.Drawing.Point(3, 34);
             this.explorerBar1.Name = "explorerBar1";
-            this.explorerBar1.Size = new System.Drawing.Size(385, 434);
+            this.explorerBar1.Size = new System.Drawing.Size(385, 430);
             this.explorerBar1.TabIndex = 7;
             // 
             // gridEX1
@@ -891,7 +891,7 @@
             this.gridEX1.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.SaveSettings = true;
             this.gridEX1.SettingsKey = "Frm_40_PersonInfo01";
-            this.gridEX1.Size = new System.Drawing.Size(385, 434);
+            this.gridEX1.Size = new System.Drawing.Size(385, 430);
             this.gridEX1.TabIndex = 10;
             this.gridEX1.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.TotalRowPosition = Janus.Windows.GridEX.TotalRowPosition.BottomFixed;

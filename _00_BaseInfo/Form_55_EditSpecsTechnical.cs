@@ -49,17 +49,17 @@ namespace PCLOR._00_BaseInfo
                                         ,[TextureLimit]
                                         ,[Description]
                                         ,[FabricType]
-     
-                                    from Table_60_SpecsTechnical where ID =  @DeviceId";
+                                        ,[IsInfinitiveTextureLimit]
+                                        ,[IsDeffective]
+                                        ,[Speed]
+                                    from Table_60_SpecsTechnical 
+                                    where ID =  @DeviceId";
                 string querySelectFabricType = @"
                                  select ID , TypeCloth
                                  from Table_005_TypeCloth";
                 string querySelectYarnType = $@"
                                 select ID , NameCotton
                                 from Table_120_TypeCotton";
-
-
-
                 var device = db.QueryFirstOrDefault<Machine>(querySelectDevice, param: new { @DeviceId = DeviceId }, commandType: CommandType.Text);
                 txtDeciveMark.Text = device.DeviceMark;
                 txtDeviceCode.Text = device.Code.Value.ToString();
@@ -73,9 +73,12 @@ namespace PCLOR._00_BaseInfo
                 numericTextureLimit.Value = device.TextureLimit;
                 txtSpecstechnical.Text = device.Specstechnical;
                 txtDeviceDescription.Text = device.Description;
+                checkIsInfinitiveTextureLimit.Checked = device.IsInfinitiveTextureLimit;
                 Status.Checked = device.Status;
                 listFabricType.DataSource = db.Query<FabricTypeDropDownViewModel>(querySelectFabricType, commandType: CommandType.Text);
                 listYarnType.DataSource = db.Query<YarnTypeDropDownViewModel>(querySelectYarnType, commandType: CommandType.Text);
+                checkIsDeffective.Checked = device.IsInfinitiveTextureLimit;
+                numericSpeed.Value = device.Speed;
             }
         }
 
@@ -160,7 +163,9 @@ namespace PCLOR._00_BaseInfo
             {
 
                 var queryUpdate = @"
-               update Table_60_SpecsTechnical Set 
+                update
+                Table_60_SpecsTechnical 
+                Set 
                 namemachine = @name ,
                 Specstechnical = @specsTechnical ,
                 status = @status , 
@@ -172,10 +177,11 @@ namespace PCLOR._00_BaseInfo
                 RoundStop = @roundStop ,               
                 TextureLimit = @textureLimit , 
                 Description = @description , 
-                FabricType = @fabricType
-                where ID = @Id    
-                
-                                 ";
+                FabricType = @fabricType,
+                IsInfinitiveTextureLimit = @isInfinitiveTextureLimit,
+                IsDeffective=@IsDeffective,
+                Speed = @Speed
+                where ID = @Id";
                 using (IDbConnection db = new SqlConnection(Properties.Settings.Default.PCLOR))
                 {
 
@@ -193,18 +199,34 @@ namespace PCLOR._00_BaseInfo
                         @textureLimit = numericTextureLimit.Value,
                         @description = txtDeviceDescription.Text,
                         @fabricType = listFabricType.Value,
-                        @Id = DeviceId
+                        @Id = DeviceId,
+                        @isInfinitiveTextureLimit = checkIsInfinitiveTextureLimit.Checked,
+                        @IsDeffective = checkIsDeffective.Checked,
+                        @Speed = numericSpeed.Value
                     }, commandType: CommandType.Text);
                 }
                 MessageBox.Show("تغیرات با موفقیت ذخیره شد");
                 this.Close();
             }
-            catch (Exception ex )
+            catch (SqlException ex)
             {
-                MessageBox.Show("ذخیره تغیرات با شکست مواجه شد ");
+                MessageBox.Show("اسم دستگاه وارد شده تکراری می باشد ");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ذخیره تغیرات با شکست مواجه شد");
+                MessageBox.Show(ex.Message);
                 this.Close();
             }
 
+        }
+
+        private void checkIsInfinitiveTextureLimit_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkIsInfinitiveTextureLimit.Checked)
+                numericTextureLimit.Enabled = false;
+            else
+                numericTextureLimit.Enabled = true;
         }
     }
 }

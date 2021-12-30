@@ -26,5 +26,8 @@ namespace PCLOR.Models
         public Int64 FabricType { get; set; }
         public string YarnTypeName { get; set; }
         public string FabricTypeName { get; set; }
+        public bool IsInfinitiveTextureLimit { get; set; }
+        public bool IsDeffective { get; set; }
+        public int Speed { get; set; }
     }
 }

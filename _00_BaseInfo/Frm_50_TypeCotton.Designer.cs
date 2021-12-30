@@ -39,6 +39,8 @@
             this.uiPanelManager1 = new Janus.Windows.UI.Dock.UIPanelManager(this.components);
             this.uiPanel0 = new Janus.Windows.UI.Dock.UIPanel();
             this.uiPanel0Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtBrandName = new System.Windows.Forms.TextBox();
             this.mlt_Commodity = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.table_120_TypeCottonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet_05_Product = new PCLOR.Product.DataSet_05_Product();
@@ -63,6 +65,10 @@
             this.gridEX1 = new Janus.Windows.GridEX.GridEX();
             this.table_120_TypeCottonTableAdapter = new PCLOR.Product.DataSet_05_ProductTableAdapters.Table_120_TypeCottonTableAdapter();
             this.tableAdapterManager = new PCLOR.Product.DataSet_05_ProductTableAdapters.TableAdapterManager();
+            this.txtDescription1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDescription2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
             partNameLabel = new System.Windows.Forms.Label();
             label8 = new System.Windows.Forms.Label();
@@ -138,7 +144,7 @@
             this.uiPanel0.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.FloatingLocation = new System.Drawing.Point(528, 323);
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
-            this.uiPanel0.Location = new System.Drawing.Point(381, 30);
+            this.uiPanel0.Location = new System.Drawing.Point(394, 30);
             this.uiPanel0.Name = "uiPanel0";
             this.uiPanel0.Size = new System.Drawing.Size(240, 345);
             this.uiPanel0.TabIndex = 4;
@@ -147,6 +153,12 @@
             // 
             // uiPanel0Container
             // 
+            this.uiPanel0Container.Controls.Add(this.label4);
+            this.uiPanel0Container.Controls.Add(this.label3);
+            this.uiPanel0Container.Controls.Add(this.label1);
+            this.uiPanel0Container.Controls.Add(this.txtDescription2);
+            this.uiPanel0Container.Controls.Add(this.txtDescription1);
+            this.uiPanel0Container.Controls.Add(this.txtBrandName);
             this.uiPanel0Container.Controls.Add(this.mlt_Commodity);
             this.uiPanel0Container.Controls.Add(label2);
             this.uiPanel0Container.Controls.Add(label8);
@@ -160,6 +172,22 @@
             this.uiPanel0Container.Name = "uiPanel0Container";
             this.uiPanel0Container.Size = new System.Drawing.Size(234, 320);
             this.uiPanel0Container.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(174, 153);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 17);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "نام برند :";
+            // 
+            // txtBrandName
+            // 
+            this.txtBrandName.Location = new System.Drawing.Point(5, 150);
+            this.txtBrandName.Name = "txtBrandName";
+            this.txtBrandName.Size = new System.Drawing.Size(162, 24);
+            this.txtBrandName.TabIndex = 28;
             // 
             // mlt_Commodity
             // 
@@ -264,7 +292,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(624, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(637, 27);
             this.bindingNavigator1.TabIndex = 4;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -394,7 +422,7 @@
             this.gridEX1.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX1.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.SettingsKey = "Frm_15_InfoServiceGrid_6";
-            this.gridEX1.Size = new System.Drawing.Size(378, 345);
+            this.gridEX1.Size = new System.Drawing.Size(391, 345);
             this.gridEX1.TabIndex = 5;
             this.gridEX1.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -403,6 +431,8 @@
             this.gridEX1.UpdateMode = Janus.Windows.GridEX.UpdateMode.CellUpdate;
             this.gridEX1.UseCompatibleTextRendering = false;
             this.gridEX1.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
+            this.gridEX1.FormattingRow += new Janus.Windows.GridEX.RowLoadEventHandler(this.gridEX1_FormattingRow);
+            this.gridEX1.SelectionChanged += new System.EventHandler(this.gridEX1_SelectionChanged);
             // 
             // table_120_TypeCottonTableAdapter
             // 
@@ -422,11 +452,43 @@
             this.tableAdapterManager.Table_135_RFIDPersonTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = PCLOR.Product.DataSet_05_ProductTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // txtDescription1
+            // 
+            this.txtDescription1.Location = new System.Drawing.Point(5, 185);
+            this.txtDescription1.Name = "txtDescription1";
+            this.txtDescription1.Size = new System.Drawing.Size(162, 24);
+            this.txtDescription1.TabIndex = 28;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(171, 188);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 17);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "توضیح 1:";
+            // 
+            // txtDescription2
+            // 
+            this.txtDescription2.Location = new System.Drawing.Point(3, 221);
+            this.txtDescription2.Name = "txtDescription2";
+            this.txtDescription2.Size = new System.Drawing.Size(162, 24);
+            this.txtDescription2.TabIndex = 28;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(171, 224);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 17);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "توضیح 2:";
+            // 
             // Frm_50_TypeCotton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 378);
+            this.ClientSize = new System.Drawing.Size(637, 378);
             this.Controls.Add(this.gridEX1);
             this.Controls.Add(this.uiPanel0);
             this.Controls.Add(this.bindingNavigator1);
@@ -482,5 +544,11 @@
         private Product.DataSet_05_ProductTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.MaskedTextBox txt_Dat;
         private Janus.Windows.GridEX.EditControls.MultiColumnCombo mlt_Commodity;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBrandName;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtDescription2;
+        private System.Windows.Forms.TextBox txtDescription1;
     }
 }

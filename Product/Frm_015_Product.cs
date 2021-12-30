@@ -28,6 +28,9 @@ namespace PCLOR.Product
         private int DeviceId = 0;
         private int clothType = 0;
         private int cottonType = 0;
+        private Int16 WareCode = 0;
+        private Int16 FunctionType = 0;
+        private bool IsInfinitiveTextureLimit = false;
         bool Machine = false;
         private void OpenPort()
         {
@@ -77,10 +80,12 @@ namespace PCLOR.Product
         {
             // TODO: This line of code loads data into the 'pCLOR_1_1400DataSet.Table_115_Product' table. You can move, or remove it, as needed.
             this.table_115_ProductTableAdapter1.Fill(this.pCLOR_1_1400DataSet.Table_115_Product);
-
+            gridEX2.MoveLast();
             gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
             gridEX2.DropDowns["Customer"].DataSource = ClDoc.ReturnTable(ConBase, @"select Columnid,Column02 from Table_045_PersonInfo");
             FillDetailMachine();
+            if (IsInfinitiveTextureLimit)
+                this.lblTextureLimit.Text = "نا محدود";
             //gridEX2.DropDowns["Programer"].DataSource = mlt_Num_Programer.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,Number from Table_100_ProgramMachine");
             //gridEX2.DropDowns["shift"].DataSource = mlt_shift.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,Shift from Table_105_DefinitionWorkShift");
             //gridEX2.DropDowns["Machine"].DataSource = mlt_Machine.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select Id,namemachine from Table_60_SpecsTechnical");
@@ -90,15 +95,16 @@ namespace PCLOR.Product
             mlt_Ware.DataSource = ClDoc.ReturnTable(ConWare, @"select Columnid,Column01,Column02 from Table_001_PWHRS");
             mlt_Function.DataSource = ClDoc.ReturnTable(ConWare, @"select Columnid,Column01,Column02 from table_005_PwhrsOperation where Column16=0");
 
+
             Stimulsoft.Report.StiReport r = new Stimulsoft.Report.StiReport();
             r.Load("Report.mrt");
             foreach (StiPage page in r.Pages)
             {
                 uiComboBox1.Items.Add(page.Name);
             }
-            mlt_Ware.Value = ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=31");
+            WareCode = Convert.ToInt16(ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=31"));
 
-            mlt_Function.Value = ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=30");
+            FunctionType =Convert.ToInt16( ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=30"));
             //mlt_Num_Programer.Focus();
         }
 
@@ -110,7 +116,7 @@ namespace PCLOR.Product
 
             if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 146))
             {
-                if (lblTextureLimit.Text.Trim().ToLower() == "0")
+                if (lblTextureLimit.Text.Trim().ToLower() == "0" && IsInfinitiveTextureLimit == false)
                 {
                     MessageBox.Show("امکان ثبت تولید برای دستگاه وچد ندارد زیرا حد بافت به صفر رشیده است لطفا جهت ادامه ی ثبت تولید حد بافت دستگاه را افزیش دهید ", "اخطار", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                     this.Close();
@@ -139,7 +145,7 @@ namespace PCLOR.Product
                 Int64 Barcode = Convert.ToInt64(ClDoc.ExScalar(ConPCLOR.ConnectionString, "select isnull((select max(Barcode) from Table_115_Product),9999)+1"));
                 //txt_Barcode.Text = Barcode.ToString();
                 double weigh = Convert.ToDouble(txt_weight.Text) / 1000;
-
+                
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Barcode"] = Barcode;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["weight"] = weigh;
 
@@ -177,11 +183,13 @@ namespace PCLOR.Product
 
                 //}
                 table_115_ProductBindingSource.EndEdit();
-                gridEX2.MoveLast();
                 table_115_ProductTableAdapter1.Update(pCLOR_1_1400DataSet.Table_115_Product);
-                DecreaseTextureLimit(DeviceId);
+                if (!IsInfinitiveTextureLimit)
+                    DecreaseTextureLimit(DeviceId);
                 //table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product,Convert.ToInt32 (mlt_Num_Programer.Value));
+                gridEX2.MoveLast();
                 txt_weight.Text = "0";
+                txt_Description.Text = string.Empty;
                 txt_weight.Focus();
                 ch_Auto.Enabled = true;
 
@@ -292,6 +300,7 @@ namespace PCLOR.Product
             lblCreateTime.Text = DateTime.Now.TimeOfDay.Hours.ToString("00") + ":" + DateTime.Now.TimeOfDay.Minutes.ToString("00");
             lblArea.Text = machine.Area.ToString();
             txtDescDevice.Text = machine.Description;
+            IsInfinitiveTextureLimit = machine.IsInfinitiveTextureLimit;
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
@@ -405,7 +414,7 @@ namespace PCLOR.Product
                                                                             [column10],
                                                                             [column11]
                                                                  
-                                                                          ) VALUES (  {ResidNum} , N'{DateTime.Now.ToShamsi()}'  , {mlt_Ware.Value.ToString()},  {mlt_Function.Value.ToString()} ,
+                                                                          ) VALUES (  {ResidNum} , N'{DateTime.Now.ToShamsi()}'  , {WareCode},  {FunctionType} ,
                                                                         {(string.IsNullOrEmpty(lblOperationCode.Text) ? "N''" : lblOperationCode.Text)},N'رسید صادره بابت رسید پارچه خام شماره {txt_Number.Text}' , N'{Class_BasicOperation._UserName}' ,getdate(), N'{Class_BasicOperation._UserName}', getdate() );
                                                                        select  Max(columnid)  from Table_011_PwhrsReceipt";
                     var Key = db.QueryFirstOrDefault<int>(commandtxt, null, commandType: CommandType.Text);
