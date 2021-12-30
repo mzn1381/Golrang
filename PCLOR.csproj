@@ -386,6 +386,7 @@
     <Compile Include="Models\MachinePoint.cs" />
     <Compile Include="Models\PersonInfoViewModel.cs" />
     <Compile Include="Models\ProductSourceViewModel.cs" />
+    <Compile Include="Models\ReportDeviceViewModel.cs" />
     <Compile Include="Models\YarnTypeDropDownViewModel.cs" />
     <Compile Include="PCLOR_1_1400DataSet.Designer.cs">
       <AutoGen>True</AutoGen>

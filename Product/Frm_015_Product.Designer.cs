@@ -63,7 +63,6 @@ namespace PCLOR.Product
             this.txt_Description = new System.Windows.Forms.TextBox();
             this.txt_Number = new System.Windows.Forms.TextBox();
             this.table_120_TypeCottonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.table_125_DetailTypeCottonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -134,7 +133,6 @@ namespace PCLOR.Product
             ((System.ComponentModel.ISupportInitialize)(this.table_115_ProductBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCLOR_1_1400DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_120_TypeCottonBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_125_DetailTypeCottonBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -1043,7 +1041,6 @@ namespace PCLOR.Product
             ((System.ComponentModel.ISupportInitialize)(this.table_115_ProductBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCLOR_1_1400DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_120_TypeCottonBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_125_DetailTypeCottonBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
@@ -1100,7 +1097,6 @@ namespace PCLOR.Product
         private DataSet_05_ProductTableAdapters.Table_120_TypeCottonTableAdapter table_120_TypeCottonTableAdapter;
         private System.Windows.Forms.BindingSource table_125_DetailTypeCottonBindingSource;
         private DataSet_05_ProductTableAdapters.Table_125_DetailTypeCottonTableAdapter table_125_DetailTypeCottonTableAdapter;
-        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.GroupBox groupBox1;
         private Janus.Windows.EditControls.UIButton uiButton1;
         private Janus.Windows.EditControls.UIComboBox uiComboBox1;
