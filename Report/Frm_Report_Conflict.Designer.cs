@@ -75,7 +75,7 @@
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("9657f425-52dc-48ba-bcf9-65fcd657e69f"), Janus.Windows.UI.Dock.PanelDockStyle.Fill, new System.Drawing.Size(820, 476), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("9657f425-52dc-48ba-bcf9-65fcd657e69f"), Janus.Windows.UI.Dock.PanelDockStyle.Fill, new System.Drawing.Size(820, 474), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("9657f425-52dc-48ba-bcf9-65fcd657e69f"), new System.Drawing.Point(327, 349), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.EndPanelInfo();
             // 
@@ -84,9 +84,9 @@
             this.uiPanel0.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.FloatingLocation = new System.Drawing.Point(327, 349);
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
-            this.uiPanel0.Location = new System.Drawing.Point(3, 28);
+            this.uiPanel0.Location = new System.Drawing.Point(3, 30);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(820, 476);
+            this.uiPanel0.Size = new System.Drawing.Size(820, 474);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "مغایرت ارسال و دریافت";
             this.uiPanel0.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -94,9 +94,9 @@
             // uiPanel0Container
             // 
             this.uiPanel0Container.Controls.Add(this.gridEX1);
-            this.uiPanel0Container.Location = new System.Drawing.Point(1, 21);
+            this.uiPanel0Container.Location = new System.Drawing.Point(1, 24);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(818, 454);
+            this.uiPanel0Container.Size = new System.Drawing.Size(818, 449);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // gridEX1
@@ -125,7 +125,7 @@
             this.gridEX1.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX1.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.SettingsKey = "gridfrm_3";
-            this.gridEX1.Size = new System.Drawing.Size(818, 454);
+            this.gridEX1.Size = new System.Drawing.Size(818, 449);
             this.gridEX1.TabIndex = 26;
             this.gridEX1.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.TotalRowFormatStyle.BackColor = System.Drawing.Color.AliceBlue;
@@ -168,6 +168,7 @@
             this.bindingNavigator1.CountItem = null;
             this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorSeparator1,
             this.toolStripButton2,
@@ -189,21 +190,21 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(826, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(826, 27);
             this.bindingNavigator1.TabIndex = 31;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripButton2
             // 
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(46, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(56, 24);
             this.toolStripButton2.Text = "چاپ";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -211,19 +212,19 @@
             // 
             this.toolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 27);
             // 
             // tsexcel
             // 
             this.tsexcel.Image = ((System.Drawing.Image)(resources.GetObject("tsexcel.Image")));
             this.tsexcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsexcel.Name = "tsexcel";
-            this.tsexcel.Size = new System.Drawing.Size(98, 22);
+            this.tsexcel.Size = new System.Drawing.Size(122, 24);
             this.tsexcel.Text = "ارسال به اکسل";
             this.tsexcel.Click += new System.EventHandler(this.tsexcel_Click);
             // 
@@ -231,7 +232,7 @@
             // 
             this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(38, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(47, 24);
             this.toolStripLabel1.Text = "از تاریخ";
             // 
             // faDate1
@@ -239,7 +240,7 @@
             this.faDate1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.faDate1.BackColor = System.Drawing.SystemColors.Window;
             this.faDate1.Name = "faDate1";
-            this.faDate1.Size = new System.Drawing.Size(120, 22);
+            this.faDate1.Size = new System.Drawing.Size(120, 24);
             this.faDate1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.faDate1_KeyPress);
             this.faDate1.TextChanged += new System.EventHandler(this.faDate1_TextChanged);
             // 
@@ -247,27 +248,27 @@
             // 
             this.toolStripSeparator5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(37, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(47, 24);
             this.toolStripLabel2.Text = "تا تاریخ";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // faDate2
             // 
             this.faDate2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.faDate2.BackColor = System.Drawing.SystemColors.Window;
             this.faDate2.Name = "faDate2";
-            this.faDate2.Size = new System.Drawing.Size(120, 22);
+            this.faDate2.Size = new System.Drawing.Size(120, 24);
             this.faDate2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.faDate2_KeyPress);
             this.faDate2.TextChanged += new System.EventHandler(this.faDate2_TextChanged);
             // 
@@ -277,13 +278,13 @@
             this.btn_Search.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.Image")));
             this.btn_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(23, 22);
+            this.btn_Search.Size = new System.Drawing.Size(29, 24);
             this.btn_Search.ToolTipText = "جستجو";
             this.btn_Search.Click += new System.EventHandler(this.Btn_Search_Click);
             // 
             // Frm_Report_Conflict
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(826, 507);
             this.Controls.Add(this.uiPanel0);

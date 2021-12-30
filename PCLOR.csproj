@@ -194,6 +194,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\PersianDate.dll</HintPath>
     </Reference>
+    <Reference Include="PersianDatePickerControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PersianDatePickerWindowsFrom.3.0.1\lib\PersianDatePickerControl.dll</HintPath>
+    </Reference>
     <Reference Include="PSALE, Version=13.98.9.23, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\PERP\PERP\PSALE.dll</HintPath>

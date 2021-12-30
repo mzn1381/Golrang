@@ -33,9 +33,7 @@ namespace PCLOR.Product
             System.Windows.Forms.Label label17;
             System.Windows.Forms.Label label16;
             System.Windows.Forms.Label label15;
-            System.Windows.Forms.Label label11;
             System.Windows.Forms.Label label3;
-            System.Windows.Forms.Label label10;
             System.Windows.Forms.Label label14;
             System.Windows.Forms.Label label4;
             System.Windows.Forms.Label label7;
@@ -43,9 +41,7 @@ namespace PCLOR.Product
             System.Windows.Forms.Label label9;
             System.Windows.Forms.Label label25;
             Janus.Windows.GridEX.GridEXLayout gridEX2_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
-            Janus.Windows.GridEX.GridEXLayout mlt_Ware_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_015_Product));
-            Janus.Windows.GridEX.GridEXLayout mlt_Function_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             this.lblTimeCreate = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -92,8 +88,6 @@ namespace PCLOR.Product
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btn_delete_recipt = new System.Windows.Forms.ToolStripMenuItem();
             this.chek_TowPerson = new System.Windows.Forms.CheckBox();
-            this.mlt_Ware = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
-            this.mlt_Function = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.txtDescDevice = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.lblNameDevice = new System.Windows.Forms.TextBox();
@@ -112,12 +106,12 @@ namespace PCLOR.Product
             this.lblArea = new System.Windows.Forms.TextBox();
             this.lblShift = new System.Windows.Forms.TextBox();
             this.table_115_ProductTableAdapter1 = new PCLOR.PCLOR_1_1400DataSetTableAdapters.Table_115_ProductTableAdapter();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDateCreateRecipt = new System.Windows.Forms.TextBox();
             label17 = new System.Windows.Forms.Label();
             label16 = new System.Windows.Forms.Label();
             label15 = new System.Windows.Forms.Label();
-            label11 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
-            label10 = new System.Windows.Forms.Label();
             label14 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
             label7 = new System.Windows.Forms.Label();
@@ -144,8 +138,6 @@ namespace PCLOR.Product
             this.uiGroupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mlt_Ware)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mlt_Function)).BeginInit();
             this.SuspendLayout();
             // 
             // label17
@@ -181,17 +173,6 @@ namespace PCLOR.Product
             label15.TabIndex = 205;
             label15.Text = "کد اپراتور :";
             // 
-            // label11
-            // 
-            label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            label11.AutoSize = true;
-            label11.BackColor = System.Drawing.Color.Transparent;
-            label11.Location = new System.Drawing.Point(1000, 557);
-            label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(70, 17);
-            label11.TabIndex = 191;
-            label11.Text = "رسید انبار:";
-            // 
             // label3
             // 
             label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -202,17 +183,6 @@ namespace PCLOR.Product
             label3.Size = new System.Drawing.Size(61, 17);
             label3.TabIndex = 203;
             label3.Text = "حد بافت:";
-            // 
-            // label10
-            // 
-            label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            label10.AutoSize = true;
-            label10.BackColor = System.Drawing.Color.Transparent;
-            label10.Location = new System.Drawing.Point(1000, 617);
-            label10.Name = "label10";
-            label10.Size = new System.Drawing.Size(67, 17);
-            label10.TabIndex = 204;
-            label10.Text = "نوع رسید:";
             // 
             // label14
             // 
@@ -786,50 +756,12 @@ namespace PCLOR.Product
             // 
             this.chek_TowPerson.AutoSize = true;
             this.chek_TowPerson.Enabled = false;
-            this.chek_TowPerson.Location = new System.Drawing.Point(943, 667);
+            this.chek_TowPerson.Location = new System.Drawing.Point(944, 585);
             this.chek_TowPerson.Name = "chek_TowPerson";
             this.chek_TowPerson.Size = new System.Drawing.Size(113, 21);
             this.chek_TowPerson.TabIndex = 195;
             this.chek_TowPerson.Text = "دونفر (شیفت)";
             this.chek_TowPerson.UseVisualStyleBackColor = true;
-            // 
-            // mlt_Ware
-            // 
-            this.mlt_Ware.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            mlt_Ware_DesignTimeLayout.LayoutString = resources.GetString("mlt_Ware_DesignTimeLayout.LayoutString");
-            this.mlt_Ware.DesignTimeLayout = mlt_Ware_DesignTimeLayout;
-            this.mlt_Ware.DisplayMember = "Column02";
-            this.mlt_Ware.Location = new System.Drawing.Point(641, 552);
-            this.mlt_Ware.Name = "mlt_Ware";
-            this.mlt_Ware.OfficeColorScheme = Janus.Windows.GridEX.OfficeColorScheme.Black;
-            this.mlt_Ware.OfficeCustomColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.mlt_Ware.SelectedIndex = -1;
-            this.mlt_Ware.SelectedItem = null;
-            this.mlt_Ware.SelectInDataSource = true;
-            this.mlt_Ware.Size = new System.Drawing.Size(353, 24);
-            this.mlt_Ware.TabIndex = 193;
-            this.mlt_Ware.ValueMember = "columnid";
-            this.mlt_Ware.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
-            // 
-            // mlt_Function
-            // 
-            this.mlt_Function.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            mlt_Function_DesignTimeLayout.LayoutString = resources.GetString("mlt_Function_DesignTimeLayout.LayoutString");
-            this.mlt_Function.DesignTimeLayout = mlt_Function_DesignTimeLayout;
-            this.mlt_Function.DisplayMember = "column02";
-            this.mlt_Function.Location = new System.Drawing.Point(641, 612);
-            this.mlt_Function.Name = "mlt_Function";
-            this.mlt_Function.OfficeColorScheme = Janus.Windows.GridEX.OfficeColorScheme.Black;
-            this.mlt_Function.OfficeCustomColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.mlt_Function.SelectedIndex = -1;
-            this.mlt_Function.SelectedItem = null;
-            this.mlt_Function.SelectInDataSource = true;
-            this.mlt_Function.Size = new System.Drawing.Size(353, 24);
-            this.mlt_Function.TabIndex = 194;
-            this.mlt_Function.ValueMember = "columnid";
-            this.mlt_Function.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
             // 
             // txtDescDevice
             // 
@@ -974,6 +906,23 @@ namespace PCLOR.Product
             // 
             this.table_115_ProductTableAdapter1.ClearBeforeFill = true;
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1002, 541);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 17);
+            this.label2.TabIndex = 201;
+            this.label2.Text = "زمان ثبت:";
+            // 
+            // txtDateCreateRecipt
+            // 
+            this.txtDateCreateRecipt.Location = new System.Drawing.Point(896, 538);
+            this.txtDateCreateRecipt.Name = "txtDateCreateRecipt";
+            this.txtDateCreateRecipt.Size = new System.Drawing.Size(100, 24);
+            this.txtDateCreateRecipt.TabIndex = 218;
+            // 
             // Frm_015_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -984,6 +933,7 @@ namespace PCLOR.Product
             this.Controls.Add(this.lblTypeDevice);
             this.Controls.Add(this.lblDateCreate);
             this.Controls.Add(this.lblShiftOperator);
+            this.Controls.Add(this.txtDateCreateRecipt);
             this.Controls.Add(this.lblCreateTime);
             this.Controls.Add(this.lblTeeny);
             this.Controls.Add(this.lblGapDevice);
@@ -1000,11 +950,8 @@ namespace PCLOR.Product
             this.Controls.Add(label25);
             this.Controls.Add(label15);
             this.Controls.Add(this.chek_TowPerson);
-            this.Controls.Add(this.mlt_Ware);
-            this.Controls.Add(label11);
             this.Controls.Add(label3);
-            this.Controls.Add(this.mlt_Function);
-            this.Controls.Add(label10);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lblTimeCreate);
             this.Controls.Add(label14);
@@ -1056,8 +1003,6 @@ namespace PCLOR.Product
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.mlt_Ware)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mlt_Function)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1106,9 +1051,7 @@ namespace PCLOR.Product
         private Janus.Windows.GridEX.EditControls.NumericEditBox txt_weight;
         private Janus.Windows.EditControls.UIGroupBox uiGroupBox2;
         private System.Windows.Forms.CheckBox chek_TowPerson;
-        private Janus.Windows.GridEX.EditControls.MultiColumnCombo mlt_Ware;
         private System.Windows.Forms.TextBox textBox1;
-        private Janus.Windows.GridEX.EditControls.MultiColumnCombo mlt_Function;
         private System.Windows.Forms.TextBox txtDescDevice;
         private System.Windows.Forms.Label lblTimeCreate;
         private System.Windows.Forms.Label label20;
@@ -1136,5 +1079,7 @@ namespace PCLOR.Product
         private System.Windows.Forms.TextBox lblTypeFabric;
         private PCLOR_1_1400DataSet pCLOR_1_1400DataSet;
         private PCLOR_1_1400DataSetTableAdapters.Table_115_ProductTableAdapter table_115_ProductTableAdapter1;
+        private System.Windows.Forms.TextBox txtDateCreateRecipt;
+        private System.Windows.Forms.Label label2;
     }
 }

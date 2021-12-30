@@ -79,6 +79,7 @@ namespace PCLOR.Product
         private void Frm_015_Product_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'pCLOR_1_1400DataSet.Table_115_Product' table. You can move, or remove it, as needed.
+            txtDateCreateRecipt.Text = DateTime.Now.ToShamsi();
             this.table_115_ProductTableAdapter1.Fill(this.pCLOR_1_1400DataSet.Table_115_Product);
             gridEX2.MoveLast();
             gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
@@ -92,8 +93,8 @@ namespace PCLOR.Product
             //gridEX2.DropDowns["TypeCloth"].DataSource = mlt_TypeCloth.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeCloth,CodeCommondity from Table_005_TypeCloth");
             //gridEX2.DropDowns["cottone"].DataSource = ClDoc.ReturnTable(ConPCLOR, @"select Id,code,NameCotton from Table_120_TypeCotton");
             //mlt_codecustomer.DataSource = ClDoc.ReturnTable(ConBase, @"select Columnid,column01,Column02  from Table_045_PersonInfo");
-            mlt_Ware.DataSource = ClDoc.ReturnTable(ConWare, @"select Columnid,Column01,Column02 from Table_001_PWHRS");
-            mlt_Function.DataSource = ClDoc.ReturnTable(ConWare, @"select Columnid,Column01,Column02 from table_005_PwhrsOperation where Column16=0");
+            //mlt_Ware.DataSource = ClDoc.ReturnTable(ConWare, @"select Columnid,Column01,Column02 from Table_001_PWHRS");
+            //mlt_Function.DataSource = ClDoc.ReturnTable(ConWare, @"select Columnid,Column01,Column02 from table_005_PwhrsOperation where Column16=0");
 
 
             Stimulsoft.Report.StiReport r = new Stimulsoft.Report.StiReport();
@@ -313,10 +314,10 @@ namespace PCLOR.Product
                     Class_BasicOperation.ShowMsg("", "برای این کارت تولید رسید ثبت شده است ابتدا رسید آن را حذف کنید", Class_BasicOperation.MessageType.Stop);
                     return;
                 }
-                if (mlt_Function.Text.Trim() == "0" || mlt_Function.Text.Trim() == "" || mlt_Ware.Text.Trim() == "0"
-                    //|| mlt_Ware.Text.Trim() == "" || mlt_shift.Text.Trim() == ""
-                    //|| mlt_codecustomer.Text == "" || mlt_Function.Text.All(char.IsDigit) || mlt_Ware.Text.All(char.IsDigit)
-                    )
+                //if (mlt_Function.Text.Trim() == "0" || mlt_Function.Text.Trim() == "" || mlt_Ware.Text.Trim() == "0"
+                //    //|| mlt_Ware.Text.Trim() == "" || mlt_shift.Text.Trim() == ""
+                //    //|| mlt_codecustomer.Text == "" || mlt_Function.Text.All(char.IsDigit) || mlt_Ware.Text.All(char.IsDigit)
+                //    )
                 {
                     MessageBox.Show("اطلاعات مورد نیاز را تکمیل کنید");
                     return;
@@ -365,7 +366,7 @@ namespace PCLOR.Product
 
 
                 Recipt();
-                ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, $@"update Table_80_Setting set value= N'{mlt_Ware.Value}'  where Id=31 
+                ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, $@"
                      update Table_115_Product set RFID={idrfid} ,Operator ={lblOperationCode.Text.Trim()}
                     ,ReportDescriptin= N'{txt_Description.Text.Trim()}' 
                      where id in ({ID.TrimEnd(',')}) ");
@@ -414,7 +415,7 @@ namespace PCLOR.Product
                                                                             [column10],
                                                                             [column11]
                                                                  
-                                                                          ) VALUES (  {ResidNum} , N'{DateTime.Now.ToShamsi()}'  , {WareCode},  {FunctionType} ,
+                                                                          ) VALUES (  {ResidNum} , N'{txtDateCreateRecipt.Text}'  , {WareCode},  {FunctionType} ,
                                                                         {(string.IsNullOrEmpty(lblOperationCode.Text) ? "N''" : lblOperationCode.Text)},N'رسید صادره بابت رسید پارچه خام شماره {txt_Number.Text}' , N'{Class_BasicOperation._UserName}' ,getdate(), N'{Class_BasicOperation._UserName}', getdate() );
                                                                        select  Max(columnid)  from Table_011_PwhrsReceipt";
                     var Key = db.QueryFirstOrDefault<int>(commandtxt, null, commandType: CommandType.Text);
