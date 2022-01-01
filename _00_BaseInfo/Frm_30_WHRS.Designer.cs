@@ -56,6 +56,10 @@
             System.Windows.Forms.Label label22;
             System.Windows.Forms.Label label24;
             System.Windows.Forms.Label label25;
+            System.Windows.Forms.Label label26;
+            System.Windows.Forms.Label label27;
+            System.Windows.Forms.Label label28;
+            System.Windows.Forms.Label label29;
             Janus.Windows.GridEX.GridEXLayout mlt_Ware_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_Function_D_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_Function_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
@@ -84,11 +88,8 @@
             Janus.Windows.GridEX.GridEXLayout mlt_TypeReturnPack_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_KnittingWare_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_30_WHRS));
-            System.Windows.Forms.Label label26;
             Janus.Windows.GridEX.GridEXLayout mlt_knittingDraft_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
-            System.Windows.Forms.Label label27;
             Janus.Windows.GridEX.GridEXLayout mlt_knittingReceipt_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
-            System.Windows.Forms.Label label28;
             this.uiPanelManager1 = new Janus.Windows.UI.Dock.UIPanelManager(this.components);
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.btn_Save = new System.Windows.Forms.ToolStripButton();
@@ -133,6 +134,7 @@
             this.mlt_ReturnPack = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.mlt_TypeReturnPack = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.uiGroupBox9 = new Janus.Windows.EditControls.UIGroupBox();
+            this.checkRegisterAutomaticProduct = new System.Windows.Forms.CheckBox();
             this.mlt_KnittingWare = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.mlt_knittingDraft = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.mlt_knittingReceipt = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
@@ -166,6 +168,7 @@
             label26 = new System.Windows.Forms.Label();
             label27 = new System.Windows.Forms.Label();
             label28 = new System.Windows.Forms.Label();
+            label29 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -228,7 +231,7 @@
             column04Label.BackColor = System.Drawing.Color.Transparent;
             column04Label.Location = new System.Drawing.Point(172, 53);
             column04Label.Name = "column04Label";
-            column04Label.Size = new System.Drawing.Size(57, 13);
+            column04Label.Size = new System.Drawing.Size(71, 17);
             column04Label.TabIndex = 4;
             column04Label.Text = "نوع رسید :";
             // 
@@ -239,7 +242,7 @@
             label5.BackColor = System.Drawing.Color.Transparent;
             label5.Location = new System.Drawing.Point(171, 50);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(57, 13);
+            label5.Size = new System.Drawing.Size(71, 17);
             label5.TabIndex = 4;
             label5.Text = "نوع رسید :";
             // 
@@ -250,7 +253,7 @@
             label9.BackColor = System.Drawing.Color.Transparent;
             label9.Location = new System.Drawing.Point(177, 49);
             label9.Name = "label9";
-            label9.Size = new System.Drawing.Size(57, 13);
+            label9.Size = new System.Drawing.Size(71, 17);
             label9.TabIndex = 4;
             label9.Text = "نوع رسید :";
             // 
@@ -261,7 +264,7 @@
             label3.BackColor = System.Drawing.Color.Transparent;
             label3.Location = new System.Drawing.Point(170, 83);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(59, 13);
+            label3.Size = new System.Drawing.Size(73, 17);
             label3.TabIndex = 5;
             label3.Text = "نوع  حواله :";
             // 
@@ -272,7 +275,7 @@
             label4.BackColor = System.Drawing.Color.Transparent;
             label4.Location = new System.Drawing.Point(169, 77);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(59, 13);
+            label4.Size = new System.Drawing.Size(73, 17);
             label4.TabIndex = 5;
             label4.Text = "نوع  حواله :";
             // 
@@ -283,7 +286,7 @@
             label7.BackColor = System.Drawing.Color.Transparent;
             label7.Location = new System.Drawing.Point(175, 76);
             label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(59, 13);
+            label7.Size = new System.Drawing.Size(73, 17);
             label7.TabIndex = 5;
             label7.Text = "نوع  حواله :";
             // 
@@ -294,7 +297,7 @@
             label8.BackColor = System.Drawing.Color.Transparent;
             label8.Location = new System.Drawing.Point(175, 76);
             label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(59, 13);
+            label8.Size = new System.Drawing.Size(73, 17);
             label8.TabIndex = 5;
             label8.Text = "نوع  حواله :";
             // 
@@ -305,7 +308,7 @@
             label1.BackColor = System.Drawing.Color.Transparent;
             label1.Location = new System.Drawing.Point(177, 48);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(57, 13);
+            label1.Size = new System.Drawing.Size(71, 17);
             label1.TabIndex = 4;
             label1.Text = "نوع رسید :";
             // 
@@ -316,7 +319,7 @@
             label2.BackColor = System.Drawing.Color.Transparent;
             label2.Location = new System.Drawing.Point(181, 53);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(57, 13);
+            label2.Size = new System.Drawing.Size(71, 17);
             label2.TabIndex = 4;
             label2.Text = "نوع رسید :";
             // 
@@ -327,7 +330,7 @@
             label6.BackColor = System.Drawing.Color.Transparent;
             label6.Location = new System.Drawing.Point(179, 79);
             label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(59, 13);
+            label6.Size = new System.Drawing.Size(73, 17);
             label6.TabIndex = 5;
             label6.Text = "نوع  حواله :";
             // 
@@ -338,7 +341,7 @@
             column03Label.BackColor = System.Drawing.Color.Transparent;
             column03Label.Location = new System.Drawing.Point(195, 26);
             column03Label.Name = "column03Label";
-            column03Label.Size = new System.Drawing.Size(28, 13);
+            column03Label.Size = new System.Drawing.Size(34, 17);
             column03Label.TabIndex = 3;
             column03Label.Text = "انبار:";
             column03Label.Click += new System.EventHandler(this.column03Label_Click);
@@ -350,7 +353,7 @@
             label10.BackColor = System.Drawing.Color.Transparent;
             label10.Location = new System.Drawing.Point(200, 23);
             label10.Name = "label10";
-            label10.Size = new System.Drawing.Size(28, 13);
+            label10.Size = new System.Drawing.Size(34, 17);
             label10.TabIndex = 3;
             label10.Text = "انبار:";
             // 
@@ -361,7 +364,7 @@
             label11.BackColor = System.Drawing.Color.Transparent;
             label11.Location = new System.Drawing.Point(206, 24);
             label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(28, 13);
+            label11.Size = new System.Drawing.Size(34, 17);
             label11.TabIndex = 3;
             label11.Text = "انبار:";
             // 
@@ -372,7 +375,7 @@
             label12.BackColor = System.Drawing.Color.Transparent;
             label12.Location = new System.Drawing.Point(205, 27);
             label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(28, 13);
+            label12.Size = new System.Drawing.Size(34, 17);
             label12.TabIndex = 3;
             label12.Text = "انبار:";
             // 
@@ -383,7 +386,7 @@
             label13.BackColor = System.Drawing.Color.Transparent;
             label13.Location = new System.Drawing.Point(206, 25);
             label13.Name = "label13";
-            label13.Size = new System.Drawing.Size(28, 13);
+            label13.Size = new System.Drawing.Size(34, 17);
             label13.TabIndex = 3;
             label13.Text = "انبار:";
             // 
@@ -393,7 +396,7 @@
             label14.AutoSize = true;
             label14.Location = new System.Drawing.Point(175, 25);
             label14.Name = "label14";
-            label14.Size = new System.Drawing.Size(61, 13);
+            label14.Size = new System.Drawing.Size(77, 17);
             label14.TabIndex = 4;
             label14.Text = " نوع پارچه : ";
             // 
@@ -403,7 +406,7 @@
             label15.AutoSize = true;
             label15.Location = new System.Drawing.Point(164, 53);
             label15.Name = "label15";
-            label15.Size = new System.Drawing.Size(72, 13);
+            label15.Size = new System.Drawing.Size(91, 17);
             label15.TabIndex = 5;
             label15.Text = " نوع دستگاه : ";
             // 
@@ -413,7 +416,7 @@
             label16.AutoSize = true;
             label16.Location = new System.Drawing.Point(177, 79);
             label16.Name = "label16";
-            label16.Size = new System.Drawing.Size(59, 13);
+            label16.Size = new System.Drawing.Size(74, 17);
             label16.TabIndex = 6;
             label16.Text = " نوع  رنگ : ";
             // 
@@ -423,7 +426,7 @@
             label18.AutoSize = true;
             label18.Location = new System.Drawing.Point(171, 104);
             label18.Name = "label18";
-            label18.Size = new System.Drawing.Size(65, 13);
+            label18.Size = new System.Drawing.Size(81, 17);
             label18.TabIndex = 12;
             label18.Text = "کد مشتری :";
             // 
@@ -433,7 +436,7 @@
             label19.AutoSize = true;
             label19.Location = new System.Drawing.Point(190, 133);
             label19.Name = "label19";
-            label19.Size = new System.Drawing.Size(46, 13);
+            label19.Size = new System.Drawing.Size(60, 17);
             label19.TabIndex = 21;
             label19.Text = "کد کالا : ";
             // 
@@ -443,7 +446,7 @@
             label17.AutoSize = true;
             label17.Location = new System.Drawing.Point(200, 161);
             label17.Name = "label17";
-            label17.Size = new System.Drawing.Size(36, 13);
+            label17.Size = new System.Drawing.Size(45, 17);
             label17.TabIndex = 23;
             label17.Text = " وزن : ";
             // 
@@ -454,7 +457,7 @@
             label21.BackColor = System.Drawing.Color.Transparent;
             label21.Location = new System.Drawing.Point(176, 29);
             label21.Name = "label21";
-            label21.Size = new System.Drawing.Size(59, 13);
+            label21.Size = new System.Drawing.Size(73, 17);
             label21.TabIndex = 5;
             label21.Text = "نوع  حواله :";
             // 
@@ -465,7 +468,7 @@
             label20.BackColor = System.Drawing.Color.Transparent;
             label20.Location = new System.Drawing.Point(200, 23);
             label20.Name = "label20";
-            label20.Size = new System.Drawing.Size(28, 13);
+            label20.Size = new System.Drawing.Size(34, 17);
             label20.TabIndex = 3;
             label20.Text = "انبار:";
             // 
@@ -476,7 +479,7 @@
             label23.BackColor = System.Drawing.Color.Transparent;
             label23.Location = new System.Drawing.Point(171, 50);
             label23.Name = "label23";
-            label23.Size = new System.Drawing.Size(57, 13);
+            label23.Size = new System.Drawing.Size(71, 17);
             label23.TabIndex = 4;
             label23.Text = "نوع رسید :";
             // 
@@ -487,7 +490,7 @@
             label22.BackColor = System.Drawing.Color.Transparent;
             label22.Location = new System.Drawing.Point(207, 23);
             label22.Name = "label22";
-            label22.Size = new System.Drawing.Size(28, 13);
+            label22.Size = new System.Drawing.Size(34, 17);
             label22.TabIndex = 3;
             label22.Text = "انبار:";
             // 
@@ -498,7 +501,7 @@
             label24.BackColor = System.Drawing.Color.Transparent;
             label24.Location = new System.Drawing.Point(178, 50);
             label24.Name = "label24";
-            label24.Size = new System.Drawing.Size(57, 13);
+            label24.Size = new System.Drawing.Size(71, 17);
             label24.TabIndex = 4;
             label24.Text = "نوع رسید :";
             // 
@@ -509,9 +512,53 @@
             label25.BackColor = System.Drawing.Color.Transparent;
             label25.Location = new System.Drawing.Point(176, 80);
             label25.Name = "label25";
-            label25.Size = new System.Drawing.Size(59, 13);
+            label25.Size = new System.Drawing.Size(73, 17);
             label25.TabIndex = 7;
             label25.Text = "نوع  حواله :";
+            // 
+            // label26
+            // 
+            label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            label26.AutoSize = true;
+            label26.BackColor = System.Drawing.Color.Transparent;
+            label26.Location = new System.Drawing.Point(195, 26);
+            label26.Name = "label26";
+            label26.Size = new System.Drawing.Size(34, 17);
+            label26.TabIndex = 3;
+            label26.Text = "انبار:";
+            // 
+            // label27
+            // 
+            label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            label27.AutoSize = true;
+            label27.BackColor = System.Drawing.Color.Transparent;
+            label27.Location = new System.Drawing.Point(170, 83);
+            label27.Name = "label27";
+            label27.Size = new System.Drawing.Size(73, 17);
+            label27.TabIndex = 5;
+            label27.Text = "نوع  حواله :";
+            // 
+            // label28
+            // 
+            label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            label28.AutoSize = true;
+            label28.BackColor = System.Drawing.Color.Transparent;
+            label28.Location = new System.Drawing.Point(172, 53);
+            label28.Name = "label28";
+            label28.Size = new System.Drawing.Size(71, 17);
+            label28.TabIndex = 4;
+            label28.Text = "نوع رسید :";
+            // 
+            // label29
+            // 
+            label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            label29.AutoSize = true;
+            label29.BackColor = System.Drawing.Color.Transparent;
+            label29.Location = new System.Drawing.Point(149, 110);
+            label29.Name = "label29";
+            label29.Size = new System.Drawing.Size(91, 17);
+            label29.TabIndex = 5;
+            label29.Text = "تولید اتوماتیک:";
             // 
             // uiPanelManager1
             // 
@@ -526,6 +573,7 @@
             this.bindingNavigator1.CountItem = null;
             this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btn_Save});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
@@ -536,7 +584,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(754, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(754, 27);
             this.bindingNavigator1.TabIndex = 4;
             this.bindingNavigator1.Text = "bindingNavigator1";
             this.bindingNavigator1.RefreshItems += new System.EventHandler(this.BindingNavigator1_RefreshItems);
@@ -546,7 +594,7 @@
             this.btn_Save.Image = ((System.Drawing.Image)(resources.GetObject("btn_Save.Image")));
             this.btn_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(53, 22);
+            this.btn_Save.Size = new System.Drawing.Size(66, 24);
             this.btn_Save.Text = "ذخیره";
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
@@ -585,7 +633,7 @@
             this.mlt_Ware.SelectedIndex = -1;
             this.mlt_Ware.SelectedItem = null;
             this.mlt_Ware.SelectInDataSource = true;
-            this.mlt_Ware.Size = new System.Drawing.Size(157, 21);
+            this.mlt_Ware.Size = new System.Drawing.Size(157, 24);
             this.mlt_Ware.TabIndex = 0;
             this.mlt_Ware.ValueMember = "columnid";
             this.mlt_Ware.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -607,7 +655,7 @@
             this.mlt_Function_D.SelectedIndex = -1;
             this.mlt_Function_D.SelectedItem = null;
             this.mlt_Function_D.SelectInDataSource = true;
-            this.mlt_Function_D.Size = new System.Drawing.Size(157, 21);
+            this.mlt_Function_D.Size = new System.Drawing.Size(157, 24);
             this.mlt_Function_D.TabIndex = 2;
             this.mlt_Function_D.ValueMember = "columnid";
             this.mlt_Function_D.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -629,7 +677,7 @@
             this.mlt_Function.SelectedIndex = -1;
             this.mlt_Function.SelectedItem = null;
             this.mlt_Function.SelectInDataSource = true;
-            this.mlt_Function.Size = new System.Drawing.Size(157, 21);
+            this.mlt_Function.Size = new System.Drawing.Size(157, 24);
             this.mlt_Function.TabIndex = 1;
             this.mlt_Function.ValueMember = "columnid";
             this.mlt_Function.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -666,7 +714,7 @@
             this.mlt_Ware_T.SelectedIndex = -1;
             this.mlt_Ware_T.SelectedItem = null;
             this.mlt_Ware_T.SelectInDataSource = true;
-            this.mlt_Ware_T.Size = new System.Drawing.Size(157, 21);
+            this.mlt_Ware_T.Size = new System.Drawing.Size(157, 24);
             this.mlt_Ware_T.TabIndex = 0;
             this.mlt_Ware_T.ValueMember = "columnid";
             this.mlt_Ware_T.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -688,7 +736,7 @@
             this.mlt_Function_Product_D.SelectedIndex = -1;
             this.mlt_Function_Product_D.SelectedItem = null;
             this.mlt_Function_Product_D.SelectInDataSource = true;
-            this.mlt_Function_Product_D.Size = new System.Drawing.Size(158, 21);
+            this.mlt_Function_Product_D.Size = new System.Drawing.Size(158, 24);
             this.mlt_Function_Product_D.TabIndex = 2;
             this.mlt_Function_Product_D.ValueMember = "columnid";
             this.mlt_Function_Product_D.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -710,7 +758,7 @@
             this.mlt_Function_Product.SelectedIndex = -1;
             this.mlt_Function_Product.SelectedItem = null;
             this.mlt_Function_Product.SelectInDataSource = true;
-            this.mlt_Function_Product.Size = new System.Drawing.Size(158, 21);
+            this.mlt_Function_Product.Size = new System.Drawing.Size(158, 24);
             this.mlt_Function_Product.TabIndex = 1;
             this.mlt_Function_Product.ValueMember = "columnid";
             this.mlt_Function_Product.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -747,7 +795,7 @@
             this.mlt_Ware_M.SelectedIndex = -1;
             this.mlt_Ware_M.SelectedItem = null;
             this.mlt_Ware_M.SelectInDataSource = true;
-            this.mlt_Ware_M.Size = new System.Drawing.Size(156, 21);
+            this.mlt_Ware_M.Size = new System.Drawing.Size(156, 24);
             this.mlt_Ware_M.TabIndex = 0;
             this.mlt_Ware_M.ValueMember = "columnid";
             this.mlt_Ware_M.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -769,7 +817,7 @@
             this.mlt_Function_Packaging_D.SelectedIndex = -1;
             this.mlt_Function_Packaging_D.SelectedItem = null;
             this.mlt_Function_Packaging_D.SelectInDataSource = true;
-            this.mlt_Function_Packaging_D.Size = new System.Drawing.Size(156, 21);
+            this.mlt_Function_Packaging_D.Size = new System.Drawing.Size(156, 24);
             this.mlt_Function_Packaging_D.TabIndex = 2;
             this.mlt_Function_Packaging_D.ValueMember = "columnid";
             this.mlt_Function_Packaging_D.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -791,7 +839,7 @@
             this.mlt_Function_Packaging.SelectedIndex = -1;
             this.mlt_Function_Packaging.SelectedItem = null;
             this.mlt_Function_Packaging.SelectInDataSource = true;
-            this.mlt_Function_Packaging.Size = new System.Drawing.Size(156, 21);
+            this.mlt_Function_Packaging.Size = new System.Drawing.Size(156, 24);
             this.mlt_Function_Packaging.TabIndex = 1;
             this.mlt_Function_Packaging.ValueMember = "columnid";
             this.mlt_Function_Packaging.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -828,7 +876,7 @@
             this.mlt_Ware_O.SelectedIndex = -1;
             this.mlt_Ware_O.SelectedItem = null;
             this.mlt_Ware_O.SelectInDataSource = true;
-            this.mlt_Ware_O.Size = new System.Drawing.Size(158, 21);
+            this.mlt_Ware_O.Size = new System.Drawing.Size(158, 24);
             this.mlt_Ware_O.TabIndex = 0;
             this.mlt_Ware_O.ValueMember = "columnid";
             this.mlt_Ware_O.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -850,7 +898,7 @@
             this.mlt_Function_Other.SelectedIndex = -1;
             this.mlt_Function_Other.SelectedItem = null;
             this.mlt_Function_Other.SelectInDataSource = true;
-            this.mlt_Function_Other.Size = new System.Drawing.Size(157, 21);
+            this.mlt_Function_Other.Size = new System.Drawing.Size(157, 24);
             this.mlt_Function_Other.TabIndex = 1;
             this.mlt_Function_Other.ValueMember = "columnid";
             this.mlt_Function_Other.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -872,7 +920,7 @@
             this.mlt_Function_Other_D.SelectedIndex = -1;
             this.mlt_Function_Other_D.SelectedItem = null;
             this.mlt_Function_Other_D.SelectInDataSource = true;
-            this.mlt_Function_Other_D.Size = new System.Drawing.Size(158, 21);
+            this.mlt_Function_Other_D.Size = new System.Drawing.Size(158, 24);
             this.mlt_Function_Other_D.TabIndex = 2;
             this.mlt_Function_Other_D.ValueMember = "columnid";
             this.mlt_Function_Other_D.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -955,7 +1003,7 @@
             this.mlt_Ware_S.SelectedIndex = -1;
             this.mlt_Ware_S.SelectedItem = null;
             this.mlt_Ware_S.SelectInDataSource = true;
-            this.mlt_Ware_S.Size = new System.Drawing.Size(158, 21);
+            this.mlt_Ware_S.Size = new System.Drawing.Size(158, 24);
             this.mlt_Ware_S.TabIndex = 0;
             this.mlt_Ware_S.ValueMember = "columnid";
             this.mlt_Ware_S.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -977,7 +1025,7 @@
             this.mlt_Function_Spare.SelectedIndex = -1;
             this.mlt_Function_Spare.SelectedItem = null;
             this.mlt_Function_Spare.SelectInDataSource = true;
-            this.mlt_Function_Spare.Size = new System.Drawing.Size(158, 21);
+            this.mlt_Function_Spare.Size = new System.Drawing.Size(158, 24);
             this.mlt_Function_Spare.TabIndex = 1;
             this.mlt_Function_Spare.ValueMember = "columnid";
             this.mlt_Function_Spare.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -999,7 +1047,7 @@
             this.mlt_Function_Spare_D.SelectedIndex = -1;
             this.mlt_Function_Spare_D.SelectedItem = null;
             this.mlt_Function_Spare_D.SelectInDataSource = true;
-            this.mlt_Function_Spare_D.Size = new System.Drawing.Size(158, 21);
+            this.mlt_Function_Spare_D.Size = new System.Drawing.Size(158, 24);
             this.mlt_Function_Spare_D.TabIndex = 2;
             this.mlt_Function_Spare_D.ValueMember = "columnid";
             this.mlt_Function_Spare_D.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -1034,7 +1082,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Weight.Location = new System.Drawing.Point(9, 157);
             this.txt_Weight.Name = "txt_Weight";
-            this.txt_Weight.Size = new System.Drawing.Size(158, 21);
+            this.txt_Weight.Size = new System.Drawing.Size(158, 24);
             this.txt_Weight.TabIndex = 5;
             this.txt_Weight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mlt_Ware_KeyPress);
             // 
@@ -1051,7 +1099,7 @@
             this.mlt_Commodity.SelectedIndex = -1;
             this.mlt_Commodity.SelectedItem = null;
             this.mlt_Commodity.SettingsKey = "mlt_unit";
-            this.mlt_Commodity.Size = new System.Drawing.Size(156, 21);
+            this.mlt_Commodity.Size = new System.Drawing.Size(156, 24);
             this.mlt_Commodity.TabIndex = 4;
             this.mlt_Commodity.TextAlignment = Janus.Windows.GridEX.TextAlignment.Near;
             this.mlt_Commodity.ValueMember = "Columnid";
@@ -1072,7 +1120,7 @@
             this.mlt_NameCustomer.SelectedIndex = -1;
             this.mlt_NameCustomer.SelectedItem = null;
             this.mlt_NameCustomer.SettingsKey = "mlt_Id";
-            this.mlt_NameCustomer.Size = new System.Drawing.Size(156, 21);
+            this.mlt_NameCustomer.Size = new System.Drawing.Size(156, 24);
             this.mlt_NameCustomer.TabIndex = 3;
             this.mlt_NameCustomer.ValueMember = "ColumnId";
             this.mlt_NameCustomer.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -1095,7 +1143,7 @@
             this.mlt_Cloth.SelectedIndex = -1;
             this.mlt_Cloth.SelectedItem = null;
             this.mlt_Cloth.SelectInDataSource = true;
-            this.mlt_Cloth.Size = new System.Drawing.Size(158, 21);
+            this.mlt_Cloth.Size = new System.Drawing.Size(158, 24);
             this.mlt_Cloth.TabIndex = 0;
             this.mlt_Cloth.ValueMember = "Id";
             this.mlt_Cloth.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -1115,7 +1163,7 @@
             this.mlt_Color.SelectedIndex = -1;
             this.mlt_Color.SelectedItem = null;
             this.mlt_Color.SettingsKey = "mlt_unit";
-            this.mlt_Color.Size = new System.Drawing.Size(157, 21);
+            this.mlt_Color.Size = new System.Drawing.Size(157, 24);
             this.mlt_Color.TabIndex = 2;
             this.mlt_Color.TextAlignment = Janus.Windows.GridEX.TextAlignment.Near;
             this.mlt_Color.ValueMember = "ID";
@@ -1136,7 +1184,7 @@
             this.mlt_Machine.SelectedIndex = -1;
             this.mlt_Machine.SelectedItem = null;
             this.mlt_Machine.SettingsKey = "mlt_unit";
-            this.mlt_Machine.Size = new System.Drawing.Size(158, 21);
+            this.mlt_Machine.Size = new System.Drawing.Size(158, 24);
             this.mlt_Machine.TabIndex = 1;
             this.mlt_Machine.TextAlignment = Janus.Windows.GridEX.TextAlignment.Near;
             this.mlt_Machine.ValueMember = "ID";
@@ -1170,7 +1218,7 @@
             this.mlt_Function_Sale.SelectedIndex = -1;
             this.mlt_Function_Sale.SelectedItem = null;
             this.mlt_Function_Sale.SelectInDataSource = true;
-            this.mlt_Function_Sale.Size = new System.Drawing.Size(156, 21);
+            this.mlt_Function_Sale.Size = new System.Drawing.Size(156, 24);
             this.mlt_Function_Sale.TabIndex = 2;
             this.mlt_Function_Sale.ValueMember = "columnid";
             this.mlt_Function_Sale.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -1203,7 +1251,7 @@
             this.mlt_marjoei_recipt.SelectedIndex = -1;
             this.mlt_marjoei_recipt.SelectedItem = null;
             this.mlt_marjoei_recipt.SelectInDataSource = true;
-            this.mlt_marjoei_recipt.Size = new System.Drawing.Size(157, 21);
+            this.mlt_marjoei_recipt.Size = new System.Drawing.Size(157, 24);
             this.mlt_marjoei_recipt.TabIndex = 0;
             this.mlt_marjoei_recipt.ValueMember = "columnid";
             this.mlt_marjoei_recipt.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -1224,7 +1272,7 @@
             this.mlt_type_marjoei.SelectedIndex = -1;
             this.mlt_type_marjoei.SelectedItem = null;
             this.mlt_type_marjoei.SelectInDataSource = true;
-            this.mlt_type_marjoei.Size = new System.Drawing.Size(158, 21);
+            this.mlt_type_marjoei.Size = new System.Drawing.Size(158, 24);
             this.mlt_type_marjoei.TabIndex = 1;
             this.mlt_type_marjoei.ValueMember = "columnid";
             this.mlt_type_marjoei.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -1260,7 +1308,7 @@
             this.mlt_TypeReturnDrafPack.SelectedIndex = -1;
             this.mlt_TypeReturnDrafPack.SelectedItem = null;
             this.mlt_TypeReturnDrafPack.SelectInDataSource = true;
-            this.mlt_TypeReturnDrafPack.Size = new System.Drawing.Size(158, 21);
+            this.mlt_TypeReturnDrafPack.Size = new System.Drawing.Size(158, 24);
             this.mlt_TypeReturnDrafPack.TabIndex = 6;
             this.mlt_TypeReturnDrafPack.ValueMember = "columnid";
             this.mlt_TypeReturnDrafPack.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -1282,7 +1330,7 @@
             this.mlt_ReturnPack.SelectedIndex = -1;
             this.mlt_ReturnPack.SelectedItem = null;
             this.mlt_ReturnPack.SelectInDataSource = true;
-            this.mlt_ReturnPack.Size = new System.Drawing.Size(157, 21);
+            this.mlt_ReturnPack.Size = new System.Drawing.Size(157, 24);
             this.mlt_ReturnPack.TabIndex = 0;
             this.mlt_ReturnPack.ValueMember = "columnid";
             this.mlt_ReturnPack.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -1304,7 +1352,7 @@
             this.mlt_TypeReturnPack.SelectedIndex = -1;
             this.mlt_TypeReturnPack.SelectedItem = null;
             this.mlt_TypeReturnPack.SelectInDataSource = true;
-            this.mlt_TypeReturnPack.Size = new System.Drawing.Size(158, 21);
+            this.mlt_TypeReturnPack.Size = new System.Drawing.Size(158, 24);
             this.mlt_TypeReturnPack.TabIndex = 1;
             this.mlt_TypeReturnPack.ValueMember = "columnid";
             this.mlt_TypeReturnPack.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -1314,17 +1362,28 @@
             // uiGroupBox9
             // 
             this.uiGroupBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiGroupBox9.Controls.Add(this.checkRegisterAutomaticProduct);
             this.uiGroupBox9.Controls.Add(this.mlt_KnittingWare);
             this.uiGroupBox9.Controls.Add(label26);
             this.uiGroupBox9.Controls.Add(this.mlt_knittingDraft);
+            this.uiGroupBox9.Controls.Add(label29);
             this.uiGroupBox9.Controls.Add(label27);
             this.uiGroupBox9.Controls.Add(this.mlt_knittingReceipt);
             this.uiGroupBox9.Controls.Add(label28);
             this.uiGroupBox9.Location = new System.Drawing.Point(9, 254);
             this.uiGroupBox9.Name = "uiGroupBox9";
-            this.uiGroupBox9.Size = new System.Drawing.Size(240, 104);
+            this.uiGroupBox9.Size = new System.Drawing.Size(240, 154);
             this.uiGroupBox9.TabIndex = 10;
             this.uiGroupBox9.Text = "انبار بافندگی";
+            // 
+            // checkRegisterAutomaticProduct
+            // 
+            this.checkRegisterAutomaticProduct.AutoSize = true;
+            this.checkRegisterAutomaticProduct.Location = new System.Drawing.Point(114, 111);
+            this.checkRegisterAutomaticProduct.Name = "checkRegisterAutomaticProduct";
+            this.checkRegisterAutomaticProduct.Size = new System.Drawing.Size(18, 17);
+            this.checkRegisterAutomaticProduct.TabIndex = 6;
+            this.checkRegisterAutomaticProduct.UseVisualStyleBackColor = true;
             // 
             // mlt_KnittingWare
             // 
@@ -1341,21 +1400,10 @@
             this.mlt_KnittingWare.SelectedIndex = -1;
             this.mlt_KnittingWare.SelectedItem = null;
             this.mlt_KnittingWare.SelectInDataSource = true;
-            this.mlt_KnittingWare.Size = new System.Drawing.Size(157, 21);
+            this.mlt_KnittingWare.Size = new System.Drawing.Size(157, 24);
             this.mlt_KnittingWare.TabIndex = 0;
             this.mlt_KnittingWare.ValueMember = "columnid";
             this.mlt_KnittingWare.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
-            // 
-            // label26
-            // 
-            label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            label26.AutoSize = true;
-            label26.BackColor = System.Drawing.Color.Transparent;
-            label26.Location = new System.Drawing.Point(195, 26);
-            label26.Name = "label26";
-            label26.Size = new System.Drawing.Size(28, 13);
-            label26.TabIndex = 3;
-            label26.Text = "انبار:";
             // 
             // mlt_knittingDraft
             // 
@@ -1372,21 +1420,10 @@
             this.mlt_knittingDraft.SelectedIndex = -1;
             this.mlt_knittingDraft.SelectedItem = null;
             this.mlt_knittingDraft.SelectInDataSource = true;
-            this.mlt_knittingDraft.Size = new System.Drawing.Size(157, 21);
+            this.mlt_knittingDraft.Size = new System.Drawing.Size(157, 24);
             this.mlt_knittingDraft.TabIndex = 2;
             this.mlt_knittingDraft.ValueMember = "columnid";
             this.mlt_knittingDraft.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
-            // 
-            // label27
-            // 
-            label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            label27.AutoSize = true;
-            label27.BackColor = System.Drawing.Color.Transparent;
-            label27.Location = new System.Drawing.Point(170, 83);
-            label27.Name = "label27";
-            label27.Size = new System.Drawing.Size(59, 13);
-            label27.TabIndex = 5;
-            label27.Text = "نوع  حواله :";
             // 
             // mlt_knittingReceipt
             // 
@@ -1403,25 +1440,14 @@
             this.mlt_knittingReceipt.SelectedIndex = -1;
             this.mlt_knittingReceipt.SelectedItem = null;
             this.mlt_knittingReceipt.SelectInDataSource = true;
-            this.mlt_knittingReceipt.Size = new System.Drawing.Size(157, 21);
+            this.mlt_knittingReceipt.Size = new System.Drawing.Size(157, 24);
             this.mlt_knittingReceipt.TabIndex = 1;
             this.mlt_knittingReceipt.ValueMember = "columnid";
             this.mlt_knittingReceipt.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
             // 
-            // label28
-            // 
-            label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            label28.AutoSize = true;
-            label28.BackColor = System.Drawing.Color.Transparent;
-            label28.Location = new System.Drawing.Point(172, 53);
-            label28.Name = "label28";
-            label28.Size = new System.Drawing.Size(57, 13);
-            label28.TabIndex = 4;
-            label28.Text = "نوع رسید :";
-            // 
             // Frm_30_WHRS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(754, 469);
             this.Controls.Add(this.uiGroupBox9);
@@ -1562,5 +1588,6 @@
         private Janus.Windows.GridEX.EditControls.MultiColumnCombo mlt_KnittingWare;
         private Janus.Windows.GridEX.EditControls.MultiColumnCombo mlt_knittingDraft;
         private Janus.Windows.GridEX.EditControls.MultiColumnCombo mlt_knittingReceipt;
+        private System.Windows.Forms.CheckBox checkRegisterAutomaticProduct;
     }
 }

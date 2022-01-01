@@ -1080,19 +1080,7 @@ G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.
 G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
 G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
 G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe.config
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.pdb
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.Contrib.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Smo.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Dmf.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\ADODB.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.xml
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csprojAssemblyReference.cache
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form4.resources
@@ -1197,7 +1185,19 @@ G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_009_Expo
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.GenerateResource.cache
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe.licenses
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CoreCompileInputs.cache
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe.config
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.pdb
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.Contrib.dll
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.dll
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Smo.dll
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Dmf.dll
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\ADODB.dll
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.xml
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csprojAssemblyReference.cache

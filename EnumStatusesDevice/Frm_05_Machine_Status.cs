@@ -9,6 +9,7 @@ namespace PCLOR.EnumStatusesDevice
     {
         RegisterDetailForDevice = 1,
         EditOrViewDevice = 2,
-        CreateProductForDevice = 3
+        CreateProductForDevice = 3,
+        RegPlaceDevice=4
     }
 }

@@ -144,34 +144,34 @@ namespace PCLOR._00_BaseInfo
                 txt_Weight.Text = dt.Rows[21][2].ToString();
                 mlt_NameCustomer.Value = dt.Rows[22][2].ToString();
                 mlt_Commodity.Value = dt.Rows[23][2].ToString();
-
-
                 mlt_marjoei_recipt.Value = dt.Rows[24][2];
                 mlt_type_marjoei.Value = dt.Rows[25][2];
-                mlt_ReturnPack.Value=dt.Rows[27][2];
-                mlt_TypeReturnPack.Value=dt.Rows[28][2];
-                mlt_TypeReturnDrafPack.Value=dt.Rows[32][2];
+                mlt_ReturnPack.Value = dt.Rows[27][2];
+                mlt_TypeReturnPack.Value = dt.Rows[28][2];
+                mlt_TypeReturnDrafPack.Value = dt.Rows[32][2];
+                checkRegisterAutomaticProduct.Checked = Convert.ToBoolean(Convert.ToInt32(dt.Rows[33][2]) < 1 ? "false" : "true");
 
             }
             catch (Exception ex)
-            { 
+            {
             }
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            if (mlt_knittingReceipt.Text == "" || mlt_Function.Text=="" || mlt_Function_Product.Text=="" || mlt_Function_Product.Text=="" || mlt_Function_Product_D.Text==""||mlt_Function_Packaging.Text=="" || mlt_Function_Packaging_D.Text==""
+            if (mlt_knittingReceipt.Text == "" || mlt_Function.Text == "" || mlt_Function_Product.Text == "" || mlt_Function_Product.Text == "" || mlt_Function_Product_D.Text == "" || mlt_Function_Packaging.Text == "" || mlt_Function_Packaging_D.Text == ""
                 || mlt_Function_Other.Text == "" || mlt_Function_Spare.Text == "" || mlt_Function_Spare_D.Text == ""
-                || mlt_Ware.Text == "" || mlt_KnittingWare.Text == "" || mlt_Ware_T.Text == "" || mlt_Ware_M.Text == "" || mlt_Ware_S.Text == "" || mlt_Ware_O.Text=="" || mlt_Color.Text==""||mlt_Cloth.Text==""||mlt_Machine.Text==""||txt_Weight.Text=="" || mlt_TypeReturnDrafPack.Text=="")
+                || mlt_Ware.Text == "" || mlt_KnittingWare.Text == "" || mlt_Ware_T.Text == "" || mlt_Ware_M.Text == "" || mlt_Ware_S.Text == "" || mlt_Ware_O.Text == "" || mlt_Color.Text == "" || mlt_Cloth.Text == "" || mlt_Machine.Text == "" || txt_Weight.Text == "" || mlt_TypeReturnDrafPack.Text == "")
             {
                 MessageBox.Show("لطفا اطلاعات را تکمیل نمایید");
                 return;
             }
-            ClDoc.Execute(ConPCLOR.ConnectionString, 
+            var IsCheck = checkRegisterAutomaticProduct.Checked ? 1 : 0;
+            ClDoc.Execute(ConPCLOR.ConnectionString,
                 " Update Table_80_Setting set value="
                 + mlt_Function.Value + " where id=1; Update Table_80_Setting set value ="
                 + mlt_knittingReceipt.Value + " where id=30; Update Table_80_Setting set value ="
-                + mlt_Function_D.Value + " where id=2;  Update Table_80_Setting set value="                
+                + mlt_Function_D.Value + " where id=2;  Update Table_80_Setting set value="
                 + mlt_knittingDraft.Value + " where id=32;  Update Table_80_Setting set value="
                 + mlt_Function_Product.Value + "where id=3; Update Table_80_Setting set value="
                 + mlt_Function_Product_D.Value + "where id=4; Update Table_80_Setting set value="
@@ -181,23 +181,26 @@ namespace PCLOR._00_BaseInfo
                 + mlt_Function_Other_D.Value + " where id=8;Update Table_80_Setting set value="
                 + mlt_Function_Spare.Value + "where id=9;Update Table_80_Setting set value="
                 + mlt_Function_Spare_D.Value + "where id=10;Update Table_80_Setting set value="
-                +mlt_Ware.Value+"where id=14; Update Table_80_Setting set value="
-                +mlt_KnittingWare.Value+"where id=31; Update Table_80_Setting set value="
-                +mlt_Ware_T.Value+"where id=15;Update Table_80_Setting set value="
-                +mlt_Ware_M.Value+"where id=16;Update Table_80_Setting set value="
-                +mlt_Ware_S.Value+"where id=17;Update Table_80_Setting set value="
-                +mlt_Ware_O.Value+"where id=18;Update Table_80_Setting set value="
-                 +mlt_Cloth.Value+"where id=19; Update Table_80_Setting set value=N'"
-                 +mlt_Machine.Text+"' where id=20;Update Table_80_Setting set value=N'"
-                 +mlt_Color.Text+"' where id=21;Update Table_80_Setting set value="
-                 +txt_Weight.Text+" where id =22;Update Table_80_Setting set value="
-                 +mlt_NameCustomer.Value+" where id=23;Update Table_80_Setting set value="
-                 +mlt_Commodity.Value+ "where id=24 ;Update Table_80_Setting set value="
-                 +mlt_marjoei_recipt.Value+" where id=25;Update Table_80_Setting set value="
+                + mlt_Ware.Value + "where id=14; Update Table_80_Setting set value="
+                + mlt_KnittingWare.Value + "where id=31; Update Table_80_Setting set value="
+                + mlt_Ware_T.Value + "where id=15;Update Table_80_Setting set value="
+                + mlt_Ware_M.Value + "where id=16;Update Table_80_Setting set value="
+                + mlt_Ware_S.Value + "where id=17;Update Table_80_Setting set value="
+                + mlt_Ware_O.Value + "where id=18;Update Table_80_Setting set value="
+                 + mlt_Cloth.Value + "where id=19; Update Table_80_Setting set value=N'"
+                 + mlt_Machine.Text + "' where id=20;Update Table_80_Setting set value=N'"
+                 + mlt_Color.Text + "' where id=21;Update Table_80_Setting set value="
+                 + txt_Weight.Text + " where id =22;Update Table_80_Setting set value="
+                 + mlt_NameCustomer.Value + " where id=23;Update Table_80_Setting set value="
+                 + mlt_Commodity.Value + "where id=24 ;Update Table_80_Setting set value="
+                 + mlt_marjoei_recipt.Value + " where id=25;Update Table_80_Setting set value="
                  + mlt_type_marjoei.Value + "where id=26;Update Table_80_Setting set value="
-                 +mlt_ReturnPack.Value + "where id=28;Update Table_80_Setting set value="
+                 + mlt_ReturnPack.Value + "where id=28;Update Table_80_Setting set value="
                  + mlt_TypeReturnPack.Value + "where id=29;Update Table_80_Setting set value="
-                 + mlt_TypeReturnDrafPack.Value + "where id=33"  );
+                 + mlt_TypeReturnDrafPack.Value + "where id=33;Update Table_80_Setting set value="
+                 + IsCheck+"where id=34"
+
+                 );
             Properties.Settings.Default.TypePWHRS = mlt_Function_Sale.Value.ToString();
             MessageBox.Show("اطلاعات با موفقیت ثبت شد");
         }
@@ -329,18 +332,18 @@ namespace PCLOR._00_BaseInfo
             {
                 btn_Save_Click(sender, e);
             }
- 
+
         }
 
         private void mlt_Cloth_ValueChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void mlt_Cloth_ValueChanged_1(object sender, EventArgs e)
         {
             Class_BasicOperation.FilterMultiColumns(mlt_Cloth, "TypeCloth", "ID");
-            
+
         }
 
         private void mlt_Machine_ValueChanged(object sender, EventArgs e)
@@ -357,7 +360,7 @@ namespace PCLOR._00_BaseInfo
 
         private void mlt_NameCustomer_ValueChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void mlt_NameCustomer_KeyUp(object sender, KeyEventArgs e)

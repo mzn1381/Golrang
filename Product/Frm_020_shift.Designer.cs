@@ -69,6 +69,7 @@ namespace PCLOR.Product
             this.gridEX2.AllowAddNew = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.AllowRemoveColumns = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.AlternatingColors = true;
+            this.gridEX2.AutoEdit = true;
             this.gridEX2.BuiltInTextsData = resources.GetString("gridEX2.BuiltInTextsData");
             this.gridEX2.ColumnAutoResize = true;
             this.gridEX2.ColumnAutoSizeMode = Janus.Windows.GridEX.ColumnAutoSizeMode.DisplayedCellsAndHeader;

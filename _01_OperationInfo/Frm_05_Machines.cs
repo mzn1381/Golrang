@@ -31,21 +31,36 @@ namespace PCLOR._01_OperationInfo
             InitializeComponent();
         }
 
-        private  void Frm_05_Machines_Load(object sender, EventArgs e)
+        private void Frm_05_Machines_Load(object sender, EventArgs e)
         {
+            button1.Visible = false;
+            button1.Enabled = false;
             if (Status == Frm_05_Machine_Status.RegisterDetailForDevice)
+            {
                 this.Text = "لیست دستگاه ها برای ثبت اظهارات";
+                BasicFunction.LoadDevices(ButtonRegisterDescriptionDevice_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls, Status);
+            }
             else if (Status == Frm_05_Machine_Status.CreateProductForDevice)
+            {
                 this.Text = "لیست تولید دستگاه ها";
-            Class_UserScope UserScope = new Class_UserScope();
-            if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 147))
+                BasicFunction.LoadDevices(ButtonCreateProduct_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls, Status);
+
+            }
+            else if (Status == Frm_05_Machine_Status.RegPlaceDevice)
+            {
+                this.Text = "تعیین مکان دستگاه ها";
+                BasicFunction.LoadDevices(null, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls, Status);
                 button1.Visible = true;
-            if (Status == Frm_05_Machine_Status.EditOrViewDevice)
-                BasicFunction.LoadDevices(ButtonEditViewDetail_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls,Status);
-            else if (Status == Frm_05_Machine_Status.RegisterDetailForDevice)
-                BasicFunction.LoadDevices(ButtonRegisterDescriptionDevice_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls,Status);
-            else if (Status == Frm_05_Machine_Status.CreateProductForDevice)
-                BasicFunction.LoadDevices(ButtonCreateProduct_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls,Status);
+                button1.Enabled = true;
+                //this.WindowState = FormWindowState.Maximized;
+            }
+
+            else if (Status == Frm_05_Machine_Status.EditOrViewDevice)
+                BasicFunction.LoadDevices(ButtonEditViewDetail_Click, ConPCLOR, ConPCLOR.ConnectionString, ClDoc, Controls, Status);
+
+            Class_UserScope UserScope = new Class_UserScope();
+            //if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 147))
+            //    button1.Visible = true;
         }
 
 

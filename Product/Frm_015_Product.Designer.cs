@@ -108,6 +108,7 @@ namespace PCLOR.Product
             this.table_115_ProductTableAdapter1 = new PCLOR.PCLOR_1_1400DataSetTableAdapters.Table_115_ProductTableAdapter();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDateCreateRecipt = new System.Windows.Forms.TextBox();
+            this.txt_Dat = new System.Windows.Forms.MaskedTextBox();
             label17 = new System.Windows.Forms.Label();
             label16 = new System.Windows.Forms.Label();
             label15 = new System.Windows.Forms.Label();
@@ -525,7 +526,6 @@ namespace PCLOR.Product
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -756,7 +756,7 @@ namespace PCLOR.Product
             // 
             this.chek_TowPerson.AutoSize = true;
             this.chek_TowPerson.Enabled = false;
-            this.chek_TowPerson.Location = new System.Drawing.Point(944, 585);
+            this.chek_TowPerson.Location = new System.Drawing.Point(944, 606);
             this.chek_TowPerson.Name = "chek_TowPerson";
             this.chek_TowPerson.Size = new System.Drawing.Size(113, 21);
             this.chek_TowPerson.TabIndex = 195;
@@ -918,10 +918,20 @@ namespace PCLOR.Product
             // 
             // txtDateCreateRecipt
             // 
-            this.txtDateCreateRecipt.Location = new System.Drawing.Point(896, 538);
+            this.txtDateCreateRecipt.Location = new System.Drawing.Point(678, 538);
             this.txtDateCreateRecipt.Name = "txtDateCreateRecipt";
             this.txtDateCreateRecipt.Size = new System.Drawing.Size(100, 24);
             this.txtDateCreateRecipt.TabIndex = 218;
+            // 
+            // txt_Dat
+            // 
+            this.txt_Dat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_Dat.Location = new System.Drawing.Point(785, 538);
+            this.txt_Dat.Mask = "0000/00/00";
+            this.txt_Dat.Name = "txt_Dat";
+            this.txt_Dat.Size = new System.Drawing.Size(209, 24);
+            this.txt_Dat.TabIndex = 223;
             // 
             // Frm_015_Product
             // 
@@ -929,6 +939,7 @@ namespace PCLOR.Product
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1086, 713);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.txt_Dat);
             this.Controls.Add(this.lblOperatorName);
             this.Controls.Add(this.lblTypeDevice);
             this.Controls.Add(this.lblDateCreate);
@@ -1081,5 +1092,6 @@ namespace PCLOR.Product
         private PCLOR_1_1400DataSetTableAdapters.Table_115_ProductTableAdapter table_115_ProductTableAdapter1;
         private System.Windows.Forms.TextBox txtDateCreateRecipt;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MaskedTextBox txt_Dat;
     }
 }
