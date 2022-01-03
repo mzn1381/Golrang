@@ -80,8 +80,9 @@ namespace PCLOR.Product
 
         private void Frm_015_Product_Load(object sender, EventArgs e)
         {
+            IsJoinShift(DeviceId);
             // TODO: This line of code loads data into the 'pCLOR_1_1400DataSet.Table_115_Product' table. You can move, or remove it, as needed.
-            txtDateCreateRecipt.Text = DateTime.Now.ToShamsi();
+            txt_DateTime.Text = DateTime.Now.ToShamsi();
             this.table_115_ProductTableAdapter1.Fill(this.pCLOR_1_1400DataSet.Table_115_Product);
             gridEX2.MoveLast();
             gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
@@ -183,13 +184,12 @@ namespace PCLOR.Product
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["UserEdite"] = Class_BasicOperation._UserName;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["DateEdite"] = Class_BasicOperation.ServerDate().ToString();
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Operator"] = txtCodeTag.Text.Trim().ToString();
-
+                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["IsJoinShift"] = IsJoinShift(DeviceId);
                 //if (((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ID"].ToString().StartsWith("-"))
                 //{
                 //    txt_Number.Text = ClDoc.MaxNumber(Properties.Settings.Default.PCLOR, "Table_115_Product", "Number").ToString();
 
                 //    ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, @"update Table_115_Product set Number=" + txt_Number.Text + " where Id=" + txt_Id.Text);
-
                 //}
                 //table_115_ProductBindingSource.EndEdit();
                 //table_115_ProductTableAdapter1.Update(pCLOR_1_1400DataSet.Table_115_Product);
@@ -276,8 +276,8 @@ namespace PCLOR.Product
                                select TimeEnd
                                from Table_105_DefinitionWorkShift
                                where ID=2";
-                
-               date= db.QueryFirstOrDefault<TimeSpan>(query, null, commandType: CommandType.Text);
+
+                date = db.QueryFirstOrDefault<TimeSpan>(query, null, commandType: CommandType.Text);
             }
 
             if (DateTime.Now.Hour >= date.Hours)
@@ -295,8 +295,8 @@ namespace PCLOR.Product
                                 on m.YarnType = c.ID
                                 inner join Table_005_TypeCloth as t
                                 on m.FabricType = t.ID
-                                where m.ID ={ID}
-                                                ";
+                                where m.ID ={ID}";
+
                 var machine = db.QueryFirstOrDefault<Machine>(query, null, commandType: CommandType.Text);
                 return machine;
             }
@@ -310,14 +310,14 @@ namespace PCLOR.Product
             lblDateCreate.Text = DateTime.Now.ToShamsi();
             lblGapDevice.Text = machine.Gap.ToString();
             lblNameDevice.Text = machine.NameMachine;
-            lblRoundStop.Text = machine.RoundStop.ToString();
+            lblRoundStop.Text = Convert.ToInt32(machine.RoundStop).ToString();
             lblShiftOperator.Text = StatusShift();
             lblYarnType.Text = machine.YarnTypeName;
-            lblTeeny.Text = machine.teeny.ToString();
+            lblTeeny.Text = Convert.ToInt32(machine.teeny).ToString();
             lblTextureLimit.Text = machine.TextureLimit.ToString();
             lblTypeDevice.Text = machine.DeviceMark;
             lblTypeFabric.Text = machine.FabricTypeName;
-            lblCreateTime.Text = DateTime.Now.TimeOfDay.Hours.ToString("00") + ":" + DateTime.Now.TimeOfDay.Minutes.ToString("00");
+            lblCreateTime.Text = DateTime.Now.TimeOfDay.Hours.ToString("00") + ":" + DateTime.Now.TimeOfDay.Minutes.ToString("00") + ":" + DateTime.Now.Second.ToString("00");
             lblArea.Text = machine.Area.ToString();
             txtDescDevice.Text = machine.Description;
             IsInfinitiveTextureLimit = machine.IsInfinitiveTextureLimit;
@@ -400,9 +400,6 @@ namespace PCLOR.Product
             }
         }
         //string ID = "";
-
-
-
         private void Recipt()
         {
             using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
@@ -431,7 +428,7 @@ namespace PCLOR.Product
                                                                             [column10],
                                                                             [column11]
                                                                  
-                                                                          ) VALUES (  {ResidNum} , N'{txtDateCreateRecipt.Text}'  , {WareCode},  {FunctionType} ,
+                                                                          ) VALUES (  {ResidNum} , N'{txt_DateTime.Text}'  , {WareCode},  {FunctionType} ,
                                                                         {(string.IsNullOrEmpty(lblOperationCode.Text) ? "N''" : lblOperationCode.Text)},N'رسید صادره بابت رسید پارچه خام شماره {txt_Number.Text}' , N'{Class_BasicOperation._UserName}' ,getdate(), N'{Class_BasicOperation._UserName}', getdate() );
                                                                        select  Max(columnid)  from Table_011_PwhrsReceipt";
                     var Key = db.QueryFirstOrDefault<int>(commandtxt, null, commandType: CommandType.Text);
@@ -908,5 +905,39 @@ namespace PCLOR.Product
                 db.Execute(query, null, commandType: CommandType.Text);
             }
         }
+
+        public int IsJoinShift(int DeviceId)
+        {
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+                string lastProductShift = "صبح";
+                string shiftNow = "صبح";
+                var query = $@"
+                    select Top(1)
+                    Time as Date  
+                    from Table_115_Product
+                    where Machine ={DeviceId}
+                    order By DateSabt Desc ;
+                    select TimeEnd
+                    from Table_105_DefinitionWorkShift
+                    where ID=2";
+                var date = db.QueryMultiple(query, null, commandType: CommandType.Text);
+                var lastProducttt = date.ReadFirstOrDefault(typeof(TimeSpan));
+                TimeSpan lastProduct = (TimeSpan)lastProducttt;
+                //var gg = lastProduct.ToString("tt");
+                var hh = DateTime.Now.ToString("tt");
+                var endShiftttt = date.ReadFirstOrDefault(typeof(TimeSpan));
+                var endShift = ((TimeSpan)endShiftttt).Hours;
+                if (lastProduct.Hours > endShift)
+                    lastProductShift = "شب";
+                if (DateTime.Now.Hour > endShift)
+                    lastProductShift = "شب";
+                if (lastProductShift.Trim() == shiftNow.Trim())
+                    return 1;
+                return 0;
+            }
+
+        }
+
     }
 }

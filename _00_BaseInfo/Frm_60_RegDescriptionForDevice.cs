@@ -81,7 +81,7 @@ namespace PCLOR._00_BaseInfo
                     var query = $@"
                 SELECT 
                 CASE 
-                WHEN EXISTS (SELECT ColumnId FROM PBASE_1.dbo.Table_045_PersonInfo WHERE Column148 = N'{txtCodeTag.Text}')
+                WHEN EXISTS (SELECT ColumnId FROM PBASE_1.dbo.Table_045_PersonInfo WHERE Column148 = N'{txtCodeTag.Text.Trim()}')
                 THEN 1 
                 ELSE 0
                 END 
@@ -130,15 +130,15 @@ where DeviceId = {DeviceId}
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
                 var check = (checkIsDefective.Checked) ? 1 : 0;
-                var query = $@" update Table_60_SpecsTechnical Set IsDefective= @IsDefective
-                                where ID=  @ID ;
+                var query = $@" update Table_60_SpecsTechnical Set IsDeffective= {check}
+                                where ID=  {DeviceId};
                             
 INSERT INTO Table_135_RpeortDevices 
 (DateCreate,Description,DeviceId,IsDeffective,TokenCode)
 VALUES 
 (N'{DateTime.Now.ToShamsi()}',N'{txtDescForDevice.Text}',{DeviceId},{check},N'{txtCodeTag.Text}')
 ";
-                var status = db.Execute(query, new { @ID = DeviceId, @IsDefective = (checkIsDefective.Checked)?1:0 });
+                var status = db.Execute(query, (checkIsDefective.Checked) ? 1 : 0);
                 if (status > 0)
                     return true;
                 return false;
@@ -184,12 +184,21 @@ VALUES
                         {
                             MessageBox.Show("ثبت با موفقیت انجام شد ");
                             RefreshPage();
+                            this.Close();
                         }
                         else
+                        {
                             MessageBox.Show("ثبت با موفقیت انجام نشد !!");
+                            txtCodeTag.Text = string.Empty;
+                            txtDescForDevice.Text = string.Empty;
+                        }
                     }
                     else
+                    {
                         MessageBox.Show("کد تگ وارد شده معتبر نیست !");
+                        txtCodeTag.Text = string.Empty;
+                        txtDescForDevice.Text = string.Empty;
+                    }
                 }
                 else
                     MessageBox.Show("لطفا اظهارات مربوط به دستگاه را وارد نمائید");

@@ -65,12 +65,9 @@ namespace PCLOR._00_BaseInfo
                 if (((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["Code"].ToString().StartsWith("-"))
                     txt_Code.Text = ClDoc.MaxNumber(Properties.Settings.Default.PCLOR, "table_60_SpecsTechnical", "Code").ToString();
                 int Position = gridEX1.CurrentRow.RowIndex;
-                //((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["namemachine"] = "زینب";
                 table_60_SpecsTechnicalBindingSource.EndEdit();
                 table_60_SpecsTechnicalTableAdapter.Update(dataSet_05_PCLOR.Table_60_SpecsTechnical);
-                //this.table_60_SpecsTechnicalTableAdapter.FillById(dataSet_05_PCLOR.Table_60_SpecsTechnical,Convert.ToInt64(gridEX1.GetValue("Id")));
                 gridEX1.MoveTo(Position);
-                //gridEX1.MoveLast();
                 MessageBox.Show("اطلاعات با موفقیت ذخیره شد");
                 btn_New.Enabled = true;
                 uiPanel0.Enabled = false;

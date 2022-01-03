@@ -121,10 +121,11 @@ namespace PCLOR._01_OperationInfo
 
         private void Frm_05_Machines_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Task.Factory.StartNew(() =>
+          var t=  Task.Factory.StartNew(() =>
             {
                 BasicFunction.SaveLocationDevices(Controls, ConPCLOR);
             });
+            t.Wait();
         }
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)

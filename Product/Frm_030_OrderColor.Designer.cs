@@ -283,7 +283,7 @@ namespace PCLOR.Product
             this.uiPanel1.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel1.FloatingLocation = new System.Drawing.Point(654, 425);
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
-            this.uiPanel1.Location = new System.Drawing.Point(440, 30);
+            this.uiPanel1.Location = new System.Drawing.Point(467, 30);
             this.uiPanel1.Name = "uiPanel1";
             this.uiPanel1.Size = new System.Drawing.Size(297, 474);
             this.uiPanel1.TabIndex = 4;
@@ -600,7 +600,7 @@ namespace PCLOR.Product
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(740, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(767, 27);
             this.bindingNavigator1.TabIndex = 33;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -721,7 +721,7 @@ namespace PCLOR.Product
             this.txt_Search.Border.Class = "TextBoxBorder";
             this.txt_Search.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_Search.ForeColor = System.Drawing.Color.Black;
-            this.txt_Search.Location = new System.Drawing.Point(617, 2);
+            this.txt_Search.Location = new System.Drawing.Point(644, 2);
             this.txt_Search.Name = "txt_Search";
             this.txt_Search.Size = new System.Drawing.Size(118, 24);
             this.txt_Search.TabIndex = 35;
@@ -793,7 +793,7 @@ namespace PCLOR.Product
             this.gridEX2.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX2.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.SettingsKey = "Frm_15_InfoServiceGrid_6";
-            this.gridEX2.Size = new System.Drawing.Size(437, 474);
+            this.gridEX2.Size = new System.Drawing.Size(464, 474);
             this.gridEX2.TabIndex = 36;
             this.gridEX2.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -821,7 +821,7 @@ namespace PCLOR.Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 507);
+            this.ClientSize = new System.Drawing.Size(767, 507);
             this.Controls.Add(this.gridEX2);
             this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.uiPanel1);

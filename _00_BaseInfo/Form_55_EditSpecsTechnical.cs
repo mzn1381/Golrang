@@ -184,7 +184,6 @@ namespace PCLOR._00_BaseInfo
                 where ID = @Id";
                 using (IDbConnection db = new SqlConnection(Properties.Settings.Default.PCLOR))
                 {
-
                     var sTatus = db.Execute(queryUpdate, param: new
                     {
                         @name = txtDeviceName.Text,
