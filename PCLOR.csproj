@@ -387,6 +387,7 @@
     <Compile Include="Models\CheckBarcodeViewModel.cs" />
     <Compile Include="Models\ErrorBarcodeProductEnum.cs" />
     <Compile Include="Models\FabricTypeDropDownViewModel.cs" />
+    <Compile Include="Models\FillDetailBarcodeViewModel.cs" />
     <Compile Include="Models\Machine.cs" />
     <Compile Include="Models\MachinePoint.cs" />
     <Compile Include="Models\PersonInfoViewModel.cs" />

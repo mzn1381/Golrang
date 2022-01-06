@@ -159,7 +159,7 @@ namespace PCLOR.Product
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["weight"] = weigh;
 
                 //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ProgramerMachine"] = DeviceId;
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Machine"] = DeviceName;
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Machine"] = DeviceId;
 
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ClothType"] = clothType;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["CottonType"] = cottonType;
