@@ -384,6 +384,8 @@
     <Compile Include="MarjooiSale\Frm_30_Production_Edite.designer.cs">
       <DependentUpon>Frm_30_Production_Edite.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\CheckBarcodeViewModel.cs" />
+    <Compile Include="Models\ErrorBarcodeProductEnum.cs" />
     <Compile Include="Models\FabricTypeDropDownViewModel.cs" />
     <Compile Include="Models\Machine.cs" />
     <Compile Include="Models\MachinePoint.cs" />
