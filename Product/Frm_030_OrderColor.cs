@@ -425,11 +425,16 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
             //    MessageBox.Show("لطفا اطلاعات را تکمیل نمایید");
             //    return;
             //}
-            //if (mlt_Color.Text.All(char.IsDigit) || uiComboBox1.Text.All(char.IsDigit) || mlt_TypeCloth.Text.All(char.IsDigit) || txt_NumberOrder.Text.All(char.IsDigit) == false)
-            //{
-            //    MessageBox.Show("اطلاعات وارد شده معتبر نمی باشد");
-            //    return;
-            //}
+            if (mlt_Color.Text.All(char.IsDigit)    /*|| mlt_TypeCloth.Text.All(char.IsDigit) || txt_NumberOrder.Text.All(char.IsDigit) == false*/)
+            {
+                MessageBox.Show("لطفا نوع رنگ را انتخاب نمائید");
+                return;
+            }
+            if (uiComboBox1.Text.All(char.IsDigit))
+            {
+                MessageBox.Show("لطفاطرح چاپ  را انتخاب نمائید");
+                return;
+            }
 
             //if (((DataRowView)table_025_HederOrderColorBindingSource.CurrencyManager.Current)["Number"].ToString().StartsWith("-"))
             //{
@@ -446,6 +451,11 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
             //    Class_BasicOperation.ShowMsg("", "تعداد سفارشات برای این بارکد از تعداد تولید شده آن بیشتر است", Class_BasicOperation.MessageType.Stop);
             //    return;
             //}
+            if (string.IsNullOrEmpty(txt_Barcode.Text))
+            {
+                MessageBox.Show("لطفا بارکد هارا وارد نمایئد سپس اقدام فرمایئد");
+                return;
+            }
             var barcodes = GetBarcodes(txt_Barcode.Text);
             var status = CheckBarcodesDetail(GetBarcodesDetail(barcodes));
             switch (status)
@@ -464,6 +474,7 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
                     return;
             }
             FillDetailBarcode(barcodes);
+            FillDetailColor(Convert.ToInt32((mlt_Color.Value).ToString()), Convert.ToDecimal(txt_weight.Text));
             //table_025_HederOrderColorBindingSource.EndEdit();
             //gridEX2.AllowAddNew = Janus.Windows.GridEX.InheritableBoolean.True;
             //gridEX2.MoveToNewRecord();
@@ -635,7 +646,13 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
 
         private IEnumerable<CheckBarcodeViewModel> GetBarcodesDetail(string[] barcodes)
         {
-            var codes = string.Join(",", barcodes);
+            string codes = "";
+            if (barcodes.Length > 1)
+            {
+                codes = string.Join(",", barcodes);
+            }
+            else if (barcodes.Length == 1)
+                codes = barcodes[0];
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
                 var query = $@"
@@ -661,38 +678,64 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
             return ErrorBarcodeProductEnum.Success;
         }
 
+        public string GetOrginalCodes(string[] barcodes)
+        {
+            string codes = "";
+            if (barcodes.Length > 1)
+            {
+                codes = string.Join(",", barcodes);
+            }
+            else if (barcodes.Length == 1)
+                codes = barcodes[0];
+            return codes;
+        }
 
         public void FillDetailBarcode(string[] barcodes)
+        {
+
+            var codes = GetOrginalCodes(barcodes);
+            var res = GetDetailBarcode(codes);
+            if (res != null && res.Count() != 0)
+            {
+                var first = res.First();
+                txt_weight.Text = res.Sum(d => d.Weight).ToString();
+                txt_Description.Text = string.Join(System.Environment.NewLine, res.Select(c => c.Description));
+                lblNameDevice.Text = first.NameDevice;
+                lblClothType.Text = first.ClothName;
+                txt_NumberOrder.Text = barcodes.Count().ToString();
+            }
+        }
+        public IEnumerable<FillDetailBarcodeViewModel> GetDetailBarcode(string codes)
         {
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
                 var query = $@"
                              select p.Weight as Weight , p.ReportDescriptin as Description ,
-                             s.namemachine as NameDevice , t.TypeCloth as ClothName , p.Barcode
+                             s.namemachine as NameDevice , t.TypeCloth as ClothName , p.Barcode,
+							 p.UserSabt as Weaver , 'Purity',p.Date as [Date]
+							 , Case 
+							 When shift = 2 THEN 'صبح'
+							 When Shift = 3 THEN 'شب'
+							 END AS [Shift]
                              from Table_115_Product as p
                              inner join Table_60_SpecsTechnical as s
                              on s.ID =p.Machine 
                              inner join Table_005_TypeCloth as t 
                              on t.ID = s.FabricType
-                             where p.Barcode in ({string.Join(",", barcodes)}) ";
-                var res = db.Query<FillDetailBarcodeViewModel>(query, null, commandType: CommandType.Text);
-                if (res != null && res.Count() != 0)
-                {
-                    var first = res.First();
-                    txt_weight.Text = res.Sum(d => d.Weight).ToString();
-                    txt_Description.Text = string.Join(System.Environment.NewLine, res.Select(c => c.Description));
-                    lblNameDevice.Text = first.NameDevice;
-                    lblClothType.Text = first.ClothName;
-                }
-
-
-
-
-
-
+                             where p.Barcode in ({codes})";
+                return db.Query<FillDetailBarcodeViewModel>(query, null, commandType: CommandType.Text);
             }
+        }
 
-
+        public void ShowDetailBarcode(string codes)
+        {
+            var models = GetDetailBarcode(codes);
+            foreach (var item in models)
+            {
+                var row = gridEX2.AddItem();
+                row.BeginEdit();
+                row.Cells[0]
+            }
         }
 
         public bool StatusBarcodesEntered(ErrorBarcodeProductEnum status)
@@ -710,6 +753,32 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
             txt_weight.Text = string.Empty;
         }
 
+        private void uiPanel0_SelectedPanelChanged(object sender, Janus.Windows.UI.Dock.PanelActionEventArgs e)
+        {
+
+        }
+
+        private void FillDetailColor(int colorId, decimal Weight)
+        {
+            var model = GetDetailColor(colorId, Weight);
+            foreach (var item in model)
+            {
+                var row = gridEX1.AddItem();
+                row.BeginEdit();
+                row.Cells[0].Value = item.CodeCommodity;
+                row.Cells[1].Value = item.NameColor;
+                row.Cells[2].Value = item.AmountRequierd;
+                row.EndEdit();
+            }
+            txt_Description.Focus();
+        }
+        public IEnumerable<ShowDetailColorViewModel> GetDetailColor(int colorId, decimal Weight)
+        {
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+                return db.Query<ShowDetailColorViewModel>("GetDetailColor", new { @Weight = Weight, @ColorId = colorId }, commandType: CommandType.StoredProcedure);
+            }
+        }
 
     }
 }

@@ -12,5 +12,9 @@ namespace PCLOR.Models
         public string NameDevice { get; set; }
         public string Barcode { get; set; }
         public string ClothName { get; set; }
+        public string Weaver { get; set; }
+        public decimal Purity { get; set; }
+        public string Shift { get; set; }
+        public string Date { get; set; }
     }
 }
