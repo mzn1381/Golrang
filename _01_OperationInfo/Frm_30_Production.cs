@@ -1104,8 +1104,6 @@ FROM         dbo.Table_035_Production INNER JOIN
             }
 
         }
-
-
         private float FirstRemain1(int GoodCode, string Ware)
         {
             using (SqlConnection Con = new SqlConnection(Properties.Settings.Default.PWHRS))
@@ -1132,20 +1130,6 @@ FROM         dbo.Table_035_Production INNER JOIN
             }
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //حواله پارچه ها
         private void ExportDraftCloth()
         {
@@ -1552,7 +1536,6 @@ FROM         dbo.Table_035_Production INNER JOIN
             catch { }
 
         }
-
         private void txt_Number_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (sender is Janus.Windows.GridEX.EditControls.MultiColumnCombo)
@@ -1568,14 +1551,12 @@ FROM         dbo.Table_035_Production INNER JOIN
                     Class_BasicOperation.isEnter(e.KeyChar);
             }
         }
-
         private void mlt_NameCustomer_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
                 txt_NumberProduct.Focus();
 
         }
-
         private void gridEX1_CellValueChanged(object sender, Janus.Windows.GridEX.ColumnActionEventArgs e)
         {
             gridEX1.CurrentCellDroppedDown = true;
@@ -1592,7 +1573,6 @@ FROM         dbo.Table_035_Production INNER JOIN
             }
 
         }
-
         private void gridEX1_AddingRecord(object sender, CancelEventArgs e)
         {
             try
@@ -1622,14 +1602,12 @@ FROM         dbo.Table_035_Production INNER JOIN
 
             catch { }
         }
-
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             Frm_30_Production_Load(sender, e);
             btn_New.Enabled = true;
 
         }
-
         private void gridEX1_CellUpdated(object sender, ColumnActionEventArgs e)
         {
             try
@@ -1648,7 +1626,6 @@ FROM         dbo.Table_035_Production INNER JOIN
             }
             catch { }
         }
-
         private void gridEX1_Enter(object sender, EventArgs e)
         {
             try
@@ -1660,12 +1637,10 @@ FROM         dbo.Table_035_Production INNER JOIN
                 Class_BasicOperation.CheckExceptionType(ex, this.Name);
             }
         }
-
         private void txt_Number_TextChanged(object sender, EventArgs e)
         {
 
         }
-
         private void gridEX2_FormattingRow(object sender, RowLoadEventArgs e)
         {
 

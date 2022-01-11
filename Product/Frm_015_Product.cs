@@ -80,7 +80,7 @@ namespace PCLOR.Product
 
         private void Frm_015_Product_Load(object sender, EventArgs e)
         {
-            IsJoinShift(DeviceId);
+            //IsJoinShift(DeviceId);
             // TODO: This line of code loads data into the 'pCLOR_1_1400DataSet.Table_115_Product' table. You can move, or remove it, as needed.
             txt_DateTime.Text = DateTime.Now.ToShamsi();
             this.table_115_ProductTableAdapter1.Fill(this.pCLOR_1_1400DataSet.Table_115_Product);

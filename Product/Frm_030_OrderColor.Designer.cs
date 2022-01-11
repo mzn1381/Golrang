@@ -49,7 +49,7 @@ namespace PCLOR.Product
             this.uiPanelManager1 = new Janus.Windows.UI.Dock.UIPanelManager(this.components);
             this.uiPanel1 = new Janus.Windows.UI.Dock.UIPanel();
             this.uiPanel1Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSaveFinal = new System.Windows.Forms.Button();
             this.btn_Insert = new System.Windows.Forms.Button();
             this.uiButton1 = new Janus.Windows.EditControls.UIButton();
             this.txt_Dat = new System.Windows.Forms.MaskedTextBox();
@@ -67,6 +67,7 @@ namespace PCLOR.Product
             this.uiComboBox1 = new Janus.Windows.EditControls.UIComboBox();
             this.txt_Barcode = new System.Windows.Forms.TextBox();
             this.txt_Id = new System.Windows.Forms.TextBox();
+            this.uiPanel0 = new Janus.Windows.UI.Dock.UIPanelGroup();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -86,7 +87,6 @@ namespace PCLOR.Product
             this.table_030_DetailOrderColorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.table_025_HederOrderColorTableAdapter = new PCLOR.data_PCLOR.DataSet_05_PCLORTableAdapters.Table_025_HederOrderColorTableAdapter();
             this.table_030_DetailOrderColorTableAdapter = new PCLOR.data_PCLOR.DataSet_05_PCLORTableAdapters.Table_030_DetailOrderColorTableAdapter();
-            this.uiPanel0 = new Janus.Windows.UI.Dock.UIPanelGroup();
             this.gridEX2 = new Janus.Windows.GridEX.GridEX();
             this.uiPanel2Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
             this.uiPanel2 = new Janus.Windows.UI.Dock.UIPanel();
@@ -110,10 +110,10 @@ namespace PCLOR.Product
             ((System.ComponentModel.ISupportInitialize)(this.table_025_HederOrderColorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_05_PCLOR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mlt_Color)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table_030_DetailOrderColorBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridEX2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanel2)).BeginInit();
             this.uiPanel2.SuspendLayout();
@@ -274,7 +274,7 @@ namespace PCLOR.Product
             // 
             // uiPanel1Container
             // 
-            this.uiPanel1Container.Controls.Add(this.button1);
+            this.uiPanel1Container.Controls.Add(this.btnSaveFinal);
             this.uiPanel1Container.Controls.Add(this.btn_Insert);
             this.uiPanel1Container.Controls.Add(this.uiButton1);
             this.uiPanel1Container.Controls.Add(label3);
@@ -307,20 +307,20 @@ namespace PCLOR.Product
             this.uiPanel1Container.Size = new System.Drawing.Size(291, 655);
             this.uiPanel1Container.TabIndex = 0;
             // 
-            // button1
+            // btnSaveFinal
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnSaveFinal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(7, 624);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(276, 25);
-            this.button1.TabIndex = 64;
-            this.button1.Text = "ثبت نهایی";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btn_Insert_Click);
+            this.btnSaveFinal.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSaveFinal.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSaveFinal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveFinal.Location = new System.Drawing.Point(7, 624);
+            this.btnSaveFinal.Name = "btnSaveFinal";
+            this.btnSaveFinal.Size = new System.Drawing.Size(276, 25);
+            this.btnSaveFinal.TabIndex = 64;
+            this.btnSaveFinal.Text = "ثبت نهایی";
+            this.btnSaveFinal.UseVisualStyleBackColor = false;
+            this.btnSaveFinal.Click += new System.EventHandler(this.btnSaveFinal_Click);
             // 
             // btn_Insert
             // 
@@ -520,6 +520,18 @@ namespace PCLOR.Product
             this.txt_Id.Name = "txt_Id";
             this.txt_Id.Size = new System.Drawing.Size(55, 24);
             this.txt_Id.TabIndex = 59;
+            // 
+            // uiPanel0
+            // 
+            this.uiPanel0.Closed = true;
+            this.uiPanel0.FloatingLocation = new System.Drawing.Point(204, 490);
+            this.uiPanel0.Location = new System.Drawing.Point(3, 30);
+            this.uiPanel0.Name = "uiPanel0";
+            this.uiPanel0.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.uiPanel0.Size = new System.Drawing.Size(579, 680);
+            this.uiPanel0.TabIndex = 4;
+            this.uiPanel0.Text = "Panel 0";
+            this.uiPanel0.SelectedPanelChanged += new Janus.Windows.UI.Dock.PanelActionEventHandler(this.uiPanel0_SelectedPanelChanged);
             // 
             // bindingNavigator1
             // 
@@ -731,26 +743,15 @@ namespace PCLOR.Product
             // 
             this.table_030_DetailOrderColorTableAdapter.ClearBeforeFill = true;
             // 
-            // uiPanel0
-            // 
-            this.uiPanel0.FloatingLocation = new System.Drawing.Point(204, 490);
-            this.uiPanel0.Location = new System.Drawing.Point(3, 30);
-            this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.uiPanel0.Size = new System.Drawing.Size(579, 680);
-            this.uiPanel0.TabIndex = 4;
-            this.uiPanel0.Text = "Panel 0";
-            this.uiPanel0.SelectedPanelChanged += new Janus.Windows.UI.Dock.PanelActionEventHandler(this.uiPanel0_SelectedPanelChanged);
-            // 
             // gridEX2
             // 
             this.gridEX2.AllowDelete = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.AllowEdit = Janus.Windows.GridEX.InheritableBoolean.False;
             this.gridEX2.AllowRemoveColumns = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.AlternatingColors = true;
+            this.gridEX2.BoundMode = Janus.Windows.GridEX.BoundMode.Unbound;
             this.gridEX2.BuiltInTextsData = resources.GetString("gridEX2.BuiltInTextsData");
             this.gridEX2.ColumnAutoSizeMode = Janus.Windows.GridEX.ColumnAutoSizeMode.DisplayedCellsAndHeader;
-            this.gridEX2.DataSource = this.table_030_DetailOrderColorBindingSource;
             gridEX2_DesignTimeLayout.LayoutString = resources.GetString("gridEX2_DesignTimeLayout.LayoutString");
             this.gridEX2.DesignTimeLayout = gridEX2_DesignTimeLayout;
             this.gridEX2.EnterKeyBehavior = Janus.Windows.GridEX.EnterKeyBehavior.NextCell;
@@ -781,9 +782,9 @@ namespace PCLOR.Product
             // 
             // uiPanel2Container
             // 
-            this.uiPanel2Container.Location = new System.Drawing.Point(1, 24);
+            this.uiPanel2Container.Location = new System.Drawing.Point(0, 0);
             this.uiPanel2Container.Name = "uiPanel2Container";
-            this.uiPanel2Container.Size = new System.Drawing.Size(462, 634);
+            this.uiPanel2Container.Size = new System.Drawing.Size(464, 659);
             this.uiPanel2Container.TabIndex = 0;
             // 
             // uiPanel2
@@ -798,7 +799,6 @@ namespace PCLOR.Product
             // gridEX1
             // 
             this.gridEX1.AllowDelete = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.gridEX1.AllowEdit = Janus.Windows.GridEX.InheritableBoolean.False;
             this.gridEX1.AllowRemoveColumns = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.AlternatingColors = true;
             this.gridEX1.BoundMode = Janus.Windows.GridEX.BoundMode.Unbound;
@@ -816,6 +816,9 @@ namespace PCLOR.Product
             this.gridEX1.FilterRowUpdateMode = Janus.Windows.GridEX.FilterRowUpdateMode.WhenValueChanges;
             this.gridEX1.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid;
             this.gridEX1.GroupByBoxVisible = false;
+            this.gridEX1.GroupRowVisualStyle = Janus.Windows.GridEX.GroupRowVisualStyle.UseRowStyle;
+            this.gridEX1.HasEditorsControlStyle = true;
+            this.gridEX1.KeepRowSettings = true;
             this.gridEX1.Location = new System.Drawing.Point(3, 442);
             this.gridEX1.Name = "gridEX1";
             this.gridEX1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -857,11 +860,11 @@ namespace PCLOR.Product
             ((System.ComponentModel.ISupportInitialize)(this.table_025_HederOrderColorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_05_PCLOR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mlt_Color)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table_030_DetailOrderColorBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridEX2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanel2)).EndInit();
             this.uiPanel2.ResumeLayout(false);
@@ -909,7 +912,7 @@ namespace PCLOR.Product
         private System.Windows.Forms.BindingSource table_030_DetailOrderColorBindingSource;
         private data_PCLOR.DataSet_05_PCLORTableAdapters.Table_030_DetailOrderColorTableAdapter table_030_DetailOrderColorTableAdapter;
         private System.Windows.Forms.TextBox txt_weight;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSaveFinal;
         private System.Windows.Forms.TextBox lblNameDevice;
         private System.Windows.Forms.TextBox lblClothType;
         private System.Windows.Forms.TextBox lblCodeCustomer;

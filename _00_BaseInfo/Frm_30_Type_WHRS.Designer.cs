@@ -143,13 +143,13 @@
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("91dd9f51-8bf2-4a06-9574-150a3e6353eb"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Left, false, new System.Drawing.Size(215, 414), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("91dd9f51-8bf2-4a06-9574-150a3e6353eb"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Left, false, new System.Drawing.Size(215, 410), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("9ff1d860-e345-421f-b534-6d33748839c4"), new System.Guid("91dd9f51-8bf2-4a06-9574-150a3e6353eb"), 199, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("605d1eee-a958-459c-ac9c-6f798a5fdf29"), new System.Guid("91dd9f51-8bf2-4a06-9574-150a3e6353eb"), 213, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("6877bb36-8946-43e7-b9d6-484b07e6d84a"), Janus.Windows.UI.Dock.PanelGroupStyle.VerticalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Bottom, false, new System.Drawing.Size(490, 216), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("0e760465-c992-4875-9ba7-ecf32675f349"), new System.Guid("6877bb36-8946-43e7-b9d6-484b07e6d84a"), 297, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("15f1f700-3ea1-476d-8640-f2e420b19f02"), new System.Guid("6877bb36-8946-43e7-b9d6-484b07e6d84a"), 297, true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("5d47fa50-0060-4820-af78-3c9e09c99374"), Janus.Windows.UI.Dock.PanelGroupStyle.VerticalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Fill, false, new System.Drawing.Size(490, 198), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("5d47fa50-0060-4820-af78-3c9e09c99374"), Janus.Windows.UI.Dock.PanelGroupStyle.VerticalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Fill, false, new System.Drawing.Size(490, 194), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("d5ad2d06-5fb2-4e60-aad5-7a0fa85e902c"), new System.Guid("5d47fa50-0060-4820-af78-3c9e09c99374"), 243, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("cfe12663-acde-4507-bd35-d0af3f6eadca"), new System.Guid("5d47fa50-0060-4820-af78-3c9e09c99374"), 243, true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("109ca124-697d-4acd-93c0-da41ccf54857"), new System.Drawing.Point(-1, -1), new System.Drawing.Size(-1, -1), false);
@@ -168,9 +168,9 @@
             // 
             // uiPanelGroup2
             // 
-            this.uiPanelGroup2.Location = new System.Drawing.Point(3, 30);
+            this.uiPanelGroup2.Location = new System.Drawing.Point(3, 34);
             this.uiPanelGroup2.Name = "uiPanelGroup2";
-            this.uiPanelGroup2.Size = new System.Drawing.Size(215, 414);
+            this.uiPanelGroup2.Size = new System.Drawing.Size(215, 410);
             this.uiPanelGroup2.TabIndex = 7;
             // 
             // uiPanel0
@@ -179,7 +179,7 @@
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
             this.uiPanel0.Location = new System.Drawing.Point(0, 0);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(211, 199);
+            this.uiPanel0.Size = new System.Drawing.Size(211, 197);
             this.uiPanel0.TabIndex = 4;
             // 
             // uiPanel0Container
@@ -187,7 +187,7 @@
             this.uiPanel0Container.Controls.Add(this.gridEX5);
             this.uiPanel0Container.Location = new System.Drawing.Point(1, 24);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(209, 174);
+            this.uiPanel0Container.Size = new System.Drawing.Size(209, 172);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // gridEX5
@@ -217,7 +217,7 @@
             this.gridEX5.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX5.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX5.SettingsKey = "Frm_15_InfoServiceGrid_6";
-            this.gridEX5.Size = new System.Drawing.Size(209, 174);
+            this.gridEX5.Size = new System.Drawing.Size(209, 172);
             this.gridEX5.TabIndex = 2;
             this.gridEX5.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
             this.gridEX5.TotalRowFormatStyle.BackColorGradient = System.Drawing.Color.White;
@@ -242,9 +242,9 @@
             // 
             this.uiPanel5.FloatingLocation = new System.Drawing.Point(72, 354);
             this.uiPanel5.InnerContainer = this.uiPanel5Container;
-            this.uiPanel5.Location = new System.Drawing.Point(0, 203);
+            this.uiPanel5.Location = new System.Drawing.Point(0, 201);
             this.uiPanel5.Name = "uiPanel5";
-            this.uiPanel5.Size = new System.Drawing.Size(211, 211);
+            this.uiPanel5.Size = new System.Drawing.Size(211, 209);
             this.uiPanel5.TabIndex = 4;
             // 
             // uiPanel5Container
@@ -252,7 +252,7 @@
             this.uiPanel5Container.Controls.Add(this.gridEX1);
             this.uiPanel5Container.Location = new System.Drawing.Point(1, 24);
             this.uiPanel5Container.Name = "uiPanel5Container";
-            this.uiPanel5Container.Size = new System.Drawing.Size(209, 186);
+            this.uiPanel5Container.Size = new System.Drawing.Size(209, 184);
             this.uiPanel5Container.TabIndex = 0;
             // 
             // gridEX1
@@ -282,7 +282,7 @@
             this.gridEX1.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX1.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.SettingsKey = "Frm_15_InfoServiceGrid_6";
-            this.gridEX1.Size = new System.Drawing.Size(209, 186);
+            this.gridEX1.Size = new System.Drawing.Size(209, 184);
             this.gridEX1.TabIndex = 3;
             this.gridEX1.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
             this.gridEX1.TotalRowFormatStyle.BackColorGradient = System.Drawing.Color.White;
@@ -430,9 +430,9 @@
             // uiPanelGroup3
             // 
             this.uiPanelGroup3.GroupStyle = Janus.Windows.UI.Dock.PanelGroupStyle.VerticalTiles;
-            this.uiPanelGroup3.Location = new System.Drawing.Point(218, 30);
+            this.uiPanelGroup3.Location = new System.Drawing.Point(218, 34);
             this.uiPanelGroup3.Name = "uiPanelGroup3";
-            this.uiPanelGroup3.Size = new System.Drawing.Size(490, 198);
+            this.uiPanelGroup3.Size = new System.Drawing.Size(490, 194);
             this.uiPanelGroup3.TabIndex = 8;
             // 
             // uiPanel3
@@ -441,7 +441,7 @@
             this.uiPanel3.InnerContainer = this.uiPanel3Container;
             this.uiPanel3.Location = new System.Drawing.Point(0, 0);
             this.uiPanel3.Name = "uiPanel3";
-            this.uiPanel3.Size = new System.Drawing.Size(243, 198);
+            this.uiPanel3.Size = new System.Drawing.Size(243, 194);
             this.uiPanel3.TabIndex = 4;
             // 
             // uiPanel3Container
@@ -449,7 +449,7 @@
             this.uiPanel3Container.Controls.Add(this.gridEX4);
             this.uiPanel3Container.Location = new System.Drawing.Point(1, 24);
             this.uiPanel3Container.Name = "uiPanel3Container";
-            this.uiPanel3Container.Size = new System.Drawing.Size(241, 173);
+            this.uiPanel3Container.Size = new System.Drawing.Size(241, 169);
             this.uiPanel3Container.TabIndex = 0;
             // 
             // gridEX4
@@ -479,7 +479,7 @@
             this.gridEX4.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX4.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX4.SettingsKey = "Frm_15_InfoServiceGrid_6";
-            this.gridEX4.Size = new System.Drawing.Size(241, 173);
+            this.gridEX4.Size = new System.Drawing.Size(241, 169);
             this.gridEX4.TabIndex = 2;
             this.gridEX4.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
             this.gridEX4.TotalRowFormatStyle.BackColorGradient = System.Drawing.Color.White;
@@ -504,7 +504,7 @@
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
             this.uiPanel1.Location = new System.Drawing.Point(247, 0);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(243, 198);
+            this.uiPanel1.Size = new System.Drawing.Size(243, 194);
             this.uiPanel1.TabIndex = 4;
             // 
             // uiPanel1Container
@@ -512,7 +512,7 @@
             this.uiPanel1Container.Controls.Add(this.gridEX2);
             this.uiPanel1Container.Location = new System.Drawing.Point(1, 24);
             this.uiPanel1Container.Name = "uiPanel1Container";
-            this.uiPanel1Container.Size = new System.Drawing.Size(241, 173);
+            this.uiPanel1Container.Size = new System.Drawing.Size(241, 169);
             this.uiPanel1Container.TabIndex = 0;
             // 
             // gridEX2
@@ -542,7 +542,7 @@
             this.gridEX2.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX2.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.SettingsKey = "Frm_15_InfoServiceGrid_6";
-            this.gridEX2.Size = new System.Drawing.Size(241, 173);
+            this.gridEX2.Size = new System.Drawing.Size(241, 169);
             this.gridEX2.TabIndex = 2;
             this.gridEX2.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
             this.gridEX2.TotalRowFormatStyle.BackColorGradient = System.Drawing.Color.White;
@@ -578,7 +578,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(711, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(711, 31);
             this.bindingNavigator1.TabIndex = 5;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -587,7 +587,7 @@
             this.btn_Save.Image = ((System.Drawing.Image)(resources.GetObject("btn_Save.Image")));
             this.btn_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(66, 24);
+            this.btn_Save.Size = new System.Drawing.Size(66, 28);
             this.btn_Save.Text = "ذخیره";
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click_1);
             // 
@@ -596,7 +596,7 @@
             this.btn_Delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_Delete.Image")));
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.RightToLeftAutoMirrorImage = true;
-            this.btn_Delete.Size = new System.Drawing.Size(61, 24);
+            this.btn_Delete.Size = new System.Drawing.Size(61, 28);
             this.btn_Delete.Text = "حذف";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 

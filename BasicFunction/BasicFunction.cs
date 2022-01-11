@@ -75,5 +75,98 @@ namespace PCLOR.MyBasicFunction
 
         }
 
+        private void Recipt(SqlConnection ConWare, int deviceId, Class_Documents ClDoc, string date, int wareCode, int functionType, string operationCode, string number = "")
+        {
+            using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
+            {
+                try
+                {
+                    var queryGetcommodity = $@"  SELECT c.CodeCommondity
+                                                 from PCLOR_1_1400.dbo.Table_60_SpecsTechnical as s inner join 
+                                                 PCLOR_1_1400.dbo.Table_005_TypeCloth as c on s.FabricType = c.ID
+                                                 where s.ID={deviceId}
+                                                    ";
+                    var codeCommodity = db.QueryFirstOrDefault<int>(queryGetcommodity, null
+                        , commandType: CommandType.Text);
+                    int ResidNum = ClDoc.MaxNumber(ConWare.ConnectionString, "Table_011_PwhrsReceipt", "Column01");
+                    string commandtxt = string.Empty;
+                    //commandtxt = @"Declare   @Key   int";
+                    commandtxt += $@" INSERT INTO Table_011_PwhrsReceipt (
+                                                                            [column01],
+                                                                            [column02],
+                                                                            [column03],
+                                                                            [column04],
+                                                                            [column05],
+                                                                            [column06],
+                                                                            [column08],
+                                                                            [column09],
+                                                                            [column10],
+                                                                            [column11]
+                                                                 
+                                                                          ) VALUES (  {ResidNum} , N'{txt_DateTime.Text}'  , {WareCode},  {FunctionType} ,
+                                                                        {(string.IsNullOrEmpty(lblOperationCode.Text) ? "N''" : lblOperationCode.Text)},N'رسید صادره بابت رسید پارچه خام شماره {txt_Number.Text}' , N'{Class_BasicOperation._UserName}' ,getdate(), N'{Class_BasicOperation._UserName}', getdate() );
+                                                                       select  Max(columnid)  from Table_011_PwhrsReceipt";
+                    var Key = db.QueryFirstOrDefault<int>(commandtxt, null, commandType: CommandType.Text);
+                    string query = "";
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["NumberRecipt"] = Key;
+                    table_115_ProductBindingSource.EndEdit();
+                    var stauts = table_115_ProductTableAdapter1.Update(pCLOR_1_1400DataSet.Table_115_Product);
+                    if (stauts <= 0)
+                    {
+                        MessageBox.Show("متاسفانه ثبت تولید با شکست مواجه شد ! لطفا دوباره امتحان کنید", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        DeleteLastRecid(Key);
+                        return;
+                    }
+                    var currenAddProduct = (DataRowView)table_115_ProductBindingSource.Current;
+                    //foreach (DataRowView Rows in table_115_ProductBindingSource)
+                    //{
+                    //if (string.IsNullOrEmpty(Rows["NumberRecipt"].ToString()) || Rows["NumberRecipt"].ToString() == "0")
+                    //{
+                    //ID = ID + Rows["ID"] + ",";
+                    //ID = currenAddProduct["ID"].ToString();
+                    query = $@" INSERT INTO Table_012_Child_PwhrsReceipt (
+                                    [column01]
+                                   ,[column02]
+                                   ,[column03]
+                                   ,[column06]
+                                   ,[column07]
+                                   ,[column10]
+                                   ,[column11]
+                                   ,[column15]
+                                   ,[column16]
+                                   ,[column17]
+                                   ,[column18]
+                                   ,[column20]
+                                   ,[column21]
+                                   ,[column30]
+                                   ,[Column34]
+                                   ,[Column35]
+                                   ,[Column37]
+                           ) VALUES (
+               {Key},{codeCommodity},1,1,1,0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}' ,getdate(),0,0, N'{currenAddProduct["Barcode"].ToString()}' , {currenAddProduct["Weight"]} , {currenAddProduct["Weight"]} , N'{currenAddProduct["Machine"] }' );";
+                    db.Execute(query, null, commandType: CommandType.Text);
+                    //}
+                    //}
+                    //var t = ID.TrimEnd(',');
+                    //var queryFinall = $"update  Table_115_Product  set  NumberRecipt={Key}  where  ID  = {t}";
+                    //db.ConnectionString = ConPCLOR.ConnectionString;
+                    //db.Execute(queryFinall, null, commandType: CommandType.Text);
+                    //Class_BasicOperation.SqlTransactionMethod(ConWare.ConnectionString, commandtxt);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    //Class_BasicOperation.CheckExceptionType(ex);
+                }
+            }
+
+        }
+
+
+
+
+
+
+
     }
 }
