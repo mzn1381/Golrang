@@ -20,6 +20,7 @@ namespace PCLOR.Product
     {
         SqlConnection ConPCLOR = new SqlConnection(Properties.Settings.Default.PCLOR);
         SqlConnection ConBase = new SqlConnection(Properties.Settings.Default.PBASE);
+        SqlConnection ConWare = new SqlConnection(Properties.Settings.Default.PWHRS);
 
         private string CodeAnbarRang = "";
         private int ClothTypeId = 0;
@@ -38,6 +39,8 @@ namespace PCLOR.Product
 
         private void Frm_030_OrderColor_Load(object sender, EventArgs e)
         {
+            var t = Class_BasicOperation._OrgCode;
+            var t2 = Class_BasicOperation._UserName;
             GetCodeAnbarRang();
             this.table_025_HederOrderColorTableAdapter.Fill(this.dataSet_05_PCLOR.Table_025_HederOrderColor);
             this.table_030_DetailOrderColorTableAdapter.Fill(this.dataSet_05_PCLOR.Table_030_DetailOrderColor);
@@ -741,6 +744,7 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
       ,[Date]
       ,[Shift]
       ,[CottonName]
+      ,[CodeCommodity]
   FROM [PCLOR_1_1400].[dbo].[DeatailBarcodes]
        where Barcode in ({codes})
 ";
@@ -791,7 +795,7 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
 
         private bool CheckNegativeInventory(int code)
         {
-            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
             {
                 return db.QueryFirstOrDefault<bool>("CheckNegativeInventory", new { @Code = code }, commandType: CommandType.StoredProcedure);
             }
@@ -906,9 +910,46 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
         private void btnSaveFinal_Click(object sender, EventArgs e)
         {
             var headerId = SaveToHeaderColorOrder(CodeCustomer);
-            SaveToDetailOrderColor(headerId, Convert.ToInt32(txt_NumberOrder.Text.Trim()), ClothTypeId, ColorTypeId, DeviceId
-                , txt_Title.Text.Trim(), txt_Description.Text.Trim()
-                , uiComboBox1.Text.Trim(), Convert.ToInt32(txt_weight.Text.Trim()));
+            if (headerId != 0)
+            {
+                var detailheaderId = SaveToDetailOrderColor(headerId, Convert.ToInt32(txt_NumberOrder.Text.Trim()), ClothTypeId, ColorTypeId, DeviceId
+                      , txt_Title.Text.Trim(), txt_Description.Text.Trim()
+                      , uiComboBox1.Text.Trim(), Convert.ToInt32(txt_weight.Text.Trim()));
+                if (detailheaderId != 0)
+                {
+                    var dec = GetCodeOfStorePrduct();
+                    int codeStore;
+                    int functionType;
+                    dec.TryGetValue("WareCode", out codeStore);
+                    dec.TryGetValue("FunctionType", out functionType);
+                    var headerReciptId = MyBasicFunction.BasicFunction.Recipt(ConWare, DateTime.Now.ToShamsi(), DeviceId, ClDoc, codeStore, functionType, lblCodeCustomer.Text, "0");
+                    foreach (var item in gridEX2.GetDataRows())
+                    {
+                        var CodeCommodity = item.Cells["CodeCommodity"].Value.ToString();
+                        var Weight = item.Cells["Weight"].Value.ToString();
+                        var BarCode = item.Cells["BarCode"].Value.ToString();
+                        MyBasicFunction.BasicFunction.ReciptChild(ConWare, headerReciptId, Convert.ToInt32(CodeCommodity), weight: Convert.ToDecimal(Weight), barcode: BarCode, DeviceId);
+                    }
+                }
+
+            }
+        }
+
+        public Dictionary<string, int> GetCodeOfStorePrduct()
+        {
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+                var query = $@"
+                        select Value
+                        from Table_80_Setting 
+                        where ID in(16,5)
+                            ";
+                var res = db.Query<int>(query, null, commandType: CommandType.Text).ToList();
+                var dec = new Dictionary<string, int>();
+                dec.Add("FunctionType", res[0]);
+                dec.Add("WareCode", res[1]);
+                return dec;
+            }
         }
     }
 }
