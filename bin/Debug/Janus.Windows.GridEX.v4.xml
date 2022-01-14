@@ -3053,11 +3053,6 @@
             </summary>
             <param name="e"></param>
         </member>
-        <member name="M:Janus.Windows.GridEX.EditControls.ComboBase.WndProc(System.Windows.Forms.Message@)">
-            <summary>
-            Overrides Control.WndProc
-            </summary>
-        </member>
         <member name="M:Janus.Windows.GridEX.EditControls.ComboBase.OnDoMouseWheel(System.Int32)">
             <summary>
             Raises the the internal event DoMouseWheel.

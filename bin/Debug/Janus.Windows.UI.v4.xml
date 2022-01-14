@@ -507,6 +507,11 @@
             Gets or sets the way that the control's tabs are sized.
             </summary>
         </member>
+        <member name="P:Janus.Windows.UI.Tab.UITab.RowCount">
+            <summary>
+            Gets the number of rows that are currently displayed in the control's tab strip
+            </summary>
+        </member>
         <member name="P:Janus.Windows.UI.Tab.UITab.VisualStyle">
             <summary>
             Gets or sets a value specifying the visual appearance of the control's tabs.
@@ -6569,6 +6574,11 @@
         <member name="M:Janus.Windows.UI.Dock.UIPanelGroup.RefreshLayout">
             <summary>
             Overrides UIPanelBase.RefreshLayout
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.UI.Dock.UIPanelGroup.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
             </summary>
         </member>
         <member name="M:Janus.Windows.UI.Dock.UIPanelGroup.SuspendGroupLayout">

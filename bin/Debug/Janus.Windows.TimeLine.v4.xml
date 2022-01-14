@@ -1593,6 +1593,12 @@
             </summary>
             <param name="e">A System.EventArgs that contains the event data.</param>
         </member>
+        <member name="M:Janus.Windows.TimeLine.TimeLine.OnVerticalScrollPositionChanged(System.EventArgs)">
+            <summary>
+            Raises the Scroll event.
+            </summary>
+            <param name="e">An EventArgs that contains the event data.</param>
+        </member>
         <member name="M:Janus.Windows.TimeLine.TimeLine.OnFirstDateChanged(System.EventArgs)">
             <summary>
             Raises the Janus.Windows.TimeLine.FirstDateChanged event.
@@ -2462,6 +2468,11 @@
         <member name="E:Janus.Windows.TimeLine.TimeLine.LastDateChanged">
             <summary>
             Occurs when the LastDate property of the TimeLine changes.
+            </summary>
+        </member>
+        <member name="E:Janus.Windows.TimeLine.TimeLine.VerticalScrollPositionChanged">
+            <summary>
+            Occurs when the user scrolls the Timeline control.
             </summary>
         </member>
         <member name="E:Janus.Windows.TimeLine.TimeLine.FirstDateChanged">

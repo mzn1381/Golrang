@@ -21,7 +21,7 @@ namespace PCLOR.Product
         SqlConnection ConPCLOR = new SqlConnection(Properties.Settings.Default.PCLOR);
         SqlConnection ConBase = new SqlConnection(Properties.Settings.Default.PBASE);
         SqlConnection ConWare = new SqlConnection(Properties.Settings.Default.PWHRS);
-
+        private int countHaveDesc = 0;
         private string CodeAnbarRang = "";
         private int ClothTypeId = 0;
         private int DeviceId = 0;
@@ -32,6 +32,7 @@ namespace PCLOR.Product
         Classes.Class_Documents ClDoc = new Classes.Class_Documents();
         DataTable barcoddt = new DataTable();
 
+
         public Frm_030_OrderColor()
         {
             InitializeComponent();
@@ -39,26 +40,26 @@ namespace PCLOR.Product
 
         private void Frm_030_OrderColor_Load(object sender, EventArgs e)
         {
-            var t = Class_BasicOperation._OrgCode;
-            var t2 = Class_BasicOperation._UserName;
+            btnSaveFinal.Enabled = false;
             GetCodeAnbarRang();
+
             this.table_025_HederOrderColorTableAdapter.Fill(this.dataSet_05_PCLOR.Table_025_HederOrderColor);
             this.table_030_DetailOrderColorTableAdapter.Fill(this.dataSet_05_PCLOR.Table_030_DetailOrderColor);
-            //gridEX2.DropDowns["TypeCloth"].DataSource = mlt_TypeCloth.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeCloth from Table_005_TypeCloth");
+            //gridEX3.DropDowns["TypeCloth"].DataSource = mlt_TypeCloth.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeCloth from Table_005_TypeCloth");
             //ClDoc.ReturnTable(ConBase, @"select Columnid,Column01,Column02 from Table_045_PersonInfo");
-            gridEX2.DropDowns["Color"].DataSource = mlt_Color.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeColor from Table_010_TypeColor");
-            //            gridEX2.DropDowns["Customer"].DataSource = mlt_codecustomer.DataSource = ClDoc.ReturnTable(ConBase, @"SELECT        dbo.Table_045_PersonInfo.ColumnId, dbo.Table_045_PersonInfo.Column01
+            multiColumnColor.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeColor from Table_010_TypeColor");
+            //            gridEX3.DropDowns["Customer"].DataSource = mlt_codecustomer.DataSource = ClDoc.ReturnTable(ConBase, @"SELECT        dbo.Table_045_PersonInfo.ColumnId, dbo.Table_045_PersonInfo.Column01
             //FROM            dbo.Table_040_PersonGroups INNER JOIN
             //                         dbo.Table_045_PersonScope ON dbo.Table_040_PersonGroups.Column00 = dbo.Table_045_PersonScope.Column02 INNER JOIN
             //                         dbo.Table_045_PersonInfo ON dbo.Table_045_PersonScope.Column01 = dbo.Table_045_PersonInfo.ColumnId
             //WHERE        (dbo.Table_045_PersonScope.Column02 IN (8, 9))
             //Order by  dbo.Table_045_PersonInfo.Column01 ASC");
-            //gridEX2.DropDowns["Machine"].DataSource = mlt_Machine.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,namemachine from Table_60_SpecsTechnical");
+            //gridEX3.DropDowns["Machine"].DataSource = mlt_Machine.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,namemachine from Table_60_SpecsTechnical");
             Stimulsoft.Report.StiReport r = new Stimulsoft.Report.StiReport();
             r.Load("Report.mrt");
             foreach (StiPage page in r.Pages)
             {
-                uiComboBox1.Items.Add(page.Name);
+                uiComboBox2.Items.Add(page.Name);
             }
         }
 
@@ -114,12 +115,12 @@ namespace PCLOR.Product
         private void btn_Save_Click(object sender, EventArgs e)
         {
 
-            //if (mlt_TypeCloth.Text == "" || uiComboBox1.Text == "" || txt_NumberOrder.Text == "0" || mlt_codecustomer.Text == "0")
+            //if (mlt_TypeCloth.Text == "" || uiComboBox2.Text == "" || txt_NumberOrder.Text == "0" || mlt_codecustomer.Text == "0")
             //{
             //    MessageBox.Show("لطفا اطلاعات را تکمیل نمایید");
             //    return;
             //}
-            if (mlt_Color.Text.All(char.IsDigit) || uiComboBox1.Text.All(char.IsDigit))
+            if (multiColumnColor.Text.All(char.IsDigit) || uiComboBox2.Text.All(char.IsDigit))
             {
                 MessageBox.Show("اطلاعات وارد شده معتبر نمی باشد");
                 return;
@@ -142,7 +143,7 @@ namespace PCLOR.Product
 
 
                 btn_New.Enabled = true;
-                //gridEX2.Enabled = true;
+                //gridEX3.Enabled = true;
 
 
 
@@ -201,8 +202,8 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
                     table_025_HederOrderColorTableAdapter.FillByID(dataSet_05_PCLOR.Table_025_HederOrderColor, -1);
                     btn_New.Enabled = true;
                     //mlt_TypeCloth.Text = "";
-                    mlt_Color.Text = "";
-                    uiComboBox1.Text = "";
+                    multiColumnColor.Text = "";
+                    uiComboBox2.Text = "";
                     txt_NumberOrder.Text = "";
                     txt_Title.Text = "";
                     //txt_Total.Text = "";
@@ -223,9 +224,9 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
                 //txt_Total.Text = "";
                 //txt_Remining.Text = "";
                 txt_NumberOrder.Text = "";
-                mlt_Color.Value = "";
+                multiColumnColor.Value = "";
                 txt_Title.Text = "";
-                uiComboBox1.Text = "";
+                uiComboBox2.Text = "";
                 txt_Description.Text = "";
                 //uiPanel0.Enabled = false;
 
@@ -257,14 +258,14 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
                 //txt_Total.Text = "";
                 //txt_Remining.Text = "";
                 txt_NumberOrder.Text = "";
-                mlt_Color.Value = "";
+                multiColumnColor.Value = "";
                 txt_Title.Text = "";
-                uiComboBox1.Text = "";
+                uiComboBox2.Text = "";
                 txt_Description.Text = "";
                 //uiPanel0.Enabled = false;
                 txt_Barcode.Text = "";
 
-                gridEX2.UpdateData();
+                gridEX3.UpdateData();
                 table_025_HederOrderColorBindingSource.EndEdit();
                 this.table_030_DetailOrderColorBindingSource.EndEdit();
 
@@ -301,9 +302,9 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
                 //txt_Total.Text = "";
                 //txt_Remining.Text = "";
                 txt_NumberOrder.Text = "";
-                mlt_Color.Value = "";
+                multiColumnColor.Value = "";
                 txt_Title.Text = "";
-                uiComboBox1.Text = "";
+                uiComboBox2.Text = "";
                 txt_Description.Text = "";
                 //uiPanel0.Enabled = false;
                 txt_Barcode.Text = "";
@@ -312,7 +313,7 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
                 {
                     try
                     {
-                        gridEX2.UpdateData();
+                        gridEX3.UpdateData();
                         table_025_HederOrderColorBindingSource.EndEdit();
                         this.table_030_DetailOrderColorBindingSource.EndEdit();
                         DataTable Table = ClDoc.ReturnTable(ConPCLOR,
@@ -355,13 +356,13 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
                 //txt_Total.Text = "";
                 //txt_Remining.Text = "";
                 txt_NumberOrder.Text = "";
-                mlt_Color.Value = "";
+                multiColumnColor.Value = "";
                 txt_Title.Text = "";
-                uiComboBox1.Text = "";
+                uiComboBox2.Text = "";
                 txt_Description.Text = "";
                 //uiPanel0.Enabled = false;
                 txt_Barcode.Text = "";
-                gridEX2.UpdateData();
+                gridEX3.UpdateData();
                 table_025_HederOrderColorBindingSource.EndEdit();
                 this.table_030_DetailOrderColorBindingSource.EndEdit();
 
@@ -427,17 +428,17 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
         {
             try
             {
-                //if (mlt_TypeCloth.Text == "" || uiComboBox1.Text == "" || txt_NumberOrder.Text == "0" || mlt_codecustomer.Text == "0")
+                //if (mlt_TypeCloth.Text == "" || uiComboBox2.Text == "" || txt_NumberOrder.Text == "0" || mlt_codecustomer.Text == "0")
                 //{
                 //    MessageBox.Show("لطفا اطلاعات را تکمیل نمایید");
                 //    return;
                 //}
-                if (mlt_Color.Text.All(char.IsDigit)    /*|| mlt_TypeCloth.Text.All(char.IsDigit) || txt_NumberOrder.Text.All(char.IsDigit) == false*/)
+                if (multiColumnColor.Text.All(char.IsDigit)    /*|| mlt_TypeCloth.Text.All(char.IsDigit) || txt_NumberOrder.Text.All(char.IsDigit) == false*/)
                 {
                     MessageBox.Show("لطفا نوع رنگ را انتخاب نمائید");
                     return;
                 }
-                if (uiComboBox1.Text.All(char.IsDigit))
+                if (uiComboBox2.Text.All(char.IsDigit))
                 {
                     MessageBox.Show("لطفاطرح چاپ  را انتخاب نمائید");
                     return;
@@ -458,14 +459,14 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
                 //    Class_BasicOperation.ShowMsg("", "تعداد سفارشات برای این بارکد از تعداد تولید شده آن بیشتر است", Class_BasicOperation.MessageType.Stop);
                 //    return;
                 //}
-                if (string.IsNullOrEmpty(txt_Barcode.Text))
+                if (string.IsNullOrEmpty(txt_Barcode.Text.Trim()))
                 {
                     MessageBox.Show("لطفا بارکد هارا وارد نمایئد سپس اقدام فرمایئد");
                     return;
                 }
-                gridEX1.ClearItems();
-                gridEX2.ClearItems();
-                var barcodes = GetBarcodes(txt_Barcode.Text);
+                gridEX4.ClearItems();
+                gridEX3.ClearItems();
+                var barcodes = GetBarcodes(txt_Barcode.Text.Trim());
                 var status = CheckBarcodesDetail(GetBarcodesDetail(barcodes));
                 switch (status)
                 {
@@ -482,24 +483,28 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
                         CleareAllDetailBarcodes();
                         return;
                 }
+
+
+
+                ShowMessageBarcodeNotValid(BarcodeIsValid(barcodes));
                 FillDetailBarcode(barcodes);
-                FillDetailColor(Convert.ToInt32((mlt_Color.Value).ToString()), Convert.ToDecimal(txt_weight.Text));
+                FillDetailColor(Convert.ToInt32((multiColumnColor.Value).ToString()), Convert.ToDecimal(txt_weight.Text));
                 ShowDetailBarcode(GetOrginalCodes(barcodes));
                 //table_025_HederOrderColorBindingSource.EndEdit();
-                //gridEX2.AllowAddNew = Janus.Windows.GridEX.InheritableBoolean.True;
-                //gridEX2.MoveToNewRecord();
-                //gridEX2.SetValue("Fk", ((DataRowView)table_025_HederOrderColorBindingSource.CurrencyManager.Current)["ID"].ToString());
-                //gridEX2.SetValue("Barcode", Convert.ToInt64(txt_Barcode.Text));
-                ////gridEX2.SetValue("TypeColth", mlt_TypeCloth.Value);
-                //gridEX2.SetValue("NumberOrder", txt_NumberOrder.Text);
-                //gridEX2.SetValue("TypeColor", mlt_Color.Value);
-                ////gridEX2.SetValue("Machine", mlt_Machine.Value);
-                //gridEX2.SetValue("weight", txt_weight.Text);
-                //gridEX2.SetValue("Title", txt_Title.Text);
-                //gridEX2.SetValue("Description", txt_Description.Text);
-                //gridEX2.SetValue("Printer", uiComboBox1.Text);
-                //gridEX2.UpdateData();
-                //gridEX2.AllowAddNew = Janus.Windows.GridEX.InheritableBoolean.False;
+                //gridEX3.AllowAddNew = Janus.Windows.GridEX.InheritableBoolean.True;
+                //gridEX3.MoveToNewRecord();
+                //gridEX3.SetValue("Fk", ((DataRowView)table_025_HederOrderColorBindingSource.CurrencyManager.Current)["ID"].ToString());
+                //gridEX3.SetValue("Barcode", Convert.ToInt64(txt_Barcode.Text));
+                ////gridEX3.SetValue("TypeColth", mlt_TypeCloth.Value);
+                //gridEX3.SetValue("NumberOrder", txt_NumberOrder.Text);
+                //gridEX3.SetValue("TypeColor", multiColumnColor.Value);
+                ////gridEX3.SetValue("Machine", mlt_Machine.Value);
+                //gridEX3.SetValue("weight", txt_weight.Text);
+                //gridEX3.SetValue("Title", txt_Title.Text);
+                //gridEX3.SetValue("Description", txt_Description.Text);
+                //gridEX3.SetValue("Printer", uiComboBox2.Text);
+                //gridEX3.UpdateData();
+                //gridEX3.AllowAddNew = Janus.Windows.GridEX.InheritableBoolean.False;
                 //((DataRowView)table_030_DetailOrderColorBindingSource.CurrencyManager.Current)["UserSabt"] = Class_BasicOperation._UserName;
                 //((DataRowView)table_030_DetailOrderColorBindingSource.CurrencyManager.Current)["TimeSabt"] = Class_BasicOperation.ServerDate().ToString();
                 //table_025_HederOrderColorBindingSource.EndEdit();
@@ -559,17 +564,17 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
             //else
             //{
             //    if (e.KeyChar == 13)
-            //        mlt_Color.Focus();
+            //        multiColumnColor.Focus();
             //}
         }
 
-        private void mlt_Color_ValueChanged(object sender, EventArgs e)
+        private void multiColumnColor_ValueChanged(object sender, EventArgs e)
         {
-            Class_BasicOperation.FilterMultiColumns(mlt_Color, "TypeColor", "Id");
+            Class_BasicOperation.FilterMultiColumns(multiColumnColor, "TypeColor", "Id");
 
         }
 
-        private void gridEX2_DeletingRecord(object sender, Janus.Windows.GridEX.RowActionCancelEventArgs e)
+        private void gridEX3_DeletingRecord(object sender, Janus.Windows.GridEX.RowActionCancelEventArgs e)
         {
             try
             {
@@ -577,7 +582,7 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
                 {
                     DataTable dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT     ID
 FROM         dbo.Table_035_Production
-WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToString() + "");
+WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToString() + "");
                     if (dt.Rows.Count > 0)
                     {
                         MessageBox.Show(".از این نوع پارچه در قسمت کارت تولید استفاده شده است امکان حذف آن وجود ندارد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -594,7 +599,7 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
 
                         //  else
                         {
-                            gridEX2.GetRow().Delete();
+                            gridEX3.GetRow().Delete();
                             table_025_HederOrderColorBindingSource.EndEdit();
                             table_025_HederOrderColorTableAdapter.Update(dataSet_05_PCLOR.Table_025_HederOrderColor);
                             e.Cancel = true;
@@ -658,7 +663,56 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
 
         }
 
-        private string[] GetBarcodes(string barcodes) => barcodes.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+        private string[] GetBarcodes(string barcodes) => barcodes.Split(new string[] { Environment.NewLine }, StringSplitOptions.None).Distinct().ToArray();
+
+        private void ShowMessageBarcodeNotValid(List<int> models)
+        {
+            if (models.Count != 0)
+            {
+                string message = string.Join("بارکد  , ", models) + " یافت نشد !";
+                MessageBox.Show(message, "هشدار", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+            }
+        }
+
+        private List<int> BarcodeIsValid(string[] barcodes)
+        {
+            var model = new List<int>();
+            string codes = "";
+            if (barcodes.Length > 1)
+            {
+                codes = string.Join(",", barcodes);
+            }
+            else if (barcodes.Length == 1)
+                codes = barcodes[0];
+            codes = codes.Trim(',');
+
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+                var query = $@"
+                 select Barcode
+                 from Table_115_Product
+                 where Barcode in ({codes})";
+                var res = db.Query<int>(query, null, commandType: CommandType.Text);
+                if (barcodes.Length == 1)
+                {
+                    var first = Convert.ToInt32(barcodes[0]);
+                    var status = res.Any(d => d == first);
+                    if (!status)
+                        model.Add(first);
+                    return model;
+                }
+                if (barcodes.Length == 0)
+                    return null;
+                foreach (var item in barcodes)
+                {
+                    var mod = Convert.ToInt32(item);
+                    var status = res.Any(d => d == mod);
+                    if (!status)
+                        model.Add(mod);
+                }
+                return model;
+            }
+        }
 
         private IEnumerable<CheckBarcodeViewModel> GetBarcodesDetail(string[] barcodes)
         {
@@ -673,10 +727,11 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
                 var query = $@"
-            select Machine,CottonType as Cotton,ClothType as Cloth 
-            from Table_115_Product 
-            where Barcode in ({codes}) ";
+                            select  Machine,CottonType as Cotton,ClothType as Cloth 
+                            from Table_115_Product 
+                            where Barcode in ({codes}) ";
                 return db.Query<CheckBarcodeViewModel>(query, null, commandType: CommandType.Text);
+
             }
         }
 
@@ -718,14 +773,16 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
 
             var codes = GetOrginalCodes(barcodes);
             var res = GetDetailBarcode(codes);
+            var descs = res.Where(d => !string.IsNullOrEmpty(d.Description)).Select(c => c.Description);
             if (res != null && res.Count() != 0)
             {
                 var first = res.First();
                 txt_weight.Text = res.Sum(d => d.Weight).ToString();
-                txt_Description.Text = string.Join(System.Environment.NewLine, res.Select(c => c.Description));
+                txt_Description.Text = string.Join(System.Environment.NewLine, descs);
                 lblNameDevice.Text = first.NameDevice;
                 lblClothType.Text = first.ClothName;
                 txt_NumberOrder.Text = barcodes.Count().ToString();
+                countHaveDesc = descs.Count();
             }
         }
 
@@ -757,7 +814,8 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
             var models = GetDetailBarcode(codes);
             foreach (var item in models)
             {
-                var row = gridEX2.AddItem();
+
+                var row = gridEX3.AddItem();
                 row.BeginEdit();
                 row.Cells[0].Value = item.Barcode;
                 row.Cells[1].Value = item.ClothName;
@@ -769,6 +827,7 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
                 row.Cells[7].Value = item.Purity;
                 row.Cells[8].Value = item.Shift;
                 row.Cells[9].Value = item.Date;
+                row.Cells[10].Value = item.CodeCommodity;
                 row.EndEdit();
             }
         }
@@ -813,7 +872,7 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
             var model = GetDetailColor(colorId, Weight);
             foreach (var item in model)
             {
-                var row = gridEX1.AddItem();
+                var row = gridEX4.AddItem();
                 row.BeginEdit();
                 var inventoryNegative = CheckNegativeInventory(Convert.ToInt32(item.CodeCommodity));
                 row.Cells[0].Value = item.CodeCommodity;
@@ -893,15 +952,15 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
             }
         }
 
-        public int SaveToDetailOrderColor(int headerId, int numberOrder, int typeCloth, int typeColor, int deviceId, string title, string description, string printer, decimal weight)
+        public int SaveToDetailOrderColor(int headerId, int numberOrder, int typeCloth, int typeColor, int deviceId, string title, string description, string printer, decimal weight, int countHaveDesc)
         {
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
                 var query = $@"
                         insert into Table_030_DetailOrderColor 
-                        (Fk,TypeColth,NumberOrder,TypeColor,Machine,Title,Description,Printer,UserSabt,TimeSabt,weight,Barcode)
+                        (Fk,TypeColth,NumberOrder,TypeColor,Machine,Title,Description,Printer,UserSabt,TimeSabt,weight,Barcode,CountHaveDesc)
                         values
-                        ({headerId},{typeCloth},{numberOrder},{typeColor},{deviceId},N'{title}',N'{description}',N'{printer}',{Class_BasicOperation._UserName},{DateTime.Now},{weight},null)
+                        ({headerId},{typeCloth},{numberOrder},{typeColor},{deviceId},N'{title}',N'{description}',N'{printer}',{Class_BasicOperation._UserName},{DateTime.Now},{weight},null,{countHaveDesc})
                         select SCOPE_IDENTITY();";
                 return db.QueryFirstOrDefault<int>(query, null, commandType: CommandType.Text);
             }
@@ -914,7 +973,7 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
             {
                 var detailheaderId = SaveToDetailOrderColor(headerId, Convert.ToInt32(txt_NumberOrder.Text.Trim()), ClothTypeId, ColorTypeId, DeviceId
                       , txt_Title.Text.Trim(), txt_Description.Text.Trim()
-                      , uiComboBox1.Text.Trim(), Convert.ToInt32(txt_weight.Text.Trim()));
+                      , uiComboBox2.Text.Trim(), Convert.ToInt32(txt_weight.Text.Trim()), countHaveDesc);
                 if (detailheaderId != 0)
                 {
                     var dec = GetCodeOfStorePrduct();
@@ -923,7 +982,7 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX2.GetValue("ID").ToSt
                     dec.TryGetValue("WareCode", out codeStore);
                     dec.TryGetValue("FunctionType", out functionType);
                     var headerReciptId = MyBasicFunction.BasicFunction.Recipt(ConWare, DateTime.Now.ToShamsi(), DeviceId, ClDoc, codeStore, functionType, lblCodeCustomer.Text, "0");
-                    foreach (var item in gridEX2.GetDataRows())
+                    foreach (var item in gridEX3.GetDataRows())
                     {
                         var CodeCommodity = item.Cells["CodeCommodity"].Value.ToString();
                         var Weight = item.Cells["Weight"].Value.ToString();
