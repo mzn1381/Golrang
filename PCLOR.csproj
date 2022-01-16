@@ -393,6 +393,7 @@
     <Compile Include="Models\PersonInfoViewModel.cs" />
     <Compile Include="Models\ProductSourceViewModel.cs" />
     <Compile Include="Models\ReportDeviceViewModel.cs" />
+    <Compile Include="Models\SetStatusShiftViewModel.cs" />
     <Compile Include="Models\ShowDetailBarcodeViewModel.cs" />
     <Compile Include="Models\ShowDetailColorViewModel.cs" />
     <Compile Include="Models\YarnTypeDropDownViewModel.cs" />

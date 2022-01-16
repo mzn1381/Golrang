@@ -10,6 +10,7 @@ using System.Data.SqlClient;
 using Stimulsoft.Report.Components;
 using PCLOR.Models;
 using System.Threading.Tasks;
+using System.Threading;
 using Dapper;
 using Janus.Windows.GridEX;
 using PCLOR.Classes;
@@ -42,7 +43,7 @@ namespace PCLOR.Product
         {
             btnSaveFinal.Enabled = false;
             GetCodeAnbarRang();
-
+            txt_Dat.Text = DateTime.Now.ToShamsi();
             this.table_025_HederOrderColorTableAdapter.Fill(this.dataSet_05_PCLOR.Table_025_HederOrderColor);
             this.table_030_DetailOrderColorTableAdapter.Fill(this.dataSet_05_PCLOR.Table_030_DetailOrderColor);
             //gridEX3.DropDowns["TypeCloth"].DataSource = mlt_TypeCloth.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeCloth from Table_005_TypeCloth");
@@ -969,31 +970,124 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToSt
         private void btnSaveFinal_Click(object sender, EventArgs e)
         {
             var headerId = SaveToHeaderColorOrder(CodeCustomer);
-            if (headerId != 0)
+            try
             {
-                var detailheaderId = SaveToDetailOrderColor(headerId, Convert.ToInt32(txt_NumberOrder.Text.Trim()), ClothTypeId, ColorTypeId, DeviceId
-                      , txt_Title.Text.Trim(), txt_Description.Text.Trim()
-                      , uiComboBox2.Text.Trim(), Convert.ToInt32(txt_weight.Text.Trim()), countHaveDesc);
-                if (detailheaderId != 0)
+                if (headerId != 0)
                 {
-                    var dec = GetCodeOfStorePrduct();
-                    int codeStore;
-                    int functionType;
-                    dec.TryGetValue("WareCode", out codeStore);
-                    dec.TryGetValue("FunctionType", out functionType);
-                    var headerReciptId = MyBasicFunction.BasicFunction.Recipt(ConWare, DateTime.Now.ToShamsi(), DeviceId, ClDoc, codeStore, functionType, lblCodeCustomer.Text, "0");
-                    foreach (var item in gridEX3.GetDataRows())
+                    var detailheaderId = SaveToDetailOrderColor(headerId, Convert.ToInt32(txt_NumberOrder.Text.Trim()), ClothTypeId, ColorTypeId, DeviceId
+                          , txt_Title.Text.Trim(), txt_Description.Text.Trim()
+                          , uiComboBox2.Text.Trim(), Convert.ToInt32(txt_weight.Text.Trim()), countHaveDesc);
+                    if (detailheaderId != 0)
                     {
-                        var CodeCommodity = item.Cells["CodeCommodity"].Value.ToString();
-                        var Weight = item.Cells["Weight"].Value.ToString();
-                        var BarCode = item.Cells["BarCode"].Value.ToString();
-                        MyBasicFunction.BasicFunction.ReciptChild(ConWare, headerReciptId, Convert.ToInt32(CodeCommodity), weight: Convert.ToDecimal(Weight), barcode: BarCode, DeviceId);
+                        var dec = GetCodeOfStorePrduct();
+                        int codeStore;
+                        int functionType;
+                        dec.TryGetValue("WareCode", out codeStore);
+                        dec.TryGetValue("FunctionType", out functionType);
+                        var headerReciptId = MyBasicFunction.BasicFunction.Recipt(ConWare, DateTime.Now.ToShamsi(), DeviceId, ClDoc, codeStore, functionType, lblCodeCustomer.Text, "0");
+                        foreach (var item in gridEX3.GetDataRows())
+                        {
+                            var CodeCommodity = item.Cells["CodeCommodity"].Value.ToString();
+                            var Weight = item.Cells["Weight"].Value.ToString();
+                            var BarCode = item.Cells["BarCode"].Value.ToString();
+                            MyBasicFunction.BasicFunction.ReciptChild(ConWare, headerReciptId, Convert.ToInt32(CodeCommodity), weight: Convert.ToDecimal(Weight), barcode: BarCode, DeviceId);
+                        }
+                        Draft();
                     }
+                MessageBox.Show("مشکلی در ثبت به وجود آمده است");
                 }
-
+                MessageBox.Show("مشکلی در ثبت به وجود آمده است");
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
+        private Task <bool> Draft()
+        {
+
+
+            try
+            {
+                var dec = GetCodeOfStoreWeave();
+                int codeStoreWeave;
+                int functionTypeWeave;
+                dec.TryGetValue("WareCode", out codeStoreWeave);
+                dec.TryGetValue("FunctionType", out functionTypeWeave);
+
+
+                ///گرفتن کد انبار و عملکرد حواله مخصوص انبار سایر (Title in Setting ---> سایر)
+                var material = GetCodeOfStoreMaterial();
+                int codeStoreMaterial;
+                int functionTypeMaterial;
+                material.TryGetValue("WareCode", out codeStoreMaterial);
+                material.TryGetValue("FunctionType", out functionTypeMaterial);
+
+
+                ///حواله به انبار بافندگی 
+                var headerWeaveId = MyBasicFunction.BasicFunction.ExportDraftHeader(ConWare, ClDoc, txt_Dat.Text, codeStoreWeave,
+                     functionTypeWeave, Convert.ToInt32(lblCodeCustomer.Text), txt_Description.Text, "");
+
+
+                ///جزیئات حواله به انبار بافندگی
+                foreach (var item in gridEX3.GetRows())
+                {
+                    MyBasicFunction.BasicFunction.ExportDraftChild(headerWeaveId, codeStoreWeave, Convert.ToInt32(item.Cells["CodeCommodity"].ToString())
+                        , 1, item.Cells["Bracode"].ToString(), txt_Dat.Text, ConWare);
+                }
+
+                //-------------------------------------------------------------------------------------------------
+
+                ///حواله به انبار مواد رنگ مصرفی 
+                var headerMaterialId = MyBasicFunction.BasicFunction.ExportDraftHeader(ConWare, ClDoc, txt_Dat.Text, codeStoreMaterial,
+                    functionTypeMaterial, Convert.ToInt32(lblCodeCustomer.Text), txt_Description.Text, "");
+
+
+                ///جزیئات حواله به انبار رنگرزی
+                foreach (var item in gridEX4.GetRows())
+                {
+                    MyBasicFunction.BasicFunction.ExportDraftChild(headerMaterialId, codeStoreMaterial, Convert.ToInt32(item.Cells["CodeCommodity"].ToString())
+                        , Convert.ToDecimal(item.Cells["AmountRequierd"].ToString()), "1", txt_Dat.Text, ConWare);
+                }
+                return new Task<bool>(() => true);
+            }
+
+            catch (Exception ex)
+            {
+                return new Task<bool>(() => false); ;
+            }
+
+
+            ///گرفتن کد انبار و عملکرد حواله مخصوص انبار بافندگی (Title in Setting ---> بافندگی)
+
+
+
+        }
+
+
+
+
+
+
+
+        public Dictionary<string, int> GetCodeOfStoreWeave()
+        {
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+                var query = $@"
+                        select Value
+                        from Table_80_Setting 
+                        where ID in(31,32)
+";
+                var res = db.Query<int>(query, null, commandType: CommandType.Text).ToList();
+                var dec = new Dictionary<string, int>();
+                dec.Add("FunctionType", res[0]);
+                dec.Add("WareCode", res[1]);
+                return dec;
+            }
+        }
         public Dictionary<string, int> GetCodeOfStorePrduct()
         {
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
@@ -1001,8 +1095,24 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToSt
                 var query = $@"
                         select Value
                         from Table_80_Setting 
-                        where ID in(16,5)
-                            ";
+                        where ID in(15,3)
+";
+                var res = db.Query<int>(query, null, commandType: CommandType.Text).ToList();
+                var dec = new Dictionary<string, int>();
+                dec.Add("FunctionType", res[0]);
+                dec.Add("WareCode", res[1]);
+                return dec;
+            }
+        }
+        public Dictionary<string, int> GetCodeOfStoreMaterial()
+        {
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+                var query = $@"
+                        select Value
+                        from Table_80_Setting 
+                        where ID in(18,8)
+";
                 var res = db.Query<int>(query, null, commandType: CommandType.Text).ToList();
                 var dec = new Dictionary<string, int>();
                 dec.Add("FunctionType", res[0]);

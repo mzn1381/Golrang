@@ -33,6 +33,7 @@ namespace PCLOR.Product
         private Int16 FunctionType = 0;
         private bool IsCreateAutomatic = false;
         private bool IsInfinitiveTextureLimit = false;
+        private TimeSpan TimeLastProduct { get; set; }
         bool Machine = false;
         private void OpenPort()
         {
@@ -80,7 +81,7 @@ namespace PCLOR.Product
 
         private void Frm_015_Product_Load(object sender, EventArgs e)
         {
-            //IsJoinShift(DeviceId);
+            IsJoinShift(DeviceId);
             // TODO: This line of code loads data into the 'pCLOR_1_1400DataSet.Table_115_Product' table. You can move, or remove it, as needed.
             txt_DateTime.Text = DateTime.Now.ToShamsi();
             this.table_115_ProductTableAdapter1.Fill(this.pCLOR_1_1400DataSet.Table_115_Product);
@@ -184,7 +185,7 @@ namespace PCLOR.Product
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["UserEdite"] = Class_BasicOperation._UserName;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["DateEdite"] = Class_BasicOperation.ServerDate().ToString();
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Operator"] = txtCodeTag.Text.Trim().ToString();
-                //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["IsJoinShift"] = IsJoinShift(DeviceId);
+
                 //if (((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ID"].ToString().StartsWith("-"))
                 //{
                 //    txt_Number.Text = ClDoc.MaxNumber(Properties.Settings.Default.PCLOR, "Table_115_Product", "Number").ToString();
@@ -269,20 +270,23 @@ namespace PCLOR.Product
 
         public string StatusShift()
         {
-            TimeSpan date;
+            ///یراساس شیفت صبح ,  شیفت تعیین می شود
+            SetStatusShiftViewModel model;
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
                 var query = $@"
-                               select TimeEnd
+                               select TimeStart,TimeEnd
                                from Table_105_DefinitionWorkShift
                                where ID=2";
-
-                date = db.QueryFirstOrDefault<TimeSpan>(query, null, commandType: CommandType.Text);
+                model = db.QueryFirstOrDefault<SetStatusShiftViewModel>(query, null, commandType: CommandType.Text);
             }
-
-            if (DateTime.Now.Hour >= date.Hours)
-                return "شب";
-            return "صبح ";
+            var statusNow = DateTime.Now.ToString("tt");
+            var hourNow = DateTime.Now.Hour;
+            if (statusNow.ToLower().Trim() == "pm")
+                hourNow += 12;
+            if (model.TimeStart.Hours <= hourNow && hourNow <= model.TimeEnd.Hours)
+                return "صبح";
+            return "شب ";
         }
 
         public Machine GetMachine(int ID)
@@ -383,6 +387,9 @@ namespace PCLOR.Product
                 //table_115_ProductBindingSource.EndEdit();
                 //table_115_ProductTableAdapter1.Update(pCLOR_1_1400DataSet.Table_115_Product);
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["RFID"] = Convert.ToInt32(idrfid);
+                var isJoinShift = IsJoinShift(DeviceId);
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["IsJoinShift"] = isJoinShift;
+
                 Recipt();
                 //ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, $@"
                 //     update Table_115_Product set  Operator =N'{txtCodeTag.Text.Trim()}'
@@ -923,14 +930,20 @@ namespace PCLOR.Product
                     where ID=2";
                 var date = db.QueryMultiple(query, null, commandType: CommandType.Text);
                 var lastProducttt = date.ReadFirstOrDefault(typeof(TimeSpan));
+                if (lastProducttt == null)
+                    return 0;
                 TimeSpan lastProduct = (TimeSpan)lastProducttt;
+                TimeLastProduct = lastProduct;
                 //var gg = lastProduct.ToString("tt");
-                var hh = DateTime.Now.ToString("tt");
                 var endShiftttt = date.ReadFirstOrDefault(typeof(TimeSpan));
                 var endShift = ((TimeSpan)endShiftttt).Hours;
                 if (lastProduct.Hours > endShift)
                     lastProductShift = "شب";
-                if (DateTime.Now.Hour > endShift)
+                var statusHourDateNow = DateTime.Now.ToString("tt");
+                var hourNow = DateTime.Now.Hour;
+                if (statusHourDateNow.ToLower() == "pm")
+                    hourNow += 12;
+                if (hourNow > endShift)
                     lastProductShift = "شب";
                 if (lastProductShift.Trim() == shiftNow.Trim())
                     return 1;
@@ -939,5 +952,35 @@ namespace PCLOR.Product
 
         }
 
+        private Dictionary<string, string> FillIsJoinShift(int deviceId)
+        {
+            
+            var timeStartShiftNow = GetStartTimeShiftByShiftName(lblShiftOperator.Text.Trim());
+            var statusTimeNow = DateTime.Now.ToString("tt");
+            var hourNow = DateTime.Now.Hour;
+            if (statusTimeNow.Trim().ToLower()=="pm")
+                hourNow += 12;
+            var totalTimeOfProduct = hourNow - TimeLastProduct.Hours;
+            var percent1 = ((decimal)(timeStartShiftNow.Hours - TimeLastProduct.Hours)/(decimal)totalTimeOfProduct)*100;
+            var percent2 = ((decimal)(hourNow- timeStartShiftNow)/(decimal)totalTimeOfProduct)*100;
+            /// To Do Get Code Of OperatorLastProduct
+            /// 
+
+
+        }
+
+        private TimeSpan GetStartTimeShiftByShiftName(string shiftName)
+        {
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+
+                var query = $@"
+                            SELECT 
+                            ,[TimeStart]
+                            FROM [PCLOR_1_1400].[dbo].[Table_105_DefinitionWorkShift]
+                            where  TRIM(Shift) = N'{shiftName.Trim()}'";
+                return db.QueryFirstOrDefault<TimeSpan>(query, null, commandType: CommandType.Text);
+            }
+        }
     }
 }
