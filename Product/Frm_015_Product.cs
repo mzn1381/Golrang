@@ -25,15 +25,18 @@ namespace PCLOR.Product
         SerialPort comport = new SerialPort();
         Classes.Class_Documents ClDoc = new Classes.Class_Documents();
         int ResidNum = 0;
+        private bool GoStepAfter = false;
         private int DeviceId = 0;
-        private string DeviceName;
+        public int ShiftNow { get; set; }
+        //private string DeviceName;
         private int clothType = 0;
+        private Int16 TextureLimit { get; set; }
         private int cottonType = 0;
         private Int16 WareCode = 0;
         private Int16 FunctionType = 0;
         private bool IsCreateAutomatic = false;
         private bool IsInfinitiveTextureLimit = false;
-        private TimeSpan TimeLastProduct { get; set; }
+        private DateTime TimeLastProduct { get; set; }
         bool Machine = false;
         private void OpenPort()
         {
@@ -81,7 +84,7 @@ namespace PCLOR.Product
 
         private void Frm_015_Product_Load(object sender, EventArgs e)
         {
-            IsJoinShift(DeviceId);
+            //IsJoinShift(DeviceId);
             // TODO: This line of code loads data into the 'pCLOR_1_1400DataSet.Table_115_Product' table. You can move, or remove it, as needed.
             txt_DateTime.Text = DateTime.Now.ToShamsi();
             this.table_115_ProductTableAdapter1.Fill(this.pCLOR_1_1400DataSet.Table_115_Product);
@@ -89,9 +92,9 @@ namespace PCLOR.Product
             gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
             gridEX2.DropDowns["Customer"].DataSource = ClDoc.ReturnTable(ConBase, @"select Columnid,Column02 from Table_045_PersonInfo");
             FillDetailMachine();
-            SetDeviceName();
+            //SetDeviceName();
             if (IsInfinitiveTextureLimit)
-                this.lblTextureLimit.Text = "نا محدود";
+                lblTextureLimit.Text = "نا محدود";
             //gridEX2.DropDowns["Programer"].DataSource = mlt_Num_Programer.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,Number from Table_100_ProgramMachine");
             //gridEX2.DropDowns["shift"].DataSource = mlt_shift.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,Shift from Table_105_DefinitionWorkShift");
             //gridEX2.DropDowns["Machine"].DataSource = mlt_Machine.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select Id,namemachine from Table_60_SpecsTechnical");
@@ -121,11 +124,11 @@ namespace PCLOR.Product
 
             if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 146))
             {
-                if (lblTextureLimit.Text.Trim().ToLower() == "0" && IsInfinitiveTextureLimit == false)
+                if (TextureLimit == 0 && IsInfinitiveTextureLimit == false)
                 {
-                    MessageBox.Show("امکان ثبت تولید برای دستگاه وجود ندارد زیرا حد بافت به صفر رشیده است لطفا جهت ادامه ی ثبت تولید حد بافت دستگاه را افزیش دهید ", "اخطار", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
-                    this.Close();
-                    return;
+                    MessageBox.Show(" حد بافت دستگاه به صفر رسیده است !!", "هشدار", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                    //this.Close();
+                    //return;
                 }
 
 
@@ -139,7 +142,7 @@ namespace PCLOR.Product
                 //    Class_BasicOperation.ShowMsg("", "لطفا شیفت کاری مورد نظر را وارد نمایید", Class_BasicOperation.MessageType.None);
 
                 //}
-                if (string.IsNullOrEmpty(txt_weight.Text) || txt_weight.Text == "0")
+                if (string.IsNullOrEmpty(txt_weight.Text) || txt_weight.Text.Trim() == "0")
                 {
                     Class_BasicOperation.ShowMsg("", "لطفا وزن مورد نظر را وارد نمایید", Class_BasicOperation.MessageType.None);
                     return;
@@ -168,24 +171,20 @@ namespace PCLOR.Product
                 if (lblShiftOperator.Text.Trim().ToLower() == "شب")
                 {
                     ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["shift"] = 3;
-
+                    ShiftNow = 3;
                 }
                 else if (lblShiftOperator.Text.Trim().ToLower() == "صبح")
                 {
                     ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["shift"] = 2;
-
+                    ShiftNow = 2;
                 }
-
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Date"] = lblDateCreate.Text;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Time"] = lblCreateTime.Text;
-
-
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["UserSabt"] = Class_BasicOperation._UserName;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["DateSabt"] = Class_BasicOperation.ServerDate().ToString();
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["UserEdite"] = Class_BasicOperation._UserName;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["DateEdite"] = Class_BasicOperation.ServerDate().ToString();
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Operator"] = txtCodeTag.Text.Trim().ToString();
-
                 //if (((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ID"].ToString().StartsWith("-"))
                 //{
                 //    txt_Number.Text = ClDoc.MaxNumber(Properties.Settings.Default.PCLOR, "Table_115_Product", "Number").ToString();
@@ -194,18 +193,16 @@ namespace PCLOR.Product
                 //}
                 //table_115_ProductBindingSource.EndEdit();
                 //table_115_ProductTableAdapter1.Update(pCLOR_1_1400DataSet.Table_115_Product);
-                if (!IsInfinitiveTextureLimit)
-                    DecreaseTextureLimit(DeviceId);
+                //if (!IsInfinitiveTextureLimit)
+                //    DecreaseTextureLimit(DeviceId);
                 //table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product,Convert.ToInt32 (mlt_Num_Programer.Value));
                 gridEX2.MoveLast();
                 txt_weight.Text = "0";
                 txt_Description.Text = string.Empty;
                 txt_weight.Focus();
                 ch_Auto.Enabled = true;
-
+                GoStepAfter = true;
             }
-
-
             else
             {
                 Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
@@ -280,11 +277,12 @@ namespace PCLOR.Product
                                where ID=2";
                 model = db.QueryFirstOrDefault<SetStatusShiftViewModel>(query, null, commandType: CommandType.Text);
             }
-            var statusNow = DateTime.Now.ToString("tt");
+            //var statusNow = DateTime.Now.ToString("tt");
             var hourNow = DateTime.Now.Hour;
-            if (statusNow.ToLower().Trim() == "pm")
-                hourNow += 12;
+            //if (statusNow.ToLower().Trim() == "pm")
+            //    hourNow += 12;
             if (model.TimeStart.Hours <= hourNow && hourNow <= model.TimeEnd.Hours)
+
                 return "صبح";
             return "شب ";
         }
@@ -319,9 +317,16 @@ namespace PCLOR.Product
             lblYarnType.Text = machine.YarnTypeName;
             lblTeeny.Text = Convert.ToInt32(machine.teeny).ToString();
             lblTextureLimit.Text = machine.TextureLimit.ToString();
+            TextureLimit = (short)machine.TextureLimit;
             lblTypeDevice.Text = machine.DeviceMark;
             lblTypeFabric.Text = machine.FabricTypeName;
-            lblCreateTime.Text = DateTime.Now.TimeOfDay.Hours.ToString("00") + ":" + DateTime.Now.TimeOfDay.Minutes.ToString("00") + ":" + DateTime.Now.Second.ToString("00");
+            var hourNow = DateTime.Now.Hour;
+
+            //if (statusOfDate.ToLower().Trim() == "pm")
+            //    hourNow += 12;
+            //if (hourNow >= 24)
+            //    hourNow = 0;
+            lblCreateTime.Text = hourNow + ":" + DateTime.Now.TimeOfDay.Minutes.ToString("00") + ":" + DateTime.Now.Second.ToString("00");
             lblArea.Text = machine.Area.ToString();
             txtDescDevice.Text = machine.Description;
             IsInfinitiveTextureLimit = machine.IsInfinitiveTextureLimit;
@@ -389,6 +394,13 @@ namespace PCLOR.Product
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["RFID"] = Convert.ToInt32(idrfid);
                 var isJoinShift = IsJoinShift(DeviceId);
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["IsJoinShift"] = isJoinShift;
+                if (isJoinShift == 1)
+                {
+                    var model = FillIsJoinShift(DeviceId);
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Operator2"] = model["Operator2"];
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture"] = Convert.ToDecimal(model["Percent1"]);
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture2"] = Convert.ToDecimal(model["Percent2"]);
+                }
 
                 Recipt();
                 //ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, $@"
@@ -399,9 +411,14 @@ namespace PCLOR.Product
                 //",TimeLastProduct='" + txt_Lastdate.Text + 
                 //" Update Table_100_ProgramMachine set Printer=N'" + uiComboBox1.Text + "' where ID=" + mlt_Num_Programer.Value);
                 Class_BasicOperation.ShowMsg("", "اطلاعات با موفقیت دخیره شد" + Environment.NewLine + "رسید به شماره" + ResidNum + "با موفقیت صدور شد", Class_BasicOperation.MessageType.Information);
-                gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
+                //gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
                 //table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(DeviceId));
                 //gridEX2.MoveTo(Position);
+                if (!IsInfinitiveTextureLimit)
+                {
+                    TextureLimit -= 1;
+                    lblTextureLimit.Text = TextureLimit.ToString();
+                }
                 gridEX2.MoveLast();
                 //this.Close();
             }
@@ -416,8 +433,7 @@ namespace PCLOR.Product
                     var queryGetcommodity = $@"  SELECT c.CodeCommondity
                                                  from PCLOR_1_1400.dbo.Table_60_SpecsTechnical as s inner join 
                                                  PCLOR_1_1400.dbo.Table_005_TypeCloth as c on s.FabricType = c.ID
-                                                 where s.ID={DeviceId}
-                                                    ";
+                                                 where s.ID={DeviceId}";
                     var codeCommodity = db.QueryFirstOrDefault<int>(queryGetcommodity, null
                         , commandType: CommandType.Text);
                     ResidNum = ClDoc.MaxNumber(ConWare.ConnectionString, "Table_011_PwhrsReceipt", "Column01");
@@ -837,10 +853,18 @@ namespace PCLOR.Product
                         lblOperationCode.Text = model.Code;
                         lblOperatorName.Text = model.Name;
                         btn_New_Click(sender, e);
-                        btn_Save_Click(sender, e);
+                        if (GoStepAfter)
+                        {
+                            btn_Save_Click(sender, e);
+                            txtCodeTag.Text = string.Empty;
+                            if (!IsCreateAutomatic)
+                            {
+                                DecreaseTextureLimit(DeviceId, TextureLimit);
+                                this.Close();
+                            }
+                        }
                         txtCodeTag.Text = string.Empty;
-                        if (!IsCreateAutomatic)
-                            this.Close();
+
                     }
                     catch (Exception es)
                     {
@@ -852,19 +876,21 @@ namespace PCLOR.Product
 
         }
 
-        public void DecreaseTextureLimit(int DeviceId)
+        public void DecreaseTextureLimit(int DeviceId, short TextureLimit)
         {
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
+                if (TextureLimit < 0)
+                    TextureLimit = 0;
                 try
                 {
                     var query = $@"
                                   update Table_60_SpecsTechnical Set
-                                  TextureLimit = TextureLimit-1
+                                  TextureLimit = {TextureLimit}
                                   where ID = {DeviceId}";
 
                     db.Execute(query, null, commandType: CommandType.Text);
-                    lblTextureLimit.Text = (Convert.ToInt64(lblTextureLimit.Text) - 1).ToString();
+                    //lblTextureLimit.Text = (Convert.ToInt64(lblTextureLimit.Text) - 1).ToString();
                 }
                 catch (Exception ex)
                 {
@@ -888,18 +914,18 @@ namespace PCLOR.Product
             }
         }
 
-        public void SetDeviceName()
-        {
-            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
-            {
-                var query = $@"
-                                select namemachine
-                                from Table_60_SpecsTechnical
-                                where ID = {DeviceId}                               
-                             ";
-                DeviceName = db.QueryFirstOrDefault<string>(query, null, commandType: CommandType.Text);
-            }
-        }
+        //public void SetDeviceName()
+        //{
+        //    using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+        //    {
+        //        var query = $@"
+        //                        select namemachine
+        //                        from Table_60_SpecsTechnical
+        //                        where ID = {DeviceId}                               
+        //                     ";
+        //        DeviceName = db.QueryFirstOrDefault<string>(query, null, commandType: CommandType.Text);
+        //    }
+        //}
 
         public void DeleteLastRecid(int Id)
         {
@@ -913,58 +939,112 @@ namespace PCLOR.Product
             }
         }
 
+        private DateTime GetTimeLastProduct(int deviceId)
+        {
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+                var query = $@"
+                select Top(1)
+                DateSabt as Date  
+                from Table_115_Product
+                where Machine ={deviceId}
+                order By DateSabt Desc ;";
+                return db.QueryFirstOrDefault<DateTime>(query, null, commandType: CommandType.Text);
+            }
+        }
+
         public int IsJoinShift(int DeviceId)
         {
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
-                string lastProductShift = "صبح";
-                string shiftNow = "صبح";
                 var query = $@"
-                    select Top(1)
-                    Time as Date  
+                    select Top(1) shift
                     from Table_115_Product
-                    where Machine ={DeviceId}
-                    order By DateSabt Desc ;
-                    select TimeEnd
-                    from Table_105_DefinitionWorkShift
-                    where ID=2";
-                var date = db.QueryMultiple(query, null, commandType: CommandType.Text);
-                var lastProducttt = date.ReadFirstOrDefault(typeof(TimeSpan));
-                if (lastProducttt == null)
+                    Order by DateSabt desc
+                            ";
+                var res = db.QueryFirstOrDefault<int>(query, null, commandType: CommandType.Text);
+                if (res == ShiftNow)
                     return 0;
-                TimeSpan lastProduct = (TimeSpan)lastProducttt;
-                TimeLastProduct = lastProduct;
-                //var gg = lastProduct.ToString("tt");
-                var endShiftttt = date.ReadFirstOrDefault(typeof(TimeSpan));
-                var endShift = ((TimeSpan)endShiftttt).Hours;
-                if (lastProduct.Hours > endShift)
-                    lastProductShift = "شب";
-                var statusHourDateNow = DateTime.Now.ToString("tt");
-                var hourNow = DateTime.Now.Hour;
-                if (statusHourDateNow.ToLower() == "pm")
-                    hourNow += 12;
-                if (hourNow > endShift)
-                    lastProductShift = "شب";
-                if (lastProductShift.Trim() == shiftNow.Trim())
-                    return 1;
-                return 0;
+                return 1;
+                ///////////////////---------------------------------                
+                //                string lastProductShift = "صبح";
+                //                string shiftNow = "صبح";
+                //                var query = $@"
+                //                    select Top(1)
+                //                    Time as Date  
+                //                    from Table_115_Product
+                //                    where Machine ={DeviceId}
+                //                    order By DateSabt Desc ;
+                //                    select TimeEnd
+                //                    from Table_105_DefinitionWorkShift
+                //                    where ID=2";
+                //                var date = db.QueryMultiple(query, null, commandType: CommandType.Text);
+                //                var lastProducttt = date.ReadFirstOrDefault(typeof(TimeSpan));
+                //                if (lastProducttt == null)
+                //                    return 0;
+                //                TimeSpan lastProduct = (TimeSpan)lastProducttt;
+                //TimeLastProduct = lastProduct;
+                //                //var gg = lastProduct.ToString("tt");
+                //                var endShiftttt = date.ReadFirstOrDefault(typeof(TimeSpan));
+                //                var endShift = ((TimeSpan)endShiftttt).Hours;
+                //                if (lastProduct.Hours > endShift)
+                //                    lastProductShift = "شب";
+                //                var statusHourDateNow = DateTime.Now.ToString("tt");
+                //                var hourNow = DateTime.Now.Hour;
+                //                if (statusHourDateNow.ToLower() == "pm")
+                //                    hourNow += 12;
+                //                if (hourNow > endShift)
+                //                    lastProductShift = "شب";
+                //                if (lastProductShift.Trim() == shiftNow.Trim())
+                //                    return 1;
+                //                return 0;
             }
 
         }
 
         private Dictionary<string, string> FillIsJoinShift(int deviceId)
         {
-            
+
             var timeStartShiftNow = GetStartTimeShiftByShiftName(lblShiftOperator.Text.Trim());
-            var statusTimeNow = DateTime.Now.ToString("tt");
-            var hourNow = DateTime.Now.Hour;
-            if (statusTimeNow.Trim().ToLower()=="pm")
-                hourNow += 12;
-            var totalTimeOfProduct = hourNow - TimeLastProduct.Hours;
-            var percent1 = ((decimal)(timeStartShiftNow.Hours - TimeLastProduct.Hours)/(decimal)totalTimeOfProduct)*100;
-            var percent2 = ((decimal)(hourNow- timeStartShiftNow)/(decimal)totalTimeOfProduct)*100;
-            /// To Do Get Code Of OperatorLastProduct
-            /// 
+            //var statusTimeNow = DateTime.Now.ToString("tt");
+            TimeLastProduct = GetTimeLastProduct(deviceId);
+            //var t = ;
+            var totalTimeOfProductSeconds = (DateTime.Now - TimeLastProduct).TotalSeconds;
+            //var hourNow = DateTime.Now.TimeOfDay.TotalSeconds;
+            //if (statusTimeNow.Trim().ToLower() == "pm")
+            //    hourNow += 12;
+            var totalTimeForOperator1 = timeStartShiftNow.TotalSeconds - TimeLastProduct.TimeOfDay.TotalSeconds;
+            var totalTimeForOperator2 = totalTimeOfProductSeconds - totalTimeForOperator1;
+            //var hh2 = timeStartShiftNow.Subtract(h.TimeOfDay);
+            //var hh = timeStartShiftNow - h.TimeOfDay;
+            //var totalTimeOfProduct = hourNow - TimeLastProduct.Hours;
+            var percent1 = ((decimal)(totalTimeForOperator1) / (decimal)totalTimeOfProductSeconds) * 100;
+            var percent2 = ((decimal)(totalTimeForOperator2) / (decimal)totalTimeOfProductSeconds) * 100;
+            percent1 = Decimal.Round(percent1);
+            percent2 = 100 - percent1;
+            var operatorCode2 = GetCodeOperatorofLastproductForDevice(DeviceId);
+            var res = new Dictionary<string, string>();
+            res.Add("Operator2", operatorCode2);
+            res.Add("Percent1", (percent1).ToString());
+            res.Add("Percent2", percent2.ToString());
+            return res;
+        }
+
+        private string GetCodeOperatorofLastproductForDevice(int deviceId)
+
+        {
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+
+                var query = $@"
+                    select Top(1)
+                    Operator as OperatorCode
+                    from Table_115_Product
+                    where Machine ={deviceId}
+                    order By DateSabt Desc ;";
+                return db.QueryFirstOrDefault<string>(query, null, commandType: CommandType.Text);
+
+            }
 
 
         }
@@ -976,11 +1056,17 @@ namespace PCLOR.Product
 
                 var query = $@"
                             SELECT 
-                            ,[TimeStart]
+                            [TimeStart]
                             FROM [PCLOR_1_1400].[dbo].[Table_105_DefinitionWorkShift]
-                            where  TRIM(Shift) = N'{shiftName.Trim()}'";
+                            where   RTrim(LTRIM([Shift])) = N'{shiftName.Trim()}'";
                 return db.QueryFirstOrDefault<TimeSpan>(query, null, commandType: CommandType.Text);
             }
+        }
+
+        private void Frm_015_Product_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!IsInfinitiveTextureLimit)
+                DecreaseTextureLimit(DeviceId, TextureLimit);
         }
     }
 }

@@ -979,6 +979,7 @@ namespace PCLOR.Product
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "دستور تولید";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_015_Product_FormClosing);
             this.Load += new System.EventHandler(this.Frm_015_Product_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Frm_015_Product_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).EndInit();

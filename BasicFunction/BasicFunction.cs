@@ -57,10 +57,13 @@ namespace PCLOR.MyBasicFunction
             }
 
         }
+
+
         public static void GetMessageForTextureLimit(object o, EventArgs args)
         {
-            MessageBox.Show("حد بافت دستگاه صفر می باشد و امکان ثبت تولید نیست لطفا حد بافت را افزایش دهید ", "اخطار", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("حد بافت دستگاه صفر می باشد  ", "هشدار", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
 
         public static void SaveLocationDevices(Control.ControlCollection Controls, SqlConnection ConPCLOR)
         {
@@ -74,6 +77,7 @@ namespace PCLOR.MyBasicFunction
             }
 
         }
+
 
         public static int Recipt(SqlConnection ConWare, string dateCreate, int deviceId, Class_Documents ClDoc, int wareCode, int functionType, string operationCode, string number = "")
         {
@@ -118,7 +122,8 @@ namespace PCLOR.MyBasicFunction
 
         }
 
-        public static void ReciptChild(SqlConnection ConWare, int hedearId, int commodityCode, decimal weight, string barcode, int deviceId)
+
+        public static void ReciptChild(SqlConnection ConWare, int hedearId, decimal value, int commodityCode, decimal weight, string barcode, int deviceId)
         {
 
             using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
@@ -144,7 +149,7 @@ namespace PCLOR.MyBasicFunction
                                    ,[Column35]
                                    ,[Column37]
                            ) VALUES (
-               {hedearId},{commodityCode},1,1,1,0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}' ,getdate(),0,0, N'{barcode}' , {weight} , {weight} , N'{deviceId}' );";
+               {hedearId},{commodityCode},1,{value},{value},0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}' ,getdate(),0,0, N'{barcode}' , {weight} , {weight} , N'{deviceId}' );";
                     db.Execute(query, null, commandType: CommandType.Text);
                 }
                 catch (Exception ex)
@@ -171,7 +176,6 @@ namespace PCLOR.MyBasicFunction
         }
 
 
-
         public static int ExportDraftHeader(SqlConnection ConWare, Class_Documents ClDoc, string date, int wareCode, int functionType, int personCode, string description, string colorName)
         {
             int DraftNumber = 0;
@@ -192,8 +196,8 @@ namespace PCLOR.MyBasicFunction
                         column16,
                         column17, column18, column19, Column20, Column21,
                         Column22, Column23, Column24, Column25, Column26)
-                        VALUES({DraftNumber},N'{date}',{wareCode},{functionType},{0},N'حواله صادره بابت رنگ مصرفی ش {colorName},0,N'{ Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}'
-                        ,getdate(),0,Null,Null,0,0,0,0,0,0,0,0,0,null,0,1); SELECT SCOPE_IDENTITY();
+                        VALUES({DraftNumber},N'{date}',{wareCode},{functionType},{0},N'حواله صادره بابت رنگ مصرفی ش {colorName}',0,N'{ Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}'
+                        ,getdate(),0,Null,Null,0,0,0,0,0,0,0,0,0,Null,0,1); SELECT SCOPE_IDENTITY();
                         ";
             using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
             {
@@ -202,33 +206,37 @@ namespace PCLOR.MyBasicFunction
         }
 
 
-
         public static int GetVahedShomareshForCommodity(int commodityId, SqlConnection ConWare)
         {
             var query = $@"
                     select Column07 from table_004_CommodityAndIngredients 
-                    where   Columnid = {commodityId} ) ";
+                    where   Columnid = {commodityId} ";
             using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
             {
                 return db.QueryFirstOrDefault<int>(query, null, commandType: CommandType.Text);
             }
         }
 
-        public static void ExportDraftChild(int headerId, int wareCode,int codeCommodity, decimal consumption, string numberProduct,string date, SqlConnection ConWare)
-        {
 
+        public static void ExportDraftChild(int headerId, int wareCode, int codeCommodity, decimal consumption, string numberProduct, string date, SqlConnection ConWare)
+        {
+            bool status = false;
             var vahedShomaresh = GetVahedShomareshForCommodity(codeCommodity, ConWare);
 
             var query = $@"
-                           INSERT INTO Table_008_Child_PwhrsDraft (column01, column02, column03, column04, column05, column06, column07,
-                           column08, column09, column10, column11, column12, column13, column14, column15, column16, 
-                           column17, column18, column19, Column20, Column21, Column22, Column23, Column24, Column25, Column26) VALUES(
+                           INSERT INTO Table_008_Child_PwhrsDraft (column01, column02, column03, column04, column05, column06, column07, column08, column09, column10, column11, column12, column13, column14, column15, column16, 
+                        column17, column18, column19, column20, column21, column22, column23, column24, column25, column26, column27, column28, column29, Column30, Column31, Column32, Column33, Column36, Column37) VALUES(
                            {headerId},{codeCommodity},{vahedShomaresh},0,0,{consumption},{consumption},0,0,0,0,N'به شماره کارت تولید 
                            {numberProduct}',NULL,NULL,0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}',getdate(),
                            NULL,NULL,NULL,0,0,0,0,0,0,NULL,NULL,0,0,0,0);
                            ";
 
-
+            using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
+            {
+                var res = db.Execute(query, null);
+                if (res > 0)
+                    status = true;
+            }
 
             //CmdText = (@"INSERT INTO Table_007_PwhrsDraft (column01, column02, column03, column04, column05, column06, column07, column08, column09, column10, column11, column12, column13, column14, column15, column16, 
             //column17, column18, column19, Column20, Column21, Column22, Column23, Column24, Column25, Column26) VALUES(" + DraftNumber + ",'" + txt_Dat.Text + "'," +
@@ -251,75 +259,78 @@ namespace PCLOR.MyBasicFunction
 
 
             //}
-
-
-            using (SqlConnection Con = new SqlConnection(PCLOR.Properties.Settings.Default.PWHRS))
+            if (status)
             {
-                Con.Open();
-
-                SqlTransaction sqlTran = Con.BeginTransaction();
-                //SqlCommand Command = Con.CreateCommand();
-                //Command.Transaction = sqlTran;
-
-                try
+                using (SqlConnection Con = new SqlConnection(PCLOR.Properties.Settings.Default.PWHRS))
                 {
-                    //Command.CommandText = CmdText;
-                    //Command.Parameters.Add(DraftId);
-                    //Command.ExecuteNonQuery();
-                    sqlTran.Commit();
-                    /////
+                    Con.Open();
+
+                    SqlTransaction sqlTran = Con.BeginTransaction();
+                    //SqlCommand Command = Con.CreateCommand();
+                    //Command.Transaction = sqlTran;
 
                     try
                     {
-                        SqlDataAdapter goodAdapter = new SqlDataAdapter("Select * from Table_008_Child_PwhrsDraft where Column01=" + headerId, ConWare.ConnectionString);
-                        DataTable Table = new DataTable();
-                        goodAdapter.Fill(Table);
+                        //Command.CommandText = CmdText;
+                        //Command.Parameters.Add(DraftId);
+                        //Command.ExecuteNonQuery();
+                        sqlTran.Commit();
+                        /////
 
-                        //محاسبه ارزش و ذخیره آن در جدول Child1
-
-                        foreach (DataRow item in Table.Rows)
+                        try
                         {
-                            if (Class_BasicOperation._WareType)
-                            {
-                                SqlDataAdapter Adapt = new SqlDataAdapter("EXEC	" + (Class_BasicOperation._WareType ? " [dbo].[PR_00_FIFO] " : "  [dbo].[PR_05_AVG] ") + " @GoodParameter = " + item["Column02"].ToString() + ", @WareCode = " + wareCode, ConWare);
-                                DataTable TurnTable = new DataTable();
-                                Adapt.Fill(TurnTable);
-                                DataRow[] Row = TurnTable.Select("Kind=2 and ID=" + headerId + " and DetailID=" + item["Columnid"].ToString());
+                            SqlDataAdapter goodAdapter = new SqlDataAdapter("Select * from Table_008_Child_PwhrsDraft where Column01=" + headerId, ConWare.ConnectionString);
+                            DataTable Table = new DataTable();
+                            goodAdapter.Fill(Table);
 
-                                SqlCommand UpdateCommand = new SqlCommand("UPDATE Table_008_Child_PwhrsDraft SET  Column15=" + Math.Round(double.Parse(Row[0]["DsinglePrice"].ToString()), 4)
-                                    + " , Column16=" + Math.Round(double.Parse(Row[0]["DTotalPrice"].ToString()), 4) + " where ColumnId=" + item["ColumnId"].ToString(), Con);
-                                UpdateCommand.ExecuteNonQuery();
+                            //محاسبه ارزش و ذخیره آن در جدول Child1
+
+                            foreach (DataRow item in Table.Rows)
+                            {
+                                if (Class_BasicOperation._WareType)
+                                {
+                                    SqlDataAdapter Adapt = new SqlDataAdapter("EXEC	" + (Class_BasicOperation._WareType ? " [dbo].[PR_00_FIFO] " : "  [dbo].[PR_05_AVG] ") + " @GoodParameter = " + item["Column02"].ToString() + ", @WareCode = " + wareCode, ConWare);
+                                    DataTable TurnTable = new DataTable();
+                                    Adapt.Fill(TurnTable);
+                                    DataRow[] Row = TurnTable.Select("Kind=2 and ID=" + headerId + " and DetailID=" + item["Columnid"].ToString());
+
+                                    SqlCommand UpdateCommand = new SqlCommand("UPDATE Table_008_Child_PwhrsDraft SET  Column15=" + Math.Round(double.Parse(Row[0]["DsinglePrice"].ToString()), 4)
+                                        + " , Column16=" + Math.Round(double.Parse(Row[0]["DTotalPrice"].ToString()), 4) + " where ColumnId=" + item["ColumnId"].ToString(), Con);
+                                    UpdateCommand.ExecuteNonQuery();
+
+                                }
+                                else
+                                {
+                                    SqlDataAdapter Adapt = new SqlDataAdapter("EXEC	   [dbo].[PR_05_NewAVG]   @GoodParameter = " + item["Column02"].ToString() + ", @WareCode = " + wareCode + ",@Date='" + date + "',@id=" + headerId + ",@residid=0", ConWare);
+                                    DataTable TurnTable = new DataTable();
+                                    Adapt.Fill(TurnTable);
+                                    SqlCommand UpdateCommand = new SqlCommand("UPDATE Table_008_Child_PwhrsDraft SET  Column15=" + Math.Round(double.Parse(TurnTable.Rows[0]["Avrage"].ToString()), 4)
+                                  + " , Column16=" + Math.Round(double.Parse(TurnTable.Rows[0]["Avrage"].ToString()), 4) * Math.Round(double.Parse(item["Column07"].ToString()), 4) + " where ColumnId=" + item["ColumnId"].ToString(), Con);
+                                    UpdateCommand.ExecuteNonQuery();
+                                }
 
                             }
-                            else
-                            {
-                                SqlDataAdapter Adapt = new SqlDataAdapter("EXEC	   [dbo].[PR_05_NewAVG]   @GoodParameter = " + item["Column02"].ToString() + ", @WareCode = " + wareCode + ",@Date='" + date + "',@id=" + headerId + ",@residid=0", ConWare);
-                                DataTable TurnTable = new DataTable();
-                                Adapt.Fill(TurnTable);
-                                SqlCommand UpdateCommand = new SqlCommand("UPDATE Table_008_Child_PwhrsDraft SET  Column15=" + Math.Round(double.Parse(TurnTable.Rows[0]["Avrage"].ToString()), 4)
-                              + " , Column16=" + Math.Round(double.Parse(TurnTable.Rows[0]["Avrage"].ToString()), 4) * Math.Round(double.Parse(item["Column07"].ToString()), 4) + " where ColumnId=" + item["ColumnId"].ToString(), Con);
-                                UpdateCommand.ExecuteNonQuery();
-                            }
-
                         }
+
+
+                        catch
+                        {
+                        }
+
+
+                        //gridEX1.DropDowns["Draft"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_007_PwhrsDraft ");
+                        //Messages = Messages + "حواله انبار رنگ مصرفی به شماره  " + DraftNumber.ToString() + Environment.NewLine;
                     }
-
-
-                    catch
+                    catch (Exception es)
                     {
+                        sqlTran.Rollback();
+                        //this.Cursor = Cursors.Default;
+                        //Class_BasicOperation.CheckExceptionType(es, this.Name);
                     }
-
-
-                    //gridEX1.DropDowns["Draft"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_007_PwhrsDraft ");
-                    //Messages = Messages + "حواله انبار رنگ مصرفی به شماره  " + DraftNumber.ToString() + Environment.NewLine;
-                }
-                catch (Exception es)
-                {
-                    sqlTran.Rollback();
-                    //this.Cursor = Cursors.Default;
-                    //Class_BasicOperation.CheckExceptionType(es, this.Name);
                 }
             }
+
+       
 
             //this.Cursor = Cursors.Default;
 

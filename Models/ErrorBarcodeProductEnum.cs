@@ -10,6 +10,7 @@ namespace PCLOR.Models
         Machine,
         Cloth,
         Cotton,
-        Success
+        Success,
+        Null
     }
 }

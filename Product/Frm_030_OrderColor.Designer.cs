@@ -737,7 +737,6 @@ namespace PCLOR.Product
             // 
             this.gridEX4.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
             this.gridEX4.AllowColumnDrag = false;
-            this.gridEX4.AllowEdit = Janus.Windows.GridEX.InheritableBoolean.False;
             this.gridEX4.AlternatingColors = true;
             this.gridEX4.AutoEdit = true;
             this.gridEX4.BoundMode = Janus.Windows.GridEX.BoundMode.Unbound;

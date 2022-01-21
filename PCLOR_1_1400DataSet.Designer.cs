@@ -362,6 +362,14 @@ namespace PCLOR {
             
             private global::System.Data.DataColumn columnPrinter;
             
+            private global::System.Data.DataColumn columnIsJoinShift;
+            
+            private global::System.Data.DataColumn columnOperator2;
+            
+            private global::System.Data.DataColumn columnPersonTexture;
+            
+            private global::System.Data.DataColumn columnPersonTexture2;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public Table_115_ProductDataTable() {
@@ -589,6 +597,38 @@ namespace PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn IsJoinShiftColumn {
+                get {
+                    return this.columnIsJoinShift;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Operator2Column {
+                get {
+                    return this.columnOperator2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PersonTextureColumn {
+                get {
+                    return this.columnPersonTexture;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PersonTexture2Column {
+                get {
+                    return this.columnPersonTexture2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -647,7 +687,11 @@ namespace PCLOR {
                         string UserEdite, 
                         System.DateTime DateEdite, 
                         int RFID, 
-                        string Printer) {
+                        string Printer, 
+                        string IsJoinShift, 
+                        string Operator2, 
+                        string PersonTexture, 
+                        string PersonTexture2) {
                 Table_115_ProductRow rowTable_115_ProductRow = ((Table_115_ProductRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -673,7 +717,11 @@ namespace PCLOR {
                         UserEdite,
                         DateEdite,
                         RFID,
-                        Printer};
+                        Printer,
+                        IsJoinShift,
+                        Operator2,
+                        PersonTexture,
+                        PersonTexture2};
                 rowTable_115_ProductRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTable_115_ProductRow);
                 return rowTable_115_ProductRow;
@@ -727,6 +775,10 @@ namespace PCLOR {
                 this.columnDateEdite = base.Columns["DateEdite"];
                 this.columnRFID = base.Columns["RFID"];
                 this.columnPrinter = base.Columns["Printer"];
+                this.columnIsJoinShift = base.Columns["IsJoinShift"];
+                this.columnOperator2 = base.Columns["Operator2"];
+                this.columnPersonTexture = base.Columns["PersonTexture"];
+                this.columnPersonTexture2 = base.Columns["PersonTexture2"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -780,6 +832,14 @@ namespace PCLOR {
                 base.Columns.Add(this.columnRFID);
                 this.columnPrinter = new global::System.Data.DataColumn("Printer", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPrinter);
+                this.columnIsJoinShift = new global::System.Data.DataColumn("IsJoinShift", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIsJoinShift);
+                this.columnOperator2 = new global::System.Data.DataColumn("Operator2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOperator2);
+                this.columnPersonTexture = new global::System.Data.DataColumn("PersonTexture", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPersonTexture);
+                this.columnPersonTexture2 = new global::System.Data.DataColumn("PersonTexture2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPersonTexture2);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -1666,6 +1726,70 @@ namespace PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string IsJoinShift {
+                get {
+                    try {
+                        return ((string)(this[this.tableTable_115_Product.IsJoinShiftColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'IsJoinShift\' in table \'Table_115_Product\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_115_Product.IsJoinShiftColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Operator2 {
+                get {
+                    try {
+                        return ((string)(this[this.tableTable_115_Product.Operator2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Operator2\' in table \'Table_115_Product\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_115_Product.Operator2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PersonTexture {
+                get {
+                    try {
+                        return ((string)(this[this.tableTable_115_Product.PersonTextureColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PersonTexture\' in table \'Table_115_Product\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_115_Product.PersonTextureColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PersonTexture2 {
+                get {
+                    try {
+                        return ((string)(this[this.tableTable_115_Product.PersonTexture2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PersonTexture2\' in table \'Table_115_Product\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_115_Product.PersonTexture2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsProgramerMachineNull() {
                 return this.IsNull(this.tableTable_115_Product.ProgramerMachineColumn);
             }
@@ -1938,6 +2062,54 @@ namespace PCLOR {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetPrinterNull() {
                 this[this.tableTable_115_Product.PrinterColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsIsJoinShiftNull() {
+                return this.IsNull(this.tableTable_115_Product.IsJoinShiftColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetIsJoinShiftNull() {
+                this[this.tableTable_115_Product.IsJoinShiftColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsOperator2Null() {
+                return this.IsNull(this.tableTable_115_Product.Operator2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetOperator2Null() {
+                this[this.tableTable_115_Product.Operator2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPersonTextureNull() {
+                return this.IsNull(this.tableTable_115_Product.PersonTextureColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPersonTextureNull() {
+                this[this.tableTable_115_Product.PersonTextureColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPersonTexture2Null() {
+                return this.IsNull(this.tableTable_115_Product.PersonTexture2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPersonTexture2Null() {
+                this[this.tableTable_115_Product.PersonTexture2Column] = global::System.Convert.DBNull;
             }
         }
         

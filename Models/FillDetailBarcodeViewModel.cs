@@ -13,8 +13,15 @@ namespace PCLOR.Models
         public string Barcode { get; set; }
         public string ClothName { get; set; }
         public string CottonName { get; set; }
-        public string Weaver { get; set; }
-        public decimal Purity { get; set; }
+        public int JoinShift { get; set; }
+        public string NameOperator1 { get; set; }
+        public string OperatorTag1 {get;set;}
+        public decimal PurityOperator1 { get; set; }
+        public string NameOperator2 { get; set; }
+        public string OperatorTag2 { get; set; }
+        public decimal PurityOperator2 { get; set; }
+        //public string Weaver { get; set; }
+        //public decimal Purity { get; set; }
         public string Shift { get; set; }
         public string Date { get; set; }
         /// <summary>
