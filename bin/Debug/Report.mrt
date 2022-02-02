@@ -35,7 +35,7 @@
   <GlobalizationStrings isList="true" count="0" />
   <MetaTags isList="true" count="0" />
   <Pages isList="true" count="4">
-    <گلرنگ Ref="3" type="Page" isKey="true">
+    <lok Ref="3" type="Page" isKey="true">
       <Border>Right;Black;2;Solid;False;4;Black</Border>
       <Brush>Transparent</Brush>
       <Components isList="true" count="15">
@@ -279,7 +279,7 @@
       <Guid>c8579feed8f64d42983f5486ae3319f7</Guid>
       <LargeHeight>True</LargeHeight>
       <Margins>0,0,0,0</Margins>
-      <Name>گلرنگ</Name>
+      <Name>lok</Name>
       <Orientation>Landscape</Orientation>
       <PageHeight>40</PageHeight>
       <PageWidth>60</PageWidth>
@@ -289,7 +289,7 @@
         <Font>Arial,100</Font>
         <TextBrush>[50:0:0:0]</TextBrush>
       </Watermark>
-    </گلرنگ>
+    </lok>
     <Page1 Ref="21" type="Page" isKey="true">
       <Border>Right;Black;2;Solid;False;4;Black</Border>
       <Brush>Transparent</Brush>
@@ -946,7 +946,7 @@
   <ReportChanged>1/23/2020 11:01:03 AM</ReportChanged>
   <ReportCreated>9/6/2019 11:35:50 AM</ReportCreated>
   <ReportFile>Report.mrt</ReportFile>
-  <ReportGuid>6990e61f813d4f4f82948a6044a5dffe</ReportGuid>
+  <ReportGuid>037204e1a1834efc96ce37fa571aa5f8</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Millimeters</ReportUnit>
   <ReportVersion>2013.1.1505</ReportVersion>

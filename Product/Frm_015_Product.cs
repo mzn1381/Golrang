@@ -105,7 +105,7 @@ namespace PCLOR.Product
             //mlt_Function.DataSource = ClDoc.ReturnTable(ConWare, @"select Columnid,Column01,Column02 from table_005_PwhrsOperation where Column16=0");
             SetStatusForCreateProduct();
             Stimulsoft.Report.StiReport r = new Stimulsoft.Report.StiReport();
-            r.Load("Report.mrt");
+            r.Load("Report1.mrt");
             foreach (StiPage page in r.Pages)
             {
                 uiComboBox1.Items.Add(page.Name);
@@ -159,7 +159,7 @@ namespace PCLOR.Product
                 //txt_Barcode.Text = Barcode.ToString();
                 double weigh = Convert.ToDouble(txt_weight.Text) / 1000;
 
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Barcode"] = Barcode;
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Barcode"] = Barcode.ToString();
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["weight"] = weigh;
 
                 //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ProgramerMachine"] = DeviceId;
@@ -181,7 +181,9 @@ namespace PCLOR.Product
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Date"] = lblDateCreate.Text;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Time"] = lblCreateTime.Text;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["UserSabt"] = Class_BasicOperation._UserName;
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["DateSabt"] = Class_BasicOperation.ServerDate().ToString();
+                var t = DateTime.Now;
+                //t = t.AddHours(10);
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["DateSabt"] = t;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["UserEdite"] = Class_BasicOperation._UserName;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["DateEdite"] = Class_BasicOperation.ServerDate().ToString();
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Operator"] = txtCodeTag.Text.Trim().ToString();
@@ -397,9 +399,12 @@ namespace PCLOR.Product
                 if (isJoinShift == 1)
                 {
                     var model = FillIsJoinShift(DeviceId);
+                    var p1 = Convert.ToDecimal(model["Percent1"]);
+                    var p2 = Convert.ToDecimal(model["Percent2"]);
                     ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Operator2"] = model["Operator2"];
-                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture"] = Convert.ToDecimal(model["Percent1"]);
-                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture2"] = Convert.ToDecimal(model["Percent2"]);
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture"] = p1;
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture2"] = p2;
+                    
                 }
 
                 Recipt();
@@ -457,6 +462,7 @@ namespace PCLOR.Product
                     var Key = db.QueryFirstOrDefault<int>(commandtxt, null, commandType: CommandType.Text);
                     string query = "";
                     ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["NumberRecipt"] = Key;
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["CodeStore"] = WareCode;
                     table_115_ProductBindingSource.EndEdit();
                     var stauts = table_115_ProductTableAdapter1.Update(pCLOR_1_1400DataSet.Table_115_Product);
                     if (stauts <= 0)
@@ -545,8 +551,6 @@ namespace PCLOR.Product
             }
         }
 
-
-
         private void chek_TowPerson_CheckedChanged(object sender, EventArgs e)
         {
             if (chek_TowPerson.Checked == false)
@@ -565,8 +569,6 @@ namespace PCLOR.Product
 
 
         }
-
-
 
         private void Frm_015_Product_KeyDown(object sender, KeyEventArgs e)
         {
@@ -627,7 +629,6 @@ namespace PCLOR.Product
                 Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
             }
         }
-
 
         private void mlt_Num_Programer_KeyPress_1(object sender, KeyPressEventArgs e)
         {
@@ -1009,7 +1010,8 @@ namespace PCLOR.Product
             //var statusTimeNow = DateTime.Now.ToString("tt");
             TimeLastProduct = GetTimeLastProduct(deviceId);
             //var t = ;
-            var totalTimeOfProductSeconds = (DateTime.Now - TimeLastProduct).TotalSeconds;
+            var t = DateTime.Now;
+            var totalTimeOfProductSeconds = (t- TimeLastProduct).TotalSeconds;
             //var hourNow = DateTime.Now.TimeOfDay.TotalSeconds;
             //if (statusTimeNow.Trim().ToLower() == "pm")
             //    hourNow += 12;

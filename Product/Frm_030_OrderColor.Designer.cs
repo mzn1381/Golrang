@@ -719,18 +719,20 @@ namespace PCLOR.Product
             // gridEX3
             // 
             this.gridEX3.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
-            this.gridEX3.AllowColumnDrag = false;
+            this.gridEX3.AllowChildTableGroups = true;
+            this.gridEX3.AllowDrop = true;
             this.gridEX3.BorderStyle = Janus.Windows.GridEX.BorderStyle.RaisedLight3D;
             this.gridEX3.BoundMode = Janus.Windows.GridEX.BoundMode.Unbound;
+            this.gridEX3.ColumnAutoResize = true;
             gridEX3_DesignTimeLayout.LayoutString = resources.GetString("gridEX3_DesignTimeLayout.LayoutString");
             this.gridEX3.DesignTimeLayout = gridEX3_DesignTimeLayout;
             this.gridEX3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.gridEX3.GroupByBoxVisible = false;
+            this.gridEX3.GroupMode = Janus.Windows.GridEX.GroupMode.Collapsed;
             this.gridEX3.Location = new System.Drawing.Point(0, 30);
             this.gridEX3.Name = "gridEX3";
             this.gridEX3.Size = new System.Drawing.Size(581, 390);
             this.gridEX3.TabIndex = 36;
-            this.gridEX3.View = Janus.Windows.GridEX.View.CardView;
             this.gridEX3.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
             // 
             // gridEX4

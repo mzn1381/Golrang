@@ -1605,6 +1605,9 @@ ORDER BY Barcode");
 
         private void btnRegPlaceDevice_Click(object sender, EventArgs e)
         {
+
+
+
             Class_UserScope UserScope = new Class_UserScope();
             if (UserScope.CheckScope(_UserName, "Column44", 148))
             {
@@ -1621,6 +1624,10 @@ ORDER BY Barcode");
             }
             else
                 Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
+
+
+
+
         }
 
         private void buttonItem71_Click(object sender, EventArgs e)

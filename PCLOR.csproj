@@ -394,9 +394,14 @@
     <Compile Include="Models\ProductSourceViewModel.cs" />
     <Compile Include="Models\ReportDeviceViewModel.cs" />
     <Compile Include="Models\SetStatusShiftViewModel.cs" />
+    <Compile Include="Models\ShowBarcodeForTransferViewModel.cs" />
     <Compile Include="Models\ShowDetailBarcodeViewModel.cs" />
     <Compile Include="Models\ShowDetailColorViewModel.cs" />
+    <Compile Include="Models\ShowStoresViewModel.cs" />
     <Compile Include="Models\YarnTypeDropDownViewModel.cs" />
+    <Compile Include="PCLOR_1_1400DataSet.cs">
+      <DependentUpon>PCLOR_1_1400DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PCLOR_1_1400DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -514,6 +519,12 @@
     </Compile>
     <Compile Include="_01_OperationInfo\Frm_60_ReciptKnitting.Designer.cs">
       <DependentUpon>Frm_60_ReciptKnitting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_65_Transfer_Barcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_01_OperationInfo\Frm_65_Transfer_Barcode.Designer.cs">
+      <DependentUpon>Frm_65_Transfer_Barcode.cs</DependentUpon>
     </Compile>
     <Compile Include="_03_Bank\Frm_140_Report_TransferBranch.cs">
       <SubType>Form</SubType>
@@ -1195,6 +1206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="_01_OperationInfo\Frm_60_ReciptKnitting.resx">
       <DependentUpon>Frm_60_ReciptKnitting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_01_OperationInfo\Frm_65_Transfer_Barcode.resx">
+      <DependentUpon>Frm_65_Transfer_Barcode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="_03_Bank\Frm_140_Report_TransferBranch.resx">
       <DependentUpon>Frm_140_Report_TransferBranch.cs</DependentUpon>

@@ -804,7 +804,7 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToSt
             {
                 var t = codes.Split(',').Length;
                 var query = $@"
-     SELECT TOP ({t + 1}) [Weight]
+     SELECT TOP ({t}) [Weight]
       ,[Description]
       ,[NameDevice]
       ,[ClothName]
@@ -826,12 +826,13 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToSt
                 db.ConnectionString = ConWare.ConnectionString;
                 if (res != null)
                 {
+                    db.ConnectionString = ConBase.ConnectionString;
                     foreach (var item in res)
                     {
                         if (item.JoinShift == 1)
                         {
 
-                            var names = db.Query<string>("", new { @TagCode1 = item.OperatorTag1, @TagCode2 = item.OperatorTag2 });
+                            var names = db.Query<string>("GetNamePersonByTagCode", new { @TagCode1 = item.OperatorTag1, @TagCode2 = item.OperatorTag2 }, commandType: CommandType.StoredProcedure);
                             item.NameOperator2 = names.First();
                             item.NameOperator1 = names.Last();
                         }
@@ -1007,6 +1008,7 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToSt
 
         private void btnSaveFinal_Click(object sender, EventArgs e)
         {
+
             var headerId = SaveToHeaderColorOrder(CodeCustomer);
             try
             {
@@ -1028,24 +1030,25 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToSt
                             var CodeCommodity = item.Cells["CodeCommodity"].Value.ToString();
                             var Weight = item.Cells["Weight"].Value.ToString();
                             var BarCode = item.Cells["BarCode"].Value.ToString();
-                            MyBasicFunction.BasicFunction.ReciptChild(ConWare:ConWare, headerReciptId,value: 1, Convert.ToInt32(CodeCommodity) ,weight: Convert.ToDecimal(Weight), barcode: BarCode, DeviceId);
+                            MyBasicFunction.BasicFunction.ReciptChild(ConWare: ConWare, headerReciptId, value: 1, Convert.ToInt32(CodeCommodity), weight: Convert.ToDecimal(Weight), barcode: BarCode, DeviceId);
                         }
                         Draft();
                     }
                     else
                     {
-                    MessageBox.Show("مشکلی در ثبت به وجود آمده است");
+                        MessageBox.Show("مشکلی در ثبت به وجود آمده است");
                     }
                 }
                 else
                 {
-                MessageBox.Show("مشکلی در ثبت به وجود آمده است");
+                    MessageBox.Show("مشکلی در ثبت به وجود آمده است");
                 }
-                MessageBox.Show("سفارش رنگ با موفقیت ثبت شد ","ثبت سفارش رنگ",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("سفارش رنگ با موفقیت ثبت شد ", "ثبت سفارش رنگ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.StackTrace,ex.Message);
+                MessageBox.Show(ex.StackTrace, ex.Message);
             }
 
         }
@@ -1097,6 +1100,7 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToSt
                         , Convert.ToDecimal(item.Cells["AmountRequierd"].Value.ToString()), "1", txt_Dat.Text, ConWare);
                 }
                 return new Task<bool>(() => true);
+
             }
 
             catch (Exception ex)
