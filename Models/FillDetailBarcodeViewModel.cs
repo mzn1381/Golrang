@@ -29,5 +29,6 @@ namespace PCLOR.Models
         /// کد مربوط به ClothType
         /// </summary>
         public string CodeCommodity { get; set; }
+        public int CodeStore { get; set; }
     }
 }

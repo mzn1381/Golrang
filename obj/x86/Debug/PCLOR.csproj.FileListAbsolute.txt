@@ -1114,7 +1114,6 @@ G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Ribbon.v4.xml
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Schedule.v4.xml
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.TimeLine.v4.xml
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.UI.v4.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csprojAssemblyReference.cache
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form4.resources
@@ -1223,3 +1222,4 @@ G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CoreCompileInp
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csprojAssemblyReference.cache

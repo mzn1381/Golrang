@@ -79,19 +79,25 @@ namespace PCLOR.MyBasicFunction
         }
 
 
-        public static int Recipt(SqlConnection ConWare, string dateCreate, int deviceId, Class_Documents ClDoc, int wareCode, int functionType, string operationCode, string number = "")
+        public static int Recipt(SqlConnection ConWare, string dateCreate, int deviceId, Class_Documents ClDoc, int wareCode, int functionType, string operationCode, string number = "", string codeCommodit = "")
         {
             using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
             {
                 try
                 {
+                    int codeCommodity = 0;
+                    if (string.IsNullOrEmpty(codeCommodit))
+                    {
                     var queryGetcommodity = $@"  SELECT c.CodeCommondity
                                                  from PCLOR_1_1400.dbo.Table_60_SpecsTechnical as s inner join 
                                                  PCLOR_1_1400.dbo.Table_005_TypeCloth as c on s.FabricType = c.ID
                                                  where s.ID={deviceId}
                                                     ";
-                    var codeCommodity = db.QueryFirstOrDefault<int>(queryGetcommodity, null
+                     codeCommodity = db.QueryFirstOrDefault<int>(queryGetcommodity, null
                         , commandType: CommandType.Text);
+                    }
+                    else
+                        codeCommodity =Convert.ToInt32(codeCommodit);
                     int ResidNum = ClDoc.MaxNumber(ConWare.ConnectionString, "Table_011_PwhrsReceipt", "Column01");
                     string commandtxt = string.Empty;
                     //commandtxt = @"Declare   @Key   int";
@@ -108,7 +114,7 @@ namespace PCLOR.MyBasicFunction
                                                                             [column11]
                                                                  
                                                                           ) VALUES (  {ResidNum} , N'{dateCreate}'  , {wareCode},  {functionType} ,
-                                                                        {(string.IsNullOrEmpty(operationCode) ? "N''" : operationCode)},N'رسید صادره بابت رسید پارچه خام شماره {number}' , N'{Class_BasicOperation._UserName}' ,getdate(), N'{Class_BasicOperation._UserName}', getdate() );
+                                                                        {(string.IsNullOrEmpty(operationCode) ? "N''" : operationCode)},N'' , N'{Class_BasicOperation._UserName}' ,getdate(), N'{Class_BasicOperation._UserName}', getdate() );
                                                                        select  Max(columnid)  from Table_011_PwhrsReceipt";
                     var Key = db.QueryFirstOrDefault<int>(commandtxt, null, commandType: CommandType.Text);
                     return Key;
@@ -196,7 +202,7 @@ namespace PCLOR.MyBasicFunction
                         column16,
                         column17, column18, column19, Column20, Column21,
                         Column22, Column23, Column24, Column25, Column26)
-                        VALUES({DraftNumber},N'{date}',{wareCode},{functionType},{0},N'حواله صادره بابت رنگ مصرفی ش {colorName}',0,N'{ Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}'
+                        VALUES({DraftNumber},N'{date}',{wareCode},{functionType},{0},N'',0,N'{ Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}'
                         ,getdate(),0,Null,Null,0,0,0,0,0,0,0,0,0,Null,0,1); SELECT SCOPE_IDENTITY();
                         ";
             using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
@@ -226,8 +232,8 @@ namespace PCLOR.MyBasicFunction
             var query = $@"
                            INSERT INTO Table_008_Child_PwhrsDraft (column01, column02, column03, column04, column05, column06, column07, column08, column09, column10, column11, column12, column13, column14, column15, column16, 
                         column17, column18, column19, column20, column21, column22, column23, column24, column25, column26, column27, column28, column29, Column30, Column31, Column32, Column33, Column36, Column37) VALUES(
-                           {headerId},{codeCommodity},{vahedShomaresh},0,0,{consumption},{consumption},0,0,0,0,N'به شماره کارت تولید 
-                           {numberProduct}',NULL,NULL,0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}',getdate(),
+                           {headerId},{codeCommodity},{vahedShomaresh},0,0,{consumption},{consumption},0,0,0,0,N'
+                          ',NULL,NULL,0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}',getdate(),
                            NULL,NULL,NULL,0,0,0,0,0,0,NULL,NULL,0,0,0,0);
                            ";
 
@@ -330,7 +336,7 @@ namespace PCLOR.MyBasicFunction
                 }
             }
 
-       
+
 
             //this.Cursor = Cursors.Default;
 
