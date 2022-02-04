@@ -21,7 +21,7 @@ namespace PCLOR._01_OperationInfo
 
         private void Frm_65_Transfer_Barcode_Load(object sender, EventArgs e)
         {
-            gridEX4.DataSource = GetBarcodes();
+            gridEX8.DataSource = GetBarcodes();
             menuStoresDestination.DataSource = GetStores(null);
             menuStoresStart.DataSource = GetStores(null);
         }
@@ -62,7 +62,7 @@ namespace PCLOR._01_OperationInfo
             try
             {
                 var query = $@"
-     SELECT    [Weight]
+ SELECT  [Weight]
       ,[Description]
       ,[NameDevice]
       ,[ClothName]
@@ -77,7 +77,8 @@ namespace PCLOR._01_OperationInfo
       ,[Purityoperator2]
       ,[OperatorTag1]
       ,[OperatorTag2]
-       FROM [PCLOR_1_1400].[dbo].[DeatailBarcodes]
+      ,[StoreName]
+  FROM [PCLOR_1_1400].[dbo].[DeatailBarcodes]
        ";
                 using (IDbConnection db = new SqlConnection(Properties.Settings.Default.PCLOR))
                 {
@@ -92,14 +93,24 @@ namespace PCLOR._01_OperationInfo
             }
         }
 
-        private void gridEX1_MouseClick(object sender, MouseEventArgs e)
+        private void gridEX8_MouseClick(object sender, MouseEventArgs e)
         {
-            var row = gridEX4.GetRow();
-            var barcode = row.Cells["BarcodeNumber"].Text.ToString();
+         
+        }
+
+        private void gridEX4_FormattingRow(object sender, Janus.Windows.GridEX.RowLoadEventArgs e)
+        {
+
+        }
+
+        private void gridEX8_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            var row = gridEX8.GetRow();
+            var barcode = row.Cells["Barcode"].Text.ToString();
             if (!string.IsNullOrEmpty(barcode))
             {
                 txtBarcode.Text = barcode;
-                txtDeviceName.Text = row.Cells["DeviceName"].Text.ToString();
+                txtDeviceName.Text = row.Cells["NameDevice"].Text.ToString();
                 txtStoreName.Text = row.Cells["StoreName"].Text.ToString();
             }
             return;

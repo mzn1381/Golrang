@@ -24,6 +24,7 @@ namespace PCLOR.Models
         //public decimal Purity { get; set; }
         public string Shift { get; set; }
         public string Date { get; set; }
+        public string StoreName { get; set; }
         /// <summary>
         /// کد مربوط به ClothType
         /// </summary>
