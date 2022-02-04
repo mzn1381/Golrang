@@ -1630,6 +1630,27 @@ ORDER BY Barcode");
 
         }
 
+        private void buttonItem81_Click(object sender, EventArgs e)
+        {
+            if (!CheckOpenForms("Frm_65_Transfer_Barcode"))
+            {
+                Class_UserScope UserScope = new Class_UserScope();
+                if (UserScope.CheckScope(_UserName, "Column44", 143))
+                {
+                    Frm_65_Transfer_Barcode frm = new Frm_65_Transfer_Barcode();
+
+                    frm.MdiParent = this;
+                    if (frm.MdiParent.MdiChildren.Length > 1 && frm.MdiParent.MdiChildren[0].WindowState == FormWindowState.Maximized)
+                    {
+                        frm.MdiParent.MdiChildren[0].WindowState = FormWindowState.Normal; frm.WindowState = FormWindowState.Maximized;
+                    }
+                    frm.Show(); frm.Focus();
+                }
+                else
+                    Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
+            }
+        }
+
         private void buttonItem71_Click(object sender, EventArgs e)
         {
             if (!CheckOpenForms("Frm_Rpt_BarcodeDetail"))

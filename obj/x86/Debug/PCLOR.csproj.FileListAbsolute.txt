@@ -1143,6 +1143,7 @@ G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_105_Production.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_50_SendPackaging2.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_60_ReciptKnitting.resources
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._01_OperationInfo.Frm_65_Transfer_Barcode.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_140_Report_TransferBranch.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._03_Bank.Frm_14_TransferCheq.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.MarjooiSale.Frm_015_ExportDoc_Return.resources

@@ -13,6 +13,7 @@ namespace PCLOR
         [STAThread]
         static void Main()
         {
+           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Frm_Main("گلرنگ", "admin", "1400", 1, true, false, "Data Source=.;Initial Catalog=PCLOR_1_1400;Persist Security Info=True;User ID=sa;Password=Pars@63"));

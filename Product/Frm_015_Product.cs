@@ -181,9 +181,7 @@ namespace PCLOR.Product
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Date"] = lblDateCreate.Text;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Time"] = lblCreateTime.Text;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["UserSabt"] = Class_BasicOperation._UserName;
-                var t = DateTime.Now;
-                //t = t.AddHours(10);
-                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["DateSabt"] = t;
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["DateSabt"] = DateTime.Now;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["UserEdite"] = Class_BasicOperation._UserName;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["DateEdite"] = Class_BasicOperation.ServerDate().ToString();
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Operator"] = txtCodeTag.Text.Trim().ToString();
@@ -394,8 +392,10 @@ namespace PCLOR.Product
                 //table_115_ProductBindingSource.EndEdit();
                 //table_115_ProductTableAdapter1.Update(pCLOR_1_1400DataSet.Table_115_Product);
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["RFID"] = Convert.ToInt32(idrfid);
+                ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Printer"] = uiComboBox1.Text;
                 var isJoinShift = IsJoinShift(DeviceId);
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["IsJoinShift"] = isJoinShift;
+
                 if (isJoinShift == 1)
                 {
                     var model = FillIsJoinShift(DeviceId);
@@ -404,7 +404,12 @@ namespace PCLOR.Product
                     ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Operator2"] = model["Operator2"];
                     ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture"] = p1;
                     ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture2"] = p2;
-                    
+                }
+                else
+                {
+                    //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Operator2"] = 
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture"] =100.00;
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture2"] = 0.00;
                 }
 
                 Recipt();
@@ -870,6 +875,8 @@ namespace PCLOR.Product
                     catch (Exception es)
                     {
                         MessageBox.Show(es.Message);
+                        txtCodeTag.Text = string.Empty;
+
                     }
 
                 }
@@ -957,14 +964,22 @@ namespace PCLOR.Product
         public int IsJoinShift(int DeviceId)
         {
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
-            {
+            { int res = 0;
                 var query = $@"
                     select Top(1) shift
                     from Table_115_Product
                     Order by DateSabt desc
                             ";
-                var res = db.QueryFirstOrDefault<int>(query, null, commandType: CommandType.Text);
-                if (res == ShiftNow)
+                try
+                {
+                res = db.QueryFirstOrDefault<int>(query, null, commandType: CommandType.Text);
+
+                }
+                catch (Exception)
+                {
+                    res = 0;
+                }
+                if (res==0||res == ShiftNow)
                     return 0;
                 return 1;
                 ///////////////////---------------------------------                

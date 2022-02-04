@@ -21,8 +21,9 @@ namespace PCLOR._01_OperationInfo
 
         private void Frm_65_Transfer_Barcode_Load(object sender, EventArgs e)
         {
-            gridEX1.DataSource = GetBarcodes();
-            menuStores.DataSource = GetStores(null);
+            gridEX4.DataSource = GetBarcodes();
+            menuStoresDestination.DataSource = GetStores(null);
+            menuStoresStart.DataSource = GetStores(null);
         }
 
 
@@ -55,20 +56,32 @@ namespace PCLOR._01_OperationInfo
         }
 
 
-        private IEnumerable<ShowBarcodeForTransferViewModel> GetBarcodes()
+
+        private IEnumerable<FillDetailBarcodeViewModel> GetBarcodes()
         {
             try
             {
                 var query = $@"
-    SELECT
-             [Barcode] as BarcodeNumber
-            ,[DeviceName]
-            ,[StoreName]
-            ,[CreateDate]
-    FROM [PCLOR_1_1400].[dbo].[ShowBarcodeForTransfer] ";
+     SELECT    [Weight]
+      ,[Description]
+      ,[NameDevice]
+      ,[ClothName]
+      ,[CodeCommodity]
+      ,[Barcode]
+      ,[Weaver]
+      ,[Date]
+      ,[Shift]
+      ,[CottonName]
+      ,[JoinShift]
+      ,[PurityOperator1]
+      ,[Purityoperator2]
+      ,[OperatorTag1]
+      ,[OperatorTag2]
+       FROM [PCLOR_1_1400].[dbo].[DeatailBarcodes]
+       ";
                 using (IDbConnection db = new SqlConnection(Properties.Settings.Default.PCLOR))
                 {
-                    var res = db.Query<ShowBarcodeForTransferViewModel>(query, null);
+                    var res = db.Query<FillDetailBarcodeViewModel>(query, null);
                     return res;
                 }
             }
@@ -77,13 +90,11 @@ namespace PCLOR._01_OperationInfo
                 MessageBox.Show(ex.Message);
                 return null;
             }
-
-
         }
 
         private void gridEX1_MouseClick(object sender, MouseEventArgs e)
         {
-            var row = gridEX1.GetRow();
+            var row = gridEX4.GetRow();
             var barcode = row.Cells["BarcodeNumber"].Text.ToString();
             if (!string.IsNullOrEmpty(barcode))
             {
