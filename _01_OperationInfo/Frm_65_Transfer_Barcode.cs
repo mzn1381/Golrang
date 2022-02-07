@@ -31,6 +31,10 @@ namespace PCLOR._01_OperationInfo
             gridEX8.DataSource = GetBarcodes();
             menuStoresDestination.DataSource = GetStores(null);
             menuStoresStart.DataSource = GetStores(null);
+            if (checkRegAuto.Checked)
+            {
+                menuStoresStart.Text = string.Empty;
+            }
         }
 
 
@@ -47,7 +51,7 @@ namespace PCLOR._01_OperationInfo
       ,[StoreName]
     FROM [PWHRS_1_1400].[dbo].[ShowStoreBarcode]";
                 if (!string.IsNullOrEmpty(name))
-                    query += $@"        where  StoreName like    N'{name}'  ";
+                    query += $@"        where  StoreName like    N'%{name}%'    ";
                 using (IDbConnection db = new SqlConnection(Properties.Settings.Default.PWHRS))
                 {
                     var res = db.Query<ShowStoresViewModel>(query);
@@ -69,7 +73,8 @@ namespace PCLOR._01_OperationInfo
             try
             {
                 var query = $@"
-SELECT  [Weight]
+SELECT 
+       [Weight]
       ,[Description]
       ,[NameDevice]
       ,[ClothName]
@@ -86,7 +91,8 @@ SELECT  [Weight]
       ,[OperatorTag2]
       ,[StoreName]
       ,[CodeStore]
-  FROM [PCLOR_1_1400].[dbo].[DeatailBarcodes]
+      ,[DeviceId]
+       FROM [PCLOR_1_1400].[dbo].[DeatailBarcodes]
        ";
                 using (IDbConnection db = new SqlConnection(Properties.Settings.Default.PCLOR))
                 {
@@ -113,15 +119,9 @@ SELECT  [Weight]
 
         private void gridEX8_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            var row = gridEX8.GetRow();
-            var barcode = row.Cells["Barcode"].Text.ToString();
-            if (!string.IsNullOrEmpty(barcode))
-            {
-                txtBarcode.Text = barcode;
-                txtDeviceName.Text = row.Cells["NameDevice"].Text.ToString();
-                txtStoreName.Text = row.Cells["StoreName"].Text.ToString();
-            }
-            return;
+            Recipt();
+            Draft();
+            ChangeCodeStoreOfBarcode();
         }
 
         private void checkRegAuto_CheckedChanged(object sender, EventArgs e)
@@ -144,7 +144,12 @@ SELECT  [Weight]
                 var dateNow = DateTime.Now.ToShamsi();
                 int functionType = Convert.ToInt16(ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=30"));
                 var codeCommodity = gridEX8.CurrentRow.Cells["CodeCommodity"].Value.ToString();
-                BasicFunction.Recipt(ConWare, dateNow, 0, ClDoc, Convert.ToInt32(menuStoresDestination.Value.ToString()), functionType, null, "", codeCommodit: codeCommodity);
+                var barcode = gridEX8.CurrentRow.Cells["Barcode"].Value.ToString();
+                var weight = gridEX8.CurrentRow.Cells["Weight"].Value.ToString();
+                var deviceId = gridEX8.CurrentRow.Cells["DeviceId"].Value.ToString();
+                var headerReciptId=  BasicFunction.Recipt(ConWare, dateNow, 0, ClDoc, Convert.ToInt32(menuStoresDestination.Value.ToString()), functionType, null, "", codeCommodit: codeCommodity);
+                MyBasicFunction.BasicFunction.ReciptChild(ConWare: ConWare, headerReciptId, value: 1, Convert.ToInt32(codeCommodity), weight: Convert.ToDecimal(weight), barcode: barcode,Convert.ToInt32(deviceId));
+
             }
             catch (Exception ex)
             {
@@ -152,6 +157,7 @@ SELECT  [Weight]
             }
 
         }
+
         public void ChangeCodeStoreOfBarcode()
         {
             try
@@ -224,7 +230,72 @@ SELECT  [Weight]
 
         private void btnTransfer_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (string.IsNullOrEmpty(txtBarcode.Text))
+                {
+                    MessageBox.Show("لطفا یک بارکد را برای انتقال انتخاب کنید");
+                    return;
+                }
+                Recipt();
+                Draft();
+                ChangeCodeStoreOfBarcode();
+                MessageBox.Show("انتقال با موفقیت انجام شد !");
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("انتقال با شکست مواجه شد!");
+                MessageBox.Show(ex.Message);
+            }
 
+        }
+
+        private void gridEX8_MouseDoubleClick_1(object sender, MouseEventArgs e)
+        {
+            var row = gridEX8.GetRow();
+            var barcode = row.Cells["Barcode"].Text.ToString();
+            if (!string.IsNullOrEmpty(barcode))
+            {
+                txtBarcode.Text = barcode;
+                txtDeviceName.Text = row.Cells["NameDevice"].Text.ToString();
+                txtStoreName.Text = row.Cells["StoreName"].Text.ToString();
+            }
+            return;
+        }
+
+        private void gridEX8_FormattingRow(object sender, Janus.Windows.GridEX.RowLoadEventArgs e)
+        {
+
+        }
+
+        private void menuStoresDestination_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStoresDestination_TextChanged(object sender, EventArgs e)
+        {
+            //var name = menuStoresDestination.Text;
+            //if (!string.IsNullOrEmpty(name))
+            //{
+            //    menuStoresDestination.DataSource = GetStores(name);
+            //    return;
+            //}
+            //else
+            //{
+            //    menuStoresDestination.DataSource = GetStores(null);
+            //    return;
+            //}
+        }
+
+        private void menuStoresStart_TextChanged(object sender, EventArgs e)
+        {
+            //var name = menuStoresStart.Text;
+            //if (!string.IsNullOrEmpty(name))
+            //    menuStoresStart.DataSource = GetStores(name);
+            //else
+            //    menuStoresStart.DataSource = GetStores(null);
         }
     }
 }

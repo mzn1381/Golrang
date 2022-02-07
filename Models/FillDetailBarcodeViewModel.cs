@@ -30,5 +30,6 @@ namespace PCLOR.Models
         /// </summary>
         public string CodeCommodity { get; set; }
         public int CodeStore { get; set; }
+        public int DeviceId { get; set; }
     }
 }
