@@ -62,9 +62,13 @@ namespace PCLOR._00_BaseInfo
                 {
                     MessageBox.Show("لطفا اطلاعات را تکمیل نمایید"); return;
                 }
-                if (((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["Code"].ToString().StartsWith("-"))
+                if (string.IsNullOrEmpty(((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["Code"].ToString()))
                     txt_Code.Text = ClDoc.MaxNumber(Properties.Settings.Default.PCLOR, "table_60_SpecsTechnical", "Code").ToString();
                 int Position = gridEX1.CurrentRow.RowIndex;
+                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsDeffective"] = 0;
+                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["IsInfinitiveTextureLimit"] = 0;
+                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["Speed"] = 0;
+                ((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["Code"] = txt_Code.Text;
                 table_60_SpecsTechnicalBindingSource.EndEdit();
                 table_60_SpecsTechnicalTableAdapter.Update(dataSet_05_PCLOR.Table_60_SpecsTechnical);
                 gridEX1.MoveTo(Position);
@@ -239,19 +243,23 @@ namespace PCLOR._00_BaseInfo
         private void gridEX1_SelectionChanged(object sender, EventArgs e)
         {
 
-            //radioButton2.Checked = true;
-            //txt_Code.Text = "@@@@";
-            uiPanel0.Enabled = true;
-            //xNumeric.Value
-            xNumeric.Value = Convert.ToDecimal(((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["X"].ToString());
-            yNumeric.Value = Convert.ToDecimal(((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["Y"].ToString());
-            checkStatus.Checked = (bool)((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["status"];
+
 
         }
 
         private void gridEX1_RowDoubleClick(object sender, Janus.Windows.GridEX.RowActionEventArgs e)
         {
-
+            //radioButton2.Checked = true;
+            //txt_Code.Text = "@@@@";
+            var row = gridEX1.GetRow();
+            if (row == null)
+            {
+                return;
+            }
+            uiPanel0.Enabled = true;
+            xNumeric.Value = Convert.ToDecimal(row.Cells["X"].Value.ToString());
+            yNumeric.Value = Convert.ToDecimal(row.Cells["Y"].Value.ToString());
+            checkStatus.Checked = (bool)((DataRowView)table_60_SpecsTechnicalBindingSource.CurrencyManager.Current)["status"];
         }
 
         private void xNumeric_ValueChanged(object sender, EventArgs e)

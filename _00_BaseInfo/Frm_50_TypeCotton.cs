@@ -150,10 +150,20 @@ namespace PCLOR._00_BaseInfo
 
         private void gridEX1_SelectionChanged(object sender, EventArgs e)
         {
-            txtBrandName.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["BrandName"].ToString();
-            txtDescription1.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["Description1"].ToString();
-            txtDescription2.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["Description2"].ToString();
+            //txtBrandName.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["BrandName"].ToString();
+            //txtDescription1.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["Description1"].ToString();
+            //txtDescription2.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["Description2"].ToString();
 
+        }
+
+        private void gridEX1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (gridEX1.CurrentRow != null)
+            {
+                txtBrandName.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["BrandName"].ToString();
+                txtDescription1.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["Description1"].ToString();
+                txtDescription2.Text = ((DataRowView)table_120_TypeCottonBindingSource.CurrencyManager.Current)["Description2"].ToString();
+            }
         }
     }
 }

@@ -473,11 +473,11 @@
       <RoutePoints>
         <Point>
           <X>3420</X>
-          <Y>105</Y>
+          <Y>90</Y>
         </Point>
         <Point>
           <X>756</X>
-          <Y>105</Y>
+          <Y>90</Y>
         </Point>
       </RoutePoints>
     </Connector>

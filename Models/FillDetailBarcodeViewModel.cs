@@ -20,6 +20,9 @@ namespace PCLOR.Models
         public string NameOperator2 { get; set; }
         public string OperatorTag2 { get; set; }
         public decimal PurityOperator2 { get; set; }
+        public string  Machine{ get; set; }
+        public string  Cotton{ get; set; }
+        public string  Cloth{ get; set; }
         //public string Weaver { get; set; }
         //public decimal Purity { get; set; }
         public string Shift { get; set; }
@@ -31,5 +34,6 @@ namespace PCLOR.Models
         public string CodeCommodity { get; set; }
         public int CodeStore { get; set; }
         public int DeviceId { get; set; }
+        public bool IsRegToOrderColor { get; set; }
     }
 }

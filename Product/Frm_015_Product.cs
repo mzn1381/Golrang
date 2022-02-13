@@ -126,7 +126,8 @@ namespace PCLOR.Product
             {
                 if (TextureLimit == 0 && IsInfinitiveTextureLimit == false)
                 {
-                    MessageBox.Show(" حد بافت دستگاه به صفر رسیده است !!", "هشدار", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                    //MessageBox.Show(" حد بافت دستگاه به صفر رسیده است !!", "هشدار", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                    lblWarningTextureLimit.Visible = true;
                     //this.Close();
                     //return;
                 }
@@ -155,7 +156,7 @@ namespace PCLOR.Product
                 table_115_ProductBindingSource.AddNew();
                 //mlt_Machine.Value = _Id;
                 chek_TowPerson.Checked = false;
-                Int64 Barcode = Convert.ToInt64(ClDoc.ExScalar(ConPCLOR.ConnectionString, "select isnull((select max(Barcode) from Table_115_Product),9999)+1"));
+                var Barcode = "B" + Convert.ToInt64(ClDoc.ExScalar(ConPCLOR.ConnectionString, "select isnull((select max(ID) from Table_115_Product),1)+10000")) + "P";
                 //txt_Barcode.Text = Barcode.ToString();
                 double weigh = Convert.ToDouble(txt_weight.Text) / 1000;
 
@@ -293,12 +294,11 @@ namespace PCLOR.Product
             {
                 var query = $@"select m.*,c.NameCotton as YarnTypeName,t.TypeCloth as FabricTypeName 
                                 from Table_60_SpecsTechnical as m
-                                inner join Table_120_TypeCotton as c
+                                left join Table_120_TypeCotton as c
                                 on m.YarnType = c.ID
-                                inner join Table_005_TypeCloth as t
+                                left join Table_005_TypeCloth as t
                                 on m.FabricType = t.ID
                                 where m.ID ={ID}";
-
                 var machine = db.QueryFirstOrDefault<Machine>(query, null, commandType: CommandType.Text);
                 return machine;
             }
@@ -307,6 +307,12 @@ namespace PCLOR.Product
         public void FillDetailMachine()
         {
             var machine = GetMachine(DeviceId);
+            if (machine.FabricType == 0 || machine.YarnType == 0 || string.IsNullOrEmpty(machine.NameMachine))
+            {
+                MessageBox.Show("دستگاه انتخاب فاقد حداقل مشخصات لازم برای ثبت تولید است !! لطفا ابتدا مشخصات دستگاه را در منوی انتخاب دستگاه ثبت کنید ");
+                Close();
+                return;
+            }
             clothType = (int)machine.FabricType;
             cottonType = machine.YarnType;
             lblDateCreate.Text = DateTime.Now.ToShamsi();
@@ -330,6 +336,8 @@ namespace PCLOR.Product
             lblArea.Text = machine.Area.ToString();
             txtDescDevice.Text = machine.Description;
             IsInfinitiveTextureLimit = machine.IsInfinitiveTextureLimit;
+            if (TextureLimit == 0 && !IsInfinitiveTextureLimit)
+                lblWarningTextureLimit.Visible = true;
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
@@ -408,7 +416,7 @@ namespace PCLOR.Product
                 else
                 {
                     //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Operator2"] = 
-                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture"] =100.00;
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture"] = 100.00;
                     ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["PersonTexture2"] = 0.00;
                 }
 
@@ -428,6 +436,8 @@ namespace PCLOR.Product
                 {
                     TextureLimit -= 1;
                     lblTextureLimit.Text = TextureLimit.ToString();
+                    if (TextureLimit == 0)
+                        lblWarningTextureLimit.Visible = true;
                 }
                 gridEX2.MoveLast();
                 //this.Close();
@@ -468,6 +478,11 @@ namespace PCLOR.Product
                     string query = "";
                     ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["NumberRecipt"] = Key;
                     ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["CodeStore"] = WareCode;
+                    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["IsRegToOrderColor"] = 0;
+                    if (checkIsLineCutting.Checked)
+                        ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["IsLineCutting"] = 1;
+                    else
+                        ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["IsLineCutting"] = 0;
                     table_115_ProductBindingSource.EndEdit();
                     var stauts = table_115_ProductTableAdapter1.Update(pCLOR_1_1400DataSet.Table_115_Product);
                     if (stauts <= 0)
@@ -964,7 +979,8 @@ namespace PCLOR.Product
         public int IsJoinShift(int DeviceId)
         {
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
-            { int res = 0;
+            {
+                int res = 0;
                 var query = $@"
                     select Top(1) shift
                     from Table_115_Product
@@ -972,14 +988,14 @@ namespace PCLOR.Product
                             ";
                 try
                 {
-                res = db.QueryFirstOrDefault<int>(query, null, commandType: CommandType.Text);
+                    res = db.QueryFirstOrDefault<int>(query, null, commandType: CommandType.Text);
 
                 }
                 catch (Exception)
                 {
                     res = 0;
                 }
-                if (res==0||res == ShiftNow)
+                if (res == 0 || res == ShiftNow)
                     return 0;
                 return 1;
                 ///////////////////---------------------------------                
@@ -1026,7 +1042,7 @@ namespace PCLOR.Product
             TimeLastProduct = GetTimeLastProduct(deviceId);
             //var t = ;
             var t = DateTime.Now;
-            var totalTimeOfProductSeconds = (t- TimeLastProduct).TotalSeconds;
+            var totalTimeOfProductSeconds = (t - TimeLastProduct).TotalSeconds;
             //var hourNow = DateTime.Now.TimeOfDay.TotalSeconds;
             //if (statusTimeNow.Trim().ToLower() == "pm")
             //    hourNow += 12;
@@ -1084,6 +1100,17 @@ namespace PCLOR.Product
         {
             if (!IsInfinitiveTextureLimit)
                 DecreaseTextureLimit(DeviceId, TextureLimit);
+        }
+
+        private void checkIsLineCutting_CheckedChanged(object sender, EventArgs e)
+        {
+            //if (checkIsLineCutting.Checked)
+            //{
+            //    ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["IsLineCutting"] = 1;
+            //    return;
+            //}
+            //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["IsLineCutting"] = 0;
+            //return;
         }
     }
 }

@@ -372,6 +372,10 @@ namespace PCLOR {
             
             private global::System.Data.DataColumn columnPersonTexture2;
             
+            private global::System.Data.DataColumn columnIsRegToOrderColor;
+            
+            private global::System.Data.DataColumn columnIsLineCutting;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public Table_115_ProductDataTable() {
@@ -639,6 +643,22 @@ namespace PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn IsRegToOrderColorColumn {
+                get {
+                    return this.columnIsRegToOrderColor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn IsLineCuttingColumn {
+                get {
+                    return this.columnIsLineCutting;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -702,7 +722,9 @@ namespace PCLOR {
                         string Printer, 
                         bool IsJoinShift, 
                         string Operator2, 
-                        decimal PersonTexture2) {
+                        decimal PersonTexture2, 
+                        bool IsRegToOrderColor, 
+                        bool IsLineCutting) {
                 Table_115_ProductRow rowTable_115_ProductRow = ((Table_115_ProductRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -733,7 +755,9 @@ namespace PCLOR {
                         Printer,
                         IsJoinShift,
                         Operator2,
-                        PersonTexture2};
+                        PersonTexture2,
+                        IsRegToOrderColor,
+                        IsLineCutting};
                 rowTable_115_ProductRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTable_115_ProductRow);
                 return rowTable_115_ProductRow;
@@ -792,6 +816,8 @@ namespace PCLOR {
                 this.columnIsJoinShift = base.Columns["IsJoinShift"];
                 this.columnOperator2 = base.Columns["Operator2"];
                 this.columnPersonTexture2 = base.Columns["PersonTexture2"];
+                this.columnIsRegToOrderColor = base.Columns["IsRegToOrderColor"];
+                this.columnIsLineCutting = base.Columns["IsLineCutting"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -855,6 +881,10 @@ namespace PCLOR {
                 base.Columns.Add(this.columnOperator2);
                 this.columnPersonTexture2 = new global::System.Data.DataColumn("PersonTexture2", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPersonTexture2);
+                this.columnIsRegToOrderColor = new global::System.Data.DataColumn("IsRegToOrderColor", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIsRegToOrderColor);
+                this.columnIsLineCutting = new global::System.Data.DataColumn("IsLineCutting", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIsLineCutting);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -1812,6 +1842,38 @@ namespace PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsRegToOrderColor {
+                get {
+                    try {
+                        return ((bool)(this[this.tableTable_115_Product.IsRegToOrderColorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'IsRegToOrderColor\' in table \'Table_115_Product\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_115_Product.IsRegToOrderColorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsLineCutting {
+                get {
+                    try {
+                        return ((bool)(this[this.tableTable_115_Product.IsLineCuttingColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'IsLineCutting\' in table \'Table_115_Product\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable_115_Product.IsLineCuttingColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsCodeStoreNull() {
                 return this.IsNull(this.tableTable_115_Product.CodeStoreColumn);
             }
@@ -2108,6 +2170,30 @@ namespace PCLOR {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetOperator2Null() {
                 this[this.tableTable_115_Product.Operator2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsIsRegToOrderColorNull() {
+                return this.IsNull(this.tableTable_115_Product.IsRegToOrderColorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetIsRegToOrderColorNull() {
+                this[this.tableTable_115_Product.IsRegToOrderColorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsIsLineCuttingNull() {
+                return this.IsNull(this.tableTable_115_Product.IsLineCuttingColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetIsLineCuttingNull() {
+                this[this.tableTable_115_Product.IsLineCuttingColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2493,6 +2579,8 @@ namespace PCLOR.PCLOR_1_1400DataSetTableAdapters {
             tableMapping.ColumnMappings.Add("IsJoinShift", "IsJoinShift");
             tableMapping.ColumnMappings.Add("Operator2", "Operator2");
             tableMapping.ColumnMappings.Add("PersonTexture2", "PersonTexture2");
+            tableMapping.ColumnMappings.Add("IsRegToOrderColor", "IsRegToOrderColor");
+            tableMapping.ColumnMappings.Add("IsLineCutting", "IsLineCutting");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -2501,8 +2589,8 @@ namespace PCLOR.PCLOR_1_1400DataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Table_115_Product] ([ProgramerMachine], [Number], [Machine], [Operator], [PersonTexture], [Date], [Time], [ClothType], [CottonType], [TimeLastProduct], [TimeLastShift], [PersonShift], [NumberWeave], [Weight], [Barcode], [ReportDescriptin], [shift], [NumberRecipt], [UserSabt], [DateSabt], [DateEdite], [UserEdite], [RFID], [Printer], [IsJoinShift], [Operator2], [PersonTexture2], [CodeStore]) VALUES (@ProgramerMachine, @Number, @Machine, @Operator, @PersonTexture, @Date, @Time, @ClothType, @CottonType, @TimeLastProduct, @TimeLastShift, @PersonShift, @NumberWeave, @Weight, @Barcode, @ReportDescriptin, @shift, @NumberRecipt, @UserSabt, @DateSabt, @DateEdite, @UserEdite, @RFID, @Printer, @IsJoinShift, @Operator2, @PersonTexture2, @CodeStore);
-SELECT TOP (0) ID, ProgramerMachine, Number, Machine, Operator, PersonTexture, Date, Time, ClothType, CottonType, TimeLastProduct, TimeLastShift, PersonShift, NumberWeave, Weight, Barcode, ReportDescriptin, shift, NumberRecipt, UserSabt, DateSabt, DateEdite, UserEdite, RFID, Printer, IsJoinShift, Operator2, PersonTexture2, CodeStore FROM Table_115_Product WHERE (ID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Table_115_Product] ([ProgramerMachine], [Number], [Machine], [Operator], [PersonTexture], [Date], [Time], [ClothType], [CottonType], [TimeLastProduct], [TimeLastShift], [PersonShift], [NumberWeave], [Weight], [Barcode], [ReportDescriptin], [shift], [NumberRecipt], [UserSabt], [DateSabt], [DateEdite], [UserEdite], [RFID], [Printer], [IsJoinShift], [Operator2], [PersonTexture2], [CodeStore], [IsRegToOrderColor], [IsLineCutting]) VALUES (@ProgramerMachine, @Number, @Machine, @Operator, @PersonTexture, @Date, @Time, @ClothType, @CottonType, @TimeLastProduct, @TimeLastShift, @PersonShift, @NumberWeave, @Weight, @Barcode, @ReportDescriptin, @shift, @NumberRecipt, @UserSabt, @DateSabt, @DateEdite, @UserEdite, @RFID, @Printer, @IsJoinShift, @Operator2, @PersonTexture2, @CodeStore, @IsRegToOrderColor, @IsLineCutting);
+SELECT TOP (0) ID, ProgramerMachine, Number, Machine, Operator, PersonTexture, Date, Time, ClothType, CottonType, TimeLastProduct, TimeLastShift, PersonShift, NumberWeave, Weight, Barcode, ReportDescriptin, shift, NumberRecipt, UserSabt, DateSabt, DateEdite, UserEdite, RFID, Printer, IsJoinShift, Operator2, PersonTexture2, CodeStore, IsRegToOrderColor, IsLineCutting FROM Table_115_Product WHERE (ID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProgramerMachine", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProgramerMachine", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Number", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2532,10 +2620,12 @@ SELECT TOP (0) ID, ProgramerMachine, Number, Machine, Operator, PersonTexture, D
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Operator2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Operator2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PersonTexture2", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "PersonTexture2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodeStore", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodeStore", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsRegToOrderColor", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsRegToOrderColor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsLineCutting", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsLineCutting", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [Table_115_Product] SET [ProgramerMachine] = @ProgramerMachine, [Number] = @Number, [Machine] = @Machine, [Operator] = @Operator, [PersonTexture] = @PersonTexture, [Date] = @Date, [Time] = @Time, [ClothType] = @ClothType, [CottonType] = @CottonType, [TimeLastProduct] = @TimeLastProduct, [TimeLastShift] = @TimeLastShift, [PersonShift] = @PersonShift, [NumberWeave] = @NumberWeave, [Weight] = @Weight, [Barcode] = @Barcode, [ReportDescriptin] = @ReportDescriptin, [shift] = @shift, [NumberRecipt] = @NumberRecipt, [UserSabt] = @UserSabt, [DateSabt] = @DateSabt, [DateEdite] = @DateEdite, [UserEdite] = @UserEdite, [RFID] = @RFID, [Printer] = @Printer, [IsJoinShift] = @IsJoinShift, [Operator2] = @Operator2, [PersonTexture2] = @PersonTexture2, [CodeStore] = @CodeStore WHERE (([ID] = @Original_ID));
-SELECT TOP (0) ID, ProgramerMachine, Number, Machine, Operator, PersonTexture, Date, Time, ClothType, CottonType, TimeLastProduct, TimeLastShift, PersonShift, NumberWeave, Weight, Barcode, ReportDescriptin, shift, NumberRecipt, UserSabt, DateSabt, DateEdite, UserEdite, RFID, Printer, IsJoinShift, Operator2, PersonTexture2, CodeStore FROM Table_115_Product WHERE (ID = @ID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Table_115_Product] SET [ProgramerMachine] = @ProgramerMachine, [Number] = @Number, [Machine] = @Machine, [Operator] = @Operator, [PersonTexture] = @PersonTexture, [Date] = @Date, [Time] = @Time, [ClothType] = @ClothType, [CottonType] = @CottonType, [TimeLastProduct] = @TimeLastProduct, [TimeLastShift] = @TimeLastShift, [PersonShift] = @PersonShift, [NumberWeave] = @NumberWeave, [Weight] = @Weight, [Barcode] = @Barcode, [ReportDescriptin] = @ReportDescriptin, [shift] = @shift, [NumberRecipt] = @NumberRecipt, [UserSabt] = @UserSabt, [DateSabt] = @DateSabt, [DateEdite] = @DateEdite, [UserEdite] = @UserEdite, [RFID] = @RFID, [Printer] = @Printer, [IsJoinShift] = @IsJoinShift, [Operator2] = @Operator2, [PersonTexture2] = @PersonTexture2, [CodeStore] = @CodeStore, [IsRegToOrderColor] = @IsRegToOrderColor, [IsLineCutting] = @IsLineCutting WHERE (([ID] = @Original_ID));
+SELECT TOP (0) ID, ProgramerMachine, Number, Machine, Operator, PersonTexture, Date, Time, ClothType, CottonType, TimeLastProduct, TimeLastShift, PersonShift, NumberWeave, Weight, Barcode, ReportDescriptin, shift, NumberRecipt, UserSabt, DateSabt, DateEdite, UserEdite, RFID, Printer, IsJoinShift, Operator2, PersonTexture2, CodeStore, IsRegToOrderColor, IsLineCutting FROM Table_115_Product WHERE (ID = @ID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProgramerMachine", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProgramerMachine", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Number", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2565,6 +2655,8 @@ SELECT TOP (0) ID, ProgramerMachine, Number, Machine, Operator, PersonTexture, D
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Operator2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Operator2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PersonTexture2", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "PersonTexture2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodeStore", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodeStore", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsRegToOrderColor", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsRegToOrderColor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsLineCutting", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsLineCutting", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -2583,7 +2675,7 @@ SELECT TOP (0) ID, ProgramerMachine, Number, Machine, Operator, PersonTexture, D
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT TOP (0) ID, ProgramerMachine, Number, Machine, Operator, PersonTexture, Date, Time, ClothType, CottonType, TimeLastProduct, TimeLastShift, PersonShift, NumberWeave, Weight, Barcode, ReportDescriptin, shift, NumberRecipt, 
-                  UserSabt, DateSabt, DateEdite, UserEdite, RFID, Printer, IsJoinShift, Operator2, PersonTexture2, CodeStore
+                  UserSabt, DateSabt, DateEdite, UserEdite, RFID, Printer, IsJoinShift, Operator2, PersonTexture2, CodeStore, IsRegToOrderColor, IsLineCutting
 FROM     Table_115_Product";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }

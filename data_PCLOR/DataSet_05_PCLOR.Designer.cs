@@ -1983,6 +1983,8 @@ namespace PCLOR.data_PCLOR {
             
             private global::System.Data.DataColumn columnBarcode;
             
+            private global::System.Data.DataColumn columnCountHaveDesc;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public Table_030_DetailOrderColorDataTable() {
@@ -2122,6 +2124,14 @@ namespace PCLOR.data_PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CountHaveDescColumn {
+                get {
+                    return this.columnCountHaveDesc;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2157,7 +2167,7 @@ namespace PCLOR.data_PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Table_030_DetailOrderColorRow AddTable_030_DetailOrderColorRow(System.DateTime TimeSabt, Table_025_HederOrderColorRow parentTable_025_HederOrderColorRowByFK_Table_030_DetailOrderColor_Table_025_HederOrderColor1, Table_005_TypeClothRow parentTable_005_TypeClothRowByFK_Table_030_DetailOrderColor_Table_005_TypeCloth, Table_010_TypeColorRow parentTable_010_TypeColorRowByFK_Table_030_DetailOrderColor_Table_010_TypeColor, string Title, string Description, string UserSabt, Table_60_SpecsTechnicalRow parentTable_60_SpecsTechnicalRowByFK_Table_030_DetailOrderColor_Table_60_SpecsTechnical, decimal weight, string Printer, long Barcode) {
+            public Table_030_DetailOrderColorRow AddTable_030_DetailOrderColorRow(System.DateTime TimeSabt, Table_025_HederOrderColorRow parentTable_025_HederOrderColorRowByFK_Table_030_DetailOrderColor_Table_025_HederOrderColor1, Table_005_TypeClothRow parentTable_005_TypeClothRowByFK_Table_030_DetailOrderColor_Table_005_TypeCloth, Table_010_TypeColorRow parentTable_010_TypeColorRowByFK_Table_030_DetailOrderColor_Table_010_TypeColor, string Title, string Description, string UserSabt, Table_60_SpecsTechnicalRow parentTable_60_SpecsTechnicalRowByFK_Table_030_DetailOrderColor_Table_60_SpecsTechnical, decimal weight, string Printer, long Barcode, byte CountHaveDesc) {
                 Table_030_DetailOrderColorRow rowTable_030_DetailOrderColorRow = ((Table_030_DetailOrderColorRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         TimeSabt,
@@ -2172,7 +2182,8 @@ namespace PCLOR.data_PCLOR {
                         null,
                         weight,
                         Printer,
-                        Barcode};
+                        Barcode,
+                        CountHaveDesc};
                 if ((parentTable_025_HederOrderColorRowByFK_Table_030_DetailOrderColor_Table_025_HederOrderColor1 != null)) {
                     columnValuesArray[2] = parentTable_025_HederOrderColorRowByFK_Table_030_DetailOrderColor_Table_025_HederOrderColor1[1];
                 }
@@ -2227,6 +2238,7 @@ namespace PCLOR.data_PCLOR {
                 this.columnweight = base.Columns["weight"];
                 this.columnPrinter = base.Columns["Printer"];
                 this.columnBarcode = base.Columns["Barcode"];
+                this.columnCountHaveDesc = base.Columns["CountHaveDesc"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2258,6 +2270,8 @@ namespace PCLOR.data_PCLOR {
                 base.Columns.Add(this.columnPrinter);
                 this.columnBarcode = new global::System.Data.DataColumn("Barcode", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBarcode);
+                this.columnCountHaveDesc = new global::System.Data.DataColumn("CountHaveDesc", typeof(byte), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCountHaveDesc);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -2273,6 +2287,7 @@ namespace PCLOR.data_PCLOR {
                 this.columnDescription.MaxLength = 2147483647;
                 this.columnUserSabt.MaxLength = 300;
                 this.columnPrinter.MaxLength = 300;
+                this.columnCountHaveDesc.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5106,6 +5121,8 @@ namespace PCLOR.data_PCLOR {
             
             private global::System.Data.DataColumn columnID;
             
+            private global::System.Data.DataColumn columnSpeed;
+            
             private global::System.Data.DataColumn columnCode;
             
             private global::System.Data.DataColumn columnnamemachine;
@@ -5135,6 +5152,10 @@ namespace PCLOR.data_PCLOR {
             private global::System.Data.DataColumn columnDescription;
             
             private global::System.Data.DataColumn columnFabricType;
+            
+            private global::System.Data.DataColumn columnIsDeffective;
+            
+            private global::System.Data.DataColumn columnIsInfinitiveTextureLimit;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -5174,6 +5195,14 @@ namespace PCLOR.data_PCLOR {
             public global::System.Data.DataColumn IDColumn {
                 get {
                     return this.columnID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn SpeedColumn {
+                get {
+                    return this.columnSpeed;
                 }
             }
             
@@ -5299,6 +5328,22 @@ namespace PCLOR.data_PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn IsDeffectiveColumn {
+                get {
+                    return this.columnIsDeffective;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn IsInfinitiveTextureLimitColumn {
+                get {
+                    return this.columnIsInfinitiveTextureLimit;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -5334,11 +5379,30 @@ namespace PCLOR.data_PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Table_60_SpecsTechnicalRow AddTable_60_SpecsTechnicalRow(string namemachine, string Specstechnical, bool status, short X, short Y, string DeviceMark, short Gap, decimal teeny, decimal Area, int YarnType, decimal RoundStop, short TextureLimit, string Description, Table_005_TypeClothRow parentTable_005_TypeClothRowByFK_Table_60_SpecsTechnical_Table_005_TypeCloth) {
+            public Table_60_SpecsTechnicalRow AddTable_60_SpecsTechnicalRow(
+                        int Speed, 
+                        long Code, 
+                        string namemachine, 
+                        string Specstechnical, 
+                        bool status, 
+                        short X, 
+                        short Y, 
+                        string DeviceMark, 
+                        short Gap, 
+                        decimal teeny, 
+                        decimal Area, 
+                        int YarnType, 
+                        decimal RoundStop, 
+                        int TextureLimit, 
+                        string Description, 
+                        Table_005_TypeClothRow parentTable_005_TypeClothRowByFK_Table_60_SpecsTechnical_Table_005_TypeCloth, 
+                        bool IsDeffective, 
+                        bool IsInfinitiveTextureLimit) {
                 Table_60_SpecsTechnicalRow rowTable_60_SpecsTechnicalRow = ((Table_60_SpecsTechnicalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        null,
+                        Speed,
+                        Code,
                         namemachine,
                         Specstechnical,
                         status,
@@ -5352,9 +5416,11 @@ namespace PCLOR.data_PCLOR {
                         RoundStop,
                         TextureLimit,
                         Description,
-                        null};
+                        null,
+                        IsDeffective,
+                        IsInfinitiveTextureLimit};
                 if ((parentTable_005_TypeClothRowByFK_Table_60_SpecsTechnical_Table_005_TypeCloth != null)) {
-                    columnValuesArray[15] = parentTable_005_TypeClothRowByFK_Table_60_SpecsTechnical_Table_005_TypeCloth[0];
+                    columnValuesArray[16] = parentTable_005_TypeClothRowByFK_Table_60_SpecsTechnical_Table_005_TypeCloth[0];
                 }
                 rowTable_60_SpecsTechnicalRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTable_60_SpecsTechnicalRow);
@@ -5386,6 +5452,7 @@ namespace PCLOR.data_PCLOR {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
+                this.columnSpeed = base.Columns["Speed"];
                 this.columnCode = base.Columns["Code"];
                 this.columnnamemachine = base.Columns["namemachine"];
                 this.columnSpecstechnical = base.Columns["Specstechnical"];
@@ -5401,6 +5468,8 @@ namespace PCLOR.data_PCLOR {
                 this.columnTextureLimit = base.Columns["TextureLimit"];
                 this.columnDescription = base.Columns["Description"];
                 this.columnFabricType = base.Columns["FabricType"];
+                this.columnIsDeffective = base.Columns["IsDeffective"];
+                this.columnIsInfinitiveTextureLimit = base.Columns["IsInfinitiveTextureLimit"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5408,7 +5477,9 @@ namespace PCLOR.data_PCLOR {
             private void InitClass() {
                 this.columnID = new global::System.Data.DataColumn("ID", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
-                this.columnCode = new global::System.Data.DataColumn("Code", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnSpeed = new global::System.Data.DataColumn("Speed", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSpeed);
+                this.columnCode = new global::System.Data.DataColumn("Code", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCode);
                 this.columnnamemachine = new global::System.Data.DataColumn("namemachine", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnamemachine);
@@ -5432,12 +5503,16 @@ namespace PCLOR.data_PCLOR {
                 base.Columns.Add(this.columnYarnType);
                 this.columnRoundStop = new global::System.Data.DataColumn("RoundStop", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRoundStop);
-                this.columnTextureLimit = new global::System.Data.DataColumn("TextureLimit", typeof(short), null, global::System.Data.MappingType.Element);
+                this.columnTextureLimit = new global::System.Data.DataColumn("TextureLimit", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTextureLimit);
                 this.columnDescription = new global::System.Data.DataColumn("Description", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDescription);
                 this.columnFabricType = new global::System.Data.DataColumn("FabricType", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFabricType);
+                this.columnIsDeffective = new global::System.Data.DataColumn("IsDeffective", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIsDeffective);
+                this.columnIsInfinitiveTextureLimit = new global::System.Data.DataColumn("IsInfinitiveTextureLimit", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIsInfinitiveTextureLimit);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -5446,16 +5521,16 @@ namespace PCLOR.data_PCLOR {
                 this.columnID.AllowDBNull = false;
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
-                this.columnCode.AutoIncrement = true;
-                this.columnCode.AutoIncrementSeed = -1;
-                this.columnCode.AutoIncrementStep = -1;
-                this.columnnamemachine.MaxLength = 2147483647;
+                this.columnSpeed.AllowDBNull = false;
+                this.columnnamemachine.MaxLength = 100;
                 this.columnSpecstechnical.MaxLength = 2147483647;
                 this.columnstatus.AllowDBNull = false;
                 this.columnX.AllowDBNull = false;
                 this.columnY.AllowDBNull = false;
                 this.columnDeviceMark.MaxLength = 100;
                 this.columnDescription.MaxLength = 800;
+                this.columnIsDeffective.AllowDBNull = false;
+                this.columnIsInfinitiveTextureLimit.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14294,6 +14369,17 @@ namespace PCLOR.data_PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public byte CountHaveDesc {
+                get {
+                    return ((byte)(this[this.tableTable_030_DetailOrderColor.CountHaveDescColumn]));
+                }
+                set {
+                    this[this.tableTable_030_DetailOrderColor.CountHaveDescColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public Table_025_HederOrderColorRow Table_025_HederOrderColorRow {
                 get {
                     return ((Table_025_HederOrderColorRow)(this.GetParentRow(this.Table.ParentRelations["FK_Table_030_DetailOrderColor_Table_025_HederOrderColor1"])));
@@ -16586,10 +16672,21 @@ namespace PCLOR.data_PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Code {
+            public int Speed {
+                get {
+                    return ((int)(this[this.tableTable_60_SpecsTechnical.SpeedColumn]));
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.SpeedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public long Code {
                 get {
                     try {
-                        return ((int)(this[this.tableTable_60_SpecsTechnical.CodeColumn]));
+                        return ((long)(this[this.tableTable_60_SpecsTechnical.CodeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Code\' in table \'Table_60_SpecsTechnical\' is DBNull.", e);
@@ -16764,10 +16861,10 @@ namespace PCLOR.data_PCLOR {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public short TextureLimit {
+            public int TextureLimit {
                 get {
                     try {
-                        return ((short)(this[this.tableTable_60_SpecsTechnical.TextureLimitColumn]));
+                        return ((int)(this[this.tableTable_60_SpecsTechnical.TextureLimitColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'TextureLimit\' in table \'Table_60_SpecsTechnical\' is DBNull." +
@@ -16808,6 +16905,28 @@ namespace PCLOR.data_PCLOR {
                 }
                 set {
                     this[this.tableTable_60_SpecsTechnical.FabricTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDeffective {
+                get {
+                    return ((bool)(this[this.tableTable_60_SpecsTechnical.IsDeffectiveColumn]));
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.IsDeffectiveColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsInfinitiveTextureLimit {
+                get {
+                    return ((bool)(this[this.tableTable_60_SpecsTechnical.IsInfinitiveTextureLimitColumn]));
+                }
+                set {
+                    this[this.tableTable_60_SpecsTechnical.IsInfinitiveTextureLimitColumn] = value;
                 }
             }
             
@@ -23108,10 +23227,11 @@ SELECT ID, Number, Date, CodeCustomer, OrderWeave FROM Table_025_HederOrderColor
             tableMapping.ColumnMappings.Add("weight", "weight");
             tableMapping.ColumnMappings.Add("Printer", "Printer");
             tableMapping.ColumnMappings.Add("Barcode", "Barcode");
+            tableMapping.ColumnMappings.Add("CountHaveDesc", "CountHaveDesc");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Table_030_DetailOrderColor] WHERE (([ID] = @Original_ID) AND ((@IsNull_Fk = 1 AND [Fk] IS NULL) OR ([Fk] = @Original_Fk)) AND ((@IsNull_TypeColth = 1 AND [TypeColth] IS NULL) OR ([TypeColth] = @Original_TypeColth)) AND ((@IsNull_NumberOrder = 1 AND [NumberOrder] IS NULL) OR ([NumberOrder] = @Original_NumberOrder)) AND ((@IsNull_TypeColor = 1 AND [TypeColor] IS NULL) OR ([TypeColor] = @Original_TypeColor)) AND ((@IsNull_Title = 1 AND [Title] IS NULL) OR ([Title] = @Original_Title)) AND ((@IsNull_UserSabt = 1 AND [UserSabt] IS NULL) OR ([UserSabt] = @Original_UserSabt)) AND ((@IsNull_TimeSabt = 1 AND [TimeSabt] IS NULL) OR ([TimeSabt] = @Original_TimeSabt)) AND ((@IsNull_Machine = 1 AND [Machine] IS NULL) OR ([Machine] = @Original_Machine)) AND ((@IsNull_weight = 1 AND [weight] IS NULL) OR ([weight] = @Original_weight)) AND ((@IsNull_Printer = 1 AND [Printer] IS NULL) OR ([Printer] = @Original_Printer)) AND ((@IsNull_Barcode = 1 AND [Barcode] IS NULL) OR ([Barcode] = @Original_Barcode)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Table_030_DetailOrderColor] WHERE (([ID] = @Original_ID) AND ((@IsNull_Fk = 1 AND [Fk] IS NULL) OR ([Fk] = @Original_Fk)) AND ((@IsNull_TypeColth = 1 AND [TypeColth] IS NULL) OR ([TypeColth] = @Original_TypeColth)) AND ((@IsNull_NumberOrder = 1 AND [NumberOrder] IS NULL) OR ([NumberOrder] = @Original_NumberOrder)) AND ((@IsNull_TypeColor = 1 AND [TypeColor] IS NULL) OR ([TypeColor] = @Original_TypeColor)) AND ((@IsNull_Title = 1 AND [Title] IS NULL) OR ([Title] = @Original_Title)) AND ((@IsNull_UserSabt = 1 AND [UserSabt] IS NULL) OR ([UserSabt] = @Original_UserSabt)) AND ((@IsNull_TimeSabt = 1 AND [TimeSabt] IS NULL) OR ([TimeSabt] = @Original_TimeSabt)) AND ((@IsNull_Machine = 1 AND [Machine] IS NULL) OR ([Machine] = @Original_Machine)) AND ((@IsNull_weight = 1 AND [weight] IS NULL) OR ([weight] = @Original_weight)) AND ((@IsNull_Printer = 1 AND [Printer] IS NULL) OR ([Printer] = @Original_Printer)) AND ((@IsNull_Barcode = 1 AND [Barcode] IS NULL) OR ([Barcode] = @Original_Barcode)) AND ([CountHaveDesc] = @Original_CountHaveDesc))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Fk", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fk", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -23136,10 +23256,11 @@ SELECT ID, Number, Date, CodeCustomer, OrderWeave FROM Table_025_HederOrderColor
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Printer", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Printer", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Barcode", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barcode", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Barcode", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barcode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CountHaveDesc", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CountHaveDesc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Table_030_DetailOrderColor] ([Fk], [TypeColth], [NumberOrder], [TypeColor], [Title], [Description], [UserSabt], [TimeSabt], [Machine], [weight], [Printer], [Barcode]) VALUES (@Fk, @TypeColth, @NumberOrder, @TypeColor, @Title, @Description, @UserSabt, @TimeSabt, @Machine, @weight, @Printer, @Barcode);
-SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, TimeSabt, Machine, weight, Printer, Barcode FROM Table_030_DetailOrderColor WHERE (ID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Table_030_DetailOrderColor] ([Fk], [TypeColth], [NumberOrder], [TypeColor], [Title], [Description], [UserSabt], [TimeSabt], [Machine], [weight], [Printer], [Barcode], [CountHaveDesc]) VALUES (@Fk, @TypeColth, @NumberOrder, @TypeColor, @Title, @Description, @UserSabt, @TimeSabt, @Machine, @weight, @Printer, @Barcode, @CountHaveDesc);
+SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, TimeSabt, Machine, weight, Printer, Barcode, CountHaveDesc FROM Table_030_DetailOrderColor WHERE (ID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fk", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fk", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TypeColth", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TypeColth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -23153,10 +23274,29 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@weight", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 3, "weight", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Printer", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Printer", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Barcode", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barcode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CountHaveDesc", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CountHaveDesc", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [Table_030_DetailOrderColor] SET [Fk] = @Fk, [TypeColth] = @TypeColth, [NumberOrder] = @NumberOrder, [TypeColor] = @TypeColor, [Title] = @Title, [Description] = @Description, [UserSabt] = @UserSabt, [TimeSabt] = @TimeSabt, [Machine] = @Machine, [weight] = @weight, [Printer] = @Printer, [Barcode] = @Barcode WHERE (([ID] = @Original_ID) AND ((@IsNull_Fk = 1 AND [Fk] IS NULL) OR ([Fk] = @Original_Fk)) AND ((@IsNull_TypeColth = 1 AND [TypeColth] IS NULL) OR ([TypeColth] = @Original_TypeColth)) AND ((@IsNull_NumberOrder = 1 AND [NumberOrder] IS NULL) OR ([NumberOrder] = @Original_NumberOrder)) AND ((@IsNull_TypeColor = 1 AND [TypeColor] IS NULL) OR ([TypeColor] = @Original_TypeColor)) AND ((@IsNull_Title = 1 AND [Title] IS NULL) OR ([Title] = @Original_Title)) AND ((@IsNull_UserSabt = 1 AND [UserSabt] IS NULL) OR ([UserSabt] = @Original_UserSabt)) AND ((@IsNull_TimeSabt = 1 AND [TimeSabt] IS NULL) OR ([TimeSabt] = @Original_TimeSabt)) AND ((@IsNull_Machine = 1 AND [Machine] IS NULL) OR ([Machine] = @Original_Machine)) AND ((@IsNull_weight = 1 AND [weight] IS NULL) OR ([weight] = @Original_weight)) AND ((@IsNull_Printer = 1 AND [Printer] IS NULL) OR ([Printer] = @Original_Printer)) AND ((@IsNull_Barcode = 1 AND [Barcode] IS NULL) OR ([Barcode] = @Original_Barcode)));
-SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, TimeSabt, Machine, weight, Printer, Barcode FROM Table_030_DetailOrderColor WHERE (ID = @ID)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [Table_030_DetailOrderColor] SET [Fk] = @Fk, [TypeColth] = @TypeColth, [Nu" +
+                "mberOrder] = @NumberOrder, [TypeColor] = @TypeColor, [Title] = @Title, [Descript" +
+                "ion] = @Description, [UserSabt] = @UserSabt, [TimeSabt] = @TimeSabt, [Machine] =" +
+                " @Machine, [weight] = @weight, [Printer] = @Printer, [Barcode] = @Barcode, [Coun" +
+                "tHaveDesc] = @CountHaveDesc WHERE (([ID] = @Original_ID) AND ((@IsNull_Fk = 1 AN" +
+                "D [Fk] IS NULL) OR ([Fk] = @Original_Fk)) AND ((@IsNull_TypeColth = 1 AND [TypeC" +
+                "olth] IS NULL) OR ([TypeColth] = @Original_TypeColth)) AND ((@IsNull_NumberOrder" +
+                " = 1 AND [NumberOrder] IS NULL) OR ([NumberOrder] = @Original_NumberOrder)) AND " +
+                "((@IsNull_TypeColor = 1 AND [TypeColor] IS NULL) OR ([TypeColor] = @Original_Typ" +
+                "eColor)) AND ((@IsNull_Title = 1 AND [Title] IS NULL) OR ([Title] = @Original_Ti" +
+                "tle)) AND ((@IsNull_UserSabt = 1 AND [UserSabt] IS NULL) OR ([UserSabt] = @Origi" +
+                "nal_UserSabt)) AND ((@IsNull_TimeSabt = 1 AND [TimeSabt] IS NULL) OR ([TimeSabt]" +
+                " = @Original_TimeSabt)) AND ((@IsNull_Machine = 1 AND [Machine] IS NULL) OR ([Ma" +
+                "chine] = @Original_Machine)) AND ((@IsNull_weight = 1 AND [weight] IS NULL) OR (" +
+                "[weight] = @Original_weight)) AND ((@IsNull_Printer = 1 AND [Printer] IS NULL) O" +
+                "R ([Printer] = @Original_Printer)) AND ((@IsNull_Barcode = 1 AND [Barcode] IS NU" +
+                "LL) OR ([Barcode] = @Original_Barcode)) AND ([CountHaveDesc] = @Original_CountHa" +
+                "veDesc));\r\nSELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description," +
+                " UserSabt, TimeSabt, Machine, weight, Printer, Barcode, CountHaveDesc FROM Table" +
+                "_030_DetailOrderColor WHERE (ID = @ID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fk", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fk", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TypeColth", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TypeColth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -23170,6 +23310,7 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@weight", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 3, "weight", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Printer", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Printer", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Barcode", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barcode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CountHaveDesc", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CountHaveDesc", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Fk", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fk", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Fk", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fk", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -23193,6 +23334,7 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Printer", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Printer", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Barcode", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barcode", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Barcode", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Barcode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CountHaveDesc", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CountHaveDesc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -23209,9 +23351,9 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, User" +
-                "Sabt, TimeSabt, Machine, weight, Printer, Barcode\r\nFROM            Table_030_Det" +
-                "ailOrderColor";
+            this._commandCollection[0].CommandText = "SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, T" +
+                "imeSabt, Machine, weight, Printer, Barcode, CountHaveDesc\r\nFROM     Table_030_De" +
+                "tailOrderColor";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
@@ -23389,7 +23531,7 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(long Original_ID, global::System.Nullable<long> Original_Fk, global::System.Nullable<long> Original_TypeColth, global::System.Nullable<long> Original_NumberOrder, global::System.Nullable<long> Original_TypeColor, string Original_Title, string Original_UserSabt, global::System.Nullable<global::System.DateTime> Original_TimeSabt, global::System.Nullable<long> Original_Machine, global::System.Nullable<decimal> Original_weight, string Original_Printer, global::System.Nullable<long> Original_Barcode) {
+        public virtual int Delete(long Original_ID, global::System.Nullable<long> Original_Fk, global::System.Nullable<long> Original_TypeColth, global::System.Nullable<long> Original_NumberOrder, global::System.Nullable<long> Original_TypeColor, string Original_Title, string Original_UserSabt, global::System.Nullable<global::System.DateTime> Original_TimeSabt, global::System.Nullable<long> Original_Machine, global::System.Nullable<decimal> Original_weight, string Original_Printer, global::System.Nullable<long> Original_Barcode, byte Original_CountHaveDesc) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((long)(Original_ID));
             if ((Original_Fk.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
@@ -23479,6 +23621,7 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
+            this.Adapter.DeleteCommand.Parameters[23].Value = ((byte)(Original_CountHaveDesc));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -23499,7 +23642,7 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<long> Fk, global::System.Nullable<long> TypeColth, global::System.Nullable<long> NumberOrder, global::System.Nullable<long> TypeColor, string Title, string Description, string UserSabt, global::System.Nullable<global::System.DateTime> TimeSabt, global::System.Nullable<long> Machine, global::System.Nullable<decimal> weight, string Printer, global::System.Nullable<long> Barcode) {
+        public virtual int Insert(global::System.Nullable<long> Fk, global::System.Nullable<long> TypeColth, global::System.Nullable<long> NumberOrder, global::System.Nullable<long> TypeColor, string Title, string Description, string UserSabt, global::System.Nullable<global::System.DateTime> TimeSabt, global::System.Nullable<long> Machine, global::System.Nullable<decimal> weight, string Printer, global::System.Nullable<long> Barcode, byte CountHaveDesc) {
             if ((Fk.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((long)(Fk.Value));
             }
@@ -23572,6 +23715,7 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
             else {
                 this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
+            this.Adapter.InsertCommand.Parameters[12].Value = ((byte)(CountHaveDesc));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -23605,6 +23749,7 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
                     global::System.Nullable<decimal> weight, 
                     string Printer, 
                     global::System.Nullable<long> Barcode, 
+                    byte CountHaveDesc, 
                     long Original_ID, 
                     global::System.Nullable<long> Original_Fk, 
                     global::System.Nullable<long> Original_TypeColth, 
@@ -23617,6 +23762,7 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
                     global::System.Nullable<decimal> Original_weight, 
                     string Original_Printer, 
                     global::System.Nullable<long> Original_Barcode, 
+                    byte Original_CountHaveDesc, 
                     long ID) {
             if ((Fk.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((long)(Fk.Value));
@@ -23690,96 +23836,98 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
             else {
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((long)(Original_ID));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((byte)(CountHaveDesc));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((long)(Original_ID));
             if ((Original_Fk.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((long)(Original_Fk.Value));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((long)(Original_Fk.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             if ((Original_TypeColth.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((long)(Original_TypeColth.Value));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((long)(Original_TypeColth.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
             if ((Original_NumberOrder.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((long)(Original_NumberOrder.Value));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((long)(Original_NumberOrder.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
             }
             if ((Original_TypeColor.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((long)(Original_TypeColor.Value));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((long)(Original_TypeColor.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
             if ((Original_Title == null)) {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_Title));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_Title));
             }
             if ((Original_UserSabt == null)) {
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_UserSabt));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_UserSabt));
             }
             if ((Original_TimeSabt.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((System.DateTime)(Original_TimeSabt.Value));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((System.DateTime)(Original_TimeSabt.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
             }
             if ((Original_Machine.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((long)(Original_Machine.Value));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((long)(Original_Machine.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
             }
             if ((Original_weight.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((decimal)(Original_weight.Value));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((decimal)(Original_weight.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
             }
             if ((Original_Printer == null)) {
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[32].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((string)(Original_Printer));
+                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_Printer));
             }
             if ((Original_Barcode.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((long)(Original_Barcode.Value));
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((long)(Original_Barcode.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[34].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[35].Value = ((long)(ID));
+            this.Adapter.UpdateCommand.Parameters[36].Value = ((byte)(Original_CountHaveDesc));
+            this.Adapter.UpdateCommand.Parameters[37].Value = ((long)(ID));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -23813,6 +23961,7 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
                     global::System.Nullable<decimal> weight, 
                     string Printer, 
                     global::System.Nullable<long> Barcode, 
+                    byte CountHaveDesc, 
                     long Original_ID, 
                     global::System.Nullable<long> Original_Fk, 
                     global::System.Nullable<long> Original_TypeColth, 
@@ -23824,8 +23973,9 @@ SELECT ID, Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, 
                     global::System.Nullable<long> Original_Machine, 
                     global::System.Nullable<decimal> Original_weight, 
                     string Original_Printer, 
-                    global::System.Nullable<long> Original_Barcode) {
-            return this.Update(Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, TimeSabt, Machine, weight, Printer, Barcode, Original_ID, Original_Fk, Original_TypeColth, Original_NumberOrder, Original_TypeColor, Original_Title, Original_UserSabt, Original_TimeSabt, Original_Machine, Original_weight, Original_Printer, Original_Barcode, Original_ID);
+                    global::System.Nullable<long> Original_Barcode, 
+                    byte Original_CountHaveDesc) {
+            return this.Update(Fk, TypeColth, NumberOrder, TypeColor, Title, Description, UserSabt, TimeSabt, Machine, weight, Printer, Barcode, CountHaveDesc, Original_ID, Original_Fk, Original_TypeColth, Original_NumberOrder, Original_TypeColor, Original_Title, Original_UserSabt, Original_TimeSabt, Original_Machine, Original_weight, Original_Printer, Original_Barcode, Original_CountHaveDesc, Original_ID);
         }
     }
     
@@ -28588,12 +28738,6 @@ SELECT ID, Barcode, IDProduct, date, Time, weight, Qty, NumberDraft, NumberRecip
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Table_60_SpecsTechnical";
             tableMapping.ColumnMappings.Add("ID", "ID");
-            tableMapping.ColumnMappings.Add("Code", "Code");
-            tableMapping.ColumnMappings.Add("namemachine", "namemachine");
-            tableMapping.ColumnMappings.Add("Specstechnical", "Specstechnical");
-            tableMapping.ColumnMappings.Add("status", "status");
-            tableMapping.ColumnMappings.Add("X", "X");
-            tableMapping.ColumnMappings.Add("Y", "Y");
             tableMapping.ColumnMappings.Add("Expr1", "Expr1");
             tableMapping.ColumnMappings.Add("Expr2", "Expr2");
             tableMapping.ColumnMappings.Add("Expr3", "Expr3");
@@ -28601,15 +28745,6 @@ SELECT ID, Barcode, IDProduct, date, Time, weight, Qty, NumberDraft, NumberRecip
             tableMapping.ColumnMappings.Add("Expr5", "Expr5");
             tableMapping.ColumnMappings.Add("Expr6", "Expr6");
             tableMapping.ColumnMappings.Add("Expr7", "Expr7");
-            tableMapping.ColumnMappings.Add("DeviceMark", "DeviceMark");
-            tableMapping.ColumnMappings.Add("Gap", "Gap");
-            tableMapping.ColumnMappings.Add("teeny", "teeny");
-            tableMapping.ColumnMappings.Add("Area", "Area");
-            tableMapping.ColumnMappings.Add("YarnType", "YarnType");
-            tableMapping.ColumnMappings.Add("RoundStop", "RoundStop");
-            tableMapping.ColumnMappings.Add("TextureLimit", "TextureLimit");
-            tableMapping.ColumnMappings.Add("Description", "Description");
-            tableMapping.ColumnMappings.Add("FabricType", "FabricType");
             tableMapping.ColumnMappings.Add("Expr8", "Expr8");
             tableMapping.ColumnMappings.Add("Expr9", "Expr9");
             tableMapping.ColumnMappings.Add("Expr10", "Expr10");
@@ -28619,14 +28754,35 @@ SELECT ID, Barcode, IDProduct, date, Time, weight, Qty, NumberDraft, NumberRecip
             tableMapping.ColumnMappings.Add("Expr14", "Expr14");
             tableMapping.ColumnMappings.Add("Expr15", "Expr15");
             tableMapping.ColumnMappings.Add("Expr16", "Expr16");
+            tableMapping.ColumnMappings.Add("Speed", "Speed");
+            tableMapping.ColumnMappings.Add("Code", "Code");
+            tableMapping.ColumnMappings.Add("namemachine", "namemachine");
+            tableMapping.ColumnMappings.Add("Specstechnical", "Specstechnical");
+            tableMapping.ColumnMappings.Add("status", "status");
+            tableMapping.ColumnMappings.Add("X", "X");
+            tableMapping.ColumnMappings.Add("Y", "Y");
+            tableMapping.ColumnMappings.Add("DeviceMark", "DeviceMark");
+            tableMapping.ColumnMappings.Add("Gap", "Gap");
+            tableMapping.ColumnMappings.Add("teeny", "teeny");
+            tableMapping.ColumnMappings.Add("Area", "Area");
+            tableMapping.ColumnMappings.Add("YarnType", "YarnType");
+            tableMapping.ColumnMappings.Add("RoundStop", "RoundStop");
+            tableMapping.ColumnMappings.Add("TextureLimit", "TextureLimit");
+            tableMapping.ColumnMappings.Add("Description", "Description");
+            tableMapping.ColumnMappings.Add("FabricType", "FabricType");
+            tableMapping.ColumnMappings.Add("IsDeffective", "IsDeffective");
+            tableMapping.ColumnMappings.Add("IsInfinitiveTextureLimit", "IsInfinitiveTextureLimit");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Table_60_SpecsTechnical] WHERE (([ID] = @Original_ID) AND ((@IsNull_Code = 1 AND [Code] IS NULL) OR ([Code] = @Original_Code)) AND ([status] = @Original_status) AND ([X] = @Original_X) AND ([Y] = @Original_Y) AND ((@IsNull_DeviceMark = 1 AND [DeviceMark] IS NULL) OR ([DeviceMark] = @Original_DeviceMark)) AND ((@IsNull_Gap = 1 AND [Gap] IS NULL) OR ([Gap] = @Original_Gap)) AND ((@IsNull_teeny = 1 AND [teeny] IS NULL) OR ([teeny] = @Original_teeny)) AND ((@IsNull_Area = 1 AND [Area] IS NULL) OR ([Area] = @Original_Area)) AND ((@IsNull_YarnType = 1 AND [YarnType] IS NULL) OR ([YarnType] = @Original_YarnType)) AND ((@IsNull_RoundStop = 1 AND [RoundStop] IS NULL) OR ([RoundStop] = @Original_RoundStop)) AND ((@IsNull_TextureLimit = 1 AND [TextureLimit] IS NULL) OR ([TextureLimit] = @Original_TextureLimit)) AND ((@IsNull_Description = 1 AND [Description] IS NULL) OR ([Description] = @Original_Description)) AND ((@IsNull_FabricType = 1 AND [FabricType] IS NULL) OR ([FabricType] = @Original_FabricType)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Table_60_SpecsTechnical] WHERE (([ID] = @Original_ID) AND ([Speed] = @Original_Speed) AND ((@IsNull_Code = 1 AND [Code] IS NULL) OR ([Code] = @Original_Code)) AND ((@IsNull_namemachine = 1 AND [namemachine] IS NULL) OR ([namemachine] = @Original_namemachine)) AND ([status] = @Original_status) AND ([X] = @Original_X) AND ([Y] = @Original_Y) AND ((@IsNull_DeviceMark = 1 AND [DeviceMark] IS NULL) OR ([DeviceMark] = @Original_DeviceMark)) AND ((@IsNull_Gap = 1 AND [Gap] IS NULL) OR ([Gap] = @Original_Gap)) AND ((@IsNull_teeny = 1 AND [teeny] IS NULL) OR ([teeny] = @Original_teeny)) AND ((@IsNull_Area = 1 AND [Area] IS NULL) OR ([Area] = @Original_Area)) AND ((@IsNull_YarnType = 1 AND [YarnType] IS NULL) OR ([YarnType] = @Original_YarnType)) AND ((@IsNull_RoundStop = 1 AND [RoundStop] IS NULL) OR ([RoundStop] = @Original_RoundStop)) AND ((@IsNull_TextureLimit = 1 AND [TextureLimit] IS NULL) OR ([TextureLimit] = @Original_TextureLimit)) AND ((@IsNull_Description = 1 AND [Description] IS NULL) OR ([Description] = @Original_Description)) AND ((@IsNull_FabricType = 1 AND [FabricType] IS NULL) OR ([FabricType] = @Original_FabricType)) AND ([IsDeffective] = @Original_IsDeffective) AND ([IsInfinitiveTextureLimit] = @Original_IsInfinitiveTextureLimit))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Speed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Speed", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Code", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_namemachine", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "namemachine", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_namemachine", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "namemachine", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_status", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_X", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "X", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Y", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Y", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -28643,17 +28799,20 @@ SELECT ID, Barcode, IDProduct, date, Time, weight, Qty, NumberDraft, NumberRecip
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_RoundStop", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RoundStop", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RoundStop", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 4, "RoundStop", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TextureLimit", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TextureLimit", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TextureLimit", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Description", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_FabricType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FabricType", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IsDeffective", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsDeffective", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IsInfinitiveTextureLimit", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsInfinitiveTextureLimit", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Table_60_SpecsTechnical] ([Code], [namemachine], [Specstechnical], [status], [X], [Y], [DeviceMark], [Gap], [teeny], [Area], [YarnType], [RoundStop], [TextureLimit], [Description], [FabricType]) VALUES (@Code, @namemachine, @Specstechnical, @status, @X, @Y, @DeviceMark, @Gap, @teeny, @Area, @YarnType, @RoundStop, @TextureLimit, @Description, @FabricType);
-SELECT ID, Code, namemachine, Specstechnical, status, X, Y, DeviceMark, Gap, teeny, Area, YarnType, RoundStop, TextureLimit, Description, FabricType FROM Table_60_SpecsTechnical WHERE (ID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Table_60_SpecsTechnical] ([Speed], [Code], [namemachine], [Specstechnical], [status], [X], [Y], [DeviceMark], [Gap], [teeny], [Area], [YarnType], [RoundStop], [TextureLimit], [Description], [FabricType], [IsDeffective], [IsInfinitiveTextureLimit]) VALUES (@Speed, @Code, @namemachine, @Specstechnical, @status, @X, @Y, @DeviceMark, @Gap, @teeny, @Area, @YarnType, @RoundStop, @TextureLimit, @Description, @FabricType, @IsDeffective, @IsInfinitiveTextureLimit);
+SELECT ID, Speed, Code, namemachine, Specstechnical, status, X, Y, DeviceMark, Gap, teeny, Area, YarnType, RoundStop, TextureLimit, Description, FabricType, IsDeffective, IsInfinitiveTextureLimit FROM Table_60_SpecsTechnical WHERE (ID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Speed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Speed", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Code", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@namemachine", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "namemachine", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Specstechnical", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Specstechnical", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@status", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -28665,33 +28824,41 @@ SELECT ID, Code, namemachine, Specstechnical, status, X, Y, DeviceMark, Gap, tee
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Area", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "Area", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YarnType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YarnType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RoundStop", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 4, "RoundStop", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TextureLimit", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TextureLimit", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FabricType", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsDeffective", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsDeffective", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsInfinitiveTextureLimit", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsInfinitiveTextureLimit", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [Table_60_SpecsTechnical] SET [Code] = @Code, [namemachine] = @namemachine" +
-                ", [Specstechnical] = @Specstechnical, [status] = @status, [X] = @X, [Y] = @Y, [D" +
-                "eviceMark] = @DeviceMark, [Gap] = @Gap, [teeny] = @teeny, [Area] = @Area, [YarnT" +
-                "ype] = @YarnType, [RoundStop] = @RoundStop, [TextureLimit] = @TextureLimit, [Des" +
-                "cription] = @Description, [FabricType] = @FabricType WHERE (([ID] = @Original_ID" +
-                ") AND ((@IsNull_Code = 1 AND [Code] IS NULL) OR ([Code] = @Original_Code)) AND (" +
-                "[status] = @Original_status) AND ([X] = @Original_X) AND ([Y] = @Original_Y) AND" +
-                " ((@IsNull_DeviceMark = 1 AND [DeviceMark] IS NULL) OR ([DeviceMark] = @Original" +
-                "_DeviceMark)) AND ((@IsNull_Gap = 1 AND [Gap] IS NULL) OR ([Gap] = @Original_Gap" +
-                ")) AND ((@IsNull_teeny = 1 AND [teeny] IS NULL) OR ([teeny] = @Original_teeny)) " +
-                "AND ((@IsNull_Area = 1 AND [Area] IS NULL) OR ([Area] = @Original_Area)) AND ((@" +
-                "IsNull_YarnType = 1 AND [YarnType] IS NULL) OR ([YarnType] = @Original_YarnType)" +
-                ") AND ((@IsNull_RoundStop = 1 AND [RoundStop] IS NULL) OR ([RoundStop] = @Origin" +
-                "al_RoundStop)) AND ((@IsNull_TextureLimit = 1 AND [TextureLimit] IS NULL) OR ([T" +
-                "extureLimit] = @Original_TextureLimit)) AND ((@IsNull_Description = 1 AND [Descr" +
-                "iption] IS NULL) OR ([Description] = @Original_Description)) AND ((@IsNull_Fabri" +
-                "cType = 1 AND [FabricType] IS NULL) OR ([FabricType] = @Original_FabricType)));\r" +
-                "\nSELECT ID, Code, namemachine, Specstechnical, status, X, Y, DeviceMark, Gap, te" +
-                "eny, Area, YarnType, RoundStop, TextureLimit, Description, FabricType FROM Table" +
-                "_60_SpecsTechnical WHERE (ID = @ID)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [Table_60_SpecsTechnical] SET [Speed] = @Speed, [Code] = @Code, [namemachi" +
+                "ne] = @namemachine, [Specstechnical] = @Specstechnical, [status] = @status, [X] " +
+                "= @X, [Y] = @Y, [DeviceMark] = @DeviceMark, [Gap] = @Gap, [teeny] = @teeny, [Are" +
+                "a] = @Area, [YarnType] = @YarnType, [RoundStop] = @RoundStop, [TextureLimit] = @" +
+                "TextureLimit, [Description] = @Description, [FabricType] = @FabricType, [IsDeffe" +
+                "ctive] = @IsDeffective, [IsInfinitiveTextureLimit] = @IsInfinitiveTextureLimit W" +
+                "HERE (([ID] = @Original_ID) AND ([Speed] = @Original_Speed) AND ((@IsNull_Code =" +
+                " 1 AND [Code] IS NULL) OR ([Code] = @Original_Code)) AND ((@IsNull_namemachine =" +
+                " 1 AND [namemachine] IS NULL) OR ([namemachine] = @Original_namemachine)) AND ([" +
+                "status] = @Original_status) AND ([X] = @Original_X) AND ([Y] = @Original_Y) AND " +
+                "((@IsNull_DeviceMark = 1 AND [DeviceMark] IS NULL) OR ([DeviceMark] = @Original_" +
+                "DeviceMark)) AND ((@IsNull_Gap = 1 AND [Gap] IS NULL) OR ([Gap] = @Original_Gap)" +
+                ") AND ((@IsNull_teeny = 1 AND [teeny] IS NULL) OR ([teeny] = @Original_teeny)) A" +
+                "ND ((@IsNull_Area = 1 AND [Area] IS NULL) OR ([Area] = @Original_Area)) AND ((@I" +
+                "sNull_YarnType = 1 AND [YarnType] IS NULL) OR ([YarnType] = @Original_YarnType))" +
+                " AND ((@IsNull_RoundStop = 1 AND [RoundStop] IS NULL) OR ([RoundStop] = @Origina" +
+                "l_RoundStop)) AND ((@IsNull_TextureLimit = 1 AND [TextureLimit] IS NULL) OR ([Te" +
+                "xtureLimit] = @Original_TextureLimit)) AND ((@IsNull_Description = 1 AND [Descri" +
+                "ption] IS NULL) OR ([Description] = @Original_Description)) AND ((@IsNull_Fabric" +
+                "Type = 1 AND [FabricType] IS NULL) OR ([FabricType] = @Original_FabricType)) AND" +
+                " ([IsDeffective] = @Original_IsDeffective) AND ([IsInfinitiveTextureLimit] = @Or" +
+                "iginal_IsInfinitiveTextureLimit));\r\nSELECT ID, Speed, Code, namemachine, Specste" +
+                "chnical, status, X, Y, DeviceMark, Gap, teeny, Area, YarnType, RoundStop, Textur" +
+                "eLimit, Description, FabricType, IsDeffective, IsInfinitiveTextureLimit FROM Tab" +
+                "le_60_SpecsTechnical WHERE (ID = @ID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Speed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Speed", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Code", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@namemachine", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "namemachine", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Specstechnical", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Specstechnical", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@status", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -28703,12 +28870,17 @@ SELECT ID, Code, namemachine, Specstechnical, status, X, Y, DeviceMark, Gap, tee
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Area", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 4, "Area", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YarnType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YarnType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RoundStop", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 4, "RoundStop", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TextureLimit", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TextureLimit", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FabricType", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsDeffective", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsDeffective", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsInfinitiveTextureLimit", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsInfinitiveTextureLimit", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Speed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Speed", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Code", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_namemachine", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "namemachine", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_namemachine", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "namemachine", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_status", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_X", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "X", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Y", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Y", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -28725,11 +28897,13 @@ SELECT ID, Code, namemachine, Specstechnical, status, X, Y, DeviceMark, Gap, tee
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_RoundStop", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RoundStop", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RoundStop", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 4, "RoundStop", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TextureLimit", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TextureLimit", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TextureLimit", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TextureLimit", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Description", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_FabricType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FabricType", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FabricType", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IsDeffective", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsDeffective", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IsInfinitiveTextureLimit", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IsInfinitiveTextureLimit", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -28746,20 +28920,24 @@ SELECT ID, Code, namemachine, Specstechnical, status, X, Y, DeviceMark, Gap, tee
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Table_60_SpecsTechnical.*\r\nFROM     Table_60_SpecsTechnical";
+            this._commandCollection[0].CommandText = "SELECT ID, Speed, Code, namemachine, Specstechnical, status, X, Y, DeviceMark, Ga" +
+                "p, teeny, Area, YarnType, RoundStop, TextureLimit, Description, FabricType, IsDe" +
+                "ffective, IsInfinitiveTextureLimit\r\nFROM     Table_60_SpecsTechnical";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT Area, Code, Description, DeviceMark, FabricType, Gap, ID, RoundStop, Specs" +
-                "technical, TextureLimit, X, Y, YarnType, namemachine, status, teeny FROM Table_6" +
-                "0_SpecsTechnical WHERE (ID = @Id)";
+            this._commandCollection[1].CommandText = "SELECT Area, Code, Description, DeviceMark, FabricType, Gap, ID, IsDeffective, Is" +
+                "InfinitiveTextureLimit, RoundStop, Specstechnical, Speed, TextureLimit, X, Y, Ya" +
+                "rnType, namemachine, status, teeny FROM Table_60_SpecsTechnical WHERE (ID = @Id)" +
+                "";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT Area, Code, Description, DeviceMark, FabricType, Gap, ID, RoundStop, Specs" +
-                "technical, TextureLimit, X, Y, YarnType, namemachine, status, teeny FROM Table_6" +
-                "0_SpecsTechnical WHERE (IsForColor = 1)";
+            this._commandCollection[2].CommandText = "SELECT Area, Code, Description, DeviceMark, FabricType, Gap, ID, IsDeffective, Is" +
+                "InfinitiveTextureLimit, RoundStop, Specstechnical, Speed, TextureLimit, X, Y, Ya" +
+                "rnType, namemachine, status, teeny FROM Table_60_SpecsTechnical WHERE (IsForColo" +
+                "r = 1)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
         }
         

@@ -21,7 +21,7 @@ namespace PCLOR.MyBasicFunction
             using (IDbConnection db = new SqlConnection(connection))
             {
                 var points = db.Query<MachinePoint>("SELECT X, Y, ID ,namemachine as Name   from   Table_60_SpecsTechnical  where   status = 1", null, commandType: CommandType.Text).OrderBy(x => x.Y).ToList();
-                var machines = ClDoc.ReturnTable(ConPCLOR, @"SELECT ID, Code, namemachine as Namemachine,namemachine as Name ,IsDeffective, TextureLimit,RoundStop,status as Status, Specstechnical ,Description,FabricType,YarnType,DeviceMark,X,Y ,Area, Gap,teeny FROM [dbo].[Table_60_SpecsTechnical]  where  status=1").ToList<Machine>();
+                var machines = ClDoc.ReturnTable(ConPCLOR, @"SELECT ID, Code, namemachine as Namemachine,namemachine as Name ,IsDeffective, TextureLimit,RoundStop,status as Status, Specstechnical ,Description,FabricType,YarnType,DeviceMark,X,Y ,Area, Gap,teeny ,IsInfinitiveTextureLimit   FROM [dbo].[Table_60_SpecsTechnical]  where  status=1").ToList<Machine>();
                 foreach (var item in machines)
                 {
                     Button button = new Button();
@@ -30,8 +30,8 @@ namespace PCLOR.MyBasicFunction
                     button.Location = new Point(point.X, point.Y);
                     button.Draggable(false);
                     button.Tag = item;
-                    button.Width = 55;
-                    button.Height = 55;
+                    button.Width = 60;
+                    button.Height = 60;
                     button.Click += Button_Click;
                     if (item.TextureLimit == 0 && item.IsInfinitiveTextureLimit == false)
                     {
@@ -46,6 +46,7 @@ namespace PCLOR.MyBasicFunction
                         {
                             button.Click -= Button_Click;
                             button.Click += GetMessageForTextureLimit;
+                            button.Click += Button_Click;
                         }
                     }
                     else if (item.IsDeffective)

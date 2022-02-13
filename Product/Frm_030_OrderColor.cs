@@ -29,6 +29,9 @@ namespace PCLOR.Product
         private int ColorTypeId = 0;
         private int CodeCustomer = 200;
         private bool IsBtnSaveFinalNotEnable = false;
+        private bool IsCheckBarcodesValid = true;
+        private List<InvalidBarcodeViewModel> invalidBarcodes = new List<InvalidBarcodeViewModel>();
+        string OrginalBarcode = "";
         IEnumerable<FillDetailBarcodeViewModel> detailBarcodeViewModels = new List<FillDetailBarcodeViewModel>();
 
 
@@ -53,7 +56,8 @@ namespace PCLOR.Product
             this.table_030_DetailOrderColorTableAdapter.Fill(this.dataSet_05_PCLOR.Table_030_DetailOrderColor);
             //gridEX3.DropDowns["TypeCloth"].DataSource = mlt_TypeCloth.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeCloth from Table_005_TypeCloth");
             //ClDoc.ReturnTable(ConBase, @"select Columnid,Column01,Column02 from Table_045_PersonInfo");
-            multiColumnColor.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeColor from Table_010_TypeColor");
+            var colorModels = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeColor from Table_010_TypeColor").ToList<TypeColorViewModel>();
+            multiColumnColor.DataSource = colorModels;
             //            gridEX3.DropDowns["Customer"].DataSource = mlt_codecustomer.DataSource = ClDoc.ReturnTable(ConBase, @"SELECT        dbo.Table_045_PersonInfo.ColumnId, dbo.Table_045_PersonInfo.Column01
             //FROM            dbo.Table_040_PersonGroups INNER JOIN
             //                         dbo.Table_045_PersonScope ON dbo.Table_040_PersonGroups.Column00 = dbo.Table_045_PersonScope.Column02 INNER JOIN
@@ -67,6 +71,11 @@ namespace PCLOR.Product
             {
                 uiComboBox2.Items.Add(page.Name);
             }
+            uiComboBox2.Text = uiComboBox2.Items[0].Text;
+            uiComboBox2.SelectedValue = uiComboBox2.Items[0].Value;
+            //-------------
+            multiColumnColor.Value = colorModels.FirstOrDefault().ID;
+            multiColumnColor.Text = colorModels.FirstOrDefault().TypeColor;
         }
 
         private void btn_New_Click(object sender, EventArgs e)
@@ -470,31 +479,53 @@ WHERE     (dbo.Table_035_Production.ColorOrderId IN
                     MessageBox.Show("لطفا بارکد هارا وارد نمایئد سپس اقدام فرمایئد");
                     return;
                 }
-                var t = gridEX3.BoundMode;
                 gridEX4.ClearItems();
                 gridEX3.ClearItems();
                 var barcodes = GetBarcodes(txt_Barcode.Text.Trim());
-                var status = CheckBarcodesDetail(GetBarcodesDetail(barcodes));
-                switch (status)
+                CheckBarcodesManagement(GetOrginalCodes(barcodes));
+                CheckBarcodesDetail(detailBarcodeViewModels);
+                if (!IsCheckBarcodesValid)
                 {
-                    case ErrorBarcodeProductEnum.Cloth:
-                        MessageBox.Show("نوع پارچه برای بارکد های وارد شده یکسان نیستند");
-                        CleareAllDetailBarcodes();
-                        return;
-                    case ErrorBarcodeProductEnum.Cotton:
-                        MessageBox.Show("نوع نخ برای بارکد های وارد شده یکسان نیستند");
-                        CleareAllDetailBarcodes();
-                        return;
-                    case ErrorBarcodeProductEnum.Machine:
-                        MessageBox.Show("دستگاه ها برای بارکد های وارد شده یکسان نیستند");
-                        CleareAllDetailBarcodes();
-                        return;
-
-                    case ErrorBarcodeProductEnum.Null:
-                        MessageBox.Show("بارکد های وارد شده موجود نمی باشند");
-                        CleareAllDetailBarcodes();
-                        return;
+                    string message = "";
+                    foreach (var item in invalidBarcodes)
+                    {
+                        message += item.Message + "   /   ";
+                    }
+                    message = message.Trim().TrimEnd('/');
+                    MessageBox.Show(message);
+                    invalidBarcodes.Clear();
+                    IsCheckBarcodesValid = true;
+                    return;
                 }
+
+                //var status = CheckBarcodesDetail(GetBarcodesDetail(barcodes));
+                //switch (status)
+                //{
+                //    case ErrorBarcodeProductEnum.Cloth:
+                //        MessageBox.Show(invalidBarcodes.First().Message);
+                //        CleareAllDetailBarcodes();
+                //        invalidBarcodes.Clear();
+                //        return;
+                //    case ErrorBarcodeProductEnum.Cotton:
+                //        //MessageBox.Show("نوع نخ برای بارکد های وارد شده یکسان نیستند");
+                //        MessageBox.Show(invalidBarcodes.First().Message);
+                //        CleareAllDetailBarcodes();
+                //        invalidBarcodes.Clear();
+                //        return;
+                //    case ErrorBarcodeProductEnum.Machine:
+                //        MessageBox.Show(invalidBarcodes.First().Message);
+                //        //MessageBox.Show("دستگاه ها برای بارکد های وارد شده یکسان نیستند");
+                //        CleareAllDetailBarcodes();
+                //        invalidBarcodes.Clear();
+                //        return;
+
+                //    case ErrorBarcodeProductEnum.Null:
+                //        MessageBox.Show(invalidBarcodes.First().Message);
+                //        //MessageBox.Show("بارکد های وارد شده موجود نمی باشند");
+                //        CleareAllDetailBarcodes();
+                //        invalidBarcodes.Clear();
+                //        return;
+                //}
 
 
 
@@ -740,7 +771,7 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToSt
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
                 var query = $@"
-                            select  Machine,CottonType as Cotton,ClothType as Cloth 
+                            select BarCode, Machine,CottonType as Cotton,ClothType as Cloth 
                             from Table_115_Product 
                             where Barcode in ({codes}) ";
                 return db.Query<CheckBarcodeViewModel>(query, null, commandType: CommandType.Text);
@@ -748,29 +779,72 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToSt
             }
         }
 
-        public ErrorBarcodeProductEnum CheckBarcodesDetail(IEnumerable<CheckBarcodeViewModel> models)
+        public void CheckBarcodesDetail(IEnumerable<FillDetailBarcodeViewModel> models)
         {
-            if (models == null || models.Count() == 0)
-            {
-                return ErrorBarcodeProductEnum.Null;
-            }
+            //if (models == null || models.Count() == 0)
+            //    return ErrorBarcodeProductEnum.Null;
+            //if (models.Count() == 1)
+            //    return ErrorBarcodeProductEnum.Success;
             var first = models.First();
             foreach (var item in models)
             {
                 if (item.Cloth != first.Cloth)
-                    return ErrorBarcodeProductEnum.Cloth;
+                {
+                    invalidBarcodes.Add(new InvalidBarcodeViewModel() { Barcode = item.Barcode, Message = $@"بارکد {item.Barcode} با پارچه بارکد اول مطابقت ندارد" });
+                    IsCheckBarcodesValid = false;
+                    //return ErrorBarcodeProductEnum.Cloth;
+                }
                 if (item.Cotton != first.Cotton)
-                    return ErrorBarcodeProductEnum.Cotton;
+                {
+                    IsCheckBarcodesValid = false;
+                    invalidBarcodes.Add(new InvalidBarcodeViewModel() { Barcode = item.Barcode, Message = $@"بارکد {item.Barcode} با نخ بارکد اول مطابقت ندارد" });
+                    //return ErrorBarcodeProductEnum.Cotton;
+                }
                 if (item.Machine != first.Machine)
-                    return ErrorBarcodeProductEnum.Machine;
+                {
+                    invalidBarcodes.Add(new InvalidBarcodeViewModel() { Barcode = item.Barcode, Message = $@"بارکد {item.Barcode} با دستگاه  بارکد اول مطابقت ندارد" });
+                    //return ErrorBarcodeProductEnum.Machine;
+                    IsCheckBarcodesValid = false;
+                }
+            }
+            DeviceId = Convert.ToInt32(first.Machine);
+            ClothTypeId = Convert.ToInt32(first.Cloth);
+            //return ErrorBarcodeProductEnum.Success;
+        }
+
+
+
+        public void CheckBarcodesManagement(string barcodes)
+        {
+            var status = false;
+            var arrayBarcodes = barcodes.Split(',');
+            var models = detailBarcodeViewModels = GetDetailBarcode(barcodes);
+            foreach (var item in arrayBarcodes)
+            {
+                status = !models.Any(c => c.Barcode.Trim() == item.Trim());
+                if (status)
+                {
+                    invalidBarcodes.Add(new InvalidBarcodeViewModel() { Barcode = item, Message = $@"بار کد {item} وجود ندارد" });
+                    IsCheckBarcodesValid = false;
+                }
+            }
+            if (IsCheckBarcodesValid)
+            {
+                foreach (var item in models)
+                {
+                    status = models.Any(c => c.Barcode.Trim() == item.Barcode.Trim() && item.IsRegToOrderColor == true);
+                    if (status)
+                    {
+                        invalidBarcodes.Add(new InvalidBarcodeViewModel() { Barcode = item.Barcode, Message = $@"بارکد {item.Barcode} قبلا ثبت شده است" });
+                        IsCheckBarcodesValid = false;
+                    }
+                }
             }
 
-            DeviceId = first.Machine;
-            ClothTypeId = first.Cloth;
 
-
-            return ErrorBarcodeProductEnum.Success;
         }
+
+
 
         public string GetOrginalCodes(string[] barcodes)
         {
@@ -788,8 +862,10 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToSt
         public void FillDetailBarcode(string[] barcodes)
         {
 
-            var codes = GetOrginalCodes(barcodes);
-            detailBarcodeViewModels = GetDetailBarcode(codes);
+            var codes = OrginalBarcode = GetOrginalCodes(barcodes);
+            if (detailBarcodeViewModels.Count() == 0)
+                detailBarcodeViewModels = GetDetailBarcode(codes);
+
 
             var descs = detailBarcodeViewModels.Where(d => !string.IsNullOrEmpty(d.Description)).Select(c => c.Description);
             if (detailBarcodeViewModels != null && detailBarcodeViewModels.Count() != 0)
@@ -828,6 +904,10 @@ SELECT TOP ({t}) [Weight]
       ,[StoreName]
       ,[CodeStore]
       ,[DeviceId]
+      ,[IsRegToOrderColor],
+[Machine],
+[Cotton],
+[Cloth]
   FROM [PCLOR_1_1400].[dbo].[DeatailBarcodes]
        where Barcode in   ({codes}) ";
                 var res = db.Query<FillDetailBarcodeViewModel>(query, null, commandType: CommandType.Text);
@@ -1106,6 +1186,19 @@ SELECT TOP ({t}) [Weight]
 
         }
 
+
+        public void IsRegToOrderColor(string barcodes)
+        {
+            var query = $@"  update Table_115_Product Set IsRegToOrderColor=1
+                                    where Barcode in ({barcodes})";
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+                db.Execute(query, null);
+            }
+
+
+        }
+
         private Task<bool> Draft()
         {
 
@@ -1135,6 +1228,8 @@ SELECT TOP ({t}) [Weight]
                     ///جزیئات حواله به انبار بافندگی
                     MyBasicFunction.BasicFunction.ExportDraftChild(headerWeaveId, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()), Convert.ToInt32(item.Cells["CodeCommodity"].Value.ToString())
                      , 1, item.Cells["Barcode"].Value.ToString(), txt_Dat.Text, ConWare);
+                    IsRegToOrderColor(OrginalBarcode);
+
                 }
 
                 //  ---------------------------------------------------------------------------------------------------

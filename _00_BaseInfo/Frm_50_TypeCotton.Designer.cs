@@ -39,7 +39,11 @@
             this.uiPanelManager1 = new Janus.Windows.UI.Dock.UIPanelManager(this.components);
             this.uiPanel0 = new Janus.Windows.UI.Dock.UIPanel();
             this.uiPanel0Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtDescription2 = new System.Windows.Forms.TextBox();
+            this.txtDescription1 = new System.Windows.Forms.TextBox();
             this.txtBrandName = new System.Windows.Forms.TextBox();
             this.mlt_Commodity = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.table_120_TypeCottonBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -65,10 +69,6 @@
             this.gridEX1 = new Janus.Windows.GridEX.GridEX();
             this.table_120_TypeCottonTableAdapter = new PCLOR.Product.DataSet_05_ProductTableAdapters.Table_120_TypeCottonTableAdapter();
             this.tableAdapterManager = new PCLOR.Product.DataSet_05_ProductTableAdapters.TableAdapterManager();
-            this.txtDescription1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDescription2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
             partNameLabel = new System.Windows.Forms.Label();
             label8 = new System.Windows.Forms.Label();
@@ -173,6 +173,24 @@
             this.uiPanel0Container.Size = new System.Drawing.Size(234, 320);
             this.uiPanel0Container.TabIndex = 0;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(171, 224);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 17);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "توضیح 2:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(171, 188);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 17);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "توضیح 1:";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -181,6 +199,20 @@
             this.label1.Size = new System.Drawing.Size(59, 17);
             this.label1.TabIndex = 29;
             this.label1.Text = "نام برند :";
+            // 
+            // txtDescription2
+            // 
+            this.txtDescription2.Location = new System.Drawing.Point(3, 221);
+            this.txtDescription2.Name = "txtDescription2";
+            this.txtDescription2.Size = new System.Drawing.Size(162, 24);
+            this.txtDescription2.TabIndex = 28;
+            // 
+            // txtDescription1
+            // 
+            this.txtDescription1.Location = new System.Drawing.Point(5, 185);
+            this.txtDescription1.Name = "txtDescription1";
+            this.txtDescription1.Size = new System.Drawing.Size(162, 24);
+            this.txtDescription1.TabIndex = 28;
             // 
             // txtBrandName
             // 
@@ -433,6 +465,7 @@
             this.gridEX1.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
             this.gridEX1.FormattingRow += new Janus.Windows.GridEX.RowLoadEventHandler(this.gridEX1_FormattingRow);
             this.gridEX1.SelectionChanged += new System.EventHandler(this.gridEX1_SelectionChanged);
+            this.gridEX1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.gridEX1_MouseDoubleClick);
             // 
             // table_120_TypeCottonTableAdapter
             // 
@@ -451,38 +484,6 @@
             this.tableAdapterManager.Table_130_TransferBranchTableAdapter = null;
             this.tableAdapterManager.Table_135_RFIDPersonTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = PCLOR.Product.DataSet_05_ProductTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // txtDescription1
-            // 
-            this.txtDescription1.Location = new System.Drawing.Point(5, 185);
-            this.txtDescription1.Name = "txtDescription1";
-            this.txtDescription1.Size = new System.Drawing.Size(162, 24);
-            this.txtDescription1.TabIndex = 28;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(171, 188);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 17);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "توضیح 1:";
-            // 
-            // txtDescription2
-            // 
-            this.txtDescription2.Location = new System.Drawing.Point(3, 221);
-            this.txtDescription2.Name = "txtDescription2";
-            this.txtDescription2.Size = new System.Drawing.Size(162, 24);
-            this.txtDescription2.TabIndex = 28;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(171, 224);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 17);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "توضیح 2:";
             // 
             // Frm_50_TypeCotton
             // 

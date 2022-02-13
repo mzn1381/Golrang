@@ -7,7 +7,7 @@ namespace PCLOR.Models
 {
     public class CheckBarcodeViewModel
     {
-        //public string Barcode { get; set; }
+        public string Barcode { get; set; }
         public int Machine { get; set; }
         public int Cotton { get; set; }
         public int Cloth { get; set; }

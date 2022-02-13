@@ -1651,6 +1651,11 @@ ORDER BY Barcode");
             }
         }
 
+        private void ribbonTabItem7_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void buttonItem71_Click(object sender, EventArgs e)
         {
             if (!CheckOpenForms("Frm_Rpt_BarcodeDetail"))
