@@ -1080,40 +1080,8 @@ G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.
 G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
 G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
 G:\PROGRAM\c#\آقای غروی گلرنگ\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe.config
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.pdb
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.Contrib.dll
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Data.v4.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.ButtonBar.v4.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.CalendarCombo.v4.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Common.v4.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.ExplorerBar.v4.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.FilterEditor.v4.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.GridEX.v4.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Ribbon.v4.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Schedule.v4.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.TimeLine.v4.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.UI.v4.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Smo.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.Dmf.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\ADODB.dll
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Dapper.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.ButtonBar.v4.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.CalendarCombo.v4.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Common.v4.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.ExplorerBar.v4.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.FilterEditor.v4.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.GridEX.v4.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Ribbon.v4.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Schedule.v4.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.TimeLine.v4.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.UI.v4.xml
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form1.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form2.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.Form4.resources
@@ -1218,8 +1186,3 @@ G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_003_Fakt
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._04_Shop.Frm_009_ExportDocInformation.resources
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.GenerateResource.cache
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe.licenses
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CoreCompileInputs.cache
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csprojAssemblyReference.cache
