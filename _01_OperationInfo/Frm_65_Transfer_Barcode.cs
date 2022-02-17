@@ -25,6 +25,11 @@ namespace PCLOR._01_OperationInfo
         SqlConnection ConBase = new SqlConnection(Properties.Settings.Default.PBASE);
         private List<InvalidBarcodeViewModel> invalidBarcodes = new List<InvalidBarcodeViewModel>();
         private bool IsCheckBarcodesValid = true;
+        private int FunctionTypeWeave = 0;
+        private int FunctionTypeRecipt = 0;
+        private string DateNowShamsi = "";
+        private int CodeStoreWeaveHistory = 0;
+        private int HeaderWeaveHistoryId = 0;
 
         public Frm_65_Transfer_Barcode()
         {
@@ -33,7 +38,11 @@ namespace PCLOR._01_OperationInfo
 
         private void Frm_65_Transfer_Barcode_Load(object sender, EventArgs e)
         {
-            //gridEX8.DataSource = GetBarcodes();
+            btnTransfer.Enabled = false;
+            DateNowShamsi = DateTime.Now.ToShamsi();
+            var model = GetCodeOfStoreWeave();
+            FunctionTypeWeave = model["FunctionType"];
+            FunctionTypeRecipt = Convert.ToInt16(ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=30"));
             menuStoresDestination.DataSource = GetStores(null);
             menuStoresStart.DataSource = GetStores(null);
             if (checkRegAuto.Checked)
@@ -140,13 +149,12 @@ SELECT
         {
             try
             {
-                var dateNow = DateTime.Now.ToShamsi();
-                int functionType = Convert.ToInt16(ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=30"));
+                //var dateNow = DateTime.Now.ToShamsi();
                 var codeCommodity = row.Cells["CodeCommodity"].Value.ToString();
                 var barcode = row.Cells["Barcode"].Value.ToString();
                 var weight = row.Cells["Weight"].Value.ToString();
                 var deviceId = row.Cells["DeviceId"].Value.ToString();
-                var headerReciptId = BasicFunction.Recipt(ConWare, dateNow, 0, ClDoc, Convert.ToInt32(menuStoresDestination.Value.ToString()), functionType, null, "", codeCommodit: codeCommodity);
+                var headerReciptId = BasicFunction.Recipt(ConWare, DateNowShamsi, 0, ClDoc, Convert.ToInt32(menuStoresDestination.Value.ToString()), FunctionTypeRecipt, null, "", codeCommodit: codeCommodity);
                 MyBasicFunction.BasicFunction.ReciptChild(ConWare: ConWare, headerReciptId, value: 1, Convert.ToInt32(codeCommodity), weight: Convert.ToDecimal(weight), barcode: barcode, Convert.ToInt32(deviceId));
 
             }
@@ -177,26 +185,28 @@ SELECT
             }
         }
 
-        public void Draft(GridEXRow item)
+        public void Draft(GridEXRow item, int codeSourceStore)
         {
             try
             {
-                var dateNow = DateTime.Now.ToShamsi();
-                var model = GetCodeOfStoreWeave();
-                var functionType = model["FunctionType"];
-                //var item = row;
-                var codeWare = 0;
-                if (!checkRegAuto.Checked)
-                    codeWare = Convert.ToInt32(menuStoresStart.Value);
-                else
-                    codeWare = Convert.ToInt32(item.Cells["CodeStore"].Value.ToString());
-
-
-                var headerWeaveId = BasicFunction.ExportDraftHeader(ConWare, ClDoc, dateNow, codeWare,
-                    functionType, 0, $@"انتقال بارکد {item.Cells["Barcode"]}  از انبار  {item.Cells["StoreName"]} به انبار  {menuStoresDestination.Text}", item.Cells["Barcode"].Value.ToString());
-
-                BasicFunction.ExportDraftChild(headerWeaveId, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()), codeWare
-                    , 1, item.Cells["Barcode"].Value.ToString(), dateNow, ConWare);
+                //var dateNow = DateTime.Now.ToShamsi();
+                //var model = GetCodeOfStoreWeave();
+                //var functionType = model["FunctionType"];
+                ////var item = row;
+                //var codeWare = 0;
+                if (codeSourceStore == 0)
+                    codeSourceStore = Convert.ToInt32(item.Cells["CodeStore"].Value.ToString());
+                //else
+                //    codeWare = Convert.ToInt32(item.Cells["CodeStore"].Value.ToString());
+                if (CodeStoreWeaveHistory != codeSourceStore)
+                {
+                    var headerWeaveId = BasicFunction.ExportDraftHeader(ConWare, ClDoc, DateNowShamsi, codeSourceStore,
+                        FunctionTypeWeave, 0, $@"انتقال بارکد {item.Cells["Barcode"]}  از انبار  {item.Cells["StoreName"]} به انبار  {menuStoresDestination.Text}", item.Cells["Barcode"].Value.ToString());
+                    HeaderWeaveHistoryId = headerWeaveId;
+                    CodeStoreWeaveHistory = codeSourceStore;
+                }
+                BasicFunction.ExportDraftChild(HeaderWeaveHistoryId, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()), CodeStoreWeaveHistory
+                    , 1, item.Cells["Barcode"].Value.ToString(), DateNowShamsi, ConWare);
 
                 ///جزیئات حواله به انبار بافندگی
                 //foreach (var item in gridEX8.CurrentRow)
@@ -235,7 +245,7 @@ SELECT
             var models = GetDetailBarcode(barcodes);
             foreach (var item in arrayBarcodes)
             {
-                status = !models.Any(c => c.Barcode.Trim() == item.Trim());
+                status = !models.Any(c => c.Barcode.Trim() == item.Remove(item.Length - 1).Substring(2).Trim());
                 if (status)
                 {
                     invalidBarcodes.Add(new InvalidBarcodeViewModel() { Barcode = item, Message = $@"بار کد {item} وجود ندارد" });
@@ -246,7 +256,7 @@ SELECT
             {
                 foreach (var item in models)
                 {
-                    status = models.Any(c => c.Barcode.Trim() == item.Barcode.Trim() && item.IsRegToOrderColor == true);
+                    status = models.Any(c => c.Barcode.Trim() == item.Barcode.Remove(item.Barcode.Length - 1).Substring(2) && item.IsRegToOrderColor == true);
                     if (status)
                     {
                         invalidBarcodes.Add(new InvalidBarcodeViewModel() { Barcode = item.Barcode, Message = $@"بارکد {item.Barcode} قبلا ثبت شده است" });
@@ -284,20 +294,24 @@ SELECT
                         return;
                     }
                 }
-                var res = Task.Factory.StartNew(() =>
-                  {
+                //var res = Task.Factory.StartNew(() =>
+                //  {
+                var codeSourceStore = 0;
+                if (!checkRegAuto.Checked)
+                    codeSourceStore = Convert.ToInt32(menuStoresStart.Value);
 
-                      foreach (var item in gridEX8.GetRows())
-                      {
-                          Recipt(item);
-                          Draft(item);
-                          ChangeCodeStoreOfBarcode(item);
-                      }
-                  }).ContinueWith((t) =>
-                  {
-                      MessageBox.Show("انتقال با موفقیت انجام شد !");
-                      this.Close();
-                  });
+                foreach (var item in gridEX8.GetRows())
+                {
+                    Recipt(item);
+                    Draft(item, codeSourceStore);
+                    ChangeCodeStoreOfBarcode(item);
+                }
+                //}).ContinueWith((t) =>
+                //{
+                MessageBox.Show("انتقال با موفقیت انجام شد !");
+                this.Close();
+                //});
+                //this.Close();
                 //res.Wait();
             }
             catch (Exception ex)
@@ -384,6 +398,8 @@ SELECT
                 //ShowMessageBarcodeNotValid(BarcodeIsValid(barcodes));
                 //FillDetailBarcode(barcodes);
                 ShowDetailBarcode(barcodes);
+                btnTransfer.Enabled = true;
+
             }
             catch (Exception ex)
             {
@@ -393,6 +409,12 @@ SELECT
         }
         public string GetOrginalCodes(string[] barcodes)
         {
+            string newCode = "";
+            for (int i = 0; i < barcodes.Count(); i++)
+            {
+                newCode = "N'" + barcodes[i] + "'";
+                barcodes[i] = newCode;
+            }
             string codes = "";
             if (barcodes.Length > 1)
             {
@@ -455,7 +477,7 @@ SELECT TOP ({t}) [Weight]
         private string[] GetBarcodes(string barcodes) => barcodes.Split(new string[] { Environment.NewLine }, StringSplitOptions.None).Distinct().ToArray();
         public void ShowDetailBarcode(string[] barcodes)
         {
-            var codes = GetOrginalCodes(barcodes);
+            var codes = string.Join(",", barcodes);
             var models = GetDetailBarcode(codes);
             foreach (var item in models)
             {

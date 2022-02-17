@@ -835,8 +835,8 @@ WHERE     dbo.Table_035_Production.ColorOrderId =" + gridEX3.GetValue("ID").ToSt
                 IsCheckBarcodesValid = false;
                 return;
             }
-            if (arrayBarcodes.Length == models.Count())
-                return;
+            //if (arrayBarcodes.Length == models.Count())
+            //    return;
             foreach (var item in arrayBarcodes)
             {
                 //item.Remove(item.Length-1).Substring(2);
@@ -1127,7 +1127,7 @@ SELECT TOP ({t}) [Weight]
             }
         }
 
-        private  void btnSaveFinal_Click(object sender, EventArgs e)
+        private void btnSaveFinal_Click(object sender, EventArgs e)
         {
             ////Check Exist Color
             bool CheckColor()
@@ -1199,7 +1199,7 @@ SELECT TOP ({t}) [Weight]
                             var BarCode = item.Cells["BarCode"].Value.ToString();
                             MyBasicFunction.BasicFunction.ReciptChild(ConWare: ConWare, headerReciptId, value: 1, Convert.ToInt32(CodeCommodity), weight: Convert.ToDecimal(Weight), barcode: BarCode, DeviceId);
                         }
-                         Draft();
+                        Draft();
                     }
                     else
                     {
@@ -1223,8 +1223,9 @@ SELECT TOP ({t}) [Weight]
 
         public void IsRegToOrderColor(string barcodes)
         {
+            //barcodes = barcodes.Remove(barcodes.Length - 1).Substring(2);
             var query = $@"  update Table_115_Product Set IsRegToOrderColor=1
-                                    where Barcode in ({barcodes})";
+                                    where Barcode =N'{barcodes}' ";
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
                 db.Execute(query, null);
@@ -1260,7 +1261,7 @@ SELECT TOP ({t}) [Weight]
                     ///جزیئات حواله به انبار بافندگی
                     MyBasicFunction.BasicFunction.ExportDraftChild(headerWeaveId, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()), Convert.ToInt32(item.Cells["CodeCommodity"].Value.ToString())
                      , 1, item.Cells["Barcode"].Value.ToString(), txt_Dat.Text, ConWare);
-                    IsRegToOrderColor(OrginalBarcode);
+                    IsRegToOrderColor(item.Cells["Barcode"].Value.ToString());
 
                 }
 

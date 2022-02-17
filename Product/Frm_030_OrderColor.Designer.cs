@@ -52,6 +52,7 @@ namespace PCLOR.Product
             this.uiComboBox2 = new Janus.Windows.EditControls.UIComboBox();
             this.multiColumnColor = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.btnSaveFinal = new System.Windows.Forms.Button();
+            this.txt_Barcode = new System.Windows.Forms.TextBox();
             this.btn_Insert = new System.Windows.Forms.Button();
             this.txt_Dat = new System.Windows.Forms.MaskedTextBox();
             this.table_025_HederOrderColorBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -62,9 +63,9 @@ namespace PCLOR.Product
             this.txt_weight = new System.Windows.Forms.TextBox();
             this.txt_Number = new System.Windows.Forms.TextBox();
             this.txt_NumberOrder = new System.Windows.Forms.TextBox();
+            this.txt_Id = new System.Windows.Forms.TextBox();
             this.txt_Title = new System.Windows.Forms.TextBox();
             this.txt_Description = new System.Windows.Forms.TextBox();
-            this.txt_Barcode = new System.Windows.Forms.TextBox();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -88,7 +89,6 @@ namespace PCLOR.Product
             this.txt_Search = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.gridEX4 = new Janus.Windows.GridEX.GridEX();
             this.gridEX3 = new Janus.Windows.GridEX.GridEX();
-            this.txt_Id = new System.Windows.Forms.TextBox();
             label11 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             label14 = new System.Windows.Forms.Label();
@@ -336,6 +336,19 @@ namespace PCLOR.Product
             this.btnSaveFinal.UseVisualStyleBackColor = false;
             this.btnSaveFinal.Click += new System.EventHandler(this.btnSaveFinal_Click);
             // 
+            // txt_Barcode
+            // 
+            this.txt_Barcode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_Barcode.Location = new System.Drawing.Point(7, 3);
+            this.txt_Barcode.Multiline = true;
+            this.txt_Barcode.Name = "txt_Barcode";
+            this.txt_Barcode.Size = new System.Drawing.Size(202, 154);
+            this.txt_Barcode.TabIndex = 0;
+            this.txt_Barcode.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_Barcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Barcode_KeyPress);
+            // 
             // btn_Insert
             // 
             this.btn_Insert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -444,6 +457,17 @@ namespace PCLOR.Product
             this.txt_NumberOrder.TabIndex = 6;
             this.txt_NumberOrder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NumberOrder_KeyPress);
             // 
+            // txt_Id
+            // 
+            this.txt_Id.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_Id.Location = new System.Drawing.Point(235, 314);
+            this.txt_Id.Name = "txt_Id";
+            this.txt_Id.Size = new System.Drawing.Size(48, 24);
+            this.txt_Id.TabIndex = 9;
+            this.txt_Id.Visible = false;
+            this.txt_Id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Barcode_KeyPress);
+            // 
             // txt_Title
             // 
             this.txt_Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -464,19 +488,6 @@ namespace PCLOR.Product
             this.txt_Description.Size = new System.Drawing.Size(202, 127);
             this.txt_Description.TabIndex = 12;
             this.txt_Description.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Barcode_KeyPress);
-            // 
-            // txt_Barcode
-            // 
-            this.txt_Barcode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Barcode.Location = new System.Drawing.Point(7, 3);
-            this.txt_Barcode.Multiline = true;
-            this.txt_Barcode.Name = "txt_Barcode";
-            this.txt_Barcode.Size = new System.Drawing.Size(202, 154);
-            this.txt_Barcode.TabIndex = 0;
-            this.txt_Barcode.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.txt_Barcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Barcode_KeyPress);
             // 
             // bindingNavigator1
             // 
@@ -764,17 +775,6 @@ namespace PCLOR.Product
             this.gridEX3.TotalRowPosition = Janus.Windows.GridEX.TotalRowPosition.BottomFixed;
             this.gridEX3.UseCompatibleTextRendering = false;
             this.gridEX3.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
-            // 
-            // txt_Id
-            // 
-            this.txt_Id.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Id.Location = new System.Drawing.Point(235, 314);
-            this.txt_Id.Name = "txt_Id";
-            this.txt_Id.Size = new System.Drawing.Size(48, 24);
-            this.txt_Id.TabIndex = 9;
-            this.txt_Id.Visible = false;
-            this.txt_Id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Barcode_KeyPress);
             // 
             // Frm_030_OrderColor
             // 
