@@ -126,8 +126,8 @@
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("19b46e30-3219-4896-a52c-ebf2456bd6bb"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(189, 371), true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("e75e0444-c90b-4d0b-9346-cddac45c6508"), Janus.Windows.UI.Dock.PanelDockStyle.Fill, new System.Drawing.Size(589, 371), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("19b46e30-3219-4896-a52c-ebf2456bd6bb"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(189, 423), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("e75e0444-c90b-4d0b-9346-cddac45c6508"), Janus.Windows.UI.Dock.PanelDockStyle.Fill, new System.Drawing.Size(594, 423), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("e75e0444-c90b-4d0b-9346-cddac45c6508"), new System.Drawing.Point(381, 399), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("19b46e30-3219-4896-a52c-ebf2456bd6bb"), new System.Drawing.Point(39, 374), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.EndPanelInfo();
@@ -137,9 +137,9 @@
             this.uiPanel1.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel1.FloatingLocation = new System.Drawing.Point(39, 374);
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
-            this.uiPanel1.Location = new System.Drawing.Point(3, 28);
+            this.uiPanel1.Location = new System.Drawing.Point(3, 30);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(189, 371);
+            this.uiPanel1.Size = new System.Drawing.Size(189, 423);
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = "گردش اسناد دریافتنی";
             this.uiPanel1.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -147,9 +147,9 @@
             // uiPanel1Container
             // 
             this.uiPanel1Container.Controls.Add(this.gridEX_Turn);
-            this.uiPanel1Container.Location = new System.Drawing.Point(1, 21);
+            this.uiPanel1Container.Location = new System.Drawing.Point(1, 24);
             this.uiPanel1Container.Name = "uiPanel1Container";
-            this.uiPanel1Container.Size = new System.Drawing.Size(183, 349);
+            this.uiPanel1Container.Size = new System.Drawing.Size(183, 398);
             this.uiPanel1Container.TabIndex = 0;
             // 
             // gridEX_Turn
@@ -197,7 +197,7 @@
             this.gridEX_Turn.RowFormatStyle.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.gridEX_Turn.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX_Turn.SettingsKey = "Form03_ViewReceivedChq";
-            this.gridEX_Turn.Size = new System.Drawing.Size(183, 349);
+            this.gridEX_Turn.Size = new System.Drawing.Size(183, 398);
             this.gridEX_Turn.TabIndex = 1;
             this.gridEX_Turn.TotalRowFormatStyle.BackColor = System.Drawing.Color.Azure;
             this.gridEX_Turn.TotalRowPosition = Janus.Windows.GridEX.TotalRowPosition.BottomFixed;
@@ -209,9 +209,9 @@
             this.uiPanel0.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.FloatingLocation = new System.Drawing.Point(381, 399);
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
-            this.uiPanel0.Location = new System.Drawing.Point(192, 28);
+            this.uiPanel0.Location = new System.Drawing.Point(192, 30);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(589, 371);
+            this.uiPanel0.Size = new System.Drawing.Size(594, 423);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "اسناد دریافتنی";
             this.uiPanel0.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -221,7 +221,7 @@
             this.uiPanel0Container.Controls.Add(this.superTabControl1);
             this.uiPanel0Container.Location = new System.Drawing.Point(1, 1);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(587, 369);
+            this.uiPanel0Container.Size = new System.Drawing.Size(592, 421);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // superTabControl1
@@ -251,7 +251,7 @@
             this.superTabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.superTabControl1.SelectedTabFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.superTabControl1.SelectedTabIndex = 0;
-            this.superTabControl1.Size = new System.Drawing.Size(587, 369);
+            this.superTabControl1.Size = new System.Drawing.Size(592, 421);
             this.superTabControl1.TabFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.superTabControl1.TabIndex = 39;
             this.superTabControl1.TabLayoutType = DevComponents.DotNetBar.eSuperTabLayoutType.MultiLine;
@@ -265,9 +265,9 @@
             // 
             this.superTabControlPanel1.Controls.Add(this.gridEX1);
             this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 24);
+            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 27);
             this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(587, 345);
+            this.superTabControlPanel1.Size = new System.Drawing.Size(592, 394);
             this.superTabControlPanel1.TabIndex = 1;
             this.superTabControlPanel1.TabItem = this.superTabItem1;
             // 
@@ -284,7 +284,7 @@
             this.gridEX1.CardInnerSpacing = 7;
             this.gridEX1.CardSpacing = 6;
             this.gridEX1.CardViewGridlines = Janus.Windows.GridEX.CardViewGridlines.FieldsOnly;
-            this.gridEX1.CardWidth = 573;
+            this.gridEX1.CardWidth = 578;
             this.gridEX1.CenterSingleCard = false;
             this.gridEX1.DataSource = this.table_035_ReceiptChequesBindingSource;
             this.gridEX1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -314,7 +314,7 @@
             this.gridEX1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.gridEX1.RowFormatStyle.BackColor = System.Drawing.Color.Transparent;
             this.gridEX1.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.gridEX1.Size = new System.Drawing.Size(587, 345);
+            this.gridEX1.Size = new System.Drawing.Size(592, 394);
             this.gridEX1.TabIndex = 16;
             this.gridEX1.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.TotalRowFormatStyle.BackColor = System.Drawing.Color.AntiqueWhite;
@@ -347,6 +347,7 @@
             this.bindingNavigator1.CountItem = null;
             this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.toolStripSeparator2,
@@ -373,7 +374,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(784, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(789, 27);
             this.bindingNavigator1.TabIndex = 21;
             this.bindingNavigator1.TabStop = true;
             this.bindingNavigator1.Text = "bindingNavigator1";
@@ -384,14 +385,14 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             this.bindingNavigatorMoveFirstItem.Click += new System.EventHandler(this.bindingNavigatorMoveFirstItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMovePreviousItem
             // 
@@ -399,14 +400,14 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             this.bindingNavigatorMovePreviousItem.Click += new System.EventHandler(this.bindingNavigatorMovePreviousItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -414,14 +415,14 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             this.bindingNavigatorMoveNextItem.Click += new System.EventHandler(this.bindingNavigatorMoveNextItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveLastItem
             // 
@@ -429,28 +430,28 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             this.bindingNavigatorMoveLastItem.Click += new System.EventHandler(this.bindingNavigatorMoveLastItem_Click);
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_Delete
             // 
             this.btn_Delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_Delete.Image")));
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.RightToLeftAutoMirrorImage = true;
-            this.btn_Delete.Size = new System.Drawing.Size(50, 22);
+            this.btn_Delete.Size = new System.Drawing.Size(61, 24);
             this.btn_Delete.Text = "حذف";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // toolStripButton1
             // 
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripButton1.Size = new System.Drawing.Size(6, 27);
             // 
             // bt_Print
             // 
@@ -459,7 +460,7 @@
             this.bt_Print.Name = "bt_Print";
             this.bt_Print.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bt_Print.RightToLeftAutoMirrorImage = true;
-            this.bt_Print.Size = new System.Drawing.Size(46, 22);
+            this.bt_Print.Size = new System.Drawing.Size(56, 24);
             this.bt_Print.Text = "چاپ";
             this.bt_Print.ToolTipText = "Ctrl+P";
             this.bt_Print.Click += new System.EventHandler(this.bt_Print_Click);
@@ -467,14 +468,14 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_New
             // 
             this.btn_New.Image = ((System.Drawing.Image)(resources.GetObject("btn_New.Image")));
             this.btn_New.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_New.Name = "btn_New";
-            this.btn_New.Size = new System.Drawing.Size(49, 22);
+            this.btn_New.Size = new System.Drawing.Size(61, 24);
             this.btn_New.Text = "جدید";
             this.btn_New.Click += new System.EventHandler(this.btn_New_Click);
             // 
@@ -483,7 +484,7 @@
             this.btn_Save.Image = ((System.Drawing.Image)(resources.GetObject("btn_Save.Image")));
             this.btn_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(53, 22);
+            this.btn_Save.Size = new System.Drawing.Size(66, 24);
             this.btn_Save.Text = "ذخیره";
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
@@ -498,7 +499,7 @@
             this.mnu_SearchType.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.mnu_SearchType.Name = "mnu_SearchType";
             this.mnu_SearchType.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.mnu_SearchType.Size = new System.Drawing.Size(29, 22);
+            this.mnu_SearchType.Size = new System.Drawing.Size(34, 24);
             this.mnu_SearchType.Text = "جستجو بر اساس  ...";
             // 
             // mnu_Search_NumberBack
@@ -506,14 +507,14 @@
             this.mnu_Search_NumberBack.Checked = true;
             this.mnu_Search_NumberBack.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mnu_Search_NumberBack.Name = "mnu_Search_NumberBack";
-            this.mnu_Search_NumberBack.Size = new System.Drawing.Size(220, 22);
+            this.mnu_Search_NumberBack.Size = new System.Drawing.Size(278, 26);
             this.mnu_Search_NumberBack.Text = "بر اساس شماره پشت نمره جک";
             this.mnu_Search_NumberBack.Click += new System.EventHandler(this.mnu_Search_NumberBack_Click);
             // 
             // mnu_Search_ChqNumber
             // 
             this.mnu_Search_ChqNumber.Name = "mnu_Search_ChqNumber";
-            this.mnu_Search_ChqNumber.Size = new System.Drawing.Size(220, 22);
+            this.mnu_Search_ChqNumber.Size = new System.Drawing.Size(278, 26);
             this.mnu_Search_ChqNumber.Text = "بر اساس شماره چک";
             this.mnu_Search_ChqNumber.Click += new System.EventHandler(this.mnu_Search_ChqNumber_Click);
             // 
@@ -523,7 +524,7 @@
             this.btn_Search.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.Image")));
             this.btn_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(147, 22);
+            this.btn_Search.Size = new System.Drawing.Size(192, 24);
             this.btn_Search.Text = "                                        ";
             this.btn_Search.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_Search.ToolTipText = "جستجو";
@@ -541,14 +542,14 @@
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
             this.toolStripDropDownButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(70, 22);
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(84, 24);
             this.toolStripDropDownButton1.Text = "عملیات";
             // 
             // btn_Doc
             // 
             this.btn_Doc.Name = "btn_Doc";
             this.btn_Doc.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.btn_Doc.Size = new System.Drawing.Size(192, 22);
+            this.btn_Doc.Size = new System.Drawing.Size(238, 26);
             this.btn_Doc.Text = "صدور سند حسابداری";
             this.btn_Doc.Visible = false;
             this.btn_Doc.Click += new System.EventHandler(this.btn_Doc_Click);
@@ -556,7 +557,7 @@
             // toolStripSeparator19
             // 
             this.toolStripSeparator19.Name = "toolStripSeparator19";
-            this.toolStripSeparator19.Size = new System.Drawing.Size(189, 6);
+            this.toolStripSeparator19.Size = new System.Drawing.Size(235, 6);
             this.toolStripSeparator19.Visible = false;
             // 
             // bt_DelTurns
@@ -564,14 +565,14 @@
             this.bt_DelTurns.Image = ((System.Drawing.Image)(resources.GetObject("bt_DelTurns.Image")));
             this.bt_DelTurns.Name = "bt_DelTurns";
             this.bt_DelTurns.ShortcutKeys = System.Windows.Forms.Keys.F8;
-            this.bt_DelTurns.Size = new System.Drawing.Size(192, 22);
+            this.bt_DelTurns.Size = new System.Drawing.Size(238, 26);
             this.bt_DelTurns.Text = "حذف گردش";
             this.bt_DelTurns.Click += new System.EventHandler(this.bt_DelTurns_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(189, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(235, 6);
             // 
             // txt_Search
             // 
@@ -581,9 +582,9 @@
             // 
             this.txt_Search.Border.Class = "TextBoxBorder";
             this.txt_Search.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txt_Search.Location = new System.Drawing.Point(632, 1);
+            this.txt_Search.Location = new System.Drawing.Point(637, 1);
             this.txt_Search.Name = "txt_Search";
-            this.txt_Search.Size = new System.Drawing.Size(117, 21);
+            this.txt_Search.Size = new System.Drawing.Size(117, 24);
             this.txt_Search.TabIndex = 23;
             this.txt_Search.WatermarkText = "جستجــــــــــــو";
             this.txt_Search.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Search_KeyPress);
@@ -616,9 +617,9 @@
             // 
             // Frm_01_new_Recipt_Cheques
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 402);
+            this.ClientSize = new System.Drawing.Size(789, 456);
             this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.uiPanel0);
             this.Controls.Add(this.uiPanel1);

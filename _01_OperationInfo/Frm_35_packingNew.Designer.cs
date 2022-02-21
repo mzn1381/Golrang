@@ -52,13 +52,13 @@
             System.Windows.Forms.Label label19;
             System.Windows.Forms.Label label20;
             Janus.Windows.GridEX.GridEXLayout mlt_Num_Product_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_35_packingNew));
             Janus.Windows.GridEX.GridEXLayout mlt_Machine_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_NameCustomer_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_CodeOrderColor_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_TypeCloth_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_TypeColor_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_Return_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_35_packingNew));
             Janus.Windows.GridEX.GridEXLayout mlt_TypeRerturn_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_Function_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_Ware_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
@@ -389,7 +389,7 @@
             // 
             label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label14.AutoSize = true;
-            label14.Location = new System.Drawing.Point(508, 17);
+            label14.Location = new System.Drawing.Point(550, 17);
             label14.Name = "label14";
             label14.Size = new System.Drawing.Size(208, 17);
             label14.TabIndex = 103;
@@ -399,7 +399,7 @@
             // 
             label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label18.AutoSize = true;
-            label18.Location = new System.Drawing.Point(504, 86);
+            label18.Location = new System.Drawing.Point(546, 86);
             label18.Name = "label18";
             label18.Size = new System.Drawing.Size(210, 17);
             label18.TabIndex = 105;
@@ -409,7 +409,7 @@
             // 
             label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label17.AutoSize = true;
-            label17.Location = new System.Drawing.Point(502, 154);
+            label17.Location = new System.Drawing.Point(544, 154);
             label17.Name = "label17";
             label17.Size = new System.Drawing.Size(211, 17);
             label17.TabIndex = 108;
@@ -461,7 +461,7 @@
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("e27f47dd-8b8d-4e9d-be05-9f0debffc6cc"), Janus.Windows.UI.Dock.PanelGroupStyle.Tab, Janus.Windows.UI.Dock.PanelDockStyle.Right, true, new System.Drawing.Size(299, 474), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("04d3b8c5-94fb-402f-b364-5171f6e37c5c"), new System.Guid("e27f47dd-8b8d-4e9d-be05-9f0debffc6cc"), -1, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("088b065f-bbd7-4e7d-a2d7-559635f1bf56"), new System.Guid("e27f47dd-8b8d-4e9d-be05-9f0debffc6cc"), -1, true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("b761428c-be6d-4805-bb29-e239b04ae932"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Fill, false, new System.Drawing.Size(681, 474), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("b761428c-be6d-4805-bb29-e239b04ae932"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Fill, false, new System.Drawing.Size(723, 474), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("901b7bf5-5a12-494b-b3a0-c1b6d0b74e85"), new System.Guid("b761428c-be6d-4805-bb29-e239b04ae932"), 274, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("8a062cb9-b34e-4a53-b23d-732b50d18e25"), new System.Guid("b761428c-be6d-4805-bb29-e239b04ae932"), 198, true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("8f8a6bb9-3c24-41c1-ae65-c9e1d6dca7b9"), new System.Drawing.Point(-1, -1), new System.Drawing.Size(-1, -1), false);
@@ -478,9 +478,9 @@
             this.uiPanel2.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel2.FloatingLocation = new System.Drawing.Point(935, 427);
             this.uiPanel2.GroupStyle = Janus.Windows.UI.Dock.PanelGroupStyle.Tab;
-            this.uiPanel2.Location = new System.Drawing.Point(684, 30);
+            this.uiPanel2.Location = new System.Drawing.Point(726, 30);
             this.uiPanel2.Name = "uiPanel2";
-            this.uiPanel2.SelectedPanel = this.uiPanel5;
+            this.uiPanel2.SelectedPanel = this.uiPanel6;
             this.uiPanel2.Size = new System.Drawing.Size(299, 474);
             this.uiPanel2.TabIndex = 4;
             this.uiPanel2.Text = "اطلاعات بسته بندی";
@@ -519,12 +519,12 @@
             // 
             this.txt_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Description.Location = new System.Drawing.Point(9, 338);
+            this.txt_Description.Location = new System.Drawing.Point(9, 379);
             this.txt_Description.Multiline = true;
             this.txt_Description.Name = "txt_Description";
             this.txt_Description.ReadOnly = true;
             this.txt_Description.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_Description.Size = new System.Drawing.Size(185, 51);
+            this.txt_Description.Size = new System.Drawing.Size(186, 10);
             this.txt_Description.TabIndex = 6;
             // 
             // mlt_Num_Product
@@ -917,7 +917,7 @@
             // 
             this.uiPanelGroup2.Location = new System.Drawing.Point(3, 30);
             this.uiPanelGroup2.Name = "uiPanelGroup2";
-            this.uiPanelGroup2.Size = new System.Drawing.Size(681, 474);
+            this.uiPanelGroup2.Size = new System.Drawing.Size(723, 474);
             this.uiPanelGroup2.TabIndex = 102;
             // 
             // uiPanel1
@@ -928,7 +928,7 @@
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
             this.uiPanel1.Location = new System.Drawing.Point(0, 0);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(681, 273);
+            this.uiPanel1.Size = new System.Drawing.Size(723, 273);
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = "Panel 1";
             // 
@@ -937,7 +937,7 @@
             this.uiPanel1Container.Controls.Add(this.groupBox2);
             this.uiPanel1Container.Location = new System.Drawing.Point(1, 1);
             this.uiPanel1Container.Name = "uiPanel1Container";
-            this.uiPanel1Container.Size = new System.Drawing.Size(679, 271);
+            this.uiPanel1Container.Size = new System.Drawing.Size(721, 271);
             this.uiPanel1Container.TabIndex = 0;
             // 
             // groupBox2
@@ -955,7 +955,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(679, 271);
+            this.groupBox2.Size = new System.Drawing.Size(721, 271);
             this.groupBox2.TabIndex = 97;
             this.groupBox2.TabStop = false;
             // 
@@ -966,7 +966,7 @@
             this.txt_meter.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_meter.Location = new System.Drawing.Point(11, 174);
             this.txt_meter.Name = "txt_meter";
-            this.txt_meter.Size = new System.Drawing.Size(658, 24);
+            this.txt_meter.Size = new System.Drawing.Size(700, 24);
             this.txt_meter.TabIndex = 107;
             this.txt_meter.Text = "0";
             this.txt_meter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -979,7 +979,7 @@
             this.txt_Desc.Location = new System.Drawing.Point(11, 101);
             this.txt_Desc.Multiline = true;
             this.txt_Desc.Name = "txt_Desc";
-            this.txt_Desc.Size = new System.Drawing.Size(658, 50);
+            this.txt_Desc.Size = new System.Drawing.Size(700, 50);
             this.txt_Desc.TabIndex = 106;
             this.txt_Desc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Desc_KeyPress);
             // 
@@ -989,7 +989,7 @@
             this.btn_R_D.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btn_R_D.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_R_D.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_R_D.Location = new System.Drawing.Point(277, 230);
+            this.btn_R_D.Location = new System.Drawing.Point(298, 230);
             this.btn_R_D.Name = "btn_R_D";
             this.btn_R_D.Size = new System.Drawing.Size(119, 30);
             this.btn_R_D.TabIndex = 102;
@@ -1005,7 +1005,7 @@
             this.txt_weight.FormatString = "#,##0.###";
             this.txt_weight.Location = new System.Drawing.Point(24, 37);
             this.txt_weight.Name = "txt_weight";
-            this.txt_weight.Size = new System.Drawing.Size(658, 56);
+            this.txt_weight.Size = new System.Drawing.Size(700, 56);
             this.txt_weight.TabIndex = 96;
             this.txt_weight.Text = "0";
             this.txt_weight.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center;
@@ -1021,7 +1021,7 @@
             this.rb_select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rb_select.AutoSize = true;
             this.rb_select.Checked = true;
-            this.rb_select.Location = new System.Drawing.Point(318, 201);
+            this.rb_select.Location = new System.Drawing.Point(339, 201);
             this.rb_select.Name = "rb_select";
             this.rb_select.Size = new System.Drawing.Size(93, 21);
             this.rb_select.TabIndex = 6;
@@ -1035,7 +1035,7 @@
             // 
             this.ch_Auto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ch_Auto.AutoSize = true;
-            this.ch_Auto.Location = new System.Drawing.Point(173, 201);
+            this.ch_Auto.Location = new System.Drawing.Point(194, 201);
             this.ch_Auto.Name = "ch_Auto";
             this.ch_Auto.Size = new System.Drawing.Size(105, 21);
             this.ch_Auto.TabIndex = 95;
@@ -1048,7 +1048,7 @@
             // 
             this.rb_Auto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rb_Auto.AutoSize = true;
-            this.rb_Auto.Location = new System.Drawing.Point(454, 201);
+            this.rb_Auto.Location = new System.Drawing.Point(475, 201);
             this.rb_Auto.Name = "rb_Auto";
             this.rb_Auto.Size = new System.Drawing.Size(100, 21);
             this.rb_Auto.TabIndex = 6;
@@ -1064,7 +1064,7 @@
             this.uiPanel3.InnerContainer = this.uiPanel3Container;
             this.uiPanel3.Location = new System.Drawing.Point(0, 277);
             this.uiPanel3.Name = "uiPanel3";
-            this.uiPanel3.Size = new System.Drawing.Size(681, 197);
+            this.uiPanel3.Size = new System.Drawing.Size(723, 197);
             this.uiPanel3.TabIndex = 4;
             // 
             // uiPanel3Container
@@ -1077,7 +1077,7 @@
             this.uiPanel3Container.Controls.Add(this.txt_Barcode);
             this.uiPanel3Container.Location = new System.Drawing.Point(1, 1);
             this.uiPanel3Container.Name = "uiPanel3Container";
-            this.uiPanel3Container.Size = new System.Drawing.Size(679, 195);
+            this.uiPanel3Container.Size = new System.Drawing.Size(721, 195);
             this.uiPanel3Container.TabIndex = 0;
             // 
             // gridEX2
@@ -1106,7 +1106,7 @@
             this.gridEX2.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX2.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.SettingsKey = "Frm_15_InfoServiceGrid_6";
-            this.gridEX2.Size = new System.Drawing.Size(679, 195);
+            this.gridEX2.Size = new System.Drawing.Size(721, 195);
             this.gridEX2.TabIndex = 101;
             this.gridEX2.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -1135,7 +1135,7 @@
             this.txt_weight_P.Name = "txt_weight_P";
             this.txt_weight_P.ReadOnly = true;
             this.txt_weight_P.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_weight_P.Size = new System.Drawing.Size(31, 24);
+            this.txt_weight_P.Size = new System.Drawing.Size(73, 24);
             this.txt_weight_P.TabIndex = 17;
             // 
             // button1
@@ -1148,7 +1148,7 @@
             this.button1.Location = new System.Drawing.Point(247, 124);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(68, 26);
+            this.button1.Size = new System.Drawing.Size(110, 26);
             this.button1.TabIndex = 15;
             this.button1.Text = "درج اطلاعات";
             this.button1.UseVisualStyleBackColor = false;
@@ -1161,7 +1161,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_ID.Location = new System.Drawing.Point(339, 128);
             this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(30, 24);
+            this.txt_ID.Size = new System.Drawing.Size(72, 24);
             this.txt_ID.TabIndex = 14;
             // 
             // txt_ID_P
@@ -1172,7 +1172,7 @@
             this.txt_ID_P.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table_050_Packaging1BindingSource, "ID", true));
             this.txt_ID_P.Location = new System.Drawing.Point(307, 130);
             this.txt_ID_P.Name = "txt_ID_P";
-            this.txt_ID_P.Size = new System.Drawing.Size(30, 24);
+            this.txt_ID_P.Size = new System.Drawing.Size(72, 24);
             this.txt_ID_P.TabIndex = 16;
             // 
             // txt_Barcode
@@ -1182,7 +1182,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Barcode.Location = new System.Drawing.Point(376, 130);
             this.txt_Barcode.Name = "txt_Barcode";
-            this.txt_Barcode.Size = new System.Drawing.Size(30, 24);
+            this.txt_Barcode.Size = new System.Drawing.Size(72, 24);
             this.txt_Barcode.TabIndex = 124;
             // 
             // contextMenuStrip1
@@ -1309,7 +1309,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(986, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1028, 27);
             this.bindingNavigator1.TabIndex = 99;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -1486,7 +1486,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(986, 507);
+            this.ClientSize = new System.Drawing.Size(1028, 507);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.uiPanelGroup2);
             this.Controls.Add(this.uiPanel2);

@@ -25,11 +25,13 @@ namespace PCLOR._01_OperationInfo
         SqlConnection ConBase = new SqlConnection(Properties.Settings.Default.PBASE);
         private List<InvalidBarcodeViewModel> invalidBarcodes = new List<InvalidBarcodeViewModel>();
         private bool IsCheckBarcodesValid = true;
-        private int FunctionTypeWeave = 0;
-        private int FunctionTypeRecipt = 0;
+        //private int FunctionTypeWeave = 0;
+        //private int FunctionTypeRecipt = 0;
         private string DateNowShamsi = "";
         private int CodeStoreWeaveHistory = 0;
         private int HeaderWeaveHistoryId = 0;
+        private string HeadersReciptId = "";
+        private string HeadersDraftId = "";
 
         public Frm_65_Transfer_Barcode()
         {
@@ -38,11 +40,12 @@ namespace PCLOR._01_OperationInfo
 
         private void Frm_65_Transfer_Barcode_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'pCLOR_1_1400DataSet1.Table_140_Transfer_Barcode' table. You can move, or remove it, as needed.
+            this.table_140_Transfer_BarcodeTableAdapter.Fill(this.pCLOR_1_1400DataSet1.Table_140_Transfer_Barcode);
+            FillFuntionTypes();
+            txtTimeCreate.Text = DateTime.Now.TimeOfDay.ToString().Remove(5);
             btnTransfer.Enabled = false;
             DateNowShamsi = DateTime.Now.ToShamsi();
-            var model = GetCodeOfStoreWeave();
-            FunctionTypeWeave = model["FunctionType"];
-            FunctionTypeRecipt = Convert.ToInt16(ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=30"));
             menuStoresDestination.DataSource = GetStores(null);
             menuStoresStart.DataSource = GetStores(null);
             if (checkRegAuto.Checked)
@@ -50,7 +53,17 @@ namespace PCLOR._01_OperationInfo
         }
 
 
-
+        private void FillFuntionTypes()
+        {
+            var query = $@"Select ColumnId as Id ,Column02 as Name from table_005_PwhrsOperation where Column16=1
+                                     Select ColumnId as Id ,Column02  as Name from table_005_PwhrsOperation where Column16=0";
+            using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
+            {
+                var res = db.QueryMultiple(query);
+                menuFunctionTypeDraft.DataSource = res.Read<FunctionTypesViewModel>();
+                menuFunctionTypeRecipt.DataSource = res.Read<FunctionTypesViewModel>();
+            }
+        }
 
 
         private IEnumerable<ShowStoresViewModel> GetStores(string name)
@@ -145,7 +158,7 @@ SELECT
                 menuStoresStart.ReadOnly = false;
         }
 
-        public void Recipt(GridEXRow row)
+        public int Recipt(GridEXRow row)
         {
             try
             {
@@ -154,25 +167,26 @@ SELECT
                 var barcode = row.Cells["Barcode"].Value.ToString();
                 var weight = row.Cells["Weight"].Value.ToString();
                 var deviceId = row.Cells["DeviceId"].Value.ToString();
-                var headerReciptId = BasicFunction.Recipt(ConWare, DateNowShamsi, 0, ClDoc, Convert.ToInt32(menuStoresDestination.Value.ToString()), FunctionTypeRecipt, null, "", codeCommodit: codeCommodity);
-                MyBasicFunction.BasicFunction.ReciptChild(ConWare: ConWare, headerReciptId, value: 1, Convert.ToInt32(codeCommodity), weight: Convert.ToDecimal(weight), barcode: barcode, Convert.ToInt32(deviceId));
-
+                var headerReciptId = BasicFunction.Recipt(ConWare, txt_DateTime.Text, 0, ClDoc, Convert.ToInt32(menuStoresDestination.Value.ToString()), Convert.ToInt32(menuFunctionTypeRecipt.Value.ToString()), null, "", codeCommodit: codeCommodity);
+                return MyBasicFunction.BasicFunction.ReciptChild(ConWare: ConWare, headerReciptId, value: 1, Convert.ToInt32(codeCommodity), weight: Convert.ToDecimal(weight), barcode: barcode, Convert.ToInt32(deviceId));
+                HeadersReciptId = headerReciptId.ToString();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                return 0;
             }
 
         }
 
-        public void ChangeCodeStoreOfBarcode(GridEXRow row)
+        public void ChangeCodeStoreOfBarcode(GridEXRow row, int codeStore)
         {
             try
             {
                 var barcode = row.Cells["Barcode"].Value.ToString();
                 var codeStoreDestination = Convert.ToInt32(menuStoresDestination.Value);
                 var query = $@"
-                                update Table_115_Product Set CodeStore={codeStoreDestination}
+                                update Table_115_Product Set CodeStore={codeStore}
                                 where Barcode = N'{barcode}'  ";
                 using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
                 {
@@ -185,7 +199,7 @@ SELECT
             }
         }
 
-        public void Draft(GridEXRow item, int codeSourceStore)
+        public int Draft(GridEXRow item, int codeSourceStore)
         {
             try
             {
@@ -200,13 +214,14 @@ SELECT
                 //    codeWare = Convert.ToInt32(item.Cells["CodeStore"].Value.ToString());
                 if (CodeStoreWeaveHistory != codeSourceStore)
                 {
-                    var headerWeaveId = BasicFunction.ExportDraftHeader(ConWare, ClDoc, DateNowShamsi, codeSourceStore,
-                        FunctionTypeWeave, 0, $@"انتقال بارکد {item.Cells["Barcode"]}  از انبار  {item.Cells["StoreName"]} به انبار  {menuStoresDestination.Text}", item.Cells["Barcode"].Value.ToString());
+                    var headerWeaveId = BasicFunction.ExportDraftHeader(ConWare, ClDoc, txt_DateTime.Text, codeSourceStore,
+                      Convert.ToInt32(menuFunctionTypeDraft.Value.ToString()), 0, $@"انتقال بارکد {item.Cells["Barcode"]}  از انبار  {item.Cells["StoreName"]} به انبار  {menuStoresDestination.Text}", item.Cells["Barcode"].Value.ToString());
                     HeaderWeaveHistoryId = headerWeaveId;
                     CodeStoreWeaveHistory = codeSourceStore;
+                    HeadersDraftId += headerWeaveId.ToString() + ",";
                 }
-                BasicFunction.ExportDraftChild(HeaderWeaveHistoryId, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()), CodeStoreWeaveHistory
-                    , 1, item.Cells["Barcode"].Value.ToString(), DateNowShamsi, ConWare);
+                return BasicFunction.ExportDraftChild(HeaderWeaveHistoryId, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()), CodeStoreWeaveHistory
+                       , 1, item.Cells["Barcode"].Value.ToString(), txt_DateTime.Text, ConWare);
 
                 ///جزیئات حواله به انبار بافندگی
                 //foreach (var item in gridEX8.CurrentRow)
@@ -216,6 +231,7 @@ SELECT
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                return 0;
             }
 
         }
@@ -264,9 +280,56 @@ SELECT
                     }
                 }
             }
-
-
         }
+
+
+
+        //private void DeleteTransferCode
+
+        private void AddToTranferBarcode(string barcode, string previousStore, string currentStore, int idChildRecipt, int idChildDraft, int previousStoreCode)
+        {
+            var query = $@"
+INSERT INTO [dbo].[Table_140_Transfer_Barcode]
+           ([Barcode]
+           ,[PreviousStore]
+           ,[CurrentStore]
+           ,[DateTransfer]
+           ,[FunctionTypeRecipt]
+           ,[FunctionTypeDraft]
+           ,[ReciptChildId]
+           ,[DraftChildId]
+           ,[CreateUser]
+           ,[CreateDate]
+           ,[EditUser]
+           ,[EditDate] ,[CurrentStoreCode]
+           ,[PreviousStoreCode])
+VALUES
+            (
+            @Barcode,@PreviousStore,@CurrentStore,@DateTransfer,@FunctionTypeRecipt,@FunctionTypeDraft,
+            @ReciptChildId,@DraftChildId,@CreateUser,GETDATE() , 
+            @EditUser,@EditDate,@CurrentStoreCode,@PreviousStoreCode
+            )";
+            using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+            {
+                db.Query(query, new
+                {
+                    @Barcode = barcode,
+                    @PreviousStore = previousStore,
+                    @CurrentStore = currentStore,
+                    @DateTransfer = txt_DateTime.Text,
+                    @FunctionTypeRecipt = menuFunctionTypeRecipt.Text,
+                    @FunctionTypeDraft = menuFunctionTypeDraft.Text,
+                    @ReciptChildId = idChildRecipt,
+                    @DraftChildId = idChildDraft,
+                    @CurrentStoreCode = Convert.ToInt32(menuStoresDestination.Value.ToString()),
+                    @PreviousStoreCode = previousStoreCode,
+                    @CreateUser = Class_BasicOperation._UserName,
+                    @EditUser = Class_BasicOperation._UserName,
+                    @EditDate = DateTime.Now
+                });
+            }
+        }
+
 
         private void btnTransfer_Click(object sender, EventArgs e)
         {
@@ -277,15 +340,19 @@ SELECT
                     MessageBox.Show("لطفا یک بارکد را برای انتقال انتخاب کنید");
                     return;
                 }
-                //var stateLoop = Parallel.ForEach(gridEX8.GetRows(), item =>
-                //   {
-                //       Recipt(item);
-                //       Draft(item);
-                //       ChangeCodeStoreOfBarcode(item);
-                //   }).IsCompleted;
-                //while (!stateLoop)
-                //{
-                //}
+
+                if (string.IsNullOrEmpty(menuFunctionTypeRecipt.Text.Trim()) || menuFunctionTypeRecipt.Value.ToString().Trim() == "0" || string.IsNullOrEmpty(menuFunctionTypeRecipt.Value.ToString().Trim()))
+                {
+                    MessageBox.Show("لطفا نوع رسید را  انتخاب کنید");
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(menuFunctionTypeDraft.Text.Trim()) || menuFunctionTypeDraft.Value.ToString().Trim() == "0" || string.IsNullOrEmpty(menuFunctionTypeDraft.Value.ToString().Trim()))
+                {
+                    MessageBox.Show("لطفا نوع حواله را  انتخاب کنید");
+                    return;
+                }
+
                 if (!checkRegAuto.Checked)
                 {
                     if (string.IsNullOrEmpty(menuStoresStart.Text.Trim()) || menuStoresStart.Value.ToString().Trim() == "0" || string.IsNullOrEmpty(menuStoresStart.Value.ToString().Trim()))
@@ -294,46 +361,41 @@ SELECT
                         return;
                     }
                 }
-                //var res = Task.Factory.StartNew(() =>
-                //  {
+                var idChildRecipt = 0;
+                var idChildDraft = 0;
                 var codeSourceStore = 0;
                 if (!checkRegAuto.Checked)
                     codeSourceStore = Convert.ToInt32(menuStoresStart.Value);
-
                 foreach (var item in gridEX8.GetRows())
                 {
-                    Recipt(item);
-                    Draft(item, codeSourceStore);
-                    ChangeCodeStoreOfBarcode(item);
+                    idChildRecipt = Recipt(item);
+                    idChildDraft = Draft(item, codeSourceStore);
+                    ChangeCodeStoreOfBarcode(item, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()));
+                    AddToTranferBarcode(item.Cells["Barcode"].Value.ToString(), item.Cells["StoreName"].Value.ToString(), menuStoresDestination.Text, idChildRecipt, idChildDraft, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()));
                 }
-                //}).ContinueWith((t) =>
-                //{
-                MessageBox.Show("انتقال با موفقیت انجام شد !");
+                HeadersDraftId = HeadersDraftId.TrimEnd(',');
+                MessageBox.Show("");
                 this.Close();
-                //});
-                //this.Close();
-                //res.Wait();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("انتقال با شکست مواجه شد!");
                 MessageBox.Show(ex.Message);
             }
-
         }
 
         private void gridEX8_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
-            var row = gridEX8.GetRow();
-            var barcode = row.Cells["Barcode"].Text.ToString();
-            if (!string.IsNullOrEmpty(barcode))
-            {
-                txtBarcode.Text = barcode;
-                txtDeviceName.Text = row.Cells["NameDevice"].Text.ToString();
-                txtStoreName.Text = row.Cells["StoreName"].Text.ToString();
-                txtDescription.Text = row.Cells["Description"].Text.ToString();
-            }
-            return;
+            //var row = gridEX8.GetRow();
+            ////var barcode = row.Cells["Barcode"].Text.ToString();
+            //if (!string.IsNullOrEmpty(barcode))
+            //{
+            //    //txtTimeCreate.Text = barcode;
+            //    //txtUserRegister.Text = row.Cells["NameDevice"].Text.ToString();
+            //    //txtStoreName.Text = row.Cells["StoreName"].Text.ToString();
+            //    //txtDescription.Text = row.Cells["Description"].Text.ToString();
+            //}
+            //return;
         }
 
         private void gridEX8_FormattingRow(object sender, Janus.Windows.GridEX.RowLoadEventArgs e)

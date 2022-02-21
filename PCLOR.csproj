@@ -388,6 +388,7 @@
     <Compile Include="Models\ErrorBarcodeProductEnum.cs" />
     <Compile Include="Models\FabricTypeDropDownViewModel.cs" />
     <Compile Include="Models\FillDetailBarcodeViewModel.cs" />
+    <Compile Include="Models\FunctionTypesViewModel.cs" />
     <Compile Include="Models\InvalidBarcodeViewModel.cs" />
     <Compile Include="Models\Machine.cs" />
     <Compile Include="Models\MachinePoint.cs" />
@@ -408,6 +409,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PCLOR_1_1400DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PCLOR_1_1400DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PCLOR_1_1400DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Product\DataSet_05_Product.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1580,6 +1586,17 @@
     </None>
     <None Include="PCLOR_1_1400DataSet.xss">
       <DependentUpon>PCLOR_1_1400DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PCLOR_1_1400DataSet1.xsc">
+      <DependentUpon>PCLOR_1_1400DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PCLOR_1_1400DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PCLOR_1_1400DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PCLOR_1_1400DataSet1.xss">
+      <DependentUpon>PCLOR_1_1400DataSet1.xsd</DependentUpon>
     </None>
     <None Include="Product\DataSet_05_Product.xsc">
       <DependentUpon>DataSet_05_Product.xsd</DependentUpon>

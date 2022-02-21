@@ -247,7 +247,7 @@ namespace PCLOR.Product
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("571b68ab-1038-437d-8fee-6960a2d27f1a"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(297, 708), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("571b68ab-1038-437d-8fee-6960a2d27f1a"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(297, 704), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("e0d90735-8e9b-4976-b1b7-b3fe92f0aec3"), new System.Drawing.Point(674, 410), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("571b68ab-1038-437d-8fee-6960a2d27f1a"), new System.Drawing.Point(654, 425), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("35c9b614-4265-4732-ad4b-916709ed15a7"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, true, new System.Drawing.Point(204, 490), new System.Drawing.Size(200, 200), false);
@@ -258,9 +258,9 @@ namespace PCLOR.Product
             this.uiPanel1.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel1.FloatingLocation = new System.Drawing.Point(654, 425);
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
-            this.uiPanel1.Location = new System.Drawing.Point(607, 30);
+            this.uiPanel1.Location = new System.Drawing.Point(607, 34);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(297, 708);
+            this.uiPanel1.Size = new System.Drawing.Size(297, 704);
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = "اطلاعات سفارش رنگ";
             this.uiPanel1.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -296,7 +296,7 @@ namespace PCLOR.Product
             this.uiPanel1Container.Controls.Add(this.txt_Description);
             this.uiPanel1Container.Location = new System.Drawing.Point(5, 24);
             this.uiPanel1Container.Name = "uiPanel1Container";
-            this.uiPanel1Container.Size = new System.Drawing.Size(291, 683);
+            this.uiPanel1Container.Size = new System.Drawing.Size(291, 679);
             this.uiPanel1Container.TabIndex = 0;
             // 
             // uiComboBox2
@@ -344,7 +344,7 @@ namespace PCLOR.Product
             this.txt_Barcode.Location = new System.Drawing.Point(7, 3);
             this.txt_Barcode.Multiline = true;
             this.txt_Barcode.Name = "txt_Barcode";
-            this.txt_Barcode.Size = new System.Drawing.Size(202, 154);
+            this.txt_Barcode.Size = new System.Drawing.Size(202, 150);
             this.txt_Barcode.TabIndex = 0;
             this.txt_Barcode.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.txt_Barcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Barcode_KeyPress);
@@ -520,7 +520,7 @@ namespace PCLOR.Product
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(907, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(907, 31);
             this.bindingNavigator1.TabIndex = 33;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 

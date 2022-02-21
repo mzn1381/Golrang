@@ -156,7 +156,7 @@ namespace PCLOR.Product
                 table_115_ProductBindingSource.AddNew();
                 //mlt_Machine.Value = _Id;
                 chek_TowPerson.Checked = false;
-                var Barcode = "B" + Convert.ToInt64(ClDoc.ExScalar(ConPCLOR.ConnectionString, "select isnull((select max(ID) from Table_115_Product),1)+10000")) + "P";
+                var Barcode = "B" + Convert.ToInt64(ClDoc.ExScalar(ConPCLOR.ConnectionString, "select isnull((select max(ID) from Table_115_Product),1)+100000")) + "P";
                 //txt_Barcode.Text = Barcode.ToString();
                 double weigh = Convert.ToDouble(txt_weight.Text) / 1000;
 

@@ -89,16 +89,16 @@ namespace PCLOR.MyBasicFunction
                     int codeCommodity = 0;
                     if (string.IsNullOrEmpty(codeCommodit))
                     {
-                    var queryGetcommodity = $@"  SELECT c.CodeCommondity
+                        var queryGetcommodity = $@"  SELECT c.CodeCommondity
                                                  from PCLOR_1_1400.dbo.Table_60_SpecsTechnical as s inner join 
                                                  PCLOR_1_1400.dbo.Table_005_TypeCloth as c on s.FabricType = c.ID
                                                  where s.ID={deviceId}
                                                     ";
-                     codeCommodity = db.QueryFirstOrDefault<int>(queryGetcommodity, null
-                        , commandType: CommandType.Text);
+                        codeCommodity = db.QueryFirstOrDefault<int>(queryGetcommodity, null
+                           , commandType: CommandType.Text);
                     }
                     else
-                        codeCommodity =Convert.ToInt32(codeCommodit);
+                        codeCommodity = Convert.ToInt32(codeCommodit);
                     int ResidNum = ClDoc.MaxNumber(ConWare.ConnectionString, "Table_011_PwhrsReceipt", "Column01");
                     string commandtxt = string.Empty;
                     //commandtxt = @"Declare   @Key   int";
@@ -116,7 +116,7 @@ namespace PCLOR.MyBasicFunction
                                                                  
                                                                           ) VALUES (  {ResidNum} , N'{dateCreate}'  , {wareCode},  {functionType} ,
                                                                         {(string.IsNullOrEmpty(operationCode) ? "N''" : operationCode)},N'' , N'{Class_BasicOperation._UserName}' ,getdate(), N'{Class_BasicOperation._UserName}', getdate() );
-                                                                       select  Max(columnid)  from Table_011_PwhrsReceipt";
+                                                                       select  Max(column01)  from Table_011_PwhrsReceipt";
                     var Key = db.QueryFirstOrDefault<int>(commandtxt, null, commandType: CommandType.Text);
                     return Key;
                 }
@@ -130,7 +130,7 @@ namespace PCLOR.MyBasicFunction
         }
 
 
-        public static void ReciptChild(SqlConnection ConWare, int hedearId, decimal value, int commodityCode, decimal weight, string barcode, int deviceId)
+        public static int ReciptChild(SqlConnection ConWare, int hedearId, decimal value, int commodityCode, decimal weight, string barcode, int deviceId)
         {
 
             using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
@@ -156,12 +156,14 @@ namespace PCLOR.MyBasicFunction
                                    ,[Column35]
                                    ,[Column37]
                            ) VALUES (
-               {hedearId},{commodityCode},1,{value},{value},0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}' ,getdate(),0,0, N'{barcode}' , {weight} , {weight} , N'{deviceId}' );";
-                    db.Execute(query, null, commandType: CommandType.Text);
+               {hedearId},{commodityCode},1,{value},{value},0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}' ,getdate(),0,0, N'{barcode}' , {weight} , {weight} , N'{deviceId}' );
+                SELECT SCOPE_IDENTITY()";
+                    return db.QueryFirstOrDefault<int>(query, null, commandType: CommandType.Text);
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                    return 0;
                 }
             }
             //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["NumberRecipt"] = Key;
@@ -204,7 +206,7 @@ namespace PCLOR.MyBasicFunction
                         column17, column18, column19, Column20, Column21,
                         Column22, Column23, Column24, Column25, Column26)
                         VALUES({DraftNumber},N'{date}',{wareCode},{functionType},{0},N'',0,N'{ Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}'
-                        ,getdate(),0,Null,Null,0,0,0,0,0,0,0,0,0,Null,0,1); SELECT SCOPE_IDENTITY();
+                        ,getdate(),0,Null,Null,0,0,0,0,0,0,0,0,0,Null,0,1); SELECT Max(column01) from Table_007_PwhrsDraft ;
                         ";
             using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
             {
@@ -225,9 +227,10 @@ namespace PCLOR.MyBasicFunction
         }
 
 
-        public static void ExportDraftChild(int headerId, int wareCode, int codeCommodity, decimal consumption, string numberProduct, string date, SqlConnection ConWare)
+        public static int ExportDraftChild(int headerId, int wareCode, int codeCommodity, decimal consumption, string numberProduct, string date, SqlConnection ConWare)
         {
             bool status = false;
+            var result = 0;
             var vahedShomaresh = GetVahedShomareshForCommodity(codeCommodity, ConWare);
 
             var query = $@"
@@ -236,12 +239,12 @@ namespace PCLOR.MyBasicFunction
                            {headerId},{codeCommodity},{vahedShomaresh},0,0,{consumption},{consumption},0,0,0,0,N'
                           ',NULL,NULL,0,0,N'{Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}',getdate(),
                            NULL,NULL,NULL,0,0,0,0,0,0,NULL,NULL,0,0,0,0);
-                           ";
+                          Select SCOPE_IDENTITY() ";
 
             using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
             {
-                var res = db.Execute(query, null);
-                if (res > 0)
+                result = db.QueryFirstOrDefault<int>(query, null);
+                if (result > 0)
                     status = true;
             }
 
@@ -258,40 +261,29 @@ namespace PCLOR.MyBasicFunction
             //        item["Consumption"].ToString() + ",0,0,0,0,N'به شماره کارت تولید" + txt_Number.Text + "',NULL,NULL,0,0,'" + Class_BasicOperation._UserName + "',getdate(),'" + Class_BasicOperation._UserName +
             //        "',getdate(),NULL,NULL,NULL,0,0,0,0,0,0,NULL,NULL,0,0,0,0)");
             //    DetailsIdDraft = DetailsIdDraft + item["ID"].ToString() + ",";
-
-
             //    //ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, @"Update table_40_ColorPrduction set NumberDraft=" + DraftID + " where fk=" + txt_Id.Text);
-
             //    CmdText = CmdText + @"Update " + ConPCLOR.Database + ".dbo.table_40_ColorPrduction set NumberDraft=@DraftID  Where fk=" + txt_Id.Text;
-
-
             //}
             if (status)
             {
                 using (SqlConnection Con = new SqlConnection(PCLOR.Properties.Settings.Default.PWHRS))
                 {
                     Con.Open();
-
                     SqlTransaction sqlTran = Con.BeginTransaction();
                     //SqlCommand Command = Con.CreateCommand();
                     //Command.Transaction = sqlTran;
-
                     try
                     {
                         //Command.CommandText = CmdText;
                         //Command.Parameters.Add(DraftId);
                         //Command.ExecuteNonQuery();
                         sqlTran.Commit();
-                        /////
-
                         try
                         {
                             SqlDataAdapter goodAdapter = new SqlDataAdapter("Select * from Table_008_Child_PwhrsDraft where Column01=" + headerId, ConWare.ConnectionString);
                             DataTable Table = new DataTable();
                             goodAdapter.Fill(Table);
-
                             //محاسبه ارزش و ذخیره آن در جدول Child1
-
                             foreach (DataRow item in Table.Rows)
                             {
                                 if (Class_BasicOperation._WareType)
@@ -304,7 +296,6 @@ namespace PCLOR.MyBasicFunction
                                     SqlCommand UpdateCommand = new SqlCommand("UPDATE Table_008_Child_PwhrsDraft SET  Column15=" + Math.Round(double.Parse(Row[0]["DsinglePrice"].ToString()), 4)
                                         + " , Column16=" + Math.Round(double.Parse(Row[0]["DTotalPrice"].ToString()), 4) + " where ColumnId=" + item["ColumnId"].ToString(), Con);
                                     UpdateCommand.ExecuteNonQuery();
-
                                 }
                                 else
                                 {
@@ -317,11 +308,13 @@ namespace PCLOR.MyBasicFunction
                                 }
 
                             }
+                            
                         }
 
 
                         catch
                         {
+                            return 0;
                         }
 
 
@@ -335,9 +328,10 @@ namespace PCLOR.MyBasicFunction
                         //Class_BasicOperation.CheckExceptionType(es, this.Name);
                     }
                 }
+                return result;
             }
-
-
+            else
+                return 0;
 
             //this.Cursor = Cursors.Default;
 
