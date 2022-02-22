@@ -43,6 +43,7 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel1 = new Janus.Windows.UI.Dock.UIPanel();
             this.uiPanel1Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_Description = new System.Windows.Forms.TextBox();
             this.menuFunctionTypeDraft = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.menuFunctionTypeRecipt = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.txt_DateTime = new System.Windows.Forms.MaskedTextBox();
@@ -56,6 +57,7 @@ namespace PCLOR._01_OperationInfo
             this.btnTransfer = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -66,8 +68,6 @@ namespace PCLOR._01_OperationInfo
             this.pCLOR_1_1400DataSet1 = new PCLOR.PCLOR_1_1400DataSet1();
             this.table140TransferBarcodeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.table_140_Transfer_BarcodeTableAdapter = new PCLOR.PCLOR_1_1400DataSet1TableAdapters.Table_140_Transfer_BarcodeTableAdapter();
-            this.txt_Description = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -81,8 +81,8 @@ namespace PCLOR._01_OperationInfo
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.btn_New = new System.Windows.Forms.ToolStripButton();
             this.btn_Print = new System.Windows.Forms.ToolStripButton();
-            this.txt_Search = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btn_Search = new System.Windows.Forms.ToolStripButton();
+            this.txt_Search = new DevComponents.DotNetBar.Controls.TextBoxX();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).BeginInit();
             this.uiPanel0.SuspendLayout();
@@ -114,8 +114,8 @@ namespace PCLOR._01_OperationInfo
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("da7045e2-8dbe-43b0-b262-2bed3cc27079"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(500, 741), true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("38cef559-5409-431b-80ba-1e13343f4c79"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(336, 741), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("da7045e2-8dbe-43b0-b262-2bed3cc27079"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(500, 773), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("38cef559-5409-431b-80ba-1e13343f4c79"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(336, 773), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("da7045e2-8dbe-43b0-b262-2bed3cc27079"), new System.Drawing.Point(32, 32), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("38cef559-5409-431b-80ba-1e13343f4c79"), new System.Drawing.Point(-1, -1), new System.Drawing.Size(-1, -1), false);
             this.uiPanelManager1.EndPanelInfo();
@@ -129,7 +129,7 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
             this.uiPanel0.Location = new System.Drawing.Point(3, 30);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(500, 741);
+            this.uiPanel0.Size = new System.Drawing.Size(500, 773);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "بارکدها";
             // 
@@ -138,7 +138,7 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel0Container.Controls.Add(this.gridEX8);
             this.uiPanel0Container.Location = new System.Drawing.Point(1, 25);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(494, 715);
+            this.uiPanel0Container.Size = new System.Drawing.Size(494, 747);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // gridEX8
@@ -171,7 +171,7 @@ namespace PCLOR._01_OperationInfo
             this.gridEX8.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX8.ScrollBars = Janus.Windows.GridEX.ScrollBars.Horizontal;
             this.gridEX8.SettingsKey = "Frm_15_InfoServiceGrid_61";
-            this.gridEX8.Size = new System.Drawing.Size(494, 715);
+            this.gridEX8.Size = new System.Drawing.Size(494, 747);
             this.gridEX8.TabIndex = 2;
             this.gridEX8.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX8.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -190,7 +190,7 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
             this.uiPanel1.Location = new System.Drawing.Point(503, 30);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(336, 741);
+            this.uiPanel1.Size = new System.Drawing.Size(336, 773);
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = "مشخصات";
             // 
@@ -199,7 +199,7 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel1Container.Controls.Add(this.groupBox1);
             this.uiPanel1Container.Location = new System.Drawing.Point(1, 25);
             this.uiPanel1Container.Name = "uiPanel1Container";
-            this.uiPanel1Container.Size = new System.Drawing.Size(330, 715);
+            this.uiPanel1Container.Size = new System.Drawing.Size(330, 747);
             this.uiPanel1Container.TabIndex = 0;
             // 
             // groupBox1
@@ -227,10 +227,18 @@ namespace PCLOR._01_OperationInfo
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(330, 715);
+            this.groupBox1.Size = new System.Drawing.Size(330, 747);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "مشخصات بارکد";
+            // 
+            // txt_Description
+            // 
+            this.txt_Description.Location = new System.Drawing.Point(12, 521);
+            this.txt_Description.Multiline = true;
+            this.txt_Description.Name = "txt_Description";
+            this.txt_Description.Size = new System.Drawing.Size(224, 118);
+            this.txt_Description.TabIndex = 226;
             // 
             // menuFunctionTypeDraft
             // 
@@ -396,6 +404,15 @@ namespace PCLOR._01_OperationInfo
             this.label5.TabIndex = 0;
             this.label5.Text = "انبار اتوماتیک";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(244, 566);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "توضیحات";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -466,23 +483,6 @@ namespace PCLOR._01_OperationInfo
             // table_140_Transfer_BarcodeTableAdapter
             // 
             this.table_140_Transfer_BarcodeTableAdapter.ClearBeforeFill = true;
-            // 
-            // txt_Description
-            // 
-            this.txt_Description.Location = new System.Drawing.Point(12, 521);
-            this.txt_Description.Multiline = true;
-            this.txt_Description.Name = "txt_Description";
-            this.txt_Description.Size = new System.Drawing.Size(224, 118);
-            this.txt_Description.TabIndex = 226;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(244, 566);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "توضیحات";
             // 
             // bindingNavigator1
             // 
@@ -612,6 +612,17 @@ namespace PCLOR._01_OperationInfo
             this.btn_Print.Text = "چاپ";
             this.btn_Print.Click += new System.EventHandler(this.btn_Print_Click);
             // 
+            // btn_Search
+            // 
+            this.btn_Search.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btn_Search.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.Image")));
+            this.btn_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(192, 24);
+            this.btn_Search.Text = "                                        ";
+            this.btn_Search.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
+            // 
             // txt_Search
             // 
             this.txt_Search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -626,22 +637,11 @@ namespace PCLOR._01_OperationInfo
             this.txt_Search.TabIndex = 101;
             this.txt_Search.WatermarkText = "جستجــــــــــــو";
             // 
-            // btn_Search
-            // 
-            this.btn_Search.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btn_Search.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.Image")));
-            this.btn_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(192, 24);
-            this.btn_Search.Text = "                                        ";
-            this.btn_Search.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
-            // 
             // Frm_65_Transfer_Barcode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 774);
+            this.ClientSize = new System.Drawing.Size(842, 806);
             this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.uiPanel1);
             this.Controls.Add(this.uiPanel0);

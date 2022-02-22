@@ -283,10 +283,10 @@ SELECT
 
         //private void DeleteTransferCode
 
-        private int AddToTranferBarcode(string barcode, string previousStore, string currentStore, int idChildRecipt, int idChildDraft, int previousStoreCode)
+        private int AddToTranferBarcode(string barcode, string previousStore, string currentStore, int idChildRecipt, int idChildDraft, int previousStoreCode, int number)
         {
             var query = $@"
-INSERT INTO [dbo].[Table_140_Transfer_Barcode]
+            INSERT INTO [dbo].[Table_140_Transfer_Barcode]
            ([Barcode]
            ,[PreviousStore]
            ,[CurrentStore]
@@ -299,18 +299,18 @@ INSERT INTO [dbo].[Table_140_Transfer_Barcode]
            ,[CreateDate]
            ,[EditUser]
            ,[EditDate] ,[CurrentStoreCode]
-           ,[PreviousStoreCode],[Description])
-VALUES
+           ,[PreviousStoreCode],[Description],[Number])
+            VALUES
             (
             @Barcode,@PreviousStore,@CurrentStore,@DateTransfer,@FunctionTypeRecipt,@FunctionTypeDraft,
             @ReciptChildId,@DraftChildId,@CreateUser,GETDATE() , 
-            @EditUser,@EditDate,@CurrentStoreCode,@PreviousStoreCode,@Description
+            @EditUser,@EditDate,@CurrentStoreCode,@PreviousStoreCode,@Description,@Number
             )
-SELECT SCOPE_IDENTITY();
+            SELECT SCOPE_IDENTITY();
 ";
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
-                return db.QueryFirstOrDefault<int>(query, new
+                var res = db.QueryFirstOrDefault<int>(query, new
                 {
                     @Barcode = barcode,
                     @PreviousStore = previousStore,
@@ -325,8 +325,13 @@ SELECT SCOPE_IDENTITY();
                     @CreateUser = Class_BasicOperation._UserName,
                     @EditUser = Class_BasicOperation._UserName,
                     @EditDate = DateTime.Now,
-                    @Description = txt_Description.Text.Trim()
+                    @Description = txt_Description.Text.Trim(),
+                    @Number = number.ToString()
                 });
+                if (res > 0)
+                    return number;
+                else
+                    return -1;
             }
         }
 
@@ -381,11 +386,13 @@ SELECT SCOPE_IDENTITY();
                         idChildDraft = Draft(item, codeSourceStore);
                         ChangeCodeStoreOfBarcode(item, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()));
                         item.BeginEdit();
-                        item.Cells["TransferId"].Value = AddToTranferBarcode(item.Cells["Barcode"].Value.ToString(), item.Cells["CurrentStore"].Value.ToString(), menuStoresDestination.Text, idChildRecipt, idChildDraft, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()));
-                        item.Cells["FunctionTypeRecipt"].Text = menuFunctionTypeRecipt.Text;
-                        item.Cells["FunctionTypeDraft"].Text = menuFunctionTypeDraft.Text;
-                        item.Cells["CreateUser"].Text = Class_BasicOperation._UserName.Trim();
+                        item.Cells["Number"].Value = AddToTranferBarcode(item.Cells["Barcode"].Value.ToString(), item.Cells["CurrentStore"].Value.ToString(), menuStoresDestination.Text, idChildRecipt, idChildDraft, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()), GetMaxNumber());
+                        item.Cells["FunctionTypeRecipt"].Value = menuFunctionTypeRecipt.Text;
+                        item.Cells["FunctionTypeDraft"].Value = menuFunctionTypeDraft.Text;
+                        item.Cells["CreateUser"].Value = Class_BasicOperation._UserName.Trim();
                         item.Cells["DateTransfer"].Value = txt_DateTime.Text.Trim();
+                        item.Cells["PreviousStore"].Value = item.Cells["CurrentStore"].Value;
+                        item.Cells["CurrentStore"].Value = menuStoresDestination.Text;
                         item.EndEdit();
                     }
 
@@ -397,7 +404,7 @@ SELECT SCOPE_IDENTITY();
                 }
                 HeadersDraftId = HeadersDraftId.TrimEnd(',');
                 MessageBox.Show("");
-                this.Close();
+                //this.Close();
             }
             catch (Exception ex)
             {
@@ -482,6 +489,7 @@ SELECT SCOPE_IDENTITY();
                 }
                 //ShowMessageBarcodeNotValid(BarcodeIsValid(barcodes));
                 //FillDetailBarcode(barcodes);
+                gridEX8.ClearItems();
                 ShowDetailBarcode();
                 btnTransfer.Enabled = true;
 
@@ -542,13 +550,14 @@ SELECT SCOPE_IDENTITY();
       ,[IsRegToOrderColor]
       ,[TransferDescription]
       ,[CodeStore]
+      ,[Number] 
   FROM [PCLOR_1_1400].[dbo].[V_DetailTransferBarcode]
        ";
 
                         if (!string.IsNullOrEmpty(search))
                         {
                             query += $@"     
-Where  Barcode    Like    N'{search}'      OR   DateTransfer  = N'{search.Trim()}'  
+Where  Barcode    Like    N'{search.Trim()}'  OR  Number = N'{search.Trim()}'    OR   DateTransfer  = N'{search.Trim()}'  
 ";
                         }
                     }
@@ -630,6 +639,7 @@ where Barcode in   ({codes})
                     row.Cells[16].Value = item.CodeCommondity;
                     row.Cells[17].Value = item.DeviceId;
                     row.Cells[18].Value = item.CodeStore;
+                    row.Cells[19].Value = item.Number;
                     //row.Cells[15].Value = item.Date;
                     //row.Cells[16].Value = item.CodeCommodity;
                     //row.Cells[17].Value = item.CodeStore;
@@ -646,7 +656,25 @@ where Barcode in   ({codes})
             //var models = GetDetailBarcode(codes);
 
         }
+        private int GetMaxNumber()
+        {
+            try
+            {
+                var query = $@"
+                         select   ISNULL ( Max(Id) , 0)  +80    from   Table_140_Transfer_Barcode
+";
+                using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+                {
+                    return db.QueryFirstOrDefault<int>(query);
+                }
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            }
 
+
+        }
         private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
         {
 
@@ -676,6 +704,7 @@ where Barcode in   ({codes})
         {
             if (!string.IsNullOrEmpty(txt_Search.Text.Trim()))
             {
+                gridEX8.ClearItems();
                 Barcodes = GetBarcodes(txtBarcodes.Text.Trim());
                 ShowDetailBarcode(GetDetailBarcode(GetOrginalCodes(Barcodes), txt_Search.Text.Trim(), true), true);
             }

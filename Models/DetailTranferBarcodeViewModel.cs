@@ -26,6 +26,7 @@ namespace PCLOR.Models
         public int CodeCommondity { get; set; }
         public int DeviceId { get; set; }
         public int CodeStore { get; set; }
+        public string Number { get; set; }
         //public int TransferId { get; set; }
     }
 }
