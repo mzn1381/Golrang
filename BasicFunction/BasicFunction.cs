@@ -116,7 +116,7 @@ namespace PCLOR.MyBasicFunction
                                                                  
                                                                           ) VALUES (  {ResidNum} , N'{dateCreate}'  , {wareCode},  {functionType} ,
                                                                         {(string.IsNullOrEmpty(operationCode) ? "N''" : operationCode)},N'' , N'{Class_BasicOperation._UserName}' ,getdate(), N'{Class_BasicOperation._UserName}', getdate() );
-                                                                       select  Max(column01)  from Table_011_PwhrsReceipt";
+                                                                       select  Max(columnid)  from Table_011_PwhrsReceipt";
                     var Key = db.QueryFirstOrDefault<int>(commandtxt, null, commandType: CommandType.Text);
                     return Key;
                 }
@@ -206,7 +206,7 @@ namespace PCLOR.MyBasicFunction
                         column17, column18, column19, Column20, Column21,
                         Column22, Column23, Column24, Column25, Column26)
                         VALUES({DraftNumber},N'{date}',{wareCode},{functionType},{0},N'',0,N'{ Class_BasicOperation._UserName}',getdate(),N'{Class_BasicOperation._UserName}'
-                        ,getdate(),0,Null,Null,0,0,0,0,0,0,0,0,0,Null,0,1); SELECT Max(column01) from Table_007_PwhrsDraft ;
+                        ,getdate(),0,Null,Null,0,0,0,0,0,0,0,0,0,Null,0,1); SELECT Max(columnid) from Table_007_PwhrsDraft ;
                         ";
             using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))
             {

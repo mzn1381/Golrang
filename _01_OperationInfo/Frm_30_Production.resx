@@ -458,20 +458,20 @@
   <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL3SURBVFhH3ZdLL2RRFIU3QRozxMRMx2Ng0D/CgBSJiYmU
-        SKmHmgkzI+UvSISRxKwTA9FG1dWdfosI8eoB/8CIBBMS9HeufdqpW7dUlVbViZWs3HvP3netffY55yry
-        KhGLxd7pbWUxOztbg/kcvOa+Wocrg4mJiY5oNLqF+b3h6Ohos4bKDwwT8MqaG46Pj3dpuHxIJpOtzHrd
-        NbZkfJ5rgkKG6E6bvvJyQDiEwalrWoD7FBX+572RSCQaEFpA8M5nUCzTvN+kck9jU6T+s8jbe5Eq84x5
-        CwLHPsHncHNsbOyNZxKEnyJdX0SWYGRHpFaHPZg1ReDcJ1gy6UJKJR+BYc03kdQHkRuuSR3OQSQSaUdg
-        N0i4BF5MTU3Vq6TIb5G6ryJrGN9z3dDhvDAtpIjFAGFzBPeIxWAfz9PwwI1bxuPxfpUTwXjZmBvSiV4d
-        LghMRijm0hWmgFUNewiHw43kZdwcQwqY9BKY8aA1z4ic2U1XLNic3QgeWWFjpqG/oKieUCh0a3M0b8YL
-        UsCOLQBue4M+mNOgt4HQ47mi4uzdXLB3TnwFROS7SKdjbtqf1vwsEDuEMX3MC0TN2h/qYxYwTbsFwE6z
-        8yO+Ak40PwtOl1aYXoMOB4K1DewWy7DtmD90CcEZa25IAbewxws6IJZx8o7I6dZQsahiCc5sAXRp0Btl
-        ZpOOsGWGdWj0EhTkrfpyLhkb0XBB0JVeZ/bLOuwJ9/uEPTLDA2LTXPt4jsE9N25JziI5+T+rCtq/oeZr
-        w8PDdTr88L3/KHIRJF4sKWD3h0i7SuYA0+TAwMANbU+ZX006/AhEUn7RZ/CcEzWkkh44mrXmqFHAEh3I
-        /wPFtBCBTZ9gyWQ5jtFqUdkqcxqyvvdPgaVo4uV0kHAhvhe547pQ6HgWBJ/gatoYZib7fpMneApDKvFy
-        +CTSZtaUYhIYzDuGLtd/ibTqK+WD+YHiM74yhWm4/OBPW7M1x3gLdmioMjB7gw16TQFzXHPPcSWA8f/5
-        f++VQ+QP12PAcqPx2WsAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL4SURBVFhH3Ze9L2RRGMZfgiw6RKOz8VEo9o9Q+Ew008jI
+        ZBhjOqFTGf+CRKgkqi0UYlWzs5v9nogQX1vwH6hI0JBgf+d6zzpz544Z1swmnuTJvfe8732e97znnGvI
+        q0QsFnunt+XF7OxsFeZz8Ir7Sh0uDyYmJtrGxsY2Mb8zHBkZadRQ6YFhHF5ac8PR0dEODZcOiUSimVmv
+        u8aWjM9zjVPIEN1p0VdeDgj3Y3DimhbgHkWF/3lvxOPxOoQWELz1GRTLFO83qNzjyIjUfhZ5eydSYZ4x
+        b0LgyCf4HGYikcgbzyQIP0U6vogswei2SLUOezBrisCZT/DJpAtJlXwAhlXfRJIfRK65JnQ4B9FotBWB
+        nSDhJ/B8amqqViVFfovUfBVZw/iO64YO54VpIUUsBgibI7hLLAZ7eJ6G+27ccnx8vFflRDBeNuaGdKJb
+        hwsCk2GKuXCFKWBVwx7C4XA9eWk3x5ACJr0EZjxozdMip3bTFQs2ZyeCh1bYmGnoLyiqq6+v78bmaN6M
+        F6SAbVsA3PIGfTCnQW8DocdzRcXZu7lg7xz7CojKd5F2x9y0P6X5WSB2AGP6mBeImrU/0McsYJpyC4Dt
+        ZudHfQUca34WnC6tML06HQ4EaxvYLZZhyzG/7xKCM9bckAJuYJcXdEAs7eQdktOpoWJRwRKc2gLo0qA3
+        yswmHWHLNOtQ7yUoyFv15VwwNqzhgqAr3c7sl3XYE+71CXtkhvvEprn28ByDu27ckpxFcvJ/VhW0f0PN
+        10KhUI0O33/vP4qcB4kXSwrY+SHSqpI5wDQxMDBwTduT5leTDj8AkaRf9Bk840QNqaQHjma1OWoUsEQH
+        8v9AMS1EIOMTfDJZjiO0mlS2wpyGrO/9Y2ApGng5FSRciO9FbrkuFDqeBcEnuJI2hpnJnt/kEZ7AfpV4
+        OXwSaTFrSjFxDOYdQ5frv0Sa9ZXSwfxA8RlfmsI0XHrwp63RmmO8Cds0VB6YvcEGvaKAOa6557gcwPj/
+        /L/3yiHyB7ewwG5V21gMAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="mlt_Function_R_DesignTimeLayout.LayoutString" xml:space="preserve">

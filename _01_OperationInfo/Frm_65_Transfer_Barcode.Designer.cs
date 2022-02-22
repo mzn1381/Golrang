@@ -66,6 +66,23 @@ namespace PCLOR._01_OperationInfo
             this.pCLOR_1_1400DataSet1 = new PCLOR.PCLOR_1_1400DataSet1();
             this.table140TransferBarcodeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.table_140_Transfer_BarcodeTableAdapter = new PCLOR.PCLOR_1_1400DataSet1TableAdapters.Table_140_Transfer_BarcodeTableAdapter();
+            this.txt_Description = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Delete = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_New = new System.Windows.Forms.ToolStripButton();
+            this.btn_Print = new System.Windows.Forms.ToolStripButton();
+            this.txt_Search = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.btn_Search = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).BeginInit();
             this.uiPanel0.SuspendLayout();
@@ -82,6 +99,8 @@ namespace PCLOR._01_OperationInfo
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCLOR_1_1400DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table140TransferBarcodeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
             // 
             // uiPanelManager1
@@ -95,9 +114,9 @@ namespace PCLOR._01_OperationInfo
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("da7045e2-8dbe-43b0-b262-2bed3cc27079"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(603, 658), true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("38cef559-5409-431b-80ba-1e13343f4c79"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(336, 658), true);
-            this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("da7045e2-8dbe-43b0-b262-2bed3cc27079"), new System.Drawing.Point(-1, -1), new System.Drawing.Size(-1, -1), false);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("da7045e2-8dbe-43b0-b262-2bed3cc27079"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(500, 741), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("38cef559-5409-431b-80ba-1e13343f4c79"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(336, 741), true);
+            this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("da7045e2-8dbe-43b0-b262-2bed3cc27079"), new System.Drawing.Point(32, 32), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("38cef559-5409-431b-80ba-1e13343f4c79"), new System.Drawing.Point(-1, -1), new System.Drawing.Size(-1, -1), false);
             this.uiPanelManager1.EndPanelInfo();
             // 
@@ -106,10 +125,11 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel0.AllowPanelDrag = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.AllowPanelDrop = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.AllowResize = Janus.Windows.UI.InheritableBoolean.True;
+            this.uiPanel0.FloatingLocation = new System.Drawing.Point(32, 32);
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
-            this.uiPanel0.Location = new System.Drawing.Point(3, 3);
+            this.uiPanel0.Location = new System.Drawing.Point(3, 30);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(603, 658);
+            this.uiPanel0.Size = new System.Drawing.Size(500, 741);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "بارکدها";
             // 
@@ -118,7 +138,7 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel0Container.Controls.Add(this.gridEX8);
             this.uiPanel0Container.Location = new System.Drawing.Point(1, 25);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(597, 632);
+            this.uiPanel0Container.Size = new System.Drawing.Size(494, 715);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // gridEX8
@@ -151,7 +171,7 @@ namespace PCLOR._01_OperationInfo
             this.gridEX8.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX8.ScrollBars = Janus.Windows.GridEX.ScrollBars.Horizontal;
             this.gridEX8.SettingsKey = "Frm_15_InfoServiceGrid_61";
-            this.gridEX8.Size = new System.Drawing.Size(597, 632);
+            this.gridEX8.Size = new System.Drawing.Size(494, 715);
             this.gridEX8.TabIndex = 2;
             this.gridEX8.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX8.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -168,9 +188,9 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel1.AllowPanelDrop = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel1.AllowResize = Janus.Windows.UI.InheritableBoolean.True;
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
-            this.uiPanel1.Location = new System.Drawing.Point(606, 3);
+            this.uiPanel1.Location = new System.Drawing.Point(503, 30);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(336, 658);
+            this.uiPanel1.Size = new System.Drawing.Size(336, 741);
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = "مشخصات";
             // 
@@ -179,11 +199,12 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel1Container.Controls.Add(this.groupBox1);
             this.uiPanel1Container.Location = new System.Drawing.Point(1, 25);
             this.uiPanel1Container.Name = "uiPanel1Container";
-            this.uiPanel1Container.Size = new System.Drawing.Size(330, 632);
+            this.uiPanel1Container.Size = new System.Drawing.Size(330, 715);
             this.uiPanel1Container.TabIndex = 0;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_Description);
             this.groupBox1.Controls.Add(this.menuFunctionTypeDraft);
             this.groupBox1.Controls.Add(this.menuFunctionTypeRecipt);
             this.groupBox1.Controls.Add(this.txt_DateTime);
@@ -197,6 +218,7 @@ namespace PCLOR._01_OperationInfo
             this.groupBox1.Controls.Add(this.btnTransfer);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
@@ -205,7 +227,7 @@ namespace PCLOR._01_OperationInfo
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(330, 632);
+            this.groupBox1.Size = new System.Drawing.Size(330, 715);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "مشخصات بارکد";
@@ -268,7 +290,7 @@ namespace PCLOR._01_OperationInfo
             // 
             // btnInfoBarcods
             // 
-            this.btnInfoBarcods.Location = new System.Drawing.Point(6, 531);
+            this.btnInfoBarcods.Location = new System.Drawing.Point(6, 645);
             this.btnInfoBarcods.Name = "btnInfoBarcods";
             this.btnInfoBarcods.Size = new System.Drawing.Size(318, 43);
             this.btnInfoBarcods.TabIndex = 207;
@@ -348,7 +370,7 @@ namespace PCLOR._01_OperationInfo
             // 
             // btnTransfer
             // 
-            this.btnTransfer.Location = new System.Drawing.Point(6, 580);
+            this.btnTransfer.Location = new System.Drawing.Point(6, 694);
             this.btnTransfer.Name = "btnTransfer";
             this.btnTransfer.Size = new System.Drawing.Size(318, 44);
             this.btnTransfer.TabIndex = 202;
@@ -445,13 +467,185 @@ namespace PCLOR._01_OperationInfo
             // 
             this.table_140_Transfer_BarcodeTableAdapter.ClearBeforeFill = true;
             // 
+            // txt_Description
+            // 
+            this.txt_Description.Location = new System.Drawing.Point(12, 521);
+            this.txt_Description.Multiline = true;
+            this.txt_Description.Name = "txt_Description";
+            this.txt_Description.Size = new System.Drawing.Size(224, 118);
+            this.txt_Description.TabIndex = 226;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(244, 566);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "توضیحات";
+            // 
+            // bindingNavigator1
+            // 
+            this.bindingNavigator1.AddNewItem = null;
+            this.bindingNavigator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bindingNavigator1.BackgroundImage")));
+            this.bindingNavigator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
+            this.bindingNavigator1.DeleteItem = null;
+            this.bindingNavigator1.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.btn_Delete,
+            this.toolStripSeparator,
+            this.btn_New,
+            this.btn_Print,
+            this.btn_Search});
+            this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
+            this.bindingNavigator1.MoveFirstItem = null;
+            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
+            this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bindingNavigator1.Size = new System.Drawing.Size(842, 27);
+            this.bindingNavigator1.TabIndex = 100;
+            this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(46, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            this.bindingNavigatorMovePreviousItem.Click += new System.EventHandler(this.bindingNavigatorMovePreviousItem_Click);
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            this.bindingNavigatorMoveNextItem.Click += new System.EventHandler(this.bindingNavigatorMoveNextItem_Click);
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            // 
+            // btn_Delete
+            // 
+            this.btn_Delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_Delete.Image")));
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.RightToLeftAutoMirrorImage = true;
+            this.btn_Delete.Size = new System.Drawing.Size(61, 24);
+            this.btn_Delete.Text = "حذف";
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator.Visible = false;
+            // 
+            // btn_New
+            // 
+            this.btn_New.Image = ((System.Drawing.Image)(resources.GetObject("btn_New.Image")));
+            this.btn_New.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_New.Name = "btn_New";
+            this.btn_New.Size = new System.Drawing.Size(61, 24);
+            this.btn_New.Text = "جدید";
+            this.btn_New.Visible = false;
+            // 
+            // btn_Print
+            // 
+            this.btn_Print.Image = ((System.Drawing.Image)(resources.GetObject("btn_Print.Image")));
+            this.btn_Print.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Print.Name = "btn_Print";
+            this.btn_Print.Size = new System.Drawing.Size(56, 24);
+            this.btn_Print.Text = "چاپ";
+            this.btn_Print.Click += new System.EventHandler(this.btn_Print_Click);
+            // 
+            // txt_Search
+            // 
+            this.txt_Search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.txt_Search.Border.Class = "TextBoxBorder";
+            this.txt_Search.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_Search.Location = new System.Drawing.Point(697, 1);
+            this.txt_Search.Name = "txt_Search";
+            this.txt_Search.Size = new System.Drawing.Size(137, 26);
+            this.txt_Search.TabIndex = 101;
+            this.txt_Search.WatermarkText = "جستجــــــــــــو";
+            // 
+            // btn_Search
+            // 
+            this.btn_Search.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btn_Search.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.Image")));
+            this.btn_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(192, 24);
+            this.btn_Search.Text = "                                        ";
+            this.btn_Search.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
+            // 
             // Frm_65_Transfer_Barcode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 664);
+            this.ClientSize = new System.Drawing.Size(842, 774);
+            this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.uiPanel1);
             this.Controls.Add(this.uiPanel0);
+            this.Controls.Add(this.bindingNavigator1);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Frm_65_Transfer_Barcode";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -476,7 +670,11 @@ namespace PCLOR._01_OperationInfo
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCLOR_1_1400DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table140TransferBarcodeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -512,5 +710,22 @@ namespace PCLOR._01_OperationInfo
         private PCLOR_1_1400DataSet1 pCLOR_1_1400DataSet1;
         private System.Windows.Forms.BindingSource table140TransferBarcodeBindingSource;
         private PCLOR_1_1400DataSet1TableAdapters.Table_140_Transfer_BarcodeTableAdapter table_140_Transfer_BarcodeTableAdapter;
+        private System.Windows.Forms.TextBox txt_Description;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton btn_Delete;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+        private System.Windows.Forms.ToolStripButton btn_New;
+        private System.Windows.Forms.ToolStripButton btn_Print;
+        public DevComponents.DotNetBar.Controls.TextBoxX txt_Search;
+        public System.Windows.Forms.ToolStripButton btn_Search;
     }
 }
