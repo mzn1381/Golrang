@@ -28,34 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_05_Machines));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.button1 = new System.Windows.Forms.ToolStripButton();
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.toolStrip1.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Label();
+            this.uiPanelManager1 = new Janus.Windows.UI.Dock.UIPanelManager(this.components);
+            this.uiPanel0 = new Janus.Windows.UI.Dock.UIPanel();
+            this.uiPanel0Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).BeginInit();
+            this.uiPanel0.SuspendLayout();
+            this.uiPanel0Container.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.button1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1476, 27);
-            this.toolStrip1.TabIndex = 25;
-            this.toolStrip1.Text = "toolStrip1";
-            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
-            // 
-            // button1
-            // 
-            this.button1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 24);
-            this.button1.Text = "شروع جابجایی";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -69,13 +52,58 @@
             this.label1.Text = "ورودی سالن";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1316, 61);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 38);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "ورودی سالن";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // uiPanelManager1
+            // 
+            this.uiPanelManager1.ContainerControl = this;
+            this.uiPanel0.Id = new System.Guid("57d35248-18b2-4a1e-8842-d6e59116b03c");
+            this.uiPanelManager1.Panels.Add(this.uiPanel0);
+            // 
+            // Design Time Panel Info:
+            // 
+            this.uiPanelManager1.BeginPanelInfo();
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("57d35248-18b2-4a1e-8842-d6e59116b03c"), Janus.Windows.UI.Dock.PanelDockStyle.Fill, new System.Drawing.Size(1470, 574), true);
+            this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("57d35248-18b2-4a1e-8842-d6e59116b03c"), new System.Drawing.Point(738, 508), new System.Drawing.Size(200, 200), false);
+            this.uiPanelManager1.EndPanelInfo();
+            // 
+            // uiPanel0
+            // 
+            this.uiPanel0.FloatingLocation = new System.Drawing.Point(738, 508);
+            this.uiPanel0.InnerContainer = this.uiPanel0Container;
+            this.uiPanel0.Location = new System.Drawing.Point(3, 3);
+            this.uiPanel0.Name = "uiPanel0";
+            this.uiPanel0.Size = new System.Drawing.Size(1470, 574);
+            this.uiPanel0.TabIndex = 4;
+            this.uiPanel0.Text = "Panel 0";
+            // 
+            // uiPanel0Container
+            // 
+            this.uiPanel0Container.Controls.Add(this.button1);
+            this.uiPanel0Container.Location = new System.Drawing.Point(1, 23);
+            this.uiPanel0Container.Name = "uiPanel0Container";
+            this.uiPanel0Container.Size = new System.Drawing.Size(1468, 550);
+            this.uiPanel0Container.TabIndex = 0;
+            // 
             // Frm_05_Machines
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(1476, 580);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.uiPanel0);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Frm_05_Machines";
@@ -84,16 +112,19 @@
             this.Text = "لیست دستگاه ها";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_05_Machines_FormClosing);
             this.Load += new System.EventHandler(this.Frm_05_Machines_Load);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).EndInit();
+            this.uiPanel0.ResumeLayout(false);
+            this.uiPanel0Container.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label button1;
+        private Janus.Windows.UI.Dock.UIPanelManager uiPanelManager1;
+        private Janus.Windows.UI.Dock.UIPanel uiPanel0;
+        private Janus.Windows.UI.Dock.UIPanelInnerContainer uiPanel0Container;
     }
 }

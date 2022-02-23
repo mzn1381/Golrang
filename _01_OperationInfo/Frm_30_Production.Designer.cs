@@ -195,7 +195,7 @@
             label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label10.AutoSize = true;
             label10.BackColor = System.Drawing.Color.Transparent;
-            label10.Location = new System.Drawing.Point(250, 54);
+            label10.Location = new System.Drawing.Point(262, 54);
             label10.Name = "label10";
             label10.Size = new System.Drawing.Size(65, 17);
             label10.TabIndex = 2;
@@ -206,7 +206,7 @@
             label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label12.AutoSize = true;
             label12.BackColor = System.Drawing.Color.Transparent;
-            label12.Location = new System.Drawing.Point(228, 20);
+            label12.Location = new System.Drawing.Point(240, 20);
             label12.Name = "label12";
             label12.Size = new System.Drawing.Size(93, 17);
             label12.TabIndex = 1;
@@ -217,7 +217,7 @@
             column04Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             column04Label.AutoSize = true;
             column04Label.BackColor = System.Drawing.Color.Transparent;
-            column04Label.Location = new System.Drawing.Point(250, 127);
+            column04Label.Location = new System.Drawing.Point(262, 127);
             column04Label.Name = "column04Label";
             column04Label.Size = new System.Drawing.Size(65, 17);
             column04Label.TabIndex = 6;
@@ -228,7 +228,7 @@
             column03Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             column03Label.AutoSize = true;
             column03Label.BackColor = System.Drawing.Color.Transparent;
-            column03Label.Location = new System.Drawing.Point(214, 90);
+            column03Label.Location = new System.Drawing.Point(226, 90);
             column03Label.Name = "column03Label";
             column03Label.Size = new System.Drawing.Size(109, 17);
             column03Label.TabIndex = 4;
@@ -239,7 +239,7 @@
             label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label13.AutoSize = true;
             label13.BackColor = System.Drawing.Color.Transparent;
-            label13.Location = new System.Drawing.Point(249, 200);
+            label13.Location = new System.Drawing.Point(261, 200);
             label13.Name = "label13";
             label13.Size = new System.Drawing.Size(67, 17);
             label13.TabIndex = 8;
@@ -250,7 +250,7 @@
             label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label16.AutoSize = true;
             label16.BackColor = System.Drawing.Color.Transparent;
-            label16.Location = new System.Drawing.Point(223, 163);
+            label16.Location = new System.Drawing.Point(235, 163);
             label16.Name = "label16";
             label16.Size = new System.Drawing.Size(101, 17);
             label16.TabIndex = 7;
@@ -260,7 +260,7 @@
             // 
             label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label9.AutoSize = true;
-            label9.Location = new System.Drawing.Point(243, 101);
+            label9.Location = new System.Drawing.Point(222, 101);
             label9.Name = "label9";
             label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label9.Size = new System.Drawing.Size(79, 17);
@@ -271,7 +271,7 @@
             // 
             label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label5.AutoSize = true;
-            label5.Location = new System.Drawing.Point(83, 208);
+            label5.Location = new System.Drawing.Point(80, 208);
             label5.Name = "label5";
             label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label5.Size = new System.Drawing.Size(79, 17);
@@ -282,7 +282,7 @@
             // 
             label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label8.AutoSize = true;
-            label8.Location = new System.Drawing.Point(270, 260);
+            label8.Location = new System.Drawing.Point(222, 260);
             label8.Name = "label8";
             label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label8.Size = new System.Drawing.Size(45, 17);
@@ -293,7 +293,7 @@
             // 
             label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(239, 234);
+            label4.Location = new System.Drawing.Point(222, 234);
             label4.Name = "label4";
             label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label4.Size = new System.Drawing.Size(85, 17);
@@ -304,7 +304,7 @@
             // 
             label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(252, 284);
+            label3.Location = new System.Drawing.Point(222, 284);
             label3.Name = "label3";
             label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label3.Size = new System.Drawing.Size(68, 17);
@@ -315,7 +315,7 @@
             // 
             partNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             partNameLabel.AutoSize = true;
-            partNameLabel.Location = new System.Drawing.Point(229, 209);
+            partNameLabel.Location = new System.Drawing.Point(222, 209);
             partNameLabel.Name = "partNameLabel";
             partNameLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             partNameLabel.Size = new System.Drawing.Size(97, 17);
@@ -326,7 +326,7 @@
             // 
             label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(223, 75);
+            label1.Location = new System.Drawing.Point(222, 75);
             label1.Name = "label1";
             label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label1.Size = new System.Drawing.Size(106, 17);
@@ -337,7 +337,7 @@
             // 
             label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label11.AutoSize = true;
-            label11.Location = new System.Drawing.Point(256, 19);
+            label11.Location = new System.Drawing.Point(222, 19);
             label11.Name = "label11";
             label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label11.Size = new System.Drawing.Size(64, 17);
@@ -348,7 +348,7 @@
             // 
             label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(254, 126);
+            label6.Location = new System.Drawing.Point(222, 126);
             label6.Name = "label6";
             label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label6.Size = new System.Drawing.Size(65, 17);
@@ -359,7 +359,7 @@
             // 
             label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(259, 153);
+            label2.Location = new System.Drawing.Point(222, 153);
             label2.Name = "label2";
             label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label2.Size = new System.Drawing.Size(58, 17);
@@ -370,7 +370,7 @@
             // 
             label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label14.AutoSize = true;
-            label14.Location = new System.Drawing.Point(244, 47);
+            label14.Location = new System.Drawing.Point(222, 47);
             label14.Name = "label14";
             label14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label14.Size = new System.Drawing.Size(79, 17);
@@ -381,7 +381,7 @@
             // 
             label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label15.AutoSize = true;
-            label15.Location = new System.Drawing.Point(241, 181);
+            label15.Location = new System.Drawing.Point(222, 181);
             label15.Name = "label15";
             label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             label15.Size = new System.Drawing.Size(81, 17);
@@ -412,7 +412,7 @@
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("cc3e2960-6d60-4fb6-8e59-e49a60607c61"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Fill, false, new System.Drawing.Size(415, 474), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("4a7d8bfb-6700-4fe8-9f29-4a6d0af95567"), new System.Guid("cc3e2960-6d60-4fb6-8e59-e49a60607c61"), 215, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("487a8558-0133-4b0e-8675-a41d558d527e"), new System.Guid("cc3e2960-6d60-4fb6-8e59-e49a60607c61"), 257, true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("0d02fae9-a97b-4113-8b6a-9a4318bb57fc"), Janus.Windows.UI.Dock.PanelGroupStyle.Tab, Janus.Windows.UI.Dock.PanelDockStyle.Right, true, new System.Drawing.Size(319, 474), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("0d02fae9-a97b-4113-8b6a-9a4318bb57fc"), Janus.Windows.UI.Dock.PanelGroupStyle.Tab, Janus.Windows.UI.Dock.PanelDockStyle.Right, true, new System.Drawing.Size(331, 474), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("8e1f5c33-57d7-45f1-ad89-7eeb64243b76"), new System.Guid("0d02fae9-a97b-4113-8b6a-9a4318bb57fc"), -1, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("7d30b039-5f91-43f2-90b4-74143129043b"), new System.Guid("0d02fae9-a97b-4113-8b6a-9a4318bb57fc"), -1, true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("1b9108bf-02df-4ef5-8a4a-46625ac627bc"), new System.Drawing.Point(-1, -1), new System.Drawing.Size(-1, -1), false);
@@ -435,7 +435,7 @@
             this.uiPanel7.Location = new System.Drawing.Point(418, 30);
             this.uiPanel7.Name = "uiPanel7";
             this.uiPanel7.SelectedPanel = this.uiPanel8;
-            this.uiPanel7.Size = new System.Drawing.Size(319, 474);
+            this.uiPanel7.Size = new System.Drawing.Size(331, 474);
             this.uiPanel7.TabIndex = 4;
             this.uiPanel7.Text = "Panel 7";
             // 
@@ -445,7 +445,7 @@
             this.uiPanel8.InnerContainer = this.uiPanel8Container;
             this.uiPanel8.Location = new System.Drawing.Point(4, 0);
             this.uiPanel8.Name = "uiPanel8";
-            this.uiPanel8.Size = new System.Drawing.Size(315, 451);
+            this.uiPanel8.Size = new System.Drawing.Size(327, 451);
             this.uiPanel8.TabIndex = 4;
             this.uiPanel8.Text = "اطلاعات تولید";
             // 
@@ -455,32 +455,32 @@
             this.uiPanel8Container.AutoScrollMinSize = new System.Drawing.Size(5, 5);
             this.uiPanel8Container.Controls.Add(this.mlt_Machine);
             this.uiPanel8Container.Controls.Add(this.txt_Number);
-            this.uiPanel8Container.Controls.Add(label3);
-            this.uiPanel8Container.Controls.Add(label9);
             this.uiPanel8Container.Controls.Add(this.txt_Description);
-            this.uiPanel8Container.Controls.Add(label15);
             this.uiPanel8Container.Controls.Add(this.txt_Order);
             this.uiPanel8Container.Controls.Add(this.txt_weight);
-            this.uiPanel8Container.Controls.Add(label4);
-            this.uiPanel8Container.Controls.Add(label14);
-            this.uiPanel8Container.Controls.Add(partNameLabel);
             this.uiPanel8Container.Controls.Add(this.txt_NumberProduct);
-            this.uiPanel8Container.Controls.Add(label2);
-            this.uiPanel8Container.Controls.Add(label1);
             this.uiPanel8Container.Controls.Add(this.btn_Insert);
-            this.uiPanel8Container.Controls.Add(label8);
             this.uiPanel8Container.Controls.Add(this.txt_Dat);
             this.uiPanel8Container.Controls.Add(this.mlt_TypeColor);
-            this.uiPanel8Container.Controls.Add(label6);
             this.uiPanel8Container.Controls.Add(this.mlt_CodeOrderColor);
             this.uiPanel8Container.Controls.Add(this.mlt_TypeCloth);
-            this.uiPanel8Container.Controls.Add(label11);
             this.uiPanel8Container.Controls.Add(label5);
             this.uiPanel8Container.Controls.Add(this.txt_Remining);
             this.uiPanel8Container.Controls.Add(this.mlt_NameCustomer);
+            this.uiPanel8Container.Controls.Add(label3);
+            this.uiPanel8Container.Controls.Add(label9);
+            this.uiPanel8Container.Controls.Add(label15);
+            this.uiPanel8Container.Controls.Add(label4);
+            this.uiPanel8Container.Controls.Add(label14);
+            this.uiPanel8Container.Controls.Add(partNameLabel);
+            this.uiPanel8Container.Controls.Add(label2);
+            this.uiPanel8Container.Controls.Add(label1);
+            this.uiPanel8Container.Controls.Add(label8);
+            this.uiPanel8Container.Controls.Add(label6);
+            this.uiPanel8Container.Controls.Add(label11);
             this.uiPanel8Container.Location = new System.Drawing.Point(1, 25);
             this.uiPanel8Container.Name = "uiPanel8Container";
-            this.uiPanel8Container.Size = new System.Drawing.Size(313, 426);
+            this.uiPanel8Container.Size = new System.Drawing.Size(325, 426);
             this.uiPanel8Container.TabIndex = 0;
             // 
             // mlt_Machine
@@ -492,14 +492,14 @@
             mlt_Machine_DesignTimeLayout.LayoutString = resources.GetString("mlt_Machine_DesignTimeLayout.LayoutString");
             this.mlt_Machine.DesignTimeLayout = mlt_Machine_DesignTimeLayout;
             this.mlt_Machine.DisplayMember = "namemachine";
-            this.mlt_Machine.Location = new System.Drawing.Point(7, 98);
+            this.mlt_Machine.Location = new System.Drawing.Point(4, 98);
             this.mlt_Machine.Name = "mlt_Machine";
             this.mlt_Machine.ReadOnly = true;
             this.mlt_Machine.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.mlt_Machine.SelectedIndex = -1;
             this.mlt_Machine.SelectedItem = null;
             this.mlt_Machine.SettingsKey = "mlt_Id";
-            this.mlt_Machine.Size = new System.Drawing.Size(212, 24);
+            this.mlt_Machine.Size = new System.Drawing.Size(216, 24);
             this.mlt_Machine.TabIndex = 3;
             this.mlt_Machine.ValueMember = "ID";
             this.mlt_Machine.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -521,10 +521,10 @@
             this.txt_Number.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Number.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table_035_ProductionBindingSource, "Number", true));
-            this.txt_Number.Location = new System.Drawing.Point(7, 19);
+            this.txt_Number.Location = new System.Drawing.Point(4, 19);
             this.txt_Number.Name = "txt_Number";
             this.txt_Number.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_Number.Size = new System.Drawing.Size(212, 24);
+            this.txt_Number.Size = new System.Drawing.Size(216, 24);
             this.txt_Number.TabIndex = 0;
             this.txt_Number.TextChanged += new System.EventHandler(this.txt_Number_TextChanged);
             this.txt_Number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Number_KeyPress);
@@ -534,22 +534,22 @@
             this.txt_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Description.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table_035_ProductionBindingSource, "Description", true));
-            this.txt_Description.Location = new System.Drawing.Point(7, 284);
+            this.txt_Description.Location = new System.Drawing.Point(4, 284);
             this.txt_Description.Multiline = true;
             this.txt_Description.Name = "txt_Description";
             this.txt_Description.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_Description.Size = new System.Drawing.Size(212, 63);
+            this.txt_Description.Size = new System.Drawing.Size(216, 63);
             this.txt_Description.TabIndex = 10;
             this.txt_Description.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Number_KeyPress);
             // 
             // txt_Order
             // 
             this.txt_Order.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Order.Location = new System.Drawing.Point(151, 204);
+            this.txt_Order.Location = new System.Drawing.Point(163, 204);
             this.txt_Order.Name = "txt_Order";
             this.txt_Order.ReadOnly = true;
             this.txt_Order.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_Order.Size = new System.Drawing.Size(68, 24);
+            this.txt_Order.Size = new System.Drawing.Size(57, 24);
             this.txt_Order.TabIndex = 20;
             // 
             // txt_weight
@@ -557,10 +557,10 @@
             this.txt_weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_weight.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table_035_ProductionBindingSource, "weight", true));
-            this.txt_weight.Location = new System.Drawing.Point(7, 257);
+            this.txt_weight.Location = new System.Drawing.Point(4, 257);
             this.txt_weight.Name = "txt_weight";
             this.txt_weight.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_weight.Size = new System.Drawing.Size(212, 24);
+            this.txt_weight.Size = new System.Drawing.Size(216, 24);
             this.txt_weight.TabIndex = 9;
             this.txt_weight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Number_KeyPress);
             // 
@@ -569,10 +569,10 @@
             this.txt_NumberProduct.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_NumberProduct.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table_035_ProductionBindingSource, "NumberProduct", true));
-            this.txt_NumberProduct.Location = new System.Drawing.Point(7, 230);
+            this.txt_NumberProduct.Location = new System.Drawing.Point(4, 230);
             this.txt_NumberProduct.Name = "txt_NumberProduct";
             this.txt_NumberProduct.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_NumberProduct.Size = new System.Drawing.Size(212, 24);
+            this.txt_NumberProduct.Size = new System.Drawing.Size(216, 24);
             this.txt_NumberProduct.TabIndex = 8;
             this.txt_NumberProduct.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Number_KeyPress);
             // 
@@ -587,7 +587,7 @@
             this.btn_Insert.Location = new System.Drawing.Point(47, 361);
             this.btn_Insert.Name = "btn_Insert";
             this.btn_Insert.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btn_Insert.Size = new System.Drawing.Size(134, 32);
+            this.btn_Insert.Size = new System.Drawing.Size(138, 32);
             this.btn_Insert.TabIndex = 11;
             this.btn_Insert.Text = "محاسبه رنگ مصرفی";
             this.btn_Insert.UseVisualStyleBackColor = false;
@@ -598,11 +598,11 @@
             this.txt_Dat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Dat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table_035_ProductionBindingSource, "Date", true));
-            this.txt_Dat.Location = new System.Drawing.Point(7, 45);
+            this.txt_Dat.Location = new System.Drawing.Point(4, 45);
             this.txt_Dat.Mask = "0000/00/00";
             this.txt_Dat.Name = "txt_Dat";
             this.txt_Dat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_Dat.Size = new System.Drawing.Size(212, 24);
+            this.txt_Dat.Size = new System.Drawing.Size(216, 24);
             this.txt_Dat.TabIndex = 1;
             this.txt_Dat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Number_KeyPress);
             // 
@@ -614,14 +614,14 @@
             mlt_TypeColor_DesignTimeLayout.LayoutString = resources.GetString("mlt_TypeColor_DesignTimeLayout.LayoutString");
             this.mlt_TypeColor.DesignTimeLayout = mlt_TypeColor_DesignTimeLayout;
             this.mlt_TypeColor.DisplayMember = "TypeColor";
-            this.mlt_TypeColor.Location = new System.Drawing.Point(7, 150);
+            this.mlt_TypeColor.Location = new System.Drawing.Point(4, 150);
             this.mlt_TypeColor.Name = "mlt_TypeColor";
             this.mlt_TypeColor.ReadOnly = true;
             this.mlt_TypeColor.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.mlt_TypeColor.SelectedIndex = -1;
             this.mlt_TypeColor.SelectedItem = null;
             this.mlt_TypeColor.SettingsKey = "mlt_Id";
-            this.mlt_TypeColor.Size = new System.Drawing.Size(212, 24);
+            this.mlt_TypeColor.Size = new System.Drawing.Size(216, 24);
             this.mlt_TypeColor.TabIndex = 5;
             this.mlt_TypeColor.ValueMember = "ID";
             this.mlt_TypeColor.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -635,13 +635,13 @@
             mlt_CodeOrderColor_DesignTimeLayout.LayoutString = resources.GetString("mlt_CodeOrderColor_DesignTimeLayout.LayoutString");
             this.mlt_CodeOrderColor.DesignTimeLayout = mlt_CodeOrderColor_DesignTimeLayout;
             this.mlt_CodeOrderColor.DisplayMember = "Number";
-            this.mlt_CodeOrderColor.Location = new System.Drawing.Point(7, 72);
+            this.mlt_CodeOrderColor.Location = new System.Drawing.Point(4, 72);
             this.mlt_CodeOrderColor.Name = "mlt_CodeOrderColor";
             this.mlt_CodeOrderColor.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.mlt_CodeOrderColor.SelectedIndex = -1;
             this.mlt_CodeOrderColor.SelectedItem = null;
             this.mlt_CodeOrderColor.SettingsKey = "mlt_CodeOrderColor";
-            this.mlt_CodeOrderColor.Size = new System.Drawing.Size(212, 24);
+            this.mlt_CodeOrderColor.Size = new System.Drawing.Size(216, 24);
             this.mlt_CodeOrderColor.TabIndex = 2;
             this.mlt_CodeOrderColor.TextAlignment = Janus.Windows.GridEX.TextAlignment.Near;
             this.mlt_CodeOrderColor.ValueMember = "ID";
@@ -657,14 +657,14 @@
             mlt_TypeCloth_DesignTimeLayout.LayoutString = resources.GetString("mlt_TypeCloth_DesignTimeLayout.LayoutString");
             this.mlt_TypeCloth.DesignTimeLayout = mlt_TypeCloth_DesignTimeLayout;
             this.mlt_TypeCloth.DisplayMember = "TypeCloth";
-            this.mlt_TypeCloth.Location = new System.Drawing.Point(7, 123);
+            this.mlt_TypeCloth.Location = new System.Drawing.Point(4, 123);
             this.mlt_TypeCloth.Name = "mlt_TypeCloth";
             this.mlt_TypeCloth.ReadOnly = true;
             this.mlt_TypeCloth.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.mlt_TypeCloth.SelectedIndex = -1;
             this.mlt_TypeCloth.SelectedItem = null;
             this.mlt_TypeCloth.SettingsKey = "mlt_Id";
-            this.mlt_TypeCloth.Size = new System.Drawing.Size(212, 24);
+            this.mlt_TypeCloth.Size = new System.Drawing.Size(216, 24);
             this.mlt_TypeCloth.TabIndex = 4;
             this.mlt_TypeCloth.ValueMember = "ID";
             this.mlt_TypeCloth.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -674,7 +674,7 @@
             // 
             this.txt_Remining.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Remining.Location = new System.Drawing.Point(7, 205);
+            this.txt_Remining.Location = new System.Drawing.Point(4, 205);
             this.txt_Remining.Name = "txt_Remining";
             this.txt_Remining.ReadOnly = true;
             this.txt_Remining.Size = new System.Drawing.Size(70, 24);
@@ -687,14 +687,14 @@
             mlt_NameCustomer_DesignTimeLayout.LayoutString = resources.GetString("mlt_NameCustomer_DesignTimeLayout.LayoutString");
             this.mlt_NameCustomer.DesignTimeLayout = mlt_NameCustomer_DesignTimeLayout;
             this.mlt_NameCustomer.DisplayMember = "Column01";
-            this.mlt_NameCustomer.Location = new System.Drawing.Point(7, 177);
+            this.mlt_NameCustomer.Location = new System.Drawing.Point(4, 177);
             this.mlt_NameCustomer.Name = "mlt_NameCustomer";
             this.mlt_NameCustomer.ReadOnly = true;
             this.mlt_NameCustomer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.mlt_NameCustomer.SelectedIndex = -1;
             this.mlt_NameCustomer.SelectedItem = null;
             this.mlt_NameCustomer.SettingsKey = "mlt_Id";
-            this.mlt_NameCustomer.Size = new System.Drawing.Size(212, 24);
+            this.mlt_NameCustomer.Size = new System.Drawing.Size(216, 24);
             this.mlt_NameCustomer.TabIndex = 6;
             this.mlt_NameCustomer.ValueMember = "ColumnId";
             this.mlt_NameCustomer.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -706,7 +706,7 @@
             this.uiPanel9.InnerContainer = this.uiPanel9Container;
             this.uiPanel9.Location = new System.Drawing.Point(4, 0);
             this.uiPanel9.Name = "uiPanel9";
-            this.uiPanel9.Size = new System.Drawing.Size(315, 451);
+            this.uiPanel9.Size = new System.Drawing.Size(327, 451);
             this.uiPanel9.TabIndex = 4;
             this.uiPanel9.Text = "اطلاعات انبار";
             // 
@@ -726,7 +726,7 @@
             this.uiPanel9Container.Controls.Add(label16);
             this.uiPanel9Container.Location = new System.Drawing.Point(1, 25);
             this.uiPanel9Container.Name = "uiPanel9Container";
-            this.uiPanel9Container.Size = new System.Drawing.Size(313, 426);
+            this.uiPanel9Container.Size = new System.Drawing.Size(325, 426);
             this.uiPanel9Container.TabIndex = 0;
             // 
             // mlt_Function_R
@@ -743,7 +743,7 @@
             this.mlt_Function_R.SelectedIndex = -1;
             this.mlt_Function_R.SelectedItem = null;
             this.mlt_Function_R.SelectInDataSource = true;
-            this.mlt_Function_R.Size = new System.Drawing.Size(158, 24);
+            this.mlt_Function_R.Size = new System.Drawing.Size(170, 24);
             this.mlt_Function_R.TabIndex = 4;
             this.mlt_Function_R.ValueMember = "columnid";
             this.mlt_Function_R.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -763,7 +763,7 @@
             this.mlt_Ware_D.SelectedIndex = -1;
             this.mlt_Ware_D.SelectedItem = null;
             this.mlt_Ware_D.SelectInDataSource = true;
-            this.mlt_Ware_D.Size = new System.Drawing.Size(158, 24);
+            this.mlt_Ware_D.Size = new System.Drawing.Size(170, 24);
             this.mlt_Ware_D.TabIndex = 0;
             this.mlt_Ware_D.ValueMember = "columnid";
             this.mlt_Ware_D.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -783,7 +783,7 @@
             this.mlt_Function.SelectedIndex = -1;
             this.mlt_Function.SelectedItem = null;
             this.mlt_Function.SelectInDataSource = true;
-            this.mlt_Function.Size = new System.Drawing.Size(158, 24);
+            this.mlt_Function.Size = new System.Drawing.Size(170, 24);
             this.mlt_Function.TabIndex = 2;
             this.mlt_Function.ValueMember = "columnid";
             this.mlt_Function.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -803,7 +803,7 @@
             this.mlt_Ware_R.SelectedIndex = -1;
             this.mlt_Ware_R.SelectedItem = null;
             this.mlt_Ware_R.SelectInDataSource = true;
-            this.mlt_Ware_R.Size = new System.Drawing.Size(158, 24);
+            this.mlt_Ware_R.Size = new System.Drawing.Size(170, 24);
             this.mlt_Ware_R.TabIndex = 3;
             this.mlt_Ware_R.ValueMember = "columnid";
             this.mlt_Ware_R.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -823,7 +823,7 @@
             this.mlt_Function_D.SelectedIndex = -1;
             this.mlt_Function_D.SelectedItem = null;
             this.mlt_Function_D.SelectInDataSource = true;
-            this.mlt_Function_D.Size = new System.Drawing.Size(158, 24);
+            this.mlt_Function_D.Size = new System.Drawing.Size(170, 24);
             this.mlt_Function_D.TabIndex = 0;
             this.mlt_Function_D.ValueMember = "columnid";
             this.mlt_Function_D.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -843,7 +843,7 @@
             this.mlt_Ware.SelectedIndex = -1;
             this.mlt_Ware.SelectedItem = null;
             this.mlt_Ware.SelectInDataSource = true;
-            this.mlt_Ware.Size = new System.Drawing.Size(158, 24);
+            this.mlt_Ware.Size = new System.Drawing.Size(170, 24);
             this.mlt_Ware.TabIndex = 1;
             this.mlt_Ware.ValueMember = "columnid";
             this.mlt_Ware.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
@@ -1079,7 +1079,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(740, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(752, 27);
             this.bindingNavigator1.TabIndex = 7;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -1312,7 +1312,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 507);
+            this.ClientSize = new System.Drawing.Size(752, 507);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.uiPanelGroup1);
             this.Controls.Add(this.uiPanel7);

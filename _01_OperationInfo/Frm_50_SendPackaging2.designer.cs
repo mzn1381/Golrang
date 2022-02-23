@@ -133,7 +133,7 @@
             // 
             label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label11.AutoSize = true;
-            label11.Location = new System.Drawing.Point(246, 12);
+            label11.Location = new System.Drawing.Point(213, 12);
             label11.Name = "label11";
             label11.Size = new System.Drawing.Size(64, 17);
             label11.TabIndex = 155;
@@ -143,7 +143,7 @@
             // 
             label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label14.AutoSize = true;
-            label14.Location = new System.Drawing.Point(227, 36);
+            label14.Location = new System.Drawing.Point(213, 36);
             label14.Name = "label14";
             label14.Size = new System.Drawing.Size(87, 17);
             label14.TabIndex = 8;
@@ -153,7 +153,7 @@
             // 
             label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label15.AutoSize = true;
-            label15.Location = new System.Drawing.Point(231, 111);
+            label15.Location = new System.Drawing.Point(213, 111);
             label15.Name = "label15";
             label15.Size = new System.Drawing.Size(81, 17);
             label15.TabIndex = 9;
@@ -164,7 +164,7 @@
             column03Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             column03Label.AutoSize = true;
             column03Label.BackColor = System.Drawing.Color.Transparent;
-            column03Label.Location = new System.Drawing.Point(238, 137);
+            column03Label.Location = new System.Drawing.Point(213, 137);
             column03Label.Name = "column03Label";
             column03Label.Size = new System.Drawing.Size(71, 17);
             column03Label.TabIndex = 10;
@@ -175,7 +175,7 @@
             column04Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             column04Label.AutoSize = true;
             column04Label.BackColor = System.Drawing.Color.Transparent;
-            column04Label.Location = new System.Drawing.Point(243, 163);
+            column04Label.Location = new System.Drawing.Point(213, 163);
             column04Label.Name = "column04Label";
             column04Label.Size = new System.Drawing.Size(65, 17);
             column04Label.TabIndex = 11;
@@ -185,7 +185,7 @@
             // 
             label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(236, 85);
+            label4.Location = new System.Drawing.Point(213, 85);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(76, 17);
             label4.TabIndex = 159;
@@ -195,7 +195,7 @@
             // 
             label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(236, 59);
+            label2.Location = new System.Drawing.Point(213, 59);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(77, 17);
             label2.TabIndex = 157;
@@ -205,7 +205,7 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(243, 190);
+            this.label3.Location = new System.Drawing.Point(213, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 17);
             this.label3.TabIndex = 12;
@@ -215,7 +215,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(243, 244);
+            this.label1.Location = new System.Drawing.Point(213, 244);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 17);
             this.label1.TabIndex = 13;
@@ -231,7 +231,7 @@
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("d16c9c3d-64d3-402d-8424-34bfaf5c3b43"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(306, 461), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("d16c9c3d-64d3-402d-8424-34bfaf5c3b43"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(306, 477), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("d16c9c3d-64d3-402d-8424-34bfaf5c3b43"), new System.Drawing.Point(648, 398), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.EndPanelInfo();
             // 
@@ -240,9 +240,9 @@
             this.uiPanel0.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.FloatingLocation = new System.Drawing.Point(648, 398);
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
-            this.uiPanel0.Location = new System.Drawing.Point(433, 30);
+            this.uiPanel0.Location = new System.Drawing.Point(492, 30);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(306, 461);
+            this.uiPanel0.Size = new System.Drawing.Size(306, 477);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "اطلاعات ارسال";
             this.uiPanel0.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -274,13 +274,13 @@
             this.uiPanel0Container.Controls.Add(label14);
             this.uiPanel0Container.Location = new System.Drawing.Point(5, 24);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(300, 436);
+            this.uiPanel0Container.Size = new System.Drawing.Size(300, 452);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(243, 386);
+            this.label6.Location = new System.Drawing.Point(215, 386);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 17);
             this.label6.TabIndex = 163;
@@ -291,7 +291,7 @@
             this.chek1.AutoSize = true;
             this.chek1.Checked = true;
             this.chek1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chek1.Location = new System.Drawing.Point(209, 415);
+            this.chek1.Location = new System.Drawing.Point(168, 415);
             this.chek1.Name = "chek1";
             this.chek1.Size = new System.Drawing.Size(102, 21);
             this.chek1.TabIndex = 162;
@@ -377,9 +377,9 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(69, 406);
+            this.button1.Location = new System.Drawing.Point(39, 408);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 32);
+            this.button1.Size = new System.Drawing.Size(120, 38);
             this.button1.TabIndex = 7;
             this.button1.Text = "بررسی اطلاعات";
             this.button1.UseVisualStyleBackColor = true;
@@ -521,7 +521,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(742, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(801, 27);
             this.bindingNavigator1.TabIndex = 5;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -724,7 +724,7 @@
             this.gridEX1.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.SaveSettings = true;
             this.gridEX1.SettingsKey = "Frm_15_InfoServiceGrid_20";
-            this.gridEX1.Size = new System.Drawing.Size(430, 461);
+            this.gridEX1.Size = new System.Drawing.Size(489, 477);
             this.gridEX1.TabIndex = 6;
             this.gridEX1.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -783,7 +783,7 @@
             // 
             this.txt_Search.Border.Class = "TextBoxBorder";
             this.txt_Search.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txt_Search.Location = new System.Drawing.Point(618, 1);
+            this.txt_Search.Location = new System.Drawing.Point(677, 1);
             this.txt_Search.Name = "txt_Search";
             this.txt_Search.Size = new System.Drawing.Size(118, 24);
             this.txt_Search.TabIndex = 19;
@@ -891,7 +891,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 494);
+            this.ClientSize = new System.Drawing.Size(801, 510);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.ribbonBarMergeContainer1);
             this.Controls.Add(this.txt_Search);

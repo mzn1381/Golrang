@@ -43,9 +43,9 @@ namespace PCLOR.Product
             System.Windows.Forms.Label label9;
             System.Windows.Forms.Label label10;
             Janus.Windows.GridEX.GridEXLayout multiColumnColor_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
+            Janus.Windows.GridEX.GridEXLayout gridEX3_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout gridEX4_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_030_OrderColor));
-            Janus.Windows.GridEX.GridEXLayout gridEX3_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             this.uiPanelManager1 = new Janus.Windows.UI.Dock.UIPanelManager(this.components);
             this.uiPanel1 = new Janus.Windows.UI.Dock.UIPanel();
             this.uiPanel1Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
@@ -66,6 +66,9 @@ namespace PCLOR.Product
             this.txt_Id = new System.Windows.Forms.TextBox();
             this.txt_Title = new System.Windows.Forms.TextBox();
             this.txt_Description = new System.Windows.Forms.TextBox();
+            this.uiPanel0 = new Janus.Windows.UI.Dock.UIPanel();
+            this.uiPanel0Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
+            this.gridEX3 = new Janus.Windows.GridEX.GridEX();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -88,7 +91,6 @@ namespace PCLOR.Product
             this.uiPanel2 = new Janus.Windows.UI.Dock.UIPanel();
             this.txt_Search = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.gridEX4 = new Janus.Windows.GridEX.GridEX();
-            this.gridEX3 = new Janus.Windows.GridEX.GridEX();
             label11 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             label14 = new System.Windows.Forms.Label();
@@ -108,13 +110,16 @@ namespace PCLOR.Product
             ((System.ComponentModel.ISupportInitialize)(this.multiColumnColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_025_HederOrderColorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_05_PCLOR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).BeginInit();
+            this.uiPanel0.SuspendLayout();
+            this.uiPanel0Container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEX3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table_030_DetailOrderColorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanel2)).BeginInit();
             this.uiPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridEX4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridEX3)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -243,20 +248,24 @@ namespace PCLOR.Product
             this.uiPanelManager1.VisualStyle = Janus.Windows.UI.Dock.PanelVisualStyle.VS2010;
             this.uiPanel1.Id = new System.Guid("571b68ab-1038-437d-8fee-6960a2d27f1a");
             this.uiPanelManager1.Panels.Add(this.uiPanel1);
+            this.uiPanel0.Id = new System.Guid("b1872ae3-19e8-4402-87a1-f0a08e96f66c");
+            this.uiPanelManager1.Panels.Add(this.uiPanel0);
             // 
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("571b68ab-1038-437d-8fee-6960a2d27f1a"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(297, 708), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("b1872ae3-19e8-4402-87a1-f0a08e96f66c"), Janus.Windows.UI.Dock.PanelDockStyle.Top, new System.Drawing.Size(604, 354), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("e0d90735-8e9b-4976-b1b7-b3fe92f0aec3"), new System.Drawing.Point(674, 410), new System.Drawing.Size(200, 200), false);
-            this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("571b68ab-1038-437d-8fee-6960a2d27f1a"), new System.Drawing.Point(654, 425), new System.Drawing.Size(200, 200), false);
+            this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("571b68ab-1038-437d-8fee-6960a2d27f1a"), new System.Drawing.Point(908, 613), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("35c9b614-4265-4732-ad4b-916709ed15a7"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, true, new System.Drawing.Point(204, 490), new System.Drawing.Size(200, 200), false);
+            this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("b1872ae3-19e8-4402-87a1-f0a08e96f66c"), new System.Drawing.Point(285, 453), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.EndPanelInfo();
             // 
             // uiPanel1
             // 
             this.uiPanel1.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
-            this.uiPanel1.FloatingLocation = new System.Drawing.Point(654, 425);
+            this.uiPanel1.FloatingLocation = new System.Drawing.Point(908, 613);
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
             this.uiPanel1.Location = new System.Drawing.Point(607, 30);
             this.uiPanel1.Name = "uiPanel1";
@@ -344,7 +353,7 @@ namespace PCLOR.Product
             this.txt_Barcode.Location = new System.Drawing.Point(7, 3);
             this.txt_Barcode.Multiline = true;
             this.txt_Barcode.Name = "txt_Barcode";
-            this.txt_Barcode.Size = new System.Drawing.Size(202, 154);
+            this.txt_Barcode.Size = new System.Drawing.Size(202, 508);
             this.txt_Barcode.TabIndex = 0;
             this.txt_Barcode.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.txt_Barcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Barcode_KeyPress);
@@ -463,7 +472,7 @@ namespace PCLOR.Product
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Id.Location = new System.Drawing.Point(235, 314);
             this.txt_Id.Name = "txt_Id";
-            this.txt_Id.Size = new System.Drawing.Size(48, 24);
+            this.txt_Id.Size = new System.Drawing.Size(97, 24);
             this.txt_Id.TabIndex = 9;
             this.txt_Id.Visible = false;
             this.txt_Id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Barcode_KeyPress);
@@ -488,6 +497,61 @@ namespace PCLOR.Product
             this.txt_Description.Size = new System.Drawing.Size(202, 127);
             this.txt_Description.TabIndex = 12;
             this.txt_Description.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Barcode_KeyPress);
+            // 
+            // uiPanel0
+            // 
+            this.uiPanel0.FloatingLocation = new System.Drawing.Point(285, 453);
+            this.uiPanel0.InnerContainer = this.uiPanel0Container;
+            this.uiPanel0.Location = new System.Drawing.Point(3, 30);
+            this.uiPanel0.Name = "uiPanel0";
+            this.uiPanel0.Size = new System.Drawing.Size(604, 354);
+            this.uiPanel0.TabIndex = 4;
+            this.uiPanel0.Text = "Panel 0";
+            // 
+            // uiPanel0Container
+            // 
+            this.uiPanel0Container.Controls.Add(this.gridEX3);
+            this.uiPanel0Container.Location = new System.Drawing.Point(1, 24);
+            this.uiPanel0Container.Name = "uiPanel0Container";
+            this.uiPanel0Container.Size = new System.Drawing.Size(602, 325);
+            this.uiPanel0Container.TabIndex = 0;
+            // 
+            // gridEX3
+            // 
+            this.gridEX3.AllowEdit = Janus.Windows.GridEX.InheritableBoolean.False;
+            this.gridEX3.AllowRemoveColumns = Janus.Windows.GridEX.InheritableBoolean.True;
+            this.gridEX3.AlternatingColors = true;
+            this.gridEX3.BuiltInTextsData = resources.GetString("gridEX3.BuiltInTextsData");
+            this.gridEX3.ColumnAutoSizeMode = Janus.Windows.GridEX.ColumnAutoSizeMode.DisplayedCellsAndHeader;
+            this.gridEX3.Cursor = System.Windows.Forms.Cursors.Hand;
+            gridEX3_DesignTimeLayout.LayoutString = resources.GetString("gridEX3_DesignTimeLayout.LayoutString");
+            this.gridEX3.DesignTimeLayout = gridEX3_DesignTimeLayout;
+            this.gridEX3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridEX3.EnterKeyBehavior = Janus.Windows.GridEX.EnterKeyBehavior.NextCell;
+            this.gridEX3.FilterMode = Janus.Windows.GridEX.FilterMode.Automatic;
+            this.gridEX3.FilterRowButtonStyle = Janus.Windows.GridEX.FilterRowButtonStyle.ConditionOperatorDropDown;
+            this.gridEX3.FilterRowFormatStyle.BackColor = System.Drawing.Color.Lavender;
+            this.gridEX3.FilterRowFormatStyle.BackColorGradient = System.Drawing.Color.LavenderBlush;
+            this.gridEX3.FilterRowFormatStyle.BackgroundGradientMode = Janus.Windows.GridEX.BackgroundGradientMode.Vertical;
+            this.gridEX3.FilterRowUpdateMode = Janus.Windows.GridEX.FilterRowUpdateMode.WhenValueChanges;
+            this.gridEX3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridEX3.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid;
+            this.gridEX3.GroupByBoxVisible = false;
+            this.gridEX3.Location = new System.Drawing.Point(0, 0);
+            this.gridEX3.Name = "gridEX3";
+            this.gridEX3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.gridEX3.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
+            this.gridEX3.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
+            this.gridEX3.ScrollBars = Janus.Windows.GridEX.ScrollBars.Horizontal;
+            this.gridEX3.SettingsKey = "Frm_15_InfoServiceGrid_61";
+            this.gridEX3.Size = new System.Drawing.Size(602, 325);
+            this.gridEX3.TabIndex = 38;
+            this.gridEX3.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
+            this.gridEX3.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
+            this.gridEX3.TotalRowFormatStyle.BackColorGradient = System.Drawing.Color.White;
+            this.gridEX3.TotalRowPosition = Janus.Windows.GridEX.TotalRowPosition.BottomFixed;
+            this.gridEX3.UseCompatibleTextRendering = false;
+            this.gridEX3.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
             // 
             // bindingNavigator1
             // 
@@ -530,7 +594,7 @@ namespace PCLOR.Product
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             this.bindingNavigatorMoveFirstItem.Click += new System.EventHandler(this.bindingNavigatorMoveFirstItem_Click);
             // 
@@ -540,7 +604,7 @@ namespace PCLOR.Product
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             this.bindingNavigatorMovePreviousItem.Click += new System.EventHandler(this.bindingNavigatorMovePreviousItem_Click);
             // 
@@ -550,7 +614,7 @@ namespace PCLOR.Product
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             this.bindingNavigatorMoveNextItem.Click += new System.EventHandler(this.bindingNavigatorMoveNextItem_Click);
             // 
@@ -560,28 +624,28 @@ namespace PCLOR.Product
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             this.bindingNavigatorMoveLastItem.Click += new System.EventHandler(this.bindingNavigatorMoveLastItem_Click);
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_Delete
             // 
             this.btn_Delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_Delete.Image")));
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.RightToLeftAutoMirrorImage = true;
-            this.btn_Delete.Size = new System.Drawing.Size(61, 28);
+            this.btn_Delete.Size = new System.Drawing.Size(61, 24);
             this.btn_Delete.Text = "حذف";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_Save
             // 
@@ -596,7 +660,7 @@ namespace PCLOR.Product
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_New
             // 
@@ -611,14 +675,14 @@ namespace PCLOR.Product
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // bt_Print
             // 
             this.bt_Print.Image = ((System.Drawing.Image)(resources.GetObject("bt_Print.Image")));
             this.bt_Print.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bt_Print.Name = "bt_Print";
-            this.bt_Print.Size = new System.Drawing.Size(101, 28);
+            this.bt_Print.Size = new System.Drawing.Size(101, 24);
             this.bt_Print.Text = "طراحی چاپ";
             this.bt_Print.Click += new System.EventHandler(this.bt_Print_Click);
             // 
@@ -628,7 +692,7 @@ namespace PCLOR.Product
             this.btn_Search.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.Image")));
             this.btn_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(192, 28);
+            this.btn_Search.Size = new System.Drawing.Size(192, 24);
             this.btn_Search.Text = "                                        ";
             this.btn_Search.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
@@ -726,64 +790,29 @@ namespace PCLOR.Product
             this.gridEX4.BoundMode = Janus.Windows.GridEX.BoundMode.Unbound;
             gridEX4_DesignTimeLayout.LayoutString = resources.GetString("gridEX4_DesignTimeLayout.LayoutString");
             this.gridEX4.DesignTimeLayout = gridEX4_DesignTimeLayout;
+            this.gridEX4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridEX4.FilterMode = Janus.Windows.GridEX.FilterMode.Manual;
             this.gridEX4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.gridEX4.GroupByBoxVisible = false;
-            this.gridEX4.Location = new System.Drawing.Point(0, 422);
+            this.gridEX4.Location = new System.Drawing.Point(3, 384);
             this.gridEX4.Name = "gridEX4";
             this.gridEX4.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX4.ScrollBars = Janus.Windows.GridEX.ScrollBars.Both;
             this.gridEX4.SettingsKey = "gridEX4";
-            this.gridEX4.Size = new System.Drawing.Size(607, 315);
+            this.gridEX4.Size = new System.Drawing.Size(604, 354);
             this.gridEX4.TabIndex = 37;
             this.gridEX4.TableHeaders = Janus.Windows.GridEX.InheritableBoolean.Default;
             this.gridEX4.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
             this.gridEX4.FormattingRow += new Janus.Windows.GridEX.RowLoadEventHandler(this.gridEX4_FormattingRow);
-            // 
-            // gridEX3
-            // 
-            this.gridEX3.AllowEdit = Janus.Windows.GridEX.InheritableBoolean.False;
-            this.gridEX3.AllowRemoveColumns = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.gridEX3.AlternatingColors = true;
-            this.gridEX3.BuiltInTextsData = resources.GetString("gridEX3.BuiltInTextsData");
-            this.gridEX3.ColumnAutoSizeMode = Janus.Windows.GridEX.ColumnAutoSizeMode.DisplayedCellsAndHeader;
-            this.gridEX3.Cursor = System.Windows.Forms.Cursors.Hand;
-            gridEX3_DesignTimeLayout.LayoutString = resources.GetString("gridEX3_DesignTimeLayout.LayoutString");
-            this.gridEX3.DesignTimeLayout = gridEX3_DesignTimeLayout;
-            this.gridEX3.EnterKeyBehavior = Janus.Windows.GridEX.EnterKeyBehavior.NextCell;
-            this.gridEX3.FilterMode = Janus.Windows.GridEX.FilterMode.Automatic;
-            this.gridEX3.FilterRowButtonStyle = Janus.Windows.GridEX.FilterRowButtonStyle.ConditionOperatorDropDown;
-            this.gridEX3.FilterRowFormatStyle.BackColor = System.Drawing.Color.Lavender;
-            this.gridEX3.FilterRowFormatStyle.BackColorGradient = System.Drawing.Color.LavenderBlush;
-            this.gridEX3.FilterRowFormatStyle.BackgroundGradientMode = Janus.Windows.GridEX.BackgroundGradientMode.Vertical;
-            this.gridEX3.FilterRowUpdateMode = Janus.Windows.GridEX.FilterRowUpdateMode.WhenValueChanges;
-            this.gridEX3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridEX3.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid;
-            this.gridEX3.GroupByBoxVisible = false;
-            this.gridEX3.Location = new System.Drawing.Point(0, 30);
-            this.gridEX3.Name = "gridEX3";
-            this.gridEX3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.gridEX3.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
-            this.gridEX3.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.gridEX3.ScrollBars = Janus.Windows.GridEX.ScrollBars.Horizontal;
-            this.gridEX3.SettingsKey = "Frm_15_InfoServiceGrid_61";
-            this.gridEX3.Size = new System.Drawing.Size(607, 390);
-            this.gridEX3.TabIndex = 38;
-            this.gridEX3.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.gridEX3.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
-            this.gridEX3.TotalRowFormatStyle.BackColorGradient = System.Drawing.Color.White;
-            this.gridEX3.TotalRowPosition = Janus.Windows.GridEX.TotalRowPosition.BottomFixed;
-            this.gridEX3.UseCompatibleTextRendering = false;
-            this.gridEX3.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
             // 
             // Frm_030_OrderColor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 741);
-            this.Controls.Add(this.gridEX3);
             this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.gridEX4);
+            this.Controls.Add(this.uiPanel0);
             this.Controls.Add(this.uiPanel1);
             this.Controls.Add(this.bindingNavigator1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -800,6 +829,10 @@ namespace PCLOR.Product
             ((System.ComponentModel.ISupportInitialize)(this.multiColumnColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_025_HederOrderColorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_05_PCLOR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).EndInit();
+            this.uiPanel0.ResumeLayout(false);
+            this.uiPanel0Container.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridEX3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
@@ -807,7 +840,6 @@ namespace PCLOR.Product
             ((System.ComponentModel.ISupportInitialize)(this.uiPanel2)).EndInit();
             this.uiPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridEX4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridEX3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -863,5 +895,7 @@ namespace PCLOR.Product
         public Janus.Windows.GridEX.GridEX gridEX4;
         private Janus.Windows.GridEX.GridEX gridEX3;
         private System.Windows.Forms.TextBox txt_Id;
+        private Janus.Windows.UI.Dock.UIPanel uiPanel0;
+        private Janus.Windows.UI.Dock.UIPanelInnerContainer uiPanel0Container;
     }
 }
