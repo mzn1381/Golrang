@@ -28,6 +28,7 @@ namespace PCLOR._01_OperationInfo
         private string HeadersReciptId = "";
         private string HeadersDraftId = "";
         private string[] Barcodes;
+        private int NumberOfTransfer = 0;
         public IEnumerable<DetailTranferBarcodeViewModel> DetailsTranferBarcode;
 
         public Frm_65_Transfer_Barcode()
@@ -39,8 +40,11 @@ namespace PCLOR._01_OperationInfo
         {
             // TODO: This line of code loads data into the 'pCLOR_1_1400DataSet1.Table_140_Transfer_Barcode' table. You can move, or remove it, as needed.
             this.table_140_Transfer_BarcodeTableAdapter.Fill(this.pCLOR_1_1400DataSet1.Table_140_Transfer_Barcode);
+            txt_DateTime.Text = DateTime.Now.ToShamsi();
             FillFuntionTypes();
-            txtTimeCreate.Text = DateTime.Now.TimeOfDay.ToString().Remove(5);
+            NumberOfTransfer = GetMaxNumber();
+            lblNumberTransfer.Text = NumberOfTransfer.ToString();
+            txtTimeCreate.Text = DateTime.Now.ToString();
             btnTransfer.Enabled = false;
             DateNowShamsi = DateTime.Now.ToShamsi();
             menuStoresDestination.DataSource = GetStores(null);
@@ -165,7 +169,7 @@ SELECT
                 var weight = row.Cells["Weight"].Value.ToString();
                 var deviceId = row.Cells["DeviceId"].Value.ToString();
                 var headerReciptId = BasicFunction.Recipt(ConWare, txt_DateTime.Text, 0, ClDoc, Convert.ToInt32(menuStoresDestination.Value.ToString()), Convert.ToInt32(menuFunctionTypeRecipt.Value.ToString()), null, "", codeCommodit: codeCommodity);
-                HeadersReciptId = headerReciptId.ToString();
+                HeadersReciptId += " , " + headerReciptId.ToString();
                 return MyBasicFunction.BasicFunction.ReciptChild(ConWare: ConWare, headerReciptId, value: 1, Convert.ToInt32(codeCommodity), weight: Convert.ToDecimal(weight), barcode: barcode, Convert.ToInt32(deviceId));
             }
             catch (Exception ex)
@@ -366,13 +370,11 @@ SELECT
                         return;
                     }
                 }
-                if (string.IsNullOrEmpty(txt_DateTime.Text))
+                if (string.IsNullOrEmpty(txt_DateTime.Text) || txt_DateTime.Text.Trim() == "/  /")
                 {
                     MessageBox.Show("لطفا تاریخ انتقال را مشخص کنید");
                     return;
                 }
-
-
                 var idChildRecipt = 0;
                 var idChildDraft = 0;
                 var codeSourceStore = 0;
@@ -386,7 +388,7 @@ SELECT
                         idChildDraft = Draft(item, codeSourceStore);
                         ChangeCodeStoreOfBarcode(item, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()));
                         item.BeginEdit();
-                        item.Cells["Number"].Value = AddToTranferBarcode(item.Cells["Barcode"].Value.ToString(), item.Cells["CurrentStore"].Value.ToString(), menuStoresDestination.Text, idChildRecipt, idChildDraft, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()), GetMaxNumber());
+                        item.Cells["Number"].Value = AddToTranferBarcode(item.Cells["Barcode"].Value.ToString(), item.Cells["CurrentStore"].Value.ToString(), menuStoresDestination.Text, idChildRecipt, idChildDraft, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()), NumberOfTransfer);
                         item.Cells["FunctionTypeRecipt"].Value = menuFunctionTypeRecipt.Text;
                         item.Cells["FunctionTypeDraft"].Value = menuFunctionTypeDraft.Text;
                         item.Cells["CreateUser"].Value = Class_BasicOperation._UserName.Trim();
@@ -395,20 +397,25 @@ SELECT
                         item.Cells["CurrentStore"].Value = menuStoresDestination.Text;
                         item.EndEdit();
                     }
-
                 }
                 catch (Exception ex)
                 {
                     return;
-
                 }
                 HeadersDraftId = HeadersDraftId.TrimEnd(',');
-                MessageBox.Show("");
-                //this.Close();
+                var messageForDraft = $" حواله  با شماره    {HeadersDraftId.Trim()} انجام شد ";
+                var messageForRecipt = $" رسید باشماره {HeadersReciptId.Trim().TrimStart(',')} صادر شد  ";
+                MessageBox.Show(messageForDraft + "\n" + messageForRecipt, "حواله و فاکتور", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+                gridEX8.ClearItems();
+                NumberOfTransfer = GetMaxNumber();
+                lblNumberTransfer.Text = NumberOfTransfer.ToString();
+                txtBarcodes.Text = string.Empty;
+                txt_DateTime.Text = string.Empty;
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show("انتقال با شکست مواجه شد!");
+                MessageBox.Show("انتقال با شکست مواجه شد!", "حواله و فاکتور", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 return;
             }
         }
@@ -491,6 +498,7 @@ SELECT
                 //FillDetailBarcode(barcodes);
                 gridEX8.ClearItems();
                 ShowDetailBarcode();
+                lblNumberTransfer.Text = NumberOfTransfer.ToString();
                 btnTransfer.Enabled = true;
 
             }
@@ -518,14 +526,16 @@ SELECT
             codes = codes.Trim(',');
             return codes;
         }
-        public IEnumerable<DetailTranferBarcodeViewModel> GetDetailBarcode(string codes, string search = null, bool isSearch = false)
+        public IEnumerable<DetailTranferBarcodeViewModel> GetDetailBarcode(string codes = "", string search = null, bool isSearch = false, TransferbarcodeSearchTypeEnum searchType = TransferbarcodeSearchTypeEnum.Barcode)
         {
             try
             {
 
                 using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
                 {
-                    var length = codes.Split(',').Length;
+                    int length = 0;
+                    if (!string.IsNullOrEmpty(codes))
+                        length = codes.Split(',').Length;
                     string query = "";
                     if (isSearch)
                     {
@@ -551,20 +561,29 @@ SELECT
       ,[TransferDescription]
       ,[CodeStore]
       ,[Number] 
-  FROM [PCLOR_1_1400].[dbo].[V_DetailTransferBarcode]
-       ";
+  FROM [PCLOR_1_1400].[dbo].[V_DetailTransferBarcode] ";
+
 
                         if (!string.IsNullOrEmpty(search))
                         {
-                            query += $@"     
-Where  Barcode    Like    N'{search.Trim()}'  OR  Number = N'{search.Trim()}'    OR   DateTransfer  = N'{search.Trim()}'  
-";
+                            switch (searchType)
+                            {
+                                case TransferbarcodeSearchTypeEnum.Barcode:
+                                    query += $@" Where   LTRIM( RTRIM(Barcode))  =   N'{search.Trim()}'   ";
+                                    break;
+                                case TransferbarcodeSearchTypeEnum.NumberTransfer:
+                                    query += $@" Where  LTRIM( RTRIM(Number)) =  N'{search.Trim()}'   ";
+                                    break;
+                                default:
+                                    break;
+                            }
                         }
                     }
 
                     else
                         query = $@"
-SELECT TOP ({length}) [Weight]
+SELECT TOP ({length}) 
+       [Weight]
       ,[Description] as BarcodeDescription
       ,[Machine] as DeviceId
       ,[CottonName] as NameCotton
@@ -575,11 +594,10 @@ SELECT TOP ({length}) [Weight]
       ,[CodeStore] 
       ,[IsRegToOrderColor]
   FROM [PCLOR_1_1400].[dbo].[DeatailBarcodes] 
-where Barcode in   ({codes}) 
-    ";
+where Barcode in   ({codes}) ";
+
                     var res = db.Query<DetailTranferBarcodeViewModel>(query, null, commandType: CommandType.Text);
                     return res;
-
                     //db.ConnectionString = ConWare.ConnectionString;
                     //if (res != null)
                     //{
@@ -612,7 +630,7 @@ where Barcode in   ({codes})
             try
             {
                 if (models == null || models.Count() == 0)
-                    models = DetailsTranferBarcode;
+                    models = DetailsTranferBarcode ?? new List<DetailTranferBarcodeViewModel>();
                 foreach (var item in models)
                 {
                     var row = gridEX8.AddItem();
@@ -660,9 +678,70 @@ where Barcode in   ({codes})
         {
             try
             {
+                var query = $@"select MAX(CAST(NUMBER as INT )) +1 from Table_140_Transfer_Barcode";
+
+                using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+                {
+                    return db.QueryFirstOrDefault<int>(query);
+                }
+            }
+            catch (NullReferenceException ex)
+            {
+                return 1;
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            }
+        }
+
+
+        private int GetPreviousNumber(int number)
+        {
+            try
+            {
                 var query = $@"
-                         select   ISNULL ( Max(Id) , 0)  +80    from   Table_140_Transfer_Barcode
-";
+                                          select Top (1) Number from Table_140_Transfer_Barcode where Number <  @Number
+ ";
+                using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+                {
+                    return db.QueryFirstOrDefault<int>(query, new { @Number = number });
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            }
+
+        }
+
+        private int GetNextNumber(int number)
+        {
+            try
+            {
+                var query = $@"
+                                            select Top (1) Number from Table_140_Transfer_Barcode where Number >@Number 
+ ";
+                using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+                {
+                    return db.QueryFirstOrDefault<int>(query, new { @Number = number });
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            }
+
+        }
+
+
+        private int GetMinNumber()
+        {
+            try
+            {
+                var query = $@"select MIN(Number) from Table_140_Transfer_Barcode";
                 using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
                 {
                     return db.QueryFirstOrDefault<int>(query);
@@ -673,21 +752,32 @@ where Barcode in   ({codes})
                 return -1;
             }
 
-
         }
+
         private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
         {
-
+            if ((Convert.ToInt32(lblNumberTransfer.Text) + 1) > NumberOfTransfer)
+                return;
+            gridEX8.ClearItems();
+            var nextNumber = GetNextNumber(Convert.ToInt32(lblNumberTransfer.Text));
+            ShowDetailBarcode(GetDetailBarcode("", nextNumber.ToString(), true, TransferbarcodeSearchTypeEnum.NumberTransfer), true);
+            lblNumberTransfer.Text = nextNumber.ToString();
         }
 
         private void bindingNavigatorMovePreviousItem_Click(object sender, EventArgs e)
         {
-
+            gridEX8.ClearItems();
+            var previousNumber = GetPreviousNumber(Convert.ToInt32(lblNumberTransfer.Text));
+            ShowDetailBarcode(GetDetailBarcode("", previousNumber.ToString(), true, TransferbarcodeSearchTypeEnum.NumberTransfer), true);
+            lblNumberTransfer.Text =previousNumber.ToString();
         }
 
         private void bindingNavigatorMoveFirstItem_Click(object sender, EventArgs e)
         {
-
+            var min = GetMinNumber();
+            gridEX8.ClearItems();
+            ShowDetailBarcode(GetDetailBarcode("", min.ToString(), true, TransferbarcodeSearchTypeEnum.NumberTransfer), true);
+            lblNumberTransfer.Text = min.ToString();
         }
 
         private void btn_Print_Click(object sender, EventArgs e)
@@ -702,34 +792,64 @@ where Barcode in   ({codes})
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txt_Search.Text.Trim()))
+            if (!string.IsNullOrEmpty(txtSearchTransferNumber.Text.Trim()))
             {
                 gridEX8.ClearItems();
                 Barcodes = GetBarcodes(txtBarcodes.Text.Trim());
-                ShowDetailBarcode(GetDetailBarcode(GetOrginalCodes(Barcodes), txt_Search.Text.Trim(), true), true);
+                ShowDetailBarcode(GetDetailBarcode(GetOrginalCodes(Barcodes), txtSearchTransferNumber.Text.Trim(), true), true);
             }
             return;
         }
-        //public void FillDetailBarcode(string[] barcodes)
-        //{
 
-        //    var codes = GetOrginalCodes(barcodes);
-        //    detailBarcodeViewModels = GetDetailBarcode(codes);
+        private void txtSearchBarcode_TextChanged(object sender, EventArgs e)
+        {
+            //if (!string.IsNullOrEmpty(txtSearchTransferNumber.Text.Trim()))
+            //{
+            //    gridEX8.ClearItems();
+            //    Barcodes = GetBarcodes(txtBarcodes.Text.Trim());
+            //    ShowDetailBarcode(GetDetailBarcode(GetOrginalCodes(Barcodes), txtSearchTransferNumber.Text.Trim(), true, TransferbarcodeSearchTypeEnum.Barcode), true);
+            //}
+            //return;
+        }
 
-        //    var descs = detailBarcodeViewModels.Where(d => !string.IsNullOrEmpty(d.Description)).Select(c => c.Description);
-        //    if (detailBarcodeViewModels != null && detailBarcodeViewModels.Count() != 0)
-        //    {
-        //        var first = detailBarcodeViewModels.First();
-        //        txt_weight.Text = detailBarcodeViewModels.Sum(d => d.Weight).ToString();
-        //        txt_Description.Text = string.Join(System.Environment.NewLine, descs);
-        //        lblNameDevice.Text = first.NameDevice;
-        //        lblClothType.Text = first.ClothName;
-        //        txt_NumberOrder.Text = barcodes.Count().ToString();
-        //        countHaveDesc = descs.Count();
-        //    }
-        //}
+        private void txtSearchTransferNumber_TextChanged(object sender, EventArgs e)
+        {
 
+            //if (!string.IsNullOrEmpty(txtSearchTransferNumber.Text.Trim()))
+            //{
+            //    gridEX8.ClearItems();
+            //    Barcodes = GetBarcodes(txtBarcodes.Text.Trim());
+            //    ShowDetailBarcode(GetDetailBarcode(GetOrginalCodes(Barcodes), txtSearchTransferNumber.Text.Trim(), true, TransferbarcodeSearchTypeEnum.NumberTransfer), true);
+            //}
+            //return;
+        }
 
+        private void txtSearchBarcode_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == 13 && !string.IsNullOrEmpty(txtSearchBarcode.Text.Trim()))
+            {
+                gridEX8.ClearItems();
+                //Barcodes = GetBarcodes(txtBarcodes.Text.Trim());
+                ShowDetailBarcode(GetDetailBarcode("", txtSearchBarcode.Text.Trim(), true, TransferbarcodeSearchTypeEnum.Barcode), true);
+            }
+        }
+
+        private void txtSearchTransferNumber_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == 13 && !string.IsNullOrEmpty(txtSearchTransferNumber.Text.Trim()))
+            {
+                gridEX8.ClearItems();
+                ShowDetailBarcode(GetDetailBarcode("", txtSearchTransferNumber.Text.Trim(), true, TransferbarcodeSearchTypeEnum.NumberTransfer), true);
+            }
+        }
+
+        private void bindingNavigatorMoveLastItem_Click(object sender, EventArgs e)
+        {
+            gridEX8.ClearItems();
+            var maxNumber = GetMaxNumber();
+            ShowDetailBarcode(GetDetailBarcode("", maxNumber.ToString(), true, TransferbarcodeSearchTypeEnum.NumberTransfer), true);
+            lblNumberTransfer.Text = maxNumber.ToString();
+        }
 
     }
 }

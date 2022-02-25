@@ -401,6 +401,7 @@
     <Compile Include="Models\ShowDetailBarcodeViewModel.cs" />
     <Compile Include="Models\ShowDetailColorViewModel.cs" />
     <Compile Include="Models\ShowStoresViewModel.cs" />
+    <Compile Include="Models\TransferbarcodeSearchTypeEnum.cs" />
     <Compile Include="Models\TypeColorViewModel.cs" />
     <Compile Include="Models\YarnTypeDropDownViewModel.cs" />
     <Compile Include="PCLOR_1_1400DataSet.cs">
