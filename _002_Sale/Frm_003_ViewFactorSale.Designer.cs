@@ -141,8 +141,8 @@
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("f46a74c9-6e6d-426a-8112-ef9a7d0da9de"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(252, 419), true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("b8e2eba1-50a5-4b4a-a05f-46f7cdd7da54"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Fill, false, new System.Drawing.Size(542, 419), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("f46a74c9-6e6d-426a-8112-ef9a7d0da9de"), Janus.Windows.UI.Dock.PanelDockStyle.Left, new System.Drawing.Size(252, 517), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("b8e2eba1-50a5-4b4a-a05f-46f7cdd7da54"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Fill, false, new System.Drawing.Size(809, 517), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("ff605f1f-cd23-4a6c-a51b-2affcb005756"), new System.Guid("b8e2eba1-50a5-4b4a-a05f-46f7cdd7da54"), 197, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("6ced9424-8582-4e63-9fa2-c0529be8132d"), new System.Guid("b8e2eba1-50a5-4b4a-a05f-46f7cdd7da54"), 215, true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("ff605f1f-cd23-4a6c-a51b-2affcb005756"), new System.Drawing.Point(372, 333), new System.Drawing.Size(200, 200), false);
@@ -155,9 +155,10 @@
             this.uiPanel1.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel1.FloatingLocation = new System.Drawing.Point(50, 349);
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
-            this.uiPanel1.Location = new System.Drawing.Point(3, 28);
+            this.uiPanel1.Location = new System.Drawing.Point(3, 34);
+            this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(252, 419);
+            this.uiPanel1.Size = new System.Drawing.Size(252, 517);
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = "اضافات و کسورات";
             this.uiPanel1.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -165,9 +166,10 @@
             // uiPanel1Container
             // 
             this.uiPanel1Container.Controls.Add(this.gridEX_Extra);
-            this.uiPanel1Container.Location = new System.Drawing.Point(1, 20);
+            this.uiPanel1Container.Location = new System.Drawing.Point(1, 22);
+            this.uiPanel1Container.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uiPanel1Container.Name = "uiPanel1Container";
-            this.uiPanel1Container.Size = new System.Drawing.Size(246, 398);
+            this.uiPanel1Container.Size = new System.Drawing.Size(246, 494);
             this.uiPanel1Container.TabIndex = 0;
             // 
             // gridEX_Extra
@@ -192,6 +194,7 @@
             this.gridEX_Extra.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid;
             this.gridEX_Extra.GroupByBoxVisible = false;
             this.gridEX_Extra.Location = new System.Drawing.Point(0, 0);
+            this.gridEX_Extra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridEX_Extra.Name = "gridEX_Extra";
             this.gridEX_Extra.NewRowFormatStyle.BackColor = System.Drawing.Color.Lavender;
             this.gridEX_Extra.NewRowFormatStyle.BackColorGradient = System.Drawing.Color.LavenderBlush;
@@ -202,7 +205,7 @@
             this.gridEX_Extra.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX_Extra.SaveSettings = true;
             this.gridEX_Extra.SettingsKey = "gridEX_Extra_51";
-            this.gridEX_Extra.Size = new System.Drawing.Size(246, 398);
+            this.gridEX_Extra.Size = new System.Drawing.Size(246, 494);
             this.gridEX_Extra.TabIndex = 1;
             this.gridEX_Extra.TableHeaderFormatStyle.ForeColor = System.Drawing.Color.Black;
             this.gridEX_Extra.TableHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
@@ -230,9 +233,10 @@
             // 
             // uiPanelGroup1
             // 
-            this.uiPanelGroup1.Location = new System.Drawing.Point(255, 28);
+            this.uiPanelGroup1.Location = new System.Drawing.Point(255, 34);
+            this.uiPanelGroup1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uiPanelGroup1.Name = "uiPanelGroup1";
-            this.uiPanelGroup1.Size = new System.Drawing.Size(542, 419);
+            this.uiPanelGroup1.Size = new System.Drawing.Size(809, 517);
             this.uiPanelGroup1.TabIndex = 5;
             // 
             // uiPanel0
@@ -241,8 +245,9 @@
             this.uiPanel0.FloatingLocation = new System.Drawing.Point(372, 333);
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
             this.uiPanel0.Location = new System.Drawing.Point(0, 0);
+            this.uiPanel0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(542, 199);
+            this.uiPanel0.Size = new System.Drawing.Size(809, 246);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "اطلاعات فاکتور فروش";
             this.uiPanel0.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -250,9 +255,10 @@
             // uiPanel0Container
             // 
             this.uiPanel0Container.Controls.Add(this.gridEX1);
-            this.uiPanel0Container.Location = new System.Drawing.Point(1, 20);
+            this.uiPanel0Container.Location = new System.Drawing.Point(1, 22);
+            this.uiPanel0Container.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(540, 178);
+            this.uiPanel0Container.Size = new System.Drawing.Size(807, 223);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // gridEX1
@@ -280,6 +286,7 @@
             this.gridEX1.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid;
             this.gridEX1.GroupByBoxVisible = false;
             this.gridEX1.Location = new System.Drawing.Point(0, 0);
+            this.gridEX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridEX1.Name = "gridEX1";
             this.gridEX1.NewRowFormatStyle.BackColor = System.Drawing.Color.LightCyan;
             this.gridEX1.NewRowFormatStyle.BackgroundGradientMode = Janus.Windows.GridEX.BackgroundGradientMode.Vertical;
@@ -289,7 +296,7 @@
             this.gridEX1.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.SaveSettings = true;
             this.gridEX1.SettingsKey = "Form_StoreSaleFactor67";
-            this.gridEX1.Size = new System.Drawing.Size(540, 178);
+            this.gridEX1.Size = new System.Drawing.Size(807, 223);
             this.gridEX1.TabIndex = 3;
             this.gridEX1.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX1.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -304,17 +311,19 @@
             this.uiPanel2.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel2.FloatingLocation = new System.Drawing.Point(428, 407);
             this.uiPanel2.InnerContainer = this.uiPanel2Container;
-            this.uiPanel2.Location = new System.Drawing.Point(0, 203);
+            this.uiPanel2.Location = new System.Drawing.Point(0, 250);
+            this.uiPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uiPanel2.Name = "uiPanel2";
-            this.uiPanel2.Size = new System.Drawing.Size(542, 216);
+            this.uiPanel2.Size = new System.Drawing.Size(809, 267);
             this.uiPanel2.TabIndex = 4;
             // 
             // uiPanel2Container
             // 
             this.uiPanel2Container.Controls.Add(this.gridEX_List);
-            this.uiPanel2Container.Location = new System.Drawing.Point(1, 20);
+            this.uiPanel2Container.Location = new System.Drawing.Point(1, 22);
+            this.uiPanel2Container.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uiPanel2Container.Name = "uiPanel2Container";
-            this.uiPanel2Container.Size = new System.Drawing.Size(540, 195);
+            this.uiPanel2Container.Size = new System.Drawing.Size(807, 244);
             this.uiPanel2Container.TabIndex = 0;
             // 
             // gridEX_List
@@ -345,6 +354,7 @@
             this.gridEX_List.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid;
             this.gridEX_List.GroupByBoxVisible = false;
             this.gridEX_List.Location = new System.Drawing.Point(0, 0);
+            this.gridEX_List.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridEX_List.Name = "gridEX_List";
             this.gridEX_List.NewRowFormatStyle.BackColor = System.Drawing.Color.LightCyan;
             this.gridEX_List.NewRowFormatStyle.BackgroundGradientMode = Janus.Windows.GridEX.BackgroundGradientMode.Vertical;
@@ -354,7 +364,7 @@
             this.gridEX_List.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX_List.SaveSettings = true;
             this.gridEX_List.SettingsKey = "Form_10";
-            this.gridEX_List.Size = new System.Drawing.Size(540, 195);
+            this.gridEX_List.Size = new System.Drawing.Size(807, 244);
             this.gridEX_List.TabIndex = 2;
             this.gridEX_List.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX_List.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -377,6 +387,7 @@
             this.bindingNavigator1.CountItem = null;
             this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorSeparator1,
             this.tsexcel,
@@ -400,35 +411,35 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(800, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1067, 31);
             this.bindingNavigator1.TabIndex = 13;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // tsexcel
             // 
             this.tsexcel.Image = ((System.Drawing.Image)(resources.GetObject("tsexcel.Image")));
             this.tsexcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsexcel.Name = "tsexcel";
-            this.tsexcel.Size = new System.Drawing.Size(98, 22);
+            this.tsexcel.Size = new System.Drawing.Size(122, 28);
             this.tsexcel.Text = "ارسال به اکسل";
             this.tsexcel.Click += new System.EventHandler(this.tsexcel_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripButton2
             // 
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(46, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(56, 28);
             this.toolStripButton2.Text = "چاپ";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -436,13 +447,13 @@
             // 
             this.toolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(38, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(47, 28);
             this.toolStripLabel1.Text = "از تاریخ";
             // 
             // faDate1
@@ -450,7 +461,7 @@
             this.faDate1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.faDate1.BackColor = System.Drawing.SystemColors.Window;
             this.faDate1.Name = "faDate1";
-            this.faDate1.Size = new System.Drawing.Size(120, 22);
+            this.faDate1.Size = new System.Drawing.Size(160, 28);
             this.faDate1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.faDate1_KeyPress);
             this.faDate1.TextChanged += new System.EventHandler(this.faDate1_TextChanged);
             // 
@@ -458,27 +469,27 @@
             // 
             this.toolStripSeparator5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(37, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(47, 28);
             this.toolStripLabel2.Text = "تا تاریخ";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // faDate2
             // 
             this.faDate2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.faDate2.BackColor = System.Drawing.SystemColors.Window;
             this.faDate2.Name = "faDate2";
-            this.faDate2.Size = new System.Drawing.Size(120, 22);
+            this.faDate2.Size = new System.Drawing.Size(160, 28);
             this.faDate2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.faDate2_KeyPress);
             this.faDate2.TextChanged += new System.EventHandler(this.faDate2_TextChanged);
             // 
@@ -489,21 +500,21 @@
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(23, 22);
+            this.btnSearch.Size = new System.Drawing.Size(29, 28);
             this.btnSearch.Text = "جستجو";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
             // 
             // btnEdit
             // 
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(60, 22);
+            this.btnEdit.Size = new System.Drawing.Size(73, 28);
             this.btnEdit.Text = "ویرایش";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -573,12 +584,13 @@
             this.ribbonBarMergeContainer1.Controls.Add(this.ribbonBar3);
             this.ribbonBarMergeContainer1.Controls.Add(this.ribbonBar2);
             this.ribbonBarMergeContainer1.Controls.Add(this.ribbonBar1);
-            this.ribbonBarMergeContainer1.Location = new System.Drawing.Point(255, 1);
+            this.ribbonBarMergeContainer1.Location = new System.Drawing.Point(340, 1);
+            this.ribbonBarMergeContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbonBarMergeContainer1.MergeRibbonGroupName = "SettingTab";
             this.ribbonBarMergeContainer1.Name = "ribbonBarMergeContainer1";
             this.ribbonBarMergeContainer1.RibbonTabColorTable = DevComponents.DotNetBar.eRibbonTabColor.Magenta;
             this.ribbonBarMergeContainer1.RibbonTabText = "تنظیمات";
-            this.ribbonBarMergeContainer1.Size = new System.Drawing.Size(211, 21);
+            this.ribbonBarMergeContainer1.Size = new System.Drawing.Size(281, 26);
             this.ribbonBarMergeContainer1.StretchLastRibbonBar = true;
             // 
             // 
@@ -613,10 +625,11 @@
             this.buttonItem5,
             this.buttonItem6,
             this.microChartItem3});
-            this.ribbonBar3.Location = new System.Drawing.Point(-328, 0);
+            this.ribbonBar3.Location = new System.Drawing.Point(-438, 0);
+            this.ribbonBar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbonBar3.Name = "ribbonBar3";
             this.ribbonBar3.ResizeItemsToFit = false;
-            this.ribbonBar3.Size = new System.Drawing.Size(207, 21);
+            this.ribbonBar3.Size = new System.Drawing.Size(276, 26);
             this.ribbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar3.TabIndex = 2;
             this.ribbonBar3.Text = "انتخاب ستونهای جدول";
@@ -634,8 +647,9 @@
             this.gridEXFieldChooserControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridEXFieldChooserControl3.GridEX = this.gridEX_Extra;
             this.gridEXFieldChooserControl3.Location = new System.Drawing.Point(0, 0);
+            this.gridEXFieldChooserControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridEXFieldChooserControl3.Name = "gridEXFieldChooserControl3";
-            this.gridEXFieldChooserControl3.Size = new System.Drawing.Size(207, 6);
+            this.gridEXFieldChooserControl3.Size = new System.Drawing.Size(276, 9);
             this.gridEXFieldChooserControl3.TabIndex = 2;
             this.gridEXFieldChooserControl3.Text = "gridEXFieldChooserControl3";
             // 
@@ -673,10 +687,11 @@
             this.buttonItem3,
             this.buttonItem4,
             this.microChartItem2});
-            this.ribbonBar2.Location = new System.Drawing.Point(-121, 0);
+            this.ribbonBar2.Location = new System.Drawing.Point(-162, 0);
+            this.ribbonBar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbonBar2.Name = "ribbonBar2";
             this.ribbonBar2.ResizeItemsToFit = false;
-            this.ribbonBar2.Size = new System.Drawing.Size(207, 21);
+            this.ribbonBar2.Size = new System.Drawing.Size(276, 26);
             this.ribbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar2.TabIndex = 1;
             this.ribbonBar2.Text = "انتخاب ستونهای جدول";
@@ -694,8 +709,9 @@
             this.gridEXFieldChooserControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridEXFieldChooserControl2.GridEX = this.gridEX_List;
             this.gridEXFieldChooserControl2.Location = new System.Drawing.Point(0, 0);
+            this.gridEXFieldChooserControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridEXFieldChooserControl2.Name = "gridEXFieldChooserControl2";
-            this.gridEXFieldChooserControl2.Size = new System.Drawing.Size(207, 6);
+            this.gridEXFieldChooserControl2.Size = new System.Drawing.Size(276, 9);
             this.gridEXFieldChooserControl2.TabIndex = 2;
             this.gridEXFieldChooserControl2.Text = "gridEXFieldChooserControl2";
             // 
@@ -733,10 +749,11 @@
             this.buttonItem1,
             this.buttonItem2,
             this.microChartItem1});
-            this.ribbonBar1.Location = new System.Drawing.Point(86, 0);
+            this.ribbonBar1.Location = new System.Drawing.Point(114, 0);
+            this.ribbonBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbonBar1.Name = "ribbonBar1";
             this.ribbonBar1.ResizeItemsToFit = false;
-            this.ribbonBar1.Size = new System.Drawing.Size(125, 21);
+            this.ribbonBar1.Size = new System.Drawing.Size(167, 26);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar1.TabIndex = 0;
             this.ribbonBar1.Text = "انتخاب ستونهای جدول";
@@ -754,8 +771,9 @@
             this.gridEXFieldChooserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridEXFieldChooserControl1.GridEX = this.gridEX1;
             this.gridEXFieldChooserControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridEXFieldChooserControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridEXFieldChooserControl1.Name = "gridEXFieldChooserControl1";
-            this.gridEXFieldChooserControl1.Size = new System.Drawing.Size(125, 6);
+            this.gridEXFieldChooserControl1.Size = new System.Drawing.Size(167, 9);
             this.gridEXFieldChooserControl1.TabIndex = 2;
             this.gridEXFieldChooserControl1.Text = "gridEXFieldChooserControl1";
             // 
@@ -777,13 +795,14 @@
             // 
             // Frm_003_ViewFactorSale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.ribbonBarMergeContainer1);
             this.Controls.Add(this.uiPanelGroup1);
             this.Controls.Add(this.uiPanel1);
             this.Controls.Add(this.bindingNavigator1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_003_ViewFactorSale";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

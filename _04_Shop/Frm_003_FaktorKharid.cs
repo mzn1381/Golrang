@@ -3025,6 +3025,11 @@ namespace PCLOR._04_Shop
 
         }
 
+        private void buttonItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void txt_TotalPrice_ValueChanged(object sender, EventArgs e)
         {
 

@@ -49,8 +49,10 @@ namespace PCLOR._01_OperationInfo
             DateNowShamsi = DateTime.Now.ToShamsi();
             menuStoresDestination.DataSource = GetStores(null);
             menuStoresStart.DataSource = GetStores(null);
+            gridEX8.BoundMode = BoundMode.Unbound;
             if (checkRegAuto.Checked)
                 menuStoresStart.Text = string.Empty;
+
         }
 
 
@@ -310,7 +312,7 @@ SELECT
             @ReciptChildId,@DraftChildId,@CreateUser,GETDATE() , 
             @EditUser,@EditDate,@CurrentStoreCode,@PreviousStoreCode,@Description,@Number
             )
-            SELECT SCOPE_IDENTITY();
+            SELECT  Cast(Max(Number) as Int) from  Table_140_Transfer_Barcode ;
 ";
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
@@ -496,7 +498,7 @@ SELECT
                 }
                 //ShowMessageBarcodeNotValid(BarcodeIsValid(barcodes));
                 //FillDetailBarcode(barcodes);
-                gridEX8.ClearItems();
+                //gridEX8.ClearItems();
                 ShowDetailBarcode();
                 lblNumberTransfer.Text = NumberOfTransfer.ToString();
                 btnTransfer.Enabled = true;
@@ -652,12 +654,12 @@ where Barcode in   ({codes}) ";
                         row.Cells[12].Value = item.CreateUser;
                         row.Cells[13].Value = item.TransferId;
                         row.Cells[15].Value = item.TransferDescription;
+                        row.Cells[19].Value = item.Number;
                     }
                     row.Cells[14].Value = item.ProductId;
                     row.Cells[16].Value = item.CodeCommondity;
                     row.Cells[17].Value = item.DeviceId;
                     row.Cells[18].Value = item.CodeStore;
-                    row.Cells[19].Value = item.Number;
                     //row.Cells[15].Value = item.Date;
                     //row.Cells[16].Value = item.CodeCommodity;
                     //row.Cells[17].Value = item.CodeStore;
@@ -667,8 +669,9 @@ where Barcode in   ({codes}) ";
                     row.EndEdit();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+
             }
 
             //var models = GetDetailBarcode(codes);
@@ -769,7 +772,7 @@ where Barcode in   ({codes}) ";
             gridEX8.ClearItems();
             var previousNumber = GetPreviousNumber(Convert.ToInt32(lblNumberTransfer.Text));
             ShowDetailBarcode(GetDetailBarcode("", previousNumber.ToString(), true, TransferbarcodeSearchTypeEnum.NumberTransfer), true);
-            lblNumberTransfer.Text =previousNumber.ToString();
+            lblNumberTransfer.Text = previousNumber.ToString();
         }
 
         private void bindingNavigatorMoveFirstItem_Click(object sender, EventArgs e)

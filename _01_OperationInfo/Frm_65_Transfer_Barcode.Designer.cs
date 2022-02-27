@@ -34,12 +34,14 @@ namespace PCLOR._01_OperationInfo
             Janus.Windows.GridEX.GridEXLayout menuFunctionTypeRecipt_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout menuStoresStart_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout menuStoresDestination_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
-            Janus.Windows.GridEX.GridEXLayout gridEX8_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_65_Transfer_Barcode));
+            Janus.Windows.GridEX.GridEXLayout gridEX8_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             this.uiPanelManager1 = new Janus.Windows.UI.Dock.UIPanelManager(this.components);
             this.uiPanel1 = new Janus.Windows.UI.Dock.UIPanel();
             this.uiPanel1Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblNumberTransfer = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.txt_Description = new System.Windows.Forms.TextBox();
             this.menuFunctionTypeDraft = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.menuFunctionTypeRecipt = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
@@ -77,13 +79,13 @@ namespace PCLOR._01_OperationInfo
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_Delete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_Print = new System.Windows.Forms.ToolStripButton();
-            this.txtSearchTransferNumber = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.btnTransfer = new System.Windows.Forms.ToolStripButton();
-            this.lblNumberTransfer = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btn_Print = new System.Windows.Forms.ToolStripButton();
+            this.txtSearchTransferNumber = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtSearchBarcode = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.gridEXFieldChooserControl2 = new Janus.Windows.GridEX.GridEXFieldChooserControl();
+            this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanelManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiPanel1)).BeginInit();
             this.uiPanel1.SuspendLayout();
@@ -115,8 +117,8 @@ namespace PCLOR._01_OperationInfo
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("38cef559-5409-431b-80ba-1e13343f4c79"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(336, 618), true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("da7045e2-8dbe-43b0-b262-2bed3cc27079"), Janus.Windows.UI.Dock.PanelDockStyle.Fill, new System.Drawing.Size(554, 618), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("38cef559-5409-431b-80ba-1e13343f4c79"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(336, 611), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("da7045e2-8dbe-43b0-b262-2bed3cc27079"), Janus.Windows.UI.Dock.PanelDockStyle.Fill, new System.Drawing.Size(554, 611), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("da7045e2-8dbe-43b0-b262-2bed3cc27079"), new System.Drawing.Point(32, 32), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("38cef559-5409-431b-80ba-1e13343f4c79"), new System.Drawing.Point(851, 607), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.EndPanelInfo();
@@ -128,9 +130,9 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel1.AllowResize = Janus.Windows.UI.InheritableBoolean.True;
             this.uiPanel1.FloatingLocation = new System.Drawing.Point(851, 607);
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
-            this.uiPanel1.Location = new System.Drawing.Point(557, 30);
+            this.uiPanel1.Location = new System.Drawing.Point(557, 83);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(336, 618);
+            this.uiPanel1.Size = new System.Drawing.Size(336, 611);
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = "مشخصات";
             // 
@@ -139,7 +141,7 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel1Container.Controls.Add(this.groupBox1);
             this.uiPanel1Container.Location = new System.Drawing.Point(5, 25);
             this.uiPanel1Container.Name = "uiPanel1Container";
-            this.uiPanel1Container.Size = new System.Drawing.Size(330, 592);
+            this.uiPanel1Container.Size = new System.Drawing.Size(330, 585);
             this.uiPanel1Container.TabIndex = 0;
             // 
             // groupBox1
@@ -167,10 +169,27 @@ namespace PCLOR._01_OperationInfo
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(330, 592);
+            this.groupBox1.Size = new System.Drawing.Size(330, 585);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "مشخصات بارکد";
+            // 
+            // lblNumberTransfer
+            // 
+            this.lblNumberTransfer.Location = new System.Drawing.Point(13, 41);
+            this.lblNumberTransfer.Name = "lblNumberTransfer";
+            this.lblNumberTransfer.ReadOnly = true;
+            this.lblNumberTransfer.Size = new System.Drawing.Size(224, 26);
+            this.lblNumberTransfer.TabIndex = 228;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(243, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 18);
+            this.label5.TabIndex = 227;
+            this.label5.Text = "شماره انتقال";
             // 
             // txt_Description
             // 
@@ -238,7 +257,7 @@ namespace PCLOR._01_OperationInfo
             // 
             // btnInfoBarcods
             // 
-            this.btnInfoBarcods.Location = new System.Drawing.Point(1, 535);
+            this.btnInfoBarcods.Location = new System.Drawing.Point(1, 547);
             this.btnInfoBarcods.Name = "btnInfoBarcods";
             this.btnInfoBarcods.Size = new System.Drawing.Size(327, 32);
             this.btnInfoBarcods.TabIndex = 207;
@@ -386,9 +405,9 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel0.AllowResize = Janus.Windows.UI.InheritableBoolean.True;
             this.uiPanel0.FloatingLocation = new System.Drawing.Point(32, 32);
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
-            this.uiPanel0.Location = new System.Drawing.Point(3, 30);
+            this.uiPanel0.Location = new System.Drawing.Point(3, 83);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(554, 618);
+            this.uiPanel0.Size = new System.Drawing.Size(554, 611);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "بارکدها";
             // 
@@ -397,7 +416,7 @@ namespace PCLOR._01_OperationInfo
             this.uiPanel0Container.Controls.Add(this.gridEX8);
             this.uiPanel0Container.Location = new System.Drawing.Point(1, 25);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(552, 592);
+            this.uiPanel0Container.Size = new System.Drawing.Size(552, 585);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // gridEX8
@@ -428,9 +447,10 @@ namespace PCLOR._01_OperationInfo
             this.gridEX8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.gridEX8.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX8.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
+            this.gridEX8.SaveSettings = true;
             this.gridEX8.ScrollBars = Janus.Windows.GridEX.ScrollBars.Horizontal;
             this.gridEX8.SettingsKey = "Frm_15_InfoServiceGrid_61";
-            this.gridEX8.Size = new System.Drawing.Size(552, 592);
+            this.gridEX8.Size = new System.Drawing.Size(552, 585);
             this.gridEX8.TabIndex = 2;
             this.gridEX8.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX8.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -530,7 +550,6 @@ namespace PCLOR._01_OperationInfo
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -580,6 +599,24 @@ namespace PCLOR._01_OperationInfo
             this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
             this.toolStripSeparator.Visible = false;
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(61, 24);
+            this.toolStripButton1.Text = "جدید";
+            this.toolStripButton1.Visible = false;
+            // 
+            // btnTransfer
+            // 
+            this.btnTransfer.Image = ((System.Drawing.Image)(resources.GetObject("btnTransfer.Image")));
+            this.btnTransfer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnTransfer.Name = "btnTransfer";
+            this.btnTransfer.Size = new System.Drawing.Size(66, 24);
+            this.btnTransfer.Text = "ذخیره";
+            this.btnTransfer.Click += new System.EventHandler(this.btnTransfer_Click);
+            // 
             // btn_Print
             // 
             this.btn_Print.Image = ((System.Drawing.Image)(resources.GetObject("btn_Print.Image")));
@@ -605,41 +642,6 @@ namespace PCLOR._01_OperationInfo
             this.txtSearchTransferNumber.TextChanged += new System.EventHandler(this.txtSearchTransferNumber_TextChanged);
             this.txtSearchTransferNumber.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearchTransferNumber_KeyUp);
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(61, 24);
-            this.toolStripButton1.Text = "جدید";
-            this.toolStripButton1.Visible = false;
-            // 
-            // btnTransfer
-            // 
-            this.btnTransfer.Image = ((System.Drawing.Image)(resources.GetObject("btnTransfer.Image")));
-            this.btnTransfer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnTransfer.Name = "btnTransfer";
-            this.btnTransfer.Size = new System.Drawing.Size(66, 24);
-            this.btnTransfer.Text = "ذخیره";
-            this.btnTransfer.Click += new System.EventHandler(this.btnTransfer_Click);
-            // 
-            // lblNumberTransfer
-            // 
-            this.lblNumberTransfer.Location = new System.Drawing.Point(13, 41);
-            this.lblNumberTransfer.Name = "lblNumberTransfer";
-            this.lblNumberTransfer.ReadOnly = true;
-            this.lblNumberTransfer.Size = new System.Drawing.Size(224, 26);
-            this.lblNumberTransfer.TabIndex = 228;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(243, 44);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 18);
-            this.label5.TabIndex = 227;
-            this.label5.Text = "شماره انتقال";
-            // 
             // txtSearchBarcode
             // 
             this.txtSearchBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -656,15 +658,33 @@ namespace PCLOR._01_OperationInfo
             this.txtSearchBarcode.TextChanged += new System.EventHandler(this.txtSearchBarcode_TextChanged);
             this.txtSearchBarcode.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearchBarcode_KeyUp);
             // 
+            // gridEXFieldChooserControl2
+            // 
+            this.gridEXFieldChooserControl2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gridEXFieldChooserControl2.GridEX = this.gridEX8;
+            this.gridEXFieldChooserControl2.Location = new System.Drawing.Point(0, 27);
+            this.gridEXFieldChooserControl2.Margin = new System.Windows.Forms.Padding(4);
+            this.gridEXFieldChooserControl2.Name = "gridEXFieldChooserControl2";
+            this.gridEXFieldChooserControl2.Size = new System.Drawing.Size(896, 53);
+            this.gridEXFieldChooserControl2.TabIndex = 102;
+            this.gridEXFieldChooserControl2.Text = "gridEXFieldChooserControl2";
+            // 
+            // buttonItem2
+            // 
+            this.buttonItem2.Name = "buttonItem2";
+            this.buttonItem2.SubItemsExpandWidth = 14;
+            this.buttonItem2.Text = "buttonItem2";
+            // 
             // Frm_65_Transfer_Barcode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 651);
+            this.ClientSize = new System.Drawing.Size(896, 697);
             this.Controls.Add(this.txtSearchBarcode);
             this.Controls.Add(this.txtSearchTransferNumber);
             this.Controls.Add(this.uiPanel0);
             this.Controls.Add(this.uiPanel1);
+            this.Controls.Add(this.gridEXFieldChooserControl2);
             this.Controls.Add(this.bindingNavigator1);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Frm_65_Transfer_Barcode";
@@ -686,6 +706,7 @@ namespace PCLOR._01_OperationInfo
             ((System.ComponentModel.ISupportInitialize)(this.uiPanel0)).EndInit();
             this.uiPanel0.ResumeLayout(false);
             this.uiPanel0Container.ResumeLayout(false);
+            ((System.Configuration.IPersistComponentSettings)(this.gridEX8)).LoadComponentSettings();
             ((System.ComponentModel.ISupportInitialize)(this.gridEX8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCLOR_1_1400DataSet1)).EndInit();
@@ -748,5 +769,7 @@ namespace PCLOR._01_OperationInfo
         public DevComponents.DotNetBar.Controls.TextBoxX txtSearchBarcode;
         private System.Windows.Forms.TextBox lblNumberTransfer;
         private System.Windows.Forms.Label label5;
+        private Janus.Windows.GridEX.GridEXFieldChooserControl gridEXFieldChooserControl2;
+        private DevComponents.DotNetBar.ButtonItem buttonItem2;
     }
 }

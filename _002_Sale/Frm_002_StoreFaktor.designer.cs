@@ -212,7 +212,7 @@
             label2.BackColor = System.Drawing.Color.Transparent;
             label2.Location = new System.Drawing.Point(475, 12);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(83, 13);
+            label2.Size = new System.Drawing.Size(105, 17);
             label2.TabIndex = 21;
             label2.Text = "جمع مبلغ فاکتور:";
             // 
@@ -223,7 +223,7 @@
             label5.BackColor = System.Drawing.Color.Transparent;
             label5.Location = new System.Drawing.Point(508, 81);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(50, 13);
+            label5.Size = new System.Drawing.Size(64, 17);
             label5.TabIndex = 24;
             label5.Text = "جمع کل :";
             // 
@@ -234,7 +234,7 @@
             label4.BackColor = System.Drawing.Color.Transparent;
             label4.Location = new System.Drawing.Point(483, 58);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(75, 13);
+            label4.Size = new System.Drawing.Size(94, 17);
             label4.TabIndex = 23;
             label4.Text = "جمع کسورات :";
             // 
@@ -245,7 +245,7 @@
             label3.BackColor = System.Drawing.Color.Transparent;
             label3.Location = new System.Drawing.Point(489, 35);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(69, 13);
+            label3.Size = new System.Drawing.Size(86, 17);
             label3.TabIndex = 22;
             label3.Text = "جمع اضافات :";
             // 
@@ -256,7 +256,7 @@
             label9.BackColor = System.Drawing.SystemColors.Control;
             label9.Location = new System.Drawing.Point(211, 141);
             label9.Name = "label9";
-            label9.Size = new System.Drawing.Size(74, 13);
+            label9.Size = new System.Drawing.Size(95, 17);
             label9.TabIndex = 209;
             label9.Text = "شماره سند   :";
             // 
@@ -267,7 +267,7 @@
             label10.BackColor = System.Drawing.SystemColors.Control;
             label10.Location = new System.Drawing.Point(208, 115);
             label10.Name = "label10";
-            label10.Size = new System.Drawing.Size(77, 13);
+            label10.Size = new System.Drawing.Size(98, 17);
             label10.TabIndex = 207;
             label10.Text = "شماره حواله   :";
             // 
@@ -278,7 +278,7 @@
             label6.BackColor = System.Drawing.SystemColors.Control;
             label6.Location = new System.Drawing.Point(225, 90);
             label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(60, 13);
+            label6.Size = new System.Drawing.Size(76, 17);
             label6.TabIndex = 205;
             label6.Text = "زمان ثبت   :";
             // 
@@ -289,7 +289,7 @@
             label7.BackColor = System.Drawing.SystemColors.Control;
             label7.Location = new System.Drawing.Point(225, 64);
             label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(60, 13);
+            label7.Size = new System.Drawing.Size(77, 17);
             label7.TabIndex = 203;
             label7.Text = "کاربر ثبت   :";
             // 
@@ -300,7 +300,7 @@
             label8.BackColor = System.Drawing.SystemColors.Control;
             label8.Location = new System.Drawing.Point(226, 299);
             label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(59, 13);
+            label8.Size = new System.Drawing.Size(77, 17);
             label8.TabIndex = 199;
             label8.Text = "بارکد کالا   :";
             // 
@@ -311,7 +311,7 @@
             column04Label.BackColor = System.Drawing.SystemColors.Control;
             column04Label.Location = new System.Drawing.Point(223, 215);
             column04Label.Name = "column04Label";
-            column04Label.Size = new System.Drawing.Size(62, 13);
+            column04Label.Size = new System.Drawing.Size(77, 17);
             column04Label.TabIndex = 197;
             column04Label.Text = "* نوع حواله:";
             // 
@@ -322,7 +322,7 @@
             column03Label.BackColor = System.Drawing.SystemColors.Control;
             column03Label.Location = new System.Drawing.Point(217, 188);
             column03Label.Name = "column03Label";
-            column03Label.Size = new System.Drawing.Size(68, 13);
+            column03Label.Size = new System.Drawing.Size(85, 17);
             column03Label.TabIndex = 196;
             column03Label.Text = "* انبار فروش:";
             // 
@@ -333,7 +333,7 @@
             label11.BackColor = System.Drawing.SystemColors.Control;
             label11.Location = new System.Drawing.Point(231, 242);
             label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(54, 13);
+            label11.Size = new System.Drawing.Size(68, 17);
             label11.TabIndex = 198;
             label11.Text = "توضیحات :";
             // 
@@ -344,7 +344,7 @@
             label15.BackColor = System.Drawing.SystemColors.Control;
             label15.Location = new System.Drawing.Point(211, 165);
             label15.Name = "label15";
-            label15.Size = new System.Drawing.Size(74, 13);
+            label15.Size = new System.Drawing.Size(93, 17);
             label15.TabIndex = 195;
             label15.Text = "* کد مشتری :";
             // 
@@ -355,7 +355,7 @@
             label12.BackColor = System.Drawing.SystemColors.Control;
             label12.Location = new System.Drawing.Point(235, 8);
             label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(50, 13);
+            label12.Size = new System.Drawing.Size(64, 17);
             label12.TabIndex = 201;
             label12.Text = "شماره   :";
             // 
@@ -366,7 +366,7 @@
             label14.BackColor = System.Drawing.SystemColors.Control;
             label14.Location = new System.Drawing.Point(216, 37);
             label14.Name = "label14";
-            label14.Size = new System.Drawing.Size(69, 13);
+            label14.Size = new System.Drawing.Size(87, 17);
             label14.TabIndex = 194;
             label14.Text = "تاریخ ارسال  :";
             // 
@@ -377,7 +377,7 @@
             label1.BackColor = System.Drawing.SystemColors.Control;
             label1.Location = new System.Drawing.Point(231, 428);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(55, 13);
+            label1.Size = new System.Drawing.Size(67, 17);
             label1.TabIndex = 217;
             label1.Text = "مرجوعی :";
             // 
@@ -388,7 +388,7 @@
             label13.BackColor = System.Drawing.SystemColors.Control;
             label13.Location = new System.Drawing.Point(163, 429);
             label13.Name = "label13";
-            label13.Size = new System.Drawing.Size(38, 13);
+            label13.Size = new System.Drawing.Size(47, 17);
             label13.TabIndex = 219;
             label13.Text = "ابطال :";
             // 
@@ -405,7 +405,7 @@
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 31);
             // 
             // bt_Del
             // 
@@ -414,7 +414,7 @@
             this.bt_Del.Name = "bt_Del";
             this.bt_Del.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bt_Del.RightToLeftAutoMirrorImage = true;
-            this.bt_Del.Size = new System.Drawing.Size(50, 22);
+            this.bt_Del.Size = new System.Drawing.Size(61, 28);
             this.bt_Del.Text = "حذف";
             this.bt_Del.ToolTipText = "Ctrl+D";
             this.bt_Del.Click += new System.EventHandler(this.bt_Del_Click);
@@ -422,7 +422,7 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // bt_Save
             // 
@@ -431,7 +431,7 @@
             this.bt_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bt_Save.Name = "bt_Save";
             this.bt_Save.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bt_Save.Size = new System.Drawing.Size(53, 22);
+            this.bt_Save.Size = new System.Drawing.Size(66, 28);
             this.bt_Save.Text = "ذخیره";
             this.bt_Save.ToolTipText = "Ctrl+S";
             this.bt_Save.Click += new System.EventHandler(this.bt_Save_Click);
@@ -439,7 +439,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bt_New
             // 
@@ -448,7 +448,7 @@
             this.bt_New.Name = "bt_New";
             this.bt_New.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bt_New.RightToLeftAutoMirrorImage = true;
-            this.bt_New.Size = new System.Drawing.Size(49, 22);
+            this.bt_New.Size = new System.Drawing.Size(61, 28);
             this.bt_New.Text = "جدید";
             this.bt_New.ToolTipText = "Ctrl+N";
             this.bt_New.Click += new System.EventHandler(this.bt_New_Click);
@@ -456,13 +456,13 @@
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripButton7
             // 
@@ -484,7 +484,7 @@
             this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton7.Name = "toolStripButton7";
             this.toolStripButton7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStripButton7.Size = new System.Drawing.Size(118, 22);
+            this.toolStripButton7.Size = new System.Drawing.Size(144, 28);
             this.toolStripButton7.Text = "عملیات (Ctrl+F8)";
             this.toolStripButton7.Click += new System.EventHandler(this.ToolStripButton7_Click);
             // 
@@ -492,20 +492,20 @@
             // 
             this.bt_DelDoc.Image = ((System.Drawing.Image)(resources.GetObject("bt_DelDoc.Image")));
             this.bt_DelDoc.Name = "bt_DelDoc";
-            this.bt_DelDoc.Size = new System.Drawing.Size(248, 22);
+            this.bt_DelDoc.Size = new System.Drawing.Size(311, 26);
             this.bt_DelDoc.Text = "حذف سند حسابداری";
             this.bt_DelDoc.Click += new System.EventHandler(this.bt_DelDoc_Click_2);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(245, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(308, 6);
             // 
             // mnu_DelDraft
             // 
             this.mnu_DelDraft.Image = ((System.Drawing.Image)(resources.GetObject("mnu_DelDraft.Image")));
             this.mnu_DelDraft.Name = "mnu_DelDraft";
-            this.mnu_DelDraft.Size = new System.Drawing.Size(248, 22);
+            this.mnu_DelDraft.Size = new System.Drawing.Size(311, 26);
             this.mnu_DelDraft.Text = "حذف حواله انبار";
             this.mnu_DelDraft.Click += new System.EventHandler(this.mnu_DelDraft_Click);
             // 
@@ -513,33 +513,33 @@
             // 
             this.bt_NotConfirmDraft.Image = ((System.Drawing.Image)(resources.GetObject("bt_NotConfirmDraft.Image")));
             this.bt_NotConfirmDraft.Name = "bt_NotConfirmDraft";
-            this.bt_NotConfirmDraft.Size = new System.Drawing.Size(248, 22);
+            this.bt_NotConfirmDraft.Size = new System.Drawing.Size(311, 26);
             this.bt_NotConfirmDraft.Text = "غیرقطعی کردن حواله انبار";
             this.bt_NotConfirmDraft.Click += new System.EventHandler(this.bt_NotConfirmDraft_Click);
             // 
             // toolStripSeparator15
             // 
             this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(245, 6);
+            this.toolStripSeparator15.Size = new System.Drawing.Size(308, 6);
             // 
             // bt_ReturnFactor
             // 
             this.bt_ReturnFactor.Image = ((System.Drawing.Image)(resources.GetObject("bt_ReturnFactor.Image")));
             this.bt_ReturnFactor.Name = "bt_ReturnFactor";
-            this.bt_ReturnFactor.Size = new System.Drawing.Size(248, 22);
+            this.bt_ReturnFactor.Size = new System.Drawing.Size(311, 26);
             this.bt_ReturnFactor.Text = "مرجوع کردن فاکتور";
             this.bt_ReturnFactor.Click += new System.EventHandler(this.bt_ReturnFactor_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(245, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(308, 6);
             // 
             // bt_Cancel
             // 
             this.bt_Cancel.Image = ((System.Drawing.Image)(resources.GetObject("bt_Cancel.Image")));
             this.bt_Cancel.Name = "bt_Cancel";
-            this.bt_Cancel.Size = new System.Drawing.Size(248, 22);
+            this.bt_Cancel.Size = new System.Drawing.Size(311, 26);
             this.bt_Cancel.Text = "ابطال فاکتور";
             this.bt_Cancel.Click += new System.EventHandler(this.bt_Cancel_Click);
             // 
@@ -547,14 +547,14 @@
             // 
             this.mnu_CancelCancel.Image = ((System.Drawing.Image)(resources.GetObject("mnu_CancelCancel.Image")));
             this.mnu_CancelCancel.Name = "mnu_CancelCancel";
-            this.mnu_CancelCancel.Size = new System.Drawing.Size(248, 22);
+            this.mnu_CancelCancel.Size = new System.Drawing.Size(311, 26);
             this.mnu_CancelCancel.Text = "لغو ابطال";
             this.mnu_CancelCancel.Click += new System.EventHandler(this.mnu_CancelCancel_Click_1);
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(245, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(308, 6);
             this.toolStripSeparator13.Visible = false;
             // 
             // بهروزرسانیقیمتپیشنهادیToolStripMenuItem
@@ -562,7 +562,7 @@
             this.بهروزرسانیقیمتپیشنهادیToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("بهروزرسانیقیمتپیشنهادیToolStripMenuItem.Image")));
             this.بهروزرسانیقیمتپیشنهادیToolStripMenuItem.Name = "بهروزرسانیقیمتپیشنهادیToolStripMenuItem";
             this.بهروزرسانیقیمتپیشنهادیToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-            this.بهروزرسانیقیمتپیشنهادیToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.بهروزرسانیقیمتپیشنهادیToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
             this.بهروزرسانیقیمتپیشنهادیToolStripMenuItem.Text = "به روزرسانی قیمت پیشنهادی";
             this.بهروزرسانیقیمتپیشنهادیToolStripMenuItem.Visible = false;
             this.بهروزرسانیقیمتپیشنهادیToolStripMenuItem.Click += new System.EventHandler(this.بهروزرسانیقیمتپیشنهادیToolStripMenuItem_Click);
@@ -574,6 +574,7 @@
             this.bindingNavigator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bindingNavigator1.CountItem = null;
             this.bindingNavigator1.DeleteItem = null;
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.toolStripSeparator21,
@@ -608,7 +609,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(874, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(874, 31);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.TabStop = true;
             this.bindingNavigator1.Text = "bindingNavigator2";
@@ -620,14 +621,14 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "سند اول";
             this.bindingNavigatorMoveFirstItem.Click += new System.EventHandler(this.bindingNavigatorMoveFirstItem_Click);
             // 
             // toolStripSeparator21
             // 
             this.toolStripSeparator21.Name = "toolStripSeparator21";
-            this.toolStripSeparator21.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator21.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMovePreviousItem
             // 
@@ -636,14 +637,14 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "سند قبل";
             this.bindingNavigatorMovePreviousItem.Click += new System.EventHandler(this.bindingNavigatorMovePreviousItem_Click);
             // 
             // toolStripSeparator19
             // 
             this.toolStripSeparator19.Name = "toolStripSeparator19";
-            this.toolStripSeparator19.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator19.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -652,14 +653,14 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "سند بعد";
             this.bindingNavigatorMoveNextItem.Click += new System.EventHandler(this.bindingNavigatorMoveNextItem_Click);
             // 
             // toolStripSeparator18
             // 
             this.toolStripSeparator18.Name = "toolStripSeparator18";
-            this.toolStripSeparator18.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator18.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveLastItem
             // 
@@ -668,14 +669,14 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "سند آخر";
             this.bindingNavigatorMoveLastItem.Click += new System.EventHandler(this.bindingNavigatorMoveLastItem_Click);
             // 
             // toolStripSeparator20
             // 
             this.toolStripSeparator20.Name = "toolStripSeparator20";
-            this.toolStripSeparator20.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator20.Size = new System.Drawing.Size(6, 31);
             // 
             // bt_Print
             // 
@@ -687,7 +688,7 @@
             this.bt_Print.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bt_Print.Name = "bt_Print";
             this.bt_Print.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bt_Print.Size = new System.Drawing.Size(32, 22);
+            this.bt_Print.Size = new System.Drawing.Size(39, 28);
             this.bt_Print.ToolTipText = "Ctrl+P";
             this.bt_Print.ButtonClick += new System.EventHandler(this.bt_Print_ButtonClick);
             this.bt_Print.Click += new System.EventHandler(this.bt_Print_Click_1);
@@ -696,14 +697,14 @@
             // 
             this.ForiFctor.Name = "ForiFctor";
             this.ForiFctor.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.ForiFctor.Size = new System.Drawing.Size(148, 22);
+            this.ForiFctor.Size = new System.Drawing.Size(185, 26);
             this.ForiFctor.Text = "چاپ";
             this.ForiFctor.Click += new System.EventHandler(this.ForiFctor_Click);
             // 
             // rasmiFactor
             // 
             this.rasmiFactor.Name = "rasmiFactor";
-            this.rasmiFactor.Size = new System.Drawing.Size(148, 22);
+            this.rasmiFactor.Size = new System.Drawing.Size(185, 26);
             this.rasmiFactor.Text = "چاپ لیستی کالا";
             this.rasmiFactor.Click += new System.EventHandler(this.rasmiFactor_Click);
             // 
@@ -713,7 +714,7 @@
             this.bt_Search.Image = ((System.Drawing.Image)(resources.GetObject("bt_Search.Image")));
             this.bt_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bt_Search.Name = "bt_Search";
-            this.bt_Search.Size = new System.Drawing.Size(99, 22);
+            this.bt_Search.Size = new System.Drawing.Size(129, 28);
             this.bt_Search.Text = "                        ";
             this.bt_Search.ToolTipText = "مشاهده";
             this.bt_Search.Click += new System.EventHandler(this.bt_Search_Click);
@@ -722,13 +723,13 @@
             // 
             this.toolStripSeparator5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 31);
             // 
             // bt_ViewFactors
             // 
@@ -738,7 +739,7 @@
             this.bt_ViewFactors.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bt_ViewFactors.Name = "bt_ViewFactors";
             this.bt_ViewFactors.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bt_ViewFactors.Size = new System.Drawing.Size(67, 22);
+            this.bt_ViewFactors.Size = new System.Drawing.Size(82, 28);
             this.bt_ViewFactors.Text = " فاکتورها";
             this.bt_ViewFactors.Click += new System.EventHandler(this.bt_ViewFactors_Click);
             // 
@@ -746,7 +747,7 @@
             // 
             this.toolStripSeparator8.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 31);
             // 
             // FinalSave
             // 
@@ -755,7 +756,7 @@
             this.FinalSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.FinalSave.Name = "FinalSave";
             this.FinalSave.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.FinalSave.Size = new System.Drawing.Size(73, 22);
+            this.FinalSave.Size = new System.Drawing.Size(92, 24);
             this.FinalSave.Text = "ثبت نهایی";
             this.FinalSave.Click += new System.EventHandler(this.FinalSave_Click);
             // 
@@ -776,7 +777,7 @@
             this.txt_Search.ForeColor = System.Drawing.Color.Black;
             this.txt_Search.Location = new System.Drawing.Point(789, 1);
             this.txt_Search.Name = "txt_Search";
-            this.txt_Search.Size = new System.Drawing.Size(74, 21);
+            this.txt_Search.Size = new System.Drawing.Size(74, 24);
             this.txt_Search.TabIndex = 13;
             this.txt_Search.WatermarkText = "جستجو";
             this.txt_Search.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Search_KeyPress);
@@ -803,8 +804,8 @@
             // 
             this.uiPanelManager1.BeginPanelInfo();
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("07bec682-b9fb-468c-9d28-829aa0bbd62b"), Janus.Windows.UI.Dock.PanelDockStyle.Bottom, new System.Drawing.Size(817, 210), false);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("04dcb766-d416-48f5-ae1f-7f9ed5aded60"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(294, 471), true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("e1224593-7440-4c61-8e6e-3f7d2e64e431"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Fill, true, new System.Drawing.Size(574, 471), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("04dcb766-d416-48f5-ae1f-7f9ed5aded60"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(294, 465), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("e1224593-7440-4c61-8e6e-3f7d2e64e431"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Fill, true, new System.Drawing.Size(574, 465), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("ae090139-4f24-4390-9872-2929e6571282"), new System.Guid("e1224593-7440-4c61-8e6e-3f7d2e64e431"), 210, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("31400934-9cf9-43e5-b2ec-dced77fc8fd2"), new System.Guid("e1224593-7440-4c61-8e6e-3f7d2e64e431"), 137, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("a581a6b1-2926-43f2-95b5-fe2bdb277236"), new System.Guid("e1224593-7440-4c61-8e6e-3f7d2e64e431"), 116, true);
@@ -820,9 +821,9 @@
             this.uiPanel0.AutoHideButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
-            this.uiPanel0.Location = new System.Drawing.Point(577, 28);
+            this.uiPanel0.Location = new System.Drawing.Point(577, 34);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(294, 471);
+            this.uiPanel0.Size = new System.Drawing.Size(294, 465);
             this.uiPanel0.TabIndex = 0;
             this.uiPanel0.Text = "اطلاعات فاکتور";
             this.uiPanel0.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -830,9 +831,9 @@
             // uiPanel0Container
             // 
             this.uiPanel0Container.Controls.Add(this.uiGroupBox2);
-            this.uiPanel0Container.Location = new System.Drawing.Point(5, 21);
+            this.uiPanel0Container.Location = new System.Drawing.Point(5, 24);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(288, 449);
+            this.uiPanel0Container.Size = new System.Drawing.Size(288, 440);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // uiGroupBox2
@@ -872,7 +873,7 @@
             this.uiGroupBox2.Name = "uiGroupBox2";
             this.uiGroupBox2.OfficeColorScheme = Janus.Windows.UI.OfficeColorScheme.Custom;
             this.uiGroupBox2.OfficeCustomColor = System.Drawing.SystemColors.Control;
-            this.uiGroupBox2.Size = new System.Drawing.Size(288, 449);
+            this.uiGroupBox2.Size = new System.Drawing.Size(288, 440);
             this.uiGroupBox2.TabIndex = 3;
             this.uiGroupBox2.VisualStyle = Janus.Windows.UI.Dock.PanelVisualStyle.Office2010;
             this.uiGroupBox2.Click += new System.EventHandler(this.uiGroupBox2_Click);
@@ -883,7 +884,7 @@
             this.Chek_Cancel.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.table_010_SaleFactorBindingSource, "column17", true));
             this.Chek_Cancel.Location = new System.Drawing.Point(144, 429);
             this.Chek_Cancel.Name = "Chek_Cancel";
-            this.Chek_Cancel.Size = new System.Drawing.Size(15, 14);
+            this.Chek_Cancel.Size = new System.Drawing.Size(18, 17);
             this.Chek_Cancel.TabIndex = 220;
             this.Chek_Cancel.UseVisualStyleBackColor = true;
             // 
@@ -904,7 +905,7 @@
             this.Chek_Refrenc.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.table_010_SaleFactorBindingSource, "column19", true));
             this.Chek_Refrenc.Location = new System.Drawing.Point(213, 430);
             this.Chek_Refrenc.Name = "Chek_Refrenc";
-            this.Chek_Refrenc.Size = new System.Drawing.Size(15, 14);
+            this.Chek_Refrenc.Size = new System.Drawing.Size(18, 17);
             this.Chek_Refrenc.TabIndex = 218;
             this.Chek_Refrenc.UseVisualStyleBackColor = true;
             // 
@@ -923,7 +924,7 @@
             this.mlt_Draft.SelectedIndex = -1;
             this.mlt_Draft.SelectedItem = null;
             this.mlt_Draft.SettingsKey = "mlt_Id";
-            this.mlt_Draft.Size = new System.Drawing.Size(206, 21);
+            this.mlt_Draft.Size = new System.Drawing.Size(206, 24);
             this.mlt_Draft.TabIndex = 213;
             this.mlt_Draft.ValueMember = "ColumnId";
             this.mlt_Draft.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -943,7 +944,7 @@
             this.mlt_Doc.SelectedIndex = -1;
             this.mlt_Doc.SelectedItem = null;
             this.mlt_Doc.SettingsKey = "mlt_Id";
-            this.mlt_Doc.Size = new System.Drawing.Size(207, 21);
+            this.mlt_Doc.Size = new System.Drawing.Size(207, 24);
             this.mlt_Doc.TabIndex = 212;
             this.mlt_Doc.ValueMember = "ColumnId";
             this.mlt_Doc.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -968,7 +969,7 @@
             this.txt_date.Location = new System.Drawing.Point(1, 85);
             this.txt_date.Name = "txt_date";
             this.txt_date.ReadOnly = true;
-            this.txt_date.Size = new System.Drawing.Size(207, 21);
+            this.txt_date.Size = new System.Drawing.Size(207, 24);
             this.txt_date.TabIndex = 3;
             // 
             // txt_User
@@ -979,7 +980,7 @@
             this.txt_User.Location = new System.Drawing.Point(1, 61);
             this.txt_User.Name = "txt_User";
             this.txt_User.ReadOnly = true;
-            this.txt_User.Size = new System.Drawing.Size(207, 21);
+            this.txt_User.Size = new System.Drawing.Size(207, 24);
             this.txt_User.TabIndex = 2;
             // 
             // txt_Number
@@ -990,7 +991,7 @@
             this.txt_Number.Location = new System.Drawing.Point(1, 5);
             this.txt_Number.Name = "txt_Number";
             this.txt_Number.ReadOnly = true;
-            this.txt_Number.Size = new System.Drawing.Size(208, 21);
+            this.txt_Number.Size = new System.Drawing.Size(208, 24);
             this.txt_Number.TabIndex = 0;
             // 
             // txt_ID
@@ -1000,7 +1001,7 @@
             this.txt_ID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table_010_SaleFactorBindingSource, "columnid", true));
             this.txt_ID.Location = new System.Drawing.Point(165, 5);
             this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(28, 21);
+            this.txt_ID.Size = new System.Drawing.Size(28, 24);
             this.txt_ID.TabIndex = 200;
             // 
             // txt_Barcode
@@ -1028,7 +1029,7 @@
             this.mlt_Function.SelectedIndex = -1;
             this.mlt_Function.SelectedItem = null;
             this.mlt_Function.SelectInDataSource = true;
-            this.mlt_Function.Size = new System.Drawing.Size(207, 21);
+            this.mlt_Function.Size = new System.Drawing.Size(207, 24);
             this.mlt_Function.TabIndex = 8;
             this.mlt_Function.ValueMember = "Columnid";
             this.mlt_Function.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -1050,7 +1051,7 @@
             this.mlt_Ware.SelectedIndex = -1;
             this.mlt_Ware.SelectedItem = null;
             this.mlt_Ware.SelectInDataSource = true;
-            this.mlt_Ware.Size = new System.Drawing.Size(207, 21);
+            this.mlt_Ware.Size = new System.Drawing.Size(207, 24);
             this.mlt_Ware.TabIndex = 7;
             this.mlt_Ware.ValueMember = "columnid";
             this.mlt_Ware.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -1083,7 +1084,7 @@
             this.mlt_NameCustomer.SelectedIndex = -1;
             this.mlt_NameCustomer.SelectedItem = null;
             this.mlt_NameCustomer.SettingsKey = "mlt_NameCustomer";
-            this.mlt_NameCustomer.Size = new System.Drawing.Size(206, 21);
+            this.mlt_NameCustomer.Size = new System.Drawing.Size(206, 24);
             this.mlt_NameCustomer.TabIndex = 6;
             this.mlt_NameCustomer.ValueMember = "Columnid";
             this.mlt_NameCustomer.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -1098,16 +1099,16 @@
             this.txt_Dat.Location = new System.Drawing.Point(1, 32);
             this.txt_Dat.Mask = "0000/00/00";
             this.txt_Dat.Name = "txt_Dat";
-            this.txt_Dat.Size = new System.Drawing.Size(208, 21);
+            this.txt_Dat.Size = new System.Drawing.Size(208, 24);
             this.txt_Dat.TabIndex = 1;
             // 
             // uiPanel1
             // 
             this.uiPanel1.CaptionVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel1.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
-            this.uiPanel1.Location = new System.Drawing.Point(3, 28);
+            this.uiPanel1.Location = new System.Drawing.Point(3, 34);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(574, 471);
+            this.uiPanel1.Size = new System.Drawing.Size(574, 465);
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = "Panel 1";
             // 
@@ -1117,7 +1118,7 @@
             this.uiPanel2.InnerContainer = this.uiPanel2Container;
             this.uiPanel2.Location = new System.Drawing.Point(0, 0);
             this.uiPanel2.Name = "uiPanel2";
-            this.uiPanel2.Size = new System.Drawing.Size(574, 211);
+            this.uiPanel2.Size = new System.Drawing.Size(574, 208);
             this.uiPanel2.TabIndex = 4;
             this.uiPanel2.Text = "Panel 2";
             // 
@@ -1126,7 +1127,7 @@
             this.uiPanel2Container.Controls.Add(this.gridEX_List);
             this.uiPanel2Container.Location = new System.Drawing.Point(1, 1);
             this.uiPanel2Container.Name = "uiPanel2Container";
-            this.uiPanel2Container.Size = new System.Drawing.Size(572, 209);
+            this.uiPanel2Container.Size = new System.Drawing.Size(572, 206);
             this.uiPanel2Container.TabIndex = 0;
             // 
             // gridEX_List
@@ -1161,7 +1162,7 @@
             this.gridEX_List.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX_List.SaveSettings = true;
             this.gridEX_List.SettingsKey = "Form_StoreSaleFactor406";
-            this.gridEX_List.Size = new System.Drawing.Size(572, 209);
+            this.gridEX_List.Size = new System.Drawing.Size(572, 206);
             this.gridEX_List.TabIndex = 0;
             this.gridEX_List.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX_List.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -1192,9 +1193,9 @@
             // 
             this.uiPanel3.CaptionVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel3.InnerContainer = this.uiPanel3Container;
-            this.uiPanel3.Location = new System.Drawing.Point(0, 215);
+            this.uiPanel3.Location = new System.Drawing.Point(0, 212);
             this.uiPanel3.Name = "uiPanel3";
-            this.uiPanel3.Size = new System.Drawing.Size(574, 137);
+            this.uiPanel3.Size = new System.Drawing.Size(574, 135);
             this.uiPanel3.TabIndex = 4;
             this.uiPanel3.Text = "Panel 3";
             // 
@@ -1204,7 +1205,7 @@
             this.uiPanel3Container.Controls.Add(this.bt_AddExtraDiscounts);
             this.uiPanel3Container.Location = new System.Drawing.Point(1, 1);
             this.uiPanel3Container.Name = "uiPanel3Container";
-            this.uiPanel3Container.Size = new System.Drawing.Size(572, 135);
+            this.uiPanel3Container.Size = new System.Drawing.Size(572, 133);
             this.uiPanel3Container.TabIndex = 0;
             // 
             // panel1
@@ -1213,7 +1214,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(558, 135);
+            this.panel1.Size = new System.Drawing.Size(558, 133);
             this.panel1.TabIndex = 3;
             // 
             // gridEX_Extra
@@ -1242,7 +1243,7 @@
             this.gridEX_Extra.PreviewRowFormatStyle.BackColor = System.Drawing.Color.White;
             this.gridEX_Extra.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX_Extra.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.gridEX_Extra.Size = new System.Drawing.Size(558, 135);
+            this.gridEX_Extra.Size = new System.Drawing.Size(558, 133);
             this.gridEX_Extra.TabIndex = 0;
             this.gridEX_Extra.TableHeaderFormatStyle.ForeColor = System.Drawing.Color.Black;
             this.gridEX_Extra.TableHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
@@ -1273,7 +1274,7 @@
             this.bt_AddExtraDiscounts.Name = "bt_AddExtraDiscounts";
             this.bt_AddExtraDiscounts.OfficeColorScheme = Janus.Windows.UI.OfficeColorScheme.Custom;
             this.bt_AddExtraDiscounts.OfficeCustomColor = System.Drawing.Color.Pink;
-            this.bt_AddExtraDiscounts.Size = new System.Drawing.Size(14, 135);
+            this.bt_AddExtraDiscounts.Size = new System.Drawing.Size(14, 133);
             this.bt_AddExtraDiscounts.TabIndex = 2;
             this.bt_AddExtraDiscounts.ToolTipText = "اضافه کردن اضافات و کسورات به فاکتور";
             this.bt_AddExtraDiscounts.VisualStyle = Janus.Windows.UI.VisualStyle.Office2007;
@@ -1283,9 +1284,9 @@
             // 
             this.uiPanel4.CaptionVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel4.InnerContainer = this.uiPanel4Container;
-            this.uiPanel4.Location = new System.Drawing.Point(0, 356);
+            this.uiPanel4.Location = new System.Drawing.Point(0, 351);
             this.uiPanel4.Name = "uiPanel4";
-            this.uiPanel4.Size = new System.Drawing.Size(574, 115);
+            this.uiPanel4.Size = new System.Drawing.Size(574, 114);
             this.uiPanel4.TabIndex = 4;
             this.uiPanel4.Text = "Panel 4";
             // 
@@ -1294,7 +1295,7 @@
             this.uiPanel4Container.Controls.Add(this.tableLayoutPanel2);
             this.uiPanel4Container.Location = new System.Drawing.Point(1, 1);
             this.uiPanel4Container.Name = "uiPanel4Container";
-            this.uiPanel4Container.Size = new System.Drawing.Size(572, 113);
+            this.uiPanel4Container.Size = new System.Drawing.Size(572, 112);
             this.uiPanel4Container.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -1308,7 +1309,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(572, 113);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(572, 112);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // panelEx1
@@ -1327,7 +1328,7 @@
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Location = new System.Drawing.Point(3, 3);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(566, 107);
+            this.panelEx1.Size = new System.Drawing.Size(566, 106);
             this.panelEx1.Style.BackColor1.Color = System.Drawing.Color.Lavender;
             this.panelEx1.Style.BackColor2.Color = System.Drawing.Color.LavenderBlush;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -1343,7 +1344,7 @@
             this.txt_EndPrice.Location = new System.Drawing.Point(5, 76);
             this.txt_EndPrice.Name = "txt_EndPrice";
             this.txt_EndPrice.ReadOnly = true;
-            this.txt_EndPrice.Size = new System.Drawing.Size(455, 21);
+            this.txt_EndPrice.Size = new System.Drawing.Size(455, 24);
             this.txt_EndPrice.TabIndex = 3;
             this.txt_EndPrice.TabStop = false;
             this.txt_EndPrice.Text = "0";
@@ -1359,7 +1360,7 @@
             this.txt_TotalPrice.Location = new System.Drawing.Point(5, 7);
             this.txt_TotalPrice.Name = "txt_TotalPrice";
             this.txt_TotalPrice.ReadOnly = true;
-            this.txt_TotalPrice.Size = new System.Drawing.Size(455, 21);
+            this.txt_TotalPrice.Size = new System.Drawing.Size(455, 24);
             this.txt_TotalPrice.TabIndex = 0;
             this.txt_TotalPrice.TabStop = false;
             this.txt_TotalPrice.Text = "0";
@@ -1375,7 +1376,7 @@
             this.txt_Reductions.Location = new System.Drawing.Point(5, 53);
             this.txt_Reductions.Name = "txt_Reductions";
             this.txt_Reductions.ReadOnly = true;
-            this.txt_Reductions.Size = new System.Drawing.Size(455, 21);
+            this.txt_Reductions.Size = new System.Drawing.Size(455, 24);
             this.txt_Reductions.TabIndex = 2;
             this.txt_Reductions.TabStop = false;
             this.txt_Reductions.Text = "0";
@@ -1391,7 +1392,7 @@
             this.txt_Extra.Location = new System.Drawing.Point(5, 30);
             this.txt_Extra.Name = "txt_Extra";
             this.txt_Extra.ReadOnly = true;
-            this.txt_Extra.Size = new System.Drawing.Size(455, 21);
+            this.txt_Extra.Size = new System.Drawing.Size(455, 24);
             this.txt_Extra.TabIndex = 1;
             this.txt_Extra.TabStop = false;
             this.txt_Extra.Text = "0";
@@ -1406,7 +1407,7 @@
             this.txt_AfterDis.Location = new System.Drawing.Point(279, 7);
             this.txt_AfterDis.Name = "txt_AfterDis";
             this.txt_AfterDis.ReadOnly = true;
-            this.txt_AfterDis.Size = new System.Drawing.Size(179, 21);
+            this.txt_AfterDis.Size = new System.Drawing.Size(179, 24);
             this.txt_AfterDis.TabIndex = 1;
             this.txt_AfterDis.TabStop = false;
             this.txt_AfterDis.Text = "0";
@@ -1484,7 +1485,7 @@
             this.gridEXFieldChooserControl1.Name = "gridEXFieldChooserControl1";
             this.gridEXFieldChooserControl1.OfficeColorScheme = Janus.Windows.GridEX.OfficeColorScheme.Custom;
             this.gridEXFieldChooserControl1.OfficeCustomColor = System.Drawing.Color.SteelBlue;
-            this.gridEXFieldChooserControl1.Size = new System.Drawing.Size(64, 5);
+            this.gridEXFieldChooserControl1.Size = new System.Drawing.Size(64, 2);
             this.gridEXFieldChooserControl1.TabIndex = 2;
             this.gridEXFieldChooserControl1.Text = "gridEXFieldChooserControl1";
             this.gridEXFieldChooserControl1.VisualStyleManager = this.VisualStyleManager1;
@@ -1531,7 +1532,7 @@
             // 
             // Frm_002_StoreFaktor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(874, 502);
             this.Controls.Add(this.txt_Search);
