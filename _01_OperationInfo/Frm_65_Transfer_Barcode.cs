@@ -145,6 +145,31 @@ SELECT
 
         }
 
+        private bool DeleteTransfer()
+        {
+            try
+            {
+                var transferId = gridEX8.GetRow().Cells["TransferId"].Value.ToString();
+                if (!string.IsNullOrEmpty(transferId))
+                {
+                    using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+                    {
+                        db.Execute("spu_DeleteTransferBarcode", new { @TransferId = Convert.ToInt32(transferId) }, commandType: CommandType.StoredProcedure);
+                        return true;
+                    }
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+
+
+        }
+
+
         private void gridEX8_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             //Recipt();
@@ -312,7 +337,7 @@ SELECT
             @ReciptChildId,@DraftChildId,@CreateUser,GETDATE() , 
             @EditUser,@EditDate,@CurrentStoreCode,@PreviousStoreCode,@Description,@Number
             )
-            SELECT  Cast(Max(Number) as Int) from  Table_140_Transfer_Barcode ;
+            SELECT SCOPE_IDENTITY() ;
 ";
             using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
             {
@@ -390,7 +415,7 @@ SELECT
                         idChildDraft = Draft(item, codeSourceStore);
                         ChangeCodeStoreOfBarcode(item, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()));
                         item.BeginEdit();
-                        item.Cells["Number"].Value = AddToTranferBarcode(item.Cells["Barcode"].Value.ToString(), item.Cells["CurrentStore"].Value.ToString(), menuStoresDestination.Text, idChildRecipt, idChildDraft, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()), NumberOfTransfer);
+                        item.Cells["TransferId"].Value = AddToTranferBarcode(item.Cells["Barcode"].Value.ToString(), item.Cells["CurrentStore"].Value.ToString(), menuStoresDestination.Text, idChildRecipt, idChildDraft, Convert.ToInt32(item.Cells["CodeStore"].Value.ToString()), NumberOfTransfer);
                         item.Cells["FunctionTypeRecipt"].Value = menuFunctionTypeRecipt.Text;
                         item.Cells["FunctionTypeDraft"].Value = menuFunctionTypeDraft.Text;
                         item.Cells["CreateUser"].Value = Class_BasicOperation._UserName.Trim();
@@ -854,5 +879,13 @@ where Barcode in   ({codes}) ";
             lblNumberTransfer.Text = maxNumber.ToString();
         }
 
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            var status = DeleteTransfer();
+            if (status)
+                MessageBox.Show("حذف با موفقیت انجام شد ", "حذف انتقال بارکد", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("حذف با شکست مواجه شد ", "حذف انتقال بارکد", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

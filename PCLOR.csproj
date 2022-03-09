@@ -385,6 +385,7 @@
       <DependentUpon>Frm_30_Production_Edite.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\CheckBarcodeViewModel.cs" />
+    <Compile Include="Models\DetailProductionViewModel.cs" />
     <Compile Include="Models\DetailTranferBarcodeViewModel.cs" />
     <Compile Include="Models\ErrorBarcodeProductEnum.cs" />
     <Compile Include="Models\FabricTypeDropDownViewModel.cs" />

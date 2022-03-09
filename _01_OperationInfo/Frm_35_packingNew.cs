@@ -2132,5 +2132,16 @@ VALUES ((select isnull(max(Column01),0)+1 from Table_011_PwhrsReceipt),'" +
         {
 
         }
+
+        private void txt_weight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCheckBarcode_Click(object sender, EventArgs e)
+        {
+
+        }
+        private  GetDetailProduction() { }
     }
 }

@@ -52,13 +52,13 @@
             System.Windows.Forms.Label label19;
             System.Windows.Forms.Label label20;
             Janus.Windows.GridEX.GridEXLayout mlt_Num_Product_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_35_packingNew));
             Janus.Windows.GridEX.GridEXLayout mlt_Machine_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_NameCustomer_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_CodeOrderColor_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_TypeCloth_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_TypeColor_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_Return_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_35_packingNew));
             Janus.Windows.GridEX.GridEXLayout mlt_TypeRerturn_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_Function_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout mlt_Ware_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
@@ -142,6 +142,7 @@
             this.table_050_Packaging1TableAdapter = new PCLOR.data_PCLOR.DataSet_05_PCLORTableAdapters.Table_050_Packaging1TableAdapter();
             this.uiPanel4 = new Janus.Windows.UI.Dock.UIPanelGroup();
             this.uiPanelGroup1 = new Janus.Windows.UI.Dock.UIPanelGroup();
+            this.btnCheckBarcode = new System.Windows.Forms.Button();
             label16 = new System.Windows.Forms.Label();
             label13 = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
@@ -389,7 +390,7 @@
             // 
             label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label14.AutoSize = true;
-            label14.Location = new System.Drawing.Point(550, 17);
+            label14.Location = new System.Drawing.Point(567, 17);
             label14.Name = "label14";
             label14.Size = new System.Drawing.Size(208, 17);
             label14.TabIndex = 103;
@@ -399,7 +400,7 @@
             // 
             label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label18.AutoSize = true;
-            label18.Location = new System.Drawing.Point(546, 86);
+            label18.Location = new System.Drawing.Point(563, 86);
             label18.Name = "label18";
             label18.Size = new System.Drawing.Size(210, 17);
             label18.TabIndex = 105;
@@ -409,7 +410,7 @@
             // 
             label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label17.AutoSize = true;
-            label17.Location = new System.Drawing.Point(544, 154);
+            label17.Location = new System.Drawing.Point(561, 154);
             label17.Name = "label17";
             label17.Size = new System.Drawing.Size(211, 17);
             label17.TabIndex = 108;
@@ -458,10 +459,10 @@
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("e27f47dd-8b8d-4e9d-be05-9f0debffc6cc"), Janus.Windows.UI.Dock.PanelGroupStyle.Tab, Janus.Windows.UI.Dock.PanelDockStyle.Right, true, new System.Drawing.Size(299, 470), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("e27f47dd-8b8d-4e9d-be05-9f0debffc6cc"), Janus.Windows.UI.Dock.PanelGroupStyle.Tab, Janus.Windows.UI.Dock.PanelDockStyle.Right, true, new System.Drawing.Size(299, 559), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("04d3b8c5-94fb-402f-b364-5171f6e37c5c"), new System.Guid("e27f47dd-8b8d-4e9d-be05-9f0debffc6cc"), -1, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("088b065f-bbd7-4e7d-a2d7-559635f1bf56"), new System.Guid("e27f47dd-8b8d-4e9d-be05-9f0debffc6cc"), -1, true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("b761428c-be6d-4805-bb29-e239b04ae932"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Fill, false, new System.Drawing.Size(723, 470), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("b761428c-be6d-4805-bb29-e239b04ae932"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, Janus.Windows.UI.Dock.PanelDockStyle.Fill, false, new System.Drawing.Size(740, 559), true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("901b7bf5-5a12-494b-b3a0-c1b6d0b74e85"), new System.Guid("b761428c-be6d-4805-bb29-e239b04ae932"), 274, true);
             this.uiPanelManager1.AddDockPanelInfo(new System.Guid("8a062cb9-b34e-4a53-b23d-732b50d18e25"), new System.Guid("b761428c-be6d-4805-bb29-e239b04ae932"), 198, true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("8f8a6bb9-3c24-41c1-ae65-c9e1d6dca7b9"), new System.Drawing.Point(-1, -1), new System.Drawing.Size(-1, -1), false);
@@ -478,10 +479,10 @@
             this.uiPanel2.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel2.FloatingLocation = new System.Drawing.Point(935, 427);
             this.uiPanel2.GroupStyle = Janus.Windows.UI.Dock.PanelGroupStyle.Tab;
-            this.uiPanel2.Location = new System.Drawing.Point(726, 34);
+            this.uiPanel2.Location = new System.Drawing.Point(743, 30);
             this.uiPanel2.Name = "uiPanel2";
-            this.uiPanel2.SelectedPanel = this.uiPanel6;
-            this.uiPanel2.Size = new System.Drawing.Size(299, 470);
+            this.uiPanel2.SelectedPanel = this.uiPanel5;
+            this.uiPanel2.Size = new System.Drawing.Size(299, 559);
             this.uiPanel2.TabIndex = 4;
             this.uiPanel2.Text = "اطلاعات بسته بندی";
             this.uiPanel2.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
@@ -491,12 +492,13 @@
             this.uiPanel5.InnerContainer = this.uiPanel5Container;
             this.uiPanel5.Location = new System.Drawing.Point(4, 0);
             this.uiPanel5.Name = "uiPanel5";
-            this.uiPanel5.Size = new System.Drawing.Size(295, 447);
+            this.uiPanel5.Size = new System.Drawing.Size(295, 536);
             this.uiPanel5.TabIndex = 4;
             this.uiPanel5.Text = "تنطیمات بسته بندی";
             // 
             // uiPanel5Container
             // 
+            this.uiPanel5Container.Controls.Add(this.btnCheckBarcode);
             this.uiPanel5Container.Controls.Add(this.txt_Description);
             this.uiPanel5Container.Controls.Add(this.mlt_Num_Product);
             this.uiPanel5Container.Controls.Add(this.txt_Print);
@@ -512,19 +514,19 @@
             this.uiPanel5Container.Controls.Add(label3);
             this.uiPanel5Container.Location = new System.Drawing.Point(1, 25);
             this.uiPanel5Container.Name = "uiPanel5Container";
-            this.uiPanel5Container.Size = new System.Drawing.Size(293, 422);
+            this.uiPanel5Container.Size = new System.Drawing.Size(293, 511);
             this.uiPanel5Container.TabIndex = 0;
             // 
             // txt_Description
             // 
             this.txt_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Description.Location = new System.Drawing.Point(9, 379);
+            this.txt_Description.Location = new System.Drawing.Point(9, 332);
             this.txt_Description.Multiline = true;
             this.txt_Description.Name = "txt_Description";
             this.txt_Description.ReadOnly = true;
             this.txt_Description.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_Description.Size = new System.Drawing.Size(186, 10);
+            this.txt_Description.Size = new System.Drawing.Size(186, 110);
             this.txt_Description.TabIndex = 6;
             // 
             // mlt_Num_Product
@@ -723,7 +725,7 @@
             this.uiPanel6.InnerContainer = this.uiPanel6Container;
             this.uiPanel6.Location = new System.Drawing.Point(4, 0);
             this.uiPanel6.Name = "uiPanel6";
-            this.uiPanel6.Size = new System.Drawing.Size(295, 447);
+            this.uiPanel6.Size = new System.Drawing.Size(295, 536);
             this.uiPanel6.TabIndex = 4;
             this.uiPanel6.Text = "تنظیمات رسید و حواله";
             // 
@@ -748,7 +750,7 @@
             this.uiPanel6Container.Controls.Add(this.mlt_Function_R);
             this.uiPanel6Container.Location = new System.Drawing.Point(1, 25);
             this.uiPanel6Container.Name = "uiPanel6Container";
-            this.uiPanel6Container.Size = new System.Drawing.Size(293, 422);
+            this.uiPanel6Container.Size = new System.Drawing.Size(293, 511);
             this.uiPanel6Container.TabIndex = 0;
             this.uiPanel6Container.Click += new System.EventHandler(this.uiPanel6Container_Click);
             // 
@@ -915,9 +917,9 @@
             // 
             // uiPanelGroup2
             // 
-            this.uiPanelGroup2.Location = new System.Drawing.Point(3, 34);
+            this.uiPanelGroup2.Location = new System.Drawing.Point(3, 30);
             this.uiPanelGroup2.Name = "uiPanelGroup2";
-            this.uiPanelGroup2.Size = new System.Drawing.Size(723, 470);
+            this.uiPanelGroup2.Size = new System.Drawing.Size(740, 559);
             this.uiPanelGroup2.TabIndex = 102;
             // 
             // uiPanel1
@@ -928,7 +930,7 @@
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
             this.uiPanel1.Location = new System.Drawing.Point(0, 0);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(723, 271);
+            this.uiPanel1.Size = new System.Drawing.Size(740, 323);
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = "Panel 1";
             // 
@@ -937,7 +939,7 @@
             this.uiPanel1Container.Controls.Add(this.groupBox2);
             this.uiPanel1Container.Location = new System.Drawing.Point(1, 1);
             this.uiPanel1Container.Name = "uiPanel1Container";
-            this.uiPanel1Container.Size = new System.Drawing.Size(721, 269);
+            this.uiPanel1Container.Size = new System.Drawing.Size(738, 321);
             this.uiPanel1Container.TabIndex = 0;
             // 
             // groupBox2
@@ -955,7 +957,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(721, 269);
+            this.groupBox2.Size = new System.Drawing.Size(738, 321);
             this.groupBox2.TabIndex = 97;
             this.groupBox2.TabStop = false;
             // 
@@ -966,7 +968,7 @@
             this.txt_meter.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_meter.Location = new System.Drawing.Point(11, 174);
             this.txt_meter.Name = "txt_meter";
-            this.txt_meter.Size = new System.Drawing.Size(700, 24);
+            this.txt_meter.Size = new System.Drawing.Size(717, 24);
             this.txt_meter.TabIndex = 107;
             this.txt_meter.Text = "0";
             this.txt_meter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -979,7 +981,7 @@
             this.txt_Desc.Location = new System.Drawing.Point(11, 101);
             this.txt_Desc.Multiline = true;
             this.txt_Desc.Name = "txt_Desc";
-            this.txt_Desc.Size = new System.Drawing.Size(700, 50);
+            this.txt_Desc.Size = new System.Drawing.Size(717, 50);
             this.txt_Desc.TabIndex = 106;
             this.txt_Desc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Desc_KeyPress);
             // 
@@ -989,7 +991,7 @@
             this.btn_R_D.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btn_R_D.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_R_D.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_R_D.Location = new System.Drawing.Point(298, 230);
+            this.btn_R_D.Location = new System.Drawing.Point(307, 230);
             this.btn_R_D.Name = "btn_R_D";
             this.btn_R_D.Size = new System.Drawing.Size(119, 30);
             this.btn_R_D.TabIndex = 102;
@@ -1005,7 +1007,7 @@
             this.txt_weight.FormatString = "#,##0.###";
             this.txt_weight.Location = new System.Drawing.Point(24, 37);
             this.txt_weight.Name = "txt_weight";
-            this.txt_weight.Size = new System.Drawing.Size(700, 56);
+            this.txt_weight.Size = new System.Drawing.Size(717, 56);
             this.txt_weight.TabIndex = 96;
             this.txt_weight.Text = "0";
             this.txt_weight.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center;
@@ -1014,6 +1016,7 @@
             0,
             0,
             0});
+            this.txt_weight.Click += new System.EventHandler(this.txt_weight_Click);
             this.txt_weight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_weight_KeyPress);
             // 
             // rb_select
@@ -1021,7 +1024,7 @@
             this.rb_select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rb_select.AutoSize = true;
             this.rb_select.Checked = true;
-            this.rb_select.Location = new System.Drawing.Point(339, 201);
+            this.rb_select.Location = new System.Drawing.Point(348, 201);
             this.rb_select.Name = "rb_select";
             this.rb_select.Size = new System.Drawing.Size(93, 21);
             this.rb_select.TabIndex = 6;
@@ -1035,7 +1038,7 @@
             // 
             this.ch_Auto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ch_Auto.AutoSize = true;
-            this.ch_Auto.Location = new System.Drawing.Point(194, 201);
+            this.ch_Auto.Location = new System.Drawing.Point(203, 201);
             this.ch_Auto.Name = "ch_Auto";
             this.ch_Auto.Size = new System.Drawing.Size(105, 21);
             this.ch_Auto.TabIndex = 95;
@@ -1048,7 +1051,7 @@
             // 
             this.rb_Auto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rb_Auto.AutoSize = true;
-            this.rb_Auto.Location = new System.Drawing.Point(475, 201);
+            this.rb_Auto.Location = new System.Drawing.Point(484, 201);
             this.rb_Auto.Name = "rb_Auto";
             this.rb_Auto.Size = new System.Drawing.Size(100, 21);
             this.rb_Auto.TabIndex = 6;
@@ -1062,9 +1065,9 @@
             this.uiPanel3.CaptionVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel3.FloatingLocation = new System.Drawing.Point(180, 456);
             this.uiPanel3.InnerContainer = this.uiPanel3Container;
-            this.uiPanel3.Location = new System.Drawing.Point(0, 275);
+            this.uiPanel3.Location = new System.Drawing.Point(0, 327);
             this.uiPanel3.Name = "uiPanel3";
-            this.uiPanel3.Size = new System.Drawing.Size(723, 195);
+            this.uiPanel3.Size = new System.Drawing.Size(740, 232);
             this.uiPanel3.TabIndex = 4;
             // 
             // uiPanel3Container
@@ -1077,7 +1080,7 @@
             this.uiPanel3Container.Controls.Add(this.txt_Barcode);
             this.uiPanel3Container.Location = new System.Drawing.Point(1, 1);
             this.uiPanel3Container.Name = "uiPanel3Container";
-            this.uiPanel3Container.Size = new System.Drawing.Size(721, 193);
+            this.uiPanel3Container.Size = new System.Drawing.Size(738, 230);
             this.uiPanel3Container.TabIndex = 0;
             // 
             // gridEX2
@@ -1106,7 +1109,7 @@
             this.gridEX2.RowHeaderContent = Janus.Windows.GridEX.RowHeaderContent.RowPosition;
             this.gridEX2.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.SettingsKey = "Frm_15_InfoServiceGrid_6";
-            this.gridEX2.Size = new System.Drawing.Size(721, 193);
+            this.gridEX2.Size = new System.Drawing.Size(738, 230);
             this.gridEX2.TabIndex = 101;
             this.gridEX2.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX2.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -1135,7 +1138,7 @@
             this.txt_weight_P.Name = "txt_weight_P";
             this.txt_weight_P.ReadOnly = true;
             this.txt_weight_P.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_weight_P.Size = new System.Drawing.Size(73, 24);
+            this.txt_weight_P.Size = new System.Drawing.Size(90, 24);
             this.txt_weight_P.TabIndex = 17;
             // 
             // button1
@@ -1148,7 +1151,7 @@
             this.button1.Location = new System.Drawing.Point(247, 124);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(110, 26);
+            this.button1.Size = new System.Drawing.Size(127, 26);
             this.button1.TabIndex = 15;
             this.button1.Text = "درج اطلاعات";
             this.button1.UseVisualStyleBackColor = false;
@@ -1161,7 +1164,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_ID.Location = new System.Drawing.Point(339, 128);
             this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(72, 24);
+            this.txt_ID.Size = new System.Drawing.Size(89, 24);
             this.txt_ID.TabIndex = 14;
             // 
             // txt_ID_P
@@ -1172,7 +1175,7 @@
             this.txt_ID_P.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table_050_Packaging1BindingSource, "ID", true));
             this.txt_ID_P.Location = new System.Drawing.Point(307, 130);
             this.txt_ID_P.Name = "txt_ID_P";
-            this.txt_ID_P.Size = new System.Drawing.Size(72, 24);
+            this.txt_ID_P.Size = new System.Drawing.Size(89, 24);
             this.txt_ID_P.TabIndex = 16;
             // 
             // txt_Barcode
@@ -1182,7 +1185,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Barcode.Location = new System.Drawing.Point(376, 130);
             this.txt_Barcode.Name = "txt_Barcode";
-            this.txt_Barcode.Size = new System.Drawing.Size(72, 24);
+            this.txt_Barcode.Size = new System.Drawing.Size(89, 24);
             this.txt_Barcode.TabIndex = 124;
             // 
             // contextMenuStrip1
@@ -1309,14 +1312,14 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1028, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1045, 27);
             this.bindingNavigator1.TabIndex = 99;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(46, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(46, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -1326,7 +1329,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -1335,13 +1338,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -1356,7 +1359,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -1364,7 +1367,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -1373,20 +1376,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_Delete
             // 
             this.btn_Delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_Delete.Image")));
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.RightToLeftAutoMirrorImage = true;
-            this.btn_Delete.Size = new System.Drawing.Size(61, 28);
+            this.btn_Delete.Size = new System.Drawing.Size(61, 24);
             this.btn_Delete.Text = "حذف";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
@@ -1411,7 +1414,7 @@
             this.btn_Print.Image = ((System.Drawing.Image)(resources.GetObject("btn_Print.Image")));
             this.btn_Print.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Print.Name = "btn_Print";
-            this.btn_Print.Size = new System.Drawing.Size(56, 28);
+            this.btn_Print.Size = new System.Drawing.Size(56, 24);
             this.btn_Print.Text = "چاپ";
             this.btn_Print.Click += new System.EventHandler(this.btn_Print_Click);
             // 
@@ -1420,7 +1423,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(111, 28);
+            this.toolStripButton1.Size = new System.Drawing.Size(111, 24);
             this.toolStripButton1.Text = "ذخیره تغییرات";
             this.toolStripButton1.Click += new System.EventHandler(this.btn_edit_save_Click);
             // 
@@ -1456,7 +1459,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(109, 28);
+            this.toolStripButton2.Size = new System.Drawing.Size(109, 24);
             this.toolStripButton2.Text = "به روز رسانی";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -1482,11 +1485,21 @@
             this.uiPanelGroup1.Size = new System.Drawing.Size(344, 476);
             this.uiPanelGroup1.TabIndex = 104;
             // 
+            // btnCheckBarcode
+            // 
+            this.btnCheckBarcode.Location = new System.Drawing.Point(3, 446);
+            this.btnCheckBarcode.Name = "btnCheckBarcode";
+            this.btnCheckBarcode.Size = new System.Drawing.Size(288, 62);
+            this.btnCheckBarcode.TabIndex = 13;
+            this.btnCheckBarcode.Text = "مشخصات کد";
+            this.btnCheckBarcode.UseVisualStyleBackColor = true;
+            this.btnCheckBarcode.Click += new System.EventHandler(this.btnCheckBarcode_Click);
+            // 
             // Frm_35_packingNew
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 507);
+            this.ClientSize = new System.Drawing.Size(1045, 592);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.uiPanelGroup2);
             this.Controls.Add(this.uiPanel2);
@@ -1629,5 +1642,6 @@
         private Janus.Windows.GridEX.EditControls.MultiColumnCombo mlt_TypeRerturn;
         private System.Windows.Forms.ToolStripMenuItem btn_Delete_FactorReturn;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.Button btnCheckBarcode;
     }
 }

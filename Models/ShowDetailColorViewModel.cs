@@ -8,6 +8,7 @@ namespace PCLOR.Models
     public class ShowDetailColorViewModel
     {
         public string CodeCommodity { get; set; }
+        public int ColorId { get; set; }
         public string NameColor { get; set; }
         public decimal AmountRequierd { get; set; }
     }

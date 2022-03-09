@@ -124,7 +124,6 @@ namespace PCLOR.Product
             // 
             // label11
             // 
-            label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label11.AutoSize = true;
             label11.Location = new System.Drawing.Point(217, 390);
             label11.Name = "label11";
@@ -134,7 +133,6 @@ namespace PCLOR.Product
             // 
             // label1
             // 
-            label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label1.AutoSize = true;
             label1.Location = new System.Drawing.Point(217, 454);
             label1.Name = "label1";
@@ -144,7 +142,6 @@ namespace PCLOR.Product
             // 
             // label14
             // 
-            label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label14.AutoSize = true;
             label14.Location = new System.Drawing.Point(217, 420);
             label14.Name = "label14";
@@ -154,7 +151,6 @@ namespace PCLOR.Product
             // 
             // label2
             // 
-            label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label2.AutoSize = true;
             label2.Location = new System.Drawing.Point(217, 480);
             label2.Name = "label2";
@@ -164,7 +160,6 @@ namespace PCLOR.Product
             // 
             // label6
             // 
-            label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label6.AutoSize = true;
             label6.Location = new System.Drawing.Point(216, 167);
             label6.Name = "label6";
@@ -176,7 +171,7 @@ namespace PCLOR.Product
             // 
             label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(217, 540);
+            label4.Location = new System.Drawing.Point(259, 540);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(97, 17);
             label4.TabIndex = 45;
@@ -184,7 +179,6 @@ namespace PCLOR.Product
             // 
             // label8
             // 
-            label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label8.AutoSize = true;
             label8.Location = new System.Drawing.Point(216, 227);
             label8.Name = "label8";
@@ -194,7 +188,6 @@ namespace PCLOR.Product
             // 
             // label3
             // 
-            label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label3.AutoSize = true;
             label3.Location = new System.Drawing.Point(216, 257);
             label3.Name = "label3";
@@ -204,7 +197,6 @@ namespace PCLOR.Product
             // 
             // label7
             // 
-            label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label7.AutoSize = true;
             label7.Location = new System.Drawing.Point(216, 195);
             label7.Name = "label7";
@@ -214,9 +206,8 @@ namespace PCLOR.Product
             // 
             // z
             // 
-            z.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             z.AutoSize = true;
-            z.Location = new System.Drawing.Point(213, 6);
+            z.Location = new System.Drawing.Point(213, 56);
             z.Name = "z";
             z.Size = new System.Drawing.Size(41, 17);
             z.TabIndex = 54;
@@ -224,7 +215,6 @@ namespace PCLOR.Product
             // 
             // label9
             // 
-            label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label9.AutoSize = true;
             label9.Location = new System.Drawing.Point(217, 570);
             label9.Name = "label9";
@@ -234,7 +224,6 @@ namespace PCLOR.Product
             // 
             // label10
             // 
-            label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             label10.AutoSize = true;
             label10.Location = new System.Drawing.Point(217, 510);
             label10.Name = "label10";
@@ -254,8 +243,8 @@ namespace PCLOR.Product
             // Design Time Panel Info:
             // 
             this.uiPanelManager1.BeginPanelInfo();
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("571b68ab-1038-437d-8fee-6960a2d27f1a"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(297, 704), true);
-            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("b1872ae3-19e8-4402-87a1-f0a08e96f66c"), Janus.Windows.UI.Dock.PanelDockStyle.Top, new System.Drawing.Size(604, 354), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("571b68ab-1038-437d-8fee-6960a2d27f1a"), Janus.Windows.UI.Dock.PanelDockStyle.Right, new System.Drawing.Size(297, 708), true);
+            this.uiPanelManager1.AddDockPanelInfo(new System.Guid("b1872ae3-19e8-4402-87a1-f0a08e96f66c"), Janus.Windows.UI.Dock.PanelDockStyle.Top, new System.Drawing.Size(740, 354), true);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("e0d90735-8e9b-4976-b1b7-b3fe92f0aec3"), new System.Drawing.Point(674, 410), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("571b68ab-1038-437d-8fee-6960a2d27f1a"), new System.Drawing.Point(908, 613), new System.Drawing.Size(200, 200), false);
             this.uiPanelManager1.AddFloatingPanelInfo(new System.Guid("35c9b614-4265-4732-ad4b-916709ed15a7"), Janus.Windows.UI.Dock.PanelGroupStyle.HorizontalTiles, true, new System.Drawing.Point(204, 490), new System.Drawing.Size(200, 200), false);
@@ -267,15 +256,16 @@ namespace PCLOR.Product
             this.uiPanel1.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.False;
             this.uiPanel1.FloatingLocation = new System.Drawing.Point(908, 613);
             this.uiPanel1.InnerContainer = this.uiPanel1Container;
-            this.uiPanel1.Location = new System.Drawing.Point(607, 34);
+            this.uiPanel1.Location = new System.Drawing.Point(743, 30);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(297, 704);
+            this.uiPanel1.Size = new System.Drawing.Size(297, 708);
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = "اطلاعات سفارش رنگ";
             this.uiPanel1.TextAlignment = Janus.Windows.UI.Dock.PanelTextAlignment.Far;
             // 
             // uiPanel1Container
             // 
+            this.uiPanel1Container.AutoScroll = true;
             this.uiPanel1Container.Controls.Add(this.uiComboBox2);
             this.uiPanel1Container.Controls.Add(this.multiColumnColor);
             this.uiPanel1Container.Controls.Add(this.btnSaveFinal);
@@ -305,7 +295,7 @@ namespace PCLOR.Product
             this.uiPanel1Container.Controls.Add(this.txt_Description);
             this.uiPanel1Container.Location = new System.Drawing.Point(5, 24);
             this.uiPanel1Container.Name = "uiPanel1Container";
-            this.uiPanel1Container.Size = new System.Drawing.Size(291, 679);
+            this.uiPanel1Container.Size = new System.Drawing.Size(291, 683);
             this.uiPanel1Container.TabIndex = 0;
             // 
             // uiComboBox2
@@ -332,12 +322,10 @@ namespace PCLOR.Product
             // 
             // btnSaveFinal
             // 
-            this.btnSaveFinal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveFinal.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSaveFinal.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnSaveFinal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveFinal.Location = new System.Drawing.Point(7, 641);
+            this.btnSaveFinal.Location = new System.Drawing.Point(1, 647);
             this.btnSaveFinal.Name = "btnSaveFinal";
             this.btnSaveFinal.Size = new System.Drawing.Size(276, 25);
             this.btnSaveFinal.TabIndex = 64;
@@ -347,25 +335,20 @@ namespace PCLOR.Product
             // 
             // txt_Barcode
             // 
-            this.txt_Barcode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Barcode.Location = new System.Drawing.Point(7, 3);
             this.txt_Barcode.Multiline = true;
             this.txt_Barcode.Name = "txt_Barcode";
-            this.txt_Barcode.Size = new System.Drawing.Size(202, 504);
+            this.txt_Barcode.Size = new System.Drawing.Size(202, 154);
             this.txt_Barcode.TabIndex = 0;
             this.txt_Barcode.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.txt_Barcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Barcode_KeyPress);
             // 
             // btn_Insert
             // 
-            this.btn_Insert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Insert.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btn_Insert.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_Insert.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Insert.Location = new System.Drawing.Point(7, 614);
+            this.btn_Insert.Location = new System.Drawing.Point(1, 616);
             this.btn_Insert.Name = "btn_Insert";
             this.btn_Insert.Size = new System.Drawing.Size(276, 25);
             this.btn_Insert.TabIndex = 64;
@@ -375,9 +358,6 @@ namespace PCLOR.Product
             // 
             // txt_Dat
             // 
-            this.txt_Dat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Dat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table_025_HederOrderColorBindingSource, "Date", true));
             this.txt_Dat.Location = new System.Drawing.Point(9, 417);
             this.txt_Dat.Mask = "0000/00/00";
@@ -399,8 +379,6 @@ namespace PCLOR.Product
             // 
             // lblNameDevice
             // 
-            this.lblNameDevice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNameDevice.Location = new System.Drawing.Point(9, 507);
             this.lblNameDevice.Name = "lblNameDevice";
             this.lblNameDevice.ReadOnly = true;
@@ -410,8 +388,6 @@ namespace PCLOR.Product
             // 
             // lblClothType
             // 
-            this.lblClothType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblClothType.Location = new System.Drawing.Point(9, 477);
             this.lblClothType.Name = "lblClothType";
             this.lblClothType.ReadOnly = true;
@@ -421,8 +397,6 @@ namespace PCLOR.Product
             // 
             // lblCodeCustomer
             // 
-            this.lblCodeCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCodeCustomer.Location = new System.Drawing.Point(9, 447);
             this.lblCodeCustomer.Name = "lblCodeCustomer";
             this.lblCodeCustomer.ReadOnly = true;
@@ -433,8 +407,6 @@ namespace PCLOR.Product
             // 
             // txt_weight
             // 
-            this.txt_weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_weight.Location = new System.Drawing.Point(8, 567);
             this.txt_weight.Name = "txt_weight";
             this.txt_weight.ReadOnly = true;
@@ -444,9 +416,6 @@ namespace PCLOR.Product
             // 
             // txt_Number
             // 
-            this.txt_Number.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Number.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table_025_HederOrderColorBindingSource, "Number", true));
             this.txt_Number.Enabled = false;
             this.txt_Number.Location = new System.Drawing.Point(8, 383);
@@ -462,14 +431,12 @@ namespace PCLOR.Product
             this.txt_NumberOrder.Location = new System.Drawing.Point(8, 537);
             this.txt_NumberOrder.Name = "txt_NumberOrder";
             this.txt_NumberOrder.ReadOnly = true;
-            this.txt_NumberOrder.Size = new System.Drawing.Size(202, 24);
+            this.txt_NumberOrder.Size = new System.Drawing.Size(245, 24);
             this.txt_NumberOrder.TabIndex = 6;
             this.txt_NumberOrder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NumberOrder_KeyPress);
             // 
             // txt_Id
             // 
-            this.txt_Id.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Id.Location = new System.Drawing.Point(235, 314);
             this.txt_Id.Name = "txt_Id";
             this.txt_Id.Size = new System.Drawing.Size(97, 24);
@@ -479,8 +446,6 @@ namespace PCLOR.Product
             // 
             // txt_Title
             // 
-            this.txt_Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Title.Location = new System.Drawing.Point(8, 192);
             this.txt_Title.Name = "txt_Title";
             this.txt_Title.Size = new System.Drawing.Size(202, 24);
@@ -489,8 +454,6 @@ namespace PCLOR.Product
             // 
             // txt_Description
             // 
-            this.txt_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Description.Location = new System.Drawing.Point(8, 250);
             this.txt_Description.Multiline = true;
             this.txt_Description.Name = "txt_Description";
@@ -502,9 +465,9 @@ namespace PCLOR.Product
             // 
             this.uiPanel0.FloatingLocation = new System.Drawing.Point(285, 453);
             this.uiPanel0.InnerContainer = this.uiPanel0Container;
-            this.uiPanel0.Location = new System.Drawing.Point(3, 34);
+            this.uiPanel0.Location = new System.Drawing.Point(3, 30);
             this.uiPanel0.Name = "uiPanel0";
-            this.uiPanel0.Size = new System.Drawing.Size(604, 354);
+            this.uiPanel0.Size = new System.Drawing.Size(740, 354);
             this.uiPanel0.TabIndex = 4;
             this.uiPanel0.Text = "Panel 0";
             // 
@@ -513,7 +476,7 @@ namespace PCLOR.Product
             this.uiPanel0Container.Controls.Add(this.gridEX3);
             this.uiPanel0Container.Location = new System.Drawing.Point(1, 24);
             this.uiPanel0Container.Name = "uiPanel0Container";
-            this.uiPanel0Container.Size = new System.Drawing.Size(602, 325);
+            this.uiPanel0Container.Size = new System.Drawing.Size(738, 325);
             this.uiPanel0Container.TabIndex = 0;
             // 
             // gridEX3
@@ -544,7 +507,7 @@ namespace PCLOR.Product
             this.gridEX3.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX3.ScrollBars = Janus.Windows.GridEX.ScrollBars.Horizontal;
             this.gridEX3.SettingsKey = "Frm_15_InfoServiceGrid_61";
-            this.gridEX3.Size = new System.Drawing.Size(602, 325);
+            this.gridEX3.Size = new System.Drawing.Size(738, 325);
             this.gridEX3.TabIndex = 38;
             this.gridEX3.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX3.TotalRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
@@ -584,7 +547,7 @@ namespace PCLOR.Product
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bindingNavigator1.Size = new System.Drawing.Size(907, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1043, 27);
             this.bindingNavigator1.TabIndex = 33;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -594,7 +557,7 @@ namespace PCLOR.Product
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             this.bindingNavigatorMoveFirstItem.Click += new System.EventHandler(this.bindingNavigatorMoveFirstItem_Click);
             // 
@@ -604,7 +567,7 @@ namespace PCLOR.Product
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             this.bindingNavigatorMovePreviousItem.Click += new System.EventHandler(this.bindingNavigatorMovePreviousItem_Click);
             // 
@@ -614,7 +577,7 @@ namespace PCLOR.Product
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             this.bindingNavigatorMoveNextItem.Click += new System.EventHandler(this.bindingNavigatorMoveNextItem_Click);
             // 
@@ -624,28 +587,28 @@ namespace PCLOR.Product
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             this.bindingNavigatorMoveLastItem.Click += new System.EventHandler(this.bindingNavigatorMoveLastItem_Click);
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_Delete
             // 
             this.btn_Delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_Delete.Image")));
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.RightToLeftAutoMirrorImage = true;
-            this.btn_Delete.Size = new System.Drawing.Size(61, 28);
+            this.btn_Delete.Size = new System.Drawing.Size(61, 24);
             this.btn_Delete.Text = "حذف";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_Save
             // 
@@ -660,7 +623,7 @@ namespace PCLOR.Product
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_New
             // 
@@ -675,14 +638,14 @@ namespace PCLOR.Product
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // bt_Print
             // 
             this.bt_Print.Image = ((System.Drawing.Image)(resources.GetObject("bt_Print.Image")));
             this.bt_Print.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bt_Print.Name = "bt_Print";
-            this.bt_Print.Size = new System.Drawing.Size(101, 28);
+            this.bt_Print.Size = new System.Drawing.Size(101, 24);
             this.bt_Print.Text = "طراحی چاپ";
             this.bt_Print.Click += new System.EventHandler(this.bt_Print_Click);
             // 
@@ -692,7 +655,7 @@ namespace PCLOR.Product
             this.btn_Search.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.Image")));
             this.btn_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(192, 28);
+            this.btn_Search.Size = new System.Drawing.Size(192, 24);
             this.btn_Search.Text = "                                        ";
             this.btn_Search.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
@@ -774,7 +737,7 @@ namespace PCLOR.Product
             this.txt_Search.Border.Class = "TextBoxBorder";
             this.txt_Search.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_Search.ForeColor = System.Drawing.Color.Black;
-            this.txt_Search.Location = new System.Drawing.Point(784, 2);
+            this.txt_Search.Location = new System.Drawing.Point(920, 2);
             this.txt_Search.Name = "txt_Search";
             this.txt_Search.Size = new System.Drawing.Size(118, 24);
             this.txt_Search.TabIndex = 35;
@@ -794,12 +757,12 @@ namespace PCLOR.Product
             this.gridEX4.FilterMode = Janus.Windows.GridEX.FilterMode.Manual;
             this.gridEX4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.gridEX4.GroupByBoxVisible = false;
-            this.gridEX4.Location = new System.Drawing.Point(3, 388);
+            this.gridEX4.Location = new System.Drawing.Point(3, 384);
             this.gridEX4.Name = "gridEX4";
             this.gridEX4.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.gridEX4.ScrollBars = Janus.Windows.GridEX.ScrollBars.Both;
             this.gridEX4.SettingsKey = "gridEX4";
-            this.gridEX4.Size = new System.Drawing.Size(604, 350);
+            this.gridEX4.Size = new System.Drawing.Size(740, 354);
             this.gridEX4.TabIndex = 37;
             this.gridEX4.TableHeaders = Janus.Windows.GridEX.InheritableBoolean.Default;
             this.gridEX4.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2010;
@@ -809,7 +772,7 @@ namespace PCLOR.Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(907, 741);
+            this.ClientSize = new System.Drawing.Size(1043, 741);
             this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.gridEX4);
             this.Controls.Add(this.uiPanel0);
