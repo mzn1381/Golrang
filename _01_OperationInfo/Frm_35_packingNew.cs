@@ -14,6 +14,9 @@ using Stimulsoft.Report;
 using DevComponents.DotNetBar;
 using System.Drawing;
 using Janus.Windows.GridEX;
+using PCLOR.Models;
+using Dapper;
+
 namespace PCLOR._01_OperationInfo
 {
     public partial class Frm_35_packingNew : Form
@@ -23,7 +26,7 @@ namespace PCLOR._01_OperationInfo
         SqlConnection ConWare = new SqlConnection(Properties.Settings.Default.PWHRS);
         SqlConnection ConSale = new SqlConnection(Properties.Settings.Default.PSALE);
         SqlConnection ConACNT = new SqlConnection(Properties.Settings.Default.PACNT);
-        
+
         Classes.Class_Documents ClDoc = new Classes.Class_Documents();
         Classes.CheckCredits clCredit = new Classes.CheckCredits();
         Classes.Class_GoodInformation clGood = new Classes.Class_GoodInformation();
@@ -58,7 +61,8 @@ namespace PCLOR._01_OperationInfo
                     comport.PortName = ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=13");
                     comport.ReadBufferSize = 2;
                 }
-                catch { } try
+                catch { }
+                try
                 {
                     // Open the port
                     if (!comport.IsOpen)
@@ -160,14 +164,14 @@ namespace PCLOR._01_OperationInfo
                          " + ConWare.Database + @".dbo.table_004_CommodityAndIngredients ON dbo.Table_005_TypeCloth.CodeCommondity = " + ConWare.Database + @".dbo.table_004_CommodityAndIngredients.columnid");
                 mlt_NameCustomer.DataSource = ClDoc.ReturnTable(ConBase, @"select Columnid,Column01 from Table_045_PersonInfo");
                 mlt_TypeColor.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select ID,TypeColor from Table_010_TypeColor");
-              
-//                mlt_CodeOrderColor.DataSource = ClDoc.ReturnTable(ConPCLOR, @"SELECT     dbo.Table_035_Production.Number AS NumberOrder, dbo.Table_025_HederOrderColor.Number, dbo.Table_010_TypeColor.TypeColor, 
-//                      dbo.Table_005_TypeCloth.TypeCloth, dbo.Table_035_Production.ID
-//                      FROM         dbo.Table_025_HederOrderColor INNER JOIN
-//                      dbo.Table_030_DetailOrderColor ON dbo.Table_025_HederOrderColor.ID = dbo.Table_030_DetailOrderColor.Fk INNER JOIN
-//                      dbo.Table_005_TypeCloth ON dbo.Table_030_DetailOrderColor.TypeColth = dbo.Table_005_TypeCloth.ID INNER JOIN
-//                      dbo.Table_010_TypeColor ON dbo.Table_030_DetailOrderColor.TypeColor = dbo.Table_010_TypeColor.ID INNER JOIN
-//                      dbo.Table_035_Production ON dbo.Table_030_DetailOrderColor.ID = dbo.Table_035_Production.ColorOrderId");
+
+                //                mlt_CodeOrderColor.DataSource = ClDoc.ReturnTable(ConPCLOR, @"SELECT     dbo.Table_035_Production.Number AS NumberOrder, dbo.Table_025_HederOrderColor.Number, dbo.Table_010_TypeColor.TypeColor, 
+                //                      dbo.Table_005_TypeCloth.TypeCloth, dbo.Table_035_Production.ID
+                //                      FROM         dbo.Table_025_HederOrderColor INNER JOIN
+                //                      dbo.Table_030_DetailOrderColor ON dbo.Table_025_HederOrderColor.ID = dbo.Table_030_DetailOrderColor.Fk INNER JOIN
+                //                      dbo.Table_005_TypeCloth ON dbo.Table_030_DetailOrderColor.TypeColth = dbo.Table_005_TypeCloth.ID INNER JOIN
+                //                      dbo.Table_010_TypeColor ON dbo.Table_030_DetailOrderColor.TypeColor = dbo.Table_010_TypeColor.ID INNER JOIN
+                //                      dbo.Table_035_Production ON dbo.Table_030_DetailOrderColor.ID = dbo.Table_035_Production.ColorOrderId");
 
                 mlt_CodeOrderColor.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select Id,Number from Table_025_HederOrderColor");
 
@@ -187,15 +191,15 @@ namespace PCLOR._01_OperationInfo
                 mlt_Function.DataSource = ClDoc.ReturnTable(ConWare, @"Select ColumnId,Column01,Column02 from table_005_PwhrsOperation where Column16=1");
                 mlt_Function_R.DataSource = ClDoc.ReturnTable(ConWare, @"Select ColumnId,Column01,Column02 from table_005_PwhrsOperation where Column16=0");
 
-               mlt_TypeRerturn .DataSource = ClDoc.ReturnTable(ConWare, @"Select ColumnId,Column01,Column02 from table_005_PwhrsOperation where Column16=0");
-//               ClDoc.ReturnTable(ConWare, @"SELECT     " + ConWare.Database + @".dbo.Table_001_PWHRS.columnid, " + ConWare.Database + @".dbo.Table_001_PWHRS.column02, " + ConPCLOR.Database + @".dbo.Table_90_Wares.TypeWare
-//                                                                FROM        " + ConPCLOR.Database + @". dbo.Table_90_Wares INNER JOIN
-//                                                                                      " + ConWare.Database + @".dbo.Table_001_PWHRS ON " + ConPCLOR.Database + @".dbo.Table_90_Wares.IdWare = " + ConWare.Database + @".dbo.Table_001_PWHRS.columnid
-//                                                                WHERE     (" + ConPCLOR.Database + @".dbo.Table_90_Wares.TypeWare = 3)");
+                mlt_TypeRerturn.DataSource = ClDoc.ReturnTable(ConWare, @"Select ColumnId,Column01,Column02 from table_005_PwhrsOperation where Column16=0");
+                //               ClDoc.ReturnTable(ConWare, @"SELECT     " + ConWare.Database + @".dbo.Table_001_PWHRS.columnid, " + ConWare.Database + @".dbo.Table_001_PWHRS.column02, " + ConPCLOR.Database + @".dbo.Table_90_Wares.TypeWare
+                //                                                                FROM        " + ConPCLOR.Database + @". dbo.Table_90_Wares INNER JOIN
+                //                                                                                      " + ConWare.Database + @".dbo.Table_001_PWHRS ON " + ConPCLOR.Database + @".dbo.Table_90_Wares.IdWare = " + ConWare.Database + @".dbo.Table_001_PWHRS.columnid
+                //                                                                WHERE     (" + ConPCLOR.Database + @".dbo.Table_90_Wares.TypeWare = 3)");
 
 
 
-               mlt_Return.DataSource = ClDoc.ReturnTable(ConWare, @"SELECT     " + ConWare.Database + @".dbo.Table_001_PWHRS.columnid, " + ConWare.Database + @".dbo.Table_001_PWHRS.column02, " + ConPCLOR.Database + @".dbo.Table_90_Wares.TypeWare
+                mlt_Return.DataSource = ClDoc.ReturnTable(ConWare, @"SELECT     " + ConWare.Database + @".dbo.Table_001_PWHRS.columnid, " + ConWare.Database + @".dbo.Table_001_PWHRS.column02, " + ConPCLOR.Database + @".dbo.Table_90_Wares.TypeWare
                                                                 FROM        " + ConPCLOR.Database + @". dbo.Table_90_Wares INNER JOIN
                                                                                       " + ConWare.Database + @".dbo.Table_001_PWHRS ON " + ConPCLOR.Database + @".dbo.Table_90_Wares.IdWare = " + ConWare.Database + @".dbo.Table_001_PWHRS.columnid
                                                                 WHERE     (" + ConPCLOR.Database + @".dbo.Table_90_Wares.TypeWare = 3)");
@@ -207,9 +211,9 @@ namespace PCLOR._01_OperationInfo
                 gridEX2.DropDowns["Factor"].DataSource = ClDoc.ReturnTable(ConSale, @"select Columnid,Column01 from Table_018_MarjooiSale ");
 
 
-//                mlt_Num_Product.DataSource = ClDoc.ReturnTable(ConPCLOR, @"SELECT * FROM  ( SELECT tp.ID, tp.Number ,t30.NumberOrder-ISNULL((SELECT sum(NumberProduct) FROM Table_035_Production WHERE ColorOrderId= t30.Id ),0) AS Remain
-//											FROM Table_030_DetailOrderColor  AS t30
-//											INNER JOIN Table_035_Production tp ON tp.ColorOrderId=t30.ID) AS T  ORDER BY Number DESC");
+                //                mlt_Num_Product.DataSource = ClDoc.ReturnTable(ConPCLOR, @"SELECT * FROM  ( SELECT tp.ID, tp.Number ,t30.NumberOrder-ISNULL((SELECT sum(NumberProduct) FROM Table_035_Production WHERE ColorOrderId= t30.Id ),0) AS Remain
+                //											FROM Table_030_DetailOrderColor  AS t30
+                //											INNER JOIN Table_035_Production tp ON tp.ColorOrderId=t30.ID) AS T  ORDER BY Number DESC");
 
 
                 mlt_Num_Product.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select Id,Number from Table_035_Production ORDER BY Number DESC");
@@ -225,7 +229,7 @@ namespace PCLOR._01_OperationInfo
 
                 mlt_Return.Value = ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=28");
 
-                mlt_TypeRerturn.Value = ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=29"); 
+                mlt_TypeRerturn.Value = ClDoc.ExScalar(ConPCLOR.ConnectionString, "select value from Table_80_Setting where ID=29");
 
                 ToastNotification.ToastForeColor = Color.Black;
                 ToastNotification.ToastBackColor = Color.SkyBlue;
@@ -296,7 +300,7 @@ namespace PCLOR._01_OperationInfo
 
                         //////////////
 
-                        if (txt_weight.Text == "" || txt_weight.Text == "0" || txt_meter.Text == "" )
+                        if (txt_weight.Text == "" || txt_weight.Text == "0" || txt_meter.Text == "")
                         {
                             MessageBox.Show("اطلاعات را تکمیل نمایید");
 
@@ -381,7 +385,7 @@ namespace PCLOR._01_OperationInfo
                     //string NumberProduct = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isnull(( select ColorOrderId from Table_035_Production where Id="+mlt_Num_Product.Value+"),0)");
                     //if (NumberProduct!="0")
                     //{
-                        
+
                     DataTable dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT     dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderColor.TypeColth, dbo.Table_010_TypeColor.TypeColor, 
                       dbo.Table_030_DetailOrderColor.NumberOrder, SUM(dbo.Table_035_Production.NumberProduct) AS NumberProduct, dbo.Table_030_DetailOrderColor.Title, 
                       dbo.Table_035_Production.Number, dbo.Table_025_HederOrderColor.Number AS NumberOrde, dbo.Table_035_Production.ID, dbo.Table_030_DetailOrderColor.Printer,
@@ -422,41 +426,41 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                         //txt_weight.Focus();
 
                     }
-//                }
+                    //                }
 
-//                    else if (NumberProduct=="0")
-//                    {
-//                                           DataTable dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT        SUM(dbo.Table_035_Production.NumberProduct) AS NumberProduct, dbo.Table_035_Production.Number, dbo.Table_035_Production.ID, dbo.Table_035_Production.Machine, dbo.Table_035_Production.weight, 
-//                         dbo.Table_035_Production.CodeCustomer, dbo.Table_035_Production.TypeCloth, dbo.Table_010_TypeColor.TypeColor, dbo.Table_035_Production.Printer, dbo.Table_035_Production.Description
-//FROM            dbo.Table_035_Production INNER JOIN
-//                         dbo.Table_010_TypeColor ON dbo.Table_035_Production.TypeColor = dbo.Table_010_TypeColor.ID
-//GROUP BY dbo.Table_035_Production.Number, dbo.Table_035_Production.ID, dbo.Table_035_Production.Machine, dbo.Table_035_Production.weight, dbo.Table_035_Production.CodeCustomer, 
-//                         dbo.Table_035_Production.TypeCloth, dbo.Table_010_TypeColor.TypeColor, dbo.Table_035_Production.Printer, dbo.Table_035_Production.Description
-//HAVING        (Number = "+mlt_Num_Product.Text+") ");
+                    //                    else if (NumberProduct=="0")
+                    //                    {
+                    //                                           DataTable dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT        SUM(dbo.Table_035_Production.NumberProduct) AS NumberProduct, dbo.Table_035_Production.Number, dbo.Table_035_Production.ID, dbo.Table_035_Production.Machine, dbo.Table_035_Production.weight, 
+                    //                         dbo.Table_035_Production.CodeCustomer, dbo.Table_035_Production.TypeCloth, dbo.Table_010_TypeColor.TypeColor, dbo.Table_035_Production.Printer, dbo.Table_035_Production.Description
+                    //FROM            dbo.Table_035_Production INNER JOIN
+                    //                         dbo.Table_010_TypeColor ON dbo.Table_035_Production.TypeColor = dbo.Table_010_TypeColor.ID
+                    //GROUP BY dbo.Table_035_Production.Number, dbo.Table_035_Production.ID, dbo.Table_035_Production.Machine, dbo.Table_035_Production.weight, dbo.Table_035_Production.CodeCustomer, 
+                    //                         dbo.Table_035_Production.TypeCloth, dbo.Table_010_TypeColor.TypeColor, dbo.Table_035_Production.Printer, dbo.Table_035_Production.Description
+                    //HAVING        (Number = "+mlt_Num_Product.Text+") ");
 
-//                    if (dt.Rows.Count > 0)
-//                    {
-//                        mlt_NameCustomer.Value = dt.Rows[0]["CodeCustomer"].ToString();
-//                        mlt_TypeCloth.Value = dt.Rows[0]["TypeCloth"].ToString();
-//                        mlt_TypeColor.Text = dt.Rows[0]["TypeColor"].ToString();
-//                        mlt_CodeOrderColor.Value = null;
-//                        txt_CountProduct.Text = dt.Rows[0]["NumberProduct"].ToString();
-//                        txt_Title.Text = "";
-//                        txt_ID.Text = dt.Rows[0]["ID"].ToString();
-//                        txt_Title.Text = "";
-//                        txt_Print.Text = dt.Rows[0]["Printer"].ToString();
-//                        txt_Description.Text = dt.Rows[0]["Description"].ToString();
-//                        mlt_Machine.Value = dt.Rows[0]["Machine"].ToString();
-//                        txt_weight_P.Text = dt.Rows[0]["weight"].ToString();
-//                        string sum = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"SELECT     ISNULL(dbo.Table_035_Production.weight - ISNULL(SUM(dbo.Table_050_Packaging.weight), 0), 0) AS Remin
-//                        FROM         dbo.Table_035_Production  left JOIN
-//                                  dbo.Table_050_Packaging ON dbo.Table_035_Production.ID = dbo.Table_050_Packaging.IDProduct
-//                         where      (dbo.Table_035_Production.Number = " + mlt_Num_Product.Text + @")
-//                                GROUP BY dbo.Table_035_Production.weight");
-//                        txt_Rem_Weight.Text = sum;
-//                        this.table_050_Packaging1TableAdapter.FillByProductID(this.dataSet_05_PCLOR.Table_050_Packaging1, long.Parse(txt_ID.Text));
-//                        txt_weight.Focus();
-//                    } 
+                    //                    if (dt.Rows.Count > 0)
+                    //                    {
+                    //                        mlt_NameCustomer.Value = dt.Rows[0]["CodeCustomer"].ToString();
+                    //                        mlt_TypeCloth.Value = dt.Rows[0]["TypeCloth"].ToString();
+                    //                        mlt_TypeColor.Text = dt.Rows[0]["TypeColor"].ToString();
+                    //                        mlt_CodeOrderColor.Value = null;
+                    //                        txt_CountProduct.Text = dt.Rows[0]["NumberProduct"].ToString();
+                    //                        txt_Title.Text = "";
+                    //                        txt_ID.Text = dt.Rows[0]["ID"].ToString();
+                    //                        txt_Title.Text = "";
+                    //                        txt_Print.Text = dt.Rows[0]["Printer"].ToString();
+                    //                        txt_Description.Text = dt.Rows[0]["Description"].ToString();
+                    //                        mlt_Machine.Value = dt.Rows[0]["Machine"].ToString();
+                    //                        txt_weight_P.Text = dt.Rows[0]["weight"].ToString();
+                    //                        string sum = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"SELECT     ISNULL(dbo.Table_035_Production.weight - ISNULL(SUM(dbo.Table_050_Packaging.weight), 0), 0) AS Remin
+                    //                        FROM         dbo.Table_035_Production  left JOIN
+                    //                                  dbo.Table_050_Packaging ON dbo.Table_035_Production.ID = dbo.Table_050_Packaging.IDProduct
+                    //                         where      (dbo.Table_035_Production.Number = " + mlt_Num_Product.Text + @")
+                    //                                GROUP BY dbo.Table_035_Production.weight");
+                    //                        txt_Rem_Weight.Text = sum;
+                    //                        this.table_050_Packaging1TableAdapter.FillByProductID(this.dataSet_05_PCLOR.Table_050_Packaging1, long.Parse(txt_ID.Text));
+                    //                        txt_weight.Focus();
+                    //                    } 
                     //}
 
 
@@ -589,12 +593,12 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                       dbo.Table_70_DetailOtherPWHRS ON dbo.Table_65_HeaderOtherPWHRS.ID = dbo.Table_70_DetailOtherPWHRS.FK
                             WHERE     (dbo.Table_70_DetailOtherPWHRS.Barcode = " + gridEX2.GetValue("Barcode").ToString() + ")");
 
-                           
+
                             DataTable dtsal = ClDoc.ReturnTable(ConSale, @"SELECT        dbo.Table_011_Child1_SaleFactor.Column34
                             FROM            dbo.Table_010_SaleFactor INNER JOIN
                                                      dbo.Table_011_Child1_SaleFactor ON dbo.Table_010_SaleFactor.columnid = dbo.Table_011_Child1_SaleFactor.column01
                             WHERE        (dbo.Table_011_Child1_SaleFactor.Column34 = N'" + gridEX2.GetValue("Barcode").ToString() + "')");
-                          
+
                             DataTable dtreturn = ClDoc.ReturnTable(ConSale, @"SELECT        dbo.Table_019_Child1_MarjooiSale.Column32
                         FROM            dbo.Table_018_MarjooiSale INNER JOIN
                                                  dbo.Table_019_Child1_MarjooiSale ON dbo.Table_018_MarjooiSale.columnid = dbo.Table_019_Child1_MarjooiSale.column01
@@ -609,7 +613,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
 
                             }
 
-                            else     if (dtsal.Rows.Count > 0)
+                            else if (dtsal.Rows.Count > 0)
                             {
                                 MessageBox.Show("این بارکد در فاکتور فروش استفاده شده است امکان حذف ان را ندارید ");
                                 return;
@@ -617,7 +621,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                             }
 
 
-                            else  if (dtreturn.Rows.Count > 0)
+                            else if (dtreturn.Rows.Count > 0)
                             {
                                 MessageBox.Show("این بارکد در فاکتور مرجوعی استفاده شده است امکان حذف ان را ندارید ");
                                 return;
@@ -631,11 +635,11 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                             if (((DataRowView)table_050_Packaging1BindingSource.CurrencyManager.Current)["NumberRecipt"].ToString() != "0" || ((DataRowView)table_050_Packaging1BindingSource.CurrencyManager.Current)["NumberDraft"].ToString() != "0" || IdDraft != "0"
                                                || ((DataRowView)table_050_Packaging1BindingSource.CurrencyManager.Current)["FactorReturnId"].ToString() != "0")
                             {
-                               
+
                                 MessageBox.Show("این بارکد دارای رسید یا حواله یا فاکتور مرجوعی می باشد امکان حذف آن را ندارید");
                                 return;
                             }
-                      
+
 
 
                             else
@@ -824,38 +828,38 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
 
 
 
-    
+
 
         private void btn_Recipt_Click(object sender, EventArgs e)
         {
             try
             {
-                
 
-                    if (ClDoc.OperationalColumnValue("Table_011_PwhrsReceipt", "Column07", gridEX2.GetValue("NumberRecipt").ToString()) != 0)
+
+                if (ClDoc.OperationalColumnValue("Table_011_PwhrsReceipt", "Column07", gridEX2.GetValue("NumberRecipt").ToString()) != 0)
+                {
+                    throw new Exception(" رسید دارای سند حسابداری می باشد ابتدا سند آن را حذف نمایید");
+
+                    if (ClDoc.OperationalColumnValue("Table_011_PwhrsReceipt", "Column19", gridEX2.GetValue("NumberRecipt").ToString()) != 0)
+
+                        throw new Exception(" رسید قطعی می باشد ابتدا آن را غیر قطعی نمایید");
+                }
+                else
+                {
+
+                    table_050_Packaging1BindingSource.EndEdit();
+                    ClDoc.RunSqlCommand(ConWare.ConnectionString, "Delete From Table_012_Child_PwhrsReceipt where Column01=" + gridEX2.GetValue("NumberRecipt"));
+                    ClDoc.RunSqlCommand(ConWare.ConnectionString, "Delete From Table_011_PwhrsReceipt Where ColumnId=" + gridEX2.GetValue("NumberRecipt"));
+                    dataSet_05_PCLOR.EnforceConstraints = false;
+                    if (txt_ID.Text != "")
                     {
-                        throw new Exception(" رسید دارای سند حسابداری می باشد ابتدا سند آن را حذف نمایید");
-
-                        if (ClDoc.OperationalColumnValue("Table_011_PwhrsReceipt", "Column19", gridEX2.GetValue("NumberRecipt").ToString()) != 0)
-
-                            throw new Exception(" رسید قطعی می باشد ابتدا آن را غیر قطعی نمایید");
+                        this.table_050_Packaging1TableAdapter.FillByProductID(this.dataSet_05_PCLOR.Table_050_Packaging1, long.Parse(txt_ID.Text));
                     }
-                    else
-                    {
+                    dataSet_05_PCLOR.EnforceConstraints = true;
 
-                        table_050_Packaging1BindingSource.EndEdit();
-                        ClDoc.RunSqlCommand(ConWare.ConnectionString, "Delete From Table_012_Child_PwhrsReceipt where Column01=" + gridEX2.GetValue("NumberRecipt"));
-                        ClDoc.RunSqlCommand(ConWare.ConnectionString, "Delete From Table_011_PwhrsReceipt Where ColumnId=" + gridEX2.GetValue("NumberRecipt"));
-                        dataSet_05_PCLOR.EnforceConstraints = false;
-                        if (txt_ID.Text != "")
-                        {
-                            this.table_050_Packaging1TableAdapter.FillByProductID(this.dataSet_05_PCLOR.Table_050_Packaging1, long.Parse(txt_ID.Text));
-                        }
-                        dataSet_05_PCLOR.EnforceConstraints = true;
-                     
-                    }
+                }
 
-               
+
             }
             catch { }
         }
@@ -864,39 +868,39 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
         {
             try
             {
-               
 
-                    if (ClDoc.OperationalColumnValue("Table_007_PwhrsDraft", "Column07", gridEX2.GetValue("NumberDraft").ToString()) != 0)
-                    {
-                        throw new Exception(" حواله این کارت تولید دارای سند حسابداری می باشد ابتدا سند آن را حذف نمایید");
 
-                        if (ClDoc.OperationalColumnValue("Table_007_PwhrsDraft", "Column26", gridEX2.GetValue("NumberDraft").ToString()) != 0)
+                if (ClDoc.OperationalColumnValue("Table_007_PwhrsDraft", "Column07", gridEX2.GetValue("NumberDraft").ToString()) != 0)
+                {
+                    throw new Exception(" حواله این کارت تولید دارای سند حسابداری می باشد ابتدا سند آن را حذف نمایید");
 
-                            throw new Exception(" حواله این کارت تولید قطعی می باشد ابتدا آن را غیر قطعی نمایید");
+                    if (ClDoc.OperationalColumnValue("Table_007_PwhrsDraft", "Column26", gridEX2.GetValue("NumberDraft").ToString()) != 0)
 
-                    }
-                    else
-                    {
-                        table_050_Packaging1BindingSource.EndEdit();
-                        ClDoc.RunSqlCommand(ConWare.ConnectionString, "Delete From Table_008_Child_PwhrsDraft where Column01=" + gridEX2.GetValue("NumberDraft"));
-                        ClDoc.RunSqlCommand(ConWare.ConnectionString, "Delete From Table_007_PwhrsDraft Where ColumnId=" + gridEX2.GetValue("NumberDraft"));
-                        int index = gridEX2.CurrentRow.RowIndex;
-                        dataSet_05_PCLOR.EnforceConstraints = false;
-                        if (txt_ID.Text != "")
-                        {
-                            this.table_050_Packaging1TableAdapter.FillByProductID(this.dataSet_05_PCLOR.Table_050_Packaging1, long.Parse(txt_ID.Text));
-                        }
-                        dataSet_05_PCLOR.EnforceConstraints = true;
-                        try
-                        {
-                            gridEX2.MoveToRowIndex(index);
-                        }
-                        catch { }
-                
-                    }
+                        throw new Exception(" حواله این کارت تولید قطعی می باشد ابتدا آن را غیر قطعی نمایید");
 
                 }
-          
+                else
+                {
+                    table_050_Packaging1BindingSource.EndEdit();
+                    ClDoc.RunSqlCommand(ConWare.ConnectionString, "Delete From Table_008_Child_PwhrsDraft where Column01=" + gridEX2.GetValue("NumberDraft"));
+                    ClDoc.RunSqlCommand(ConWare.ConnectionString, "Delete From Table_007_PwhrsDraft Where ColumnId=" + gridEX2.GetValue("NumberDraft"));
+                    int index = gridEX2.CurrentRow.RowIndex;
+                    dataSet_05_PCLOR.EnforceConstraints = false;
+                    if (txt_ID.Text != "")
+                    {
+                        this.table_050_Packaging1TableAdapter.FillByProductID(this.dataSet_05_PCLOR.Table_050_Packaging1, long.Parse(txt_ID.Text));
+                    }
+                    dataSet_05_PCLOR.EnforceConstraints = true;
+                    try
+                    {
+                        gridEX2.MoveToRowIndex(index);
+                    }
+                    catch { }
+
+                }
+
+            }
+
             catch { }
         }
 
@@ -918,17 +922,17 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                     if (mlt_Num_Product.Text != "")
                     {
 
-                        
+
 
                         Classes.Class_UserScope UserScope = new Classes.Class_UserScope();
                         if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 45))
                         {
                             if (gridEX2.RowCount > Convert.ToDecimal(txt_CountProduct.Text))
                             {
-                               
+
                                 if (MessageBox.Show("تعداد طاقه های وارد شده بیشتر از تعداد تولید می باشد آیا مایل به ثبت نهایی هستید؟", "توجه", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                                    {
-                                    if (mlt_Ware.Text.All(char.IsDigit) || mlt_Ware_R.Text.All(char.IsDigit) || mlt_Function.Text.All(char.IsDigit) || mlt_Function_R.Text.All(char.IsDigit)|| mlt_Return.Text.All(char.IsDigit) || mlt_TypeRerturn.Text.All(char.IsDigit))
+                                {
+                                    if (mlt_Ware.Text.All(char.IsDigit) || mlt_Ware_R.Text.All(char.IsDigit) || mlt_Function.Text.All(char.IsDigit) || mlt_Function_R.Text.All(char.IsDigit) || mlt_Return.Text.All(char.IsDigit) || mlt_TypeRerturn.Text.All(char.IsDigit))
                                     {
                                         MessageBox.Show("اطلاعات وارد شده معتبر نمی باشد");
                                         return;
@@ -941,7 +945,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                             }
                             else if (gridEX2.RowCount < Convert.ToDecimal(txt_CountProduct.Text))
                             {
-                               
+
                                 if (MessageBox.Show("تعداد طاقه های وارد شده کمتر از تعداد تولید می باشد آیا مایل به ثبت نهایی هستید؟", "توجه", MessageBoxButtons.YesNo) == DialogResult.Yes)
                                 {
                                     if (mlt_Ware.Text.All(char.IsDigit) || mlt_Ware_R.Text.All(char.IsDigit) || mlt_Function.Text.All(char.IsDigit) || mlt_Function_R.Text.All(char.IsDigit) || mlt_Return.Text.All(char.IsDigit) || mlt_TypeRerturn.Text.All(char.IsDigit))
@@ -991,18 +995,18 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
 
         private void FinalSave()
         {
-           
+
             string s = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select NumberDraftP from Table_035_Production where ID=" + mlt_Num_Product.Value + "");
             string Id = "";
-            string  IdReturn = "";
+            string IdReturn = "";
             bool Return = false;
             ResidNum = 0;
-          
-           
+
+
 
             foreach (Janus.Windows.GridEX.GridEXRow item in gridEX2.GetRows())
             {
-                if (item.Cells["NumberRecipt"].Value.ToString() == "0"  && item.Cells["ReturnFactor"].Value.ToString() == "False")
+                if (item.Cells["NumberRecipt"].Value.ToString() == "0" && item.Cells["ReturnFactor"].Value.ToString() == "False")
                 {
                     Id = Id + item.Cells["ID"].Value + ",";
 
@@ -1013,21 +1017,21 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                     Return = true;
                 }
             }
-            if (IdReturn != "" )
+            if (IdReturn != "")
             {
                 Classes.Class_UserScope UserScope = new Classes.Class_UserScope();
 
                 //if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column37", 134))
                 //{
-                    ExportReciptReturn();
+                ExportReciptReturn();
                 //}
                 // else
                 //    Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
 
-                      
+
             }
 
-            if (Id != "" )
+            if (Id != "")
             {
                 if (s == "0")
                 {
@@ -1084,30 +1088,30 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                     ExportDraft();
 
                     ExportRecipt();
-                  
-                          
-            
+
+
+
                     gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
                     gridEX2.DropDowns["Draft"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_007_PwhrsDraft ");
                     gridEX2.DropDowns["Factor"].DataSource = ClDoc.ReturnTable(ConSale, @"select Columnid,Column01 from Table_018_MarjooiSale ");
 
-                    if (IdReturn!="")
+                    if (IdReturn != "")
                     {
-                        
-                    ToastNotification.Show(this, "رسید انبار بسته بندی به شماره " + (ResidNum == null ? "0" : ResidNum.ToString()) + Environment.NewLine +
-                       "حواله انبار سالن تولید به شماره " + DraftNumber.ToString() + Environment.NewLine + "رسید انبار مرجوعی به شماره " + 
-                       (dtReturn.Rows[0][1] == null ? "0" : dtReturn.Rows[0][1]) + Environment.NewLine
-                
-                 + " با موفقیت صادر شد " + Environment.NewLine , 9000, eToastPosition.MiddleCenter);
+
+                        ToastNotification.Show(this, "رسید انبار بسته بندی به شماره " + (ResidNum == null ? "0" : ResidNum.ToString()) + Environment.NewLine +
+                           "حواله انبار سالن تولید به شماره " + DraftNumber.ToString() + Environment.NewLine + "رسید انبار مرجوعی به شماره " +
+                           (dtReturn.Rows[0][1] == null ? "0" : dtReturn.Rows[0][1]) + Environment.NewLine
+
+                     + " با موفقیت صادر شد " + Environment.NewLine, 9000, eToastPosition.MiddleCenter);
                     }
                     else
                     {
                         ToastNotification.Show(this, "رسید انبار بسته بندی به شماره  " + ResidNum.ToString() + Environment.NewLine +
                    "حواله انبار سالن تولید به شماره" + DraftNumber.ToString() + " با موفقیت صادر شد ", 9000, eToastPosition.MiddleCenter);
                     }
-                        
-                        
-                        if (txt_ID.Text != "")
+
+
+                    if (txt_ID.Text != "")
                     { this.table_050_Packaging1TableAdapter.FillByProductID(this.dataSet_05_PCLOR.Table_050_Packaging1, long.Parse(txt_ID.Text)); }
                     ReceiptId = "0";
                     //DraftID = "0";
@@ -1117,9 +1121,9 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                 if (s != "0")
                 {
 
-                  
-                        ExportRecipt();
-                   
+
+                    ExportRecipt();
+
                     gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
                     gridEX2.DropDowns["Draft"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_007_PwhrsDraft ");
                     gridEX2.DropDowns["Factor"].DataSource = ClDoc.ReturnTable(ConSale, @"select Columnid,Column01 from Table_018_MarjooiSale ");
@@ -1129,17 +1133,17 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
 
                         ToastNotification.Show(this, "رسید انبار بسته بندی به شماره " + (ResidNum == null ? "0" : ResidNum.ToString()) + Environment.NewLine +
                            "حواله انبار سالن تولید به شماره " + DraftNumber.ToString() + Environment.NewLine + "رسید انبار مرجوعی به شماره " + (dtReturn.Rows[0][1] == null ? "0" : dtReturn.Rows[0][1]) + Environment.NewLine
-                   
-                     + " با موفقیت صادر شد " + Environment.NewLine , 9000, eToastPosition.MiddleCenter);
+
+                     + " با موفقیت صادر شد " + Environment.NewLine, 9000, eToastPosition.MiddleCenter);
                     }
                     else
                     {
                         ToastNotification.Show(this, "رسید انبار بسته بندی به شماره  " + ResidNum.ToString() + Environment.NewLine +
                    "حواله انبار سالن تولید به شماره" + DraftNumber.ToString() + " با موفقیت صادر شد ", 9000, eToastPosition.MiddleCenter);
                     }
-                 
-               
-          
+
+
+
 
                     if (txt_ID.Text != "")
                     {
@@ -1151,7 +1155,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
 
                 }
             }
-            else  if (IdReturn!="" && Id=="")
+            else if (IdReturn != "" && Id == "")
             {
                 if (s == "0")
                 {
@@ -1216,7 +1220,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
 
                         ToastNotification.Show(this, "رسید انبار بسته بندی به شماره " + (ResidNum == null ? "0" : ResidNum.ToString()) + Environment.NewLine +
                            "حواله انبار سالن تولید به شماره " + DraftNumber.ToString() + Environment.NewLine + "رسید انبار مرجوعی به شماره " + (dtReturn.Rows[0][1] == null ? "0" : dtReturn.Rows[0][1]) + Environment.NewLine
-                 
+
                      + " با موفقیت صادر شد " + Environment.NewLine, 9000, eToastPosition.MiddleCenter);
                     }
                     else
@@ -1237,7 +1241,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                 {
 
 
-                   
+
 
                     gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
                     gridEX2.DropDowns["Draft"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_007_PwhrsDraft ");
@@ -1248,7 +1252,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
 
                         ToastNotification.Show(this, "رسید انبار بسته بندی به شماره " + (ResidNum == null ? "0" : ResidNum.ToString()) + Environment.NewLine +
                            "حواله انبار سالن تولید به شماره " + DraftNumber.ToString() + Environment.NewLine + "رسید انبار مرجوعی به شماره " + (dtReturn.Rows[0][1] == null ? "0" : dtReturn.Rows[0][1]) + Environment.NewLine
-                 
+
                      + " با موفقیت صادر شد " + Environment.NewLine, 9000, eToastPosition.MiddleCenter);
                     }
                     else
@@ -1295,12 +1299,12 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                "',getdate(),'" + Class_BasicOperation._UserName + "',getdate(),0,NULL,NULL,0,0,0,0,0,0,0,0,0,null,0,1); SET @DraftID = SCOPE_IDENTITY();");
             int Unit = Convert.ToInt16(ClDoc.ExScalar(ConWare.ConnectionString, @"(select Column07 from table_004_CommodityAndIngredients where Columnid=" + ((DataRowView)mlt_TypeCloth.DropDownList.FindItem(mlt_TypeCloth.Value))["CodeCommondity"].ToString() + ")"));
 
-            CmdText = CmdText+(@"INSERT INTO Table_008_Child_PwhrsDraft (column01, column02, column03, column04, column05, column06, column07, column08, column09, column10, column11, column12, column13, column14, column15, column16, 
+            CmdText = CmdText + (@"INSERT INTO Table_008_Child_PwhrsDraft (column01, column02, column03, column04, column05, column06, column07, column08, column09, column10, column11, column12, column13, column14, column15, column16, 
                         column17, column18, column19, column20, column21, column22, column23, column24, column25, column26, column27, column28, column29, Column31, Column32, Column33,Column34,Column35, Column36, Column37) VALUES(@DraftID,"
             + ((DataRowView)mlt_TypeCloth.DropDownList.FindItem(mlt_TypeCloth.Value))["CodeCommondity"].ToString() + "," + Unit + @",0,0," + txt_CountProduct.Text + "," +
            txt_CountProduct.Text + ",0,0,0,0,N' " + ((DataRowView)mlt_Num_Product.DropDownList.FindItem(mlt_Num_Product.Value))["Number"].ToString() + "',NULL,NULL,0,0,'" + Class_BasicOperation._UserName + "',getdate(),'" + Class_BasicOperation._UserName +
             "',getdate(),NULL,NULL,NULL,0,0,0,0,0,0,NULL,0,0," + (Convert.ToDecimal(txt_weight_P.Text) / Convert.ToDecimal(txt_CountProduct.Text)).ToString()
-            + "," + txt_weight_P.Text + ",N'" + ((DataRowView)mlt_TypeColor.DropDownList.FindItem(mlt_TypeColor.Value))["TypeColor"].ToString() 
+            + "," + txt_weight_P.Text + ",N'" + ((DataRowView)mlt_TypeColor.DropDownList.FindItem(mlt_TypeColor.Value))["TypeColor"].ToString()
             + "',N'" + ((DataRowView)mlt_Machine.DropDownList.FindItem(mlt_Machine.Value))["namemachine"].ToString() + "')");
 
 
@@ -1310,7 +1314,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
 
             CmdText = CmdText + @"Update " + ConPCLOR.Database + ".dbo.Table_035_Production set NumberDraftP=@DraftID  Where ID=" + gridEX2.GetValue("IDProduct") + "";
 
-           
+
             using (SqlConnection Con = new SqlConnection(PCLOR.Properties.Settings.Default.PWHRS))
             {
                 Con.Open();
@@ -1475,34 +1479,34 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
         }
 
         private void txt_weight_KeyPress(object sender, KeyPressEventArgs e)
-       {
+        {
 
-           try
-           {
-               if (e.KeyChar == 13)
-               {
-                   if (mlt_NameCustomer.Text == "" || mlt_Machine.Text == "" || mlt_TypeCloth.Text == "" )
-                   {
-                       MessageBox.Show("اطلاعات وارد شده معتبر نمی باشد ");
-                   }
-                   string Number = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"(select isnull ((select Number from Table_035_Production where id =" + mlt_Num_Product.Value + "),0))");
-                   if (mlt_Num_Product.Text == Number)
-                   {
-                       btn_end_Click(sender, e);
-                       //if (chek_Return.Checked == true)
-                       //{
-                       //    ((DataRowView)table_050_Packaging1BindingSource.CurrencyManager.Current)["ReturnFactor"] = true;
-                       //}
-                   }
-                   else
-                   {
-                       MessageBox.Show("لطفا شماره کارت تولید را درست وارد نمایید");
+            try
+            {
+                if (e.KeyChar == 13)
+                {
+                    if (mlt_NameCustomer.Text == "" || mlt_Machine.Text == "" || mlt_TypeCloth.Text == "")
+                    {
+                        MessageBox.Show("اطلاعات وارد شده معتبر نمی باشد ");
+                    }
+                    string Number = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"(select isnull ((select Number from Table_035_Production where id =" + mlt_Num_Product.Value + "),0))");
+                    if (mlt_Num_Product.Text == Number)
+                    {
+                        btn_end_Click(sender, e);
+                        //if (chek_Return.Checked == true)
+                        //{
+                        //    ((DataRowView)table_050_Packaging1BindingSource.CurrencyManager.Current)["ReturnFactor"] = true;
+                        //}
+                    }
+                    else
+                    {
+                        MessageBox.Show("لطفا شماره کارت تولید را درست وارد نمایید");
 
-                   }
+                    }
 
-               }
-           }
-           catch { }
+                }
+            }
+            catch { }
         }
 
         private void txt_meter_KeyPress(object sender, KeyPressEventArgs e)
@@ -1540,14 +1544,14 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
 
         }
 
-        
+
 
         private void mlt_Num_Product_ValueChanged(object sender, EventArgs e)
         {
             button1_Click(sender, e);
         }
 
-       
+
 
         private void mlt_Ware_ValueChanged(object sender, EventArgs e)
         {
@@ -1576,7 +1580,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
         private void mlt_NameCustomer_KeyPress(object sender, KeyPressEventArgs e)
         {
             //Class_BasicOperation.FilterMultiColumns(mlt_Num_Product, "Id", "Number");
-           
+
             if (sender is Janus.Windows.GridEX.EditControls.MultiColumnCombo)
             {
                 if (e.KeyChar == 13)
@@ -1590,14 +1594,14 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
             {
                 if (e.KeyChar == 13)
                     //Class_BasicOperation.isEnter(e.KeyChar);
-                txt_weight.Focus();
+                    txt_weight.Focus();
 
             }
 
-             //if (e.KeyChar == 13)
-             //           {
-             //               txt_weight.Focus();
-             //           }
+            //if (e.KeyChar == 13)
+            //           {
+            //               txt_weight.Focus();
+            //           }
         }
 
         private void txtDateHavale_KeyPress(object sender, KeyPressEventArgs e)
@@ -1643,7 +1647,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                                                     select NumberDraftP from Table_035_Production where Id = " + gridEX2.GetValue("IDProduct") + @")
 
                                                     Update Table_035_Production set NumberDraftP=0  Where ID = " + gridEX2.GetValue("IDProduct") + "";
-                       
+
                         Class_BasicOperation.SqlTransactionMethod(Properties.Settings.Default.PCLOR, CommandTexxt);
 
 
@@ -1665,74 +1669,74 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
 
         private void gridEX2_DeletingRecord(object sender, RowActionCancelEventArgs e)
         {
-             Classes.Class_UserScope UserScope = new Classes.Class_UserScope();
-             if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 66))
-             {
-                 string Draft = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isNull((select NumberDraftP from Table_035_Production where Id=" + mlt_Num_Product.Value.ToString() + "),0)");
+            Classes.Class_UserScope UserScope = new Classes.Class_UserScope();
+            if (UserScope.CheckScope(Class_BasicOperation._UserName, "Column44", 66))
+            {
+                string Draft = ClDoc.ExScalar(ConPCLOR.ConnectionString, @"select isNull((select NumberDraftP from Table_035_Production where Id=" + mlt_Num_Product.Value.ToString() + "),0)");
 
-                 if (((DataRowView)table_050_Packaging1BindingSource.CurrencyManager.Current)["NumberRecipt"].ToString() != "0" || ((DataRowView)table_050_Packaging1BindingSource.CurrencyManager.Current)["NumberDraft"].ToString() != "0" || Draft != "0"
-                     || ((DataRowView)table_050_Packaging1BindingSource.CurrencyManager.Current)["FactorReturnId"].ToString() != "0")
-                 {
-                     e.Cancel = true;
-                     MessageBox.Show("این بارکد دارای رسید یا حواله یا فاکتور مرجوعی می باشد امکان حذف آن را ندارید");
-                     return;
-                 }
+                if (((DataRowView)table_050_Packaging1BindingSource.CurrencyManager.Current)["NumberRecipt"].ToString() != "0" || ((DataRowView)table_050_Packaging1BindingSource.CurrencyManager.Current)["NumberDraft"].ToString() != "0" || Draft != "0"
+                    || ((DataRowView)table_050_Packaging1BindingSource.CurrencyManager.Current)["FactorReturnId"].ToString() != "0")
+                {
+                    e.Cancel = true;
+                    MessageBox.Show("این بارکد دارای رسید یا حواله یا فاکتور مرجوعی می باشد امکان حذف آن را ندارید");
+                    return;
+                }
 
-                 DataTable dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT     dbo.Table_70_DetailOtherPWHRS.Barcode
+                DataTable dt = ClDoc.ReturnTable(ConPCLOR, @"SELECT     dbo.Table_70_DetailOtherPWHRS.Barcode
                         FROM                    dbo.Table_65_HeaderOtherPWHRS INNER JOIN
                       dbo.Table_70_DetailOtherPWHRS ON dbo.Table_65_HeaderOtherPWHRS.ID = dbo.Table_70_DetailOtherPWHRS.FK
                             WHERE     (dbo.Table_70_DetailOtherPWHRS.Barcode = " + gridEX2.GetValue("Barcode").ToString() + ")");
 
 
-                 DataTable dtsal = ClDoc.ReturnTable(ConSale, @"SELECT        dbo.Table_011_Child1_SaleFactor.Column34
+                DataTable dtsal = ClDoc.ReturnTable(ConSale, @"SELECT        dbo.Table_011_Child1_SaleFactor.Column34
                             FROM            dbo.Table_010_SaleFactor INNER JOIN
                                                      dbo.Table_011_Child1_SaleFactor ON dbo.Table_010_SaleFactor.columnid = dbo.Table_011_Child1_SaleFactor.column01
                             WHERE        (dbo.Table_011_Child1_SaleFactor.Column34 = N'" + gridEX2.GetValue("Barcode").ToString() + "')");
 
-                 //                 DataTable dtreturn = ClDoc.ReturnTable(ConSale, @"SELECT        dbo.Table_019_Child1_MarjooiSale.Column32
-                 //                        FROM            dbo.Table_018_MarjooiSale INNER JOIN
-                 //                                                 dbo.Table_019_Child1_MarjooiSale ON dbo.Table_018_MarjooiSale.columnid = dbo.Table_019_Child1_MarjooiSale.column01
-                 //                        WHERE        (dbo.Table_019_Child1_MarjooiSale.Column32 = N'" + gridEX2.GetValue("Barcode").ToString() + "')");
+                //                 DataTable dtreturn = ClDoc.ReturnTable(ConSale, @"SELECT        dbo.Table_019_Child1_MarjooiSale.Column32
+                //                        FROM            dbo.Table_018_MarjooiSale INNER JOIN
+                //                                                 dbo.Table_019_Child1_MarjooiSale ON dbo.Table_018_MarjooiSale.columnid = dbo.Table_019_Child1_MarjooiSale.column01
+                //                        WHERE        (dbo.Table_019_Child1_MarjooiSale.Column32 = N'" + gridEX2.GetValue("Barcode").ToString() + "')");
 
 
 
-                 if (dt.Rows.Count > 0)
-                 {
-                     e.Cancel = true;
-                     MessageBox.Show("از این بار کد در فرم ارسال و دریافت بارکد استفاده شده است امکان حذف آن را ندارید");
-                     return;
+                if (dt.Rows.Count > 0)
+                {
+                    e.Cancel = true;
+                    MessageBox.Show("از این بار کد در فرم ارسال و دریافت بارکد استفاده شده است امکان حذف آن را ندارید");
+                    return;
 
-                 }
+                }
 
-                 else if (dtsal.Rows.Count > 0)
-                 {
-                     e.Cancel = true;
-                     MessageBox.Show("این بارکد در فاکتور فروش استفاده شده است امکان حذف ان را ندارید ");
-                     return;
+                else if (dtsal.Rows.Count > 0)
+                {
+                    e.Cancel = true;
+                    MessageBox.Show("این بارکد در فاکتور فروش استفاده شده است امکان حذف ان را ندارید ");
+                    return;
 
-                 }
+                }
 
 
-               //else  if (dtreturn.Rows.Count > 0)
-                 //{
-                 //    MessageBox.Show("این بارکد در فاکتور مرجوعی استفاده شده است امکان حذف ان را ندارید ");
-                 //    return;
+                //else  if (dtreturn.Rows.Count > 0)
+                //{
+                //    MessageBox.Show("این بارکد در فاکتور مرجوعی استفاده شده است امکان حذف ان را ندارید ");
+                //    return;
 
-               //}
+                //}
 
-                 else
-                 {
+                else
+                {
 
-                     e.Cancel = false;
+                    e.Cancel = false;
 
-                 }
+                }
 
-             }
-             else
-             {
-                 e.Cancel = true;
-                 Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
-             }
+            }
+            else
+            {
+                e.Cancel = true;
+                Class_BasicOperation.ShowMsg("", "کاربر گرامی شما امکان دسترسی به این فرم را ندارید", Class_BasicOperation.MessageType.None);
+            }
         }
 
         private void حذفرسیدسالنتولیدToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1958,52 +1962,52 @@ VALUES ((select isnull(max(Column01),0)+1 from Table_011_PwhrsReceipt),'" +
 
             commandtxt += @"
  set @ReceiptNo =(select Column01 from Table_011_PwhrsReceipt where Columnid=@ReceipId )";
-//
-//
+            //
+            //
 
-//
-//
-////Insert INTO " + ConSale.Database + @".dbo.Table_018_MarjooiSale      ( column01, column02, column03, column07, column08, column09, column10, column11, column12, column13, column14, column15, column16, column17, Column18, 
-////                         Column19, Column20, Column21, Column22,  Column24) 
-////						 VALUES((select ISNULL(MAX( Column01),0)+1 from " + ConSale.Database + @" .dbo.Table_018_MarjooiSale),'" + txt_Date_Recipt.Text + "' ," + mlt_NameCustomer.Value + @",0,0,@ReceipId,0,0,0
-////						 ,'" + Class_BasicOperation._UserName + "',GETDATE(),'" + Class_BasicOperation._UserName + "',GETDATE()," + sumreceipt + ",0,0,0,0,0,0); SET @ReturnId =SCOPE_IDENTITY()";
+            //
+            //
+            ////Insert INTO " + ConSale.Database + @".dbo.Table_018_MarjooiSale      ( column01, column02, column03, column07, column08, column09, column10, column11, column12, column13, column14, column15, column16, column17, Column18, 
+            ////                         Column19, Column20, Column21, Column22,  Column24) 
+            ////						 VALUES((select ISNULL(MAX( Column01),0)+1 from " + ConSale.Database + @" .dbo.Table_018_MarjooiSale),'" + txt_Date_Recipt.Text + "' ," + mlt_NameCustomer.Value + @",0,0,@ReceipId,0,0,0
+            ////						 ,'" + Class_BasicOperation._UserName + "',GETDATE(),'" + Class_BasicOperation._UserName + "',GETDATE()," + sumreceipt + ",0,0,0,0,0,0); SET @ReturnId =SCOPE_IDENTITY()";
 
 
 
-//            foreach (DataRowView Items in table_050_Packaging1BindingSource)
-//            {
-//                if (Items["FactorReturnId"].ToString() == "0" && Items["ReturnFactor"].ToString() == "True")
-//                {
+            //            foreach (DataRowView Items in table_050_Packaging1BindingSource)
+            //            {
+            //                if (Items["FactorReturnId"].ToString() == "0" && Items["ReturnFactor"].ToString() == "True")
+            //                {
 
-//                    Idfactor = Idfactor + Items["FactorReturnId"] + ",";
-//                    commandtxt += @"
-//
-//
-//set @ReturnNum=(select Column01 from " + ConSale.Database + @".dbo.Table_018_MarjooiSale where Columnid=@ReturnId)
-//
-//
-//INSERT INTO " + ConSale.Database + @".dbo.Table_019_Child1_MarjooiSale  (column01, column02, column03, column04, column05, column06, 
-//column07, column08, column09, column10,Column11, column15, column16, column17, column18, column19, 
-//                         column20, Column23, column24, column25, column26, column27, column28, column29, Column30, Column31,Column32, Column34, Column35, Column36, Column37)
-//
-// VALUES (@ReturnId," + (((DataRowView)mlt_TypeCloth.DropDownList.FindItem(mlt_TypeCloth.Value))["CodeCommondity"].ToString()) + "," + (((DataRowView)mlt_TypeCloth.DropDownList.FindItem(mlt_TypeCloth.Value))["vahedshomaresh"].ToString()) +
-//                     ",0,0,1,1,0,0,0,0,0,0,0,0,0,0 ,'" + Items["Description"].ToString() + "',0,0,@ReceipId,0,0,@ReceiptNo,0,0," + Items["Barcode"].ToString() + "," + Items["weight"] + "," + Items["weight"] + ",'" +
-//                     ((DataRowView)mlt_TypeColor.DropDownList.FindItem(mlt_TypeColor.Value))["TypeColor"].ToString() + "','"
-//                              + ((DataRowView)mlt_Machine.DropDownList.FindItem(mlt_Machine.Value))["namemachine"].ToString() + "')";
-//                }
+            //                    Idfactor = Idfactor + Items["FactorReturnId"] + ",";
+            //                    commandtxt += @"
+            //
+            //
+            //set @ReturnNum=(select Column01 from " + ConSale.Database + @".dbo.Table_018_MarjooiSale where Columnid=@ReturnId)
+            //
+            //
+            //INSERT INTO " + ConSale.Database + @".dbo.Table_019_Child1_MarjooiSale  (column01, column02, column03, column04, column05, column06, 
+            //column07, column08, column09, column10,Column11, column15, column16, column17, column18, column19, 
+            //                         column20, Column23, column24, column25, column26, column27, column28, column29, Column30, Column31,Column32, Column34, Column35, Column36, Column37)
+            //
+            // VALUES (@ReturnId," + (((DataRowView)mlt_TypeCloth.DropDownList.FindItem(mlt_TypeCloth.Value))["CodeCommondity"].ToString()) + "," + (((DataRowView)mlt_TypeCloth.DropDownList.FindItem(mlt_TypeCloth.Value))["vahedshomaresh"].ToString()) +
+            //                     ",0,0,1,1,0,0,0,0,0,0,0,0,0,0 ,'" + Items["Description"].ToString() + "',0,0,@ReceipId,0,0,@ReceiptNo,0,0," + Items["Barcode"].ToString() + "," + Items["weight"] + "," + Items["weight"] + ",'" +
+            //                     ((DataRowView)mlt_TypeColor.DropDownList.FindItem(mlt_TypeColor.Value))["TypeColor"].ToString() + "','"
+            //                              + ((DataRowView)mlt_Machine.DropDownList.FindItem(mlt_Machine.Value))["namemachine"].ToString() + "')";
+            //                }
 
-//            }
+            //            }
 
 
             commandtxt += "Update " + ConPCLOR.Database + @".dbo.Table_050_Packaging set NumberRecipt=@ReceipId   where Id in(" + IdReturn.TrimEnd(',') + @")";
 
             commandtxt += " select @ReceipId as ReceipId,@ReceiptNo as ReciptNo,@ReturnNum as ReturnNum ";
 
-             dtReturn = Class_BasicOperation.SqlTransactionMethod(ConWare.ConnectionString, commandtxt);
+            dtReturn = Class_BasicOperation.SqlTransactionMethod(ConWare.ConnectionString, commandtxt);
             gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
             gridEX2.DropDowns["Factor"].DataSource = ClDoc.ReturnTable(ConSale, @"select Columnid,Column01 from Table_018_MarjooiSale ");
 
-        
+
 
         }
 
@@ -2040,9 +2044,9 @@ VALUES ((select isnull(max(Column01),0)+1 from Table_011_PwhrsReceipt),'" +
                             {
 
 
-                                command += @"Delete From "+ConSale.Database+".dbo.Table_019_Child1_MarjooiSale Where Column01 in(" + Return.TrimEnd(',') + @");
+                                command += @"Delete From " + ConSale.Database + ".dbo.Table_019_Child1_MarjooiSale Where Column01 in(" + Return.TrimEnd(',') + @");
                                 Delete From " + ConSale.Database + ".dbo.Table_018_MarjooiSale Where ColumnId in (" + Return.TrimEnd(',') + @");
-                                Update table_050_Packaging set FactorReturnId=0 Where FactorReturnId in(" + Return.TrimEnd(',')+")";
+                                Update table_050_Packaging set FactorReturnId=0 Where FactorReturnId in(" + Return.TrimEnd(',') + ")";
 
 
 
@@ -2108,9 +2112,9 @@ VALUES ((select isnull(max(Column01),0)+1 from Table_011_PwhrsReceipt),'" +
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-//            mlt_Num_Product.DataSource = ClDoc.ReturnTable(ConPCLOR, @"SELECT * FROM  ( SELECT tp.ID, tp.Number ,t30.NumberOrder-ISNULL((SELECT sum(NumberProduct) FROM Table_035_Production WHERE ColorOrderId= t30.Id ),0) AS Remain
-//											FROM Table_030_DetailOrderColor  AS t30
-//											INNER JOIN Table_035_Production tp ON tp.ColorOrderId=t30.ID) AS T  ORDER BY Number DESC");
+            //            mlt_Num_Product.DataSource = ClDoc.ReturnTable(ConPCLOR, @"SELECT * FROM  ( SELECT tp.ID, tp.Number ,t30.NumberOrder-ISNULL((SELECT sum(NumberProduct) FROM Table_035_Production WHERE ColorOrderId= t30.Id ),0) AS Remain
+            //											FROM Table_030_DetailOrderColor  AS t30
+            //											INNER JOIN Table_035_Production tp ON tp.ColorOrderId=t30.ID) AS T  ORDER BY Number DESC");
 
             //mlt_Num_Product.DataSource = ClDoc.ReturnTable(ConPCLOR, @"select Id,Number from Table_035_Production ORDER BY Number DESC");
 
@@ -2125,7 +2129,7 @@ VALUES ((select isnull(max(Column01),0)+1 from Table_011_PwhrsReceipt),'" +
 
         private void ch_Auto_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txt_CountProduct_TextChanged(object sender, EventArgs e)
@@ -2135,13 +2139,38 @@ VALUES ((select isnull(max(Column01),0)+1 from Table_011_PwhrsReceipt),'" +
 
         private void txt_weight_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnCheckBarcode_Click(object sender, EventArgs e)
         {
 
+            var model = GetDetailProduction(Convert.ToInt32(mlt_Num_Product.Value.ToString()));
+            mlt_CodeOrderColor.Text = model.OrderColorCode;
+            mlt_Machine.Text = model.NameDevice;
+            mlt_TypeCloth.Text = model.NameCloth;
+            mlt_TypeColor.Text = model.NameColor;
+            txt_Rem_Weight.Text = model.Weight.ToString();
+            txt_Print.Text = model.Printer;
+            txt_CountProduct.Text = model.NumberProduct.ToString();
         }
-        private  GetDetailProduction() { }
+        private DetailProductionViewModel GetDetailProduction(int productionId)
+        {
+            try
+            {
+                if (productionId == 0)
+                {
+                    return new DetailProductionViewModel();
+                }
+                using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+                {
+                    return db.QueryFirstOrDefault<DetailProductionViewModel>("GetDetailProduction", param: new { @ProductNumber = productionId }, commandType: CommandType.StoredProcedure);
+                }
+            }
+            catch (Exception ex)
+            {
+                return new DetailProductionViewModel();
+            }
+
+        }
     }
 }
