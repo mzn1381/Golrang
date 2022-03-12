@@ -800,9 +800,9 @@
             this.btn_end.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btn_end.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_end.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_end.Location = new System.Drawing.Point(285, 404);
+            this.btn_end.Location = new System.Drawing.Point(83, 402);
             this.btn_end.Name = "btn_end";
-            this.btn_end.Size = new System.Drawing.Size(10, 28);
+            this.btn_end.Size = new System.Drawing.Size(160, 28);
             this.btn_end.TabIndex = 94;
             this.btn_end.Text = "ثبت نهایی   F12";
             this.btn_end.UseVisualStyleBackColor = false;

@@ -335,7 +335,7 @@ namespace PCLOR._01_OperationInfo
                         where      (dbo.Table_035_Production.Number = " + mlt_Num_Product.Text + @")
                                 GROUP BY dbo.Table_035_Production.weight");
                                 txt_Rem_Weight.Text = sum;
-                                this.table_050_Packaging1TableAdapter.FillByProductID(this.dataSet_05_PCLOR.Table_050_Packaging1, long.Parse(txt_ID.Text));
+                                //this.table_050_Packaging1TableAdapter.FillByProductID(this.dataSet_05_PCLOR.Table_050_Packaging1, long.Parse(txt_ID.Text));
                                 txt_weight.Text = "0";
                                 txt_meter.Text = "0";
                                 txt_Desc.Text = "";
@@ -2141,6 +2141,22 @@ VALUES ((select isnull(max(Column01),0)+1 from Table_011_PwhrsReceipt),'" +
         {
         }
 
+        private int GetCountProduct(int productNumber)
+        {
+            try
+            {
+                using (IDbConnection db = new SqlConnection(ConPCLOR.ConnectionString))
+                {
+                    return db.QueryFirstOrDefault<int>("GetCountOfProductByProductNumber", param: new { @ProductNumber = productNumber }, commandType: CommandType.StoredProcedure);
+                }
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            }
+
+        }
+
         private void btnCheckBarcode_Click(object sender, EventArgs e)
         {
 
@@ -2151,7 +2167,7 @@ VALUES ((select isnull(max(Column01),0)+1 from Table_011_PwhrsReceipt),'" +
             mlt_TypeColor.Text = model.NameColor;
             txt_Rem_Weight.Text = model.Weight.ToString();
             txt_Print.Text = model.Printer;
-            txt_CountProduct.Text = model.NumberProduct.ToString();
+            txt_CountProduct.Text = GetCountProduct().ToString();
         }
         private DetailProductionViewModel GetDetailProduction(int productionId)
         {
