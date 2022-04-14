@@ -4,593 +4,242 @@
         <name>Janus.Windows.CalendarCombo.v4</name>
     </assembly>
     <members>
-        <member name="T:Janus.Windows.CalendarCombo.Calendar">
+        <member name="T:Janus.Windows.CalendarCombo.AboutBox">
             <summary>
-            Janus Calendar control for Microsoft.Net.
+            Summary description for Form1.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.Dispose(System.Boolean)">
-            <summary> 
+        <member name="F:Janus.Windows.CalendarCombo.AboutBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.AboutBox.Dispose(System.Boolean)">
+            <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnParentFontChanged(System.EventArgs)">
+        <member name="M:Janus.Windows.CalendarCombo.AboutBox.InitializeComponent">
             <summary>
-            Raises the System.Windows.Forms.Control.ParentFontChanged event.
-            </summary>
-            <param name="e">A System.EventArgs that contains the event data.</param>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeHeaderFont">
-            <summary>
-            Indicates whether the HeaderFont property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetHeaderFont">
-            <summary>
-            Resets the HeaderFont property to its default value.
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnMouseLeave(System.EventArgs)">
+        <member name="M:Janus.Windows.CalendarCombo.AboutBox.Main">
             <summary>
-            Raises the System.Windows.Forms.Control.MouseLeave event.
-            </summary>
-            <param name="e">A System.EventArgs that contains the event data.</param>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetBlendColor">
-            <summary>
-            Resets the BlendColor property to its default value.
+            The main entry point for the application.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeBlendColor">
+        <member name="M:Janus.Windows.CalendarCombo.AboutBox.OnLoad(System.EventArgs)">
             <summary>
-            Indicates whether the BlendColor property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
-            <summary>
-            Raises the System.Windows.Forms.Control.MouseUp event.
-            </summary>
-            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.WndProc(System.Windows.Forms.Message@)">
-            <summary>
-            Overrides Control.WndProc
+            Overrides Form.OnLoad
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+        <member name="T:Janus.Windows.CalendarCombo.ctMonths">
             <summary>
-            Raises the System.Windows.Forms.Control.MouseMove event.
-            </summary>
-            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
-            <summary>
-            Raises the System.Windows.Forms.Control.MouseDown event.
-            </summary>
-            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeOffice2007ColorScheme">
-            <summary>
-            Deprecated
+               Summary description for ctMonths.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetOffice2007ColorScheme">
-            <summary>
-            Deprecated
+        <member name="F:Janus.Windows.CalendarCombo.ctMonths.tmrScroll">
+            <summary> 
+               Required designer variable 
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeOffice2007CustomColor">
+        <member name="T:Janus.Windows.CalendarCombo.CalendarLicenseProvider">
             <summary>
-            Deprecated
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetOffice2007CustomColor">
-            <summary>
-            Deprecated
+            CalendarLicenseProvider class.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeOfficeCustomColor">
+        <member name="M:Janus.Windows.CalendarCombo.CalendarLicenseProvider.#ctor">
             <summary>
-            Indicates whether the OfficeCustomColor property should be persisted.
+            Initializes a new instance of the Janus.Windows.CalendarCombo.CalendarLicenseProvider class
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.CalendarLicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)">
+            <summary>
+            See LicenseProvider.GetLicense
+            </summary>
+            <param name="context"></param>
+            <param name="type"></param>
+            <param name="instance"></param>
+            <param name="allowExceptions"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Janus.Windows.CalendarCombo.ControlStyle">
+            <summary>
+            Represent the style of the buttons in the CalendarCombo and drop-down Calendar controls.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.Reset">
+            <summary>
+            Resets the all the properties of the ControlStyle object to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ResetControlColor">
+            <summary>
+            Resets the ControlColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ShouldSerializeControlColor">
+            <summary>
+            Indicates whether the ControlColor property has changed from its default value.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ResetControlTextColor">
+            <summary>
+            Resets the ControlTextColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ShouldSerializeControlTextColor">
+            <summary>
+            Indicates whether the ControlTextColor property has changed from its default value.
             </summary>
             <returns>true if the property value has changed from its default; otherwise, false.</returns>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetOfficeCustomColor">
+        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ResetHoverBaseColor">
             <summary>
-            Resets the OfficeCustomColor property to its default value.
+            Resets the HoverBaseColor property to its default value.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnPaint(System.Windows.Forms.PaintEventArgs)">
+        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ShouldSerializeHoverBaseColor">
             <summary>
-            Raises the System.Windows.Forms.Control.Paint event.
-            </summary>
-            <param name="e">A System.Windows.Forms.PintEventArgs that contains the event data.</param>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnFontChanged(System.EventArgs)">
-            <summary>
-            Raises the System.Windows.Forms.Control.FontChanged event.
-            </summary>
-            <param name="e">A System.EventArgs that contains the event data.</param>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetBoldedDates">
-            <summary>
-            Resets the BoldedDates property to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeBoldedDates">
-            <summary>
-            Indicates whether the BoldedDates property should be persisted.
+            Indicates whether the HoverBaseColor property has changed from its default value.
             </summary>
             <returns>true if the property value has changed from its default; otherwise, false.</returns>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeAnnuallyBoldedDates">
+        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ResetHoverBlendColor">
             <summary>
-            Indicates whether the AnnuallyBoldedDates property should be persisted.
+            Resets the HoverBlendColor property to its default value. 
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ShouldSerializeHoverBlendColor">
+            <summary>
+            Indicates whether the HoverBlendColor property has changed from its default value.
             </summary>
             <returns>true if the property value has changed from its default; otherwise, false.</returns>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetAnnuallyBoldedDates">
+        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.ButtonAppearance">
             <summary>
-            Resets the AnnuallyBoldedDates property to its default value.
+            Gets or sets a value that determines the appearance of the buttons in the CalendarCombo and drop-down Calendar controls.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeVisualStyle">
+        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.ControlColor">
             <summary>
-            Gets a value indicating whether the VisualStyle property should be persisted.
-            </summary>
-            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetVisualStyle">
-            <summary>
-            Resets the VisualStyle property to its default value.
+            Gets or sets a value specifying the background color of the buttons in the CalendarCombo and drop-down Calendar controls.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.GetDateAt(System.Int32,System.Int32)">
+        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.ControlTextColor">
             <summary>
-            Retrieves the DateTime value that is located at the specified location.
-            </summary>
-            <param name="x">An int that contains the x-coordinate where you want to look for the DateTime.</param>
-            <param name="y">An int that contains the y-coordinate where you want to look for the DateTime.</param>
-            <returns>A DateTime value that represents the DateTime that is located at the specified location.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.GetDateAt(System.Drawing.Point)">
-            <summary>
-            Retrieves the DateTime value that is located at the specified point.
-            </summary>
-            <param name="pt">A Point that contains the coordinates where you want to look for the DateTime.</param>
-            <returns>A DateTime value that represents the DateTime that is located at the cursor current location.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.GetDateAt">
-            <summary>
-            Retrieves the DateTime value that is located at the current position of the cursor.
-            </summary>
-            <returns>A DateTime value that represents the DateTime that is located at the cursor current location.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.IsInputKey(System.Windows.Forms.Keys)">
-            <summary>
-            Determines whether the specified key is a regular input key or a special key that requires preprocessing.
-            </summary>
-            <param name="keyData">One of the System.Windows.Forms.Keys values.</param>
-            <returns>true if the specified key is a regular input key; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeSelectedFormatStyle">
-            <summary>
-            Indicates whether the SelectedFormatStyle property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetSelectedFormatStyle">
-            <summary>
-            Resets the SelectedFormatStyle property to its default value.
+            Gets or sets a value specifying the foreground color of the buttons in the CalendarCombo and drop-down Calendar controls.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeTrailingFormatStyle">
+        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.HoverBaseColor">
             <summary>
-            Indicates whether the TrailingFormatStyle property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetTrailingFormatStyle">
-            <summary>
-            Resets the TrailingFormatStyle property to its default value.
+            Gets or sets the color that will be blended with the HoverBlendColor when a flat apperance is used.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeDaysFormatStyle">
+        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.HoverBlendColor">
             <summary>
-            Indicates whether the DaysFormatStyle property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetDaysFormatStyle">
-            <summary>
-            Resets the DaysFormatStyle property to its default value.
+            Gets or sets the color that will be blended with the HoverBaseColor when a flat appearance is used.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeHeaderFormatStyle">
+        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.HoverBlend">
             <summary>
-            Indicates whether the HeadersFormatStyle property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetHeaderFormatStyle">
-            <summary>
-            Resets the HeadersFormatStyle property to its default value.
+            Gets or sets a value indicating the percentage of the HoverBlendColor to blend whit the HoverBaseColor.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeDayHeadersFormatStyle">
+        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.HoverSelectedBlend">
             <summary>
-            Indicates whether the DayHeadersFormatStyle property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetDayHeadersFormatStyle">
-            <summary>
-            Resets the DayHeadersFormatStyle property to its default value.
+            Gets or sets the percentage of the HoverBlendColor to blend with the HoverBaseColor when the mouse is captured by the button.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeMonthBackgroundStyle">
+        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.FormatStyle">
             <summary>
-            Indicates whether the MonthBackgroundStyle property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetMonthBackgroundStyle">
-            <summary>
-            Resets the MonthBackgroundStyle property to its default value.
+            Gets the CalendarFormatStyle used to draw the buttons in the control.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.HotFormatStyle">
             <summary>
-            Raises the System.Windows.Forms.Control.KeyDown event.
-            </summary>
-            <param name="e">A System.Windows.Forms.KeyEventArgs that contains the event data.</param>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeTodayRectColor">
-            <summary>
-            Indicates whether the TodayRectColor property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetTodayRectColor">
-            <summary>
-            Resets the TodayRectColor property to its default value.
+            Gets the CalendarFormatStyle used to draw the buttons in the control when the mouse is over them.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeBackColor">
+        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.PressedFormatStyle">
             <summary>
-            Indicates whether the BackColor property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetBackColor">
-            <summary>
-            Resets the BackColor property to its default value.
+            Gets the CalendarFormatStyle used to draw the buttons in the control when they are pressed.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeFirstMonth">
+        <member name="T:Janus.Windows.CalendarCombo.Design.ColorSchemeEditor">
             <summary>
-            Indicates whether the FirstMonth property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetFirstMonth">
-            <summary>
-            Resets the FirstMonth property to its default value.
+            Provides a user interface for selecting controls objects in a Properties window.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeForeColor">
+        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeEditor.#ctor">
             <summary>
-            Indicates whether the ForeColor property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetForeColor">
-            <summary>
-            Resets the ForeColor property to its default value.
+            Initializes a new instance of the ColorSchemeEditor class.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ProcessDialogKey(System.Windows.Forms.Keys)">
+        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
             <summary>
-            Processes a dialog key.
+            Overrides UITypeEditor.EditValue.
             </summary>
-            <param name="keyData">One of the System.Windows.Forms.Keys values that represents the key to process.</param>
-            <returns>true if the key was processed by the control; otherwise, false.</returns>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.Calendar.ComputeDroppedControlSize(System.Int32,System.Int32)">
+        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
             <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Janus.Windows.CalendarCombo.Design.ColorSchemeConverter">
+            <summary>
+            Provides a type converter to convert a ColorScheme property to a string
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeConverter.#ctor">
+            <summary>
+            Initialize a new instance of the ColorSchemeConverter.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Overrides TypeConverter.CanConvertTo.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Overrides TypeConverter.ConvertTo.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.CalendarCombo.ThemePainter">
+            <summary>
+            Summary description for ThemeHeader.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.CalendarCombo.NativeMethods">
+            <summary>
+            Summary description for NativeMethods.
+            </summary>
             
+        </member>
+        <member name="T:Janus.Windows.CalendarCombo.Global">
+            <summary>
+            Summary description for Global.
             </summary>
         </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.Name">
+        <member name="T:Janus.Windows.CalendarCombo.DropDownEditor">
             <summary>
-            Represents the name used in code to identify this object
+            Summary description for ButtonBarDesign.
             </summary>
         </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.HeaderFormat">
+        <member name="M:Janus.Windows.CalendarCombo.DropDownEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
             <summary>
-            Gets or sets a value representing the date format string of the header.
+            Overrides UITypeEditor.EditValue
             </summary>
         </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.HeaderFont">
+        <member name="M:Janus.Windows.CalendarCombo.DropDownEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
             <summary>
-            Gets or sets the font of the text displayed in the header by the Calendar.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.BlendColor">
-            <summary>
-            Gets or sets the color that blends with the BackColor and BackColorGradient properties of the CalendarFormatStyle and CalendarBackgroundStyle when its Blend property is not zero.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.DefaultBlend">
-            <summary>
-            Gets or sets a value indicating the default percentage of the BlendColor to use.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.HeaderAppearance">
-            <summary>
-            Gets or sets the value that determines the appearance of the headers in the Calendar.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.VisualStyle">
-            <summary>
-            Gets or sets a value specifying the appearance for the control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.OfficeColorScheme">
-            <summary>
-            Gets or sets a value specifying the color scheme to be used when Office2007 or Office2010 VisualStyle is used in the control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.OfficeCustomColor">
-            <summary>
-            Gets or set a value specifying the base color used to paint the control when the OfficeColorScheme property is set to Custom.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.Office2007ColorScheme">
-            <summary>
-            Deprecated.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.Office2007CustomColor">
-            <summary>
-            Deprecated
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.VisualStyleManager">
-            <summary>
-            Gets or sets the VisualStyleManager that defines the appearance of the control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.ColorScheme">
-            <summary>
-            Gets or sets the name of the ColorScheme in the VisualStyleManager that defines the appearance of the control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.WeekRule">
-            <summary>
-            Gets or sets a value that specifies which rule is used to determine the first calendar week of the year.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.WeekNumbers">
-            <summary>
-            Gets or sets a value indicating whether the Calendar control displays week numbers (1-52) to the left of each row of days.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.BorderStyle">
-            <summary>
-            Gets or sets the Calendar´s border style.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.FirstDayOfWeek">
-            <summary>
-            Gets or sets the first day of the week as displayed in the Calendar.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.DayOfWeekAbbreviation">
-            <summary>
-            Gets or sets a value indicating the format for the days of the week.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.FirstMonth">
-            <summary>
-            Gets or sets a value indicating the first month displayed by the Calendar control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.ScrollChange">
-            <summary>
-            Gets or sets the scroll rate for Calendar control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.BoldedDates">
-            <summary>
-            Gets or sets the array of DateTime objects that determines which nonrecurring dates are displayed in bold.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.AnnuallyBoldedDates">
-            <summary>
-            Gets or sets the array of DateTime objects that determines which annual days are displayed in bold.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.SelectedFormatStyle">
-            <summary>
-            Returns the CalendarFormatStyle object used to draw the selected days in the Calendar.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.TrailingFormatStyle">
-            <summary>
-            Returns the CalendarFormatStyle used to draw the trailing days.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.BackgroundImage">
-            <summary>
-            Not supported.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.TabIndex">
-            <summary>
-            See Control.TabIndex
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.TabStop">
-            <summary>
-            See Control.TabStop
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.Size">
-            <summary>
-            See Control.Size
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.Location">
-            <summary>
-            See Control.Location
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.Text">
-            <summary>
-            Gets or sets the text associated with this Calendar.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.Dock">
-            <summary>
-            Not supported.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.DaysFormatStyle">
-            <summary>
-            Returns the CalendarFormatStyle object used to draw the days of the months.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.HeaderFormatStyle">
-            <summary>
-            Gets the CalendarFormatStyle used to draw the header in the Calendar control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.DayHeadersFormatStyle">
-            <summary>
-            Returns the CalendarFormatStyle object used to draw the section that displays the day of the week.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.MonthBackgroundStyle">
-            <summary>
-            Returns the CalendarBackgroundStyle object used to draw the background of the months in the Calendar.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.TodayRectColor">
-            <summary>
-            Gets or sets a value indicating the color of the frame in today´s date.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.TodayRect">
-            <summary>
-            Gets or sets a value indicating whether today's date its framed.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.ShowTrailingDays">
-            <summary>
-            Gets or sets a value specifying whether the first days of the previous and next month will be displayed in the Calendar
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.BackColor">
-            <summary>
-            Gets or sets the background color for the Calendar control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.ForeColor">
-            <summary>
-            Gets or sets the foreground color for the Calendar control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.CreateParams">
-            <summary>
-            Overrides Control.CreateParams
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.Calendar.Visible">
-            <summary>
-            Gets or sets a value indicating whether the control is displayed.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.CalendarCombo.CalendarBackgroundStyle">
-            <summary>
-            Specifies how to draw the background of the month in the Calendar control.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.#ctor">
-            <summary>
-            Initialize a new instance of the CalendarBackgroundStyle class.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.Reset">
-            <summary>
-            Resets all the properties of the CalendarBackgroundStyle object to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.ShouldSerialize">
-            <summary>
-            Indicates whether the ScheduleBackgroundStyle object has changed from its default value.
-            </summary>
-            <returns>true if the one of the properties of the CalendarBackgroundStyle has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.#ctor(Janus.Windows.CalendarCombo.CalendarBackgroundStyle)">
-            <summary>
-            Initializes a new instance of the CalendarBackgroundStyle class based on the given CalendarBackgroundStyle. 
-            </summary>
-            <param name="baseStyle">A CalendarBackgroundStyle which properties will be copied to create a new CalendarBackgroundStyle class.</param>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.ResetBackColorGradient">
-            <summary>
-            Resets the BackColorGradient property to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.ShouldSerializeBackColorGradient">
-            <summary>
-            Indicates whether the BackColorGradient property has changed from its default value.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.ResetBackColor">
-            <summary>
-            Resets the BackColor property to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.ShouldSerializeBackColor">
-            <summary>
-            Indicates whether the BackColorGradient property has changed from its default value.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.Calendar">
-            <summary>
-            Gets the Calendar control associated with this CalendarBackgroundStyle.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.BackColor">
-            <summary>
-            Gets or sets the background color of this CalendarBackgroundStyle.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.BackColorGradient">
-            <summary>
-            Gets or sets a value specifying the background color used in a linear gradient pathern.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.BackgrodunGradientMode">
-            <summary>
-            Gets or sets a value specifying if a linear gradient will be applied and its direction.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.Blend">
-            <summary>
-            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColor.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.BlendGradient">
-            <summary>
-            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColorGradient.
+            Overrides UITypeEditor.GetEditStyle
             </summary>
         </member>
         <member name="T:Janus.Windows.CalendarCombo.CalendarCombo">
@@ -1325,6 +974,11 @@
             Gets or sets a value indicating whether the contents of the control can be changed.
             </summary>
         </member>
+        <member name="T:Janus.Windows.CalendarCombo.CellLayout">
+            <summary>
+               Summary description for CellLayout.
+            </summary>
+        </member>
         <member name="T:Janus.Windows.CalendarCombo.CalendarFormatStyle">
             <summary>
             Specifies the styles applied to the background and foreground of some parts of the Calendar control.
@@ -1451,226 +1105,20 @@
             Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColorGradient.
             </summary>
         </member>
-        <member name="T:Janus.Windows.CalendarCombo.CalendarLayout">
+        <member name="T:Janus.Windows.CalendarCombo.ResourceFile">
             <summary>
-               Summary description for CalendarLayout.
+              A strongly-typed resource class, for looking up localized strings, etc.
             </summary>
         </member>
-        <member name="T:Janus.Windows.CalendarCombo.CalendarLicenseProvider">
+        <member name="P:Janus.Windows.CalendarCombo.ResourceFile.ResourceManager">
             <summary>
-            CalendarLicenseProvider class.
+              Returns the cached ResourceManager instance used by this class.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.CalendarLicenseProvider.#ctor">
+        <member name="P:Janus.Windows.CalendarCombo.ResourceFile.Culture">
             <summary>
-            Initializes a new instance of the Janus.Windows.CalendarCombo.CalendarLicenseProvider class
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.CalendarLicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)">
-            <summary>
-            See LicenseProvider.GetLicense
-            </summary>
-            <param name="context"></param>
-            <param name="type"></param>
-            <param name="instance"></param>
-            <param name="allowExceptions"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Janus.Windows.CalendarCombo.CalendarPortion">
-            <summary>
-            Summary description for CalendarPortion.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.CalendarCombo.CellLayout">
-            <summary>
-               Summary description for CellLayout.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.CalendarCombo.ControlStyle">
-            <summary>
-            Represent the style of the buttons in the CalendarCombo and drop-down Calendar controls.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.Reset">
-            <summary>
-            Resets the all the properties of the ControlStyle object to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ResetControlColor">
-            <summary>
-            Resets the ControlColor property to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ShouldSerializeControlColor">
-            <summary>
-            Indicates whether the ControlColor property has changed from its default value.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ResetControlTextColor">
-            <summary>
-            Resets the ControlTextColor property to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ShouldSerializeControlTextColor">
-            <summary>
-            Indicates whether the ControlTextColor property has changed from its default value.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ResetHoverBaseColor">
-            <summary>
-            Resets the HoverBaseColor property to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ShouldSerializeHoverBaseColor">
-            <summary>
-            Indicates whether the HoverBaseColor property has changed from its default value.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ResetHoverBlendColor">
-            <summary>
-            Resets the HoverBlendColor property to its default value. 
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.ControlStyle.ShouldSerializeHoverBlendColor">
-            <summary>
-            Indicates whether the HoverBlendColor property has changed from its default value.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.ButtonAppearance">
-            <summary>
-            Gets or sets a value that determines the appearance of the buttons in the CalendarCombo and drop-down Calendar controls.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.ControlColor">
-            <summary>
-            Gets or sets a value specifying the background color of the buttons in the CalendarCombo and drop-down Calendar controls.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.ControlTextColor">
-            <summary>
-            Gets or sets a value specifying the foreground color of the buttons in the CalendarCombo and drop-down Calendar controls.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.HoverBaseColor">
-            <summary>
-            Gets or sets the color that will be blended with the HoverBlendColor when a flat apperance is used.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.HoverBlendColor">
-            <summary>
-            Gets or sets the color that will be blended with the HoverBaseColor when a flat appearance is used.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.HoverBlend">
-            <summary>
-            Gets or sets a value indicating the percentage of the HoverBlendColor to blend whit the HoverBaseColor.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.HoverSelectedBlend">
-            <summary>
-            Gets or sets the percentage of the HoverBlendColor to blend with the HoverBaseColor when the mouse is captured by the button.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.FormatStyle">
-            <summary>
-            Gets the CalendarFormatStyle used to draw the buttons in the control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.HotFormatStyle">
-            <summary>
-            Gets the CalendarFormatStyle used to draw the buttons in the control when the mouse is over them.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.CalendarCombo.ControlStyle.PressedFormatStyle">
-            <summary>
-            Gets the CalendarFormatStyle used to draw the buttons in the control when they are pressed.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.CalendarCombo.ctMonths">
-            <summary>
-               Summary description for ctMonths.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.CalendarCombo.ctMonths.tmrScroll">
-            <summary> 
-               Required designer variable 
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.CalendarCombo.AboutBox">
-            <summary>
-            Summary description for Form1.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.CalendarCombo.AboutBox.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.AboutBox.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.AboutBox.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.AboutBox.Main">
-            <summary>
-            The main entry point for the application.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.AboutBox.OnLoad(System.EventArgs)">
-            <summary>
-            Overrides Form.OnLoad
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.CalendarCombo.Design.ColorSchemeEditor">
-            <summary>
-            Provides a user interface for selecting controls objects in a Properties window.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeEditor.#ctor">
-            <summary>
-            Initializes a new instance of the ColorSchemeEditor class.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
-            <summary>
-            Overrides UITypeEditor.EditValue.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
-            <summary>
-            Overrides UITypeEditor.GetEditStyle
-            </summary>
-            <param name="context"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Janus.Windows.CalendarCombo.Design.ColorSchemeConverter">
-            <summary>
-            Provides a type converter to convert a ColorScheme property to a string
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeConverter.#ctor">
-            <summary>
-            Initialize a new instance of the ColorSchemeConverter.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
-            <summary>
-            Overrides TypeConverter.CanConvertTo.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.Design.ColorSchemeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
-            <summary>
-            Overrides TypeConverter.ConvertTo.
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
             </summary>
         </member>
         <member name="T:Janus.Windows.CalendarCombo.Design.DateTimeConverter">
@@ -1715,108 +1163,525 @@
             <param name="context"></param>
             <returns></returns>
         </member>
-        <member name="T:Janus.Windows.CalendarCombo.DropDownDesigner">
+        <member name="T:Janus.Windows.CalendarCombo.ThemeHeader">
             <summary>
-            Summary description for DropDownDesigner.
+            Summary description for ThemeHeader.
             </summary>
         </member>
-        <member name="F:Janus.Windows.CalendarCombo.DropDownDesigner.components">
+        <member name="T:Janus.Windows.CalendarCombo.CalendarPortion">
             <summary>
-            Required designer variable.
+            Summary description for CalendarPortion.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.DropDownDesigner.#ctor">
+        <member name="T:Janus.Windows.CalendarCombo.Calendar">
             <summary>
-            
+            Janus Calendar control for Microsoft.Net.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.DropDownDesigner.Dispose(System.Boolean)">
-            <summary>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.Dispose(System.Boolean)">
+            <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.DropDownDesigner.InitializeComponent">
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnParentFontChanged(System.EventArgs)">
             <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
+            Raises the System.Windows.Forms.Control.ParentFontChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeHeaderFont">
+            <summary>
+            Indicates whether the HeaderFont property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetHeaderFont">
+            <summary>
+            Resets the HeaderFont property to its default value.
             </summary>
         </member>
-        <member name="P:Janus.Windows.CalendarCombo.DropDownDesigner.Calendar">
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnMouseLeave(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseLeave event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetBlendColor">
+            <summary>
+            Resets the BlendColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeBlendColor">
+            <summary>
+            Indicates whether the BlendColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseUp event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Overrides Control.WndProc
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseMove event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.MouseDown event.
+            </summary>
+            <param name="e">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeOffice2007ColorScheme">
+            <summary>
+            Deprecated
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetOffice2007ColorScheme">
+            <summary>
+            Deprecated
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeOffice2007CustomColor">
+            <summary>
+            Deprecated
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetOffice2007CustomColor">
+            <summary>
+            Deprecated
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeOfficeCustomColor">
+            <summary>
+            Indicates whether the OfficeCustomColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetOfficeCustomColor">
+            <summary>
+            Resets the OfficeCustomColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.Paint event.
+            </summary>
+            <param name="e">A System.Windows.Forms.PintEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnFontChanged(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.FontChanged event.
+            </summary>
+            <param name="e">A System.EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetBoldedDates">
+            <summary>
+            Resets the BoldedDates property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeBoldedDates">
+            <summary>
+            Indicates whether the BoldedDates property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeAnnuallyBoldedDates">
+            <summary>
+            Indicates whether the AnnuallyBoldedDates property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetAnnuallyBoldedDates">
+            <summary>
+            Resets the AnnuallyBoldedDates property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeVisualStyle">
+            <summary>
+            Gets a value indicating whether the VisualStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has been changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetVisualStyle">
+            <summary>
+            Resets the VisualStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.GetDateAt(System.Int32,System.Int32)">
+            <summary>
+            Retrieves the DateTime value that is located at the specified location.
+            </summary>
+            <param name="x">An int that contains the x-coordinate where you want to look for the DateTime.</param>
+            <param name="y">An int that contains the y-coordinate where you want to look for the DateTime.</param>
+            <returns>A DateTime value that represents the DateTime that is located at the specified location.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.GetDateAt(System.Drawing.Point)">
+            <summary>
+            Retrieves the DateTime value that is located at the specified point.
+            </summary>
+            <param name="pt">A Point that contains the coordinates where you want to look for the DateTime.</param>
+            <returns>A DateTime value that represents the DateTime that is located at the cursor current location.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.GetDateAt">
+            <summary>
+            Retrieves the DateTime value that is located at the current position of the cursor.
+            </summary>
+            <returns>A DateTime value that represents the DateTime that is located at the cursor current location.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.IsInputKey(System.Windows.Forms.Keys)">
+            <summary>
+            Determines whether the specified key is a regular input key or a special key that requires preprocessing.
+            </summary>
+            <param name="keyData">One of the System.Windows.Forms.Keys values.</param>
+            <returns>true if the specified key is a regular input key; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeSelectedFormatStyle">
+            <summary>
+            Indicates whether the SelectedFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetSelectedFormatStyle">
+            <summary>
+            Resets the SelectedFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeTrailingFormatStyle">
+            <summary>
+            Indicates whether the TrailingFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetTrailingFormatStyle">
+            <summary>
+            Resets the TrailingFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeDaysFormatStyle">
+            <summary>
+            Indicates whether the DaysFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetDaysFormatStyle">
+            <summary>
+            Resets the DaysFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeHeaderFormatStyle">
+            <summary>
+            Indicates whether the HeadersFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetHeaderFormatStyle">
+            <summary>
+            Resets the HeadersFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeDayHeadersFormatStyle">
+            <summary>
+            Indicates whether the DayHeadersFormatStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetDayHeadersFormatStyle">
+            <summary>
+            Resets the DayHeadersFormatStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeMonthBackgroundStyle">
+            <summary>
+            Indicates whether the MonthBackgroundStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetMonthBackgroundStyle">
+            <summary>
+            Resets the MonthBackgroundStyle property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Raises the System.Windows.Forms.Control.KeyDown event.
+            </summary>
+            <param name="e">A System.Windows.Forms.KeyEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeTodayRectColor">
+            <summary>
+            Indicates whether the TodayRectColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetTodayRectColor">
+            <summary>
+            Resets the TodayRectColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeBackColor">
+            <summary>
+            Indicates whether the BackColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetBackColor">
+            <summary>
+            Resets the BackColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeFirstMonth">
+            <summary>
+            Indicates whether the FirstMonth property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetFirstMonth">
+            <summary>
+            Resets the FirstMonth property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ShouldSerializeForeColor">
+            <summary>
+            Indicates whether the ForeColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ResetForeColor">
+            <summary>
+            Resets the ForeColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            Processes a dialog key.
+            </summary>
+            <param name="keyData">One of the System.Windows.Forms.Keys values that represents the key to process.</param>
+            <returns>true if the key was processed by the control; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.Calendar.ComputeDroppedControlSize(System.Int32,System.Int32)">
             <summary>
             
             </summary>
         </member>
-        <member name="T:Janus.Windows.CalendarCombo.DropDownEditor">
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.Name">
             <summary>
-            Summary description for ButtonBarDesign.
+            Represents the name used in code to identify this object
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.DropDownEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.HeaderFormat">
             <summary>
-            Overrides UITypeEditor.EditValue
+            Gets or sets a value representing the date format string of the header.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.DropDownEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.HeaderFont">
             <summary>
-            Overrides UITypeEditor.GetEditStyle
+            Gets or sets the font of the text displayed in the header by the Calendar.
             </summary>
         </member>
-        <member name="T:Janus.Windows.CalendarCombo.FlagsEnumConverter">
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.BlendColor">
             <summary>
-            Summary description for FlagsEnumConverter.
-            </summary>
-            
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumConverter.#ctor">
-            <summary>
-            
+            Gets or sets the color that blends with the BackColor and BackColorGradient properties of the CalendarFormatStyle and CalendarBackgroundStyle when its Blend property is not zero.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.DefaultBlend">
             <summary>
-            
-            </summary>
-            <param name="context"></param>
-            <param name="type"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
-            <summary>
-            
+            Gets or sets a value indicating the default percentage of the BlendColor to use.
             </summary>
         </member>
-        <member name="T:Janus.Windows.CalendarCombo.FlagsEnumEditor">
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.HeaderAppearance">
             <summary>
-            
+            Gets or sets the value that determines the appearance of the headers in the Calendar.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumEditor.#ctor">
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.VisualStyle">
             <summary>
-            
+            Gets or sets a value specifying the appearance for the control.
             </summary>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumEditor.SetEditorProps(System.Object,System.Windows.Forms.CheckedListBox)">
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.OfficeColorScheme">
             <summary>
-            
+            Gets or sets a value specifying the color scheme to be used when Office2007 or Office2010 VisualStyle is used in the control.
             </summary>
-            <param name="value"></param>
-            <param name="editor"></param>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.OfficeCustomColor">
             <summary>
-            
+            Gets or set a value specifying the base color used to paint the control when the OfficeColorScheme property is set to Custom.
             </summary>
-            <param name="context"></param>
-            <param name="provider"></param>
-            <param name="value"></param>
-            <returns></returns>
         </member>
-        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.Office2007ColorScheme">
             <summary>
-            
+            Deprecated.
             </summary>
-            <param name="context"></param>
-            <returns></returns>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.Office2007CustomColor">
+            <summary>
+            Deprecated
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.VisualStyleManager">
+            <summary>
+            Gets or sets the VisualStyleManager that defines the appearance of the control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.ColorScheme">
+            <summary>
+            Gets or sets the name of the ColorScheme in the VisualStyleManager that defines the appearance of the control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.WeekRule">
+            <summary>
+            Gets or sets a value that specifies which rule is used to determine the first calendar week of the year.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.WeekNumbers">
+            <summary>
+            Gets or sets a value indicating whether the Calendar control displays week numbers (1-52) to the left of each row of days.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.BorderStyle">
+            <summary>
+            Gets or sets the Calendar´s border style.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.FirstDayOfWeek">
+            <summary>
+            Gets or sets the first day of the week as displayed in the Calendar.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.DayOfWeekAbbreviation">
+            <summary>
+            Gets or sets a value indicating the format for the days of the week.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.FirstMonth">
+            <summary>
+            Gets or sets a value indicating the first month displayed by the Calendar control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.ScrollChange">
+            <summary>
+            Gets or sets the scroll rate for Calendar control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.BoldedDates">
+            <summary>
+            Gets or sets the array of DateTime objects that determines which nonrecurring dates are displayed in bold.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.AnnuallyBoldedDates">
+            <summary>
+            Gets or sets the array of DateTime objects that determines which annual days are displayed in bold.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.SelectedFormatStyle">
+            <summary>
+            Returns the CalendarFormatStyle object used to draw the selected days in the Calendar.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.TrailingFormatStyle">
+            <summary>
+            Returns the CalendarFormatStyle used to draw the trailing days.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.BackgroundImage">
+            <summary>
+            Not supported.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.TabIndex">
+            <summary>
+            See Control.TabIndex
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.TabStop">
+            <summary>
+            See Control.TabStop
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.Size">
+            <summary>
+            See Control.Size
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.Location">
+            <summary>
+            See Control.Location
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.Text">
+            <summary>
+            Gets or sets the text associated with this Calendar.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.Dock">
+            <summary>
+            Not supported.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.DaysFormatStyle">
+            <summary>
+            Returns the CalendarFormatStyle object used to draw the days of the months.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.HeaderFormatStyle">
+            <summary>
+            Gets the CalendarFormatStyle used to draw the header in the Calendar control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.DayHeadersFormatStyle">
+            <summary>
+            Returns the CalendarFormatStyle object used to draw the section that displays the day of the week.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.MonthBackgroundStyle">
+            <summary>
+            Returns the CalendarBackgroundStyle object used to draw the background of the months in the Calendar.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.TodayRectColor">
+            <summary>
+            Gets or sets a value indicating the color of the frame in today´s date.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.TodayRect">
+            <summary>
+            Gets or sets a value indicating whether today's date its framed.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.ShowTrailingDays">
+            <summary>
+            Gets or sets a value specifying whether the first days of the previous and next month will be displayed in the Calendar
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.BackColor">
+            <summary>
+            Gets or sets the background color for the Calendar control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.ForeColor">
+            <summary>
+            Gets or sets the foreground color for the Calendar control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.CreateParams">
+            <summary>
+            Overrides Control.CreateParams
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.Calendar.Visible">
+            <summary>
+            Gets or sets a value indicating whether the control is displayed.
+            </summary>
         </member>
         <member name="T:Janus.Windows.CalendarCombo.DatePortion">
             <summary>
@@ -2278,6 +2143,17 @@
             Specifies that True should be used in a property ignoring settings in the parent object.
             </summary>
         </member>
+        <member name="P:Janus.Windows.CalendarCombo.ResourceFile2.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.ResourceFile2.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
         <member name="T:Janus.Windows.CalendarCombo.ParseEventArgs">
             <summary>
             Provides data for the Parse event. 
@@ -2303,52 +2179,176 @@
             Represents the method that will handle the Parse event of the CalendarCombo.
             </summary>
         </member>
-        <member name="T:Janus.Windows.CalendarCombo.Global">
+        <member name="T:Janus.Windows.CalendarCombo.CalendarBackgroundStyle">
             <summary>
-            Summary description for Global.
+            Specifies how to draw the background of the month in the Calendar control.
             </summary>
         </member>
-        <member name="T:Janus.Windows.CalendarCombo.NativeMethods">
+        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.#ctor">
             <summary>
-            Summary description for NativeMethods.
+            Initialize a new instance of the CalendarBackgroundStyle class.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.Reset">
+            <summary>
+            Resets all the properties of the CalendarBackgroundStyle object to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.ShouldSerialize">
+            <summary>
+            Indicates whether the ScheduleBackgroundStyle object has changed from its default value.
+            </summary>
+            <returns>true if the one of the properties of the CalendarBackgroundStyle has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.#ctor(Janus.Windows.CalendarCombo.CalendarBackgroundStyle)">
+            <summary>
+            Initializes a new instance of the CalendarBackgroundStyle class based on the given CalendarBackgroundStyle. 
+            </summary>
+            <param name="baseStyle">A CalendarBackgroundStyle which properties will be copied to create a new CalendarBackgroundStyle class.</param>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.ResetBackColorGradient">
+            <summary>
+            Resets the BackColorGradient property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.ShouldSerializeBackColorGradient">
+            <summary>
+            Indicates whether the BackColorGradient property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.ResetBackColor">
+            <summary>
+            Resets the BackColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.ShouldSerializeBackColor">
+            <summary>
+            Indicates whether the BackColorGradient property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.Calendar">
+            <summary>
+            Gets the Calendar control associated with this CalendarBackgroundStyle.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.BackColor">
+            <summary>
+            Gets or sets the background color of this CalendarBackgroundStyle.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.BackColorGradient">
+            <summary>
+            Gets or sets a value specifying the background color used in a linear gradient pathern.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.BackgrodunGradientMode">
+            <summary>
+            Gets or sets a value specifying if a linear gradient will be applied and its direction.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.Blend">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColor.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.CalendarBackgroundStyle.BlendGradient">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColorGradient.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.CalendarCombo.FlagsEnumConverter">
+            <summary>
+            Summary description for FlagsEnumConverter.
             </summary>
             
         </member>
-        <member name="T:Janus.Windows.CalendarCombo.ResourceFile">
+        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumConverter.#ctor">
             <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
+            
             </summary>
         </member>
-        <member name="P:Janus.Windows.CalendarCombo.ResourceFile.ResourceManager">
+        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
             <summary>
-              Returns the cached ResourceManager instance used by this class.
+            
+            </summary>
+            <param name="context"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
             </summary>
         </member>
-        <member name="P:Janus.Windows.CalendarCombo.ResourceFile.Culture">
+        <member name="T:Janus.Windows.CalendarCombo.FlagsEnumEditor">
             <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
+            
             </summary>
         </member>
-        <member name="P:Janus.Windows.CalendarCombo.ResourceFile2.ResourceManager">
+        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumEditor.#ctor">
             <summary>
-              Returns the cached ResourceManager instance used by this class.
+            
             </summary>
         </member>
-        <member name="P:Janus.Windows.CalendarCombo.ResourceFile2.Culture">
+        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumEditor.SetEditorProps(System.Object,System.Windows.Forms.CheckedListBox)">
             <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
+            
+            </summary>
+            <param name="value"></param>
+            <param name="editor"></param>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="provider"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.FlagsEnumEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Janus.Windows.CalendarCombo.DropDownDesigner">
+            <summary>
+            Summary description for DropDownDesigner.
             </summary>
         </member>
-        <member name="T:Janus.Windows.CalendarCombo.ThemeHeader">
+        <member name="F:Janus.Windows.CalendarCombo.DropDownDesigner.components">
             <summary>
-            Summary description for ThemeHeader.
+            Required designer variable.
             </summary>
         </member>
-        <member name="T:Janus.Windows.CalendarCombo.ThemePainter">
+        <member name="M:Janus.Windows.CalendarCombo.DropDownDesigner.#ctor">
             <summary>
-            Summary description for ThemeHeader.
+            
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.DropDownDesigner.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.CalendarCombo.DropDownDesigner.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.CalendarCombo.DropDownDesigner.Calendar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.CalendarCombo.CalendarLayout">
+            <summary>
+               Summary description for CalendarLayout.
             </summary>
         </member>
     </members>

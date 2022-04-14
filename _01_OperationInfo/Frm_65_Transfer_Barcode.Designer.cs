@@ -598,7 +598,7 @@ namespace PCLOR._01_OperationInfo
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
             this.toolStripSeparator.Visible = false;
             // 
             // toolStripButton1
@@ -606,7 +606,7 @@ namespace PCLOR._01_OperationInfo
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(61, 28);
+            this.toolStripButton1.Size = new System.Drawing.Size(61, 24);
             this.toolStripButton1.Text = "جدید";
             this.toolStripButton1.Visible = false;
             // 

@@ -3,14 +3,11 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Collections.Generic;
-using System.ComponentModel;
 using Stimulsoft.Report;
 using System.IO.Ports;
 using System.IO;
 using System.Linq;
 using System.Threading;
-using Stimulsoft.Report;
 using DevComponents.DotNetBar;
 using System.Drawing;
 using Janus.Windows.GridEX;
@@ -1289,7 +1286,10 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
             DraftId.Direction = ParameterDirection.Output;
             DetailsIdDraft = "";
             string CmdText = "";
-
+            if (string.IsNullOrEmpty(txt_weight_P.Text.Trim()))
+            {
+                txt_weight_P.Text = "0";
+            }
             //درج کالاهای یک انبار در یک حواله
             DraftNumber = ClDoc.MaxNumber(Properties.Settings.Default.PWHRS, "Table_007_PwhrsDraft", "Column01");
             //درج هدر حواله برای هر انبار
@@ -1409,7 +1409,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
                                                                           ) VALUES (" + ResidNum + ",'" + txt_Date_Recipt.Text + "' ," + mlt_Ware_R.Value.ToString() +
                                                                                   "," + mlt_Function_R.Value.ToString() + ","
 
-                                       + mlt_NameCustomer.Value.ToString() + ",'" + "رسید صادره بابت بسته بندی ش" + mlt_Num_Product.Text + "','" + Class_BasicOperation._UserName + "',getdate(),'" + Class_BasicOperation._UserName +
+                                       + mlt_NameCustomer.Value.ToString()+ ",'" + "رسید صادره بابت بسته بندی ش" + mlt_Num_Product.Text + "','" + Class_BasicOperation._UserName + "',getdate(),'" + Class_BasicOperation._UserName +
                                        "',getdate()" + ",0); SET @Key=Scope_Identity() ";
 
             foreach (DataRowView Rows in table_050_Packaging1BindingSource)
@@ -1483,6 +1483,7 @@ GROUP BY dbo.Table_025_HederOrderColor.CodeCustomer, dbo.Table_030_DetailOrderCo
 
             try
             {
+
                 if (e.KeyChar == 13)
                 {
                     if (mlt_NameCustomer.Text == "" || mlt_Machine.Text == "" || mlt_TypeCloth.Text == "")
@@ -2167,7 +2168,8 @@ VALUES ((select isnull(max(Column01),0)+1 from Table_011_PwhrsReceipt),'" +
             mlt_TypeColor.Text = model.NameColor;
             txt_Rem_Weight.Text = model.Weight.ToString();
             txt_Print.Text = model.Printer;
-            txt_CountProduct.Text = GetCountProduct().ToString();
+            txt_CountProduct.Text = GetCountProduct(Convert.ToInt32(mlt_Num_Product.Text)).ToString();
+            mlt_NameCustomer.Value = 200;
         }
         private DetailProductionViewModel GetDetailProduction(int productionId)
         {

@@ -1223,3 +1223,4 @@ G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.pdb
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_00_Login.resources

@@ -4,349 +4,484 @@
         <name>Janus.Windows.ExplorerBar.v4</name>
     </assembly>
     <members>
-        <member name="T:Janus.Windows.ExplorerBar.BorderControl">
+        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarItem">
             <summary>
-            Summary description for BorderControl.
+            Represents an item in the ExplorerBar control.
             </summary>
         </member>
-        <member name="F:Janus.Windows.ExplorerBar.BorderControl.components">
-            <summary> 
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.BorderControl.Dispose(System.Boolean)">
-            <summary> 
-            Clean up any resources being used.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.BorderControl.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.Design.ColorSchemeEditor">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.#ctor">
             <summary>
-            Provides a user interface for selecting controls objects in a Properties window.
+            Initializes a new instance of the ExplorerBarItem class. 
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeEditor.#ctor">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.#ctor(System.String)">
             <summary>
-            Initializes a new instance of the ColorSchemeEditor class.
+            Initializes a new instance of the ExplorerBarItem class and displays the assigned text on the item.
+            </summary>
+            <param name="text">The text to display on the new ExplorerBarItem.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.#ctor(System.String,Janus.Windows.ExplorerBar.ItemType)">
+            <summary>
+            Initializes a new instance of the ExplorerBarItem class. 
+            </summary>
+            <param name="text">The text to display on the new ExplorerBarItem.</param>
+            <param name="itemType">The type of the new ExplorerBarItem</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the ExplorerBarItem class and sets the Text and ImageIndex properties to the specified values.
+            </summary>
+            <param name="text">The text of the new ExplorerBarItem.</param>
+            <param name="imageIndex">The index value of the image displayed by the ExplorerBarItem.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.InvokeOnClick">
+            <summary>
+            Raises the ItemClick event
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.ResetFormatStyle">
             <summary>
-            Overrides UITypeEditor.EditValue.
+            Resets the FormatStyle property to its default value. 
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.ShouldSerializeFormatStyle">
             <summary>
-            Overrides UITypeEditor.GetEditStyle
-            </summary>
-            <param name="context"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.Design.ColorSchemeConverter">
-            <summary>
-            Provides a type converter to convert a ColorScheme property to a string
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeConverter.#ctor">
-            <summary>
-            Initialize a new instance of the ColorSchemeConverter.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
-            <summary>
-            Overrides TypeConverter.CanConvertTo.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
-            <summary>
-            Overrides TypeConverter.ConvertTo.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarColorScheme">
-            <summary>
-            Summary description for ColorScheme.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ResourceFile">
-            <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ResourceFile.ResourceManager">
-            <summary>
-              Returns the cached ResourceManager instance used by this class.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ResourceFile.Culture">
-            <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ResourceFile2.ResourceManager">
-            <summary>
-              Returns the cached ResourceManager instance used by this class.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ResourceFile2.Culture">
-            <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ControlStyle">
-            <summary>
-            Represent the style of the scroll bar control in the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.Reset">
-            <summary>
-            Resets the all the properties of the ControlStyle object to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ResetControlColor">
-            <summary>
-            Resets the ControlColor property to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ShouldSerializeControlColor">
-            <summary>
-            Indicates whether the ControlColor property has changed from its default value.
+            Indicates whether the FormatStyle property should be persisted. 
             </summary>
             <returns>true if the property value has changed from its default; otherwise, false.</returns>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ResetControlTextColor">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.OnClick(Janus.Windows.ExplorerBar.ItemEventArgs)">
             <summary>
-            Resets the ControlTextColor property to its default value.
+            Raises the Janus.Windows.ExplorerBar.ExplorerBarItem.Click event
+            </summary>
+            <param name="e">A ItemEventArgs that contains the event data</param>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.AccessibleRole">
+            <summary>
+            Gets or sets a value representing the role that will be reported to accessibility clients.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ShouldSerializeControlTextColor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.AccessibleName">
             <summary>
-            Indicates whether the ControlTextColor property has changed from its default value.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ResetScrollBarColor">
-            <summary>
-            Resets the ScrollBarColor property to its default value.
+            Gets or sets a string representing the name that will be reported to accessibility clients.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ShouldSerializeScrollBarColor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.AccessibleDescription">
             <summary>
-            Indicates whether the ScrollBarColor property has changed from its default value.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ResetHoverBaseColor">
-            <summary>
-            Resets the HoverBaseColor property to its default value.
+            Gets or sets a string representing the description that will be reported to accessibility clients.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ShouldSerializeHoverBaseColor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Key">
             <summary>
-            Indicates whether the HoverBaseColor property has changed from its default value.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ResetHoverBlendColor">
-            <summary>
-            Resets the HoverBlendColor property to its default value.
+            Gets or sets a string that uniquely identifies this ExplorerBarItem in a collection.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ShouldSerializeHoverBlendColor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Shortcut">
             <summary>
-            Indicates whether the HoverBlendColor property has changed from its default value.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.ButtonAppearance">
-            <summary>
-            Gets or sets a value that determines the appearance of the buttons of the scroll bar.
+            Gets or sets a value indicating the shortcut key associated with the item. 
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.ControlColor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Selected">
             <summary>
-            Gets or sets a value specifying the background color of the buttons of the scroll bar.
+            Gets or sets a value indicating whether this ExplorerBarItem is selected.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.ControlTextColor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Indent">
             <summary>
-            Gets or sets a value specifying the foreground color of the buttons of the scroll bar.
+            Gets or sets the distance to indent the item.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.ScrollBarColor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Height">
             <summary>
-            Gets or sets a value that represent the background color of the scroll bar.
+            Gets or sets the height of the ExplorerBarItem in pixels.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.HoverBaseColor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Cursor">
             <summary>
-            Gets or sets the color that will be blended with the HoverBlendColor when a flat apperance is used.
+            Gets or sets the cursor that is displayed when the mouse pointer is over the item.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.HoverBlendColor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Tag">
             <summary>
-            Gets or sets the color that will be blended with the HoverBaseColor when a flat appearance is used.
+            Gets or sets an object that contains data to associate with the ExplorerBarItem.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.HoverBlend">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.TagString">
             <summary>
-            Gets or sets a value indicating the percentage of the HoverBlendColor to blend whit the HoverBaseColor.
+            Gets or sets a string that contains data to associate with the ExplorerBarItem.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.HoverSelectedBlend">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Icon">
             <summary>
-            Gets or sets the percentage of the HoverBlendColor to blend with the HoverBaseColor when the mouse is captured by the button.
+            Gets or sets the icon that is displayed on the ExplorerBarItem.
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.Design.AboutBox">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Text">
             <summary>
-            Summary description for Form1.
+            Gets or sets the text displayed on the ExplorerBarItem.
             </summary>
         </member>
-        <member name="F:Janus.Windows.ExplorerBar.Design.AboutBox.components">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.WordWrap">
             <summary>
-            Required designer variable.
+            Gets or sets a value indicating whether the item should wrap words to the beginning of the next line when necessary.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.AboutBox.Dispose(System.Boolean)">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ToolTipText">
             <summary>
-            Clean up any resources being used.
+            Gets or sets the text that appears as a ToolTip for the ExplorerBarItem.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.AboutBox.InitializeComponent">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Index">
             <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
+            Gets the position of the ExplorerBarItem in the ExplorerBarItemCollection.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.AboutBox.Main">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Enabled">
             <summary>
-            The main entry point for the application.
+            Gets or sets a value indicating whether the ExplorerBarItem is enabled.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.AboutBox.OnLoad(System.EventArgs)">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Visible">
             <summary>
-            Overrides Form.OnLoad
+            Gets or sets a value indicating whether the ExplorerBarItem is visible.
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.FlagsEnumConverter">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageAlignment">
             <summary>
-            Provides a type converter to convert enums to a string representation.
+            Gets or sets the alignment of the image in the ExplorerBarItem.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumConverter.#ctor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.TextAlignment">
             <summary>
-            Initialize a new instance of the FlagsEnumConverter class
+            Gets or sets the alignment of the text in the ExplorerBarItem.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Bounds">
             <summary>
-            Overrides TypeConverter.CanConvertTo
+            Gets or sets the size and location of the item in the ExplorerBar control.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ContainerControl">
             <summary>
-            Overrides TypeConverter.ConvertTo
+            Gets or sets the ExplorerBarContainerControl associated to the item acting as container for other controls.
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.FlagsEnumEditor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Container">
             <summary>
-            Provides a user interface for selecting flags in a Properties window.
+            Gets or sets a value that indicates whether the item should act as a container for other controls.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumEditor.#ctor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ContainerHeight">
             <summary>
-            Initialize a new instance of the FlagsEnumEditor class
+            Gets or sets the height of the ExplorerBarContainerControl in pixels.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Image">
             <summary>
-            Overrides UITypeEditor.EditValue
+            Gets or sets the image that is displayed on the ExplorerBarItem.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageDisabledIndex">
             <summary>
-            Overrides UITypeEditor.GetEditStyle
+            Gets or sets the index value of the image displayed by the ExplorerBarGroup when it is disabled.
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.Design.GroupEditor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageDisabledKey">
             <summary>
-            Summary description for ExplorerBarDesign.
+            Gets or sets the key accessor for the image in the ImageList displayed by the ExplorerBarGroup when it is disabled.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.GroupEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageSelectedIndex">
             <summary>
-            Overrides UITypeEditor.EditValue
+            Gets or sets the index value of the image displayed by the ExplorerBarItem when the item is selected.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.GroupEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageSelectedKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the ExplorerBarItem when the item is selected.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageFocusIndex">
+            <summary>
+            Gets or sets the index value of the image displayed by the ExplorerBarItem when the mouse moves over it.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageFocusKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the ExplorerBarItem when the mouse moves over it.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ItemType">
+            <summary>
+            Gets the type of the item represented by the ExplorerBarItem object in the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageIndex">
+            <summary>
+            Gets or sets the index value of the image displayed by the ExplorerBarItem.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageKey">
+            <summary>
+            Gets or sets the key accessor for the image in the ImageList displayed by the ExplorerBarItem.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ExplorerBar">
+            <summary>
+            Gets the ExplorerBar control that this ExplorerBarItem object is assigned to.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Group">
+            <summary>
+            Gets the ExplorerBarGroup object that this ExplorerBarItem is assigned to.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.StateStyles">
+            <summary>
+            Gets the ExplorerBarStateStyles that holds the format styles used to draw the item in its different states.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.FormatStyle">
+            <summary>
+            Gets the ExplorerBarFormatStyle object used to draw this item in the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="E:Janus.Windows.ExplorerBar.ExplorerBarItem.Click">
+            <summary>
+            Occurs when the ExplorerBarItem is clicked.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarItemConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemConverter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
             <summary>
             
             </summary>
             <param name="context"></param>
+            <param name="destinationType"></param>
             <returns></returns>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.Design.GroupsDesigner">
-            <summary>
-            Summary description for GroupsDesigner.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.GroupsDesigner.#ctor">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
             <summary>
             
             </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.GroupsDesigner.Dispose(System.Boolean)">
+        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle">
             <summary>
-            Clean up any resources being used.
+               Summary description for FormatStyle.
             </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.GroupsDesigner.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.GroupsDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)">
-            <summary>
             
-            </summary>
-            <param name="e"></param>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.Design.GroupsDesigner.ExplorerBar">
+        <member name="F:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.AlphaEmpty">
             <summary>
-            
+            Represents the empty alpha value. This field is read-only.
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.Design.ImageEditor">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.Reset">
             <summary>
-            Summary description for ImageEditor.
+            Resets all the properties of this ExplorerBarFormatStyle to its default values.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.ImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerialize">
             <summary>
-            This class is not intended to be used directly from your code.
+            Indicates whether the ExplorerBarFormatStyle object has changed from its default value.
+            </summary>
+            <returns>true if the one of the properties of the ExplorerBarFormatStyle has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.#ctor(Janus.Windows.ExplorerBar.ExplorerBarFormatStyle)">
+            <summary>
+            Initializes a new instance of the ExplorerBarFormatStyle class based on the given ExplorerBarFormatStyle.
+            </summary>
+            <param name="baseStyle">A ExplorerBarFormatStyle which properties will be copied to create a new ExplorerBarFormatStyle class.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetBackColor">
+            <summary>
+            Resets the BackColor property to its default color.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.ImageEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeBackColor">
             <summary>
-            
+            Indicates whether the BackColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetForeColor">
+            <summary>
+            Resets the ForeColor property to its default color.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.ImageEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeForeColor">
             <summary>
-            
+            Indicates whether the ForeColor property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeFontBold">
+            <summary>
+            Indicates whether the FontBold property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetFontBold">
+            <summary>
+            Resets the FontBold property to its default color.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.ImageEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetBackColorGradient">
             <summary>
-            
+            Resets the BackColorGradient property to its default color.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeBackColorGradient">
+            <summary>
+            Indicates whether the BackColorGradient property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeForegroundThemeStyle">
+            <summary>
+            Indicates whether the ForegroundThemeStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetForegroundThemeStyle">
+            <summary>
+            Resets the ForegroundThemeStyle property to its default color.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeBackgroundThemeStyle">
+            <summary>
+            Indicates whether the BackgroundThemeStyle property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetBackgroundThemeStyle">
+            <summary>
+            Resets the BackgroundThemeStyle property to its default color.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeBackgroundGradientMode">
+            <summary>
+            Indicates whether the BackgroundGradientMode property should be persisted.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetBackgroundGradientMode">
+            <summary>
+            Resets the BackgroundGradientMode property to its default color.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ExplorerBar">
+            <summary>
+            Get the ExplorerBar control that this ExplorerBarFormatStyle is assigned to. 
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.Alpha">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency).
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackColor">
+            <summary>
+            Gets or sets the background color for this ExplorerBarFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackColorAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the background.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ForeColor">
+            <summary>
+            Gets or sets the foreground color for this ExplorerBarFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ForeColorAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the foreground.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.Font">
+            <summary>
+            Gets or sets the Font object used by this ExplorerBarFormatStyle.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontBold">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this ExplorerBarFormatStyle is bold.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontItalic">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this ExplorerBarFormatStyle is italic.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontUnderline">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this ExplorerBarFormatStyle is underlined.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontStrikeout">
+            <summary>
+            Gets or sets a value indicating whether the Font object of this ExplorerBarFormatStyle specifies a horizontal line through the font.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontName">
+            <summary>
+            Gets or sets the face name of the font used by the ExplorerBarFormatSrtyle class.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontSize">
+            <summary>
+            Gets or sets the size of the Font object used by this ExplorerBarFormatStyle object.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackColorGradient">
+            <summary>
+            Gets or sets a value specifying the background color used in a linear gradient pathern.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackColorGradientAlphaMode">
+            <summary>
+            Gets or sets a value specifying the level of alpha (transparency) to use in the background of the second color in a linear gradient pattern.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BlendGradient">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColorGradient.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.Blend">
+            <summary>
+            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColor.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ForegroundThemeStyle">
+            <summary>
+            Gets or sets a value that determines which predefined foreground is used to draw an area when using themes.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackgroundThemeStyle">
+            <summary>
+            Gets or sets a value that determines which predefined background is used to draw an area when using themes.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackgroundGradientMode">
+            <summary>
+            Gets or sets a value specifying if a linear gradient will be applied and its direction.
             </summary>
         </member>
         <member name="T:Janus.Windows.ExplorerBar.Design.ImageIndexConverter">
@@ -449,776 +584,93 @@
             Overrides UITypeEditor.PaintValue
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.Design.LayoutNameDialog">
+        <member name="T:Janus.Windows.ExplorerBar.ThemeHeader">
             <summary>
-            Summary description for LayoutNameDialog.
+            Summary description for ThemeHeader.
             </summary>
-            
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.Design.LayoutTreePage">
+        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage">
             <summary>
-            Summary description for LayoutTreePage.
+            Summary description for ExplorerWatermarkImage.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.LayoutTreePage.Dispose(System.Boolean)">
-            <summary> 
-            Clean up any resources being used.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.Design.LayoutTreePage.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.WashMode">
-            <summary>
-            Specified which color to apply when drawing a watermark image.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.WashMode.System">
-            <summary>
-            The predefined system color will be used as the wash color
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.WashMode.UseWashColor">
-            <summary>
-            The color defined in the WashColor property will be used as the wash color or none if the WashColor is empty.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.OfficeScrollBarStyle">
-            <summary>
-            Specifies the style of the scrollbar control when the VisualStyle of the control is Office2010
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OfficeScrollBarStyle.Dark">
-            <summary>
-            The scrollbar is painted using dark colors
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OfficeScrollBarStyle.Light">
-            <summary>
-            The scrollbar is painted using light colors
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.VisualStyle">
-            <summary>
-            Specifies which apperance style the control is formatted after.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.Default">
-            <summary>
-            Unspecified. The value of the property is inherited from the settings specified in the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.Standard">
-            <summary>
-            The control is formatted as the standard ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.Office2003">
-            <summary>
-            The ExplorerBar control is formatted as its related control in Office 2003.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.VS2005">
-            <summary>
-            The ExplorerBar control is formatted as its related control in VS 2005.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.VS2010">
-            <summary>
-            The ExplorerBar control is formatted as its related control in VS 2010.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.Office2007">
-            <summary>
-            The ExplorerBar control is formatted as its related control in Office 2007.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.Office2010">
-            <summary>
-            The control is formatted as its related control in Office 2010.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.OfficeColorScheme">
-            <summary>
-            Determines the color scheme a control uses to draw itself when the VisualStyle of a control is Office2007 or Office2010.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OfficeColorScheme.Default">
-            <summary>
-            The control is drawn using the OfficeColorScheme specified as the DefaultOfficeColorScheme in the Janus.Windows.Common.VisualStyleManager component.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OfficeColorScheme.Blue">
-            <summary>
-            The control is drawn using the built-in 'Blue' color scheme.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OfficeColorScheme.Silver">
-            <summary>
-            The control is drawn using the built-in 'Silver' color scheme.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OfficeColorScheme.Black">
-            <summary>
-            The control is drawn using the built-in 'Black' color scheme.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OfficeColorScheme.Custom">
-            <summary>
-            The control is drawn using a custom color scheme created based on the color specified in the OfficeCustomColor property.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.Office2007ColorScheme">
-            <summary>
-            Deprecated.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.Office2007ColorScheme.Default">
-            <summary>
-            The control is drawn using the OfficeColorScheme specified as the DefaultOffice2007ColorScheme in the Janus.Windows.Common.VisualStyleManager component.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.Office2007ColorScheme.Blue">
-            <summary>
-            The control is drawn using the built-in 'Blue' color scheme.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.Office2007ColorScheme.Silver">
-            <summary>
-            The control is drawn using the built-in 'Silver' color scheme.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.Office2007ColorScheme.Black">
-            <summary>
-            The control is drawn using the built-in 'Black' color scheme.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.Office2007ColorScheme.Custom">
-            <summary>
-            The control is drawn using a custom color scheme created based on the color specified in the Office2007CustomColor property.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.AlphaMode">
-            <summary>
-            Specifies the alpha level to use.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.AlphaMode.Empty">
-            <summary>
-            Indicates that the value for this property should be inherited from the parent object.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.AlphaMode.Opaque">
-            <summary>
-            Indicates an alpha level of 255.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.AlphaMode.Transparent">
-            <summary>
-            Indicates an alpha level of 0.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.AlphaMode.UseAlpha">
-            <summary>
-            Use the value of the Alpha property.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.BackgroundThemeStyle">
-            <summary>
-            Determines the appearance to be applied on an area of the control when it is painted using Windows XP Visual Styles.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.Empty">
-            <summary>
-            Indicates that the value for this property should be inherited from the parent object.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.ControlBackground">
-            <summary>
-            The area will be painted with an appearance similar to the main background area of an ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.GroupHeader">
-            <summary>
-            The area will be painted with an appearance similar to the group header area.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.GroupHeaderInverted">
-            <summary>
-            The area will be painted with the appearance of an inverted group header area.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.SpecialGroupHeader">
-            <summary>
-            The area will be painted with an appearance similar to the header area of an special group.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.Items">
-            <summary>
-            The area will be painted with an appearance similar to the items background area of a group.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.None">
-            <summary>
-            The area won't be painted using Windows XP Visual Styles.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ForegroundThemeStyle">
-            <summary>
-            Determines how the foreground of an area of the control is painted when using Windows XP Visual Styles.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ForegroundThemeStyle.Empty">
-            <summary>
-            Indicates that the value for this property should be inherited from the parent object.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ForegroundThemeStyle.GroupHeader">
-            <summary>
-            The foreground will be painted with an appearance similar to the group header foreground.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ForegroundThemeStyle.SpecialGroupHeader">
-            <summary>
-            The foreground will be painted with an appearance similar to the header foreground of an special group.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ForegroundThemeStyle.Item">
-            <summary>
-            The area will be painted with an appearance similar to the items foregrouund.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ForegroundThemeStyle.None">
-            <summary>
-            The area won't be painted using Windows XP Visual Styles.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.VerticalScrollBar">
-            <summary>
-            Specifies when the vertical scroll bar will be visible.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.VerticalScrollBar.Automatic">
-            <summary>
-            The scroll bar is shown only when there are enough items to warrant displaying.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.VerticalScrollBar.Always">
-            <summary>
-            The scroll bar will be displayed even if the number of items in the ExplorerBar does not require displaying the vertical scroll bar.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.VerticalScrollBar.Never">
-            <summary>
-            The scroll bar won´t be displayed.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarArea">
-            <summary>
-            Specifies the type of an area in a ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ExplorerBarArea.Border">
-            <summary>
-            Represents the border of the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ExplorerBarArea.Background">
-            <summary>
-            Represents the background of the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ExplorerBarArea.GroupHeader">
-            <summary>
-            Represents the header of a ExplorerBarGroup.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ExplorerBarArea.Items">
-            <summary>
-            Represents a ExplorerBarItem.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.OwnerDrawnArea">
-            <summary>
-            Specifies which area of a ExplorerBar control needs to be drawn manually.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OwnerDrawnArea.None">
-            <summary>
-            The control won't be drawn manually.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OwnerDrawnArea.Background">
-            <summary>
-            Specifies that the area to be manually drawn is the control's background.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OwnerDrawnArea.GroupHeader">
-            <summary>
-            Specifies that the area to be manually drawn is the header of the groups.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OwnerDrawnArea.Item">
-            <summary>
-            Specifies that the area to be manually drawn are the ExplorerBarItem ojects of the control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.OwnerDrawnArea.All">
-            <summary>
-            All flags except None are set.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ButtonAlignment">
-            <summary>
-            Specifies the alignment of the expand and close buttons relative to its layout rectangle.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ButtonAlignment.Default">
-            <summary>
-            Unspecified. The value of the property is inherited from the settings specified in the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ButtonAlignment.Left">
-            <summary>
-            Specifies that the expand and close buttons will be aligned to the left of its layout rectangle.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ButtonAlignment.Right">
-            <summary>
-            Specifies that the expand and close buttons will be aligned to the right of its layout rectangle.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.HitTest">
-            <summary>
-            Determines which element of the ExplorerBar control is at a specified location.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.HitTest.ExplorerBarItem">
-            <summary>
-            A ExplorerBarItem in the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.HitTest.ExplorerBarGroup">
-            <summary>
-            A ExplorerBarGroup in the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.HitTest.ScrollBar">
-            <summary>
-            The scroll bar in the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.HitTest.CollapseHeaderButton">
-            <summary>
-            The expand/collapse button in the group's header.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.HitTest.CloseHeaderButton">
-            <summary>
-            The close button in the group's header.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.HitTest.None">
-            <summary>
-            The background area, visible when the control contains few ExplorerBarGroup objects, or when the ExplorerBar is scrolled to its bottom.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.BackgroundGradientMode">
-            <summary>
-            Specifies how the background of an object will be filled.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.Empty">
-            <summary>
-            Indicates that the value for this property should be inherited from the parent object.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.Solid">
-            <summary>
-            Specifies a solid background.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.Horizontal">
-            <summary>
-            Specifies a gradient from left to right. 
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.Vertical">
-            <summary>
-            Specifies a gradient from top to bottom.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.Diagonal">
-            <summary>
-            Specifies a gradient from upper left to lower right.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.DiagonalBackwards">
-            <summary>
-            Specifies a gradient from upper right to lower left. 
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.Effect">
-            <summary>
-            Specifies which effect is used when groups are expanded/collapsed.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.Effect.Fade">
-            <summary>
-            Groups are fade-in when expanding and disolved when collapsing
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.Effect.Scroll">
-            <summary>
-            Groups are expanded/collapsed using smoth scrolling.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.Effect.None">
-            <summary>
-            No effect is used when a group is expanded/collapsed
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.HeaderRoundCorners">
-            <summary>
-            Specifies which corner of the groups' header should be rounded
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.HeaderRoundCorners.UseDefault">
-            <summary>
-            The rounded corners will be determinated by the Style of the control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.HeaderRoundCorners.Left">
-            <summary>
-            Only the left corner will be rounded
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.HeaderRoundCorners.Right">
-            <summary>
-            Only the right corner will be rounded
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.HeaderRoundCorners.Both">
-            <summary>
-            The left and the right corners will be rounded
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.HeaderRoundCorners.None">
-            <summary>
-            No corners will be rounded
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.TriState">
-            <summary>
-            Represents a boolean value for a property that can inherit its value from a base or parent object.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.TriState.Empty">
-            <summary>
-            Indicates that the value for this property should be inherited from the parent object.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.TriState.False">
-            <summary>
-            Specifies that False should be used in a property ignoring settings in the parent object.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.TriState.True">
-            <summary>
-            Specifies that True should be used in a property ignoring settings in the parent object.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ThemedArea">
-            <summary>
-            Specifies which portion of the ExplorerBar control will be drawn using Windows XP Visual Styles.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.None">
-            <summary>
-            The control won´t use Windows XP Visual Styles. 
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.Background">
-            <summary>
-            The background of the control will be drawn using Windows XP Visual Styles.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.Border">
-            <summary>
-            The border of the control will be drawn using Windows XP Visual Styles.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.GroupHeader">
-            <summary>
-            The headers of the ExplorerBarGroup objects control will be drawn using Windows XP Visual Styles.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.ScrollBar">
-            <summary>
-            The scroll bar will be drawn using Windows XP Visual Styles.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.Items">
-            <summary>
-            The items of the ExplorerBarGroup objects control will be drawn using Windows XP Visual Styles.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.All">
-            <summary>
-            All flags except None are set.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ImageDrawMode">
-            <summary>
-            Specifies how the background image is positioned within the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ImageDrawMode.Stretched">
-            <summary>
-            The image is stretched or shrunk to fit the size of the layout rectangle.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ImageDrawMode.Tiled">
-            <summary>
-            The image is tiled.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ImageDrawMode.Centered">
-            <summary>
-            The image is displayed in the center if the layout rectangle is larger than the image. If the image is larger than the layout rectangle, the picture is placed in the center of the rectangle and the outside edges are clipped. 
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.BorderStyle">
-            <summary>
-            Specify the border style for the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.None">
-            <summary>
-            The ExplorerBar control has no border.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.Flat">
-            <summary>
-            The border has no three-dimensional effects.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.RaisedLight3D">
-            <summary>
-            The border has a raised outer edge and no inner edge.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.Raised">
-            <summary>
-            The border has raised inner and outer edges.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.SunkenLight3D">
-            <summary>
-            The border has a sunken outer edge and no inner edge.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.Sunken">
-            <summary>
-            The border has sunken inner and outer edges.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ScrollBarAppearance">
-            <summary>
-            Specifies the appearance of the vertical scroll bar.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ScrollBarAppearance.Regular">
-            <summary>
-            The border has raised inner and outer edges.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ScrollBarAppearance.Light3D">
-            <summary>
-            The border has a raised inner edge and no outer edge.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ScrollBarAppearance.Flat">
-            <summary>
-            The border has no three-dimensional effects.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ScrollBarAppearance.FlatBorderless">
-            <summary>
-            The vertical scroll bar has no border.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ScrollBarAppearance.PopUp">
-            <summary>
-            The border appears flat until the mouse pointer moves over it, at which point it appears three-dimensional.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ItemType">
-            <summary>
-            Specifies the type of an item in a ExplorerBar control.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ItemType.LinkButton">
-            <summary>
-            Displays the item in a hyperlink style.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ItemType.Description">
-            <summary>
-            Displays the item as a label.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.ItemType.Separator">
-            <summary>
-            A separator between items in a ExplorerBar control. 
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.Alignment">
-            <summary>
-            Specifies the alignment of a text or an image relative to its layout rectangle.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.Alignment.Near">
-            <summary>
-            Specifies that the text or the image is aligned in near of the layout rectangle.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.Alignment.Center">
-            <summary>
-            Specifies that the text or the image is aligned in the center of the layout rectangle.
-            </summary>
-        </member>
-        <member name="F:Janus.Windows.ExplorerBar.Alignment.Far">
-            <summary>
-            Specifies that the text or the image is aligned far from the origin position of the layout rectangle.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.GroupEventArgs">
-            <summary>
-            Provides data for the GroupClick, GroupCollapsed and GroupExpanded events.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.GroupEventArgs.#ctor(Janus.Windows.ExplorerBar.ExplorerBarGroup)">
-            <summary>
-            Initialize a new instance of the GroupEventArgs class
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.GroupEventArgs.Group">
-            <summary>
-            Gets the ExplorerBarGroup containing the data.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.GroupCancelEventArgs">
-            <summary>
-            Provides data for the GroupExpanding and GroupCollapsing events.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.GroupCancelEventArgs.Group">
-            <summary>
-            Gets the ExplorerBarGroup containing the data.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.GroupCancelEventArgs.Cancel">
-            <summary>
-            Gets or sets a value indicating whether the event should be canceled.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ItemEventArgs">
-            <summary>
-            Provides data for the ItemClick event.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ItemEventArgs.#ctor(Janus.Windows.ExplorerBar.ExplorerBarItem)">
-            <summary>
-            Initialize a new instance of the ItemEventArgs class
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ItemEventArgs.Item">
-            <summary>
-            Gets the ExplorerBarItem containing the data.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs">
-            <summary>
-            Provides data for the DrawExplorerBarArea event.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.PaintBackground">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ShouldSerialize">
             <summary>
-            Draws the background of the area being painted.
+            Indicates whether the ExplorerBarWatermarkImage object has changed from its default value.
             </summary>
+            <returns>true if the one of the properties of the ScheduleWatermarkImage has changed from its default; otherwise, false.</returns>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.Graphics">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.Reset">
             <summary>
-            Gets the graphics surface to draw the ExplorerBar area on.
+            Resets all the properties of the TimeLineWatermarkImage object to its default value.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.Bounds">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ShouldSerializeSize">
             <summary>
-            Gets the rectangle that represents the bounds of the area being drawn.
+            Indicates whether the Size property should be persisted.
             </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.Group">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ResetSize">
             <summary>
-            Gets the ExplorerBarGroup object being painted.
+            Resets the Size property to its default value.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.Item">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ShouldSerializeWashColor">
             <summary>
-            Gets the ExplorerBarItem object being painted.
+            Indicates whether the WashColor property should be persisted.
             </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.BackBrush">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ResetWashColor">
             <summary>
-            Gets a Brush object that can be used to draw the background.
+            Resets the WashColor property to its default value.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.ForeBrush">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ShouldSerializeMaskColor">
             <summary>
-            Gets a Brush object that can be used to draw the foreground.
+            Indicates whether the MaskColor property should be persisted.
             </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.BackColor">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ResetMaskColor">
             <summary>
-            Gets the background color of the area being draw.
+            Resets the MaskColor property to its default value.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.ForeColor">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.Image">
             <summary>
-            Gets the foreground color of the area being drawn.
+            Gets or sets the System.Drawing.Image object to use as watermark.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.ExplorerBarArea">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.Size">
             <summary>
-            Gets the type of the ExplorerBar area being drawn.
+            Gets or sets the size of the image. If empty, the size of the image will be used.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.Handled">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ImageAlign">
             <summary>
-            Gets or sets a value that specifies whether the area was drawn by the owner.
+            Gets or sets the alignment of the image on the control.
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.ItemEventHandler">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.WashMode">
             <summary>
-            Represents the method that will handle the ItemClick event of the ExplorerBar.
+            Gets or sets a value that determines which color to use to wash the image;
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.GroupEventHandler">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.Alpha">
             <summary>
-            Represents the method that will handle the GroupClick, GroupCollapsed and GroupExpanded events of the ExplorerBar.
+            Gets or sets the alpha component that is applied when drawing the image.
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.GroupCancelEventHandler">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.WashColor">
             <summary>
-            Represents the method that will handle the GroupCollapsing and GroupExpanding events of the ExplorerBar.
+            Gets or sets the color to apply to the image when WashMode is UseWashColor
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventHandler">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.MaskColor">
             <summary>
-            Represents the method that will handle the DrawExplorerBarArea event of the ExplorerBar.
+            Gets or sets the color to treat as transparent. 
             </summary>
         </member>
         <member name="T:Janus.Windows.ExplorerBar.ExplorerBar">
@@ -1890,11 +1342,6 @@
             Gets or set a value specifying the base color used to paint the control when the OfficeColorScheme property is set to Custom.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBar.OfficeScrollBarStyle">
-            <summary>
-            Gets or sets a value specifying the style of the scrollbar when the VisualStyle of the control is Office2010
-            </summary>
-        </member>
         <member name="P:Janus.Windows.ExplorerBar.ExplorerBar.Office2007ColorScheme">
             <summary>
             Deprecated.
@@ -2185,6 +1632,325 @@
             Occurs when the user clicks on a ExplorerBarGroup.
             </summary>
         </member>
+        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarItemCollection">
+            <summary>
+            Represents a collection of ExplorerBarItem objects.
+            </summary>
+            
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.OnClear">
+            <summary>
+            Performs additional custom processes when clearing the contents of the ExplorerBarItemCollection class.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.OnClearComplete">
+            <summary>
+            Performs additional custom processes after clearing the contents of the ExplorerBarItemCollection class.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Contains(Janus.Windows.ExplorerBar.ExplorerBarItem)">
+            <summary>
+            Determines if the specified ExplorerBarItem object is a member of the collection. 
+            </summary>
+            <param name="item">The ExplorerBarItem object to locate in the collection.</param>
+            <returns>true if the item is found in the ExplorerBarItemCollection; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Insert(System.Int32,Janus.Windows.ExplorerBar.ExplorerBarItem)">
+            <summary>
+            Inserts a new ExplorerBarItem object in the ExplorerBarItemCollection at the specified location.
+            </summary>
+            <param name="index">The indexed location within the collection to insert the ExplorerBarItem object.</param>
+            <param name="item">The ExplorerBarItem object to insert.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Remove(Janus.Windows.ExplorerBar.ExplorerBarItem)">
+            <summary>
+            Removes a given ExplorerBarItem from the collection.
+            </summary>
+            <param name="item">The ExplorerBarItem object to remove from the collection.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes the ExplorerBarItem at the specified index of the collection.
+            </summary>
+            <param name="index">The indexed location of the ExplorerBarItem object in the collection.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Clear">
+            <summary>
+            Overrides CollectionBase.Clear
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Add(Janus.Windows.ExplorerBar.ExplorerBarItem)">
+            <summary>
+            Adds the ExplorerBarItem object to the end of the ExplorerBarItemCollection.
+            </summary>
+            <param name="item">The ExplorerBarItem to be added after all existing items.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.AddRange(Janus.Windows.ExplorerBar.ExplorerBarItem[])">
+            <summary>
+            Adds an array of ExplorerBarItem objects to the collection.
+            </summary>
+            <param name="items">An array of ExplorerBarItem objects to add to the collection.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Add(System.String)">
+            <summary>
+            Creates a new ExplorerBarItem using the specified value and adds it to the end of the ExplorerBarItemCollection. 
+            </summary>
+            <param name="text">The text of the new ExplorerBarItem.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Add(System.String,System.Int32)">
+            <summary>
+            Creates a new ExplorerBarItem using the specified value and adds it to the end of the ExplorerBarItemCollection.
+            </summary>
+            <param name="text">The text of the new ExplorerBarItem.</param>
+            <param name="imageIndex">The index for the ImageIndex property of the new ExplorerBarItem.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Add(System.String,Janus.Windows.ExplorerBar.ItemType)">
+            <summary>
+            Creates a new ExplorerBarItem using the specified value and adds it to the end of the ExplorerBarItemCollection.
+            </summary>
+            <param name="text">The text of the new ExplorerBarItem. </param>
+            <param name="itemType">The type of the new ExplorerBarItem.</param>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Item(System.Int32)">
+            <summary>
+            Gets the ExplorerBarItem  object at the specified indexed location in the ExplorerBarItemCollection.
+            </summary>
+            <param name="index">The indexed location of the ExplorerBarItem in the collection.</param>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Item(System.String)">
+            <summary>
+            Gets the ExplorerBarItem object with the specified key in the ExplorerBarItemCollection.
+            </summary>
+            <param name="key">The key of the ExplorerBarItem in the collection.</param>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.FlagsEnumConverter">
+            <summary>
+            Provides a type converter to convert enums to a string representation.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumConverter.#ctor">
+            <summary>
+            Initialize a new instance of the FlagsEnumConverter class
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Overrides TypeConverter.CanConvertTo
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Overrides TypeConverter.ConvertTo
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.FlagsEnumEditor">
+            <summary>
+            Provides a user interface for selecting flags in a Properties window.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumEditor.#ctor">
+            <summary>
+            Initialize a new instance of the FlagsEnumEditor class
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.FlagsEnumEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.Global">
+            <summary>
+            Summary description for Global.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ON">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ON.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ON.Object">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ON.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ResourceFile">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ResourceFile.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ResourceFile.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection">
+            <summary>
+            Summary description for ExplorerBarLayoutCollection.
+            </summary>
+            
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Add(Janus.Windows.ExplorerBar.ExplorerBarLayout)">
+            <summary>
+            Appends the specified ExplorerBarLayout object at the end of the collection.
+            </summary>
+            <param name="layout">The ExplorerBarLayout object to add.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.AddRange(Janus.Windows.ExplorerBar.ExplorerBarLayout[])">
+            <summary>
+            Copies the elements of the specified ExplorerBarLayout array to the end of the collection.
+            </summary>
+            <param name="layouts">The array of ExplorerBarLayout objects to add to the collection.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.OnInsert(System.Int32,System.Object)">
+            <summary>
+            Overrides CollectionBase.OnInsert
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.OnInsertComplete(System.Int32,System.Object)">
+            <summary>
+            Overrides CollectionBase.OnInsertComplete
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Remove(Janus.Windows.ExplorerBar.ExplorerBarLayout)">
+            <summary>
+            Removes the specified ExplorerBarLayout object from the collection.
+            </summary>
+            <param name="layout">The ExplorerBarLayout object to remove.</param>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.OnRemoveComplete(System.Int32,System.Object)">
+            <summary>
+            Overrides CollectionBase.OnRemoveComplete
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.OnClear">
+            <summary>
+            Overrides CollectionBase.OnClear
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.IndexOf(Janus.Windows.ExplorerBar.ExplorerBarLayout)">
+            <summary>
+            Retrieves the index of the specified ExplorerBarLayout in the collection.
+            </summary>
+            <param name="layout">The ExplorerBarLayout to locate in the collection.</param>
+            <returns>A zero-based index value that represents the position of the specified ExplorerBarLayout in the collection.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Contains(Janus.Windows.ExplorerBar.ExplorerBarLayout)">
+            <summary>
+            Determines whether a ExplorerBarLayout is in the collection.
+            </summary>
+            <param name="layout">The ExplorerBarLayout to locate in the collection.</param>
+            <returns>true if item is found in the collection; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Contains(System.String)">
+            <summary>
+            Determines whether a ExplorerBarLayout with the specified key is in the collection.
+            </summary>
+            <param name="layoutKey">The Key of the ExplorerBarLayout to locate in the collection.</param>
+            <returns>true if item is found in the collection; otherwise, false.</returns>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Item(System.Int32)">
+            <summary>
+            Gets a ExplorerBarLayout object from the collection at the specified index.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Item(System.String)">
+            <summary>
+            Gets a ExplorerBarLayout object from the collection with the specified key.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.Design.AboutBox">
+            <summary>
+            Summary description for Form1.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Design.AboutBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.AboutBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.AboutBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.AboutBox.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.AboutBox.OnLoad(System.EventArgs)">
+            <summary>
+            Overrides Form.OnLoad
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.Internal.ThemePaint">
+            <summary>
+            Summary description for ThemePaint.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas">
+            <summary>
+            Summary description for AreaStyles.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.BackgroundStyle">
+            <summary>
+            Gets or sets a value specifying the style for the background of the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.BorderStyle">
+            <summary>
+            Gets or sets a value specifying the style for the border of the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.HoverItemStyle">
+            <summary>
+            Gets or sets a value specifying the style for the items in the ExplorerBar control when the mouse is over them.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.SelectedItemStyle">
+            <summary>
+            Gets or sets a value specifying the style for the selected item in the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.GroupHeaderStyle">
+            <summary>
+            Gets or sets a value specifying the style for the group headers in the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.ItemsStyle">
+            <summary>
+            Gets or sets a value specifying the style for the items in the ExplorerBar control.
+            </summary>
+        </member>
         <member name="T:Janus.Windows.ExplorerBar.ExplorerBarContainerControl">
             <summary>
             Summary description for ExplorerBarContainerControl.
@@ -2244,210 +2010,31 @@
             Gets the ExplorerBarItem object that this ExplorerBarContainerControl is assigned to.
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle">
+        <member name="T:Janus.Windows.ExplorerBar.Design.LayoutNameDialog">
             <summary>
-               Summary description for FormatStyle.
+            Summary description for LayoutNameDialog.
             </summary>
             
         </member>
-        <member name="F:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.AlphaEmpty">
+        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarLicenseProvider">
             <summary>
-            Represents the empty alpha value. This field is read-only.
+            ExplorerBarLicenseProvider class.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.Reset">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLicenseProvider.#ctor">
             <summary>
-            Resets all the properties of this ExplorerBarFormatStyle to its default values.
+            Initializes a new instance of the Janus.Windows.ExplorerBar.ExplorerBarLicenseProvider class
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerialize">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)">
             <summary>
-            Indicates whether the ExplorerBarFormatStyle object has changed from its default value.
+            See LicenseProvider.GetLicense
             </summary>
-            <returns>true if the one of the properties of the ExplorerBarFormatStyle has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.#ctor(Janus.Windows.ExplorerBar.ExplorerBarFormatStyle)">
-            <summary>
-            Initializes a new instance of the ExplorerBarFormatStyle class based on the given ExplorerBarFormatStyle.
-            </summary>
-            <param name="baseStyle">A ExplorerBarFormatStyle which properties will be copied to create a new ExplorerBarFormatStyle class.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetBackColor">
-            <summary>
-            Resets the BackColor property to its default color.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeBackColor">
-            <summary>
-            Indicates whether the BackColor property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetForeColor">
-            <summary>
-            Resets the ForeColor property to its default color.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeForeColor">
-            <summary>
-            Indicates whether the ForeColor property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeFontBold">
-            <summary>
-            Indicates whether the FontBold property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetFontBold">
-            <summary>
-            Resets the FontBold property to its default color.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetBackColorGradient">
-            <summary>
-            Resets the BackColorGradient property to its default color.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeBackColorGradient">
-            <summary>
-            Indicates whether the BackColorGradient property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeForegroundThemeStyle">
-            <summary>
-            Indicates whether the ForegroundThemeStyle property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetForegroundThemeStyle">
-            <summary>
-            Resets the ForegroundThemeStyle property to its default color.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeBackgroundThemeStyle">
-            <summary>
-            Indicates whether the BackgroundThemeStyle property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetBackgroundThemeStyle">
-            <summary>
-            Resets the BackgroundThemeStyle property to its default color.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ShouldSerializeBackgroundGradientMode">
-            <summary>
-            Indicates whether the BackgroundGradientMode property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ResetBackgroundGradientMode">
-            <summary>
-            Resets the BackgroundGradientMode property to its default color.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ExplorerBar">
-            <summary>
-            Get the ExplorerBar control that this ExplorerBarFormatStyle is assigned to. 
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.Alpha">
-            <summary>
-            Gets or sets a value specifying the level of alpha (transparency).
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackColor">
-            <summary>
-            Gets or sets the background color for this ExplorerBarFormatStyle.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackColorAlphaMode">
-            <summary>
-            Gets or sets a value specifying the level of alpha (transparency) to use in the background.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ForeColor">
-            <summary>
-            Gets or sets the foreground color for this ExplorerBarFormatStyle.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ForeColorAlphaMode">
-            <summary>
-            Gets or sets a value specifying the level of alpha (transparency) to use in the foreground.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.Font">
-            <summary>
-            Gets or sets the Font object used by this ExplorerBarFormatStyle.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontBold">
-            <summary>
-            Gets or sets a value indicating whether the Font object of this ExplorerBarFormatStyle is bold.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontItalic">
-            <summary>
-            Gets or sets a value indicating whether the Font object of this ExplorerBarFormatStyle is italic.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontUnderline">
-            <summary>
-            Gets or sets a value indicating whether the Font object of this ExplorerBarFormatStyle is underlined.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontStrikeout">
-            <summary>
-            Gets or sets a value indicating whether the Font object of this ExplorerBarFormatStyle specifies a horizontal line through the font.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontName">
-            <summary>
-            Gets or sets the face name of the font used by the ExplorerBarFormatSrtyle class.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.FontSize">
-            <summary>
-            Gets or sets the size of the Font object used by this ExplorerBarFormatStyle object.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackColorGradient">
-            <summary>
-            Gets or sets a value specifying the background color used in a linear gradient pathern.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackColorGradientAlphaMode">
-            <summary>
-            Gets or sets a value specifying the level of alpha (transparency) to use in the background of the second color in a linear gradient pattern.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BlendGradient">
-            <summary>
-            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColorGradient.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.Blend">
-            <summary>
-            Gets or sets a value indicating the percentage of the BlendColor to blend with the BackColor.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.ForegroundThemeStyle">
-            <summary>
-            Gets or sets a value that determines which predefined foreground is used to draw an area when using themes.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackgroundThemeStyle">
-            <summary>
-            Gets or sets a value that determines which predefined background is used to draw an area when using themes.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarFormatStyle.BackgroundGradientMode">
-            <summary>
-            Gets or sets a value specifying if a linear gradient will be applied and its direction.
-            </summary>
+            <param name="context"></param>
+            <param name="type"></param>
+            <param name="instance"></param>
+            <param name="allowExceptions"></param>
+            <returns></returns>
         </member>
         <member name="T:Janus.Windows.ExplorerBar.ExplorerBarGroup">
             <summary>
@@ -2769,6 +2356,641 @@
             Overrides TypeConverter.ConvertTo
             </summary>
         </member>
+        <member name="T:Janus.Windows.ExplorerBar.WashMode">
+            <summary>
+            Specified which color to apply when drawing a watermark image.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.WashMode.System">
+            <summary>
+            The predefined system color will be used as the wash color
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.WashMode.UseWashColor">
+            <summary>
+            The color defined in the WashColor property will be used as the wash color or none if the WashColor is empty.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.VisualStyle">
+            <summary>
+            Specifies which apperance style the control is formatted after.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.Default">
+            <summary>
+            Unspecified. The value of the property is inherited from the settings specified in the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.Standard">
+            <summary>
+            The control is formatted as the standard ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.Office2003">
+            <summary>
+            The ExplorerBar control is formatted as its related control in Office 2003.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.VS2005">
+            <summary>
+            The ExplorerBar control is formatted as its related control in VS 2005.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.VS2010">
+            <summary>
+            The ExplorerBar control is formatted as its related control in VS 2010.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.Office2007">
+            <summary>
+            The ExplorerBar control is formatted as its related control in Office 2007.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.VisualStyle.Office2010">
+            <summary>
+            The control is formatted as its related control in Office 2010.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.OfficeColorScheme">
+            <summary>
+            Determines the color scheme a control uses to draw itself when the VisualStyle of a control is Office2007 or Office2010.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.OfficeColorScheme.Default">
+            <summary>
+            The control is drawn using the OfficeColorScheme specified as the DefaultOfficeColorScheme in the Janus.Windows.Common.VisualStyleManager component.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.OfficeColorScheme.Blue">
+            <summary>
+            The control is drawn using the built-in 'Blue' color scheme.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.OfficeColorScheme.Silver">
+            <summary>
+            The control is drawn using the built-in 'Silver' color scheme.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.OfficeColorScheme.Black">
+            <summary>
+            The control is drawn using the built-in 'Black' color scheme.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.OfficeColorScheme.Custom">
+            <summary>
+            The control is drawn using a custom color scheme created based on the color specified in the OfficeCustomColor property.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.Office2007ColorScheme">
+            <summary>
+            Deprecated.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Office2007ColorScheme.Default">
+            <summary>
+            The control is drawn using the OfficeColorScheme specified as the DefaultOffice2007ColorScheme in the Janus.Windows.Common.VisualStyleManager component.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Office2007ColorScheme.Blue">
+            <summary>
+            The control is drawn using the built-in 'Blue' color scheme.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Office2007ColorScheme.Silver">
+            <summary>
+            The control is drawn using the built-in 'Silver' color scheme.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Office2007ColorScheme.Black">
+            <summary>
+            The control is drawn using the built-in 'Black' color scheme.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Office2007ColorScheme.Custom">
+            <summary>
+            The control is drawn using a custom color scheme created based on the color specified in the Office2007CustomColor property.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.AlphaMode">
+            <summary>
+            Specifies the alpha level to use.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.AlphaMode.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.AlphaMode.Opaque">
+            <summary>
+            Indicates an alpha level of 255.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.AlphaMode.Transparent">
+            <summary>
+            Indicates an alpha level of 0.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.AlphaMode.UseAlpha">
+            <summary>
+            Use the value of the Alpha property.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.BackgroundThemeStyle">
+            <summary>
+            Determines the appearance to be applied on an area of the control when it is painted using Windows XP Visual Styles.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.ControlBackground">
+            <summary>
+            The area will be painted with an appearance similar to the main background area of an ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.GroupHeader">
+            <summary>
+            The area will be painted with an appearance similar to the group header area.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.GroupHeaderInverted">
+            <summary>
+            The area will be painted with the appearance of an inverted group header area.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.SpecialGroupHeader">
+            <summary>
+            The area will be painted with an appearance similar to the header area of an special group.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.Items">
+            <summary>
+            The area will be painted with an appearance similar to the items background area of a group.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundThemeStyle.None">
+            <summary>
+            The area won't be painted using Windows XP Visual Styles.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ForegroundThemeStyle">
+            <summary>
+            Determines how the foreground of an area of the control is painted when using Windows XP Visual Styles.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ForegroundThemeStyle.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ForegroundThemeStyle.GroupHeader">
+            <summary>
+            The foreground will be painted with an appearance similar to the group header foreground.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ForegroundThemeStyle.SpecialGroupHeader">
+            <summary>
+            The foreground will be painted with an appearance similar to the header foreground of an special group.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ForegroundThemeStyle.Item">
+            <summary>
+            The area will be painted with an appearance similar to the items foregrouund.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ForegroundThemeStyle.None">
+            <summary>
+            The area won't be painted using Windows XP Visual Styles.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.VerticalScrollBar">
+            <summary>
+            Specifies when the vertical scroll bar will be visible.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.VerticalScrollBar.Automatic">
+            <summary>
+            The scroll bar is shown only when there are enough items to warrant displaying.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.VerticalScrollBar.Always">
+            <summary>
+            The scroll bar will be displayed even if the number of items in the ExplorerBar does not require displaying the vertical scroll bar.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.VerticalScrollBar.Never">
+            <summary>
+            The scroll bar won´t be displayed.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarArea">
+            <summary>
+            Specifies the type of an area in a ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ExplorerBarArea.Border">
+            <summary>
+            Represents the border of the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ExplorerBarArea.Background">
+            <summary>
+            Represents the background of the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ExplorerBarArea.GroupHeader">
+            <summary>
+            Represents the header of a ExplorerBarGroup.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ExplorerBarArea.Items">
+            <summary>
+            Represents a ExplorerBarItem.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.OwnerDrawnArea">
+            <summary>
+            Specifies which area of a ExplorerBar control needs to be drawn manually.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.OwnerDrawnArea.None">
+            <summary>
+            The control won't be drawn manually.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.OwnerDrawnArea.Background">
+            <summary>
+            Specifies that the area to be manually drawn is the control's background.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.OwnerDrawnArea.GroupHeader">
+            <summary>
+            Specifies that the area to be manually drawn is the header of the groups.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.OwnerDrawnArea.Item">
+            <summary>
+            Specifies that the area to be manually drawn are the ExplorerBarItem ojects of the control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.OwnerDrawnArea.All">
+            <summary>
+            All flags except None are set.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ButtonAlignment">
+            <summary>
+            Specifies the alignment of the expand and close buttons relative to its layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ButtonAlignment.Default">
+            <summary>
+            Unspecified. The value of the property is inherited from the settings specified in the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ButtonAlignment.Left">
+            <summary>
+            Specifies that the expand and close buttons will be aligned to the left of its layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ButtonAlignment.Right">
+            <summary>
+            Specifies that the expand and close buttons will be aligned to the right of its layout rectangle.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.HitTest">
+            <summary>
+            Determines which element of the ExplorerBar control is at a specified location.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.HitTest.ExplorerBarItem">
+            <summary>
+            A ExplorerBarItem in the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.HitTest.ExplorerBarGroup">
+            <summary>
+            A ExplorerBarGroup in the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.HitTest.ScrollBar">
+            <summary>
+            The scroll bar in the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.HitTest.CollapseHeaderButton">
+            <summary>
+            The expand/collapse button in the group's header.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.HitTest.CloseHeaderButton">
+            <summary>
+            The close button in the group's header.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.HitTest.None">
+            <summary>
+            The background area, visible when the control contains few ExplorerBarGroup objects, or when the ExplorerBar is scrolled to its bottom.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.BackgroundGradientMode">
+            <summary>
+            Specifies how the background of an object will be filled.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.Solid">
+            <summary>
+            Specifies a solid background.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.Horizontal">
+            <summary>
+            Specifies a gradient from left to right. 
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.Vertical">
+            <summary>
+            Specifies a gradient from top to bottom.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.Diagonal">
+            <summary>
+            Specifies a gradient from upper left to lower right.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BackgroundGradientMode.DiagonalBackwards">
+            <summary>
+            Specifies a gradient from upper right to lower left. 
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.Effect">
+            <summary>
+            Specifies which effect is used when groups are expanded/collapsed.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Effect.Fade">
+            <summary>
+            Groups are fade-in when expanding and disolved when collapsing
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Effect.Scroll">
+            <summary>
+            Groups are expanded/collapsed using smoth scrolling.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Effect.None">
+            <summary>
+            No effect is used when a group is expanded/collapsed
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.HeaderRoundCorners">
+            <summary>
+            Specifies which corner of the groups' header should be rounded
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.HeaderRoundCorners.UseDefault">
+            <summary>
+            The rounded corners will be determinated by the Style of the control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.HeaderRoundCorners.Left">
+            <summary>
+            Only the left corner will be rounded
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.HeaderRoundCorners.Right">
+            <summary>
+            Only the right corner will be rounded
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.HeaderRoundCorners.Both">
+            <summary>
+            The left and the right corners will be rounded
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.HeaderRoundCorners.None">
+            <summary>
+            No corners will be rounded
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.TriState">
+            <summary>
+            Represents a boolean value for a property that can inherit its value from a base or parent object.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.TriState.Empty">
+            <summary>
+            Indicates that the value for this property should be inherited from the parent object.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.TriState.False">
+            <summary>
+            Specifies that False should be used in a property ignoring settings in the parent object.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.TriState.True">
+            <summary>
+            Specifies that True should be used in a property ignoring settings in the parent object.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ThemedArea">
+            <summary>
+            Specifies which portion of the ExplorerBar control will be drawn using Windows XP Visual Styles.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.None">
+            <summary>
+            The control won´t use Windows XP Visual Styles. 
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.Background">
+            <summary>
+            The background of the control will be drawn using Windows XP Visual Styles.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.Border">
+            <summary>
+            The border of the control will be drawn using Windows XP Visual Styles.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.GroupHeader">
+            <summary>
+            The headers of the ExplorerBarGroup objects control will be drawn using Windows XP Visual Styles.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.ScrollBar">
+            <summary>
+            The scroll bar will be drawn using Windows XP Visual Styles.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.Items">
+            <summary>
+            The items of the ExplorerBarGroup objects control will be drawn using Windows XP Visual Styles.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ThemedArea.All">
+            <summary>
+            All flags except None are set.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ImageDrawMode">
+            <summary>
+            Specifies how the background image is positioned within the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ImageDrawMode.Stretched">
+            <summary>
+            The image is stretched or shrunk to fit the size of the layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ImageDrawMode.Tiled">
+            <summary>
+            The image is tiled.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ImageDrawMode.Centered">
+            <summary>
+            The image is displayed in the center if the layout rectangle is larger than the image. If the image is larger than the layout rectangle, the picture is placed in the center of the rectangle and the outside edges are clipped. 
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.BorderStyle">
+            <summary>
+            Specify the border style for the ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.None">
+            <summary>
+            The ExplorerBar control has no border.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.Flat">
+            <summary>
+            The border has no three-dimensional effects.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.RaisedLight3D">
+            <summary>
+            The border has a raised outer edge and no inner edge.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.Raised">
+            <summary>
+            The border has raised inner and outer edges.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.SunkenLight3D">
+            <summary>
+            The border has a sunken outer edge and no inner edge.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.BorderStyle.Sunken">
+            <summary>
+            The border has sunken inner and outer edges.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ScrollBarAppearance">
+            <summary>
+            Specifies the appearance of the vertical scroll bar.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ScrollBarAppearance.Regular">
+            <summary>
+            The border has raised inner and outer edges.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ScrollBarAppearance.Light3D">
+            <summary>
+            The border has a raised inner edge and no outer edge.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ScrollBarAppearance.Flat">
+            <summary>
+            The border has no three-dimensional effects.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ScrollBarAppearance.FlatBorderless">
+            <summary>
+            The vertical scroll bar has no border.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ScrollBarAppearance.PopUp">
+            <summary>
+            The border appears flat until the mouse pointer moves over it, at which point it appears three-dimensional.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ItemType">
+            <summary>
+            Specifies the type of an item in a ExplorerBar control.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ItemType.LinkButton">
+            <summary>
+            Displays the item in a hyperlink style.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ItemType.Description">
+            <summary>
+            Displays the item as a label.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.ItemType.Separator">
+            <summary>
+            A separator between items in a ExplorerBar control. 
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.Alignment">
+            <summary>
+            Specifies the alignment of a text or an image relative to its layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Alignment.Near">
+            <summary>
+            Specifies that the text or the image is aligned in near of the layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Alignment.Center">
+            <summary>
+            Specifies that the text or the image is aligned in the center of the layout rectangle.
+            </summary>
+        </member>
+        <member name="F:Janus.Windows.ExplorerBar.Alignment.Far">
+            <summary>
+            Specifies that the text or the image is aligned far from the origin position of the layout rectangle.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.Design.ImageEditor">
+            <summary>
+            Summary description for ImageEditor.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.ImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            This class is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.ImageEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.ImageEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.ImageEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Janus.Windows.ExplorerBar.ExplorerBarGroupCollection">
             <summary>
             Encapsulates a collection of ExplorerBarGroup objects for use by the ExplorerBar control.
@@ -2846,371 +3068,419 @@
             </summary>
             <param name="key">The key of the ExplorerBarGroup in the collection.</param>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarItem">
+        <member name="T:Janus.Windows.ExplorerBar.Design.GroupEditor">
             <summary>
-            Represents an item in the ExplorerBar control.
+            Summary description for ExplorerBarDesign.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.#ctor">
+        <member name="M:Janus.Windows.ExplorerBar.Design.GroupEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
             <summary>
-            Initializes a new instance of the ExplorerBarItem class. 
+            Overrides UITypeEditor.EditValue
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.#ctor(System.String)">
+        <member name="M:Janus.Windows.ExplorerBar.Design.GroupEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
             <summary>
-            Initializes a new instance of the ExplorerBarItem class and displays the assigned text on the item.
+            
             </summary>
-            <param name="text">The text to display on the new ExplorerBarItem.</param>
+            <param name="context"></param>
+            <returns></returns>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.#ctor(System.String,Janus.Windows.ExplorerBar.ItemType)">
+        <member name="T:Janus.Windows.ExplorerBar.ControlStyle">
             <summary>
-            Initializes a new instance of the ExplorerBarItem class. 
-            </summary>
-            <param name="text">The text to display on the new ExplorerBarItem.</param>
-            <param name="itemType">The type of the new ExplorerBarItem</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.#ctor(System.String,System.Int32)">
-            <summary>
-            Initializes a new instance of the ExplorerBarItem class and sets the Text and ImageIndex properties to the specified values.
-            </summary>
-            <param name="text">The text of the new ExplorerBarItem.</param>
-            <param name="imageIndex">The index value of the image displayed by the ExplorerBarItem.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.InvokeOnClick">
-            <summary>
-            Raises the ItemClick event
+            Represent the style of the scroll bar control in the ExplorerBar control.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.ResetFormatStyle">
+        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.Reset">
             <summary>
-            Resets the FormatStyle property to its default value. 
+            Resets the all the properties of the ControlStyle object to its default value.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.ShouldSerializeFormatStyle">
+        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ResetControlColor">
             <summary>
-            Indicates whether the FormatStyle property should be persisted. 
+            Resets the ControlColor property to its default value.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ShouldSerializeControlColor">
+            <summary>
+            Indicates whether the ControlColor property has changed from its default value.
             </summary>
             <returns>true if the property value has changed from its default; otherwise, false.</returns>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItem.OnClick(Janus.Windows.ExplorerBar.ItemEventArgs)">
+        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ResetControlTextColor">
             <summary>
-            Raises the Janus.Windows.ExplorerBar.ExplorerBarItem.Click event
-            </summary>
-            <param name="e">A ItemEventArgs that contains the event data</param>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.AccessibleRole">
-            <summary>
-            Gets or sets a value representing the role that will be reported to accessibility clients.
+            Resets the ControlTextColor property to its default value.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.AccessibleName">
+        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ShouldSerializeControlTextColor">
             <summary>
-            Gets or sets a string representing the name that will be reported to accessibility clients.
+            Indicates whether the ControlTextColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ResetScrollBarColor">
+            <summary>
+            Resets the ScrollBarColor property to its default value.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.AccessibleDescription">
+        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ShouldSerializeScrollBarColor">
             <summary>
-            Gets or sets a string representing the description that will be reported to accessibility clients.
+            Indicates whether the ScrollBarColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ResetHoverBaseColor">
+            <summary>
+            Resets the HoverBaseColor property to its default value.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Key">
+        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ShouldSerializeHoverBaseColor">
             <summary>
-            Gets or sets a string that uniquely identifies this ExplorerBarItem in a collection.
+            Indicates whether the HoverBaseColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ResetHoverBlendColor">
+            <summary>
+            Resets the HoverBlendColor property to its default value.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Shortcut">
+        <member name="M:Janus.Windows.ExplorerBar.ControlStyle.ShouldSerializeHoverBlendColor">
             <summary>
-            Gets or sets a value indicating the shortcut key associated with the item. 
+            Indicates whether the HoverBlendColor property has changed from its default value.
+            </summary>
+            <returns>true if the property value has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.ButtonAppearance">
+            <summary>
+            Gets or sets a value that determines the appearance of the buttons of the scroll bar.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Selected">
+        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.ControlColor">
             <summary>
-            Gets or sets a value indicating whether this ExplorerBarItem is selected.
+            Gets or sets a value specifying the background color of the buttons of the scroll bar.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Indent">
+        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.ControlTextColor">
             <summary>
-            Gets or sets the distance to indent the item.
+            Gets or sets a value specifying the foreground color of the buttons of the scroll bar.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Height">
+        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.ScrollBarColor">
             <summary>
-            Gets or sets the height of the ExplorerBarItem in pixels.
+            Gets or sets a value that represent the background color of the scroll bar.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Cursor">
+        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.HoverBaseColor">
             <summary>
-            Gets or sets the cursor that is displayed when the mouse pointer is over the item.
+            Gets or sets the color that will be blended with the HoverBlendColor when a flat apperance is used.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Tag">
+        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.HoverBlendColor">
             <summary>
-            Gets or sets an object that contains data to associate with the ExplorerBarItem.
+            Gets or sets the color that will be blended with the HoverBaseColor when a flat appearance is used.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.TagString">
+        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.HoverBlend">
             <summary>
-            Gets or sets a string that contains data to associate with the ExplorerBarItem.
+            Gets or sets a value indicating the percentage of the HoverBlendColor to blend whit the HoverBaseColor.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Icon">
+        <member name="P:Janus.Windows.ExplorerBar.ControlStyle.HoverSelectedBlend">
             <summary>
-            Gets or sets the icon that is displayed on the ExplorerBarItem.
+            Gets or sets the percentage of the HoverBlendColor to blend with the HoverBaseColor when the mouse is captured by the button.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Text">
+        <member name="P:Janus.Windows.ExplorerBar.ResourceFile2.ResourceManager">
             <summary>
-            Gets or sets the text displayed on the ExplorerBarItem.
+              Returns the cached ResourceManager instance used by this class.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.WordWrap">
+        <member name="P:Janus.Windows.ExplorerBar.ResourceFile2.Culture">
             <summary>
-            Gets or sets a value indicating whether the item should wrap words to the beginning of the next line when necessary.
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ToolTipText">
+        <member name="T:Janus.Windows.ExplorerBar.BorderControl">
             <summary>
-            Gets or sets the text that appears as a ToolTip for the ExplorerBarItem.
+            Summary description for BorderControl.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Index">
-            <summary>
-            Gets the position of the ExplorerBarItem in the ExplorerBarItemCollection.
+        <member name="F:Janus.Windows.ExplorerBar.BorderControl.components">
+            <summary> 
+            Required designer variable.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Enabled">
-            <summary>
-            Gets or sets a value indicating whether the ExplorerBarItem is enabled.
+        <member name="M:Janus.Windows.ExplorerBar.BorderControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Visible">
-            <summary>
-            Gets or sets a value indicating whether the ExplorerBarItem is visible.
+        <member name="M:Janus.Windows.ExplorerBar.BorderControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageAlignment">
+        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarStateStyles">
             <summary>
-            Gets or sets the alignment of the image in the ExplorerBarItem.
+            Encapsulates the ExplorerBarFormatStyle for the different states of an item.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.TextAlignment">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.#ctor">
             <summary>
-            Gets or sets the alignment of the text in the ExplorerBarItem.
+            Initialize a new instance of the ExplorerBarStateStyles class.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Bounds">
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.ShouldSerialize">
             <summary>
-            Gets or sets the size and location of the item in the ExplorerBar control.
+            Indicates whether the ExplorerBarFormatStateStyle class should be persisted.
+            </summary>
+            <returns>true if the class has changed from its default; otherwise, false.</returns>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.Reset">
+            <summary>
+            Resets all the property values in the object to their default values.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ContainerControl">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.FormatStyle">
             <summary>
-            Gets or sets the ExplorerBarContainerControl associated to the item acting as container for other controls.
+            Gets the ExplorerBarFormatStyle used to draw the items.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Container">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.HotFormatStyle">
             <summary>
-            Gets or sets a value that indicates whether the item should act as a container for other controls.
+            Gets the ExplorerBarFormatStyle used to draw the items when the mouse is over them.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ContainerHeight">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.DisabledFormatStyle">
             <summary>
-            Gets or sets the height of the ExplorerBarContainerControl in pixels.
+            Gets the ExplorerBarFormatStyle used to draw the disabled items.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Image">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.SelectedFormatStyle">
             <summary>
-            Gets or sets the image that is displayed on the ExplorerBarItem.
+            Returns the ExplorerBarFormatStyle object used to draw the selected items.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageDisabledIndex">
+        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.PressedFormatStyle">
             <summary>
-            Gets or sets the index value of the image displayed by the ExplorerBarGroup when it is disabled.
+            Gets the ExplorerBarFormatStyle used to draw the items when they are pressed or when the item is selected and the mouse is over them.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageDisabledKey">
+        <member name="T:Janus.Windows.ExplorerBar.ScrollBar">
             <summary>
-            Gets or sets the key accessor for the image in the ImageList displayed by the ExplorerBarGroup when it is disabled.
+               Summary description for ScrollBarBase.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageSelectedIndex">
+        <member name="M:Janus.Windows.ExplorerBar.ScrollBar.Dispose(System.Boolean)">
             <summary>
-            Gets or sets the index value of the image displayed by the ExplorerBarItem when the item is selected.
+            Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageSelectedKey">
+        <member name="M:Janus.Windows.ExplorerBar.ScrollBar.CreateAccessibilityInstance">
             <summary>
-            Gets or sets the key accessor for the image in the ImageList displayed by the ExplorerBarItem when the item is selected.
+            Overrides Control.CreateAccessibilityInstance
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageFocusIndex">
+        <member name="T:Janus.Windows.ExplorerBar.GroupEventArgs">
             <summary>
-            Gets or sets the index value of the image displayed by the ExplorerBarItem when the mouse moves over it.
+            Provides data for the GroupClick, GroupCollapsed and GroupExpanded events.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageFocusKey">
+        <member name="M:Janus.Windows.ExplorerBar.GroupEventArgs.#ctor(Janus.Windows.ExplorerBar.ExplorerBarGroup)">
             <summary>
-            Gets or sets the key accessor for the image in the ImageList displayed by the ExplorerBarItem when the mouse moves over it.
+            Initialize a new instance of the GroupEventArgs class
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ItemType">
+        <member name="P:Janus.Windows.ExplorerBar.GroupEventArgs.Group">
             <summary>
-            Gets the type of the item represented by the ExplorerBarItem object in the ExplorerBar control.
+            Gets the ExplorerBarGroup containing the data.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageIndex">
+        <member name="T:Janus.Windows.ExplorerBar.GroupCancelEventArgs">
             <summary>
-            Gets or sets the index value of the image displayed by the ExplorerBarItem.
+            Provides data for the GroupExpanding and GroupCollapsing events.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ImageKey">
+        <member name="P:Janus.Windows.ExplorerBar.GroupCancelEventArgs.Group">
             <summary>
-            Gets or sets the key accessor for the image in the ImageList displayed by the ExplorerBarItem.
+            Gets the ExplorerBarGroup containing the data.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.ExplorerBar">
+        <member name="P:Janus.Windows.ExplorerBar.GroupCancelEventArgs.Cancel">
             <summary>
-            Gets the ExplorerBar control that this ExplorerBarItem object is assigned to.
+            Gets or sets a value indicating whether the event should be canceled.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.Group">
+        <member name="T:Janus.Windows.ExplorerBar.ItemEventArgs">
             <summary>
-            Gets the ExplorerBarGroup object that this ExplorerBarItem is assigned to.
+            Provides data for the ItemClick event.
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.StateStyles">
+        <member name="M:Janus.Windows.ExplorerBar.ItemEventArgs.#ctor(Janus.Windows.ExplorerBar.ExplorerBarItem)">
             <summary>
-            Gets the ExplorerBarStateStyles that holds the format styles used to draw the item in its different states.
+            Initialize a new instance of the ItemEventArgs class
             </summary>
         </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItem.FormatStyle">
+        <member name="P:Janus.Windows.ExplorerBar.ItemEventArgs.Item">
             <summary>
-            Gets the ExplorerBarFormatStyle object used to draw this item in the ExplorerBar control.
+            Gets the ExplorerBarItem containing the data.
             </summary>
         </member>
-        <member name="E:Janus.Windows.ExplorerBar.ExplorerBarItem.Click">
+        <member name="T:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs">
             <summary>
-            Occurs when the ExplorerBarItem is clicked.
+            Provides data for the DrawExplorerBarArea event.
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarItemConverter">
+        <member name="M:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.PaintBackground">
+            <summary>
+            Draws the background of the area being painted.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.Graphics">
+            <summary>
+            Gets the graphics surface to draw the ExplorerBar area on.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.Bounds">
+            <summary>
+            Gets the rectangle that represents the bounds of the area being drawn.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.Group">
+            <summary>
+            Gets the ExplorerBarGroup object being painted.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.Item">
+            <summary>
+            Gets the ExplorerBarItem object being painted.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.BackBrush">
+            <summary>
+            Gets a Brush object that can be used to draw the background.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.ForeBrush">
+            <summary>
+            Gets a Brush object that can be used to draw the foreground.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.BackColor">
+            <summary>
+            Gets the background color of the area being draw.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.ForeColor">
+            <summary>
+            Gets the foreground color of the area being drawn.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.ExplorerBarArea">
+            <summary>
+            Gets the type of the ExplorerBar area being drawn.
+            </summary>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventArgs.Handled">
+            <summary>
+            Gets or sets a value that specifies whether the area was drawn by the owner.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.ItemEventHandler">
+            <summary>
+            Represents the method that will handle the ItemClick event of the ExplorerBar.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.GroupEventHandler">
+            <summary>
+            Represents the method that will handle the GroupClick, GroupCollapsed and GroupExpanded events of the ExplorerBar.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.GroupCancelEventHandler">
+            <summary>
+            Represents the method that will handle the GroupCollapsing and GroupExpanding events of the ExplorerBar.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.DrawExplorerBarAreaEventHandler">
+            <summary>
+            Represents the method that will handle the DrawExplorerBarArea event of the ExplorerBar.
+            </summary>
+        </member>
+        <member name="T:Janus.Windows.ExplorerBar.Design.GroupsDesigner">
+            <summary>
+            Summary description for GroupsDesigner.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.GroupsDesigner.#ctor">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemConverter.#ctor">
+        <member name="M:Janus.Windows.ExplorerBar.Design.GroupsDesigner.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.GroupsDesigner.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.GroupsDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Janus.Windows.ExplorerBar.Design.GroupsDesigner.ExplorerBar">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+        <member name="T:Janus.Windows.ExplorerBar.Design.ColorSchemeEditor">
             <summary>
-            
+            Provides a user interface for selecting controls objects in a Properties window.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeEditor.#ctor">
+            <summary>
+            Initializes a new instance of the ColorSchemeEditor class.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Overrides UITypeEditor.EditValue.
+            </summary>
+        </member>
+        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Overrides UITypeEditor.GetEditStyle
             </summary>
             <param name="context"></param>
-            <param name="destinationType"></param>
             <returns></returns>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+        <member name="T:Janus.Windows.ExplorerBar.Design.ColorSchemeConverter">
             <summary>
-            
-            </summary>
-            <param name="context"></param>
-            <param name="culture"></param>
-            <param name="value"></param>
-            <param name="destinationType"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarItemCollection">
-            <summary>
-            Represents a collection of ExplorerBarItem objects.
-            </summary>
-            
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.OnClear">
-            <summary>
-            Performs additional custom processes when clearing the contents of the ExplorerBarItemCollection class.
+            Provides a type converter to convert a ColorScheme property to a string
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.OnClearComplete">
+        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeConverter.#ctor">
             <summary>
-            Performs additional custom processes after clearing the contents of the ExplorerBarItemCollection class.
+            Initialize a new instance of the ColorSchemeConverter.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Contains(Janus.Windows.ExplorerBar.ExplorerBarItem)">
+        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
             <summary>
-            Determines if the specified ExplorerBarItem object is a member of the collection. 
-            </summary>
-            <param name="item">The ExplorerBarItem object to locate in the collection.</param>
-            <returns>true if the item is found in the ExplorerBarItemCollection; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Insert(System.Int32,Janus.Windows.ExplorerBar.ExplorerBarItem)">
-            <summary>
-            Inserts a new ExplorerBarItem object in the ExplorerBarItemCollection at the specified location.
-            </summary>
-            <param name="index">The indexed location within the collection to insert the ExplorerBarItem object.</param>
-            <param name="item">The ExplorerBarItem object to insert.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Remove(Janus.Windows.ExplorerBar.ExplorerBarItem)">
-            <summary>
-            Removes a given ExplorerBarItem from the collection.
-            </summary>
-            <param name="item">The ExplorerBarItem object to remove from the collection.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.RemoveAt(System.Int32)">
-            <summary>
-            Removes the ExplorerBarItem at the specified index of the collection.
-            </summary>
-            <param name="index">The indexed location of the ExplorerBarItem object in the collection.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Clear">
-            <summary>
-            Overrides CollectionBase.Clear
+            Overrides TypeConverter.CanConvertTo.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Add(Janus.Windows.ExplorerBar.ExplorerBarItem)">
+        <member name="M:Janus.Windows.ExplorerBar.Design.ColorSchemeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
             <summary>
-            Adds the ExplorerBarItem object to the end of the ExplorerBarItemCollection.
+            Overrides TypeConverter.ConvertTo.
             </summary>
-            <param name="item">The ExplorerBarItem to be added after all existing items.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.AddRange(Janus.Windows.ExplorerBar.ExplorerBarItem[])">
-            <summary>
-            Adds an array of ExplorerBarItem objects to the collection.
-            </summary>
-            <param name="items">An array of ExplorerBarItem objects to add to the collection.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Add(System.String)">
-            <summary>
-            Creates a new ExplorerBarItem using the specified value and adds it to the end of the ExplorerBarItemCollection. 
-            </summary>
-            <param name="text">The text of the new ExplorerBarItem.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Add(System.String,System.Int32)">
-            <summary>
-            Creates a new ExplorerBarItem using the specified value and adds it to the end of the ExplorerBarItemCollection.
-            </summary>
-            <param name="text">The text of the new ExplorerBarItem.</param>
-            <param name="imageIndex">The index for the ImageIndex property of the new ExplorerBarItem.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Add(System.String,Janus.Windows.ExplorerBar.ItemType)">
-            <summary>
-            Creates a new ExplorerBarItem using the specified value and adds it to the end of the ExplorerBarItemCollection.
-            </summary>
-            <param name="text">The text of the new ExplorerBarItem. </param>
-            <param name="itemType">The type of the new ExplorerBarItem.</param>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Item(System.Int32)">
-            <summary>
-            Gets the ExplorerBarItem  object at the specified indexed location in the ExplorerBarItemCollection.
-            </summary>
-            <param name="index">The indexed location of the ExplorerBarItem in the collection.</param>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarItemCollection.Item(System.String)">
-            <summary>
-            Gets the ExplorerBarItem object with the specified key in the ExplorerBarItemCollection.
-            </summary>
-            <param name="key">The key of the ExplorerBarItem in the collection.</param>
         </member>
         <member name="T:Janus.Windows.ExplorerBar.ExplorerBarLayout">
             <summary>
@@ -3356,315 +3626,25 @@
             Overrides TypeConverter.ConvertTo
             </summary>
         </member>
-        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection">
+        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarColorScheme">
             <summary>
-            Summary description for ExplorerBarLayoutCollection.
-            </summary>
-            
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Add(Janus.Windows.ExplorerBar.ExplorerBarLayout)">
-            <summary>
-            Appends the specified ExplorerBarLayout object at the end of the collection.
-            </summary>
-            <param name="layout">The ExplorerBarLayout object to add.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.AddRange(Janus.Windows.ExplorerBar.ExplorerBarLayout[])">
-            <summary>
-            Copies the elements of the specified ExplorerBarLayout array to the end of the collection.
-            </summary>
-            <param name="layouts">The array of ExplorerBarLayout objects to add to the collection.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.OnInsert(System.Int32,System.Object)">
-            <summary>
-            Overrides CollectionBase.OnInsert
+            Summary description for ColorScheme.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.OnInsertComplete(System.Int32,System.Object)">
+        <member name="T:Janus.Windows.ExplorerBar.Design.LayoutTreePage">
             <summary>
-            Overrides CollectionBase.OnInsertComplete
+            Summary description for LayoutTreePage.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Remove(Janus.Windows.ExplorerBar.ExplorerBarLayout)">
-            <summary>
-            Removes the specified ExplorerBarLayout object from the collection.
-            </summary>
-            <param name="layout">The ExplorerBarLayout object to remove.</param>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.OnRemoveComplete(System.Int32,System.Object)">
-            <summary>
-            Overrides CollectionBase.OnRemoveComplete
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.OnClear">
-            <summary>
-            Overrides CollectionBase.OnClear
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.IndexOf(Janus.Windows.ExplorerBar.ExplorerBarLayout)">
-            <summary>
-            Retrieves the index of the specified ExplorerBarLayout in the collection.
-            </summary>
-            <param name="layout">The ExplorerBarLayout to locate in the collection.</param>
-            <returns>A zero-based index value that represents the position of the specified ExplorerBarLayout in the collection.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Contains(Janus.Windows.ExplorerBar.ExplorerBarLayout)">
-            <summary>
-            Determines whether a ExplorerBarLayout is in the collection.
-            </summary>
-            <param name="layout">The ExplorerBarLayout to locate in the collection.</param>
-            <returns>true if item is found in the collection; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Contains(System.String)">
-            <summary>
-            Determines whether a ExplorerBarLayout with the specified key is in the collection.
-            </summary>
-            <param name="layoutKey">The Key of the ExplorerBarLayout to locate in the collection.</param>
-            <returns>true if item is found in the collection; otherwise, false.</returns>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Item(System.Int32)">
-            <summary>
-            Gets a ExplorerBarLayout object from the collection at the specified index.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarLayoutCollection.Item(System.String)">
-            <summary>
-            Gets a ExplorerBarLayout object from the collection with the specified key.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarLicenseProvider">
-            <summary>
-            ExplorerBarLicenseProvider class.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLicenseProvider.#ctor">
-            <summary>
-            Initializes a new instance of the Janus.Windows.ExplorerBar.ExplorerBarLicenseProvider class
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarLicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)">
-            <summary>
-            See LicenseProvider.GetLicense
-            </summary>
-            <param name="context"></param>
-            <param name="type"></param>
-            <param name="instance"></param>
-            <param name="allowExceptions"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas">
-            <summary>
-            Summary description for AreaStyles.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.BackgroundStyle">
-            <summary>
-            Gets or sets a value specifying the style for the background of the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.BorderStyle">
-            <summary>
-            Gets or sets a value specifying the style for the border of the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.HoverItemStyle">
-            <summary>
-            Gets or sets a value specifying the style for the items in the ExplorerBar control when the mouse is over them.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.SelectedItemStyle">
-            <summary>
-            Gets or sets a value specifying the style for the selected item in the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.GroupHeaderStyle">
-            <summary>
-            Gets or sets a value specifying the style for the group headers in the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarVisualStyleAreas.ItemsStyle">
-            <summary>
-            Gets or sets a value specifying the style for the items in the ExplorerBar control.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage">
-            <summary>
-            Summary description for ExplorerWatermarkImage.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ShouldSerialize">
-            <summary>
-            Indicates whether the ExplorerBarWatermarkImage object has changed from its default value.
-            </summary>
-            <returns>true if the one of the properties of the ScheduleWatermarkImage has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.Reset">
-            <summary>
-            Resets all the properties of the TimeLineWatermarkImage object to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ShouldSerializeSize">
-            <summary>
-            Indicates whether the Size property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ResetSize">
-            <summary>
-            Resets the Size property to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ShouldSerializeWashColor">
-            <summary>
-            Indicates whether the WashColor property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ResetWashColor">
-            <summary>
-            Resets the WashColor property to its default value.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ShouldSerializeMaskColor">
-            <summary>
-            Indicates whether the MaskColor property should be persisted.
-            </summary>
-            <returns>true if the property value has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ResetMaskColor">
-            <summary>
-            Resets the MaskColor property to its default value.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.Image">
-            <summary>
-            Gets or sets the System.Drawing.Image object to use as watermark.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.Size">
-            <summary>
-            Gets or sets the size of the image. If empty, the size of the image will be used.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.ImageAlign">
-            <summary>
-            Gets or sets the alignment of the image on the control.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.WashMode">
-            <summary>
-            Gets or sets a value that determines which color to use to wash the image;
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.Alpha">
-            <summary>
-            Gets or sets the alpha component that is applied when drawing the image.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.WashColor">
-            <summary>
-            Gets or sets the color to apply to the image when WashMode is UseWashColor
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarWatermarkImage.MaskColor">
-            <summary>
-            Gets or sets the color to treat as transparent. 
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.Global">
-            <summary>
-            Summary description for Global.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ON">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ON.ToString">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ON.Object">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ON.Name">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ThemeHeader">
-            <summary>
-            Summary description for ThemeHeader.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.Internal.ThemePaint">
-            <summary>
-            Summary description for ThemePaint.
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ScrollBar">
-            <summary>
-               Summary description for ScrollBarBase.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ScrollBar.Dispose(System.Boolean)">
-            <summary>
+        <member name="M:Janus.Windows.ExplorerBar.Design.LayoutTreePage.Dispose(System.Boolean)">
+            <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Janus.Windows.ExplorerBar.ScrollBar.CreateAccessibilityInstance">
-            <summary>
-            Overrides Control.CreateAccessibilityInstance
-            </summary>
-        </member>
-        <member name="T:Janus.Windows.ExplorerBar.ExplorerBarStateStyles">
-            <summary>
-            Encapsulates the ExplorerBarFormatStyle for the different states of an item.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.#ctor">
-            <summary>
-            Initialize a new instance of the ExplorerBarStateStyles class.
-            </summary>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.ShouldSerialize">
-            <summary>
-            Indicates whether the ExplorerBarFormatStateStyle class should be persisted.
-            </summary>
-            <returns>true if the class has changed from its default; otherwise, false.</returns>
-        </member>
-        <member name="M:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.Reset">
-            <summary>
-            Resets all the property values in the object to their default values.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.FormatStyle">
-            <summary>
-            Gets the ExplorerBarFormatStyle used to draw the items.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.HotFormatStyle">
-            <summary>
-            Gets the ExplorerBarFormatStyle used to draw the items when the mouse is over them.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.DisabledFormatStyle">
-            <summary>
-            Gets the ExplorerBarFormatStyle used to draw the disabled items.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.SelectedFormatStyle">
-            <summary>
-            Returns the ExplorerBarFormatStyle object used to draw the selected items.
-            </summary>
-        </member>
-        <member name="P:Janus.Windows.ExplorerBar.ExplorerBarStateStyles.PressedFormatStyle">
-            <summary>
-            Gets the ExplorerBarFormatStyle used to draw the items when they are pressed or when the item is selected and the mouse is over them.
+        <member name="M:Janus.Windows.ExplorerBar.Design.LayoutTreePage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
             </summary>
         </member>
     </members>

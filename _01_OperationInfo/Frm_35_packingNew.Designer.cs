@@ -69,6 +69,7 @@
             this.uiPanel2 = new Janus.Windows.UI.Dock.UIPanelGroup();
             this.uiPanel5 = new Janus.Windows.UI.Dock.UIPanel();
             this.uiPanel5Container = new Janus.Windows.UI.Dock.UIPanelInnerContainer();
+            this.btnCheckBarcode = new System.Windows.Forms.Button();
             this.txt_Description = new System.Windows.Forms.TextBox();
             this.mlt_Num_Product = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
             this.txt_Print = new System.Windows.Forms.TextBox();
@@ -142,7 +143,6 @@
             this.table_050_Packaging1TableAdapter = new PCLOR.data_PCLOR.DataSet_05_PCLORTableAdapters.Table_050_Packaging1TableAdapter();
             this.uiPanel4 = new Janus.Windows.UI.Dock.UIPanelGroup();
             this.uiPanelGroup1 = new Janus.Windows.UI.Dock.UIPanelGroup();
-            this.btnCheckBarcode = new System.Windows.Forms.Button();
             label16 = new System.Windows.Forms.Label();
             label13 = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
@@ -516,6 +516,16 @@
             this.uiPanel5Container.Name = "uiPanel5Container";
             this.uiPanel5Container.Size = new System.Drawing.Size(293, 507);
             this.uiPanel5Container.TabIndex = 0;
+            // 
+            // btnCheckBarcode
+            // 
+            this.btnCheckBarcode.Location = new System.Drawing.Point(3, 446);
+            this.btnCheckBarcode.Name = "btnCheckBarcode";
+            this.btnCheckBarcode.Size = new System.Drawing.Size(288, 62);
+            this.btnCheckBarcode.TabIndex = 13;
+            this.btnCheckBarcode.Text = "مشخصات کد";
+            this.btnCheckBarcode.UseVisualStyleBackColor = true;
+            this.btnCheckBarcode.Click += new System.EventHandler(this.btnCheckBarcode_Click);
             // 
             // txt_Description
             // 
@@ -1484,16 +1494,6 @@
             this.uiPanelGroup1.Name = "uiPanelGroup1";
             this.uiPanelGroup1.Size = new System.Drawing.Size(344, 476);
             this.uiPanelGroup1.TabIndex = 104;
-            // 
-            // btnCheckBarcode
-            // 
-            this.btnCheckBarcode.Location = new System.Drawing.Point(3, 446);
-            this.btnCheckBarcode.Name = "btnCheckBarcode";
-            this.btnCheckBarcode.Size = new System.Drawing.Size(288, 62);
-            this.btnCheckBarcode.TabIndex = 13;
-            this.btnCheckBarcode.Text = "مشخصات کد";
-            this.btnCheckBarcode.UseVisualStyleBackColor = true;
-            this.btnCheckBarcode.Click += new System.EventHandler(this.btnCheckBarcode_Click);
             // 
             // Frm_35_packingNew
             // 

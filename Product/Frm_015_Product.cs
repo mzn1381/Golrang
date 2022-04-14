@@ -38,6 +38,7 @@ namespace PCLOR.Product
         private bool IsInfinitiveTextureLimit = false;
         private DateTime TimeLastProduct { get; set; }
         bool Machine = false;
+        private string Barcode = "";
         private void OpenPort()
         {
             bool error = false;
@@ -161,6 +162,7 @@ namespace PCLOR.Product
                 double weigh = Convert.ToDouble(txt_weight.Text) / 1000;
 
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["Barcode"] = Barcode.ToString();
+                this.Barcode = Barcode;
                 ((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["weight"] = weigh;
 
                 //((DataRowView)table_115_ProductBindingSource.CurrencyManager.Current)["ProgramerMachine"] = DeviceId;
@@ -421,17 +423,7 @@ namespace PCLOR.Product
                 }
 
                 Recipt();
-                //ClDoc.RunSqlCommand(ConPCLOR.ConnectionString, $@"
-                //     update Table_115_Product set  Operator =N'{txtCodeTag.Text.Trim()}'
-                //     where id = {ID}");
-                ////+
-                //",TimeLastShift='" + txt_Lastshift.Text + 
-                //",TimeLastProduct='" + txt_Lastdate.Text + 
-                //" Update Table_100_ProgramMachine set Printer=N'" + uiComboBox1.Text + "' where ID=" + mlt_Num_Programer.Value);
-                Class_BasicOperation.ShowMsg("", "اطلاعات با موفقیت دخیره شد" + Environment.NewLine + "رسید به شماره" + ResidNum + "با موفقیت صدور شد", Class_BasicOperation.MessageType.Information);
-                //gridEX2.DropDowns["Recipt"].DataSource = ClDoc.ReturnTable(ConWare, @" select Columnid, column01 from Table_011_PwhrsReceipt ");
-                //table_115_ProductTableAdapter.FillByProgramerMachine(dataSet_05_Product.Table_115_Product, Convert.ToInt32(DeviceId));
-                //gridEX2.MoveTo(Position);
+                Class_BasicOperation.ShowMsg("", "اطلاعات با موفقیت دخیره شد"+"\n"+$@"بارکد با شماره ی {Barcode} صادر شد " +"\n"+ Environment.NewLine + "رسید به شماره" + ResidNum + "با موفقیت صدور شد", Class_BasicOperation.MessageType.Information);
                 if (!IsInfinitiveTextureLimit)
                 {
                     TextureLimit -= 1;
@@ -440,10 +432,8 @@ namespace PCLOR.Product
                         lblWarningTextureLimit.Visible = true;
                 }
                 gridEX2.MoveLast();
-                //this.Close();
             }
         }
-        //string ID = "";
         private void Recipt()
         {
             using (IDbConnection db = new SqlConnection(ConWare.ConnectionString))

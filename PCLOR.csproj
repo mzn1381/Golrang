@@ -397,6 +397,8 @@
     <Compile Include="Models\PersonInfoViewModel.cs" />
     <Compile Include="Models\ProductSourceViewModel.cs" />
     <Compile Include="Models\ReportDeviceViewModel.cs" />
+    <Compile Include="Models\ResultLoginViewModel.cs" />
+    <Compile Include="Models\ServerInformationModel.cs" />
     <Compile Include="Models\SetStatusShiftViewModel.cs" />
     <Compile Include="Models\ShowBarcodeForTransferViewModel.cs" />
     <Compile Include="Models\ShowDetailBarcodeViewModel.cs" />
@@ -494,6 +496,12 @@
     </Compile>
     <Compile Include="_00_BaseInfo\Form_55_EditSpecsTechnical.Designer.cs">
       <DependentUpon>Form_55_EditSpecsTechnical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_00_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_00_BaseInfo\Frm_00_Login.Designer.cs">
+      <DependentUpon>Frm_00_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="_00_BaseInfo\Frm_50_TypeCotton.cs">
       <SubType>Form</SubType>
@@ -1199,6 +1207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="_00_BaseInfo\Form_55_EditSpecsTechnical.resx">
       <DependentUpon>Form_55_EditSpecsTechnical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_00_BaseInfo\Frm_00_Login.resx">
+      <DependentUpon>Frm_00_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="_00_BaseInfo\Frm_50_TypeCotton.resx">
       <DependentUpon>Frm_50_TypeCotton.cs</DependentUpon>
