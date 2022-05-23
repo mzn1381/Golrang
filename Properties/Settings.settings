@@ -8,60 +8,25 @@
     <Setting Name="Year" Type="System.String" Scope="User">
       <Value Profile="(Default)">1398</Value>
     </Setting>
-    <Setting Name="PCLOR" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=.;Initial Catalog=PCLOR_1_1400;Integrated Security=True;&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+    <Setting Name="PCLOR" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=.;Initial Catalog=PCLOR_1_1400;Integrated Security=True;</Value>
     </Setting>
-    <Setting Name="PACNT" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=.;Initial Catalog=PACNT_1_1400;Integrated Security=True;&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+    <Setting Name="PACNT" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=.;Initial Catalog=PACNT_1_1400;Integrated Security=True;</Value>
     </Setting>
-    <Setting Name="PBANK" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=.;Initial Catalog=PBANK_1_1400;Integrated Security=True;&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+    <Setting Name="PBANK" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=.;Initial Catalog=PBANK_1_1400;Integrated Security=True;</Value>
     </Setting>
-    <Setting Name="PWHRS" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=.;Initial Catalog=PWHRS_1_1400;Integrated Security=True;&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+    <Setting Name="PWHRS" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=.;Initial Catalog=PWHRS_1_1400;Integrated Security=True;</Value>
     </Setting>
-    <Setting Name="PBASE" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=.;Initial Catalog=PBASE_1;Integrated Security=True;&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+    <Setting Name="PBASE" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=.;Initial Catalog=PBASE_1;Integrated Security=True;</Value>
     </Setting>
-    <Setting Name="PSALE" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=.;Initial Catalog=PSALE_1_1400;Integrated Security=True;&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+    <Setting Name="PSALE" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=.;Initial Catalog=PSALE_1_1400;Integrated Security=True;</Value>
     </Setting>
-    <Setting Name="MAIN" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=.;Initial Catalog=PERP_MAIN;Integrated Security=True;&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+    <Setting Name="MAIN" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=.;Initial Catalog=PERP_MAIN;Integrated Security=True;</Value>
     </Setting>
     <Setting Name="date1" Type="System.String" Scope="User">
@@ -218,6 +183,9 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Print" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PBASE1" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>

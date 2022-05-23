@@ -51,7 +51,7 @@ namespace PCLOR._00_BaseInfo
             this.txt_userName.Location = new System.Drawing.Point(80, 32);
             this.txt_userName.Name = "txt_userName";
             this.txt_userName.Size = new System.Drawing.Size(202, 26);
-            this.txt_userName.TabIndex = 1;
+            this.txt_userName.TabIndex = 0;
             // 
             // label2
             // 
@@ -69,15 +69,17 @@ namespace PCLOR._00_BaseInfo
             this.txt_Password.Size = new System.Drawing.Size(202, 26);
             this.txt_Password.TabIndex = 1;
             this.txt_Password.UseSystemPasswordChar = true;
+            this.txt_Password.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Password_KeyUp);
             // 
             // btn_Exite
             // 
             this.btn_Exite.Location = new System.Drawing.Point(47, 133);
             this.btn_Exite.Name = "btn_Exite";
             this.btn_Exite.Size = new System.Drawing.Size(100, 35);
-            this.btn_Exite.TabIndex = 2;
+            this.btn_Exite.TabIndex = 3;
             this.btn_Exite.Text = "خروج";
             this.btn_Exite.UseVisualStyleBackColor = true;
+            this.btn_Exite.Click += new System.EventHandler(this.btn_Exite_Click);
             // 
             // btn_Enter
             // 
@@ -103,6 +105,7 @@ namespace PCLOR._00_BaseInfo
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Frm_00_Login";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ورود ";
             this.ResumeLayout(false);
             this.PerformLayout();

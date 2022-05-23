@@ -1217,10 +1217,13 @@ G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Ribbon.v4.xml
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.Schedule.v4.xml
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.TimeLine.v4.xml
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\Janus.Windows.UI.v4.xml
-G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csprojAssemblyReference.cache
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CoreCompileInputs.cache
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.csproj.CopyComplete
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.pdb
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.pdb
 G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR._00_BaseInfo.Frm_00_Login.resources
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.exe.manifest
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\bin\Debug\PCLOR.application
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.exe.manifest
+G:\PROGRAM\c#\Golrang\PCOLOR-New\PCLOR\obj\x86\Debug\PCLOR.application

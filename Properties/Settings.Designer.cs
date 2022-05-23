@@ -47,73 +47,87 @@ namespace PCLOR.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=PCLOR_1_1400;Integrated Security=True;")]
         public string PCLOR {
             get {
                 return ((string)(this["PCLOR"]));
             }
+            set {
+                this["PCLOR"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=PACNT_1_1400;Integrated Security=True;")]
         public string PACNT {
             get {
                 return ((string)(this["PACNT"]));
             }
+            set {
+                this["PACNT"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=PBANK_1_1400;Integrated Security=True;")]
         public string PBANK {
             get {
                 return ((string)(this["PBANK"]));
             }
+            set {
+                this["PBANK"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=PWHRS_1_1400;Integrated Security=True;")]
         public string PWHRS {
             get {
                 return ((string)(this["PWHRS"]));
             }
+            set {
+                this["PWHRS"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=PBASE_1;Integrated Security=True;")]
         public string PBASE {
             get {
                 return ((string)(this["PBASE"]));
             }
+            set {
+                this["PBASE"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=PSALE_1_1400;Integrated Security=True;")]
         public string PSALE {
             get {
                 return ((string)(this["PSALE"]));
             }
+            set {
+                this["PSALE"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=PERP_MAIN;Integrated Security=True;")]
         public string MAIN {
             get {
                 return ((string)(this["MAIN"]));
+            }
+            set {
+                this["MAIN"] = value;
             }
         }
         
@@ -738,6 +752,18 @@ namespace PCLOR.Properties {
             }
             set {
                 this["Print"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PBASE1 {
+            get {
+                return ((string)(this["PBASE1"]));
+            }
+            set {
+                this["PBASE1"] = value;
             }
         }
     }
